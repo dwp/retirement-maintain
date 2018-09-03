@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+<div class="govuk-width-container">
+
+  <section class="key-details-bar" role="contentinfo" aria-label="Key details">
+    <dl class="key-details-bar__key-details">
+      <div class="key-details-bar__top-block">
+        <dd class="key-details-bar__name">Hugh Mongous</dd>
+
+        <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
+
+        <dd class="key-details-bar__status">receiving state pension</dd>
+      </div>
+
+      <div class="key-details-bar__bottom-block">
+        <dt>Date of birth:</dt>
+        <dd>4 June 1972</dd>
+
+      </div>
+    </dl>
+  </section>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <nav class="navigation-global">
+        <ul>
+          <li>
+            <a href="#" class="active" aria-current="page">Overview</a>
+          </li>
+
+          <li>
+            <a href="#">Payment schedule</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m">Personal details</h2>
+      </div>
+
+
+      <div class="govuk-grid-column-one-third">
+
+        <ol class="timeline">
+          <h2 class="govuk-heading-m">Claim history</h2>
+
+          <li class="timeline-entry">
+            <h3 class="timeline-title">Bank details changed</h3>
+            <p class="timeline-info">
+              <span class="visually-hidden">Bank details changed</span>
+              <span class="timeline-author">by John Smith</span>
+              <span class="timeline-date">1 January 2018 at 13:02</span>
+            </p>
+          </li>
+
+          <li class="timeline-entry">
+            <h3 class="timeline-title">Marriage verified</h3>
+            <p class="timeline-info">
+              <span class="visually-hidden">Marriage verified</span>
+              <span class="timeline-author">by John Smith</span>
+              <span class="timeline-date">1 January 2018 at 13:21</span>
+            </p>
+            <p class="timeline-body">
+              Marriage certificate uploaded to DRS.
+            </p>
+          </li>
+        </ol>
+
+      </div>
+
+    </main>        </div>
+  </div>
+  {% endblock %}
+
+  {% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+
+  {% endblock %}

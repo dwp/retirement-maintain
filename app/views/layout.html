@@ -25,6 +25,8 @@
 
 {% block head %}
   {% include "includes/head.html" %}
+  {% include "includes/remove-govuk-logo.html" %}
+  {% block headEnd %}{% endblock %}
 {% endblock %}
 
 {% block pageTitle %}
