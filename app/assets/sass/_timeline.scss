@@ -1,43 +1,37 @@
-.timeline {
-  border-left: 3px solid #005ea5;
-}
+$govuk-global-styles: true;
 
-.timeline-entry {
+.app-timeline {
+  border-left: 3px solid govuk-colour('blue');
+  list-style-type: none;
+  padding-left: 0;
 
-  margin: 2em 0;
-  padding-left: 1em;
-  position: relative;
-}
+  .app-timeline__entry {
+    margin: 2em 0;
+    padding-left: 1em;
+    position: relative;
 
-.timeline-entry::before {
-  background-color: #005ea5;
-  content: ' ';
-  height: 3px;
-  left: 0;
-  position: absolute;
-  top: .5em;
-  width: 10px;
-}
+    &::before {
+      background-color: govuk-colour('blue');
+      content: ' ';
+      height: 3px;
+      left: 0;
+      position: absolute;
+      top: .5em;
+      width: 10px;
+    }
 
-.timeline-title {
-  font-family: 'nta', Arial, sans-serif;
-  display: block;
-  font-weight: 700;
-}
+    .app-timeline__author,
+    .app-timeline__date {
+      color: $govuk-secondary-text-colour;
+      display: block;
+    }
 
-.timeline-author,
-.timeline-date {
-  font-family: 'nta', Arial, sans-serif;
-  color: #6f777b;
-  display: block;
-}
+    .app-timeline__info {
+      margin-top: 0;
+    }
 
-.timeline-info {
-  font-family: 'nta', Arial, sans-serif;
-  margin-top: 0;
-}
-
-.timeline-body {
-  font-family: 'nta', Arial, sans-serif;
-  display: block;
+    .app-timeline__body {
+      display: block;
+    }
+  }
 }
