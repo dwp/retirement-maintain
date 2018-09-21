@@ -194,7 +194,7 @@ GOV.UK Prototype Kit
                 Home phone number
               </dt>
               <dd class="app-check-your-answers__answer">
-                01001 829103
+                {{data.homenumber}}
               </dd>
               <dd class="app-check-your-answers__change">
                 <a href="homephone">
@@ -208,10 +208,10 @@ GOV.UK Prototype Kit
                 Work phone number
               </dt>
               <dd class="app-check-your-answers__answer">
-                0800 002918
+                {{data.worknumber}}
               </dd>
               <dd class="app-check-your-answers__change">
-                <a href="#">
+                <a href="workphone">
                   Change<span class="govuk-visually-hidden">Change work phone number</span>
                 </a>
               </dd>
@@ -222,10 +222,11 @@ GOV.UK Prototype Kit
                 Mobile phone number
               </dt>
               <dd class="app-check-your-answers__answer">
+                {{data.mobilenumber}}
               </dd>
               <dd class="app-check-your-answers__change">
-                <a href="#">
-                  Add<span class="govuk-visually-hidden">Change email </span>
+                <a href="mobilephone">
+                  Change<span class="govuk-visually-hidden">Change email </span>
                 </a>
               </dd>
             </div>
@@ -235,7 +236,7 @@ GOV.UK Prototype Kit
                 Email address
               </dt>
               <dd class="app-check-your-answers__answer">
-                hello@you.com
+                {{data.email}}
               </dd>
               <dd class="app-check-your-answers__change">
                 <a href="email">

@@ -88,7 +88,7 @@ GOV.UK Prototype Kit
               Account holder
             </dt>
             <dd class="app-check-your-answers__answer">
-              H Mongous
+              {{data.accountholder}}
             </dd>
             <dd class="app-check-your-answers__change">
             </dd>
@@ -99,7 +99,7 @@ GOV.UK Prototype Kit
               Account number
             </dt>
             <dd class="app-check-your-answers__answer">
-              12345678
+              {{data.accountnumber}}
             </dd>
             <dd class="app-check-your-answers__change">
             </dd>
@@ -110,7 +110,7 @@ GOV.UK Prototype Kit
               Sort code
             </dt>
             <dd class="app-check-your-answers__answer">
-              00-00-00
+              {{data.sortcode}} 
             </dd>
             <dd class="app-check-your-answers__change">
             </dd>
@@ -176,12 +176,10 @@ GOV.UK Prototype Kit
                 Payment frequency
               </dt>
               <dd class="app-check-your-answers__answer">
-                4 weekly
+                {{data.frequency}}
               </dd>
               <dd class="app-check-your-answers__change">
-                  <a href="#">
-                    Change<span class="govuk-visually-hidden">Change payment details</span>
-                  </a>
+                    <a href="frequency">Change</a>
                 </dd>
               </dd>
             </div>
