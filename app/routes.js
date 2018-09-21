@@ -63,6 +63,18 @@ router.post('/iteration1/email', (req, res) => {
 })
 ;
 
+router.use((req, res, next) => {
+  if (req.method === 'POST') {
+    console.log(JSON.stringify(req.session.data, null, 2))
+  }
+  next()
+})
+
+router.post('/iteration1/homephone', (req, res) => {
+  res.redirect('/iteration1/overview')
+})
+
+
 
 
 module.exports = router
