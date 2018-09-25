@@ -37,6 +37,10 @@ $govuk-global-styles: true;
   margin-top: 6px;
 }
 
+.key-details-bar .key-details-bar__key-details .key-details-bar__bottom-block dt {
+  float: right;
+}
+
 @media (max-width: 670px) {
   .key-details-bar .key-details-bar__key-details .key-details-bar__bottom-block {
     border: 0;
