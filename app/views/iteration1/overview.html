@@ -19,6 +19,7 @@ GOV.UK Prototype Kit
 <section class="key-details-bar" role="contentinfo" aria-label="Key details">
   <dl class="key-details-bar__key-details">
     <div class="key-details-bar__top-block">
+
       <dd class="key-details-bar__name">Hugh Mongous</dd>
 
       <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
@@ -27,8 +28,8 @@ GOV.UK Prototype Kit
     </div>
 
     <div class="key-details-bar__bottom-block">
-      <dt>Date of birth:</dt>
-      <dd>4 June 1972</dd>
+      <dt><a href="find" class="govuk-link">Find a claim</a></dt>
+
     </div>
 
   </dl>
@@ -124,7 +125,7 @@ GOV.UK Prototype Kit
           <ol class="app-timeline">
             <li class="app-timeline__entry">
               <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                Bank details changed
+                Address changed
               </h3>
 
               <p class="app-timeline__info govuk-!-margin-bottom-0">
@@ -182,86 +183,102 @@ GOV.UK Prototype Kit
                 NE3 1YL
               </dd>
               <dd class="app-check-your-answers__change">
-                  <a href="address">
-                    Change<span class="govuk-visually-hidden">Change address</span>
-                  </a>
-                </dd>
+                <a href="address">
+                  Change<span class="govuk-visually-hidden">Change address</span>
+                </a>
               </dd>
-            </div>
+            </dd>
+          </div>
 
-            <div class="app-check-your-answers__contents">
-              <dt class="app-check-your-answers__answer">
-                Home phone number
-              </dt>
-              <dd class="app-check-your-answers__answer">
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__answer">
+              Home phone number
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              {% if data.homephone %}
                 {{data.homephone}}
-              </dd>
-              <dd class="app-check-your-answers__change">
-                <a href="homephone">
-                  Change<span class="govuk-visually-hidden">Change home phone number</span>
-                </a>
-              </dd>
-            </div>
+              {% else %}
+                0191 0000000
+              {% endif %}
+            </dd>
+            <dd class="app-check-your-answers__change">
+              <a href="homephone">
+                Change<span class="govuk-visually-hidden">Change home phone number</span>
+              </a>
+            </dd>
+          </div>
 
-            <div class="app-check-your-answers__contents">
-              <dt class="app-check-your-answers__answer">
-                Work phone number
-              </dt>
-              <dd class="app-check-your-answers__answer">
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__answer">
+              Work phone number
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              {% if data.worknumber %}
                 {{data.worknumber}}
-              </dd>
-              <dd class="app-check-your-answers__change">
-                <a href="workphone">
-                  Change<span class="govuk-visually-hidden">Change work phone number</span>
-                </a>
-              </dd>
-            </div>
+              {% else %}
+                0191 1111111
+              {% endif %}
+            </dd>
+            <dd class="app-check-your-answers__change">
+              <a href="workphone">
+                Change<span class="govuk-visually-hidden">Change work phone number</span>
+              </a>
+            </dd>
+          </div>
 
-            <div class="app-check-your-answers__contents">
-              <dt class="app-check-your-answers__answer">
-                Mobile phone number
-              </dt>
-              <dd class="app-check-your-answers__answer">
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__answer">
+              Mobile phone number
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              {% if data.mobilenumber %}
                 {{data.mobilenumber}}
-              </dd>
-              <dd class="app-check-your-answers__change">
-                <a href="mobilephone">
-                  Change<span class="govuk-visually-hidden">Change email </span>
-                </a>
-              </dd>
-            </div>
+              {% else %}
+                07777777777
+              {% endif %}
+            </dd>
+            <dd class="app-check-your-answers__change">
+              <a href="mobilephone">
+                Change<span class="govuk-visually-hidden">Change email </span>
+              </a>
+            </dd>
+          </div>
 
-            <div class="app-check-your-answers__contents">
-              <dt class="app-check-your-answers__answer">
-                Email address
-              </dt>
-              <dd class="app-check-your-answers__answer">
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__answer">
+              Email address
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              {% if data.email %}
                 {{data.email}}
-              </dd>
-              <dd class="app-check-your-answers__change">
-                <a href="email">
-                  Change<span class="govuk-visually-hidden">Change email </span>
-                </a>
-              </dd>
-            </div>
-
-
+              {% else %}
+                some@em@il.com
+              {% endif %}
+            </dd>
+            <dd class="app-check-your-answers__change">
+              <a href="email">
+                Change<span class="govuk-visually-hidden">Change email </span>
+              </a>
+            </dd>
           </div>
 
 
-
-
-            </div>
-
-        </main>        </div>
-      </div>
-      {% endblock %}
-
-      {% block content %}
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-
         </div>
+
+
+
+
       </div>
 
-      {% endblock %}
+    </main>        </div>
+  </div>
+  {% endblock %}
+
+  {% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+
+  {% endblock %}

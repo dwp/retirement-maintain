@@ -27,8 +27,7 @@ GOV.UK Prototype Kit
     </div>
 
     <div class="key-details-bar__bottom-block">
-      <dt>Date of birth:</dt>
-      <dd>4 June 1972</dd>
+      <dt><a href="find" class="govuk-link">Find a claim</a></dt>
     </div>
 
   </dl>
@@ -88,7 +87,11 @@ GOV.UK Prototype Kit
               Account holder
             </dt>
             <dd class="app-check-your-answers__answer">
-              {{data.accountholder}}
+              {% if data.accountholder %}
+                {{data.accountholder}}
+              {% else %}
+                Mr H Mongous
+              {% endif %}
             </dd>
             <dd class="app-check-your-answers__change">
             </dd>
@@ -99,7 +102,11 @@ GOV.UK Prototype Kit
               Account number
             </dt>
             <dd class="app-check-your-answers__answer">
-              {{data.accountnumber}}
+              {% if data.accountnumber %}
+                {{data.accountnumber}}
+              {% else %}
+                12345678
+              {% endif %}
             </dd>
             <dd class="app-check-your-answers__change">
             </dd>
@@ -110,7 +117,11 @@ GOV.UK Prototype Kit
               Sort code
             </dt>
             <dd class="app-check-your-answers__answer">
-              {{data.sortcode}} 
+              {% if data.sortcode %}
+                {{data.sortcode}}
+              {% else %}
+                00-00-00
+              {% endif %}
             </dd>
             <dd class="app-check-your-answers__change">
             </dd>
@@ -126,7 +137,7 @@ GOV.UK Prototype Kit
           <ol class="app-timeline">
             <li class="app-timeline__entry">
               <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                Bank details changed
+                Address changed
               </h3>
 
               <p class="app-timeline__info govuk-!-margin-bottom-0">
@@ -140,7 +151,7 @@ GOV.UK Prototype Kit
 
             <li class="app-timeline__entry">
               <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                Bank details changed
+                Bank account changed
               </h3>
 
               <p class="app-timeline__info govuk-!-margin-bottom-0">
@@ -189,7 +200,26 @@ GOV.UK Prototype Kit
                 Payment amount
               </dt>
               <dd class="app-check-your-answers__answer">
-                £630.87
+                {% if data.frequency === 'Weekly' %}
+                  £164.35
+                {% elseif data.frequency === 'Every 4 weeks' %}
+                  £657.40
+                {% elseif data.frequency === 'Every 13 weeks' %}
+                  £2,136.55
+                {% elseif data.frequency === 'Every 52 weeks' %}
+                  £8,546.20
+                {% endif %}
+              </dd>
+              <dd class="app-check-your-answers__change">
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__answer">
+                Next payment
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                2 October (Tuesday)
               </dd>
               <dd class="app-check-your-answers__change">
               </dd>

@@ -73,6 +73,19 @@ router.use((req, res, next) => {
 router.post('/iteration1/homephone', (req, res) => {
   res.redirect('/iteration1/overview')
 })
+;
+
+router.use((req, res, next) => {
+  if (req.method === 'POST') {
+    console.log(JSON.stringify(req.session.data, null, 2))
+  }
+  next()
+})
+
+router.post('/iteration1/find', (req, res) => {
+  res.redirect('/iteration1/find-1')
+})
+;
 
 
 

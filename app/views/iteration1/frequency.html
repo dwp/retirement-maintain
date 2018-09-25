@@ -27,8 +27,7 @@ GOV.UK Prototype Kit
     </div>
 
     <div class="key-details-bar__bottom-block">
-      <dt>Date of birth:</dt>
-      <dd>4 June 1972</dd>
+      <dt><a href="find" class="govuk-link">Find a claim</a></dt>
     </div>
 
   </dl>
@@ -59,36 +58,40 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
+        <div>
+                <a href="payment" class="govuk-back-link">Back</a>
+        </div>
 
       <form method="post">
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
             </legend>
-            <h1 class="govuk-heading-l">Payment frequency</h1>
+            <h1 class="govuk-heading-l">Change payment frequency</h1>
+            <p>Select the new payment frequency</p>
             <div class="govuk-radios">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every week">
+                <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Weekly">
                 <label class="govuk-label govuk-radios__label" for="payment-frequency-1">
                   Weekly
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 4 weeks">
+                <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 4 weeks" checked="checked">
                 <label class="govuk-label govuk-radios__label" for="payment-frequency-2">
-                  4 weekly
+                  Every 4 weeks
                 </label>
               </div>
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 13 weeks">
                 <label class="govuk-label govuk-radios__label" for="payment-frequency-3">
-                  13 weekly
+                  Every 13 weeks
                 </label>
               </div>
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 52 weeks">
                 <label class="govuk-label govuk-radios__label" for="payment-frequency-4">
-                  52 weekly
+                  Every 52 weeks
                 </label>
               </div>
             </div>
@@ -96,7 +99,7 @@ GOV.UK Prototype Kit
         </div>
 
         <button type="submit" class="govuk-button">
-          Save and continue
+          Save
         </button>
       </form>
 
