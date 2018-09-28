@@ -28,22 +28,18 @@ GOV.UK Prototype Kit
         <form method="post">
           <div class="govuk-form-group">
             <label class="govuk-label" for="nino">
-              National Insurance number
+              Enter a National Insurance number
             </label>
-            <input class="govuk-input" id="nino" name="nino" type="nino" aria-describedby="nino-hint">
+            <input class="govuk-input govuk-!-width-two-thirds" id="nino" name="nino" type="nino" aria-describedby="nino-hint">
+            <button type="submit" class="govuk-button">
+              Find
+            </button>
           </div>
-
-          <button type="submit" class="govuk-button">
-            Find
-          </button>
-        </form>
 
 <div>
   <h2 class="govuk-heading-m">Result</h2>
-    <p>
-  <a href="overview" class="govuk-link">Hugh Mongous</a>
-   </br>
-  {{data.nino}} </br>
+    <p class="govuk-body govuk-!-font-size-24">  <a href="overview" class="govuk-link">Hugh Mongous</a> </br>
+  {{data.nino}}
 </p>
 
 

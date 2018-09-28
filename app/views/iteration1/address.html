@@ -60,7 +60,16 @@ GOV.UK Prototype Kit
 
         <h1 class="govuk-heading-l">Change address</h1>
 
-
+        <form method="post">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="postcode">
+              Enter a postcode
+            </label>
+            <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="postcode" aria-describedby="postcode-hint">
+            <button type="submit" class="govuk-button">
+              Find address
+            </button>
+          </div>
 
 
 

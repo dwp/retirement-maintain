@@ -177,14 +177,17 @@ GOV.UK Prototype Kit
                 Address
               </dt>
               <dd class="app-check-your-answers__answer">
-                2a Windsor Terrace </br>
-                South Gosforth </br>
-                Newcastle Upon Tyne </br>
-                NE3 1YL
+                {% if data.address %}
+                  {{data.address.split(', ').join('<br />') | safe}}
+                {% else %}
+                  4 Potato close<br />
+                  Vegetable Street<br />
+                  TM07 7TO
+                {% endif %}
               </dd>
               <dd class="app-check-your-answers__change">
                 <a href="address">
-                  <span class="govuk-visually-hidden">Change address</span>
+                  Change<span class="govuk-visually-hidden">Change address</span>
                 </a>
               </dd>
             </dd>

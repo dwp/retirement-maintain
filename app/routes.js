@@ -87,6 +87,23 @@ router.post('/iteration1/find', (req, res) => {
 })
 ;
 
+router.use((req, res, next) => {
+  if (req.method === 'POST') {
+    console.log(JSON.stringify(req.session.data, null, 2))
+  }
+  next()
+})
+
+router.post('/iteration1/address', (req, res) => {
+  res.redirect('/iteration1/address-1')
+})
+;
+
+router.post('/iteration1/address-1', (req, res) => {
+  res.redirect('/iteration1/overview')
+})
+;
+
 
 
 

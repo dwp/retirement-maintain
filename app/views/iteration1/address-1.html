@@ -1,0 +1,115 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+<section class="key-details-bar" role="contentinfo" aria-label="Key details">
+  <dl class="key-details-bar__key-details">
+    <div class="key-details-bar__top-block">
+      <dd class="key-details-bar__name">Hugh Mongous</dd>
+
+      <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
+
+      <dd class="key-details-bar__status">receiving state pension</dd>
+    </div>
+
+    <div class="key-details-bar__bottom-block">
+      <dt><a href="find" class="govuk-link">Find a claim</a></dt>
+    </div>
+
+  </dl>
+</section>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <nav class="navigation-global">
+      <ul>
+
+        <li>
+          <a href="overview" class="active" aria-current="page">Overview</a>
+        </li>
+
+        <li>
+          <a href="payment" class="" aria-current="page">Payment</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">Change address</h1>
+
+<h2 class="govuk-heading-s">Postcode </br>
+{{data.postcode}} <a href="#" class="govuk-link"> Change</a></h2>
+
+
+            <form method="post">
+              <div class="govuk-form-group">
+                <label class="govuk-label class" for="sort">
+                  Select an address
+                </label>
+
+                {% set addresses = [
+                  '2, Windsor Street, South Gosforth, Newcastle Upon Tyne',
+                  '3a, Windsor Street, South Gosforth, Newcastle Upon Tyne',
+                  '3b, Windsor Street, South Gosforth, Newcastle Upon Tyne',
+                  '4, Windsor Street, South Gosforth, Newcastle Upon Tyne',
+                  '5, Windsor Street, South Gosforth, Newcastle Upon Tyne'
+                ] %}
+
+                <select class="govuk-select" id="address" name="address">
+                  <option value="{{addresses[0]}}">{{addresses[0]}}</option>
+                  <option value="{{addresses[1]}}" selected>{{addresses[1]}}</option>
+                  <option value="{{addresses[2]}}">{{addresses[2]}}</option>
+                  <option value="{{addresses[3]}}">{{addresses[3]}}</option>
+                  <option value="{{addresses[4]}}">{{addresses[4]}}</option>
+                </select>
+              </div>
+              <button type="submit" class="govuk-button">
+                Save
+              </button>
+            </form>
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>        </div>
+  </div>
+  {% endblock %}
+
+  {% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+
+  {% endblock %}
