@@ -104,7 +104,42 @@ router.post('/iteration1/address-1', (req, res) => {
 })
 ;
 
+// Home phone number removal
+router.post('/iteration1/homephone-remove', function(req, res) {
+  if ( req.body['homephone-remove'] === 'yes' ) {
+    res.redirect('overview');
+  } else {
+    res.redirect('homephone');
+  }
+});
 
+
+// Mobile phone number removal
+router.post('/iteration1/mobilephone-remove', function(req, res) {
+  if ( req.body['mobilephone-remove'] === 'yes' ) {
+    res.redirect('overview');
+  } else {
+    res.redirect('mobilephone');
+  }
+});
+
+// Work phone number removal
+router.post('/iteration1/workphone-remove', function(req, res) {
+  if ( req.body['workphone-remove'] === 'yes' ) {
+    res.redirect('overview');
+  } else {
+    res.redirect('workphone');
+  }
+});
+
+// Email removal
+router.post('/iteration1/email-remove', function(req, res) {
+  if ( req.body['email-remove'] === 'yes' ) {
+    res.redirect('overview');
+  } else {
+    res.redirect('email');
+  }
+});
 
 
 module.exports = router
