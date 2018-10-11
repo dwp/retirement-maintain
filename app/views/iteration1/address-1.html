@@ -61,7 +61,7 @@ GOV.UK Prototype Kit
         <h1 class="govuk-heading-l">Change address</h1>
 
 <h2 class="govuk-heading-s">Postcode </br>
-{{data.postcode}} <a href="#" class="govuk-link"> Change</a></h2>
+{{data.postcode}} <a href="address" class="govuk-link"> Change</a></h2>
 
 
             <form method="post">
@@ -71,16 +71,16 @@ GOV.UK Prototype Kit
                 </label>
 
                 {% set addresses = [
-                  '2, Windsor Street, South Gosforth, Newcastle Upon Tyne',
-                  '3a, Windsor Street, South Gosforth, Newcastle Upon Tyne',
-                  '3b, Windsor Street, South Gosforth, Newcastle Upon Tyne',
-                  '4, Windsor Street, South Gosforth, Newcastle Upon Tyne',
-                  '5, Windsor Street, South Gosforth, Newcastle Upon Tyne'
+                  '2 Windsor Street, South Gosforth, Newcastle Upon Tyne, NE3 1YL',
+                  '3a Windsor Street, South Gosforth, Newcastle Upon Tyne, NE3 1YL',
+                  '3b Windsor Street, South Gosforth, Newcastle Upon Tyne, NE3 1YL',
+                  '4 Windsor Street, South Gosforth, Newcastle Upon Tyne, NE3 1YL',
+                  '5 Windsor Street, South Gosforth, Newcastle Upon Tyne, NE3 1YL'
                 ] %}
 
                 <select class="govuk-select" id="address" name="address">
-                  <option value="{{addresses[0]}}">{{addresses[0]}}</option>
-                  <option value="{{addresses[1]}}" selected>{{addresses[1]}}</option>
+                  <option value="{{addresses[0]}}"selected>{{addresses[0]}}</option>
+                  <option value="{{addresses[1]}}">{{addresses[1]}}</option>
                   <option value="{{addresses[2]}}">{{addresses[2]}}</option>
                   <option value="{{addresses[3]}}">{{addresses[3]}}</option>
                   <option value="{{addresses[4]}}">{{addresses[4]}}</option>

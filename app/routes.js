@@ -100,13 +100,22 @@ router.post('/iteration1/address', (req, res) => {
 ;
 
 router.post('/iteration1/address-1', (req, res) => {
-  res.redirect('/iteration1/overview')
+  res.redirect('/iteration1/homephone-address')
 })
 ;
 
+// Change of address and home phone number
+router.post('/iteration1/homephone-address', function(req, res) {
+  if ( req.body['homephone-address'] === 'Yes' ) {
+    res.redirect('homephone');
+  } else {
+    res.redirect('overview');
+  }
+});
+
 // Home phone number removal
 router.post('/iteration1/homephone-remove', function(req, res) {
-  if ( req.body['homephone-remove'] === 'yes' ) {
+  if ( req.body['homephone-remove'] === 'Yes' ) {
     res.redirect('overview');
   } else {
     res.redirect('homephone');

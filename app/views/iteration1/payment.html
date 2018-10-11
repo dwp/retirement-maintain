@@ -27,7 +27,7 @@ GOV.UK Prototype Kit
     </div>
 
     <div class="key-details-bar__bottom-block">
-      <dt><a href="find" class="govuk-link">Find a claim</a></dt>
+      <dt><a href="find" class="govuk-link">Find someone</a></dt>
     </div>
 
   </dl>
@@ -58,7 +58,7 @@ GOV.UK Prototype Kit
 
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h2 class="govuk-heading-l">Bank account details</h2>
+        <h2 class="govuk-heading-l">Bank account or building society details</h2>
         <dl class="app-check-your-answers app-check-your-answers--short">
           <div class="app-check-your-answers__contents">
             <dd class="app-check-your-answers__answer">
@@ -127,6 +127,19 @@ GOV.UK Prototype Kit
             </dd>
           </div>
 
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__answer">
+              Roll number
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              {% if data.rollnumber %}
+                {{data.rollnumber}}
+              {% endif %}
+            </dd>
+            <dd class="app-check-your-answers__change">
+            </dd>
+          </div>
+
         </div>
 
         <div class="govuk-grid-column-one-third">
@@ -142,7 +155,6 @@ GOV.UK Prototype Kit
 
               <p class="app-timeline__info govuk-!-margin-bottom-0">
                 <span class="govuk-visually-hidden">Marriage verified</span>
-                <span class="app-timeline__author">by John Smith</span>
                 <span class="app-timeline__date">
                   14 June 2018 at 13:02
                 </span>
@@ -156,7 +168,6 @@ GOV.UK Prototype Kit
 
               <p class="app-timeline__info govuk-!-margin-bottom-0">
                 <span class="govuk-visually-hidden">Marriage verified</span>
-                <span class="app-timeline__author">by Veronica Jumbelin</span>
                 <span class="app-timeline__date">
                   5 January 2018 at 12:37
                 </span>
