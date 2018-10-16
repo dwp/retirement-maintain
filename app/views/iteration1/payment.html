@@ -73,7 +73,7 @@ GOV.UK Prototype Kit
 
           <div class="app-check-your-answers__contents">
             <dt class="app-check-your-answers__answer">
-              Bank
+              Bank or building society
             </dt>
             <dd class="app-check-your-answers__answer">
               Lloyds
@@ -142,40 +142,81 @@ GOV.UK Prototype Kit
 
         </div>
 
-        <div class="govuk-grid-column-one-third">
 
-          <h2 class="govuk-heading-m">
-            Claim history
-          </h2>
-          <ol class="app-timeline">
-            <li class="app-timeline__entry">
-              <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                Address changed
-              </h3>
+                <div class="govuk-grid-column-one-third">
 
-              <p class="app-timeline__info govuk-!-margin-bottom-0">
-                <span class="govuk-visually-hidden">Marriage verified</span>
-                <span class="app-timeline__date">
-                  14 June 2018 at 13:02
-                </span>
-              </p>
-            </li>
+                  <h2 class="govuk-heading-m">
+                    Claim history
+                  </h2>
+                  <ol class="app-timeline">
+                    <li class="app-timeline__entry">
+                      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                        Address changed
+                      </h3>
 
-            <li class="app-timeline__entry">
-              <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                Bank account changed
-              </h3>
+                      <p class="app-timeline__info govuk-!-margin-bottom-0">
+                        <span class="govuk-visually-hidden">Marriage verified</span>
+                        <span class="app-timeline__date">
+                          14 June 2018
+                        </span>
+                      </p>
+                    </li>
 
-              <p class="app-timeline__info govuk-!-margin-bottom-0">
-                <span class="govuk-visually-hidden">Marriage verified</span>
-                <span class="app-timeline__date">
-                  5 January 2018 at 12:37
-                </span>
-              </p>
-            </li>
-          </ol>
+                    <li class="app-timeline__entry">
+                      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                        Bank account changed
+                      </h3>
 
-        </div>
+                      <p class="app-timeline__info govuk-!-margin-bottom-0">
+                        <span class="govuk-visually-hidden">Marriage verified</span>
+                        <span class="app-timeline__date">
+                          5 January 2018
+                        </span>
+                      </p>
+                    </li>
+
+                    <li class="app-timeline__entry">
+                      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                        Frequency changed
+                      </h3>
+
+                      <p class="app-timeline__info govuk-!-margin-bottom-0">
+                        <span class="govuk-visually-hidden">Marriage verified</span>
+                        <span class="app-timeline__date">
+                        9 June 2018
+                        </span>
+                      </p>
+                    </li>
+
+                    <li class="app-timeline__entry">
+                      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                        Bank account changed
+                      </h3>
+
+                      <p class="app-timeline__info govuk-!-margin-bottom-0">
+                        <span class="govuk-visually-hidden">Marriage verified</span>
+                        <span class="app-timeline__date">
+                          5 January 2018
+                        </span>
+                      </p>
+                    </li>
+
+                    <li class="app-timeline__entry">
+                      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                        Bank account changed
+                      </h3>
+
+                      <p class="app-timeline__info govuk-!-margin-bottom-0">
+                        <span class="govuk-visually-hidden">Marriage verified</span>
+                        <span class="app-timeline__date">
+                          17 November 2017
+                        </span>
+                      </p>
+                    </li>
+
+                  </ol>
+
+                </div>
 
 
 
@@ -237,15 +278,15 @@ GOV.UK Prototype Kit
               </dt>
               <dd class="app-check-your-answers__answer">
                 {% if data.frequency === 'Weekly' %}
-                  23 October (Tuesday)
+                  23 October 2018 (Tuesday)
                 {% elseif data.frequency === 'Every 4 weeks' %}
-                  6 November (Tuesday)
+                  6 November 2018(Tuesday)
                 {% elseif data.frequency === 'Every 13 weeks' %}
-                  22 January (Tuesday)
+                  22 January 2019 (Tuesday)
                 {% elseif data.frequency === 'Every 52 weeks' %}
-                  3 September (Tuesday)
+                  3 September 2019(Tuesday)
                   {% else %}
-                  6 November (Tuesday)
+                  6 November 2019(Tuesday)
                 {% endif %}
               </dd>
               <dd class="app-check-your-answers__change">
