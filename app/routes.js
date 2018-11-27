@@ -161,11 +161,6 @@ router.post('/manualpayment/processaclaim', (req, res) => {
 ;
 
 router.post('/manualpayment/checkclaim', (req, res) => {
-  res.redirect('/manualpayment/suffix')
-})
-;
-
-router.post('/manualpayment/suffix', (req, res) => {
   res.redirect('/manualpayment/enteramounts')
 })
 ;
