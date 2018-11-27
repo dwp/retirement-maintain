@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+      </br>
+      <h1 class="govuk-heading-xl">Check claim</h1>
+      </div>
+
+      <div class="govuk-grid-column-full-width">
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col">National Insurance number</th>
+            <th class="govuk-table__header" scope="col">Name</th>
+            <th class="govuk-table__header" scope="col">Date of birth</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">QQ123456</td>
+            <td class="govuk-table__cell">Roberto Hugh Smith</td>
+            <td class="govuk-table__cell">11/09/1954</td>
+          </tr>
+        </div>
+
+
+
+        </tbody>
+      </table>
+
+      <form method="post">
+        <div class="govuk-form-group">
+      <button type="submit" class="govuk-button">
+        Continue with claim
+      </button>
+      </form>
+
+      <p><a href="/manualpayment/processaclaim2" class="govuk-link">Send claim to BAU</a></p>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

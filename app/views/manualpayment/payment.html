@@ -1,0 +1,142 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+<section class="key-details-bar" role="contentinfo" aria-label="Key details">
+  <dl class="key-details-bar__key-details">
+    <div class="key-details-bar__top-block">
+      <dd class="key-details-bar__name">Roberto Hugh Smith</dd>
+
+      <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
+    </div>
+
+    <div class="key-details-bar__bottom-block">
+      <dt>Date of birth: 11 September 1954</a></dt>
+    </div>
+
+  </dl>
+</section>
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <a href="#" class="govuk-back-link">Back</a>
+
+        <h1 class="govuk-heading-xl">Put State Pension into payment</h1>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption">Bank details</caption>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Sort code</th>
+              <td class="govuk-table__cell">010203</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Account number</th>
+              <td class="govuk-table__cell">12345678</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Account holder</th>
+              <td class="govuk-table__cell">Mr R H Smith </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption">First payment</caption>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Total</th>
+              <td class="govuk-table__cell">£0</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Breakdown</th>
+              <td class="govuk-table__cell">State Pension £58.29
+              </br>Protected payment £10.12</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Payment period dates</th>
+              <td class="govuk-table__cell">1st XXX 20XX to 2nd XXX 20XX</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Payment date</th>
+              <td class="govuk-table__cell">3rd XXX 20XX</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption">Second and regular payment</caption>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Total</th>
+              <td class="govuk-table__cell">£0</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Breakdown</th>
+              <td class="govuk-table__cell">State Pension £168.29
+              </br>Protected payment £12.13</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Payment period dates</th>
+              <td class="govuk-table__cell">1st XXX 20XX to 2nd XXX 20XX</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Payment date</th>
+              <td class="govuk-table__cell">3rd XXX 20XX</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <form method="post">
+          <div class="govuk-form-group">
+        <button type="submit" class="govuk-button">
+          Create letter
+        </button>
+        </form>
+
+        <p><a href="/manualpayment/processaclaim2" class="govuk-link">Send claim to BAU</a></p>
+
+
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
