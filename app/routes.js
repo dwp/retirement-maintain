@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-// Add your routes here - above the module.exports line
+///////////////////////////// Iteration 1 ///////////////////////////////////////
 
 router.use((req, res, next) => {
   if (req.method === 'POST') {
@@ -143,6 +143,160 @@ router.post('/iteration1/workphone-remove', function(req, res) {
 
 // Email removal
 router.post('/iteration1/email-remove', function(req, res) {
+  if ( req.body['email-remove'] === 'yes' ) {
+    res.redirect('overview');
+  } else {
+    res.redirect('email');
+  }
+});
+
+///////////////////////////// BPV iteration ///////////////////////////////////////
+//-------------------------------------------------------------------------------
+router.use((req, res, next) => {
+  if (req.method === 'POST') {
+    console.log(JSON.stringify(req.session.data, null, 2))
+  }
+  next()
+})
+
+router.post('/bpv-iteration/frequency', (req, res) => {
+  res.redirect('/bpv-iteration/cps')
+})
+;
+
+router.use((req, res, next) => {
+  if (req.method === 'POST') {
+    console.log(JSON.stringify(req.session.data, null, 2))
+  }
+  next()
+})
+
+router.post('/bpv-iteration/bankdetails', (req, res) => {
+  res.redirect('/bpv-iteration/cps')
+})
+;
+
+router.post('/bpv-iteration/cps', (req, res) => {
+  res.redirect('/bpv-iteration/payment')
+})
+;
+
+router.use((req, res, next) => {
+  if (req.method === 'POST') {
+    console.log(JSON.stringify(req.session.data, null, 2))
+  }
+  next()
+})
+
+router.post('/bpv-iteration/workphone', (req, res) => {
+  res.redirect('/bpv-iteration/overview')
+})
+;
+
+router.use((req, res, next) => {
+  if (req.method === 'POST') {
+    console.log(JSON.stringify(req.session.data, null, 2))
+  }
+  next()
+})
+
+router.post('/bpv-iteration/mobilephone', (req, res) => {
+  res.redirect('/bpv-iteration/overview')
+})
+;
+
+router.use((req, res, next) => {
+  if (req.method === 'POST') {
+    console.log(JSON.stringify(req.session.data, null, 2))
+  }
+  next()
+})
+
+router.post('/bpv-iteration/email', (req, res) => {
+  res.redirect('/bpv-iteration/overview')
+})
+;
+
+router.use((req, res, next) => {
+  if (req.method === 'POST') {
+    console.log(JSON.stringify(req.session.data, null, 2))
+  }
+  next()
+})
+
+router.post('/bpv-iteration/homephone', (req, res) => {
+  res.redirect('/bpv-iteration/overview')
+})
+;
+
+router.use((req, res, next) => {
+  if (req.method === 'POST') {
+    console.log(JSON.stringify(req.session.data, null, 2))
+  }
+  next()
+})
+
+router.post('/bpv-iteration/find', (req, res) => {
+  res.redirect('/bpv-iteration/find-1')
+})
+;
+
+router.use((req, res, next) => {
+  if (req.method === 'POST') {
+    console.log(JSON.stringify(req.session.data, null, 2))
+  }
+  next()
+})
+
+router.post('/bpv-iteration/address', (req, res) => {
+  res.redirect('/bpv-iteration/address-1')
+})
+;
+
+router.post('/bpv-iteration/address-1', (req, res) => {
+  res.redirect('/bpv-iteration/homephone-address')
+})
+;
+
+// Change of address and home phone number
+router.post('/bpv-iteration/homephone-address', function(req, res) {
+  if ( req.body['homephone-address'] === 'Yes' ) {
+    res.redirect('homephone');
+  } else {
+    res.redirect('overview');
+  }
+});
+
+// Home phone number removal
+router.post('/bpv-iteration/homephone-remove', function(req, res) {
+  if ( req.body['homephone-remove'] === 'Yes' ) {
+    res.redirect('overview');
+  } else {
+    res.redirect('homephone');
+  }
+});
+
+
+// Mobile phone number removal
+router.post('/bpv-iteration/mobilephone-remove', function(req, res) {
+  if ( req.body['mobilephone-remove'] === 'yes' ) {
+    res.redirect('overview');
+  } else {
+    res.redirect('mobilephone');
+  }
+});
+
+// Work phone number removal
+router.post('/bpv-iteration/workphone-remove', function(req, res) {
+  if ( req.body['workphone-remove'] === 'yes' ) {
+    res.redirect('overview');
+  } else {
+    res.redirect('workphone');
+  }
+});
+
+// Email removal
+router.post('/bpv-iteration/email-remove', function(req, res) {
   if ( req.body['email-remove'] === 'yes' ) {
     res.redirect('overview');
   } else {

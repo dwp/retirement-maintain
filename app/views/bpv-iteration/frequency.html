@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+<section class="key-details-bar" role="contentinfo" aria-label="Key details">
+  <dl class="key-details-bar__key-details">
+    <div class="key-details-bar__top-block">
+      <dd class="key-details-bar__name">Roberto Hugh Smith</dd>
+
+      <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
+
+      <dd class="key-details-bar__status">receiving state pension</dd>
+    </div>
+
+    <div class="key-details-bar__bottom-block">
+      <dt><a href="find" class="govuk-link">Find someone</a></dt>
+    </div>
+
+  </dl>
+</section>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <nav class="navigation-global">
+      <ul>
+
+        <li>
+          <a href="overview" class="" aria-current="page">Overview</a>
+        </li>
+
+        <li>
+          <a href="payment" class="active" aria-current="page">Payment</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div>
+                <a href="payment" class="govuk-back-link">Back</a>
+        </div>
+
+      <form method="post">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            </legend>
+            <h1 class="govuk-heading-l">Change payment frequency</h1>
+            <p>Select new payment frequency</p>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Weekly">
+                <label class="govuk-label govuk-radios__label" for="payment-frequency-1">
+                  Weekly
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Weekly">
+                <label class="govuk-label govuk-radios__label" for="payment-frequency-1">
+                  Every 2 weeks
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 4 weeks">
+                <label class="govuk-label govuk-radios__label" for="payment-frequency-2">
+                  Every 4 weeks
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 13 weeks">
+                <label class="govuk-label govuk-radios__label" for="payment-frequency-3">
+                  Every 13 weeks
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <button type="submit" class="govuk-button">
+          Save
+        </button>
+      </form>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</main>        </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
