@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+
+<main class="govuk-main-wrapper " id="main-content" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="/form-handler" method="post" novalidate>
+
+        <div>
+          <h1 class="govuk-heading-xl">
+            Have you lived outside the UK?
+          </h1>
+
+          <div class="govuk-form-group">
+            <div class="govuk-radios govuk-radios--inline">
+              <span id="waste-hint" class="govuk-hint">
+                You do not need to provide any details
+                if you have served overseas with the British armed forces.
+              </span>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name-1">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  No
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+
+      <button type="submit" class="govuk-button">
+        Continue
+      </button>
+    </form>
+
+  </div>
+
+
+  <div class="column-one-third">
+    <div>
+
+  <h2 class="govuk-heading-m" id="helpcontent">Get help</h2>
+  <h3 class="govuk-heading-s">Telephone: 0800 169 0154</br>
+    Textphone: 0800 169 0254</h3>
+    <p class="compound">Monday to Friday, 8am to 6pm<br/>
+      Closed public holidays</p>
+
+
+      <p>
+        <h3 class="govuk-heading-s">Northern Ireland: 0800 587 0892</br>
+          Textphone: 0808 100 2198</h3>
+        </h3>
+        <p class="font-xsmall">Monday to Friday, 9am to 5pm<br/>
+          Closed public holidays</p>
+        </p>
+      </div>
+
+
+    </section>
+
+  </div>
+
+</div>
+</div>
+</main>
+
+
+{% endblock %}
