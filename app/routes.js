@@ -305,6 +305,27 @@ router.post('/bpv-iteration/email-remove', function(req, res) {
 });
 
 
+// New claims 1 -----------------------------------------------------------------
+// ------------------------------------------------------------------------------
+
+router.post('/newclaims/find', (req, res) => {
+  res.redirect('/newclaims/find-1')
+})
+;
+
+router.post('/newclaims/sp-date', (req, res) => {
+  res.redirect('/newclaims/lived-outside')
+})
+;
+
+router.post('/lived-outside', function(req, res) {
+  if ( req.body['lived-outside-select'] === 'Yes' ) {
+    res.redirect('what-countries-have-you-lived-in');
+  } else {
+    res.redirect('have-you-worked-abroad');
+  }
+});
+
 
 // Agent manual -----------------------------------------------------------------
 // ------------------------------------------------------------------------------
