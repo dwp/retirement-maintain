@@ -318,12 +318,43 @@ router.post('/newclaims/sp-date', (req, res) => {
 })
 ;
 
-router.post('/lived-outside', function(req, res) {
-  if ( req.body['lived-outside-select'] === 'Yes' ) {
-    res.redirect('what-countries-have-you-lived-in');
-  } else {
-    res.redirect('have-you-worked-abroad');
-  }
+router.post('/newclaims/security1', (req, res) => {
+  res.redirect('/newclaims/security2')
+})
+;
+
+router.post('/newclaims/security2', (req, res) => {
+  res.redirect('/newclaims/sp-date')
+})
+;
+
+router.post('/newclaims/lived-outside', (req, res) => {
+  res.redirect('/newclaims/worked-outside')
+})
+;
+
+router.post('/newclaims/worked-outside', (req, res) => {
+  res.redirect('/newclaims/marital')
+})
+;
+
+router.post('/newclaims/marital', (req, res) => {
+  res.redirect('/newclaims/spouse')
+})
+;
+
+router.post('/newclaims/spouse', (req, res) => {
+  res.redirect('/newclaims/contact-details')
+})
+;
+
+router.post('/newclaims/contact-details', (req, res) => {
+  res.redirect('/newclaims/payment')
+})
+;
+
+router.get('/newclaims/payment', function(req, res) {
+  res.render('newclaims/payment');
 });
 
 

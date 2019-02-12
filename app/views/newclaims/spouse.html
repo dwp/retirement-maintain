@@ -41,13 +41,13 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form action="/form-handler" method="post" novalidate>
+        <form method="post">
 
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
 
               <h1 class="govuk-fieldset__heading">
-                Spouse shizzle
+                About the citizen’s spouse
               </h1>
             </legend>
 
@@ -57,7 +57,7 @@ GOV.UK Prototype Kit
         <div class="govuk-form-group">
 
           <label class="govuk-label" for="firstname">
-            Spouse full name
+            <b>Their first name</b>
           </label>
           <input class="govuk-input" id="firstname" name="firstname" type="text">
 
@@ -65,7 +65,7 @@ GOV.UK Prototype Kit
       </br>
 
       <label class="govuk-label" for="surname">
-        Spouse surname
+        <b>Their surname</b>
       </label>
       <input class="govuk-input" id="surname" name="surname" type="text">
 
@@ -73,84 +73,86 @@ GOV.UK Prototype Kit
   </br>
 
   <label class="govuk-label" for="othernameOh ">
-    Spouse lots of names
+    <b>Other names</b></br>
+    Include maiden name, former married names and changes of family name in a separate field.
   </label>
   <input class="govuk-input" id="firstname" name="firstname" type="text">
 
 </br>
 </br>
 
-
-<div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="expiry-hint" role="group">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m"> Expiry date
-              </legend>
-              <div class="govuk-date-input" id="expiry">
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="expiry-day">
-                      Day
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-day" name="expiry-day" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="expiry-month">
-                      Month
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-month" name="expiry-month" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="expiry-year">
-                      Year
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="expiry-year" name="expiry-year" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-
+<p>
+  <a href="#" class="govuk-link">Add another name</a>
+  </p>
 
 
 <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="expiry-hint" role="group">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m"> Expiry date
-              </legend>
-              <span id="expiry-hint" class="govuk-hint">
-                For example, 31 3 1980
-              </span>
-              <div class="govuk-date-input" id="expiry">
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="expiry-day">
-                      Day
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-day" name="expiry-day" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="expiry-month">
-                      Month
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-month" name="expiry-month" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="expiry-year">
-                      Year
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="expiry-year" name="expiry-year" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-          </div>
+  <fieldset class="govuk-fieldset" aria-describedby="expiry-hint" role="group">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s"> Their date of birth
+    </legend>
+    <div class="govuk-date-input" id="expiry">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="expiry-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-day" name="expiry-day" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="expiry-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-month" name="expiry-month" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="expiry-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="expiry-year" name="expiry-year" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="expiry-hint" role="group">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s"> Date they got married
+    </legend>
+    <div class="govuk-date-input" id="expiry">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="expiry-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-day" name="expiry-day" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="expiry-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-month" name="expiry-month" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="expiry-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="expiry-year" name="expiry-year" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
 
 </div>
 

@@ -45,17 +45,38 @@ GOV.UK Prototype Kit
 
           <div>
             <h1 class="govuk-heading-xl">
-              State Pension date
+              The citizen’s State Pension date
             </h1>
 
 
-            <p>The earliest date you can get your State Pension is 12 April 2018.
-            </br></p>
+            <p>The citizen can get their State Pension from {SP date}.</p>
 
-            <p>
-  					You will get your State Pension from this date unless</br>
-  					you <a href="deferral">tell us a different date.</a>
-  					</p>
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+
+                </legend>
+
+
+                <h2 class="govuk-heading-s">Do they want to get their State Pension from this date? </h2>
+
+
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="changed-name-1">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
 
 
             <button type="submit" class="govuk-button">
@@ -66,12 +87,12 @@ GOV.UK Prototype Kit
         </div>
 
 
-          </div>
-
-
-        </div>
       </div>
-    </main>
 
 
-    {% endblock %}
+    </div>
+  </div>
+</main>
+
+
+{% endblock %}
