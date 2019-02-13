@@ -24,11 +24,10 @@ GOV.UK Prototype Kit
 
       <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
 
-      <dd class="key-details-bar__status">Status</dd>
     </div>
 
     <div class="key-details-bar__bottom-block">
-      <dt><a href="find" class="govuk-link">Back to beginning</a></dt>
+      <dt><a href="find" class="govuk-link">Start again</a></dt>
 
     </div>
 
@@ -45,10 +44,11 @@ GOV.UK Prototype Kit
         <form action="confirm-bank" method="post" novalidate>
 
           <h1 class="govuk-heading-xl">How would you like to be paid?</h1>
-
-          <div class="govuk-form-group">
+          <p>You can have your pension paid into a bank or building society account in your name.</p>
+        </p>
+            <div class="govuk-form-group">
             <label class="govuk-label govuk-label--s" for="acccount-name">
-              Account name
+              Account number
             </label>
             <input class="govuk-input govuk-input--width-20" id="passport-number" name="passport-number" type="text" aria-describedby="passport-number-hint">
           </div>
@@ -79,7 +79,7 @@ GOV.UK Prototype Kit
 
           <div class="govuk-form-group">
             <label class="govuk-label govuk-label--s" for="acccount-name">
-              Account number
+              Account holder name
             </label>
             <input class="govuk-input govuk-input--width-20" id="passport-number" name="passport-number" type="text" aria-describedby="passport-number-hint">
           </div>
@@ -89,7 +89,7 @@ GOV.UK Prototype Kit
               Building society roll or reference number
             </label>
             <span id="passport-number-hint" class="govuk-hint">
-              If your building society uses a roll or reference number, you need to provide it.
+              If paying into a building society account, we need a roll or reference number.
               You will find it on your passbook.
             </span>
             <input class="govuk-input govuk-input--width-20" id="passport-number" name="passport-number" type="text" aria-describedby="passport-number-hint">
@@ -97,7 +97,7 @@ GOV.UK Prototype Kit
 
 
           <button type="submit" class="govuk-button">
-            Confirm details
+            Check details
           </button>
 
         </form>

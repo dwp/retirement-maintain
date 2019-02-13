@@ -353,11 +353,6 @@ router.post('/newclaims/contact-details', (req, res) => {
 })
 ;
 
-router.post('/newclaims/declaration', (req, res) => {
-  res.redirect('/newclaims/payments')
-})
-;
-
 
 // Agent manual -----------------------------------------------------------------
 // ------------------------------------------------------------------------------
