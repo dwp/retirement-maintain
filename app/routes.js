@@ -349,13 +349,14 @@ router.post('/newclaims/spouse', (req, res) => {
 ;
 
 router.post('/newclaims/contact-details', (req, res) => {
-  res.redirect('/newclaims/payment')
+  res.redirect('/newclaims/bank')
 })
 ;
 
-router.get('/newclaims/payment', function(req, res) {
-  res.render('newclaims/payment');
-});
+router.post('/newclaims/declaration', (req, res) => {
+  res.redirect('/newclaims/payments')
+})
+;
 
 
 // Agent manual -----------------------------------------------------------------
