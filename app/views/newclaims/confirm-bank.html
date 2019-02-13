@@ -24,6 +24,7 @@ GOV.UK Prototype Kit
 
       <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
 
+      <dd class="key-details-bar__status">Status</dd>
     </div>
 
     <div class="key-details-bar__bottom-block">
@@ -39,17 +40,21 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
+
         <form action="frequency" method="post">
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-heading-xl">
-                  Confirm bank account
+                  Confirm account provider
                 </h1>
               </legend>
               <label class="govuk-label govuk-label--m" for="passport-number">
-                Halifax?
+                Who is your account with?
               </label>
+              <span class="govuk-hint">
+                Halifax
+              </span>
               <div class="govuk-radios govuk-radios--inline">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
