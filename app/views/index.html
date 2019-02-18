@@ -21,7 +21,7 @@
       <div class="app-homepage-top">
         <div class="app-homepage-top--content">
           <h1 class="govuk-heading-xl app-homepage-top--heading">
-            Enquiries and change of circumstance
+            Agent
             <span class="app-homepage-top--span">Prototypes</span>
           </h1>
         </div>
@@ -36,25 +36,64 @@
 National Insurance number: QQ 12 34 56 X
 </h2>
 
-
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <div class="app-most-recent">
-        {% include 'notes/newclaim.html' %}
-      </div>
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            <b>Telephone claims</b>
+          </span>
+        </summary>
+        <div class="govuk-details__text">
 
-      <div class="app-most-recent">
-        {% include 'notes/manualpayment.html' %}
-      </div>
+          <div class="app-most-recent">
+            {% include 'notes/newclaim2.html' %}
+          </div>
 
-      <div class="app-most-recent">
-        {% include 'notes/iteration2.html' %}
-      </div>
+          <div class="app-most-recent">
+            {% include 'notes/newclaim.html' %}
+          </div>
 
-      <div class="app-most-recent">
-        {% include 'notes/iteration1.html' %}
-      </div>
+        </div>
+      </details>
+
+
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            <b>Manual payments</b>
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+
+          <div class="app-most-recent">
+            {% include 'notes/manualpayment.html' %}
+          </div>
+
+        </div>
+      </details>
+
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            <b>Change of circumstances</b>
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+
+          <div class="app-most-recent">
+            {% include 'notes/iteration2.html' %}
+          </div>
+
+          <div class="app-most-recent">
+            {% include 'notes/iteration1.html' %}
+          </div>
+
+        </div>
+      </details>
+
+
 
     </div>
   </div>

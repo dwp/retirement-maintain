@@ -354,6 +354,57 @@ router.post('/newclaims/contact-details', (req, res) => {
 ;
 
 
+
+// New claims 2 -----------------------------------------------------------------
+// ------------------------------------------------------------------------------
+
+router.post('/newclaims-2/find', (req, res) => {
+  res.redirect('/newclaims-2/find-1')
+})
+;
+
+router.post('/newclaims-2/sp-date', (req, res) => {
+  res.redirect('/newclaims-2/lived-outside')
+})
+;
+
+router.post('/newclaims-2/security1', (req, res) => {
+  res.redirect('/newclaims-2/security2')
+})
+;
+
+router.post('/newclaims-2/security2', (req, res) => {
+  res.redirect('/newclaims-2/sp-date')
+})
+;
+
+router.post('/newclaims-2/lived-outside', (req, res) => {
+  res.redirect('/newclaims-2/worked-outside')
+})
+;
+
+router.post('/newclaims-2/worked-outside', (req, res) => {
+  res.redirect('/newclaims-2/marital')
+})
+;
+
+router.post('/newclaims-2/marital', (req, res) => {
+  res.redirect('/newclaims-2/spouse')
+})
+;
+
+router.post('/newclaims-2/spouse', (req, res) => {
+  res.redirect('/newclaims-2/contact-details')
+})
+;
+
+router.post('/newclaims-2/contact-details', (req, res) => {
+  res.redirect('/newclaims-2/bank')
+})
+;
+
+
+
 // Agent manual -----------------------------------------------------------------
 // ------------------------------------------------------------------------------
 
@@ -375,7 +426,7 @@ router.post('/manualpayment/enteramounts', (req, res) => {
 router.post('/manualpayment/payment', (req, res) => {
   res.redirect('/manualpayment/confirmation')
 })
-;
+
 
 
 module.exports = router
