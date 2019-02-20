@@ -35,74 +35,60 @@ GOV.UK Prototype Kit
 </section>
 
 <div class="govuk-width-container">
-  <main class="govuk-main-wrapper">
+
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+        <form action="/newclaims/declaration" method="post" novalidate>
 
-
-        <form action="frequency" method="post">
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+            <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-heading-xl">
-                  Confirm account provider
+                  Frequency
                 </h1>
               </legend>
-              <label class="govuk-label govuk-label--m" for="passport-number">
-                Who is your account with?
-              </label>
-              <span  class="govuk-body govuk-!-font-size-24">
-                Halifax
-              </span>
-              </br>
-              </br>
-              <div class="govuk-radios govuk-radios--inline">
+
+              <p>
+                You'll get your State Pension payment every 4 weeks unless this will cause you a problem.
+              </p>
+
+              <h2 class="govuk-heading-m"> Yo, waddap? </h2>
+              <div class="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="changed-name-1">
-                    Yes
+                  <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Weekly">
+                  <label class="govuk-label govuk-radios__label" for="payment-frequency-1">
+                    Weekly
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                    No
+                  <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 4 weeks">
+                  <label class="govuk-label govuk-radios__label" for="payment-frequency-2">
+                    Every 2 weeks
                   </label>
                 </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 13 weeks">
+                  <label class="govuk-label govuk-radios__label" for="payment-frequency-3">
+                    Every 4 weeks
+                  </label>
+                </div>
+
               </div>
             </fieldset>
           </div>
 
           <button type="submit" class="govuk-button">
-  Continue
-</button>
-
-
-          </form>
-
-
-
-
+            Continue
+          </button>
 
           </div>
 
-
-      </div>
-
-    </div>
-
-  </div>
-
-</main>
-      </div>
-
-      {% endblock %}
-
-      {% block content %}
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-
+            </form>
+          </div>
         </div>
-      </div>
+      </main>
 
-      {% endblock %}
+
+    {% endblock %}

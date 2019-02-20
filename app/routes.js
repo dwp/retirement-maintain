@@ -403,6 +403,14 @@ router.post('/newclaims-2/contact-details', (req, res) => {
 })
 ;
 
+router.post('/newclaims-2/frequency', function(req, res) {
+  if ( req.body['frequency'] === 'yes' ) {
+    res.redirect('/newclaims-2/declaration');
+  } else {
+    res.redirect('/newclaims-2/change-frequency');
+  }
+});
+
 
 
 // Agent manual -----------------------------------------------------------------
