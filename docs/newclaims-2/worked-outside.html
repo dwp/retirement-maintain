@@ -20,7 +20,7 @@ GOV.UK Prototype Kit
   <dl class="key-details-bar__key-details">
     <div class="key-details-bar__top-block">
 
-      <dd class="key-details-bar__name">Monty East</dd>
+      <dd class="key-details-bar__name">Tallulah East</dd>
 
       <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
 
@@ -35,36 +35,34 @@ GOV.UK Prototype Kit
 </section>
 
 <div class="govuk-width-container">
-  <main class="govuk-main-wrapper">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-      </br>
-      <h1 class="govuk-heading-xl">Additional security question</h1>
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <h1 class="govuk-heading-xl">
+                Have you ever worked outside of the UK?
+              </h1>
+            </legend>
 
-    <form method="post">
-      <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-            <h1 class="govuk-fieldset__heading">
-              What is your home telephone number?
-            </h1>
-          </legend>
-          <span  class="govuk-body govuk-!-font-size-24">
-           0191 123 1234
-          </span>
-          </br>
+                    <form method="post">
+
+            <span id="changed-name-hint" class="govuk-hint">
+              You do not need to tell us about time you served overseas in the British armed forces.
+            </span>
           </br>
           <div class="govuk-radios govuk-radios--inline">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="changed-name-1">
-                Pass
+              <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                Yes
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                Fail
+              <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                No
               </label>
             </div>
           </div>
@@ -74,24 +72,21 @@ GOV.UK Prototype Kit
       <button type="submit" class="govuk-button">
         Continue
       </button>
-</form>
-
-      </div>
-
-    </div>
+    </form>
 
   </div>
 
+
+
+
+
+</section>
+
+</div>
+
+</div>
+</div>
 </main>
-</div>
 
-{% endblock %}
-
-{% block content %}
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-  </div>
-</div>
 
 {% endblock %}

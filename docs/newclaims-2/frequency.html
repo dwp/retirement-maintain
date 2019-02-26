@@ -20,7 +20,7 @@ GOV.UK Prototype Kit
   <dl class="key-details-bar__key-details">
     <div class="key-details-bar__top-block">
 
-      <dd class="key-details-bar__name">Monty East</dd>
+      <dd class="key-details-bar__name">Tallulah East</dd>
 
       <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
 
@@ -40,42 +40,35 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form action="/newclaims-2/declaration" method="post" novalidate>
+        <form method="post">
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-heading-xl">
-                 Payment frequency
+                  How often you'll be paid
                 </h1>
               </legend>
 
               <p>
-                You'll get your State Pension payment every 4 weeks. </p>
-                <p>If you've been getting benefit payments weekly or every 2 weeks, you can choose to get your State Pension
-                   the same way.
+                You'll get your State Pension payment every 4 weeks unless this will cause you a problem.
               </p>
 
-              <h2 class="govuk-heading-m"> Select a payment frequency</h2>
-              <div class="govuk-radios">
+              <h2 class="govuk-heading-m"> Are you happy to get your State Pension every 4 weeks? </h2>
+              <div class="govuk-radios govuk-radios--inline"">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Weekly">
-                  <label class="govuk-label govuk-radios__label" for="payment-frequency-1">
-                    Every 4 weeks
+                  <input class="govuk-radios__input" id="frequency" name="frequency" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="frequency-yes">
+                    Yes
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 4 weeks">
-                  <label class="govuk-label govuk-radios__label" for="payment-frequency-2">
-                    Every 2 weeks
+                  <input class="govuk-radios__input" id="frequency" name="frequency" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="frequency-no">
+                    No
                   </label>
                 </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 13 weeks">
-                  <label class="govuk-label govuk-radios__label" for="payment-frequency-3">
-                    Every week
-                  </label>
-                </div>
+
 
               </div>
             </fieldset>
