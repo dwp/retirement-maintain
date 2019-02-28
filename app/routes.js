@@ -132,14 +132,19 @@ router.post('/iteration1/mobilephone-remove', function(req, res) {
   }
 });
 
-// Work phone number removal
+// Work phone number removal & change
 router.post('/iteration1/workphone-remove', function(req, res) {
-  if ( req.body['workphone-remove'] === 'yes' ) {
+  if ( req.body['workphone-remove'] === 'Yes' ) {
     res.redirect('overview');
   } else {
     res.redirect('workphone');
   }
 });
+
+router.post('/iteration1/workphone', (req, res) => {
+  res.redirect('/iteration1/overview')
+})
+;
 
 // Email removal
 router.post('/iteration1/email-remove', function(req, res) {
@@ -149,6 +154,23 @@ router.post('/iteration1/email-remove', function(req, res) {
     res.redirect('email');
   }
 });
+
+// Marital status change
+router.post('/iteration1/marital-status', (req, res) => {
+  res.redirect('/iteration1/marriage-details')
+})
+;
+
+router.post('/iteration1/marriage-details', (req, res) => {
+  res.redirect('/iteration1/overview')
+})
+;
+
+// Contact preferences
+router.post('/iteration1/contact-preferences', (req, res) => {
+  res.redirect('/iteration1/overview')
+})
+;
 
 ///////////////////////////// BPV iteration ///////////////////////////////////////
 //-------------------------------------------------------------------------------

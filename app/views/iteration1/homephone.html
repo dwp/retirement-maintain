@@ -16,41 +16,24 @@ GOV.UK Prototype Kit
 {% include 'includes/remove-blue-bar.html' %}
 {% endblock %}
 
-<section class="key-details-bar" role="contentinfo" aria-label="Key details">
-  <dl class="key-details-bar__key-details">
-    <div class="key-details-bar__top-block">
-      <dd class="key-details-bar__name">Roberto Hugh Smith</dd>
+{% include './_blue-bar.html' %}
 
-      <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
+  <div class="grid-row">
+    <div class="column-full">
 
-      <dd class="key-details-bar__status">receiving state pension</dd>
+      <nav class="navigation-secondary">
+        <ul>
+          <li>
+            <a href="overview" class="active" aria-current="section">Overview</a>
+          </li>
+          <li>
+            <a href="payment">Payment</a>
+          </li>
+        </ul>
+      </nav>
+
     </div>
-
-    <div class="key-details-bar__bottom-block">
-      <dt><a href="find" class="govuk-link">Find a claim</a></dt>
-    </div>
-
-  </dl>
-</section>
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <nav class="navigation-global">
-      <ul>
-
-        <li>
-          <a href="overview" class="active" aria-current="page">Overview</a>
-        </li>
-
-        <li>
-          <a href="payment" class="" aria-current="page">Payment</a>
-        </li>
-
-      </ul>
-    </nav>
   </div>
-</div>
 
 <div class="govuk-width-container">
 
@@ -61,7 +44,7 @@ GOV.UK Prototype Kit
 <div>
         <a href="overview" class="govuk-back-link">Back</a>
 </div>
-
+</br>
         <h1 class="govuk-heading-l">Change home phone number</h1>
 
       <form method="post">

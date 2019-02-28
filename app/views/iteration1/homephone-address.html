@@ -16,22 +16,7 @@ GOV.UK Prototype Kit
 {% include 'includes/remove-blue-bar.html' %}
 {% endblock %}
 
-<section class="key-details-bar" role="contentinfo" aria-label="Key details">
-  <dl class="key-details-bar__key-details">
-    <div class="key-details-bar__top-block">
-      <dd class="key-details-bar__name">Roberto Hugh Smith</dd>
-
-      <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
-
-      <dd class="key-details-bar__status">receiving state pension</dd>
-    </div>
-
-    <div class="key-details-bar__bottom-block">
-      <dt><a href="find" class="govuk-link">Find a claim</a></dt>
-    </div>
-
-  </dl>
-</section>
+{% include './_blue-bar.html' %}
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
@@ -61,6 +46,8 @@ GOV.UK Prototype Kit
         <div>
           <a href="overview" class="govuk-back-link">Back</a>
         </div>
+
+</br>
 
         <h1 class="govuk-heading-l">Do you want to change the home phone number?</h1>
 

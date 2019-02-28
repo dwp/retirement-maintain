@@ -44,22 +44,29 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
 
         <div>
-                <a href="overview" class="govuk-back-link">Back</a>
+          <a href="overview" class="govuk-back-link">Back</a>
         </div>
 
-        <h1 class="govuk-heading-l">Change email address</h1>
+        <h1 class="govuk-heading-l">Contact preferences</h1>
         <form method="post">
           <div class="govuk-form-group">
-            <label class="govuk-label" for="email">
-              Enter new email address
-            </label>
-            <input class="govuk-input" id="email" name="email" type="email" aria-describedby="email-hint">
-          </div>
 
-          <div>
-          <a href="email-remove" class="govuk-link govuk-!-font-size-19">Remove email address</a>
-        </div>
-          </br>
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="contact-1" name="contactpreference" type="checkbox" value="Large print">
+                <label class="govuk-label govuk-checkboxes__label" for="contact-1">
+                  Large print
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="contact-2" name="contactpreference" type="checkbox" value="Braille">
+                <label class="govuk-label govuk-checkboxes__label" for="contact-2">
+                  Braille
+                </label>
+              </div>
+            </div>
+
+          </div>
 
           <button type="submit" class="govuk-button">
             Save
@@ -67,13 +74,13 @@ GOV.UK Prototype Kit
         </form>
 
 
-        </div>
-
       </div>
 
     </div>
 
   </div>
+
+</div>
 
 </main>        </div>
 </div>

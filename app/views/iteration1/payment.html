@@ -16,33 +16,7 @@ GOV.UK Prototype Kit
 {% include 'includes/remove-blue-bar.html' %}
 {% endblock %}
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <nav class="navigation-global">
-      <ul>
-
-        <li>
-          <a href="find" class="" aria-current="page">Find someone</a>
-        </li>
-
-      </ul>
-    </nav>
-  </div>
-</div>
-
-<section class="key-details-bar" role="contentinfo" aria-label="Key details">
-  <dl class="key-details-bar__key-details">
-    <div class="key-details-bar__top-block">
-
-      <dd class="key-details-bar__name">Roberto Hugh Smith</dd>
-
-      <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
-
-      <dd class="key-details-bar__status">receiving state pension</dd>
-    </div>
-  </dl>
-</section>
+{% include './_blue-bar.html' %}
 
 <main id="content" role="main">
   <div class="grid-row">
@@ -99,9 +73,9 @@ GOV.UK Prototype Kit
             </dt>
             <dd class="app-check-your-answers__answer">
               {% if data.accountholder %}
-                {{data.accountholder}}
+              {{data.accountholder}}
               {% else %}
-                Mr R H Smith
+              Mr R H Smith
               {% endif %}
             </dd>
             <dd class="app-check-your-answers__change">
@@ -114,9 +88,9 @@ GOV.UK Prototype Kit
             </dt>
             <dd class="app-check-your-answers__answer">
               {% if data.accountnumber %}
-                {{data.accountnumber}}
+              {{data.accountnumber}}
               {% else %}
-                12345678
+              12345678
               {% endif %}
             </dd>
             <dd class="app-check-your-answers__change">
@@ -129,9 +103,9 @@ GOV.UK Prototype Kit
             </dt>
             <dd class="app-check-your-answers__answer">
               {% if data.sortcode %}
-                {{data.sortcode}}
+              {{data.sortcode}}
               {% else %}
-                01-02-03
+              01-02-03
               {% endif %}
             </dd>
             <dd class="app-check-your-answers__change">
@@ -144,7 +118,7 @@ GOV.UK Prototype Kit
             </dt>
             <dd class="app-check-your-answers__answer">
               {% if data.rollnumber %}
-                {{data.rollnumber}}
+              {{data.rollnumber}}
               {% endif %}
             </dd>
             <dd class="app-check-your-answers__change">
@@ -154,80 +128,80 @@ GOV.UK Prototype Kit
         </div>
 
 
-                <div class="govuk-grid-column-one-third">
+        <div class="govuk-grid-column-one-third">
 
-                  <h2 class="govuk-heading-m">
-                    Claim history
-                  </h2>
-                  <ol class="app-timeline">
-                    <li class="app-timeline__entry">
-                      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                        Address changed
-                      </h3>
+          <h2 class="govuk-heading-m">
+            Claim history
+          </h2>
+          <ol class="app-timeline">
+            <li class="app-timeline__entry">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                Address changed
+              </h3>
 
-                      <p class="app-timeline__info govuk-!-margin-bottom-0">
-                        <span class="govuk-visually-hidden">Marriage verified</span>
-                        <span class="app-timeline__date">
-                          14 September 2018
-                        </span>
-                      </p>
-                    </li>
+              <p class="app-timeline__info govuk-!-margin-bottom-0">
+                <span class="govuk-visually-hidden">Marriage verified</span>
+                <span class="app-timeline__date">
+                  14 September 2018
+                </span>
+              </p>
+            </li>
 
-                    <li class="app-timeline__entry">
-                      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                        Bank account changed
-                      </h3>
+            <li class="app-timeline__entry">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                Bank account changed
+              </h3>
 
-                      <p class="app-timeline__info govuk-!-margin-bottom-0">
-                        <span class="govuk-visually-hidden">Marriage verified</span>
-                        <span class="app-timeline__date">
-                          5 July 2018
-                        </span>
-                      </p>
-                    </li>
+              <p class="app-timeline__info govuk-!-margin-bottom-0">
+                <span class="govuk-visually-hidden">Marriage verified</span>
+                <span class="app-timeline__date">
+                  5 July 2018
+                </span>
+              </p>
+            </li>
 
-                    <li class="app-timeline__entry">
-                      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                        Frequency changed
-                      </h3>
+            <li class="app-timeline__entry">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                Frequency changed
+              </h3>
 
-                      <p class="app-timeline__info govuk-!-margin-bottom-0">
-                        <span class="govuk-visually-hidden">Marriage verified</span>
-                        <span class="app-timeline__date">
-                        9 June 2018
-                        </span>
-                      </p>
-                    </li>
+              <p class="app-timeline__info govuk-!-margin-bottom-0">
+                <span class="govuk-visually-hidden">Marriage verified</span>
+                <span class="app-timeline__date">
+                  9 June 2018
+                </span>
+              </p>
+            </li>
 
-                    <li class="app-timeline__entry">
-                      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                        Bank account changed
-                      </h3>
+            <li class="app-timeline__entry">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                Bank account changed
+              </h3>
 
-                      <p class="app-timeline__info govuk-!-margin-bottom-0">
-                        <span class="govuk-visually-hidden">Marriage verified</span>
-                        <span class="app-timeline__date">
-                          5 January 2018
-                        </span>
-                      </p>
-                    </li>
+              <p class="app-timeline__info govuk-!-margin-bottom-0">
+                <span class="govuk-visually-hidden">Marriage verified</span>
+                <span class="app-timeline__date">
+                  5 January 2018
+                </span>
+              </p>
+            </li>
 
-                    <li class="app-timeline__entry">
-                      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                        Bank account changed
-                      </h3>
+            <li class="app-timeline__entry">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                Bank account changed
+              </h3>
 
-                      <p class="app-timeline__info govuk-!-margin-bottom-0">
-                        <span class="govuk-visually-hidden">Marriage verified</span>
-                        <span class="app-timeline__date">
-                          17 November 2017
-                        </span>
-                      </p>
-                    </li>
+              <p class="app-timeline__info govuk-!-margin-bottom-0">
+                <span class="govuk-visually-hidden">Marriage verified</span>
+                <span class="app-timeline__date">
+                  17 November 2017
+                </span>
+              </p>
+            </li>
 
-                  </ol>
+          </ol>
 
-                </div>
+        </div>
 
 
         <div class="govuk-grid-column-two-thirds">
@@ -240,86 +214,89 @@ GOV.UK Prototype Kit
 
               </dd>
               <dd class="app-check-your-answers__change">
-                </a>
-              </dd>
-            </div>
-
-            <div class="app-check-your-answers__contents">
-              <dt class="app-check-your-answers__answer">
-                Payment frequency
-              </dt>
-              <dd class="app-check-your-answers__answer">
-                {% if data.frequency %}
-                  {{data.frequency}}
-                {% else %}
-                  Every 4 weeks
-                {% endif %}
-              </dd>
-              <dd class="app-check-your-answers__change">
-                    <a href="frequency">Change</a>
-                </dd>
-              </dd>
-            </div>
-
-            <div class="app-check-your-answers__contents">
-              <dt class="app-check-your-answers__answer">
-                Payment amount
-              </dt>
-              <dd class="app-check-your-answers__answer">
-                {% if data.frequency === 'Weekly' %}
-                  £164.35
-                {% elseif data.frequency === 'Every 4 weeks' %}
-                  £657.40
-                {% elseif data.frequency === 'Every 13 weeks' %}
-                  £2,136.55
-                {% elseif data.frequency === 'Every 52 weeks' %}
-                  £8,546.20
-                {% else %}
-                 £657.40
-                {% endif %}
-              </dd>
-              <dd class="app-check-your-answers__change">
-              </dd>
-            </div>
-
-            <div class="app-check-your-answers__contents">
-              <dt class="app-check-your-answers__answer">
-                Next payment
-              </dt>
-              <dd class="app-check-your-answers__answer">
-                {% if data.frequency === 'Weekly' %}
-                  Tuesday 23 October 2018
-                {% elseif data.frequency === 'Every 4 weeks' %}
-                  Tuesday 6 November 2018
-                {% elseif data.frequency === 'Every 13 weeks' %}
-                  Tuesday 22 January 2019
-                {% elseif data.frequency === 'Every 52 weeks' %}
-                  Tuesday 3 September 2019
-                  {% else %}
-                  Tuesday 6 November 2018
-                {% endif %}
-              </dd>
-              <dd class="app-check-your-answers__change">
-              </dd>
-            </div>
-
+              </a>
+            </dd>
           </div>
 
-
-
-
-
-            </div>
-
-        </main>        </div>
-      </div>
-      {% endblock %}
-
-      {% block content %}
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__answer">
+              Payment frequency
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              {% if data.frequency %}
+              {{data.frequency}}
+              {% else %}
+              Every 4 weeks
+              {% endif %}
+            </dd>
+            <dd class="app-check-your-answers__change">
+              <a href="frequency">Change</a>
+            </dd>
+          </dd>
         </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__answer">
+            Payment amount
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            {% if data.frequency === 'Weekly' %}
+            £164.35
+            {% elseif data.frequency === 'Every 4 weeks' %}
+            £657.40
+            {% elseif data.frequency === 'Every 13 weeks' %}
+            £2,136.55
+            {% elseif data.frequency === 'Every 52 weeks' %}
+            £8,546.20
+            {% else %}
+            £657.40
+            {% endif %}
+          </dd>
+          <dd class="app-check-your-answers__change">
+          </dd>
+        </div>
+
+        {% if not data['dead-day'] or data['imprisoned-day'] %}
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__answer">
+              Next payment
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              {% if data.frequency === 'Weekly' %}
+              Tuesday 23 October 2018
+              {% elseif data.frequency === 'Every 4 weeks' %}
+              Tuesday 6 November 2018
+              {% elseif data.frequency === 'Every 13 weeks' %}
+              Tuesday 22 January 2019
+              {% elseif data.frequency === 'Every 52 weeks' %}
+              Tuesday 3 September 2019
+              {% else %}
+              Tuesday 6 November 2018
+              {% endif %}
+            </dd>
+            <dd class="app-check-your-answers__change">
+              <a href="prevent-payments">Prevent payments</a>
+            </dd>
+          </div>
+        {% endif %}
+
       </div>
 
-      {% endblock %}
+
+
+
+
+    </div>
+
+  </main>        </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

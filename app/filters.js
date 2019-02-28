@@ -41,5 +41,14 @@ module.exports = function (env) {
   /* ------------------------------------------------------------------
     keep the following line to return your filters to the app
   ------------------------------------------------------------------ */
+
+  filters.formatMonth = function(monthAsNumber) {
+    const months = [
+      'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
+      'September', 'October', 'November', 'December'
+    ]
+    return months[monthAsNumber - 1]
+  }
+
   return filters
 }

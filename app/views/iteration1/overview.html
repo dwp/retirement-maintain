@@ -16,32 +16,7 @@ GOV.UK Prototype Kit
 {% include 'includes/remove-blue-bar.html' %}
 {% endblock %}
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <nav class="navigation-global">
-      <ul>
-        <li>
-          <a href="find" class="" aria-current="page">Find someone</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</div>
-
-<section class="key-details-bar" role="contentinfo" aria-label="Key details">
-  <dl class="key-details-bar__key-details">
-    <div class="key-details-bar__top-block">
-
-      <dd class="key-details-bar__name">Roberto Hugh Smith</dd>
-
-      <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
-
-      <dd class="key-details-bar__status">receiving state pension</dd>
-    </div>
-
-  </dl>
-</section>
+{% include './_blue-bar.html' %}
 
 <main id="content" role="main">
   <div class="grid-row">
@@ -109,7 +84,44 @@ GOV.UK Prototype Kit
                 Date of birth
               </dt>
               <dd class="app-check-your-answers__answer">
-                12/12/1952
+                12 December 1952
+              </dd>
+              <dd class="app-check-your-answers__change">
+              </dd>
+            </div>
+
+            {% if data['dead-day'] %}
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__answer">
+                  Date of death
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  {{data['dead-day']}} {{data['dead-month'] | formatMonth}} {{data['dead-year']}}
+                </dd>
+                <dd class="app-check-your-answers__change">
+                </dd>
+              </div>
+            {% endif %}
+
+            {% if data['imprisoned-day'] %}
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__answer">
+                  Date of imprisonment
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  {{data['imprisoned-day']}} {{data['imprisoned-month'] | formatMonth}} {{data['imprisoned-year']}}
+                </dd>
+                <dd class="app-check-your-answers__change">
+                </dd>
+              </div>
+            {% endif %}
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__answer">
+                State Pension date
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                12 December 2017
               </dd>
               <dd class="app-check-your-answers__change">
               </dd>
@@ -117,12 +129,19 @@ GOV.UK Prototype Kit
 
             <div class="app-check-your-answers__contents">
               <dt class="app-check-your-answers__answer">
-                State Pension date
+                Marital status
               </dt>
               <dd class="app-check-your-answers__answer">
-                12/12/2017
+                {% if data.maritalstatus %}
+                  {{data.maritalstatus}}
+                  {% else %}
+                    Never been married
+                {% endif %}
               </dd>
               <dd class="app-check-your-answers__change">
+                <a href="marital-status">
+                  Change<span class="govuk-visually-hidden">Change address</span>
+                </a>
               </dd>
             </div>
           </div>
@@ -191,7 +210,9 @@ GOV.UK Prototype Kit
                 Work phone number
               </dt>
               <dd class="app-check-your-answers__answer">
-                {% if data.worknumber %}
+
+                {% if data['workphone-remove'] === 'Yes' %}
+                {% elseif data.worknumber %}
                   {{data.worknumber}}
                 {% else %}
                   0191 2798475
@@ -199,7 +220,7 @@ GOV.UK Prototype Kit
               </dd>
               <dd class="app-check-your-answers__change">
                 <a href="workphone">
-                  Change<span class="govuk-visually-hidden">Change work phone number</span>
+                  Change
                 </a>
               </dd>
             </div>
@@ -212,10 +233,18 @@ GOV.UK Prototype Kit
                 {% if data.mobilenumber %}
                   {{data.mobilenumber}}
                 {% endif %}
-              </dd>
+                {% if data['mobilephone-remove'] === 'Yes' %}
+                {% elseif data.mobilephone %}
+                  {{data.mobilephone}}
+                {% endif %}
+                </dd>
               <dd class="app-check-your-answers__change">
                 <a href="mobilephone">
-                  Change<span class="govuk-visually-hidden">Change email </span>
+                  {% if not data.mobilenumber %}
+                    Add<span class="govuk-visually-hidden"> mobile number</span>
+                  {% else %}
+                    Change<span class="govuk-visually-hidden"> mobile number</span>
+                  {% endif %}
                 </a>
               </dd>
             </div>
@@ -231,11 +260,34 @@ GOV.UK Prototype Kit
               </dd>
               <dd class="app-check-your-answers__change">
                 <a href="email">
-                  Change<span class="govuk-visually-hidden">Change email </span>
+                  {% if not data.email %}
+                    Add<span class="govuk-visually-hidden"> mobile number</span>
+                  {% else %}
+                    Change<span class="govuk-visually-hidden"> mobile number</span>
+                  {% endif %}
                 </a>
               </dd>
             </div>
 
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__answer">
+                Contact preferences
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                {% if data.contactpreference %}
+                  {{data.contactpreference}}
+                {% endif %}
+              </dd>
+              <dd class="app-check-your-answers__change">
+                <a href="contact-preferences">
+                  {% if not data.contactpreference %}
+                    Add<span class="govuk-visually-hidden"> contact preferences</span>
+                  {% else %}
+                    Change<span class="govuk-visually-hidden"> contact preferences</span>
+                  {% endif %}
+                </a>
+              </dd>
+            </div>
 
           </div>
 
