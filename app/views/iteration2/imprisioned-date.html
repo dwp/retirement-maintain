@@ -29,9 +29,27 @@ GOV.UK Prototype Kit
           <div class="grid-row">
             <div class="column-full">
 
-{% include './_bar.html' %}
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
 
-{% include './_tab-overview.html' %}
+                  {% if data['imprisoned-day'] or data['dead-day'] %}
+                    {% set status = data['stopped-reason'] %}
+                  {% else %}
+                    {% set status = 'Payment returned'%}
+                  {% endif %}
+
+                      <div>
+                        <h1 class="govuk-heading-xl">
+                          Hugh Roberto Smith </br>
+                                          <span class="govuk-caption-xl">QQ 12 34 56 X</span>
+                          <span class="app-c-tag app-c-tag--danger">Imprisioned</span>
+                        </h1>
+                      </div>
+
+                </div>
+              </div>
+
+{% include './_tab-payment-paused.html' %}
 
             </div>
           </div>
@@ -43,12 +61,12 @@ GOV.UK Prototype Kit
                 <a href="prevent-payments" class="govuk-back-link">Back</a>
         </div>
 
-        <form action="frequency" method="post">
+        <form action="payment-prision" method="post">
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
             </legend>
-            <h1 class="govuk-heading-l">Enter date of death</h1>
+            <h1 class="govuk-heading-l">Enter date of imprisionment</h1>
             <div class="govuk-date-input" id="passport-issued">
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">

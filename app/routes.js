@@ -281,7 +281,7 @@ router.post('/iteration2/homephone-address', function(req, res) {
   if ( req.body['homephone-address'] === 'Yes' ) {
     res.redirect('homephone');
   } else {
-    res.redirect('overview');
+    res.redirect('contact');
   }
 });
 
@@ -344,6 +344,15 @@ router.post('/iteration2/contact-preferences', (req, res) => {
 })
 ;
 
+
+// Stopping payments
+router.post('/iteration2/prevent-payments', function(req, res) {
+  if ( req.body['stopped-reason'] === 'dead' ) {
+    res.redirect('death-date');
+  } else {
+    res.redirect('imprisioned-date');
+  }
+});
 
 ///////////////////////////// BPV iteration ///////////////////////////////////////
 //-------------------------------------------------------------------------------
