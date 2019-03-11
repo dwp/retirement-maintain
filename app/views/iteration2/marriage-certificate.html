@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+{% include './_blue-bar.html' %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <nav class="navigation-secondary">
+      <ul>
+        <li>
+          <a href="overview" class="active" aria-current="page">Overview</a>
+        </li>
+
+        <li>
+          <a href="contact">Contact</a>
+        </li>
+
+        <li>
+          <a href="payment">Payment</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</div>
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div>
+          <a href="marital-status" class="govuk-back-link">Back</a>
+        </div>
+
+      </br>
+
+      <h1 class="govuk-heading-l">Marriage certificate</h1>
+    <form action="overview" method="post">
+
+        <p>This change of marital details has been made, but we need to see the marriage
+          certificate before we can verify the marriage in our records.  </br>
+        </br>
+
+
+        Send the marriage certificate with National Insurance number to:  </br>
+        Address line 1  </br>
+        Address line 2  </br>
+        Random town  </br>
+        P05T C0D3
+      </p>
+
+      <button type="submit" class="govuk-button">
+        Continue
+      </button>
+    </form>
+
+
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>        </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

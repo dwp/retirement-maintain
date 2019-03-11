@@ -18,22 +18,26 @@ GOV.UK Prototype Kit
 
 {% include './_blue-bar.html' %}
 
-  <div class="grid-row">
-    <div class="column-full">
+<div class="grid-row">
+  <div class="column-full">
 
-      <nav class="navigation-secondary">
-        <ul>
-          <li>
-            <a href="overview">Overview</a>
-          </li>
-          <li>
-            <a href="payment" class="active" aria-current="section">Payment</a>
-          </li>
-        </ul>
-      </nav>
+    <nav class="navigation-secondary">
+      <ul>
+        <li>
+          <a href="overview">Overview</a>
+        </li>
 
-    </div>
+        <li>
+          <a href="contact">Contact</a>
+        </li>
+
+        <li>
+          <a href="payment" class="active" aria-current="page">Payment</a>
+        </li>
+      </ul>
+    </nav>
   </div>
+</div>
 
 <div class="govuk-width-container">
 
@@ -45,36 +49,37 @@ GOV.UK Prototype Kit
                 <a href="payment" class="govuk-back-link">Back</a>
         </div>
 
-        <form action="frequency" method="post">
+        <form action="death-date" method="post">
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
             </legend>
-            <h1 class="govuk-heading-l">Change payment frequency</h1>
-            <p>Select new payment frequency</p>
+            <h1 class="govuk-heading-l">Stop payments</h1>
             <div class="govuk-radios">
+
+              <p>Select the reason for stopping payments</p>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Weekly">
+                <input class="govuk-radios__input" id="payment-frequency" name="stopped-reason" type="radio" value="dead">
                 <label class="govuk-label govuk-radios__label" for="payment-frequency-1">
-                  Weekly
+                  Death
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 4 weeks">
+                <input class="govuk-radios__input" id="payment-frequency" name="stopped-reason" type="radio" value="imprisoned">
                 <label class="govuk-label govuk-radios__label" for="payment-frequency-2">
-                  Every 4 weeks
+                  Prison
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 13 weeks">
-                <label class="govuk-label govuk-radios__label" for="payment-frequency-3">
-                  Every 13 weeks
+                <input class="govuk-radios__input" id="payment-frequency" name="stopped-reason" type="radio" value="imprisoned">
+                <label class="govuk-label govuk-radios__label" for="payment-frequency-2">
+                  Financial abuse
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 52 weeks">
-                <label class="govuk-label govuk-radios__label" for="payment-frequency-4">
-                  Every 52 weeks
+                <input class="govuk-radios__input" id="payment-frequency" name="stopped-reason" type="radio" value="imprisoned">
+                <label class="govuk-label govuk-radios__label" for="payment-frequency-2">
+                  De-retirement
                 </label>
               </div>
             </div>
@@ -82,7 +87,7 @@ GOV.UK Prototype Kit
         </div>
 
         <button type="submit" class="govuk-button">
-          Save
+          Continue
         </button>
       </form>
 
