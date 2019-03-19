@@ -175,7 +175,7 @@ GOV.UK Prototype Kit
         </div>
 
 
-        <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-grid-column-full">
           <h2 class="govuk-heading-m">Payment details</h2>
           <dl class="app-check-your-answers app-check-your-answers--short">
             <div class="app-check-your-answers__contents">
@@ -231,41 +231,18 @@ GOV.UK Prototype Kit
 
         <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__answer">
-            Previous payment
+            Last payment
           </dt>
           <dd class="app-check-your-answers__answer">
-            £657.40
+            Tuesday 29 January 2019
           </dd>
           <dd class="app-check-your-answers__answer">
-            <span class="app-c-tag app-c-tag--warning">PAYMENT RETURNED</span>
+            £657.40
           </dd>
           <dd class="app-check-your-answers__change">
           </dd>
         </div>
 
-        {% if not data['dead-day'] or data['imprisoned-day'] %}
-          <div class="app-check-your-answers__contents">
-            <dt class="app-check-your-answers__answer">
-              Next payment
-            </dt>
-            <dd class="app-check-your-answers__answer">
-              {% if data.frequency === 'Weekly' %}
-              Tuesday 19 March 2019
-              {% elseif data.frequency === 'Every 4 weeks' %}
-              Tuesday 2 April 2019
-              {% elseif data.frequency === 'Every 13 weeks' %}
-              Tuesday 22 January 2019
-              {% elseif data.frequency === 'Every 52 weeks' %}
-              Tuesday 3 September 2019
-              {% else %}
-              Tuesday 6 November 2018
-              {% endif %}
-            </dd>
-            <dd class="app-check-your-answers__change">
-              <a href="prevent-payments"></a>
-            </dd>
-          </div>
-        {% endif %}
 
       </div>
 
