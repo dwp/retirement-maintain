@@ -31,7 +31,7 @@ GOV.UK Prototype Kit
 
 {% include './_bar.html' %}
 
-{% include './_tab-contact.html' %}
+{% include './_tab-payment.html' %}
 
             </div>
           </div>
@@ -49,7 +49,7 @@ GOV.UK Prototype Kit
 {{data.postcode}} <a href="address" class="govuk-link"> Change</a></h2>
 
 
-            <form method="post">
+            <form action="reissue-payment" method="post">
               <div class="govuk-form-group">
                 <label class="govuk-label class" for="sort">
                   Select new address

@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+{% include './_find-someone.html' %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+{% include './_bar.html' %}
+
+{% include './_tab-payment.html' %}
+
+            </div>
+          </div>
+        </main>
+
+        </br>
+
+        <a href="/bpv-iteration/bankdetails" class="govuk-back-link">Back</a>
+
+        <h1 class="govuk-heading-l">Start payments again</h1>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption">Missed payments</caption>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">00 month year to 00 month year</th>
+              <td class="govuk-table__cell">
+                  0000
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption">Regular payments</caption>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">X</th>
+              <td class="govuk-table__cell">£68.41</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Breakdown</th>
+              <td class="govuk-table__cell">000</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Payment period dates</th>
+              <td class="govuk-table__cell">xxx</td>
+            </tr>
+          </tbody>
+        </table>
+
+      <form action="payment-SP" method="post">
+
+        <button type="submit" class="govuk-button">
+          Continue
+        </button>
+
+      </form>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
