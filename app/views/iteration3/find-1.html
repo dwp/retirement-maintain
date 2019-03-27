@@ -22,29 +22,23 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
       </br>
-        <h1 class="govuk-heading-xl">Find someone</h1>
+      <h1 class="govuk-heading-xl">Result</h1>
 
 
-        <form method="post">
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="nino">
-              Enter a National Insurance number
-            </label>
-            <input class="govuk-input govuk-!-width-two-thirds" id="nino" name="nino" type="nino" aria-describedby="nino-hint">
-          </div>
+      <form method="post">
 
-          <button type="submit" class="govuk-button">
-            Find
-          </button>
-
-<div>
-  <h2 class="govuk-heading-m">Result</h2>
-    <p class="govuk-body govuk-!-font-size-27">  <a href="overview" class="govuk-link"><b>Roberto Hugh Smith</b></a> </br>
-  {{data.nino}}
-</p>
+        <h2 class="govuk-heading-l">Roberto Hugh Smith </br>
+          <span class="govuk-caption-l"> {{data.nino}} </span>
+          <span class="app-c-tag app-c-tag--warning">No address</span>
+        </h2>
 
 
-</div>
+        <button type="submit" class="govuk-button">
+          Continue
+        </button>
+        <p>
+          <a href="find" class="govuk-link">Back</a>
+        </p>
 
       </div>
 
@@ -53,15 +47,15 @@ GOV.UK Prototype Kit
   </div>
 
 </main>
-      </div>
+</div>
 
-      {% endblock %}
+{% endblock %}
 
-      {% block content %}
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
 
-        </div>
-      </div>
+  </div>
+</div>
 
-      {% endblock %}
+{% endblock %}

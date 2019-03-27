@@ -29,9 +29,9 @@ GOV.UK Prototype Kit
           <div class="grid-row">
             <div class="column-full">
 
-{% include './_bar.html' %}
+{% include './_bar-DLO.html' %}
 
-{% include './_tab-payment.html' %}
+{% include './_tab-payment-DLO.html' %}
 
             </div>
           </div>
@@ -137,7 +137,7 @@ GOV.UK Prototype Kit
               </h3>
 
               <p class="app-timeline__info govuk-!-margin-bottom-0">
-                <span class="govuk-visually-hidden">Marriage verified</span>
+                <span class="govuk-visually-hidden">Bank account changed</span>
                 <span class="app-timeline__date">
                   5 July 2018
                 </span>
@@ -150,7 +150,7 @@ GOV.UK Prototype Kit
               </h3>
 
               <p class="app-timeline__info govuk-!-margin-bottom-0">
-                <span class="govuk-visually-hidden">Marriage verified</span>
+                <span class="govuk-visually-hidden">Frequency changed</span>
                 <span class="app-timeline__date">
                   9 June 2018
                 </span>
@@ -163,7 +163,7 @@ GOV.UK Prototype Kit
               </h3>
 
               <p class="app-timeline__info govuk-!-margin-bottom-0">
-                <span class="govuk-visually-hidden">Marriage verified</span>
+                <span class="govuk-visually-hidden">Bank account changed</span>
                 <span class="app-timeline__date">
                   5 January 2018
                 </span>
@@ -186,7 +186,7 @@ GOV.UK Prototype Kit
               </dd>
               <dd class="app-check-your-answers__change">
                 <a href="address-DLO">
-                  *Re-issue payment*<span class="govuk-visually-hidden"></span>
+                  Start payments again<span class="govuk-visually-hidden"></span>
                 </a>
               </dd>
             </div>
@@ -234,7 +234,7 @@ GOV.UK Prototype Kit
             Last payment
           </dt>
           <dd class="app-check-your-answers__answer">
-            Tuesday 5 March 2019
+            Tuesday 5 February 2019
           </dd>
           <dd class="app-check-your-answers__answer">
             £657.40
@@ -242,33 +242,6 @@ GOV.UK Prototype Kit
           <dd class="app-check-your-answers__change">
           </dd>
         </div>
-
-        {% if not data['dead-day'] or data['imprisoned-day'] %}
-          <div class="app-check-your-answers__contents">
-            <dt class="app-check-your-answers__answer">
-              Next payment
-            </dt>
-            <dd class="app-check-your-answers__answer">
-              {% if data.frequency === 'Weekly' %}
-              Tuesday 19 March 2019
-              {% elseif data.frequency === 'Every 4 weeks' %}
-              Tuesday 4 March 2019
-              {% elseif data.frequency === 'Every 13 weeks' %}
-              Tuesday 22 January 2019
-              {% elseif data.frequency === 'Every 52 weeks' %}
-              Tuesday 3 September 2019
-              {% else %}
-              Tuesday 2 April 2019
-              {% endif %}
-            </dd>
-            <dd class="app-check-your-answers__answer">
-              £657.40
-            </dd>
-            <dd class="app-check-your-answers__change">
-              <a href="prevent-payments"></a>
-            </dd>
-          </div>
-        {% endif %}
 
       </div>
 
@@ -295,6 +268,11 @@ GOV.UK Prototype Kit
             <dd class="app-check-your-answers__answer">
               £657.40
             </dd>
+            <dd class="app-check-your-answers__answer">
+              <span class="not-verified-badge not-verified">
+               <b>Not credited</b>
+              </span>
+            </dd>
             <dd class="app-check-your-answers__change">
               <a href="frequency"></a>
             </dd>
@@ -303,10 +281,15 @@ GOV.UK Prototype Kit
 
         <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__answer">
-            X Month 2019
+            5 February 2019
           </dt>
           <dd class="app-check-your-answers__answer">
             £657.40
+          </dd>
+          <dd class="app-check-your-answers__answer">
+              <span class="verified-badge verified">
+               <b>Credited</b>
+              </span>
           </dd>
           <dd class="app-check-your-answers__change">
           </dd>
@@ -318,6 +301,43 @@ GOV.UK Prototype Kit
           </dt>
           <dd class="app-check-your-answers__answer">
             £657.40
+          </dd>
+          <dd class="app-check-your-answers__answer">
+              <span class="verified-badge verified">
+               <b>Credited</b>
+              </span>
+          </dd>
+          <dd class="app-check-your-answers__change">
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__answer">
+            X Month 2018
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            £657.40
+          </dd>
+          <dd class="app-check-your-answers__answer">
+            <span class="verified-badge verified">
+              <b>Credited</b>
+            </span>
+          </dd>
+          <dd class="app-check-your-answers__change">
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__answer">
+            X Month 2018
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            £657.40
+          </dd>
+          <dd class="app-check-your-answers__answer">
+            <span class="verified-badge verified">
+             <b>Credited</b>
+            </span>
           </dd>
           <dd class="app-check-your-answers__change">
           </dd>
