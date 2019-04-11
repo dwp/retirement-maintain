@@ -29,9 +29,9 @@ GOV.UK Prototype Kit
           <div class="grid-row">
             <div class="column-full">
 
-{% include './_bar-DLO.html' %}
+{% include './_bar.html' %}
 
-{% include './_tab-payment-DLO.html' %}
+{% include './_tab-contact.html' %}
 
             </div>
           </div>
@@ -40,16 +40,16 @@ GOV.UK Prototype Kit
         </br>
 
         <div>
-          <a href="address-dlo" class="govuk-back-link">Back</a>
+          <a href="address" class="govuk-back-link">Back</a>
         </div>
 
-        <h1 class="govuk-heading-l">Add new address</h1>
+        <h1 class="govuk-heading-l">Change address</h1>
 
 <h2 class="govuk-heading-s">Postcode </br>
 {{data.postcode}} <a href="address" class="govuk-link"> Change</a></h2>
 
 
-            <form action="reissue-payment" method="post">
+            <form method="post">
               <div class="govuk-form-group">
                 <label class="govuk-label class" for="sort">
                   Select new address

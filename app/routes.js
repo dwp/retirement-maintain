@@ -523,7 +523,7 @@ router.post('/iteration3/marriage-details', (req, res) => {
 
 // Contact preferences
 router.post('/iteration3/contact-preferences', (req, res) => {
-  res.redirect('/iteration3/overview')
+  res.redirect('/iteration3/contact')
 })
 ;
 
