@@ -16,18 +16,7 @@ GOV.UK Prototype Kit
 {% include 'includes/remove-blue-bar.html' %}
 {% endblock %}
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <nav class="navigation-global">
-      <ul>
-        <li>
-          <a href="find" class="" aria-current="page">Find someone</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</div>
+{% include './_find-someone.html' %}
 
 <section class="key-details-bar" role="contentinfo" aria-label="Key details">
   <dl class="key-details-bar__key-details">
@@ -42,8 +31,8 @@ GOV.UK Prototype Kit
   </dl>
 </section>
 
-<div class="govuk-width-container">
 
+<div class="govuk-width-container">
 
 
   <main class="govuk-main-wrapper " id="main-content" role="main">

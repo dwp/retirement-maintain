@@ -721,7 +721,7 @@ router.post('/iteration4/prevent-payments', function(req, res) {
 
 
 
-///////////////////////////// Iteration 5 ///////////////////////////////
+///////////////////////////// BPV iteration 2 ///////////////////////////////
 
 router.use((req, res, next) => {
   if (req.method === 'POST') {
@@ -730,8 +730,8 @@ router.use((req, res, next) => {
   next()
 })
 
-router.post('/iteration5/frequency', (req, res) => {
-  res.redirect('/iteration5/payment')
+router.post('/bpv-iteration2/frequency', (req, res) => {
+  res.redirect('/bpv-iteration2/payment')
 })
 ;
 
@@ -742,8 +742,8 @@ router.use((req, res, next) => {
   next()
 })
 
-router.post('/iteration5/bankdetails', (req, res) => {
-  res.redirect('/iteration5/reissue-payment')
+router.post('/bpv-iteration2/bankdetails', (req, res) => {
+  res.redirect('/bpv-iteration2/reissue-payment')
 })
 ;
 
@@ -754,8 +754,8 @@ router.use((req, res, next) => {
   next()
 })
 
-router.post('/iteration5/workphone', (req, res) => {
-  res.redirect('/iteration5/overview')
+router.post('/bpv-iteration2/workphone', (req, res) => {
+  res.redirect('/bpv-iteration2/overview')
 })
 ;
 
@@ -766,8 +766,8 @@ router.use((req, res, next) => {
   next()
 })
 
-router.post('/iteration5/mobilephone', (req, res) => {
-  res.redirect('/iteration5/overview')
+router.post('/bpv-iteration2/mobilephone', (req, res) => {
+  res.redirect('/bpv-iteration2/overview')
 })
 ;
 
@@ -778,8 +778,8 @@ router.use((req, res, next) => {
   next()
 })
 
-router.post('/iteration5/email', (req, res) => {
-  res.redirect('/iteration5/overview')
+router.post('/bpv-iteration2/email', (req, res) => {
+  res.redirect('/bpv-iteration2/overview')
 })
 ;
 
@@ -790,8 +790,8 @@ router.use((req, res, next) => {
   next()
 })
 
-router.post('/iteration5/homephone', (req, res) => {
-  res.redirect('/iteration5/overview')
+router.post('/bpv-iteration2/homephone', (req, res) => {
+  res.redirect('/bpv-iteration2/overview')
 })
 ;
 
@@ -802,8 +802,8 @@ router.use((req, res, next) => {
   next()
 })
 
-router.post('/iteration5/find', (req, res) => {
-  res.redirect('/iteration5/find-1')
+router.post('/bpv-iteration2/find', (req, res) => {
+  res.redirect('/bpv-iteration2/find-1')
 })
 ;
 
@@ -814,18 +814,18 @@ router.use((req, res, next) => {
   next()
 })
 
-router.post('/iteration5/address', (req, res) => {
-  res.redirect('/iteration5/address-1')
+router.post('/bpv-iteration2/address', (req, res) => {
+  res.redirect('/bpv-iteration2/address-1')
 })
 ;
 
-router.post('/iteration5/address-1', (req, res) => {
-  res.redirect('/iteration5/homephone-address')
+router.post('/bpv-iteration2/address-1', (req, res) => {
+  res.redirect('/bpv-iteration2/homephone-address')
 })
 ;
 
 // Change of address and home phone number
-router.post('/iteration5/homephone-address', function(req, res) {
+router.post('/bpv-iteration2/homephone-address', function(req, res) {
   if ( req.body['homephone-address'] === 'Yes' ) {
     res.redirect('homephone');
   } else {
@@ -834,7 +834,7 @@ router.post('/iteration5/homephone-address', function(req, res) {
 });
 
 // Home phone number removal
-router.post('/iteration5/homephone-remove', function(req, res) {
+router.post('/bpv-iteration2/homephone-remove', function(req, res) {
   if ( req.body['homephone-remove'] === 'Yes' ) {
     res.redirect('overview');
   } else {
@@ -844,7 +844,7 @@ router.post('/iteration5/homephone-remove', function(req, res) {
 
 
 // Mobile phone number removal
-router.post('/iteration5/mobilephone-remove', function(req, res) {
+router.post('/bpv-iteration2/mobilephone-remove', function(req, res) {
   if ( req.body['mobilephone-remove'] === 'yes' ) {
     res.redirect('overview');
   } else {
@@ -853,7 +853,7 @@ router.post('/iteration5/mobilephone-remove', function(req, res) {
 });
 
 // Work phone number removal & change
-router.post('/iteration5/workphone-remove', function(req, res) {
+router.post('/bpv-iteration2/workphone-remove', function(req, res) {
   if ( req.body['workphone-remove'] === 'Yes' ) {
     res.redirect('overview');
   } else {
@@ -861,13 +861,13 @@ router.post('/iteration5/workphone-remove', function(req, res) {
   }
 });
 
-router.post('/iteration5/workphone', (req, res) => {
-  res.redirect('/iteration5/overview')
+router.post('/bpv-iteration2/workphone', (req, res) => {
+  res.redirect('/bpv-iteration2/overview')
 })
 ;
 
 // Email removal
-router.post('/iteration5/email-remove', function(req, res) {
+router.post('/bpv-iteration2/email-remove', function(req, res) {
   if ( req.body['email-remove'] === 'yes' ) {
     res.redirect('overview');
   } else {
@@ -876,25 +876,25 @@ router.post('/iteration5/email-remove', function(req, res) {
 });
 
 // Marital status change
-router.post('/iteration5/marital-status', (req, res) => {
-  res.redirect('/iteration5/marriage-details')
+router.post('/bpv-iteration2/marital-status', (req, res) => {
+  res.redirect('/bpv-iteration2/marriage-details')
 })
 ;
 
-router.post('/iteration5/marriage-details', (req, res) => {
-  res.redirect('/iteration5/marriage-certificate')
+router.post('/bpv-iteration2/marriage-details', (req, res) => {
+  res.redirect('/bpv-iteration2/marriage-certificate')
 })
 ;
 
 // Contact preferences
-router.post('/iteration5/contact-preferences', (req, res) => {
-  res.redirect('/iteration5/contact')
+router.post('/bpv-iteration2/contact-preferences', (req, res) => {
+  res.redirect('/bpv-iteration2/contact')
 })
 ;
 
 
 // Stopping payments
-router.post('/iteration5/prevent-payments', function(req, res) {
+router.post('/bpv-iteration2/prevent-payments', function(req, res) {
   if ( req.body['stopped-reason'] === 'dead' ) {
     res.redirect('death-date');
   } else {
