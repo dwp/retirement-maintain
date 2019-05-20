@@ -16,18 +16,26 @@ GOV.UK Prototype Kit
 {% include 'includes/remove-blue-bar.html' %}
 {% endblock %}
 
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <nav class="navigation-global">
+      <ul>
+        <li>
+          <a href="find" class="" aria-current="page">Find someone</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
 <section class="key-details-bar" role="contentinfo" aria-label="Key details">
   <dl class="key-details-bar__key-details">
     <div class="key-details-bar__top-block">
 
-      <dd class="key-details-bar__name">Tallulah East</dd>
+      <dd class="key-details-bar__name">Monty East</dd>
 
       <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
-
-    </div>
-
-    <div class="key-details-bar__bottom-block">
-      <dt><a href="find" class="govuk-link">Start again</a></dt>
 
     </div>
 
@@ -40,26 +48,28 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form action="/newclaims/declaration" method="post" novalidate>
+        <form action="/newclaims2/declaration" method="post" novalidate>
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-heading-xl">
-                  Frequency
+                 Payment frequency
                 </h1>
               </legend>
 
               <p>
-                You'll get your State Pension payment every 4 weeks unless this will cause you a problem.
+                You'll get your State Pension payment every 4 weeks. </p>
+                <p>If you've been getting benefit payments weekly or every 2 weeks, you can choose to get your State Pension
+                   the same way.
               </p>
 
-              <h2 class="govuk-heading-m"> Yo, waddap? </h2>
+              <h2 class="govuk-heading-m"> Select a payment frequency</h2>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Weekly">
                   <label class="govuk-label govuk-radios__label" for="payment-frequency-1">
-                    Weekly
+                    Every 4 weeks
                   </label>
                 </div>
                 <div class="govuk-radios__item">
@@ -71,7 +81,7 @@ GOV.UK Prototype Kit
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="payment-frequency" name="frequency" type="radio" value="Every 13 weeks">
                   <label class="govuk-label govuk-radios__label" for="payment-frequency-3">
-                    Every 4 weeks
+                    Every week
                   </label>
                 </div>
 

@@ -15,18 +15,27 @@ GOV.UK Prototype Kit
 {% block headEnd %}
 {% include 'includes/remove-blue-bar.html' %}
 {% endblock %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <nav class="navigation-global">
+      <ul>
+        <li>
+          <a href="find" class="" aria-current="page">Find someone</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
 <section class="key-details-bar" role="contentinfo" aria-label="Key details">
   <dl class="key-details-bar__key-details">
     <div class="key-details-bar__top-block">
 
-      <dd class="key-details-bar__name">Tallulah East</dd>
+      <dd class="key-details-bar__name">Monty East</dd>
 
       <dd class="key-details-bar__nino">QQ 12 34 56 X</dd>
-
-    </div>
-
-    <div class="key-details-bar__bottom-block">
-      <dt><a href="find" class="govuk-link">Start again</a></dt>
 
     </div>
 
@@ -40,30 +49,30 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form action="/newclaims/find" method="post" novalidate>
+        <form action="/newclaims2/find" method="post" novalidate>
 
           <div>
             <h1 class="govuk-heading-xl">
-              What you will get
+              Your State Pension
             </h1>
 
             <table class="govuk-table">
 
               <thead class="govuk-table__head">
-                <h3 class="govuk-heading-m">Weeeeeek
+                <h3 class="govuk-heading-m">Weekly amount
                 </h3>
               </thead>
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
                   <td class="govuk-table__cell" >Total</td>
-                  <td class="govuk-table__cell">£00</td>
+                  <td class="govuk-table__cell">£164.35</td>
                 </tr>
 
 
                   </tbody>
                 </table>
 
-                </br>
+                <br>
 
             <table class="govuk-table">
 
@@ -99,7 +108,7 @@ GOV.UK Prototype Kit
                   </tbody>
                 </table>
 
-              </br>
+              <br>
 
               <table class="govuk-table">
 
@@ -131,17 +140,16 @@ GOV.UK Prototype Kit
                 </tbody>
               </table>
 
-            </br>
+            <br>
 
 
             <div>
               <h2 class="govuk-heading-m">What happens next</h2>
-              <p>You will receive details about your State Pension up
-                to 14 days before your State Pension date. We may also
+              <p>We'll send you a letter confirming your State Pension details. We may also
                 contact you if we need more information. </p>
               </div>
 
-            </br>
+            <br>
 
             <button type="submit" class="govuk-button">
               End call
