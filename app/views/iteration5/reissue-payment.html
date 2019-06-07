@@ -1,0 +1,127 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+{% include './_find-someone.html' %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+
+            {% include './_bar-dead.html' %}
+
+            {% include './_tab-payment-dead.html' %}
+
+          </div>
+        </div>
+      </main>
+
+    </br>
+
+    <a href="/bpv-iteration/bankdetails" class="govuk-back-link">Back</a>
+
+    <h1 class="govuk-heading-l">Start payments again</h1>
+
+  </div>
+
+  <div class="govuk-grid-column-two-thirds">
+    <table class="govuk-table">
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">Missed payments</th>
+          <td class="govuk-table__cell">
+
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">Tuesday 2 April 2019</th>
+          <td class="govuk-table__cell">
+          £657.40
+          </td>
+        </tr>
+
+
+      </tbody>
+    </table>
+
+
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        This will be paid on Friday 19 April 2019.
+      </strong>
+    </div>
+
+
+    <table class="govuk-table">
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">Regular payments</th>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">Next payment</th>
+          <td class="govuk-table__cell">Tuesday 30 April 2019</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">Payment amount</th>
+          <td class="govuk-table__cell">£674.50</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">Frequency</th>
+          <td class="govuk-table__cell">Every 4 weeks</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form action="payment" method="post">
+
+      <button type="submit" class="govuk-button">
+        Continue
+      </button>
+
+    </form>
+
+
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

@@ -29,7 +29,7 @@ GOV.UK Prototype Kit
           <div class="grid-row">
             <div class="column-full">
 
-{% include './_bar.html' %}
+{% include './_bar-dead.html' %}
 
 {% include './_tab-overview.html' %}
 
@@ -43,7 +43,7 @@ GOV.UK Prototype Kit
                 <a href="prevent-payments" class="govuk-back-link">Back</a>
         </div>
 
-        <form action="frequency" method="post">
+        <form action="overview-dead-NV" method="post">
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
@@ -76,12 +76,28 @@ GOV.UK Prototype Kit
               </div>
             </div>
 
+          </fieldset>
+        </div>
 
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="verified">
+                <label class="govuk-label govuk-radios__label" for="changed-name-1">
+                  Verified
+                </label> </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  Not verified
+                </label> </div>
+            </div>
           </fieldset>
         </div>
 
         <button type="submit" class="govuk-button">
-          Save
+          Continue
         </button>
       </form>
 
