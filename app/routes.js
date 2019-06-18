@@ -14,6 +14,8 @@ const iteration4 = require('./routes/iteration4');
 const iteration5 = require('./routes/iteration5');
 const iteration5b = require('./routes/iteration5b');
 const manualpayment = require('./routes/manualpayment');
+const iteration6 = require('./routes/iteration6');
+const iteration7 = require('./routes/iteration7');
 
 //copy the router use and update the sprint version
 router.use(newclaims);
@@ -28,5 +30,7 @@ router.use(iteration4);
 router.use(iteration5);
 router.use(iteration5b);
 router.use(manualpayment);
+router.use(iteration6);
+router.use(iteration7);
 
 module.exports = router;
