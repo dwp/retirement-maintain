@@ -79,20 +79,6 @@
           <dd class="app-check-your-answers__change"></dd>
         </div>
 
-        {% if data['dead-day'] %}
-          <div class="app-check-your-answers__contents">
-            <dt class="app-check-your-answers__answer">
-              Date of death
-            </dt>
-            <dd class="app-check-your-answers__answer">
-              {{data['dead-day']}}
-              {{data['dead-month'] | formatMonth}}
-              {{data['dead-year']}}
-            </dd>
-            <dd class="app-check-your-answers__change"></dd>
-          </div>
-        {% endif %}
-
         {% if data['imprisoned-day'] %}
           <div class="app-check-your-answers__contents">
             <dt class="app-check-your-answers__answer">
