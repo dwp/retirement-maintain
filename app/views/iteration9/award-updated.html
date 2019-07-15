@@ -1,0 +1,136 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+{% include './_find-someone.html' %}
+
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+
+                {% if data['imprisoned-day'] or data['dead-day'] %}
+                {% set status = data['stopped-reason'] %}
+                {% else %}
+                {% set status = 'Payment returned'%}
+                {% endif %}
+
+                <div>
+                  <h1 class="govuk-heading-xl">
+                    Roberto Hugh Smith<br>
+                    <span class="govuk-caption-xl">QQ 12 34 99 C</span>
+                    <span class="app-c-tag">Receiving State Pension</span>
+                  </h1>
+                </div>
+
+              </div>
+            </div>
+
+            {% include './_tab-award.html' %}
+
+          </div>
+        </div>
+      </main>
+
+    </br>
+  </br>
+
+
+  <h2 class="govuk-heading-m">Award</h2>
+  
+  
+
+  <dl class="app-check-your-answers app-check-your-answers--short">
+
+     
+      <form action="overview" method="post">
+      <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col">Total</th>
+              <th class="govuk-table__header" scope="col">£171.88 per week	</th>
+            </tr>
+
+ 
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">New State Pension</td>
+              <td class="govuk-table__cell">£161.86</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">Protected payment</td>
+              <td class="govuk-table__cell">£10.12</td>
+            </tr>
+            
+          </tbody>
+        </table>
+</form>
+        <a href="award-change.html">Update award</td>
+    
+  
+
+
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+
+    <h2 class="govuk-heading-m">
+      Award changes
+    </h2>
+    <ol class="app-timeline">
+
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Award updated
+        </h3>
+
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">Bank account changed</span>
+          <span class="app-timeline__date">
+            17 June 2019
+          </span>
+        </p>
+      </li>
+
+    </ol>
+
+  </div>
+
+
+</main>        </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

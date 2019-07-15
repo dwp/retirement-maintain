@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+
+{% include './_find-someone.html' %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+              <div class="govuk-panel govuk-panel--confirmation">
+                <div class="govuk-panel__body">
+                  <b>Payment sent</b>
+                  <br>£164.35 arrears paid
+                </div>
+              </div>
+
+<br>
+{% include './_bar-dead.html' %}
+
+            </div>
+          </div>
+        </main>
+
+<main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+{% include './_tab-overview-1.html' %}
+
+
+<br>
+
+            </div>
+          </div>
+        </main>
+
+<br>
+        <div>
+          <dl class="app-check-your-answers app-check-your-answers--short">
+            <div class="app-check-your-answers__contents">
+              <dd class="app-check-your-answers__answer">
+<b>State Pension (last 2 years)</b>
+              </dd>
+              <dd class="app-check-your-answers__answer">
+
+              </dd>
+              <dd class="app-check-your-answers__change">
+                <a href="#">
+                </a>
+              </dd>
+            </div>
+
+
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__answer">
+                2017 - 18
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                £12,603.00
+                <br> *rate*
+              </dd>
+              <dd class="app-check-your-answers__change">
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__answer">
+                2018 - 19
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                £8760.00
+                <br> *rate*
+              </dd>
+              <dd class="app-check-your-answers__change">
+              </dd>
+            </div>
+</div>
+           
+
+
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+    </main>        </div>
+  <!-- </div> -->
+  {% endblock %}
+
+  {% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+
+  {% endblock %}
