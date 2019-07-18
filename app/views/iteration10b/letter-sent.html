@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  {% include "includes/cookie-banner.html" %}
+  {# Set serviceName in config.js. #}
+  {{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+  {% block headEnd %}
+    {% include 'includes/remove-blue-bar.html' %}
+  {% endblock %}
+
+  {% include './_find-someone.html' %}
+
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+              <div class="govuk-panel govuk-panel--confirmation">
+                <div class="govuk-panel__body">
+                  Form sent to the person reporting the death
+                </div>
+              </div>
+              <br>
+              {% include './_bar-dead.html' %}
+
+            </div>
+          </div>
+        </main>
+
+        <form action="letter-sent" method="post" class="form">
+          <p>
+            Once we receive the completed form, the arrears can be paid.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds"></div>
+</div>
+
+{% endblock %}
