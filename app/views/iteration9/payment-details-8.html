@@ -55,7 +55,7 @@ GOV.UK Prototype Kit
       </main>
 
   <div>
-      <a href="payment-1" class="govuk-back-link">Back</a>
+      <a href="payment.html" class="govuk-back-link">Back</a>
     </div>
   <h2 class="govuk-heading-m">Payment details</h2>
   <dl class="app-check-your-answers app-check-your-answers--short">
@@ -65,19 +65,27 @@ GOV.UK Prototype Kit
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th class="govuk-table__header" scope="col">Total</th>
-              <th class="govuk-table__header" scope="col">£87.00</th>
+              <th class="govuk-table__header" scope="col">£687.52	</th>
             </tr>
 
  
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">New State Pension</td>
+              <td class="govuk-table__cell">£647.44</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">Protected payment</td>
+              <td class="govuk-table__cell">£40.08</td>
+            </tr>
+            <tr class="govuk-table__row">
                 <td class="govuk-table__cell" scope="row">Period</td>
-                <td class="govuk-table__cell">24/11/2018 to 26/07/2019</td>
+                <td class="govuk-table__cell">06/07/2019 to 26/07/2019</td>
               </tr>
               <tr class="govuk-table__row">
                   <td class="govuk-table__cell" scope="row">Status</td>
-                  <td class="govuk-table__cell">Not paid</td>
+                  <td class="govuk-table__cell">Sent</td>
                 </tr>
           </tbody>
         </table>
@@ -104,12 +112,16 @@ GOV.UK Prototype Kit
                     </tr>
               </tbody>
 </table>
-<a href = "payment-details-9" button type="submit" class="govuk-button govuk-button--warning">
-  Resend payment
-</button>
-</a>              
+        
 
+
+          <a href = "payment-details-5" button type="submit" class="govuk-button govuk-button--warning">
+              Recall payment
+            </button>
+          </a>
 </div>
+
+
 <div class="govuk-grid-column-one-third">
 
   <h2 class="govuk-heading-m">
@@ -119,7 +131,7 @@ GOV.UK Prototype Kit
 
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-              Not paid
+            Reissued
           </h3>
   
           <p class="app-timeline__info govuk-!-margin-bottom-0">
@@ -130,18 +142,44 @@ GOV.UK Prototype Kit
           </p>
         </li>
 
-        <li class="app-timeline__entry">
-            <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-              Sent
-            </h3>
-    
-            <p class="app-timeline__info govuk-!-margin-bottom-0">
-              <span class="govuk-visually-hidden">Marriage verified</span>
-              <span class="app-timeline__date">
-                25 July 2019
-              </span>
-            </p>
-          </li>
+      <li class="app-timeline__entry">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+            Not paid
+          </h3>
+  
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">Sent</span>
+            <span class="app-timeline__date">
+              25 July 2019
+            </span>
+          </p>
+        </li>
+
+      <li class="app-timeline__entry">
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+        Recalled
+      </h3>
+
+      <p class="app-timeline__info govuk-!-margin-bottom-0">
+        <span class="govuk-visually-hidden">Sent</span>
+        <span class="app-timeline__date">
+          25 July 2019
+        </span>
+      </p>
+    </li>
+      <li class="app-timeline__entry">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+            Sent
+          </h3>
+  
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">Sent</span>
+            <span class="app-timeline__date">
+              20 July 2019
+            </span>
+          </p>
+        </li>
+
   </ol>
 
 </div>
