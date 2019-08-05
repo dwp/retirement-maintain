@@ -72,13 +72,30 @@ National Insurance number: QQ 12 34 56 X
       <details class="govuk-details">
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text">
-            <b>Manual payments</b>
+            <b>BPV Processes</b>
           </span>
         </summary>
-        <div class="govuk-details__text">
 
+        <div class="govuk-details__text">
+            <div class="app-most-recent">
+              {% include 'notes/processaclaim.html' %}
+            </div>
+
+        <div class="govuk-details__text">
+          <div class="app-most-recent">
+            {% include 'notes/reviewanaward.html' %}
+          </div>
+          
           <div class="app-most-recent">
             {% include 'notes/manualpayment.html' %}
+          </div>
+
+          <div class="app-most-recent">
+            {% include 'notes/bpviteration2.html' %}
+          </div>
+
+          <div class="app-most-recent">
+            {% include 'notes/iteration2.html' %}
           </div>
 
         </div>
@@ -130,14 +147,6 @@ National Insurance number: QQ 12 34 56 X
 
           <div class="app-most-recent">
             {% include 'notes/iteration1.html' %}
-          </div>
-
-          <div class="app-most-recent">
-            {% include 'notes/bpviteration2.html' %}
-          </div>
-
-          <div class="app-most-recent">
-            {% include 'notes/iteration2.html' %}
           </div>
 
         </div>
