@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+serviceName: serviceName,
+serviceUrl: "/"
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="app-homepage-top">
+      <div class="app-homepage-top--content">
+        <h1 class="govuk-heading-xl app-homepage-top--heading">
+          Design Sprint 55
+          <span class="app-homepage-top--span">Journey flows</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+<div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h3 class="govuk-heading-m">Design sprint goals:</h3>
+      <p>• Death arrears prototype testing at Tyne View Park and conduct research playback
+        <br>• Complete review an award and process a claim journey for next sprint
+        <br>• Emily - retro 'share how we use the prototype'
+      </p>
+      <h3 class="govuk-heading-m">In sprint final journeys:</h3>
+
+
+    </div>
+  </div>
+
+  <table class="govuk-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">Final designs</th>
+        <th scope="col" class="govuk-table__header">Stories</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__cell">
+            <a href="design1-sprint55" class="govuk-link govuk-link--no-visited-state">Design</a></td>
+
+        </th>
+
+        <td class="govuk-table__cell">
+            <a href="https://jira.service.dwpcloud.uk/browse/SA-1756" class="govuk-link govuk-link--no-visited-state">SA-1756</a>
+            - As an agent I want to know the reason for a review so that <br> can take the appropriate action<br>
+            <a href="https://jira.service.dwpcloud.uk/browse/SA-1795" class="govuk-link govuk-link--no-visited-state">SA-1795</a>
+            - As an agent I want to know the new award details so that <br>I am confident it can be put into payment<br>
+            <a href="https://jira.service.dwpcloud.uk/browse/SA-1682" class="govuk-link govuk-link--no-visited-state">SA-1682</a>
+            - As an agent I want to send a notification so that <br>a citizen knows their entitlement has changed
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__cell">
+          <a href="design2-sprint55" class="govuk-link govuk-link--no-visited-state">Design</a></td>
+        </th>
+        <td class="govuk-table__cell">
+            <a href="https://jira.service.dwpcloud.uk/browse/SA-1786" class="govuk-link govuk-link--no-visited-state">SA-1786</a>
+          - As an agent I need to be able to see a customers award details<br>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+
+</div>
+
+{% endblock %}
