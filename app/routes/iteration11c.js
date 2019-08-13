@@ -7,20 +7,20 @@ router.use((req, res, next) => {
   }
   next()
 })
-;
-
-  router.post('iteration11c/dap-number', (req, res) => {
-    res.redirect('iteration10a/nothing-owed')
-  })
   ;
 
-  router.post('/iteration11c/nothing-owed', function(req, res) {
-    if ( req.body['send-letter'] === 'yes' ) {
-      res.redirect('dap-address');
-    } else {
-      res.redirect('confirmation');
-    }
-  });
+router.post('iteration11c/dap-number', (req, res) => {
+  res.redirect('iteration10a/nothing-owed')
+})
+  ;
+
+router.post('/iteration11c/nothing-owed', function (req, res) {
+  if (req.body['send-letter'] === 'yes') {
+    res.redirect('dap-address');
+  } else {
+    res.redirect('confirmation');
+  }
+});
 
 
-  module.exports = router;
+module.exports = router;
