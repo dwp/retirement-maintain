@@ -14,11 +14,11 @@ router.post('iteration11c/dap-number', (req, res) => {
 })
   ;
 
-router.post('/iteration11c/nothing-owed', function (req, res) {
+router.post('/iteration11c/dap-address', function (req, res) {
   if (req.body['send-letter'] === 'yes') {
     res.redirect('dap-address');
   } else {
-    res.redirect('confirmation');
+    res.redirect('confirmation-2');
   }
 });
 
