@@ -20,6 +20,7 @@ GOV.UK Prototype Kit
 <div class="govuk-width-container">
 
   <main class="govuk-main-wrapper">
+      {% include './_bar-small.html' %}
 
     <div class="govuk-grid-column-two-thirds">
 
@@ -27,7 +28,6 @@ GOV.UK Prototype Kit
         <div class="grid-row">
           <div class="column-full">
 <br>
-            {% include './_bar.html' %}
 
           </div>
         </div>
@@ -61,18 +61,22 @@ GOV.UK Prototype Kit
                   <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">New State Pension</td>
                     <td class="govuk-table__cell">£152.66</td>
+                    <td class="govuk-table__cell"></td>
                   </tr>
                   <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">Protected payment</td>
                     <td class="govuk-table__cell">£10.02</td>
+                    <td class="govuk-table__cell"></td>
                   </tr>
                   <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">Extra State Pension</td>
                     <td class="govuk-table__cell">£10.45</td>
+                    <td class="govuk-table__cell"></td>
                   </tr>
                   <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">Inherited extra State Pension</td>
                     <td class="govuk-table__cell">£0.00</td>
+                    <td class="govuk-table__cell"></td>
                   </tr>
                 </tbody>
                 </table>
@@ -80,10 +84,10 @@ GOV.UK Prototype Kit
                   <tr class="govuk-table__row">
                       <td class="govuk-table__header award_detail2" scope="row">Entitlement date</td>
                       <td class="govuk-table__cell award_detail">8 September 2019</td>
-                      <td class="govuk-table__cell award_detail">
-                        <a href="change-date">
-                          Change<span class="govuk-visually-hidden">Change address</span>
-                        </a></td>
+                      <td class="govuk-table__cell award_detail"><a href="change-date">
+                          Change
+                        </a>
+                       </td>
                     </tr>
                 
           
@@ -91,10 +95,7 @@ GOV.UK Prototype Kit
                       </div>
               </table>
               </table>
-
-              
-     </div>
-
+<br>
         <button type="submit" class="govuk-button">
           Continue
         </button>

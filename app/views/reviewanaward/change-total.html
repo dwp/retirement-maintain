@@ -20,14 +20,14 @@ GOV.UK Prototype Kit
 <div class="govuk-width-container">
 
   <main class="govuk-main-wrapper">
-
+      {% include './_bar-small.html' %}
     <div class="govuk-grid-column-two-thirds">
 
       <main id="content" role="main">
         <div class="grid-row">
           <div class="column-full">
 <br>
-            {% include './_bar.html' %}
+           
 
           </div>
         </div>
@@ -49,12 +49,18 @@ GOV.UK Prototype Kit
                   <label class="govuk-label" for="event-name">
                       New State Pension
                   </label>
+                  <span class="govuk-hint">
+                    £152.66
+                  </span>
                   <input class="govuk-input govuk-input--width-5" id="new-sp" name="new-sp" type="text">
                 </div>
                 <div class="govuk-form-group">
                     <label class="govuk-label" for="event-name">
                         Protected payment
                     </label>
+                    <span class="govuk-hint">
+                        £10.02
+                      </span>
                     <input class="govuk-input govuk-input--width-5" id="protected-payment" name="protected-payment" type="text">
                   </div>
 
@@ -62,21 +68,21 @@ GOV.UK Prototype Kit
                       <label class="govuk-label" for="event-name">
                           Extra State Pension
                       </label>
+                      <span class="govuk-hint">
+                          £0.00
+                        </span>
                       <input class="govuk-input govuk-input--width-5" id="extra-sp" name="extra-sp" type="text">
                     </div>
                     <div class="govuk-form-group">
                         <label class="govuk-label" for="event-name">
                             Inherited extra State Pension
                         </label>
+                        <span class="govuk-hint">
+                            £0.00
+                          </span>
                         <input class="govuk-input govuk-input--width-5" id="inherited-esp" name="inherited-esp" type="text">
                       </div>
-
-
-            
-
-              
-     </div>
-
+<br><br>
         <button type="submit" class="govuk-button">
           Continue
         </button>

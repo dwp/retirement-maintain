@@ -20,14 +20,14 @@ GOV.UK Prototype Kit
 <div class="govuk-width-container">
 
   <main class="govuk-main-wrapper">
-
+      {% include './_bar-small.html' %}
     <div class="govuk-grid-column-two-thirds">
 
       <main id="content" role="main">
         <div class="grid-row">
           <div class="column-full">
 <br>
-            {% include './_bar.html' %}
+            
 
           </div>
         </div>
@@ -43,6 +43,7 @@ GOV.UK Prototype Kit
       <form method="post" >
         <div class="govuk-form-group">
           <h1 class="govuk-heading-l">Put State Pension into payment</h1>
+          <br>
           <dl class="app-check-your-answers app-check-your-answers--short">
 
             <h2 class="govuk-heading-m">Bank details</h2>
@@ -50,7 +51,7 @@ GOV.UK Prototype Kit
                 
                 <tbody class="govuk-table__body">
                   <tr class="govuk-table__row">
-                    <td class="govuk-table__cell" scope="row">Sort code</td>
+                    <td class="govuk-table__cell" scope="row" style="width: 50%">Sort code</td>
                     <td class="govuk-table__cell">112233</td>
                   </tr>
                   <tr class="govuk-table__row">
@@ -70,7 +71,7 @@ GOV.UK Prototype Kit
                 
                 <tbody class="govuk-table__body">
                   <tr class="govuk-table__row">
-                    <td class="govuk-table__cell" scope="row">Total</td>
+                    <td class="govuk-table__cell" scope="row" style="width: 50%" >Total</td>
                     <td class="govuk-table__cell">£173.13</td>
                   </tr>
                   <tr class="govuk-table__row">
@@ -93,7 +94,7 @@ GOV.UK Prototype Kit
                 
                 <tbody class="govuk-table__body">
                   <tr class="govuk-table__row">
-                    <td class="govuk-table__cell" scope="row">Total</td>
+                    <td class="govuk-table__cell" scope="row" style="width: 50%">Total</td>
                     <td class="govuk-table__cell">£692.52</td>
                   </tr>
                   <tr class="govuk-table__row">
@@ -110,13 +111,7 @@ GOV.UK Prototype Kit
                   
                 </tbody>
                 </table>
-
-
-                
-              
-
-     </div>
-
+     <br>
         <button type="submit" class="govuk-button">
           Save and send letter
         </button>
