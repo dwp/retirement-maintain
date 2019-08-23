@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+serviceName: serviceName,
+serviceUrl: "/"
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="app-homepage-top">
+      <div class="app-homepage-top--content">
+        <h1 class="govuk-heading-xl app-homepage-top--heading">
+          Design Sprint 57
+          <span class="app-homepage-top--span">Journey flows</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+<div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h3 class="govuk-heading-m">Design sprint goals:</h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+          <li>Develop the next iteration of recording death arrears payee details, following agent research at TVP in sprint 55. Need to look at overpayment, arrears and nothing owed journeys.</li>
+          <li>Payment details and changing a payment status – finalise the journeys for an agent being able to see the details of a specific payment from the payment history screen, and giving them the ability to manually change a payment status.</li>
+          <li>Next iteration of the award screen for enquiries – using the screen we designed in the last sprint as a basis, we will look at how we can show agents the previous award amounts if the current award changes</li>
+        </ul>
+
+      <h3 class="govuk-heading-m">In sprint final journeys:</h3>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+</div>
+
+{% endblock %}

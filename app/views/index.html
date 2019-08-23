@@ -1,93 +1,95 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+GOV.UK Prototype Kit
 {% endblock %}
 
 {% block headEnd %}
-  {% include 'includes/remove-blue-bar.html' %}
+{% include 'includes/remove-blue-bar.html' %}
 {% endblock %}
 
 {% block header %}
-  {% include "includes/cookie-banner.html" %}
-  {# Set serviceName in config.js. #}
-  {{ govukHeader({
-    serviceName: serviceName,
-    serviceUrl: "/"
-  }) }}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+serviceName: serviceName,
+serviceUrl: "/"
+}) }}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
-      <div class="app-homepage-top">
-        <div class="app-homepage-top--content">
-          <h1 class="govuk-heading-xl app-homepage-top--heading">
-            Agent
-            <span class="app-homepage-top--span">Prototypes</span>
-          </h1>
-        </div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="app-homepage-top">
+      <div class="app-homepage-top--content">
+        <h1 class="govuk-heading-xl app-homepage-top--heading">
+          Agent
+          <span class="app-homepage-top--span">Prototypes</span>
+        </h1>
       </div>
     </div>
   </div>
+</div>
 {% endblock %}
 
 {% block content %}
 
 
 <h2 class="govuk-heading-m">
-    Design sprints</h2>
-    <a href="Sprint56/sprint56" class="govuk-heading-s">Sprint 56</a>
+  Design sprints</h2>
+<a href="Sprint57/sprint57" class="govuk-heading-s">Sprint 57</a>
+
+<a href="Sprint56/sprint56" class="govuk-heading-s">Sprint 56</a>
 
 <a href="/Sprint55/sprint55" class="govuk-heading-s">Sprint 55</a>
 
 
 <h2 class="govuk-heading-m">
-    Prototypes for testing</h2>
+  Prototypes for testing</h2>
 <p class="govuk-body govuk-!-font-size-19">National Insurance number: QQ 12 34 56 X</p>
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
 
-      <details class="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            <b>Telephone claims</b>
-          </span>
-        </summary>
-        <div class="govuk-details__text">
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          <b>Telephone claims</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
 
-          <div class="app-most-recent">
-            {% include 'notes/newclaim3.html' %}
-          </div>
-
-          <div class="app-most-recent">
-            {% include 'notes/newclaim2.html' %}
-          </div>
-
-          <div class="app-most-recent">
-            {% include 'notes/newclaim.html' %}
-          </div>
-
+        <div class="app-most-recent">
+          {% include 'notes/newclaim3.html' %}
         </div>
-      </details>
+
+        <div class="app-most-recent">
+          {% include 'notes/newclaim2.html' %}
+        </div>
+
+        <div class="app-most-recent">
+          {% include 'notes/newclaim.html' %}
+        </div>
+
+      </div>
+    </details>
 
 
-      <details class="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            <b>BPV Processes</b>
-          </span>
-        </summary>
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          <b>BPV Processes</b>
+        </span>
+      </summary>
 
-        <div class="govuk-details__text">
-            <div class="app-most-recent">
-              {% include 'notes/processaclaim.html' %}
-            </div>
+      <div class="govuk-details__text">
+        <div class="app-most-recent">
+          {% include 'notes/processaclaim.html' %}
+        </div>
 
         <div class="govuk-details__text">
           <div class="app-most-recent">
             {% include 'notes/reviewanaward.html' %}
           </div>
-          
+
           <div class="app-most-recent">
             {% include 'notes/manualpayment.html' %}
           </div>
@@ -101,70 +103,121 @@
           </div>
 
         </div>
-      </details>
+    </details>
 
-      <details class="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            <b>Change of circumstances</b>
-          </span>
-        </summary>
-        <div class="govuk-details__text">
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          <b>Change of circumstances</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+
+        <details class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Personal tab
+            </span>
+          </summary>
+          <div class="govuk-details__text">
 
             <div class="app-most-recent">
-                {% include 'notes/iteration12.html' %}
+              {% include 'notes/iteration11.html' %}
+            </div>
+
+            <div class="app-most-recent">
+              {% include 'notes/iteration10.html' %}
+            </div>
+
+
+            <div class="app-most-recent">
+              {% include 'notes/iteration8.html' %}
+            </div>
+            <div class="app-most-recent">
+                {% include 'notes/iteration7.html' %}
               </div>
 
-          <div class="app-most-recent">
-            {% include 'notes/iteration11.html' %}
-          </div>
 
-          <div class="app-most-recent">
-            {% include 'notes/iteration10.html' %}
-          </div>
+            <div class="app-most-recent">
+              {% include 'notes/iteration5.html' %}
+            </div>
 
-          <div class="app-most-recent">
-            {% include 'notes/iteration9.html' %}
-          </div>
+        </details>
 
-          <div class="app-most-recent">
-            {% include 'notes/iteration8.html' %}
-          </div>
+        <details class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Contact tab
+            </span>
+          </summary>
+          <div class="govuk-details__text">
 
-          <div class="app-most-recent">
-            {% include 'notes/iteration7.html' %}
-          </div>
+            <div class="app-most-recent">
+              {% include 'notes/iteration1.html' %}
+            </div>
+        </details>
 
-          <div class="app-most-recent">
-            {% include 'notes/iteration6.html' %}
-          </div>
+        <details class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Award tab
+            </span>
+          </summary>
+          <div class="govuk-details__text">
 
-          <div class="app-most-recent">
-            {% include 'notes/iteration5.html' %}
-          </div>
+              <div class="app-most-recent">
+                  {% include 'notes/iteration9.html' %}
+                </div>
 
-          <div class="app-most-recent">
-            {% include 'notes/iteration4.html' %}
-          </div>
+        </details>
 
-          <div class="app-most-recent">
-            {% include 'notes/iteration3.html' %}
-          </div>
+        <details class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Payment tab
+            </span>
+          </summary>
+          <div class="govuk-details__text">
 
-          <div class="app-most-recent">
-            {% include 'notes/iteration2b.html' %}
-          </div>
+              <div class="app-most-recent">
+                  {% include 'notes/iteration12.html' %}
+                </div>
 
-          <div class="app-most-recent">
-            {% include 'notes/iteration1.html' %}
-          </div>
+            <div class="app-most-recent">
+              {% include 'notes/iteration13.html' %}
+            </div>
+            <div class="app-most-recent">
+                {% include 'notes/iteration4.html' %}
+              </div>
+            <div class="app-most-recent">
+                {% include 'notes/iteration3.html' %}
+              </div>
 
-        </div>
-      </details>
+            <div class="app-most-recent">
+              {% include 'notes/iteration2b.html' %}
+            </div>
+            
+            
+        </details>
+
+      </div>
+    </details>
+
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          <b>Work queue management</b>
+        </span>
+      </summary>
+
+      <div class="app-most-recent">
+        {% include 'notes/workq1.html' %}
+      </div>
 
 
+    </details>
 
-    </div>
   </div>
+</div>
 
 {% endblock %}
