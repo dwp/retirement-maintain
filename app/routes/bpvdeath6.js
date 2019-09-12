@@ -9,7 +9,7 @@ router.use((req, res, next) => {
   })
   ;
  
-  router.post('/bpvdeath3/sarah-name', function(req, res) {
+  router.post('/bpvdeath6/sarah-name', function(req, res) {
     if ( req.body['is-payee'] === 'yes' ) {
       res.redirect('sarah-address-1');
     } else {
@@ -18,7 +18,7 @@ router.use((req, res, next) => {
   });
 
 
-  router.post('/bpvdeath3/sarah-address-1', function(req, res) {
+  router.post('/bpvdeath6/sarah-address-1', function(req, res) {
     if ( req.body['address'] === 'yes' ) {
       res.redirect('sarah-bank');
     } else {
