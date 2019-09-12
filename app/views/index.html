@@ -33,15 +33,10 @@ serviceUrl: "/"
 {% block content %}
 
 
-<h2 class="govuk-heading-m">
-  Design sprints</h2>
-<a href="Sprint57/sprint57" class="govuk-heading-s">Sprint 57</a>
-
-<a href="Sprint56/sprint56" class="govuk-heading-s">Sprint 56</a>
-
-<a href="/Sprint55/sprint55" class="govuk-heading-s">Sprint 55</a>
+  <a href="designsprints" class="govuk-heading-m">Design sprints</a>
 
 
+<br>
 <h2 class="govuk-heading-m">
   Prototypes for testing</h2>
 <p class="govuk-body govuk-!-font-size-19">National Insurance number: QQ 12 34 56 X</p>
@@ -79,6 +74,11 @@ serviceUrl: "/"
           <b>BPV Processes</b>
         </span>
       </summary>
+
+      <div class="govuk-details__text">
+        <div class="app-most-recent">
+          {% include 'notes/death.html' %}
+        </div>
 
       <div class="govuk-details__text">
         <div class="app-most-recent">
@@ -152,7 +152,7 @@ serviceUrl: "/"
             </span>
           </summary>
           <div class="govuk-details__text">
-              <
+              
             <div class="app-most-recent">
               {% include 'notes/iteration1.html' %}
             </div>
@@ -214,6 +214,10 @@ serviceUrl: "/"
           <b>Work queue management</b>
         </span>
       </summary>
+      
+      <div class="app-most-recent">
+        {% include 'notes/workq2.html' %}
+      </div>
 
       <div class="app-most-recent">
         {% include 'notes/workq1.html' %}

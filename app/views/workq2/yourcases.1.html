@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+serviceName: serviceName,
+serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+<div class="nav-horizontal">
+  <div class="govuk-width-container">
+    <ul class="nav-pri">
+      <li class="active">
+        <a href="yourcases"> Your cases</a>
+      </li>
+      <li>
+        <a href="find"> Find someone</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <br>
+        <h1 class="govuk-heading-xl">Your cases</h1>
+        <h1 class="govuk-heading-l">Advisor: 
+          <span class="govuk-!-font-weight-regular"> Lee Paul Lyall</span>
+        </h1>
+     </div>
+
+     <table class="govuk-table" style="width: 90%; margin-left: 1.5%">
+      <thread class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header">Name</th>
+          <th class="govuk-table__header" style="padding-left: 4%">Case</th>
+          <th class="govuk-table__header" style="padding-left: 1%">Date submitted</th>
+          <th class="govuk-table__header"></th>
+        </tr>
+      </thread>
+
+      <tbody>
+          <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Roberto Hugh Smith</td>
+              <td class="govuk-table__cell" style="padding-left: 4%">BR330 returned - pay death arrears</td>
+              <td class="govuk-table__cell" style="padding-left: 1%">8th August 2019</td>
+              <td class="govuk-table__cell" style="padding-left:1%">
+                <a href="br330-reason">View case</a>
+              </td>
+           </tr>
+      </tbody>
+
+      <tbody>
+          <tr class="govuk-table__row" style="color: grey">
+              <td class="govuk-table__cell">Lesley Davis</td>
+              <td class="govuk-table__cell" style="padding-left: 4%">New claim - deferrer</td>
+              <td class="govuk-table__cell" style="padding-left: 1%">7th August 2019</td>
+              <td class="govuk-table__cell" style="padding-left:1%">
+                <a style="color: grey;"><u>View case</u></a>
+              </td>
+           </tr>
+      </tbody>
+
+      <tbody>
+          <tr class="govuk-table__row" style="color: grey">
+              <td class="govuk-table__cell">Kathleen Johnson</td>
+              <td class="govuk-table__cell" style="padding-left: 4%">Award adjustment - Voluntary contributions</td>
+              <td class="govuk-table__cell" style="padding-left: 1%">2th August 2019</td>
+              <td class="govuk-table__cell" style="padding-left:1%">
+                <a style="color: grey;"><u>View case</u></a>
+              </td>
+           </tr>
+      </tbody>
+
+     </table>
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+{% endblock %}

@@ -36,4 +36,32 @@ router.use((req, res, next) => {
   })
   ;
 
+
+  router.post('/bpv-death-3/sarah-name', function(req, res) {
+    if ( req.body['is-payee'] === 'yes' ) {
+      res.redirect('sarah-address-1');
+    } else {
+      res.redirect('sarah-address-1');
+    }
+  });
+
+
+  router.post('/bpv-death-3/sarah-address', function(req, res) {
+    if ( req.body['address'] === 'yes' ) {
+      res.redirect('sarah-bank');
+    } else {
+      res.redirect('sarah-address-2');
+    }
+  });
+
+  router.post('bpv-death-3/sarah-address-2', (req, res) => {
+    res.redirect('bpv-death-3/sarah-address-3')
+  })
+  ;
+  
+  router.post('bpv-death-3/sarah-address-3', (req, res) => {
+    res.redirect('bpv-death-3/sarah-bank')
+  })
+  ;
+
   module.exports = router;

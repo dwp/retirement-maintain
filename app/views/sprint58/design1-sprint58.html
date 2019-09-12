@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+serviceName: serviceName,
+serviceUrl: "/"
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="app-homepage-top">
+      <div class="app-homepage-top--content">
+        <h1 class="govuk-heading-xl app-homepage-top--heading">
+          Design Sprint 56
+          <span class="app-homepage-top--span">Journey flows</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+<div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h3 class="govuk-heading-m">Final flow:</h3>
+      <img src="#" width="1200px"> </img>
+
+
+
+
+
+
+</div>
+
+{% endblock %}
