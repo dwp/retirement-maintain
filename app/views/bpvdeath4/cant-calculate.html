@@ -37,8 +37,15 @@ serviceUrl: "/"
       <br>
 
       <form method="post" class="form" action="overview-cantcalc">
-        <h1 class="govuk-heading-l">We can't calculate yet</h1>
-        <p>lols</p>
+        <h1 class="govuk-heading-l">Cannot calculate final payment</h1>
+        <p>The final payment cannot be calculated yet because there is a still a payment which:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>has a status of sent</li>
+          <li>has a status of recalling</li>
+          <li>was paid less than X days ago, meaning it may still be returned</li>
+        </ul>
+        <p>Once all payments are up to date, you can come back and calculate the final payment.</p>
+
         <br>
 
 
