@@ -34,7 +34,13 @@ serviceUrl: "/"
 
 
   <a href="designsprints" class="govuk-heading-m">Design sprints</a>
-
+<br>
+    <h2 class="govuk-heading-m">
+        Prototype of live for changes and enquiries</h2>
+        <span id="passport-issued-hint" class="govuk-hint">
+            A prototype for what we have currently build within 'changes and enquiries'. Designs are up to date with the design system and may differ from what is built.
+          </span>
+          <a href="what-is-live/find" class="govuk-heading-s">Prototype of live</a>
 
 <br>
 <h2 class="govuk-heading-m">
@@ -43,6 +49,26 @@ serviceUrl: "/"
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+
+      <details class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              <b>CPS Integration</b>
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+              <div class="app-most-recent">
+                  {% include 'notes/cps2.html' %}
+                </div>
+
+            <div class="app-most-recent">
+              {% include 'notes/cps1.html' %}
+            </div>
+  
+    
+          </div>
+        </details>
+
 
     <details class="govuk-details">
       <summary class="govuk-details__summary">
@@ -74,7 +100,6 @@ serviceUrl: "/"
           <b>BPV Processes</b>
         </span>
       </summary>
-
 
       <div class="govuk-details__text">
         <div class="app-most-recent">
@@ -124,6 +149,12 @@ serviceUrl: "/"
               Personal tab
             </span>
           </summary>
+
+          <div class="govuk-details__text">
+              <div class="app-most-recent">
+              {% include 'notes/iteration16.html' %}
+            </div>
+
           <div class="govuk-details__text">
               <div class="app-most-recent">
               {% include 'notes/iteration15.html' %}
