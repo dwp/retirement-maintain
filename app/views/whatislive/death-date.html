@@ -8,8 +8,8 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 {{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
+serviceName: serviceName,
+serviceUrl: "/"
 }) }}
 
 {% block headEnd %}
@@ -39,7 +39,7 @@ GOV.UK Prototype Kit
         <a href="prevent-payments" class="govuk-back-link">Back</a>
       </div>
 
-      <form method="post" action="overview-death-verified">
+      <form method="post">
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
@@ -51,7 +51,8 @@ GOV.UK Prototype Kit
                   <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
                     Day
                   </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="dead-day" type="number" pattern="[0-9]*">
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="dead-day"
+                    type="number" pattern="[0-9]*">
                 </div>
               </div>
               <div class="govuk-date-input__item">
@@ -59,7 +60,8 @@ GOV.UK Prototype Kit
                   <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
                     Month
                   </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="dead-month" type="number" pattern="[0-9]*">
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
+                    name="dead-month" type="number" pattern="[0-9]*">
                 </div>
               </div>
               <div class="govuk-date-input__item">
@@ -67,7 +69,8 @@ GOV.UK Prototype Kit
                   <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
                     Year
                   </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="dead-year" type="number" pattern="[0-9]*">
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
+                    name="dead-year" type="number" pattern="[0-9]*">
                 </div>
               </div>
             </div>
@@ -75,22 +78,24 @@ GOV.UK Prototype Kit
           </fieldset>
         </div>
 
-          <fieldset class="govuk-fieldset" aria-describedby="verified-or-notverified-hint">
-            <div class="govuk-radios govuk-radios--inline">
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="verified-or-notverified-1" name="verified-or-notverified" type="radio" value="verified">
-                <label class="govuk-label govuk-radios__label" for="verified-or-notverified-1">
-                  Verified
-                </label> </div>
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="verified-or-notverified-2" name="verified-or-notverified" type="radio" value="not-verified">
-                <label class="govuk-label govuk-radios__label" for="verified-or-notverified-2">
-                  Not verified
-                </label> </div>
-            </div>
-          </fieldset>
+        <fieldset class="govuk-fieldset" aria-describedby="verified-or-notverified-hint">
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="verified-or-notverified-1" name="verified-or-notverified" type="radio"
+                value="verified">
+              <label class="govuk-label govuk-radios__label" for="verified-or-notverified-1">
+                Verified
+              </label> </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="verified-or-notverified-2" name="verified-or-notverified" type="radio"
+                value="not-verified">
+              <label class="govuk-label govuk-radios__label" for="verified-or-notverified-2">
+                Not verified
+              </label> </div>
+          </div>
+        </fieldset>
 
-<br>
+        <br>
 
         <button type="submit" class="govuk-button">
           Continue
