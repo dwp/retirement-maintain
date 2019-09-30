@@ -89,12 +89,10 @@ serviceUrl: "/"
           {% include 'notes/death2.html' %}
         </div>
 
-      <div class="govuk-details__text">
         <div class="app-most-recent">
           {% include 'notes/death.html' %}
         </div>
 
-      <div class="govuk-details__text">
         <div class="app-most-recent">
           {% include 'notes/processaclaim.html' %}
         </div>
@@ -239,13 +237,28 @@ serviceUrl: "/"
       </div>
     </details>
 
+    
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          <b>Task based</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+      <div class="app-most-recent">
+        {% include 'notes/taskiteration2.html' %}
+      </div>
+
+
+    </details>
+ 
     <details class="govuk-details">
       <summary class="govuk-details__summary">
         <span class="govuk-details__summary-text">
           <b>Work queue management</b>
         </span>
       </summary>
-      
+      <div class="govuk-details__text">
       <div class="app-most-recent">
         {% include 'notes/workq2.html' %}
       </div>
@@ -256,8 +269,7 @@ serviceUrl: "/"
 
 
     </details>
-
   </div>
-</div>
+
 
 {% endblock %}

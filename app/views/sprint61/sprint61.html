@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+serviceName: serviceName,
+serviceUrl: "/"
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="app-homepage-top">
+      <div class="app-homepage-top--content">
+        <h1 class="govuk-heading-xl app-homepage-top--heading">
+          Design Sprint 61
+          <span class="app-homepage-top--span">22th October 2019</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<a href="/designsprints" class="govuk-back-link">Back</a>
+<br><br>
+
+<div>
+  <div class="govuk-accordion__section ">
+      <h3 class="govuk-heading-m">Design sprint goals:</h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+      
+
+
+
+
+
+          
+        </ul>
+
+      <h3 class="govuk-heading-m">In sprint final journeys:</h3>
+
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+</div>
+
+{% endblock %}
