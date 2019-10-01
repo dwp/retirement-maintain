@@ -39,13 +39,8 @@ GOV.UK Prototype Kit
                 {% set status = 'Payment returned'%}
                 {% endif %}
 
-                <div>
-                  <h1 class="govuk-heading-xl">
-                    Roberto Hugh Smith<br>
-                    <span class="govuk-caption-xl">QQ 12 34 99 C</span>
-                    <span class="app-c-tag app-c-tag--warning">Payment returned</span>
-                  </h1>
-                </div>
+                {% include './_bar-paymentstopped.html' %}
+
 
               </div>
             </div>

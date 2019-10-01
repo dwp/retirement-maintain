@@ -38,7 +38,7 @@ GOV.UK Prototype Kit
                 {% else %}
                 {% set status = 'Payment returned'%}
                 {% endif %}
-                {% include './_bar-paymentstopped.html' %}
+                {% include './_bar.html' %}
 
 
               </div>
@@ -76,8 +76,8 @@ GOV.UK Prototype Kit
               </tr>
               <tr class="govuk-table__row">
                   <td class="govuk-table__cell" scope="row">Status</td>
-                  <td class="govuk-table__cell">Not paid</td>
-                  <td class="govuk-table__cell"><a href="payment-details-resend">Resend payment</a>
+                  <td class="govuk-table__cell">Sent</td>
+                  <td class="govuk-table__cell" style="margin-left: 80%"><a href="payment-details-resend">Recall payment</a>
                     
                   </td>
                 </tr>
@@ -118,6 +118,20 @@ GOV.UK Prototype Kit
 
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+           Sent
+          </h3>
+  
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">Paid
+            </span>
+            <span class="app-timeline__date">
+              29 July 2019
+            </span>
+          </p>
+        </li>
+
+      <li class="app-timeline__entry">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
            Not paid
           </h3>
   
@@ -125,7 +139,7 @@ GOV.UK Prototype Kit
             <span class="govuk-visually-hidden">Paid
             </span>
             <span class="app-timeline__date">
-              29 September 2019
+              29 July 2019
             </span>
           </p>
         </li>

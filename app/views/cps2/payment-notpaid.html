@@ -38,12 +38,7 @@ serviceUrl: "/"
                 {% set status = 'Payment returned'%}
                 {% endif %}
 
-                <div>
-                  <h1 class="govuk-heading-xl">
-                    Roberto Hugh Smith</br>
-                    <span class="govuk-caption-xl">QQ 12 34 99 C</span>
-                    <span class="app-c-tag app-c-tag--danger">Payments stopped</span>                  </h1>
-                </div>
+                {% include './_bar-paymentstopped.html' %}
 
               </div>
             </div>
@@ -109,7 +104,7 @@ serviceUrl: "/"
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Last regular payment</th>
-              <td class="govuk-table__cell">Friday 27 July 2019</td>
+              <td class="govuk-table__cell">Friday 26 July 2019</td>
               <td class="govuk-table__cell">£650.72</td>
             </tr>
   
@@ -131,7 +126,7 @@ serviceUrl: "/"
                 <p class="app-timeline__info govuk-!-margin-bottom-0">
                   <span class="govuk-visually-hidden">Bank account changed</span>
                   <span class="app-timeline__date">
-                    27 July 2019
+                    29 July 2019
                   </span>
                 </p>
               </li>
