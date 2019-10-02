@@ -16,6 +16,7 @@ serviceUrl: "/"
 {% include 'includes/remove-blue-bar.html' %}
 {% endblock %}
 
+
 {% include './_find-someone.html' %}
 
 
@@ -23,17 +24,15 @@ serviceUrl: "/"
 
   <main class="govuk-main-wrapper">
 
-
       <div class="moj-banner moj-banner--success">
 
           <svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
           <path d="M25,6.2L8.7,23.2L0,14.1l4-4.2l4.7,4.9L21,2L25,6.2z" /></svg>
           
           <div class="moj-banner__message">
-          <span class="moj-banner__assistive">Success</span>Payment resent - payments started again</div>
+          <span class="moj-banner__assistive">Success</span>Payment returned by the bank - payments stopped</div>
           
           </div> 
-
 
     <div class="govuk-grid-column-two-thirds">
 
@@ -44,23 +43,27 @@ serviceUrl: "/"
             <div class="govuk-grid-row">
               <div class="govuk-grid-column-full">
 
+
                 {% if data['imprisoned-day'] or data['dead-day'] %}
                 {% set status = data['stopped-reason'] %}
                 {% else %}
                 {% set status = 'Payment returned'%}
                 {% endif %}
 
-                <div>
-                  <h1 class="govuk-heading-xl">
-                    Roberto Hugh Smith</br>
-                    <span class="govuk-caption-xl">QQ 12 34 99 C</span>
-                    <span class="app-c-tag">Receiving State Pension</span>
-                  </h1>
-                </div>
+                {% include './_bar-paymentstopped.html' %}
 
               </div>
             </div>
-
+            <div class="govuk-warning-text">
+                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                <strong class="govuk-warning-text__text">
+                  <span class="govuk-warning-text__assistive">Warning</span>
+                  A payment has been returned <br>
+                  <a href="payment-details-notp.html">
+                      Resend payment<span class="govuk-visually-hidden">Resend payment</span>
+                  </a>
+                </strong>
+              </div>
             {% include './_tab-payment.html' %}
 
           </div>
@@ -113,18 +116,12 @@ serviceUrl: "/"
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Last regular payment</th>
-              <td class="govuk-table__cell">Friday 28 June 2019</td>
-              <td class="govuk-table__cell">£650.72</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Next regular payment </th>
-              <td class="govuk-table__cell">Thursday 1 August 2019</td>
+              <td class="govuk-table__cell">Friday 26 July 2019</td>
               <td class="govuk-table__cell">£650.72</td>
             </tr>
   
           </tbody>
         </table>
-
 
     </div>
 
@@ -133,30 +130,6 @@ serviceUrl: "/"
           Payment changes
         </h2>
         <ol class="app-timeline">
-
-            <li class="app-timeline__entry">
-                <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                  Payments started again
-                </h3>
-                <p class="app-timeline__info govuk-!-margin-bottom-0">
-                  <span class="govuk-visually-hidden">Bank account changed</span>
-                  <span class="app-timeline__date">
-                    29 July 2019
-                  </span>
-                </p>
-              </li>
-
-            <li class="app-timeline__entry">
-                <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                  Bank account details changed
-                </h3>
-                <p class="app-timeline__info govuk-!-margin-bottom-0">
-                  <span class="govuk-visually-hidden">Bank account changed</span>
-                  <span class="app-timeline__date">
-                    29 July 2019
-                  </span>
-                </p>
-              </li>
 
             <li class="app-timeline__entry">
                 <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
@@ -178,60 +151,51 @@ serviceUrl: "/"
       <table class="govuk-table">
           <thead class="govuk-table__head">
               <tr class="govuk-table__row">
-                <th class="govuk-table__header" scope="col" style="width: 20%">From</th>
-                <th class="govuk-table__header " scope="col" style="width: 20%">To</th>
-                <th class="govuk-table__header" scope="col" style="width: 20%">Payment date</th>
-                <th class="govuk-table__header" scope="col" style="width: 20%">Amount</th>
-                <th class="govuk-table__header" scope="col" style="width: 17%">Status</th>
+                
+                <th class="govuk-table__header" scope="col" style="width: 40%">Payment date</th>
+                <th class="govuk-table__header" scope="col" style="width: 32%">Amount</th>
+                <th class="govuk-table__header" scope="col" style="width: 35%">Status</th>
                 <th class="govuk-table__header" scope="col"></th>
               </tr>
             </thead>
         <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-                <td class="govuk-table__cell">29/06/2019</td>
-                <td class="govuk-table__cell">26/07/2019</td>
-                <td class="govuk-table__cell">01/08/2019</td>
-                <td class="govuk-table__cell">£650.72</td>
-                <td class="govuk-table__cell" class="govuk-orange">Re-issued</class>
-                </td>
-                <td class="govuk-table__cell"><a href="payment-details-reissued.html">Details</a></td>
-              </tr>
 
-      
+
+       
+
+
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell">22/06/2019</td>
-            <td class="govuk-table__cell">28/06/2019</td>
-            <td class="govuk-table__cell">28/06/2019</td>
+          
+            <td class="govuk-table__cell">Friday 26 July 2019</td>
+            <td class="govuk-table__cell">£650.72</td>
+            <td class="govuk-table__cell" class="govuk-orange">Not paid</class>
+            </td>
+            <td class="govuk-table__cell"><a href="payment-details.html">Details</a></td>
+          </tr>
+
+
+          <tr class="govuk-table__row">
+            
+            <td class="govuk-table__cell">Friday 28 June 2019</td>
             <td class="govuk-table__cell">£650.72</td>
             <td class="govuk-table__cell" class="govuk-orange">Paid</class>
             </td>
             <td class="govuk-table__cell"><a href="payment-details-2.html">Details</a></td>
           </tr>
 
-
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell">15/06/2019</td>
-            <td class="govuk-table__cell">21/06/2019</td>
-            <td class="govuk-table__cell">21/06/2019</td>
-            <td class="govuk-table__cell">£650.72</td>
-            <td class="govuk-table__cell" class="govuk-orange">Paid</class>
-            </td>
-            <td class="govuk-table__cell"><a href="payment-details-3.html">Details</a></td>
-          </tr>
-
-          
-          <!-- <tr class="govuk-table__row">
-      <td class="govuk-table__cell">01/12/2018</td>
-      <td class="govuk-table__cell">28/12/2018</td>
-      <td class="govuk-table__cell">28/12/2018</td>
-      <td class="govuk-table__cell">£650.72</td>
-      <td class="govuk-table__cell" class="govuk-green">Paid</a></td>
-      <td class="govuk-table__cell"><a href="payment-details-4.html">Details</a></td>
-    </tr>-->
+            
+              <td class="govuk-table__cell">Friday 21 May 2019</td>
+              <td class="govuk-table__cell">£650.72</td>
+              <td class="govuk-table__cell" class="govuk-orange">Paid</class>
+              </td>
+              <td class="govuk-table__cell"><a href="payment-details-2.html">Details</a></td>
+            </tr>
 
 
-        </tbody>
-      </table>
+
+          </tbody>
+          </table>
     </div>
 
     <!-- <p class="govuk-body">
