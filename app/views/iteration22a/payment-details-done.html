@@ -38,14 +38,8 @@ GOV.UK Prototype Kit
                 {% else %}
                 {% set status = 'Payment returned'%}
                 {% endif %}
+                {% include './_bar.html' %}
 
-                <div>
-                  <h1 class="govuk-heading-xl">
-                    Rachel Smith<br>
-                    <span class="govuk-caption-xl">QQ 12 34 99 C</span>
-                    <span class="app-c-tag">Receiving State Pension</span>
-                  </h1>
-                </div>
 
               </div>
             </div>
@@ -55,7 +49,7 @@ GOV.UK Prototype Kit
       </main>
 
   <div>
-      <a href="payment" class="govuk-back-link">Back</a>
+      <a href="payment-bankchange" class="govuk-back-link">Back</a>
     </div>
     <br>
   <h2 class="govuk-heading-m">Payment details</h2>
@@ -66,7 +60,7 @@ GOV.UK Prototype Kit
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
                 <tr class="govuk-table__row"><tr class="govuk-table__row" style="width: 20%"></tr>
-              <th class="govuk-table__header" scope="col" style="width: 43%">Total</th>
+              <th class="govuk-table__header" scope="col" style="width: 40%">Total</th>
               <th class="govuk-table__header" scope="col">£650.72</th>
               <th class="govuk-table__header" scope="col"></th>
             </tr>
@@ -77,13 +71,13 @@ GOV.UK Prototype Kit
             
             <tr class="govuk-table__row">
                 <td class="govuk-table__cell" scope="row">Period</td>
-                <td class="govuk-table__cell" style="width: 34%">29/06/2019 to <br>26/07/2019</td>
+                <td class="govuk-table__cell" style="width: 37%">29/06/2019 to <br>26/07/2019</td>
                 <th class="govuk-table__header" scope="col"></th>
               </tr>
               <tr class="govuk-table__row">
                   <td class="govuk-table__cell" scope="row">Status</td>
-                  <td class="govuk-table__cell">Paid</td>
-                  <td class="govuk-table__cell"><a href="payment-details-change.html">Mark as returned</a>
+                  <td class="govuk-table__cell">Not paid</td>
+                  <td class="govuk-table__cell" style="margin-left: 80%"><a href="payment-details-resend"></a>
                     
                   </td>
                 </tr>
@@ -95,7 +89,7 @@ GOV.UK Prototype Kit
             <table class="govuk-table">
             <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
-                  <td class="govuk-table__cell" scope="row" style="width: 43%">Account holder </td>
+                  <td class="govuk-table__cell" scope="row" style="width: 40%">Account holder </td>
                   <td class="govuk-table__cell">Mrs R Smith</td>
                 </tr>
                 <tr class="govuk-table__row">
@@ -121,19 +115,38 @@ GOV.UK Prototype Kit
     Status changes
   </h2>
   <ol class="app-timeline">
+
+  
+
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-            Paid
+           Not paid
           </h3>
   
           <p class="app-timeline__info govuk-!-margin-bottom-0">
-            <span class="govuk-visually-hidden">Sent
+            <span class="govuk-visually-hidden">Paid
+            </span>
+            <span class="app-timeline__date">
+              29 July 2019
+            </span>
+          </p>
+        </li>
+
+
+      <li class="app-timeline__entry">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+           Paid
+          </h3>
+  
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">Paid
             </span>
             <span class="app-timeline__date">
               26 July 2019
             </span>
           </p>
         </li>
+
 
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
@@ -156,8 +169,8 @@ GOV.UK Prototype Kit
   </div>
 
 
-</main>        
-
+</main>        </div>
+</div>
 {% endblock %}
 
 {% block content %}

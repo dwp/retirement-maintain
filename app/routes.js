@@ -24,6 +24,8 @@ const iteration11c = require('./routes/iteration11c');
 const bpvdeath6 = require('./routes/bpvdeath6');
 const bpvdeath3 = require('./routes/bpvdeath3');
 const whatislive = require('./routes/whatislive');
+const iteration22b = require('./routes/iteration22b');
+
 
 
 
@@ -50,6 +52,7 @@ router.use(iteration11c);
 router.use(bpvdeath6);
 router.use(bpvdeath3);
 router.use(whatislive);
+router.use(iteration22b);
 
 
 module.exports = router;
