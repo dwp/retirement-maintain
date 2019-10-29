@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+{% include './_find-someone.html' %}
+
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+
+                {% if data['imprisoned-day'] or data['dead-day'] %}
+                {% set status = data['stopped-reason'] %}
+                {% else %}
+                {% set status = 'Payment returned'%}
+                {% endif %}
+
+                <div>
+                  <h1 class="govuk-heading-xl">
+                    Roberto Hugh Smith<br>
+                    <span class="govuk-caption-xl">QQ 12 34 99 C</span>
+                    <span class="app-c-tag">Receiving State Pension</span>
+                  </h1>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+
+  <a href="award" class="govuk-back-link">Back</a>
+
+ <br><br>
+      
+        <h2 class="govuk-heading-m">Future State Pension award</h2>
+
+        <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              This award has changed due to uprating
+            </strong>
+          </div>
+                <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="col">Total</th>
+                        <th class="govuk-table__header" scope="col">£162.68 per week	</th>
+                      </tr>
+          
+           
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell" scope="row">New State Pension</td>
+                        <td class="govuk-table__cell">£152.66</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell" scope="row">Protected payment</td>
+                        <td class="govuk-table__cell">£10.02</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                          <td class="govuk-table__cell" scope="row">Extra State Pension</td>
+                          <td class="govuk-table__cell">£0.00</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell" scope="row">Inherited extra State Pension</td>
+                            <td class="govuk-table__cell">£0.00</td>
+                          </tr>
+                    </tbody>
+                  </table>
+             
+                  <table class="govuk-table">
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header" style="width: 63%">Payment frequency</th>
+                          <td class="govuk-table__cell">4 weeks</td>
+                          <td class="govuk-table__cell"></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Total</th>
+                          <td class="govuk-table__cell">£708.00</td>
+                          <td class="govuk-table__cell"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+        
+                 
+    
+  
+
+
+
+
+
+  </div>
+
+  
+
+
+</main>        </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

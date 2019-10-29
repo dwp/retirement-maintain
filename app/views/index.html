@@ -32,7 +32,15 @@ serviceUrl: "/"
 
 {% block content %}
 
-<a href="showntell/find" class="govuk-heading-m">Reissuing returned payments</a>
+<div class="app-most-recent">
+    {% include 'notes/seaham1.html' %}
+  </div>
+
+  <div class="app-most-recent">
+      {% include 'notes/seaham2.html' %}
+    </div>
+
+
 
   
   <a href="designsprints" class="govuk-heading-m">Design sprints</a>
@@ -141,6 +149,12 @@ serviceUrl: "/"
               Payment tab
             </span>
           </summary>
+         
+
+          <div class="app-most-recent">
+              {% include 'notes/showntelloct19.html' %}
+            </div>
+
 
           <div class="app-most-recent">
               {% include 'notes/iteration22.html' %}
