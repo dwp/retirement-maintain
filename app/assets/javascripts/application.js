@@ -15,3 +15,7 @@ $(document).ready(function () {
     })
   }
 })
+
+// Add number input polyfill
+// For options and data attributes, see number-input.js
+GOVUK.numberInput.init()
