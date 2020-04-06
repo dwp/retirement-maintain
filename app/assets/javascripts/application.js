@@ -8,6 +8,10 @@ if (window.console && window.console.info) {
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
 
+// Add number input polyfill
+// For options and data attributes, see number-input.js
+// moved this inside function
+  window.GOVUK.numberInput.init();
 
   if (document.getElementById('location-autocomplete')) {
     openregisterLocationPicker({
@@ -16,6 +20,3 @@ $(document).ready(function () {
   }
 })
 
-// Add number input polyfill
-// For options and data attributes, see number-input.js
-GOVUK.numberInput.init()

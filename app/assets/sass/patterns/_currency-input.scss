@@ -1,3 +1,5 @@
+// added more padding
+
 .govuk-currency-input {
 
   &__inner {
@@ -5,7 +7,7 @@
 
     &__unit {
       position: absolute;
-      bottom: 5px;
+      bottom: 10px;
       left: 10px;
       font-weight: bold;
     }
