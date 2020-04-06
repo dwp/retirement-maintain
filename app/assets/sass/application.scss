@@ -6,6 +6,7 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Import GOV.UK Frontend and any extension styles if extensions have been configured
 @import "lib/extensions/extensions";
+@import '../../../node_modules/govuk-country-and-territory-autocomplete/dist/location-autocomplete.min';
 
 // Patterns that aren't in Frontend
 @import "patterns/check-your-answers";
@@ -30,6 +31,7 @@ $govuk-assets-path: '/govuk/assets/';
 @import 'work-queue-nav';
 // @import 'alert-warning';
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+ 
 
 .award_detail {
 
@@ -42,3 +44,70 @@ $govuk-assets-path: '/govuk/assets/';
     width: 56%;
 
 }
+
+.autocomplete__option {
+    font-family: $govuk-font-family;
+    font-weight: normal;
+}
+
+.autocomplete-wrapper { max-width: 44ex;  
+}
+
+.govuk-main-wrapper {
+    padding-top: 40px !important;
+  }
+  .id-bar.govuk-main-wrapper {
+    padding-top: 0px !important;
+  }
+  .ul-id-bar{
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0px;
+  }
+  .li-id-bar {
+    display: inline-block;
+    padding-right: 0px !important;
+  }
+  .li-id-bar-item {
+    display: inline-block;
+    padding-right: 20px !important;
+  }
+  .verticalLine {
+    border-left: 1px solid govuk-colour("mid-grey");
+  }
+  .govuk-section-break-id-bar {
+    border-bottom: 1px solid govuk-colour("mid-grey");
+  }
+
+  * {
+    font-family: Arial, sans-serif !important;
+  }
+
+  .govuk-currency-input {
+
+    &__inner {
+      position: relative;
+  
+      &__unit {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        font-weight: bold;
+      }
+
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: "nta", Arial, sans-serif;
+      font-weight: 400;
+      text-transform: none;
+      font-size: 16px;
+      line-height: 1.25;
+      width: 20%;
+      padding: 5px 4px 4px;
+      border: 2px solid #0b0c0c;
+    }
+  }
+
+
+  // —————————————————————————————————————

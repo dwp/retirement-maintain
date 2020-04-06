@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+{% include './_find-someone.html' %}
+
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+
+                {% if data['imprisoned-day'] or data['dead-day'] %}
+                {% set status = data['stopped-reason'] %}
+                {% else %}
+                {% set status = 'Payment returned'%}
+                {% endif %}
+
+                <div>
+                  <h1 class="govuk-heading-xl">
+                    Rachel Smith<br>
+                    <span class="govuk-caption-xl">QQ 12 34 99 C</span>
+                    <span class="app-c-tag">Receiving State Pension</span>
+                  </h1>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+
+  <a href="award" class="govuk-back-link">Back</a>
+
+ <br><br>
+      
+ <h2 class="govuk-heading-m">Current State Pension award</h2>
+ 
+ <table class="govuk-table">
+    <tbody class="govuk-table__body">
+     
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header" style="width: 50%">From</th>
+        <td class="govuk-table__cell">10 April 2019</td>
+        <td class="govuk-table__cell"><a href="current-breakdown.html"></a></td>
+      </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header" style="width: 43%">Reason</th>
+          <td class="govuk-table__cell">HMRC review</td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+    </tbody>
+  </table>
+
+ <table class="govuk-table">
+     <thead class="govuk-table__head">
+       <tr class="govuk-table__row">
+         <th class="govuk-table__header" scope="col">Total</th>
+         <th class="govuk-table__header" scope="col" style="width: 50%">£162.68 a week	</th>
+       </tr>
+
+
+     </thead>
+     <tbody class="govuk-table__body">
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell" scope="row">New State Pension</td>
+         <td class="govuk-table__cell">£152.66</td>
+       </tr>
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell" scope="row">Protected payment</td>
+         <td class="govuk-table__cell">£10.02</td>
+       </tr>
+       <tr class="govuk-table__row">
+           <td class="govuk-table__cell" scope="row">Extra State Pension</td>
+           <td class="govuk-table__cell">£0.00</td>
+         </tr>
+         <tr class="govuk-table__row">
+             <td class="govuk-table__cell" scope="row">Inherited extra State Pension</td>
+             <td class="govuk-table__cell">£0.00</td>
+           </tr>
+     </tbody>
+   </table>
+
+
+
+
+
+        
+                 
+    
+  
+
+
+
+
+
+  </div>
+
+  
+
+
+</main>        </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

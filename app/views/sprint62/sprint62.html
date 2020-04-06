@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+serviceName: serviceName,
+serviceUrl: "/"
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="app-homepage-top">
+      <div class="app-homepage-top--content">
+        <h1 class="govuk-heading-xl app-homepage-top--heading">
+          Design Sprint 62
+          <span class="app-homepage-top--span">6th November 2019</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<a href="/designsprints" class="govuk-back-link">Back</a>
+<br><br>
+
+<div>
+  <div class="govuk-accordion__section ">
+      <h3 class="govuk-heading-m">Design sprint goals:</h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+      <li>Finalise designs for uprated award</li>
+      <li></li>
+
+
+
+
+
+          
+        </ul>
+
+      <h3 class="govuk-heading-m">In sprint final journeys:</h3>
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Final designs</th>
+            <th scope="col" class="govuk-table__header">Stories</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__cell">
+                <a href="design1-sprint62" class="govuk-link govuk-link--no-visited-state">Design</a></td>
+    
+            </th>
+    
+            <td class="govuk-table__cell">
+                <a href="https://jira.service.dwpcloud.uk/browse/SA-2057" class="govuk-link govuk-link--no-visited-state">SA-1897</a>
+                As an agent I need to see future award details (uprating)<br>so that I can answer citizen enquiries<br> 
+          </tr>
+        </tbody>
+       
+
+      </table>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+</div>
+
+{% endblock %}

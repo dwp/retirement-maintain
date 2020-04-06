@@ -7,10 +7,8 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
+
+{% include 'includes/servicename-payments.html' %}
 
 {% block headEnd %}
 {% include 'includes/remove-blue-bar.html' %}
@@ -118,7 +116,7 @@ GOV.UK Prototype Kit
 
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-           Reissued
+            Re-sent
           </h3>
   
           <p class="app-timeline__info govuk-!-margin-bottom-0">

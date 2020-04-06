@@ -7,10 +7,8 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{{ govukHeader({
-serviceName: serviceName,
-serviceUrl: "/"
-}) }}
+
+{% include 'includes/servicename-payments.html' %}
 
 {% block headEnd %}
 {% include 'includes/remove-blue-bar.html' %}
@@ -41,7 +39,7 @@ serviceUrl: "/"
                 <div>
                   <h1 class="govuk-heading-xl">
                     Rachel Smith</br>
-                    <span class="govuk-caption-xl">QQ 12 34 99 C</span>
+                    <span class="govuk-caption-xl">QQ 12 34 56 X</span>
                     <span class="app-c-tag">Receiving State Pension</span>
                   </h1>
                 </div>
@@ -99,11 +97,7 @@ serviceUrl: "/"
                   <span class="govuk-link govuk-!-font-size-19" style="margin-left: 30%">Change</span>
                 </a></td>
             </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Last regular payment</th>
-              <td class="govuk-table__cell">Friday 26 July 2019</td>
-              <td class="govuk-table__cell">£650.72</td>
-            </tr>
+            
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Next regular payment </th>
               <td class="govuk-table__cell">Friday 23 August 2019</td>

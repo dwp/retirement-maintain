@@ -7,10 +7,8 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{{ govukHeader({
-serviceName: serviceName,
-serviceUrl: "/"
-}) }}
+
+{% include 'includes/servicename-payments.html' %}
 
 {% block headEnd %}
 {% include 'includes/remove-blue-bar.html' %}
@@ -107,11 +105,7 @@ serviceUrl: "/"
                   <span class="govuk-link govuk-!-font-size-19" style="margin-left: 30%">Change</span>
                 </a></td>
             </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Last regular payment</th>
-              <td class="govuk-table__cell">Friday 28 June 2019</td>
-              <td class="govuk-table__cell">£650.72</td>
-            </tr>
+           
   
           </tbody>
         </table>

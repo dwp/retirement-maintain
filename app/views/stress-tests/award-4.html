@@ -1,0 +1,158 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+<!--{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+-->
+{% include './_header-nav-enquiries.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+{% include './_find-someone-enquiries.html' %}
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full">
+
+
+          <br><br>
+          {% include './_bar.html' %}
+
+
+
+          <a href="award" class="govuk-back-link">Back</a>
+
+
+        </div>
+      </div>
+    </main>
+
+    </br>
+    </br>
+
+    <div>
+  
+      <h2 class="govuk-heading-m">State Pension awards</h2>
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col" style="width: 45%">From</th>
+            <th class="govuk-table__header " scope="col" style="width: 45%">Weekly amount</th>
+            <th class="govuk-table__header" scope="col" style="width: 10%"></th>
+ 
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">10 April 2019</td>
+            <td class="govuk-table__cell">£160.34</td>
+            <td class="govuk-table__cell"><a href="award-current">Details</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">10 April 2019</td>
+            <td class="govuk-table__cell">£155.27</td>
+            <td class="govuk-table__cell"><a href="award-previous">Details</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">10 April 2019</td>
+            <td class="govuk-table__cell">£155.27</td>
+            <td class="govuk-table__cell"><a href="award-previous">Details</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">10 April 2019</td>
+            <td class="govuk-table__cell">£155.27</td>
+            <td class="govuk-table__cell"><a href="award-previous">Details</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">10 April 2019</td>
+            <td class="govuk-table__cell">£155.27</td>
+            <td class="govuk-table__cell"><a href="award-previous">Details</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">10 April 2019</td>
+            <td class="govuk-table__cell">£155.27</td>
+            <td class="govuk-table__cell"><a href="award-previous">Details</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">10 April 2019</td>
+            <td class="govuk-table__cell">£155.27</td>
+            <td class="govuk-table__cell"><a href="award-previous">Details</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">10 April 2019</td>
+            <td class="govuk-table__cell">£155.27</td>
+            <td class="govuk-table__cell"><a href="award-previous">Details</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">10 April 2019</td>
+            <td class="govuk-table__cell">£155.27</td>
+            <td class="govuk-table__cell"><a href="award-previous">Details</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">10 April 2019</td>
+            <td class="govuk-table__cell">£155.27</td>
+            <td class="govuk-table__cell"><a href="award-previous">Details</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <nav class="moj-pagination" id="pagination-label">
+
+      <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+      
+      <ul class="moj-pagination__list">
+      
+        <li class="moj-pagination__item  moj-pagination__item--prev">
+          <a class="moj-pagination__link" href="award-3">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+        </li>
+
+      <li class="moj-pagination__item"><a class="moj-pagination__link" href="award-2">1</a></li>
+      
+      <li class="moj-pagination__item"><a class="moj-pagination__link" href="award-3">2</a></li>
+      
+      <li class="moj-pagination__item moj-pagination__item--active">3</li>
+      
+      <li class="moj-pagination__item  moj-pagination__item--next">
+        <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+      </li>
+      </ul>
+      <p class="moj-pagination__results">Showing <b>22</b> to <b>33</b> of <b>33</b> results</p>
+      </nav> 
+      
+  </div>
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</main>
+</div>
+<!-- </div> -->
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

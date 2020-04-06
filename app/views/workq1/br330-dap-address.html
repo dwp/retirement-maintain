@@ -5,12 +5,10 @@
 {% endblock %}
 
 {% block header %}
-  {% include "includes/cookie-banner.html" %}
-  {# Set serviceName in config.js. #}
-  {{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/servicename-workq.html' %}
 
   {% block headEnd %}
     {% include 'includes/remove-blue-bar.html' %}

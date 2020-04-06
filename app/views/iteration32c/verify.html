@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+serviceName: serviceName,
+serviceUrl: "/"
+}) }}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+{% include './_find-someone.html' %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+
+            {% include './_bar.html' %}
+
+          </div>
+        </div>
+      </main>
+
+      <div>
+        <a href="CP-details" class="govuk-back-link">Back</a>
+      </div>
+
+      <form method="post">
+        <div class="govuk-form-group">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            </legend>
+            <h1 class="govuk-heading-l">Is the date of civil partnership 17 September 1987?</h1>
+       
+        </div>
+
+        <fieldset class="govuk-fieldset" aria-describedby="verified-or-notverified-hint">
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="verified-or-notverified-1" name="verified-or-notverified" type="radio"
+                value="verified">
+              <label class="govuk-label govuk-radios__label" for="verified-or-notverified-1">
+                Yes
+              </label> </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="verified-or-notverified-2" name="verified-or-notverified" type="radio"
+                value="not-verified">
+              <label class="govuk-label govuk-radios__label" for="verified-or-notverified-2">
+                No
+              </label> </div>
+          </div>
+        </fieldset>
+
+        <br>
+
+        <button type="submit" class="govuk-button">
+          Continue
+        </button>
+      </form>
+
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

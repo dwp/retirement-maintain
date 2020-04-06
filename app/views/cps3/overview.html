@@ -7,10 +7,9 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{{ govukHeader({
-serviceName: serviceName,
-serviceUrl: "/"
-}) }}
+
+{% include 'includes/servicename-general.html' %}
+
 
 {% block headEnd %}
 {% include 'includes/remove-blue-bar.html' %}
@@ -88,29 +87,21 @@ serviceUrl: "/"
 
 
 
-<div class="govuk-grid-column-one-third">
+    <div class="govuk-grid-column-one-third">
+      <h2 class="govuk-heading-m">
+        Personal changes
+      </h2>
+      <ol class="app-timeline">
 
-  <h2 class="govuk-heading-m">
-    Personal changes
-  </h2>
-  <ol class="app-timeline">
-    <li class="app-timeline__entry">
-      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-        No changes made
-      </h3>
+        <li class="app-timeline__entry">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0" style="color: #575b5e ">
+            Unable to load changes
+          </h3>
 
-      <p class="app-timeline__info govuk-!-margin-bottom-0">
-        <span class="govuk-visually-hidden">No changes made</span>
-        <span class="app-timeline__date">
-
-        </span>
-      </p>
-    </li>
-
-
-  </ol>
-
-</div>
+        </li>       
+      </ol>
+        
+    </div>
 
 
 </div>

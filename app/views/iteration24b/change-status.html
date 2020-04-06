@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/servicename-awards.html' %}
+
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+{% include './_find-someone.html' %}
+
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+
+                {% if data['imprisoned-day'] or data['dead-day'] %}
+                {% set status = data['stopped-reason'] %}
+                {% else %}
+                {% set status = 'Payment returned'%}
+                {% endif %}
+
+                <div>
+                  <h1 class="govuk-heading-xl">
+                    Rachel Smith<br>
+                    <span class="govuk-caption-xl">QQ 12 34 99 C</span>
+                    <span class="app-c-tag">Receiving State Pension</span>
+                  </h1>
+                </div>
+                <div>
+                        <a href="payment-details" class="govuk-back-link">Back</a>
+                      </div><br>
+
+                      <form action="payment-notpaid" method="post" class="form">
+                    <h2 class="govuk-heading-l">Change payment status</h2>
+
+                    <div class="govuk-form-group">
+                            <fieldset class="govuk-fieldset">
+                             
+                              <div class="govuk-radios">
+                                <div class="govuk-radios__item">
+                                  <input class="govuk-radios__input" id="status-1" name="status" type="radio" value="notpaid">
+                                  <label class="govuk-label govuk-radios__label" for="status-1">
+                                   Not paid
+                                  </label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                  <input class="govuk-radios__input" id="status-2" name="status" type="radio" value="recalling">
+                                  <label class="govuk-label govuk-radios__label" for="status-2">
+                                    Recalling
+                                  </label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                  <input class="govuk-radios__input" id="status-3" name="status" type="radio" value="sent">
+                                  <label class="govuk-label govuk-radios__label" for="status-3">
+                                    Paid
+                                  </label>
+                                </div>
+                                <div><br>
+                                <button type="submit" class="govuk-button" data-module="govuk-button">
+                                        Confirm
+                                      </button>
+                                    </div>
+                              </div>
+                            </fieldset>
+                          </div>
+                        </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+    </main>        </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

@@ -7,10 +7,8 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{{ govukHeader({
-serviceName: serviceName,
-serviceUrl: "/"
-}) }}
+
+{% include 'includes/servicename-payments.html' %}
 
 {% block headEnd %}
 {% include 'includes/remove-blue-bar.html' %}
@@ -24,18 +22,20 @@ serviceUrl: "/"
   <main class="govuk-main-wrapper">
 
 
-      <div class="moj-banner moj-banner--success">
-
-          <svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
-          <path d="M25,6.2L8.7,23.2L0,14.1l4-4.2l4.7,4.9L21,2L25,6.2z" /></svg>
-          
-          <div class="moj-banner__message">
-          <span class="moj-banner__assistive">Success</span>Payment reissued - payments started again</div>
-          
-          </div> 
 
 
     <div class="govuk-grid-column-two-thirds">
+
+
+      <div class="moj-banner moj-banner--success">
+
+        <svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
+        <path d="M25,6.2L8.7,23.2L0,14.1l4-4.2l4.7,4.9L21,2L25,6.2z" /></svg>
+        
+        <div class="moj-banner__message">
+        <span class="moj-banner__assistive">Success</span>Payment reissued - payments started again</div>
+        
+        </div> 
 
       <main id="content" role="main">
         <div class="grid-row">
@@ -111,11 +111,7 @@ serviceUrl: "/"
                   <span class="govuk-link govuk-!-font-size-19" style="margin-left: 30%">Change</span>
                 </a></td>
             </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Last regular payment</th>
-              <td class="govuk-table__cell">Wednesday 31 July 2019</td>
-              <td class="govuk-table__cell">£650.72</td>
-            </tr>
+           
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Next regular payment </th>
               <td class="govuk-table__cell">Friday 23 August 2019</td>
@@ -127,7 +123,7 @@ serviceUrl: "/"
 
 
     </div>
-
+<br><br><br><br>
     <div class="govuk-grid-column-one-third">
         <h2 class="govuk-heading-m">
           Payment changes

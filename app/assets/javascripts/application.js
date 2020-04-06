@@ -7,4 +7,11 @@ if (window.console && window.console.info) {
 
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
+
+
+  if (document.getElementById('location-autocomplete')) {
+    openregisterLocationPicker({
+      selectElement: document.getElementById('location-autocomplete')
+    })
+  }
 })

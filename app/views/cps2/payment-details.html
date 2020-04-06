@@ -39,13 +39,8 @@ GOV.UK Prototype Kit
                 {% set status = 'Payment returned'%}
                 {% endif %}
 
-                <div>
-                  <h1 class="govuk-heading-xl">
-                    Roberto Hugh Smith<br>
-                    <span class="govuk-caption-xl">QQ 12 34 99 C</span>
-                    <span class="app-c-tag">Receiving State Pension</span>
-                  </h1>
-                </div>
+                
+                {% include './_bar-dead.html' %}
 
               </div>
             </div>
@@ -82,8 +77,8 @@ GOV.UK Prototype Kit
               </tr>
               <tr class="govuk-table__row">
                   <td class="govuk-table__cell" scope="row">Status</td>
-                  <td class="govuk-table__cell">Paid</td>
-                  <td class="govuk-table__cell"><a href="payment-details-change.html">Change to 'not paid'</a>
+                  <td class="govuk-table__cell">Recalled</td>
+                  <td class="govuk-table__cell"><a href="payment-details-change.html"></a>
                     
                   </td>
                 </tr>
@@ -123,14 +118,28 @@ GOV.UK Prototype Kit
   <ol class="app-timeline">
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-            Paid
+            Recalled
           </h3>
   
           <p class="app-timeline__info govuk-!-margin-bottom-0">
             <span class="govuk-visually-hidden">Sent
             </span>
             <span class="app-timeline__date">
-              26 July 2019
+              25 July 2019
+            </span>
+          </p>
+        </li>
+
+      <li class="app-timeline__entry">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+            Recalling
+          </h3>
+  
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">Sent
+            </span>
+            <span class="app-timeline__date">
+              24 July 2019
             </span>
           </p>
         </li>

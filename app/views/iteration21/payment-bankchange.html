@@ -7,10 +7,8 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{{ govukHeader({
-serviceName: serviceName,
-serviceUrl: "/"
-}) }}
+
+{% include 'includes/servicename-payments.html' %}
 
 {% block headEnd %}
 {% include 'includes/remove-blue-bar.html' %}
@@ -23,17 +21,17 @@ serviceUrl: "/"
 
   <main class="govuk-main-wrapper">
 
+    
+    <div class="govuk-grid-column-two-thirds">
       <div class="moj-banner moj-banner--success">
 
-          <svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
-          <path d="M25,6.2L8.7,23.2L0,14.1l4-4.2l4.7,4.9L21,2L25,6.2z" /></svg>
-          
-          <div class="moj-banner__message">
-          <span class="moj-banner__assistive">Success</span>Bank details successfully changed</div>
-          
-          </div> 
-
-    <div class="govuk-grid-column-two-thirds">
+        <svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
+        <path d="M25,6.2L8.7,23.2L0,14.1l4-4.2l4.7,4.9L21,2L25,6.2z" /></svg>
+        
+        <div class="moj-banner__message">
+        <span class="moj-banner__assistive">Success</span>Bank details successfully changed</div>
+        
+        </div> 
 
       <main id="content" role="main">
         <div class="grid-row">
@@ -123,7 +121,7 @@ serviceUrl: "/"
         </table>
 
     </div>
-
+<BR><BR><BR><BR>
     <div class="govuk-grid-column-one-third">
         <h2 class="govuk-heading-m">
           Payment changes
@@ -164,49 +162,67 @@ serviceUrl: "/"
       <table class="govuk-table">
           <thead class="govuk-table__head">
               <tr class="govuk-table__row">
-                
-                <th class="govuk-table__header" scope="col" style="width: 40%">Payment date</th>
-                <th class="govuk-table__header" scope="col" style="width: 32%">Amount</th>
-                <th class="govuk-table__header" scope="col" style="width: 35%">Status</th>
+                <th class="govuk-table__header" scope="col" style="width: 20%">From</th>
+                <th class="govuk-table__header " scope="col" style="width: 20%">To</th>
+                <th class="govuk-table__header" scope="col" style="width: 20%">Payment date</th>
+                <th class="govuk-table__header" scope="col" style="width: 20%">Amount</th>
+                <th class="govuk-table__header" scope="col" style="width: 17%">Status</th>
                 <th class="govuk-table__header" scope="col"></th>
               </tr>
             </thead>
         <tbody class="govuk-table__body">
 
 
-
           <tr class="govuk-table__row">
-          
-            <td class="govuk-table__cell">Friday 26 July 2019</td>
+            <td class="govuk-table__cell">29/06/2019</td>
+            <td class="govuk-table__cell">26/07/2019</td>
+            <td class="govuk-table__cell">26/07/2019</td>
             <td class="govuk-table__cell">£650.72</td>
-            <td class="govuk-table__cell" class="govuk-orange">Not paid</class>
+            <td class="govuk-table__cell" class="govuk-orange">Returned</class>
             </td>
             <td class="govuk-table__cell"><a href="payment-details-notp.html">Details</a></td>
           </tr>
 
 
+    
+
           <tr class="govuk-table__row">
-            
-            <td class="govuk-table__cell">Friday 28 June 2019</td>
+            <td class="govuk-table__cell">22/06/2019</td>
+            <td class="govuk-table__cell">28/06/2019</td>
+            <td class="govuk-table__cell">28/06/2019</td>
             <td class="govuk-table__cell">£650.72</td>
             <td class="govuk-table__cell" class="govuk-orange">Paid</class>
             </td>
             <td class="govuk-table__cell"><a href="payment-details-2.html">Details</a></td>
           </tr>
 
+
           <tr class="govuk-table__row">
-            
-              <td class="govuk-table__cell">Friday 21 May 2019</td>
-              <td class="govuk-table__cell">£650.72</td>
-              <td class="govuk-table__cell" class="govuk-orange">Paid</class>
-              </td>
-              <td class="govuk-table__cell"><a href="payment-details-2.html">Details</a></td>
-            </tr>
+            <td class="govuk-table__cell">15/06/2019</td>
+            <td class="govuk-table__cell">21/06/2019</td>
+            <td class="govuk-table__cell">21/06/2019</td>
+            <td class="govuk-table__cell">£650.72</td>
+            <td class="govuk-table__cell" class="govuk-orange">Paid</class>
+            </td>
+            <td class="govuk-table__cell"><a href="payment-details-3.html">Details</a></td>
+          </tr>
+
+          </tr>
 
 
+          <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell">01/12/2018</td>
+      <td class="govuk-table__cell">28/12/2018</td>
+      <td class="govuk-table__cell">28/12/2018</td>
+      <td class="govuk-table__cell">£650.72</td>
+      <td class="govuk-table__cell" class="govuk-green">Paid</a></td>
+      <td class="govuk-table__cell"><a href="payment-details-4.html">Details</a></td>
+    </tr>-->
 
-          </tbody>
-          </table>
+
+        </tbody>
+      </table>
+    </div>
     </div>
 
     <!-- <p class="govuk-body">

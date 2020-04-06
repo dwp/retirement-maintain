@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/servicename-tasks.html' %}
+
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+      {% include './_bar-small.html' %}
+    <div class="govuk-grid-column-two-thirds">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+<br>
+            
+
+          </div>
+        </div>
+      </main>
+
+     
+
+      <div>
+        <a href="#" class="govuk-back-link">Back</a>
+      </div>
+<br>
+      <form action="#" method="post" class="form">
+      <form method="post" >
+        <div class="govuk-form-group">
+            <h1 class="govuk-heading-l" >New payment amounts</h1>
+            <br>
+            <h2 class="govuk-heading-m">Next and regular payment</h2>
+            <table class="govuk-table">
+            
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell" scope="row" style="width: 50%" ><b>Total</b></td>
+                    <td class="govuk-table__cell"><b>£480.00</b></td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell" scope="row">Breakdown</td>
+                    <td class="govuk-table__cell">4 weeks at £120.00
+                      
+                    </td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell" scope="row">Payment period</td>
+                    <td class="govuk-table__cell">2 June 2020 to 29 June 2020</td>
+                  </tr>
+                  
+                </tbody>
+                </table>
+      
+       <br>
+          <button type="submit" class="govuk-button">
+            Send new award letter
+          </button>
+        </form>
+      
+
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

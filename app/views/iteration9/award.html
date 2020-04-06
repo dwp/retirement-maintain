@@ -7,10 +7,9 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
+
+{% include 'includes/servicename-awards.html' %}
+
 
 {% block headEnd %}
 {% include 'includes/remove-blue-bar.html' %}
@@ -41,7 +40,7 @@ GOV.UK Prototype Kit
 
                 <div>
                   <h1 class="govuk-heading-xl">
-                    Roberto Hugh Smith<br>
+                   Roberto Hugh Smith<br>
                     <span class="govuk-caption-xl">QQ 12 34 99 C</span>
                     <span class="app-c-tag">Receiving State Pension</span>
                   </h1>
@@ -59,11 +58,33 @@ GOV.UK Prototype Kit
     </br>
   </br>
 
+  <div class="moj-banner">
 
+    <svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
+    <path d="M13.7,18.5h-2.4v-2.4h2.4V18.5z M12.5,13.7c-0.7,0-1.2-0.5-1.2-1.2V7.7c0-0.7,0.5-1.2,1.2-1.2s1.2,0.5,1.2,1.2v4.8
+    C13.7,13.2,13.2,13.7,12.5,13.7z M12.5,0.5c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S19.1,0.5,12.5,0.5z" /></svg>
+    
+    <div class="moj-banner__message">
+        This award will increase on 10 April 2020 <br>
+        <a href="uprated-award.html">View new award</a>
+
+    </div>
+    
+    </div> 
   <h2 class="govuk-heading-m">Current State Pension award</h2>
   
   <dl class="app-check-your-answers app-check-your-answers--short">
-
+    <table class="govuk-table">
+      <tbody class="govuk-table__body">
+       
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header" style="width: 50%">From</th>
+          <td class="govuk-table__cell">Friday 10 April 2019</td>
+          <td class="govuk-table__cell"><a href="current-breakdown.html"></a></td>
+        </tr>
+          
+      </tbody>
+    </table>
 
       <table class="govuk-table">
           <thead class="govuk-table__head">
@@ -76,7 +97,7 @@ GOV.UK Prototype Kit
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell" scope="row">New State Pension</td>
+              <td class="govuk-table__cell" scope="row" style="width: 50%">New State Pension</td>
               <td class="govuk-table__cell">£152.66</td>
             </tr>
             <tr class="govuk-table__row">
