@@ -12,7 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav-unselected.html' %}
+{% include './_header-nav.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -28,62 +28,59 @@ GOV.UK Prototype Kit
         <a href="check-answers" class="govuk-back-link">Back</a>
 
         <form method="post" action="complete">
-<br>
+          <br>
           <h1 class="govuk-heading-xl">
-              Declaration
+            Declaration
           </h1>
 
 
-  <div class="govuk-form-group">
+          <div class="govuk-form-group">
 
-    <p>By submitting this application, you agree that:</p>
+            <p>By submitting this application, you agree that:</p>
 
-<ul class="govuk-list govuk-list--bullet">
-  <li> the information you have given is correct and complete as far as you know</li>
-  <li>you will pay back any money you are overpaid if you are asked to</li>
-</ul>
+            <ul class="govuk-list govuk-list--bullet">
+              <li> the information you have given is correct and complete as far as you know</li>
+              <li>you will pay back any money you are overpaid if you are asked to</li>
+            </ul>
+            <br>
+            <p>
+              You could be prosecuted or have to pay a penalty if you deliberately give wrong or incomplete information
+              or do not report changes.
+            </p>
+          </div>
+          <br>
 
-<div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Warning</span>
-    You could be prosecuted or have to pay a penalty if you deliberately give wrong or incomplete information or do not report changes.
-  </strong>
-</div>
-  </div>
-<br>
+          <h1 class="govuk-heading-m">Do you agree to submit this application?</h1>
 
-  <h1 class="govuk-heading-m">Do you agree to submit this application?</h1>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="changed-name">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                No
+              </label>
+            </div>
+          </div>
+          <br>
+          <button type="submit" class="govuk-button">
+            Continue
+          </button>
 
-  <div class="govuk-radios govuk-radios--inline">
-    <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-      <label class="govuk-label govuk-radios__label" for="changed-name">
-        Yes
-      </label>
+      </div>
+
+
+      </form>
+
+
+
     </div>
-    <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-      <label class="govuk-label govuk-radios__label" for="changed-name-2">
-        No
-      </label>
-    </div>
-  </div>
-<br>
-    <button type="submit" class="govuk-button">
-      Continue
-    </button>
 
-  </div>
-
-
- </form>
-
-
-
-</div>
-
-</main>
+  </main>
 </div>
 
 {% endblock %}
