@@ -12,7 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav-unselected.html' %}
+{% include './_header-nav.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -30,22 +30,22 @@ GOV.UK Prototype Kit
         <form method="post" action="check-answers">
 <br>
           <h1 class="govuk-heading-xl">
-             Has the citizen signed the form?
+             Has the claimant signed the form?
           </h1>
-  <div class="govuk-radios govuk-radios--inline">
-    <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-      <label class="govuk-label govuk-radios__label" for="changed-name">
-        Yes
-      </label>
-    </div>
-    <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-      <label class="govuk-label govuk-radios__label" for="changed-name-2">
-        No
-      </label>
-    </div>
-  </div>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="changed-name">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                No
+              </label>
+            </div>
+          </div>
 <br><br>
     <button type="submit" class="govuk-button">
       Continue

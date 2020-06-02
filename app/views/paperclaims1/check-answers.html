@@ -12,7 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav-unselected.html' %}
+{% include './_header-nav.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -25,7 +25,7 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <a href="declaration" class="govuk-back-link">Back</a>
+        <a href="bank" class="govuk-back-link">Back</a>
 
         <form method="post" action="complete">
 <br>
@@ -37,7 +37,7 @@ GOV.UK Prototype Kit
   <div class="govuk-form-group">
     
     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-      <div class="govuk-summary-list__row">
+      <!-- <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Date of birth
         </dt>
@@ -55,20 +55,20 @@ GOV.UK Prototype Kit
           Address
         </dt>
         <dd class="govuk-summary-list__value">
-          5 WINDSOR STREET<br>SOUTH GOSFORTH<br>NEWCASTLE UPON TYNE<br>NE31 1YL
+          5 Windsor Street<br>South Gosforth<br>Newcastle upon Tyne<br>NE31 1YL
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
             Change
           </a>
         </dd>
-      </div>
+      </div> -->
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Contact details
         </dt>
         <dd class="govuk-summary-list__value">
-         Mobile: 07919192873 <br> kenadams45@gmail.com <br> Other formats: Large print
+         Mobile: 07919192873 <br> kenadams45@gmail.com
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
@@ -81,7 +81,7 @@ GOV.UK Prototype Kit
          Marital details
         </dt>
         <dd class="govuk-summary-list__value">
-         Married <br> 7 May 1969 <br><br>QQ 12 55 87 X<br> Regina Adams<br>Phillips<br> 3 July 1960
+         Widowed: 29 Sep 2001 <br>Married: 18 Sep 1987<br><br>QQ 12 55 87 X<br> Regina Adams<br>Phillips<br> 3 Jul 1960
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
@@ -94,7 +94,10 @@ GOV.UK Prototype Kit
          Lived or worked outside the UK
         </dt>
         <dd class="govuk-summary-list__value">
-         France<br>Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004<br><br> Germany<br>Lived: Oct 2007 - Dec 2010<br>
+         France<br>Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004
+         <br><br> Germany<br>Lived: Oct 2007 - Dec 2010
+         <br><br> Spain<br>Lived: Nov 1999 - Feb 2000
+         <br><br>Austria<br>Lived: Apr 1996 - Dec 1996<br>Worked: Apr 1996 - Dec 1996
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
@@ -117,7 +120,7 @@ GOV.UK Prototype Kit
       </div>
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Bank account details
+          Bank or building society
         </dt>
         <dd class="govuk-summary-list__value">
         Mr Ken Adams<br>54 65 66<br>24678900
