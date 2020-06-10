@@ -12,7 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav.html' %}
+{% include './_header-nav-claimform2.html' %}
 {% block headEnd %}
 {% endblock %}
 
@@ -30,9 +30,12 @@ GOV.UK Prototype Kit
         <form method="post" action="check-answers">
        
           <h1 class="govuk-heading-xl">
-            The earliest you can get your State Pension is 6 May 2020</h1>
-            <h2 class="govuk-heading-m"> 
-              Do you want to claim your State Pension from this date?</h2>
+            Does the claimant want their State Pension from the earliest possible date?</h1>
+            
+            <div class="govuk-inset-text">
+              The earliest date they can claim their State Pension is 6 May 2020
+            </div>
+
           <div class="govuk-form-group">
 
             <div class="govuk-form-group">
@@ -40,7 +43,7 @@ GOV.UK Prototype Kit
               
                 <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
+                    <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio" value="email" checked data-aria-controls="conditional-how-contacted-conditional">
                     <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
                       Yes
                     </label>
@@ -104,7 +107,7 @@ GOV.UK Prototype Kit
             </div>
             <br>
             <button type="submit" class="govuk-button">
-              Continue
+              Save
             </button>
 
           </div>

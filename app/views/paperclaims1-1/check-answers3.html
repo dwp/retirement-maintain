@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+<!--{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+-->
+{% include './_header-nav-claimform2.html' %}
+{% block headEnd %}
+{% endblock %}
+
+<div class="govuk-width-container">
+
+  {% include './_bar-small.html' %}
+
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <a href="check-answers" class="govuk-back-link">Back</a>
+
+        <form method="post" action="check-answers">
+          <br>
+          <h1 class="govuk-heading-xl">
+            Lived and worked abroad
+          </h1>
+
+
+          <div class="govuk-form-group">
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date of birth
+        </dt>
+        <dd class="govuk-summary-list__value">
+          11 July 1954
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          5 Windsor Street<br>South Gosforth<br>Newcastle upon Tyne<br>NE31 1YL
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change
+          </a>
+        </dd>
+      </div> -->
+              
+              <div class="govuk-summary-list__row">
+                <dd class="govuk-summary-list__value">
+                  Germany<br>Lived: Oct 2007 - Dec 2010
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="country2-cc">Change</a>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="contacted-c">Remove</a>
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dd class="govuk-summary-list__value">
+                  Spain<br>Lived: Nov 1999 - Feb 2000
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="country3-c">Change</a>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="contacted-c">Remove</a>
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dd class="govuk-summary-list__value">
+                  Austria<br>Lived: Apr 1996 - Dec 1996<br>Worked: Apr 1996 - Dec 1996
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="country4-c">Change</a>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="contacted-c">Remove</a>
+                </dd>
+              </div>
+              <br>
+              <p><a href="country4">Add country</a></p>
+              <br>
+              <button type="submit" class="govuk-button">
+                Save
+               </button>
+            </dl>
+          </div>
+         
+        </div>
+
+
+      </form>
+
+
+
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}
