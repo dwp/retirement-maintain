@@ -26,7 +26,7 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
         <a href="check-answers" class="govuk-back-link">Back</a>
 
-        <form method="post" action="check-answers-1">
+        <form method="post" action="check-answers">
           <br>
           <h1 class="govuk-heading-xl">
             Lived and worked abroad
@@ -62,13 +62,23 @@ GOV.UK Prototype Kit
           </a>
         </dd>
       </div> -->
-              
+              <div class="govuk-summary-list__row">
+                <dd class="govuk-summary-list__value">
+                  France <br> Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="country1-c">Change</a>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="remove-1">Remove</a>
+                </dd>
+              </div>
               <div class="govuk-summary-list__row">
                 <dd class="govuk-summary-list__value">
                   Germany<br>Lived: Oct 2007 - Dec 2010
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="country2-cc">Change</a>
+                  <a class="govuk-link" href="country2-c">Change</a>
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="contacted-c">Remove</a>
@@ -98,54 +108,36 @@ GOV.UK Prototype Kit
                   <a class="govuk-link" href="contacted-c">Remove</a>
                 </dd>
               </div>
-              <div class="govuk-summary-list__row">
-                <dd class="govuk-summary-list__value">
-                  Italy<br>Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="country4-c">Change</a>
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="contacted-c">Remove</a>
-                </dd>
-              </div>
-             
-              <!-- <p><a href="country4">Add country</a></p> -->
-             
             </dl>
-
-
-            <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                    <h1 class="govuk-fieldset__heading">
-                      Has the claimant worked in more than 4 countries?
-                    </h1>
-                  </legend>
-           
-                  <div class="govuk-radios govuk-radios--inline">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-                      <label class="govuk-label govuk-radios__label" for="changed-name">
-                        Yes
-                      </label>
-                    </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                      <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                        No
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-<br>
-              <button type="submit" class="govuk-button">
-                Save
-               </button>
-           
+           <!-- <p><a href="add-country">Add country</a></p> -->
           </div>
-         
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Has the claimant worked in more than 4 countries?
+                </h1>
+              </legend>
+       
+              <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="changed-name">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no" checked>
+                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button">
+           Save
+          </button>
         </div>
 
 
