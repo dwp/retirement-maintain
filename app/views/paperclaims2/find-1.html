@@ -12,21 +12,27 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav.html' %}
+{% include './_header-nav-paper.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
 <div class="govuk-width-container">
-  {% include './_find-someone.html' %}
-
   <main class="govuk-main-wrapper">
    
     <br>
-    {% include './_bar.html' %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+<h1 class="govuk-heading-xl">Find BR1 in DRS using envelope ID and enter NI number</h1>
 
+<h2 class="govuk-heading-m">Envelope ID: 34567890DSBCJS</h2>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="nino">
+    National Insurance number or invitation code
+  </label>
+  <input class="govuk-input govuk-!-width-two-thirds" id="nino" name="nino" type="nino" aria-describedby="nino-hint">
+</div>
 
         <a href="dob" button type="submit" class="govuk-button">
           Continue

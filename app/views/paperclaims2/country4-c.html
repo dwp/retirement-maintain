@@ -13,7 +13,6 @@ GOV.UK Prototype Kit
 }) }}
 -->
 {% include './_header-nav-paper.html' %}
-
 {% block headEnd %}
 {% endblock %}
 
@@ -25,11 +24,11 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <a href="lived-worked" class="govuk-back-link">Back</a>
+        <a href="country3-c" class="govuk-back-link">Back</a>
         <br><br>
-        <form method="post" action="lived-worked2">
+        <form method="post" action="check-answers22">
           <h1 class="govuk-heading-xl">
-            Country 1 </h1>
+            Country 4 </h1>
 
           <div class="govuk-form-group autocomplete-wrapper">
             <label class="govuk-label" for="location-autocomplete">
@@ -132,7 +131,7 @@ GOV.UK Prototype Kit
               <option value="country:DE">Germany</option>
               <option value="country:GH">Ghana</option>
               <option value="territory:GI">Gibraltar</option>
-              <option value="country:GR">Greece</option>
+              <option value="country:GR" selected>Greece</option>
               <option value="territory:GL">Greenland</option>
               <option value="country:GD">Grenada</option>
               <option value="territory:GP">Guadeloupe</option>
@@ -319,12 +318,69 @@ GOV.UK Prototype Kit
 
           </div>
 
-         <br>
+          <br>
           <div class="govuk-form-group">
             <h2 class="govuk-heading-m">
-              Dates they lived here</h2>
+              Dates they lived there</h2>
+
+            <p style="margin-bottom: 1%"><b>From</b></p>
+            <div class="govuk-date-input" id="dob">
+
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="dob-month">
+                    Month
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month"
+                    name="dob-month" type="text" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric" value="5">
+                </div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="dob-year">
+                    Year
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year"
+                    type="text" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric" value="2000">
+                </div>
+              </div>
+            </div>
+            <br>
+            <p style="margin-bottom: 1%"><b>To</b></p>
+            <div class="govuk-date-input" id="dob">
+
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="dob-month">
+                    Month
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month"
+                    name="dob-month" type="text" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric" value="11">
+                </div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="dob-year">
+                    Year
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year"
+                    type="text" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric" value="2222">
+                </div>
+              </div>
+            </div>
+            <br>
 
 
+
+          </div>
+
+
+
+
+
+          <div class="govuk-form-group">
+            <h2 class="govuk-heading-m">
+              Dates they worked there</h2>
 
 
             <p style="margin-bottom: 1%"><b>From</b></p>
@@ -380,88 +436,28 @@ GOV.UK Prototype Kit
 
 
 
-        
-          
+
           <div class="govuk-form-group">
-            <h2 class="govuk-heading-m">
-              Dates they worked here</h2>
-
-
-            <p style="margin-bottom: 1%"><b>From</b></p>
-            <div class="govuk-date-input" id="dob">
-
-              <div class="govuk-date-input__item">
-                <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="dob-month">
-                    Month
-                  </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month"
-                    name="dob-month" type="text" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric">
-                </div>
-              </div>
-              <div class="govuk-date-input__item">
-                <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="dob-year">
-                    Year
-                  </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year"
-                    type="text" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric">
-                </div>
-              </div>
-            </div>
-            <br>
-            <p style="margin-bottom: 1%"><b>To</b></p>
-            <div class="govuk-date-input" id="dob">
-
-              <div class="govuk-date-input__item">
-                <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="dob-month">
-                    Month
-                  </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month"
-                    name="dob-month" type="text" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric">
-                </div>
-              </div>
-              <div class="govuk-date-input__item">
-                <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="dob-year">
-                    Year
-                  </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year"
-                    type="text" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric">
-                </div>
-              </div>
-            </div>
-            <br>
-
-
-
+            <label class="govuk-label" for="location-autocomplete">
+              Social Security or National Insurance number
+            </label>
+            <input class="govuk-input govuk-!-width-three-quarters" id="three-quarters" name="three-quarters"
+              type="text">
           </div>
+          <br>
 
+          <button type="submit" class="govuk-button">
+            Save
+          </button>
 
-          
-           
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="location-autocomplete">
-                        Social Security or National Insurance number
-                      </label>
-                      <input class="govuk-input govuk-!-width-three-quarters" id="three-quarters" name="three-quarters"
-                        type="text">
-                    </div>
-                    <br>
-
-              <button type="submit" class="govuk-button">
-                Continue
-              </button>
-  
-            </div>
-
-
-
-          </div>
-        </form>
       </div>
-  </main>
+
+
+
+    </div>
+    </form>
+</div>
+</main>
 </div>
 
 {% endblock %}

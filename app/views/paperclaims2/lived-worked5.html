@@ -12,7 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav.html' %}
+{% include './_header-nav-paper.html' %}
 {% block headEnd %}
 {% endblock %}
 
@@ -29,7 +29,9 @@ GOV.UK Prototype Kit
         <form method="post" action="sp-date">
 
           <h1 class="govuk-heading-xl">
-Has the claimant lived or worked in any more countries outside the UK?</h1>
+            Has the claimant lived or worked in more than 4 countries outside the UK?
+
+          </h1>
 
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">

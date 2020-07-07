@@ -12,8 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav.html' %}
-
+{% include './_header-nav-paper.html' %}
 {% block headEnd %}
 {% endblock %}
 
@@ -25,84 +24,47 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <form method="post" action="check-answers">
-        <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-grid-column-two-thirds"> 
           <a href="check-answers" class="govuk-back-link">Back</a>
           <br> <br>
 
           <h1 class="govuk-heading-xl">
-            Where would you like us to pay your State Pension? </h1>
+            Bank or building society details </h1>
             <div class="govuk-form-group">
-              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-                
-                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
-                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
-                      Bank
-                    </label>
-                  </div>
-                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="contact-by-email">
-                        <b>Account holder name</b>
-                      </label>
-                      <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email" type="text" spellcheck="false">
-                      <br><br>
-                      <label class="govuk-label" for="contact-by-email">
-                        <b>Sort code</b>
-                      </label>
-                      <input class="govuk-input govuk-input--width-2" id="contact-by-email" name="contact-by-email" type="text" spellcheck="false" style="margin-right: 2%">
-                      <input class="govuk-input govuk-input--width-2" id="contact-by-email" name="contact-by-email" type="text" spellcheck="false" style="margin-right: 2%">
-                      <input class="govuk-input govuk-input--width-2" id="contact-by-email" name="contact-by-email" type="text" spellcheck="false">
-                      <br><br>
-                      <label class="govuk-label" for="contact-by-email">
-                        <b>Account number</b>
-                      </label>
-                      <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email" type="text" spellcheck="false">
 
-                    </div>
-            
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" data-aria-controls="conditional-how-contacted-conditional-3">
-                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
-                      Building society
-                    </label>
-                  </div>
-                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-3">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="contact-by-email">
-                        <b>Account holder name</b>
-                      </label>
-                      <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email" type="text">
-                      <br><br>
-                      <label class="govuk-label" for="contact-by-email">
-                        <b>Sort code</b>
-                      </label>
-                      <input class="govuk-input govuk-input--width-2" id="contact-by-email" name="contact-by-email" type="text" spellcheck="false" style="margin-right: 2%">
-                      <input class="govuk-input govuk-input--width-2" id="contact-by-email" name="contact-by-email" type="text" spellcheck="false" style="margin-right: 2%">
-                      <input class="govuk-input govuk-input--width-2" id="contact-by-email" name="contact-by-email" type="text" spellcheck="false">
-                      <br><br>
-                      <label class="govuk-label" for="contact-by-email">
-                        <b>Account number</b>
-                      </label>
-                      <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email" type="text" spellcheck="false">
-                      <br><br>
-                      <label class="govuk-label" for="contact-by-email">
-                        <b>Roll or reference number</b>
-                      </label>
-                      <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email" type="text" spellcheck="false">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="width-20">
+                 Account holder name
+                </label>
+                <input class="govuk-input" id="account-holder" name="accountholder" type="text" value="Mr Ken Adams
+                ">
+              </div>
+      
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="sortcode">
+                Sort code
+                </label>
+                <input class="govuk-input govuk-input--width-5" id="sort-code" name="sortcode" type="text" value="54 65 66">
+              </div>
 
-                    </div>
-            
-                  </div>
-                </div>
-              </fieldset>
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="width-20">
+                  Account number
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="account-number" name="accountnumber" type="text" value="24678900">
+              </div>
+      
+      
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="rollnumber">
+                Building society roll or reference number
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="roll-number" name="rollnumber" type="text">
+              </div>
+
             </div>
-
-
             <button type="submit" class="govuk-button">
-              Continue
+              Save
             </button>
 
 
