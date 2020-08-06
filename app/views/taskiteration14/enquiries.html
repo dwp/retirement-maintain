@@ -12,7 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav.html' %}
+{% include './_header-nav-enquiries.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -24,15 +24,20 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
       <br>
-        <h1 class="govuk-heading-xl">Get a task</h1>
+        <h1 class="govuk-heading-xl">              Changes and enquiries
+        </h1>
 
-
+        <h2 class="govuk-heading-m">Find someone</h2>
         <form method="post">
-         
-          <p>View the next available task that requires an action.</p>
-<br>
-          <a href="tasks-2" button type="submit" class="govuk-button"> 
-            View next task
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="nino">
+              National Insurance number
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="nino" name="nino" type="nino" aria-describedby="nino-hint">
+          </div>
+
+          <a href="enquiries-1" button type="submit" class="govuk-button"> 
+            Find
           </button>
         </a>
         </form>
