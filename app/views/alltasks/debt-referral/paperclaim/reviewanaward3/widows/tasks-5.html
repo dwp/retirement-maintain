@@ -12,7 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav-tasks.html' %}
+{% include './_header-nav.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -26,21 +26,26 @@ GOV.UK Prototype Kit
       <br>
       <form method="post">
       <div>
-        <a href="tasks-3" class="govuk-back-link">Back</a>
+        <a href="tasks-3-3" class="govuk-back-link">Back</a>
         
       </div>
       <br>
-        <h1 class="govuk-heading-xl">Complete task</h1>
+        <h1 class="govuk-heading-xl">Update award and send letter
+        </h1>
 
-        <p>If you have referred the overpayment to the debt management service, you can end this task.
-
+        <p>A letter will be sent to the claimant telling them that:
+            <ul class="govuk-list govuk-list--bullet">
+              <li>we have updated their marital status</li>
+              <li>their State Pension has increased based on this change</li>
+            </ul>
         </p>
          
 <br>
-          <a href="paperclaim/tasks" button type="submit" class="govuk-button"> 
+          <a href="/alltasks/tasks" button type="submit" class="govuk-button"> 
             End task
           </a>
-
+<br><br><br>
+        
         </form>
 
 
