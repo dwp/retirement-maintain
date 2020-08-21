@@ -12,7 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav-enquiries.html' %}
+{% include './_header-nav.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -26,9 +26,21 @@ GOV.UK Prototype Kit
       <div class="grid-row">
         <div class="column-full">
 
+        
 
           <br><br>
-          {% include './_bar.html' %}
+
+          <div class="moj-banner moj-banner--success">
+
+            <svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
+            <path d="M25,6.2L8.7,23.2L0,14.1l4-4.2l4.7,4.9L21,2L25,6.2z" /></svg>
+            
+            <div class="moj-banner__message">
+            <span class="moj-banner__assistive">Success</span>Postponed state pension - payments stopped</div>
+            
+            </div> 
+
+          {% include './_bar-postponed.html' %}
 
           {% include './_tab-overview.html' %}
 
@@ -60,18 +72,18 @@ GOV.UK Prototype Kit
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Date of birth</th>
-            <td class="govuk-table__cell">12 December 1952</td>
+            <td class="govuk-table__cell">12 December 1951</td>
             <td class="govuk-table__cell"></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">State Pension date </th>
-            <td class="govuk-table__cell">10 April 2019 </td>
+            <td class="govuk-table__cell">12 December 2016 </td>
             <td class="govuk-table__cell"></td>
           </tr>         
           <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Marital status </th>
               <td class="govuk-table__cell">Married</td>
-              <td class="govuk-table__cell" style="text-align: right;"><a class="govuk-link" href=spouse-details3>
+              <td class="govuk-table__cell" style="text-align: right;"><a class="govuk-link" href=spouse-details>
                 Details
                 </a></td>
             </tr>       
@@ -80,16 +92,19 @@ GOV.UK Prototype Kit
       </table>
 
     </div>
-    <a class="govuk-body" href="death-date">
-      Add date of death
-    </a>
+     <a class="govuk-body" href="#">
+      Restart State Pension
+    </a> 
+    <!-- <button class="govuk-button govuk-button--warning" data-module="govuk-button">
+      Delete claim
+    </button> -->
   </div>
 
 
 
 
   <div class="govuk-grid-column-one-third">
-    <br><br>
+    <br><br> <br><br> <br><br>
     <h2 class="govuk-heading-m">
       Personal changes
     </h2>

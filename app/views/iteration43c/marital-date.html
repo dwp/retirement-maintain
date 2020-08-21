@@ -31,12 +31,12 @@ GOV.UK Prototype Kit
           {% include './_bar.html' %}
 
 
-          <a href="spouse-details3" class="govuk-back-link">Back</a>
+          <a href="change-maritalstatus" class="govuk-back-link">Back</a>
           <br><br>
-          <h2 class="govuk-heading-l">Spouse's date of birth</h2>
+          <h2 class="govuk-heading-l">Date of marriage</h2>
 
-
-          <form method="post" action="spouse-details">
+         
+          <form method="post" action="marital-details">
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset" aria-describedby="expiry-hint" role="group">
                 <div class="govuk-date-input" id="expiry">
@@ -45,8 +45,7 @@ GOV.UK Prototype Kit
                       <label class="govuk-label govuk-date-input__label" for="expiry-day">
                         Day
                       </label>
-                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-day"
-                        name="expiry-day" type="number" pattern="[0-9]*" value="17">
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-day" name="expiry-day" type="number" pattern="[0-9]*">
                     </div>
                   </div>
                   <div class="govuk-date-input__item">
@@ -54,8 +53,7 @@ GOV.UK Prototype Kit
                       <label class="govuk-label govuk-date-input__label" for="expiry-month">
                         Month
                       </label>
-                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-month"
-                        name="expiry-month" type="number" pattern="[0-9]*" value="7">
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-month" name="expiry-month" type="number" pattern="[0-9]*">
                     </div>
                   </div>
                   <div class="govuk-date-input__item">
@@ -63,42 +61,40 @@ GOV.UK Prototype Kit
                       <label class="govuk-label govuk-date-input__label" for="expiry-year">
                         Year
                       </label>
-                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="expiry-year"
-                        name="expiry-year" type="number" pattern="[0-9]*" value="1950">
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="expiry-year" name="expiry-year" type="number" pattern="[0-9]*">
                     </div>
                   </div>
                 </div>
               </fieldset>
-
+              <br> <br>
+              <fieldset class="govuk-fieldset" aria-describedby="verified-or-notverified-hint">
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="verified-or-notverified-1" name="verified-or-notverified" type="radio"
+                      value="verified">
+                    <label class="govuk-label govuk-radios__label" for="verified-or-notverified-1">
+                      Verified
+                    </label> </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="verified-or-notverified-2" name="verified-or-notverified" type="radio"
+                      value="not-verified">
+                    <label class="govuk-label govuk-radios__label" for="verified-or-notverified-2">
+                      Not verified
+                    </label> </div>
+                </div>
+              </fieldset>
             </div>
-
-            <fieldset class="govuk-fieldset" aria-describedby="verified-or-notverified-hint">
-              <div class="govuk-radios govuk-radios--inline">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="verified-or-notverified-1" name="verified-or-notverified"
-                    type="radio" value="verified">
-                  <label class="govuk-label govuk-radios__label" for="verified-or-notverified-1">
-                    Verified
-                  </label> </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="verified-or-notverified-2" name="verified-or-notverified"
-                    type="radio" value="not-verified">
-                  <label class="govuk-label govuk-radios__label" for="verified-or-notverified-2">
-                    Not verified
-                  </label> </div>
-              </div>
-            </fieldset>
-            <br>
+  
             <button type="submit" class="govuk-button">
-              Save
+              Continue
             </button>
           </form>
         </div>
       </div>
     </main>
 
-    </form>
-  </div>
+  </form>
+</div>
 </div>
 
 
