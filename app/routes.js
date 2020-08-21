@@ -37,6 +37,7 @@ const iteration32a = require('./routes/iteration32a');
 const iteration32b = require('./routes/iteration32b');
 const iteration32c = require('./routes/iteration32c');
 const paperclaims4 = require('./routes/paperclaims4');
+const iteration43b = require('./routes/iteration43b');
 
 
 
@@ -77,6 +78,7 @@ router.use(iteration32a);
 router.use(iteration32b);
 router.use(iteration32c);
 router.use(paperclaims4);
+router.use(iteration43b);
 
 
 
