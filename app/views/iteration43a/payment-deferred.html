@@ -26,9 +26,9 @@ GOV.UK Prototype Kit
       <div class="grid-row">
         <div class="column-full">
           <br><br>
-          {% include './_bar.html' %}
+          {% include './_bar-postponed.html' %}
 
-          {% include './_tab-payment.html' %}
+          {% include './_tab-payment-deferred.html' %}
         </div>
       </div>
     </main>
@@ -79,17 +79,17 @@ GOV.UK Prototype Kit
               </a></td>
           </tr>
          
-            <tr class="govuk-table__row">
+            <!-- <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Next payment date</th>
-              <td class="govuk-table__cell">Monday 28 Sep 2020</td>
+              <td class="govuk-table__cell">Friday 13 Nov 2020</td>
               <td class="govuk-table__cell"></td>
             </tr>
 
             <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Next payment amount</th>
-                <td class="govuk-table__cell">£697.08</td>
+                <td class="govuk-table__cell">£174.27</td>
                 <td class="govuk-table__cell"></td>
-              </tr>
+              </tr> -->
 
         </tbody>
       </table>
@@ -113,8 +113,8 @@ GOV.UK Prototype Kit
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
           No changes made
         </h3>
-
-        <!-- <p class="app-timeline__info govuk-!-margin-bottom-0">
+<!-- 
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
           <span class="govuk-visually-hidden">No changes made</span>
           <span class="app-timeline__date">
             13 September 2020
@@ -127,7 +127,7 @@ GOV.UK Prototype Kit
 
   </div>
 
-  <div class="govuk-grid-column-full">
+  <!-- <div class="govuk-grid-column-full">
     <h2 class="govuk-heading-m">Payment history</h2>
     <table class="govuk-table">
         <thead class="govuk-table__head">
@@ -141,19 +141,30 @@ GOV.UK Prototype Kit
           </thead>
       <tbody class="govuk-table__body">
          
+
+        <tr class="govuk-table__row">
+        
+          <td class="govuk-table__cell">Saturday 26 Jan 2020</td>
+          <td class="govuk-table__cell">£650.72</td>
+          <td class="govuk-table__cell" class="govuk-orange">Sent</class>
+          </td>
+          <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-1">Details</a></td>
+        </tr>
+
+
         <tr class="govuk-table__row">
           
-          <td class="govuk-table__cell">Monday 31 Aug 2020</td>
-          <td class="govuk-table__cell">£697.08</td>
-          <td class="govuk-table__cell" class="govuk-orange">Sent</class>
+          <td class="govuk-table__cell">Saturday 28 Dec 2019</td>
+          <td class="govuk-table__cell">£650.72</td>
+          <td class="govuk-table__cell" class="govuk-orange">Paid</class>
           </td>
           <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-2">Details</a></td>
         </tr>
 
         <tr class="govuk-table__row">
           
-            <td class="govuk-table__cell">Monday 3 Aug 2020</td>
-            <td class="govuk-table__cell">£697.08</td>
+            <td class="govuk-table__cell">Friday 21 Nov 2019</td>
+            <td class="govuk-table__cell">£650.72</td>
             <td class="govuk-table__cell" class="govuk-orange">Paid</class>
             </td>
             <td class="govuk-table__cell" style="text-align: right;"><a href=#>Details</a></td>
@@ -161,18 +172,63 @@ GOV.UK Prototype Kit
             
             <tr class="govuk-table__row">
             
-                <td class="govuk-table__cell">Monday 6 July 2020</td>
-                <td class="govuk-table__cell">£697.08</td>
+                <td class="govuk-table__cell">Friday 24 Oct 2019</td>
+                <td class="govuk-table__cell">£650.72</td>
                 <td class="govuk-table__cell" class="govuk-orange">Paid</class>
                 </td>
                 <td class="govuk-table__cell" style="text-align: right;"><a href=#>Details</a></td>
               </tr>
 
-                     
+              <tr class="govuk-table__row">
+            
+                  <td class="govuk-table__cell">Friday 26 Sep 2019</td>
+                  <td class="govuk-table__cell">£650.72</td>
+                  <td class="govuk-table__cell" class="govuk-orange">Paid</class>
+                  </td>
+                  <td class="govuk-table__cell" style="text-align: right;"><a href=#>Details</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+            
+                    <td class="govuk-table__cell">Friday 29 Aug 2019</td>
+                    <td class="govuk-table__cell">£650.72</td>
+                    <td class="govuk-table__cell" class="govuk-orange">Paid</class>
+                    </td>
+                    <td class="govuk-table__cell" style="text-align: right;"><a href=#>Details</a></td>
+                  </tr>
+
+                  <tr class="govuk-table__row">
+            
+                      <td class="govuk-table__cell">Friday 1 Aug 2019</td>
+                      <td class="govuk-table__cell">£650.72</td>
+                      <td class="govuk-table__cell" class="govuk-orange">Paid</class>
+                      </td>
+                      <td class="govuk-table__cell" style="text-align: right;"><a href=#>Details</a></td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+            
+                        <td class="govuk-table__cell">Friday 4 Jul 2019</td>
+                        <td class="govuk-table__cell">£650.72</td>
+                        <td class="govuk-table__cell" class="govuk-orange">Paid</class>
+                        </td>
+                        <td class="govuk-table__cell" style="text-align: right;"><a href=#>Details</a></td>
+                      </tr>
+
+                      <tr class="govuk-table__row">
+            
+                          <td class="govuk-table__cell">Friday 6 Jun 2019</td>
+                          <td class="govuk-table__cell">£650.72</td>
+                          <td class="govuk-table__cell" class="govuk-orange">Paid</class>
+                          </td>
+                          <td class="govuk-table__cell" style="text-align: right;"><a href=#>Details</a></td>
+                        </tr>
+
+                
         </tbody>
         </table>
 
-  </div>
+  </div> -->
 
 
 </div>
