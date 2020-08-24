@@ -1,4 +1,4 @@
-<h2 class="govuk-heading-m">Iteration 3</h2>
+<h2 class="govuk-heading-m">Iteration 4</h2>
 
 <span class="app-c-tag app-c-tag--ready">not tested</span> 
 <!-- <br><br><span class="app-c-tag app-c-tag--warning">remote skype research</span> -->
@@ -26,20 +26,27 @@
   <li>Taken out alternative contact format hint text - agents know what this is</li>
 
 </ul> -->
+<h2 class="govuk-heading-s">Scenario</h2>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>Two designs - one for when a paper claims tasks is in one queue with other tasks, one for paper claims as it's own queue (need research)</li>
+  <li>Journey to test the functionality of an agent completing a full claim (as far as they can) with missing information</li>
+  <li>Includes coming back to a partially completed claim to enter info</li>
+  <li>Agent has ability to choose whether the claim can be complete on GET or not</li>
+
+</ul>
 
 <h2 class="govuk-heading-s">Business requirements
 </h2>
 <ul class="govuk-list govuk-list--bullet">
-<li>When a correspondence comes in (proof of address) agent creates a record for the claim and puts a note in CAM to help signify that a claim was being handled in GySP </li></ul>
-
-<h2 class="govuk-heading-s">Scenario</h2>
-
-<ul class="govuk-list govuk-list--bullet">
-  <li>Journey to test the functionality of an agent completing a full claim (as far as they can) with missing information</li>
-  <li>Includes coming back to a partially completed claim to enter info</li>
+<li>When a correspondence comes in (proof of address) agent creates a record for the claim and puts a note in CAM to help signify that a claim was being handled in GySP </li>
+  <li>Agent needs to have the ability to choose whether a claim can be processed on GET, reasons for this are: 
+    <br>- if the scanned in form is illegible 
+    <br>- an old rules BR1
+    <br>- signed by a PAB or a CAB
+    <br>- requesting alternative contact formats
+  </li>
 </ul>
-
-
 <!-- <h2 class="govuk-heading-s">Research notes</h2>
 
 <ul class="govuk-list govuk-list--bullet">
@@ -47,9 +54,14 @@
   <li>Some agents purposely missed out the 'other names' field because it's what they would do now</li>
 </ul> -->
 
-<p><b>Scenario 1a - agent enters info from claim form - needs to contact claimant for missing info:</b></p>
-<a href="/paperclaims3/get-a-claim" class="govuk-button govuk-button--start">Start now</a><br>
 
+<h2 class="govuk-heading-m">Paper claim in task queue</h2>
+<p><b>Tasks tab:</b></p>
+<a href="/paperclaims5/tasks" class="govuk-button govuk-button--start">Start now</a><br>
 
-<p><b>Scenario 1b - agent enters missing info into partially complete claim:</b></p>
+<p><b>Paper claims tab:</b></p>
 <a href="/paperclaims3a/get-a-claim" class="govuk-button govuk-button--start">Start now</a><br>
+
+<h2 class="govuk-heading-m">Paper claim in separate queue</h2>
+<p><b>Paper claims tab:</b></p>
+<a href="/paperclaims4/get-a-claim" class="govuk-button govuk-button--start">Start now</a><br>
