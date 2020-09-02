@@ -26,9 +26,9 @@ GOV.UK Prototype Kit
       <div class="grid-row">
         <div class="column-full">
           <br><br>
-          {% include './_bar.html' %}
+          {% include './_bar-postponed.html' %}
 
-          {% include './_tab-payment.html' %}
+          {% include './_tab-payment-deferred.html' %}
         </div>
       </div>
     </main>
@@ -71,8 +71,14 @@ GOV.UK Prototype Kit
     <br>
     <table class="govuk-table">
         <tbody class="govuk-table__body">
-       
-         
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header" style="width: 45%"> Payment frequency</th>
+            <td class="govuk-table__cell" style="width: 45%">4 weekly</td>
+            <td class="govuk-table__cell" style="width: 10%"><a href="change-frequency">
+                <span class="govuk-link govuk-!-font-size-19">Change</span>
+              </a></td>
+          </tr>
+<!--          
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Next payment date</th>
               <td class="govuk-table__cell">Monday 28 Sep 2020</td>
@@ -83,19 +89,13 @@ GOV.UK Prototype Kit
                 <th scope="row" class="govuk-table__header">Next payment amount</th>
                 <td class="govuk-table__cell">£697.08</td>
                 <td class="govuk-table__cell"></td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header" style="width: 45%"> Payment frequency</th>
-                <td class="govuk-table__cell" style="width: 45%">4 weekly</td>
-                <td class="govuk-table__cell" style="width: 10%"><a href="change-frequency">
-                    <span class="govuk-link govuk-!-font-size-19">Change</span>
-                  </a></td>
-              </tr>
+              </tr> -->
+
         </tbody>
       </table>
 
     </br>
-    </br>
+   
 
     <div>
     </div>
