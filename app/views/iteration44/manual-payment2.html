@@ -30,35 +30,35 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './_bar.html' %}
 
-          <form method="post" action="manual-payment3">
+          <form method="post" action="manual-payment4">
 
-            <a href="manual-payment1" class="govuk-back-link">Back</a>
+            <a href="manual-payment3" class="govuk-back-link">Back</a>
             <br><br>
             <h2 class="govuk-heading-l">Payment amounts</h2>
 
-            <h2 class="govuk-heading-m">Total payment</h2>
+            <!-- <h2 class="govuk-heading-m">Total payment</h2> -->
               
-              <div class="govuk-currency-input__inner">
+              <!-- <div class="govuk-currency-input__inner">
                 <span class="govuk-currency-input__inner__unit">£</span>
                 <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="tickets-cost" data-non-numeric type="text" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
               </div>
-              <br><br>
+              <br><br> -->
               
-              <h2 class="govuk-heading-m">Breakdown of total payment</h2>
+              <!-- <h2 class="govuk-heading-m">Breakdown of total payment</h2> -->
               
               <span class="govuk-label govuk-date-input__label">New State Pension</span>
               <div class="govuk-currency-input__inner">
                 <span class="govuk-currency-input__inner__unit">£</span>
                 <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="tickets-cost" data-non-numeric type="text" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
               </div>
-              <br><br>
+              <br>
 
               <span class="govuk-label govuk-date-input__label">Protected payment</span>
               <div class="govuk-currency-input__inner">
                 <span class="govuk-currency-input__inner__unit">£</span>
                 <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="tickets-cost" data-non-numeric type="text" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
               </div>
-              <br><br>
+              <br>
               
             
             </div>
