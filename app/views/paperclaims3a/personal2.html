@@ -1,0 +1,309 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+<!--{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+-->
+{% include './_header-nav-paper.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+{% include './_find-someone.html' %}
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full">
+
+
+          <br><br>
+          {% include './_bar.html' %}
+
+          <!-- {% include './_tab-overview.html' %} -->
+
+
+
+
+        </div>
+      </div>
+    </main>
+
+    </br>
+    </br>
+    <h2 class="govuk-heading-m">1. &nbsp Personal details &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp <strong class="govuk-tag govuk-tag--blue">
+      completed
+    </strong>   </h2>
+    <table class="govuk-table" style="margin-left: 30pt;">
+      <tbody class="govuk-table__body">
+        <th class="govuk-table__header"></th><th class="govuk-table__header"></th><th class="govuk-table__header"></th>
+
+        <!-- <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header" style="width: 50%">National insurance number</th>
+          <td class="govuk-table__cell" style="width: 50%">QQ 12 34 56 X</td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Full name</th>
+          <td class="govuk-table__cell">Ken Adams</td>
+          <td class="govuk-table__cell"></td>
+        </tr> -->
+      
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Date of birth</th>
+          <td class="govuk-table__cell">10 April 1957 </td>
+          <td class="govuk-table__cell" style="text-align:right;"><a class="govuk-link" href="change-name">
+              Change
+            </a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Address </th>
+          <td class="govuk-table__cell">5 Grainger Street<br>South Gosforth<br>Newcastle upon Tyne<br>NE226YL</td>
+          <td class="govuk-table__cell" style="text-align:right;"><a class="govuk-link" href=change-maritalstatus>
+              Change
+            </a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Phone number </th>
+          <td class="govuk-table__cell">07898665544</td>
+          <td class="govuk-table__cell" style="text-align:right;"><a class="govuk-link" href=change-maritalstatus>
+              Change
+            </a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Email address</th>
+          <td class="govuk-table__cell">ken.adams@btinternet.com</td>
+          <td class="govuk-table__cell" style="text-align:right;"><a class="govuk-link" href=change-maritalstatus>
+              Change
+            </a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Contact preferences</th>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell" style="text-align:right;"><a class="govuk-link" href=change-maritalstatus>
+              Add
+            </a></td>
+        </tr>
+      </tbody>
+    </table>
+<br>
+
+
+<h2 class="govuk-heading-m">2. &nbsp Marital details &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp <strong class="govuk-tag govuk-tag--blue">
+  completed
+</strong>   </h2>
+<table class="govuk-table" style="margin-left: 30pt;">
+  <a class="govuk-link" href=change-maritalstatus style="font-size: 19px; margin-left: 30pt;">
+    Change
+  </a>
+  <tbody class="govuk-table__body">
+    <th class="govuk-table__cell"></th><th class="govuk-table__cell"></th><th class="govuk-table__cell"></th>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header" style="width: 50%">Marital status</th>
+      <td class="govuk-table__cell" style="width: 50%">Married</td>
+      <td class="govuk-table__cell"></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Date of marriage</th>
+      <td class="govuk-table__cell">12 July 2006</td>
+      <td class="govuk-table__cell"></td>
+    </tr>
+  
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Spouse's National Insurance number</th>
+      <td class="govuk-table__cell">QQ 12 44 55 X </td>
+      <td class="govuk-table__cell"></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Address </th>
+      <td class="govuk-table__cell">5 Grainger Street<br>South Gosforth<br>Newcastle upon Tyne<br>NE226YL</td>
+      <td class="govuk-table__cell"></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Phone number </th>
+      <td class="govuk-table__cell">07898665544</td>
+      <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+          Change
+        </a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Email address</th>
+      <td class="govuk-table__cell">ken.adams@btinternet.com</td>
+      <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+          Change
+        </a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Contact preferences</th>
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell" style="text-align:right ;"><a class="govuk-link" href=change-maritalstatus>
+          Add
+        </a></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+    <h2 class="govuk-heading-m">2. &nbsp Marital details <strong class="govuk-tag moj-task-list__task-completed">
+      completed
+      </strong></h2>
+   
+
+    <table class="govuk-table">
+      <tbody class="govuk-table__body">
+   
+        <th class="govuk-table__header"></th> <th class="govuk-table__header"></th> <th class="govuk-table__header">
+          <p><a class="govuk-link" style="width: 50%;" href="change-name">Change</a></p>
+
+         </th>
+        <tr class="govuk-table__row">
+          
+          <th scope="row" class="govuk-table__header" style="width: 50%">Martial status</th>
+          <td class="govuk-table__cell" style="width:30%">Married</td>
+          <td class="govuk-table__cell" style="width: 15%"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Date of marriage</th>
+          <td class="govuk-table__cell">12 July 2006</td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Spouse's National Insurance Number</th>
+          <td class="govuk-table__cell">QQ 12 33 44 X</td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Spouse's first name</th>
+          <td class="govuk-table__cell">Regina </td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Spouse's last name</th>
+          <td class="govuk-table__cell">Adams</td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Spouse's other names</th>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Spouse's date of birth</th>
+          <td class="govuk-table__cell">13 January 1960</td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+     
+      </tbody>
+    </table>
+
+
+    <h2 class="govuk-heading-m">3. Living and working abroad</h2>
+    <table class="govuk-table">
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header" style="width: 50%">Martial status</th>
+          <td class="govuk-table__cell" style="width: 50%">Married</td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Date of marriage</th>
+          <td class="govuk-table__cell">12 July 2006</td>
+          <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
+              Change
+            </a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Spouse's National Insurance Number</th>
+          <td class="govuk-table__cell">QQ 12 33 44 X</td>
+          <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
+              Change
+            </a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Spouse's first name</th>
+          <td class="govuk-table__cell">Regina </td>
+          <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
+              Change
+            </a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Spouse's last name</th>
+          <td class="govuk-table__cell">Adams</td>
+          <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+              Change
+            </a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Spouse's other names</th>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+              Add
+            </a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Spouse's date of birth</th>
+          <td class="govuk-table__cell">13 January 1960</td>
+          <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+              Change
+            </a></td>
+        </tr>
+     
+      </tbody>
+    </table>
+
+  </div>
+
+
+
+
+  <div class="govuk-grid-column-one-third">
+    <br><br>
+    <h2 class="govuk-heading-m">
+      Claim changes
+    </h2>
+    <ol class="app-timeline">
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Claim made
+        </h3>
+
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">No changes made</span>
+          <span class="app-timeline__date">
+            14 October 2020
+          </span>
+        </p>
+      </li>
+
+
+    </ol>
+
+  </div>
+
+
+</div>
+</div>
+</main>
+</div>
+<!-- </div> -->
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

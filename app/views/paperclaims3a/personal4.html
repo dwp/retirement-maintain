@@ -1,0 +1,297 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+<!--{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+-->
+{% include './_header-nav-paper.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+{% include './_find-someone.html' %}
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full">
+
+
+          <br><br>
+          {% include './_bar.html' %}
+
+          {% include './_tab-overview.html' %}
+
+
+
+
+        </div>
+      </div>
+    </main>
+
+    </br>
+    </br>
+
+
+    <ol class="moj-task-list">
+      <li>
+      <h2 class="moj-task-list__section">
+        <span class="moj-task-list__section-number">1. </span>Personal details &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp         
+        <strong class="govuk-tag moj-task-list__task-completed" style="text-align: right;">completed</strong>
+      </h2>
+      <ul class="moj-task-list__items">
+        <li class="moj-task-list__item">
+          <b>National Insurance number</b>
+          &nbsp &nbsp &nbsp &nbsp &nbsp QQ 12 34 56 X
+          &nbsp &nbsp 
+        </li>
+        <li class="moj-task-list__item">
+          <b>Full name </b>
+          &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   Ken Adams
+        </li>
+        <li class="moj-task-list__item">
+          <b>Date of birth </b>
+          &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp 10 April 1957	
+        </li>
+        <li class="moj-task-list__item">
+          <b>Address</b>
+          &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   5 Grainger Street<br>South Gosforth<br>Newcastle upon Tyne<br>NE226YL
+        </li>
+        <li class="moj-task-list__item">
+          <b>Phone number </b>
+          &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   Ken Adams
+        </li>
+        <li class="moj-task-list__item">
+          <b>Email address </b>
+          &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   Ken Adams
+        </li>
+        <li class="moj-task-list__item">
+          <b>Contact preferences </b>
+          &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   Ken Adams
+        </li>
+      </ul>
+      </li>
+      
+      
+      <div style="border-spacing: 100cm;">
+      <table class="govuk-table">
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header" style="width: 50%">National insurance number</th>
+            <td class="govuk-table__cell" style="width: 50%">QQ 12 34 56 X</td>
+            <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
+                Change
+              </a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">First name</th>
+            <td class="govuk-table__cell">Ken</td>
+            <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
+                Change
+              </a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Last name</th>
+            <td class="govuk-table__cell">Adams</td>
+            <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
+                Change
+              </a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Date of birth</th>
+            <td class="govuk-table__cell">10 April 1957 </td>
+            <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
+                Change
+              </a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Address </th>
+            <td class="govuk-table__cell">5 Grainger Street<br>South Gosforth<br>Newcastle upon Tyne<br>NE226YL</td>
+            <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+                Change
+              </a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Phone number </th>
+            <td class="govuk-table__cell">07898665544</td>
+            <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+                Change
+              </a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Email address</th>
+            <td class="govuk-table__cell">ken.adams@btinternet.com</td>
+            <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+                Change
+              </a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Contact preferences</th>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+                Add
+              </a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+
+
+      <li>
+      <h2 class="moj-task-list__section">
+        <span class="moj-task-list__section-number">2. </span>Marital details</h2>
+      <ul class="moj-task-list__items">
+        <li class="moj-task-list__item">
+          <a class="moj-task-list__task-name" href="#">Marital status</a></li>
+      
+        <li class="moj-task-list__item">
+          <a class="moj-task-list__task-name" href="#">Spouse or civil partner's details</a></li>
+      
+      </ul>
+      </li>
+      
+      <li>
+      <h2 class="moj-task-list__section">
+        <span class="moj-task-list__section-number">3. </span>Living and working abroad</h2>
+      <ul class="moj-task-list__items">
+        <li class="moj-task-list__item">
+          <a class="moj-task-list__task-name" href="#">Country 1</a>
+          <strong class="govuk-tag moj-task-list__task-completed">
+      completed
+      </strong>
+      
+        </li>
+      
+        <li class="moj-task-list__item">
+          <a class="moj-task-list__task-name" href="#">Country 2</a>
+          <strong class="govuk-tag moj-task-list__task-completed">
+      completed
+      </strong>
+      
+        </li>
+      
+        <li class="moj-task-list__item">
+          <a class="moj-task-list__task-name" href="#">Country 3</a>
+          <strong class="govuk-tag moj-task-list__task-completed">
+      completed
+      </strong>
+      
+        </li>
+
+         
+        <li class="moj-task-list__item">
+          <a class="moj-task-list__task-name" href="#">Country 4</a>
+          <strong class="govuk-tag moj-task-list__task-completed">
+      completed
+      </strong>
+      
+        </li>
+
+      </ul>
+      </li>
+      
+      <li>
+
+        <h2 class="moj-task-list__section">
+          <span class="moj-task-list__section-number">4. </span>State pension date</h2>
+        <ul class="moj-task-list__items">
+          <li class="moj-task-list__item">
+            <a class="moj-task-list__task-name" href="#">State pension date</a></li>
+        
+        
+        
+        </ul>
+        </li>
+        
+        <li>
+        <h2 class="moj-task-list__section">
+          <span class="moj-task-list__section-number">5. </span>Bank or building society details</h2>
+        <ul class="moj-task-list__items">
+          <li class="moj-task-list__item">
+            <a class="moj-task-list__task-name" href="#">Bank or building society</a>
+            <strong class="govuk-tag moj-task-list__task-completed">
+        completed
+        </strong>
+        
+          </li>
+        
+         
+  
+        </ul>
+        </li>
+        
+        <li>
+
+        
+          </li>
+          
+          <li>
+
+      <h2 class="moj-task-list__section">
+        <span class="moj-task-list__section-number">4. </span>Apply</h2>
+      <ul class="moj-task-list__items">
+        <li class="moj-task-list__item">
+          <a class="moj-task-list__task-name" href="#">Submit application</a></li>
+      </ul>
+      </li>
+      </ol> 
+
+  </div>
+
+
+
+
+  <div class="govuk-grid-column-one-third">
+    <br><br>
+    <h2 class="govuk-heading-m">
+      Claim changes
+    </h2>
+    <ol class="app-timeline">
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Claim made
+        </h3>
+
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">No changes made</span>
+          <span class="app-timeline__date">
+            14 October 2020
+          </span>
+        </p>
+      </li>
+
+
+    </ol>
+
+  </div>
+
+
+</div>
+</div>
+</main>
+</div>
+<!-- </div> -->
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
