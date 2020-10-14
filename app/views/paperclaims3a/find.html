@@ -17,6 +17,7 @@ GOV.UK Prototype Kit
 {% block headEnd %}
 {% endblock %}
 
+{% include './_find-someone.html' %}
 
 
 <div class="govuk-width-container">
@@ -31,22 +32,21 @@ GOV.UK Prototype Kit
           <div class="govuk-grid-row">
 
             <div class="govuk-grid-column-full">
-              <a href=get-a-claim class="govuk-back-link">Back</a>
 
               <br><br>
               <div>
                 <h1 class="govuk-heading-xl">
                   Ken Adams </br>
                   <span class="govuk-caption-xl">QQ 12 34 56 X</span>
-                  <strong class="govuk-tag govuk-tag--green">
-                    Ready to claim State Pension
+                  <strong class="govuk-tag govuk-tag--yellow">
+                    incomplete claim
                   </strong> </h1>
               </div>
 
             </div>
           </div>
 
-          <a href="check-answers" button type="submit" class="govuk-button">
+          <a href="personal" button type="submit" class="govuk-button">
             Continue
             </button>
           </a>
