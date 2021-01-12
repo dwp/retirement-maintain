@@ -7,17 +7,16 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
+{{ govukHeader({
+serviceName: serviceName,
+serviceUrl: "/"
 }) }}
--->
-{% include './_header-nav.html' %}
 
 {% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
 {% endblock %}
 
-{% include './_find-someone-enquiries.html' %}
+{% include './_find-someone.html' %}
 
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
@@ -25,24 +24,21 @@ GOV.UK Prototype Kit
           <main id="content" role="main">
             <div class="grid-row">
               <div class="column-full">
-                <br><br>
-                {% include './_rachel-smith.html' %}
+                {% include './_bar-dead-notverified.html' %}
               </div>
             </div>
           </main>
 
 
       <div>
-        <a href="dap-bank" class="govuk-back-link">Back</a>
+        <a href="#" class="govuk-back-link">Back</a>
       </div>
 
       <br>
 
-      <form method="post" class="form" action="check-details">
-        <h1 class="govuk-heading-l">Awaiting verification of death</h1>
-        <p>The final payment cannot be calculated yet because the date of death has not been verified.
-          </p>
-          <p>Once verification of death has been received, you will be able to calculate the final payment.</p>
+      <form method="post" class="form" action="send-letter">
+        <h1 class="govuk-heading-l">All payments are up to date</h1>
+        <p>There has been no overpayment and there are no more State Pension payments due.</p>
         <br>
 
 

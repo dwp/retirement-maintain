@@ -12,37 +12,29 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav.html' %}
+{% include './_header-nav-enquiries.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
 {% include './_find-someone-enquiries.html' %}
 
-  <div class="govuk-width-container">
+<div class="govuk-width-container">
+  <div class="govuk-grid-column-two-thirds">
 
-    <main class="govuk-main-wrapper">
+    <main id="content" role="main">
+      <div class="grid-row">
+        <dv class="column-full">
 
-      <div class="govuk-grid-column-two-thirds">
 
-        <main id="content" role="main">
-          <div class="grid-row">
-            <div class="column-full">
-<br><br>
-              {% include './_rachel-smith.html' %}
-
-            </div>
-          </div>
-        </main>
-
-        
-
-        <div>
-      
-          <a href="dap-number.html" class="govuk-back-link">Back</a>
           <br><br>
-          <form method="submit" action="dap-address-2">
-          <h2 class="govuk-heading-l">Address of the person dealing with Rachel's estate</h2>
+          {% include './_bar.html' %}
+
+<form method="post" action="change-address2">
+
+          <a href="contact" class="govuk-back-link">Back</a>
+          <br><br>
+          <h2 class="govuk-heading-l">Address</h2>
 
             <div class="govuk-form-group">
               <label class="govuk-label" for="postcode">
@@ -70,23 +62,18 @@ GOV.UK Prototype Kit
 
 
   </form>
-
-          </div>
-
-        </div>
-        </form>
-      </div>
-
-    </div>
-
-  </main>
 </div>
 </div>
+
+
+
 {% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">
-<div class="govuk-grid-column-two-thirds"></div>
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
 </div>
 
 {% endblock %}
