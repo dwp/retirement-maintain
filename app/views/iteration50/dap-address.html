@@ -41,18 +41,21 @@ GOV.UK Prototype Kit
         <div>
           <a href="dap-name" class="govuk-back-link">Back</a>
         </div>
+
         <br>
-        <form action="dap-address-1" method="post" class="form">
-          <h1 class="govuk-heading-l">Phone number of the person dealing with Rachel's estate</h1>
+
+        <h1 class="govuk-heading-l">Address of the person dealing with Rachel's estate</h1>
+
+        <form action="dap-address-1" method="post">
           <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              Phone number
+            <label class="govuk-label" for="postcode">
+              UK postcode
             </label>
-            <input class="govuk-input govuk-input--width-30" id="event-name" name="event-name" type="text">
+            <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="postcode" aria-describedby="postcode-hint">
           </div>
 
           <button type="submit" class="govuk-button">
-            Continue
+            Find address
           </button>
         </form>
 

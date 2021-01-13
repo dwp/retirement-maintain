@@ -1,47 +1,45 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
-  {% include "includes/cookie-banner.html" %}
-  {# Set serviceName in config.js. #}
-  {{ govukHeader({
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+<!--{{ govukHeader({
   serviceName: serviceName,
   serviceUrl: "/"
 }) }}
+-->
+{% include './_header-nav.html' %}
 
-  {% block headEnd %}
-    {% include 'includes/remove-blue-bar.html' %}
-  {% endblock %}
+{% block headEnd %}
+{% endblock %}
 
-  {% include './_find-someone.html' %}
+{% include './_find-someone-enquiries.html' %}
 
-  <div class="govuk-width-container">
-
-    <main class="govuk-main-wrapper">
-
-      <div class="govuk-grid-column-two-thirds">
-
-        <main id="content" role="main">
-          <div class="grid-row">
-            <div class="column-full">
-
-              {% include './_rachel-smith.html' %}
-
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-column-two-thirds">
+          <main id="content" role="main">
+            <div class="grid-row">
+              <div class="column-full">
+                <br><br>
+                {% include './_rachel-smith.html' %}
+              </div>
             </div>
-          </div>
-        </main>
+          </main>
 
-       
 
-        <div>
-          <a href="dap-address-1" class="govuk-back-link">Back</a>
-        </div>
-        <br>
-        <form action="send-letter" method="post" class="form">
-          <h1 class="govuk-heading-l">There is a final State Pension payment due</h1>
+      <div>
+        <a href="dap-bank-2" class="govuk-back-link">Back</a>
+      </div>
+
+      <br>
+
+      <form method="post" class="form" action="arrears-2">
+        <h1 class="govuk-heading-l">There is a final State Pension payment due</h1>
 
           <br>
           <div>
@@ -65,27 +63,23 @@
               </tbody>
             </table>
 
- 
-          </a>
-        </dd>
-      </div>
-      <br>
-      <button type="submit" class="govuk-button">
-        Continue
-      </button>
-    </div>
+    
 
-  </div>
+       
+        <button type="submit" class="govuk-button">
+          Continue
+        </button>
+        </a>
+        </dd>
+    </div>
+    <br>
+
+</div>
+
+</div>
 
 </form>
 
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 </main>
 </div>
@@ -94,7 +88,7 @@
 
 {% block content %}
 <div class="govuk-grid-row">
-<div class="govuk-grid-column-two-thirds"></div>
+  <div class="govuk-grid-column-two-thirds"></div>
 </div>
 
 {% endblock %}
