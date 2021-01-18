@@ -43,12 +43,15 @@ GOV.UK Prototype Kit
 
         <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
           <h2 class="govuk-error-summary__title" id="error-summary-title">
-            There is a problem
+            No address found with that postcode
           </h2>
           <div class="govuk-error-summary__body">
             <ul class="govuk-list govuk-error-summary__list">
               <li>
-                <a href="#name">We couldn't find this postcode. If it is correct enter the address manually.</a>
+                <a href="#name">Enter the correct UK postcode.</a>
+                <br>
+                <br>
+                <a href="#name">If the postcode is correct but not found, enter the address manually.</a>
               </li>
             </ul>
           </div>
@@ -58,10 +61,10 @@ GOV.UK Prototype Kit
 
         <div class="govuk-form-group govuk-form-group--error">
           <label class="govuk-label" for="name">
-            UK postcode
+            Enter a postcode
           </label>
           <span id="name-error" class="govuk-error-message">
-            <span class="govuk-visually-hidden">Error:</span> Enter a valid UK postcode
+            <span class="govuk-visually-hidden">Error:</span> Enter a UK postcode in the correct format, like AA1 1AA
           </span>
           <input class="govuk-input govuk-input--error govuk-input--width-10" id="postcode" name="postcode" type="postcode" aria-describedby="name-error"></div>
 
