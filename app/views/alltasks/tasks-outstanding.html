@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+<!--{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+-->
+{% include './_header-nav.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+{% include './_find-someone-enquiries.html' %}
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full">
+
+
+          <br><br>
+          {% include './_bar.html' %}
+
+          {% include './_tab-overview-red-dot.html' %}
+
+
+
+
+        </div>
+      </div>
+    </main>
+
+    </br>
+    </br>
+
+    <div>
+
+      <h2 class="govuk-heading-m">Outstanding tasks for this account</h2>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col"> Task </th>
+            <th class="govuk-table__header" scope="col"> Status </th>
+            <th class="govuk-table__header" scope="col"></th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              Payment returned
+            </td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red">
+        Urgent
+      </strong>
+      <td class="govuk-table__cell"><a href="">Details</a></td>
+
+
+          </tr>
+
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              Address not verified
+            </td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--yellow">
+        Waiting
+      </strong>
+      <td class="govuk-table__cell"><a href="">Details</a></td>
+
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+
+
+
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+<div class="govuk-grid-column-one-third">
+  <br><br>
+  <h2 class="govuk-heading-m">
+    Award changes
+  </h2>
+  <ol class="app-timeline">
+      <li class="app-timeline__entry">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+            Award updated
+          </h3>
+
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">SRB</span>
+            <span class="app-timeline__date">
+              29 July 2020
+            </span>
+          </p>
+        </li>
+
+  </ol>
+
+</div>
+
+
+</div>
+</div>
+</main>
+</div>
+<!-- </div> -->
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
