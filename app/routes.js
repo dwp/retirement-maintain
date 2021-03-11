@@ -40,6 +40,7 @@ const paperclaims4 = require('./routes/paperclaims4');
 const iteration43b = require('./routes/iteration43b');
 const reviewanaward3e = require('./routes/reviewanaward3e');
 const reviewanaward4a = require('./routes/reviewanaward4a');
+const reviewanaward5 = require('./routes/reviewanaward5');
 
 
 
@@ -83,6 +84,7 @@ router.use(paperclaims4);
 router.use(iteration43b);
 router.use(reviewanaward3e);
 router.use(reviewanaward4a);
+router.use(reviewanaward5);
 
 
 
