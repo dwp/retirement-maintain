@@ -43,17 +43,11 @@ GOV.UK Prototype Kit
         <div class="govuk-form-group">
           <h1 class="govuk-heading-l">Postpone or stop the review </h1>
 
-          <p>Select a reason to postpone or stop the review of the State Pension award</p>
+          <p>Select a reason to postpone or stop the review of the State Pension</p>
 
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
+            <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
               <div class="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="defer-or-stop-review" name="defer-or-stop-review" type="radio" value="stop">
-                  <label class="govuk-label govuk-radios__label" for="defer-or-stop-review">
-                    Stop the review – no action required
-                  </label>
-                </div>
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="defer-or-stop-review-2" name="defer-or-stop-review" type="radio" value="10days">
                   <label class="govuk-label govuk-radios__label" for="defer-or-stop-review-2">
@@ -66,6 +60,17 @@ GOV.UK Prototype Kit
                     Postpone the review for 30 days
                   </label>
                 </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="defer-or-stop-review" name="defer-or-stop-review" type="radio" value="stop">
+                  <label class="govuk-label govuk-radios__label" for="defer-or-stop-review">
+                    Stop the review – no action required
+                  </label>
+                  <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                      The review is not required. The task will be removed from this account.
+                    </div>
+                </div>
+
+
               </div>
 
             </fieldset>
