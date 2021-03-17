@@ -12,12 +12,14 @@ GOV.UK Prototype Kit
 
 
 {% block headEnd %}
-{% include 'includes/remove-blue-bar.html' %}
+
 {% endblock %}
 
 
 <div class="govuk-width-container">
+
   <main class="govuk-main-wrapper">
+            {% include './_bar-small.html' %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
       <br>
