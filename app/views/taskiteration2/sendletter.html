@@ -17,106 +17,47 @@ GOV.UK Prototype Kit
 
 
 <div class="govuk-width-container">
-
   <main class="govuk-main-wrapper">
-      {% include './_bar-small.html' %}
-    <div class="govuk-grid-column-two-thirds">
-
-      <main id="content" role="main">
-        <div class="grid-row">
-          <div class="column-full">
-<br>
-            
-
-          </div>
-        </div>
-      </main>
-
-     
-
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+      <br>
+      <form method="post">
       <div>
-        <a href="newaward" class="govuk-back-link">Back</a>
+        <a href="https://get-your-state-pension-agent.herokuapp.com/alltasks/tasks-outstanding1" class="govuk-back-link">Back</a>
+
       </div>
+      <br>
+        <h1 class="govuk-heading-xl">Complete task</h1>
+
+        <p>The weekly State Pension amount will go up from <b>£125.67</b> to <b>£132.66</b> from <b>4 October 2020</b>.</p>
+        <p>A new award letter will be sent to the claimant.</p>
 <br>
-      <form action="confirmation" method="post" class="form">
-      <form method="post" >
-        <div class="govuk-form-group">
-          <h1 class="govuk-heading-l">New payment amounts</h1>
-          <br>
-          <h2 class="govuk-heading-m">First payment</h2>
-          <table class="govuk-table">
-          
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell" scope="row" style="width: 50%" ><b>Total</b></td>
-              <td class="govuk-table__cell"><b>£173.13</b></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell" scope="row">Breakdown</td>
-              <td class="govuk-table__cell">New State Pension £152.66
-                <br> Protected payment £10.02
-                <br> Extra State Pension £10.45
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell" scope="row">Payment period dates</td>
-              <td class="govuk-table__cell">8 September 2019 to <br>14 September 2019</td>
-            </tr>
-            
-          </tbody>
-          </table>
+          <a href="tasks" button type="submit" class="govuk-button">
+            End task
+          </a>
 
-          <h2 class="govuk-heading-m">Second and regular payment</h2>
-          <table class="govuk-table">
-          
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell" scope="row" style="width: 50%"><b>Total</b></td>
-              <td class="govuk-table__cell"><b>£692.52</b></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell" scope="row">Breakdown</td>
-              <td class="govuk-table__cell">New State Pension £610.64
-                <br> Protected payment £40.08
-                <br> Extra State Payment £41.80
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell" scope="row">Payment period dates</td>
-              <td class="govuk-table__cell">15 September 2019 to <br>12 October 2019</td>
-            </tr>
-            
-          </tbody>
-          </table>
+        </form>
 
- 
-          
-         
-     <br>
-        <button type="submit" class="govuk-button">
-          Send new award letter
-        </button>
-      </form>
 
+
+        </div>
+
+      </div>
 
     </div>
 
-</div>
-
-</div>
-
-</div>
+  </div>
 
 </main>
-</div>
-</div>
-{% endblock %}
+      </div>
 
-{% block content %}
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+      {% endblock %}
 
-  </div>
-</div>
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
 
-{% endblock %}
+        </div>
+      </div>
+
+      {% endblock %}
