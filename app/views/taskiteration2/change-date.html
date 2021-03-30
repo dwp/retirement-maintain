@@ -17,7 +17,7 @@ GOV.UK Prototype Kit
 
 
 <div class="govuk-width-container">
-   
+
   <main class="govuk-main-wrapper">
       {% include './_bar-small.html' %}
     <div class="govuk-grid-column-two-thirds">
@@ -26,13 +26,13 @@ GOV.UK Prototype Kit
         <div class="grid-row">
           <div class="column-full">
 <br>
-           
+
 
           </div>
         </div>
       </main>
 
-     
+
 
       <div>
         <a href="newaward" class="govuk-back-link">Back</a>
@@ -42,7 +42,7 @@ GOV.UK Prototype Kit
       <form method="post" >
         <div class="govuk-form-group">
           <h1 class="govuk-heading-l">Enter the new entitlement date</h1>
-          
+
           <span id="passport-issued-hint" class="govuk-hint">
               For example, 27 3 2019
             </span>
@@ -74,13 +74,20 @@ GOV.UK Prototype Kit
             </div>
 
 
-            
-              
+
+
      </div>
 
-        <button type="submit" class="govuk-button">
-          Continue
-        </button>
+     <div class="govuk-button-group">
+     <a href="newaward-changedate" button type="submit" class="govuk-button">
+       Continue
+     </a>
+
+     <a href="defer" button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+       Postpone or stop review
+     </a>
+
+   </div>
       </form>
 
 
