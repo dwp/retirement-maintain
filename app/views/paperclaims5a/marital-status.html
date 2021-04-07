@@ -18,10 +18,10 @@ GOV.UK Prototype Kit
 
 <div class="govuk-width-container">
 
-  {% include './_bar-small.html' %}
 
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
+                      {% include './_bar.html' %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <a href="alternative2" class="govuk-back-link">Back</a>
@@ -69,13 +69,18 @@ Marital status</h1>
           Dissolved civil partnership
         </label>
       </div>
-  
+
     </div>
-     
+
 <br><br>
-      <button type="submit" class="govuk-button">
-        Continue
-      </button>
+
+<button class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
+<a href="cannot-marital-status" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+  Cannot complete this page
+</a>
+</form>
 
   </div>
 

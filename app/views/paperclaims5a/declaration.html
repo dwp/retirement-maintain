@@ -19,10 +19,10 @@ GOV.UK Prototype Kit
 
 <div class="govuk-width-container">
 
-  {% include './_bar-small.html' %}
 
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
+                      {% include './_bar.html' %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <a href="bank" class="govuk-back-link">Back</a>
@@ -46,10 +46,14 @@ GOV.UK Prototype Kit
               </label>
             </div>
           </div>
-<br>
-    <button type="submit" class="govuk-button">
-      Continue
-    </button>
+          <br>
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+          <a href="cannot-declaration" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+            Cannot complete this page
+          </a>
+        </form>
 
 
 

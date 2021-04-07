@@ -19,13 +19,13 @@ GOV.UK Prototype Kit
 
 <div class="govuk-width-container">
 
-  {% include './_bar-small.html' %}
 
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
+                      {% include './_bar.html' %}
     <div class="govuk-grid-row">
       <form method="post" action="declaration">
-        <div class="govuk-grid-column-two-thirds"> 
+        <div class="govuk-grid-column-two-thirds">
           <a href="sp-date" class="govuk-back-link">Back</a>
           <br> <br>
 
@@ -39,7 +39,7 @@ GOV.UK Prototype Kit
                 </label>
                 <input class="govuk-input" id="account-holder" name="accountholder" type="text">
               </div>
-      
+
               <div class="govuk-form-group">
                 <label class="govuk-label" for="sortcode">
                 Sort code
@@ -53,8 +53,8 @@ GOV.UK Prototype Kit
                 </label>
                 <input class="govuk-input govuk-input--width-10" id="account-number" name="accountnumber" type="text">
               </div>
-      
-      
+
+
               <div class="govuk-form-group">
                 <label class="govuk-label" for="rollnumber">
                 Building society roll or reference number
@@ -63,9 +63,14 @@ GOV.UK Prototype Kit
               </div>
 
             </div>
-            <button type="submit" class="govuk-button">
+            <br>
+            <button class="govuk-button" data-module="govuk-button">
               Continue
             </button>
+            <a href="cannot-bank" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+              Cannot complete this page
+            </a>
+          </form>
 
 
 
