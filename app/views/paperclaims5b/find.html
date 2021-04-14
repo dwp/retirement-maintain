@@ -12,58 +12,66 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav.html' %}
+{% include './_header-nav-paper.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
+{% include './_find-someone.html' %}
 
 
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-      <br>
-      <h1 class="govuk-heading-xl">Paper claim</h1>
-
-      <h2 class="govuk-heading-m">Find someone</h2>
 
 
 
         <form method="post">
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="nino">
-              National Insurance number or invitation code
-            </label>
-            <input class="govuk-input govuk-!-width-two-thirds" id="nino" name="nino" type="nino" aria-describedby="nino-hint">
+
+          <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-full">
+
+              <br><br>
+              <div>
+                <h1 class="govuk-heading-xl">
+                  Ken Adams </br>
+                  <span class="govuk-caption-xl">QQ 12 34 56 X</span>
+                  <strong class="govuk-tag govuk-tag--orange">
+                    incomplete claim
+                  </strong> </h1>
+              </div>
+
+            </div>
           </div>
 
-          <a href="find-1" button type="submit" class="govuk-button"> 
-            Find
-          </button>
-        </a>
+          <a href="check-answers6" button type="submit" class="govuk-button">
+            Continue
+            </button>
+          </a>
         </form>
 
 
-
-        </div>
 
       </div>
 
     </div>
 
-  </div>
+</div>
+
+</div>
 
 </main>
-      </div>
+</div>
 
-      {% endblock %}
+{% endblock %}
 
-      {% block content %}
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
 
-        </div>
-      </div>
+  </div>
+</div>
 
-      {% endblock %}
+{% endblock %}
