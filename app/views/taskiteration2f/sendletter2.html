@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/servicename-tasks.html' %}
+
+
+{% block headEnd %}
+
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+            {% include './_bar-small.html' %}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+      <br>
+      <form method="post">
+      <div>
+        <a href="newaward2" class="govuk-back-link">Back</a>
+
+      </div>
+      <br>
+        <h1 class="govuk-heading-xl">Changes to the award</h1>
+
+        <p>The State Pension award is now <b>£199.63</b> per week.</p>
+<p>Arrears of <b>£300</b> owed from <b>15 October 2020</b> to <b>7 May 2021 </b>will be paid.</p>
+
+          <h1 class="govuk-heading-m">Review details </h1>
+        <p>Award revised from <b>15 October 2020</b> from <b>£194.62</b> to <b>£199.63</b> per week.</p>
+
+
+<br>
+          <a href="https://get-your-state-pension-agent.herokuapp.com/alltasks/tasks-outstanding1" button type="submit" class="govuk-button">
+            End task
+          </a>
+
+        </form>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
