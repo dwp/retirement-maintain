@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+<!--{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+-->
+{% include './_header-nav-enquiries.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+{% include './_find-someone-enquiries.html' %}
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <dv class="column-full">
+
+
+          <br><br>
+          {% include './_bar.html' %}
+
+<form method="post" action="award-reviewed">
+
+          <a href="review-award" class="govuk-back-link">Back</a>
+
+          <br>
+          <br>
+
+          <h2 class="govuk-heading-l">Award changed</h2>
+
+          <p class="govuk-body">
+          The State Pension award is now <b>£199.63</b> per week.<br>
+          <br>
+          Arrears of <b>£300</b> owed from <b>15 October 2020 to 7 May 2021.</b><br>
+
+          <h3 class="govuk-heading-m">  Review details:</h3>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>          award revised from 15 October 2020 from £194.62 to £199.63 per week</li>
+          </ul>
+          <p>
+          A new award letter will be sent to the claimant.
+
+</p>
+
+            <button type="submit" class="govuk-button">
+            Continue
+            </button>
+
+
+        </div>
+      </div>
+
+
+</div>
+</div>
+
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
