@@ -75,8 +75,12 @@ GOV.UK Prototype Kit
         </thead>
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell">Get code</td>
-            <td class="govuk-table__cell">Get code</td>
+            <td class="govuk-table__cell">26 May 2021</td>
+            <td class="govuk-table__cell">  {% if data.addsp %}
+              £{{data.addsp}}
+              {% else %}
+              £161.10
+              {% endif %}</td>
             <td class="govuk-table__cell"><a href="award-current">Details</a></td>
             <td class="govuk-table__cell">In payment</td>
           </tr>

@@ -44,14 +44,25 @@ GOV.UK Prototype Kit
                 <tbody class="govuk-table__body">
                   <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">New State Pension</td>
-                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell">                  {% if data.addsp %}
+                  £{{data.addsp}}
+                  {% endif %}</td>
                     <td class="govuk-table__cell"><a href="review-award-add-sp">
-                      Add
+                      {% if not data.addsp %}
+                      Add<span class="govuk-visually-hidden">Add</span>
+                      {% else %}
+                      Change<span class="govuk-visually-hidden">Change</span>
+                      {% endif %}
                     </a></td>
                   </tr>
                   <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">Protected payment</td>
-                    <td class="govuk-table__cell">£0.00</td>
+                    <td class="govuk-table__cell">
+                      {% if data.changepp %}
+                      £{{data.changepp}}
+                      {% else %}
+                      £0.00
+                      {% endif %}</td>
                     <td class="govuk-table__cell"><a href="review-award-change-pp">
                       Change
                     </a></td>
