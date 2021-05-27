@@ -41,7 +41,11 @@ GOV.UK Prototype Kit
 
           <p class="govuk-body">
 
-            The weekly State Pension will go up from <b>£127.67</b> to <b>£132.66</b> from <b>8 September 2020.</b><br>
+            The weekly State Pension will go up from <b>£127.67</b> to <b>{% if data.addsp %}
+              £{{data.addsp}}
+              {% else %}
+            £132.66
+              {% endif %}</b> from <b>8 September 2020.</b><br>
             <br>
             An arrears payment of <b>£27.88</b> will be made for the period <b>8 September 2020</b> to <b>4 October 2020.</b><br>
             <br>
