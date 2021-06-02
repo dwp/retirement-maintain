@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+<!--{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+-->
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+      <br>
+        <h1 class="govuk-heading-xl">Late spouse details🏗️
+        </h1>
+
+        <h1 class="govuk-heading-l">
+        Mia Pickett
+                          <span class="govuk-caption-xl">QQ 12 342 92 X</span>
+                        </h1>
+
+
+        <form method="post" action="get-next-task-1">
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="task-not-complete-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Why can you not complete this task?
+                </h1>
+              </legend>
+              <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="task-not-complete" name="task-not-complete" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="task-not-complete">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="task-not-complete-2" name="task-not-complete" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="task-not-complete-2">
+                    No
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="task-not-complete-3" name="task-not-complete" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="task-not-complete-3">
+                    No
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+
+        </form>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
