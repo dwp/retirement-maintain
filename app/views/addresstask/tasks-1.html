@@ -14,7 +14,7 @@ GOV.UK Prototype Kit
 }) }}
 -->
 
-{% include './_header-nav-unselected.html' %}
+{% include './_header-nav-tasks.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -26,38 +26,26 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
       <br>
+        <h1 class="govuk-heading-xl">Address match 🏗️
+        </h1>
+        <p> Address update from CIS, match to our location service 🏗️
+        </p>
 
-      <h1 class="govuk-heading-xl">
-      Julia Smith
-                        <span class="govuk-caption-xl">QQ 12 34 56 X</span>
-                      </h1>
+        <form method="post" action="address-task-1">
 
-
-          <h2 class="govuk-heading-l">Change to award</h2>
-
-        <form method="post" action="tasks-2">
-
-
-          <p class="govuk-body">
-
-            The weekly State Pension will go up from <b>£127.67</b> to <b>{% if data.addsp %}
-              £{{data.addsp}}
-              {% else %}
-            £132.66
-              {% endif %}</b> from <b>	1 April 2019.</b><br>
-            <br>
-            An arrears payment of <b>£27.88</b> will be made for the period <b>	1 April 2019</b> to <b>4 June 2021.</b><br>
-            <br>
-            A new award letter will be sent to the claimant.
-
-          </p>
-
+<br>
           <button class="govuk-button" data-module="govuk-button">
-            Confirm
+            Start this task
           </button>
 
 
+
+     <a href="tasks" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+          Return task to queue
+        </a>
+
         </form>
+
 
 
         </div>
