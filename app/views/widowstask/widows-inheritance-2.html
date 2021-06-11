@@ -36,66 +36,65 @@ GOV.UK Prototype Kit
                                 </h1>
 
 
-        <form method="post" action="widows-calculation-2">
+                                <div class="govuk-width-container">
+                                  <main class="govuk-main-wrapper">
+                                    <div class="govuk-grid-row">
+                                      <div class="govuk-grid-column-two-thirds">
+                                      <br>
+                                      <div>
+                                        <a href="tasks-3-2" class="govuk-back-link">Back</a>
+                                      </div>
+                                      <br>
+                                        <form method="post">
 
-          <div class="govuk-form-group">
-            <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="cost">
-                Additional pension - extra State Pension
-              </label>
-            </h1>
-            <div class="govuk-input__wrapper">
-              <div class="govuk-input__prefix" aria-hidden="true">£</div>
-              <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
-            </div>
-          </div>
-          <div class="govuk-form-group">
-            <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="cost">
-              Graduated benefit - extra State Pension
-              </label>
-            </h1>
-            <div class="govuk-input__wrapper">
-              <div class="govuk-input__prefix" aria-hidden="true">£</div>
-              <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
-            </div>
-          </div>
-          <div class="govuk-form-group">
-            <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="cost">
-                Basic pension - extra State Pension
-              </label>
-            </h1>
-            <div class="govuk-input__wrapper">
-              <div class="govuk-input__prefix" aria-hidden="true">£</div>
-              <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
-            </div>
-          </div>
-          <div class="govuk-form-group">
-            <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="cost">
-                Additional Pension
-              </label>
-            </h1>
-            <div class="govuk-input__wrapper">
-              <div class="govuk-input__prefix" aria-hidden="true">£</div>
-              <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
-            </div>
-          </div>
-          <div class="govuk-form-group">
-            <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="cost">
-                Graduated benefit
-              </label>
-            </h1>
-            <div class="govuk-input__wrapper">
-              <div class="govuk-input__prefix" aria-hidden="true">£</div>
-              <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
-            </div>
-          </div>
-
-          <button class="govuk-button" data-module="govuk-button">
-            Continue
-          </button>
+                                          <h1 class="govuk-heading-xl">Enter the relevant inherited amounts
+                                          </h1>
 
 
-        </form>
+                                          <span class="govuk-label govuk-date-input__label">Additional pension</span>
+                                          <div class="govuk-currency-input__inner">
+                                            <span class="govuk-currency-input__inner__unit">£</span>
+                                            <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="tickets-cost" data-non-numeric type="text" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
+                                          </div>
+                                            <br><br>
+                                            <span class="govuk-label govuk-date-input__label">Graduated benefit</span>
+                                            <div class="govuk-currency-input__inner">
+                                              <span class="govuk-currency-input__inner__unit">£</span>
+                                              <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="tickets-cost" data-non-numeric type="text" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
+                                            </div>
+                                            <br><br>
+                                            <span class="govuk-label govuk-date-input__label">Basic pension - extra State Pension</span>
+                                            <div class="govuk-currency-input__inner">
+                                              <span class="govuk-currency-input__inner__unit">£</span>
+                                              <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="tickets-cost" data-non-numeric type="text" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
+                                            </div>
+                                            <br><br>
+                                            <span class="govuk-label govuk-date-input__label">Additional extra State Pension</span>
+                                            <div class="govuk-currency-input__inner">
+                                              <span class="govuk-currency-input__inner__unit">£</span>
+                                              <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="tickets-cost" data-non-numeric type="text" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
+                                            </div>
+                                            <br><br>
+                                            <span class="govuk-label govuk-date-input__label">Graduated benefit - extra State Pension</span>
+                                            <div class="govuk-currency-input__inner">
+                                              <span class="govuk-currency-input__inner__unit">£</span>
+                                              <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="tickets-cost" data-non-numeric type="text" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
+                                            </div>
+                                            <br><br>
+                                            <span class="govuk-label govuk-date-input__label">Protected payment</span>
+                                            <div class="govuk-currency-input__inner">
+                                              <span class="govuk-currency-input__inner__unit">£</span>
+                                              <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="tickets-cost" data-non-numeric type="text" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
+                                            </div>
 
+
+
+                                <br><br>
+                                          <a href="tasks-4" button type="submit" class="govuk-button">
+                                            Continue
+                                          </button>
+                                        </a>
+                                        </form>
 
         </div>
 
