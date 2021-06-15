@@ -1,0 +1,155 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/servicename-tasks.html' %}
+
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+<br>
+
+
+  <div class="govuk-form-group">
+    <strong class="govuk-tag govuk-tag--turquoise">Administrator - Sarah Jones</strong>&nbsp;&nbsp;&nbsp;<a class="govuk-link" href="#">Logout</a>
+      <br>
+      <br>
+</div>
+
+<div class="govuk-button-group">
+  <button class="govuk-button govuk-button--warning" data-module="govuk-button" a href="#">
+    Remove citizen
+  </button>
+
+  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Add date of death
+  </button>
+
+
+
+</div>
+
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+            {% include './_bar.html' %}
+
+          </div>
+        </div>
+      </main>
+      <h1 class="govuk-heading-m">Current award</h1>
+      <h1 class="govuk-heading-xl">£152.66 a week</h1>
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+
+<form action="newaward" method="post" class="form">
+<form method="post" >
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Account history
+      </h1>
+
+      <p>
+        Showing most recent event first.
+      </p>
+
+      <div class="row">
+        <div class="govuk-grid-column-two-thirds">
+          <div class="timeline">
+            <ul>
+              <li class="action_needed">
+                <h2>Ask someone to confirm your identity</h2>
+                <p class="time">2 September 2017 at 1.01pm</p>
+                <p>Your old passport is damaged. We can’t print your new passport until your identity is confirmed.</p>
+                <p><a class="button" href="#0">Continue</a></p>
+              </li>
+              <li>
+                <h2>Joined processing queue</h2>
+                <p class="time">2 September 2017 at 11.32am</p>
+                <p>Your passport application is waiting in a queue to be processed.</p>
+              </li>
+              <li>
+                <h2>Application received</h2>
+                <p class="time">28 August 2017 at 8.12pm</p>
+                <p>Your application has been received - reference 6HWNA1358_CC3.</p>
+              </li>
+              <li>
+                <h2>Application submitted</h2>
+                <p class="time">28 August 2017</p>
+              </li>
+              <li>
+                <h2>Application created</h2>
+                <p class="time">20 August 2017</p>
+                <div class="timeline-details">
+                  <details>
+                    <summary>Application details</summary>
+                      <span>Time stamp: 20 August 2017 at 8.23am</span>
+                      <span>Region: London</span>
+                      <span>Type: Standard application</span>
+                  </details>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<br>
+  <button type="submit" class="govuk-button">
+    Continue
+  </button>
+
+
+
+</div>
+
+</div>
+
+
+
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
