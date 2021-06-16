@@ -45,6 +45,7 @@ const reviewanaward4a = require('./routes/reviewanaward4a');
 const reviewanaward5 = require('./routes/reviewanaward5');
 const paperclaims5c = require('./routes/paperclaims5c');
 const addresstask = require('./routes/addresstask');
+const widowstask = require('./routes/widowstask');
 
 
 
@@ -92,6 +93,7 @@ router.use(reviewanaward4a);
 router.use(reviewanaward5);
 router.use(paperclaims5c);
 router.use(addresstask);
+router.use(widowstask);
 
 
 

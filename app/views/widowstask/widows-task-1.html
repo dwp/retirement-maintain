@@ -34,7 +34,7 @@ GOV.UK Prototype Kit
 
 
 
-        <form method="post" action="widows-not-complete-1">
+        <form method="post">
 
           <h2 class="govuk-heading-l">Late spouse's details</h2>
 
@@ -68,7 +68,7 @@ GOV.UK Prototype Kit
                   <b>Not verified</b>
                 </span> </td>
                 <td class="govuk-table__cell" style="text-align: right">
-                  <a class="govuk-link" href="add-dob">Change</a>
+                  <a class="govuk-link" href="change-dob">Change</a>
                 </td>
 
               </tr>
@@ -79,7 +79,7 @@ GOV.UK Prototype Kit
                     <b>Not verified</b>
                   </span> </td>
                 <td class="govuk-table__cell" style="text-align: right">
-                  <a class="govuk-link" href="add-dom">Change</a>
+                  <a class="govuk-link" href="change-dom">Change</a>
                 </td>
               </tr>
 
@@ -88,11 +88,37 @@ GOV.UK Prototype Kit
                 <td class="govuk-table__cell">1 April 2019</td>
                 <td class="govuk-table__cell"> </td>
                 <td class="govuk-table__cell" style="text-align: right">
-                  <a class="govuk-link" href="add-dom">Change</a>
+                  <a class="govuk-link" href="change-dow">Change</a>
                 </td>
               </tr>
             </tbody>
           </table>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="claiming-sp-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                <h1 class="govuk-fieldset__heading">
+                  Was Monty Smith receiving State Pension?
+                </h1>
+              </legend>
+              <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="claiming-sp" name="claiming-sp" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="claiming-sp">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="claiming-sp-2" name="claiming-sp" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="claiming-sp-2">
+                    No
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
 
           <button class="govuk-button" data-module="govuk-button">
             Continue

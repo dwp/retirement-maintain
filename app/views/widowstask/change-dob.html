@@ -14,7 +14,7 @@ GOV.UK Prototype Kit
 }) }}
 -->
 
-{% include './_header-nav-tasks.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -26,26 +26,25 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
       <br>
-        <h1 class="govuk-heading-xl">Consider the State Pension entitlement of a widow
-        </h1>
-        <p>Check the record of the claimant's late spouse to see if there is any change to their State Pension entitlement.
-        </p>
 
-        <form method="post"">
+      <h1 class="govuk-heading-xl">
+      Julia Smith
+                        <span class="govuk-caption-xl">QQ 12 34 56 X</span>
+                      </h1>
 
-<br>
+
+
+        <form method="post" action="widows-not-complete-1">
+
+          <h2 class="govuk-heading-l">Late spouse's date of birth</h2>
+
+
           <button class="govuk-button" data-module="govuk-button">
-            Start this task
+            Continue
           </button>
 
 
-
-     <a href="tasks" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
-          Return task to queue
-        </a>
-
         </form>
-
 
 
         </div>
