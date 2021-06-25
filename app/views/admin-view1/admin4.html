@@ -29,20 +29,24 @@ GOV.UK Prototype Kit
 
 
   <div class="govuk-form-group">
-    <strong class="govuk-tag govuk-tag--turquoise">Administrator - Sarah Jones</strong>&nbsp;&nbsp;&nbsp;<a class="govuk-link" href="#">Logout</a>
+    <strong class="govuk-tag govuk-tag--turquoise">Administrator - Sarah Jones</strong>
       <br>
       <br>
 </div>
 
 <div class="govuk-button-group">
-  <button class="govuk-button govuk-button--warning" data-module="govuk-button" a href="#">
+  <a href="admin4-remove" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button" >
     Remove citizen
-  </button>
+  </a>
 
-  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-    Add date of death
-  </button>
+  <a href="admin4-death" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Enter death data
+  </a>
 
+
+  <a href="admin4-raw" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  View raw data
+  </a>
 
 
 </div>
@@ -62,64 +66,86 @@ GOV.UK Prototype Kit
 
 
 
-<form action="newaward" method="post" class="form">
-<form method="post" >
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-l">
-        Account history
+        24 month account history
       </h1>
 
       <p>
         Showing most recent event first.
       </p>
 
-      <div class="row">
-        <div class="govuk-grid-column-two-thirds">
-          <div class="timeline">
-            <ul>
-              <li class="action_needed">
-                <h2>Ask someone to confirm your identity</h2>
-                <p class="time">2 September 2017 at 1.01pm</p>
-                <p>Your old passport is damaged. We can’t print your new passport until your identity is confirmed.</p>
-                <p><a class="button" href="#0">Continue</a></p>
-              </li>
-              <li>
-                <h2>Joined processing queue</h2>
-                <p class="time">2 September 2017 at 11.32am</p>
-                <p>Your passport application is waiting in a queue to be processed.</p>
-              </li>
-              <li>
-                <h2>Application received</h2>
-                <p class="time">28 August 2017 at 8.12pm</p>
-                <p>Your application has been received - reference 6HWNA1358_CC3.</p>
-              </li>
-              <li>
-                <h2>Application submitted</h2>
-                <p class="time">28 August 2017</p>
-              </li>
-              <li>
-                <h2>Application created</h2>
-                <p class="time">20 August 2017</p>
-                <div class="timeline-details">
-                  <details>
-                    <summary>Application details</summary>
-                      <span>Time stamp: 20 August 2017 at 8.23am</span>
-                      <span>Region: London</span>
-                      <span>Type: Standard application</span>
-                  </details>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <ol class="app-timeline">
+
+        <li class="app-timeline__entry">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+            Widowed
+          </h3>
+
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">State pension adjusted</span>
+            <span class="app-timeline__author">
+              agent Paul McPhin
+            </span>
+            <span class="app-timeline__date">
+              21 July 2020 at 10:09
+            </span>
+            <span class="app-timeline__date">
+            Award increased to £152.66 a week.
+            </span>
+          </p>
+        </li>
+
+        <li class="app-timeline__entry">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+            Claiming state pension
+          </h3>
+
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">Claiming state pension</span>
+            <span class="app-timeline__author">
+              agent Clare Simmons
+            </span>
+            <span class="app-timeline__date">
+              3 August 2019 at 15:56
+            </span>
+            <span class="app-timeline__date">
+            Claiming from state pension age.
+            </span>
+          </p>
+        </li>
+
+
+        <li class="app-timeline__entry">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+            Claim disallowed
+          </h3>
+
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">Claim disallowed</span>
+            <span class="app-timeline__author">
+              agent John Smith
+            </span>
+            <span class="app-timeline__date">
+              1 January 2018 at 13:02
+            </span>
+            <span class="app-timeline__date">
+            Claimant under state pension age.
+            </span>
+          </p>
+        </li>
+
+
+
+      </ol>
 
     </div>
   </div>
 <br>
-  <button type="submit" class="govuk-button">
+  <button class="govuk-button">
     Continue
   </button>
 

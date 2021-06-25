@@ -1,0 +1,177 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/servicename-tasks.html' %}
+
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+<br>
+
+
+  <div class="govuk-form-group">
+    <strong class="govuk-tag govuk-tag--turquoise">Administrator - Sarah Jones</strong>
+      <br>
+      <br>
+</div>
+
+<div class="govuk-button-group">
+  <a href="admin4-remove" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button" >
+    Remove citizen
+  </a>
+
+  <a href="admin4-death" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Enter death data
+  </a>
+
+  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    View raw data
+  </button>
+
+
+</div>
+
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+            {% include './_bar.html' %}
+
+          </div>
+        </div>
+      </main>
+
+
+
+
+<form action="newaward" method="post" class="form">
+<form method="post" >
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Raw data
+      </h1>
+
+      <p><b>
+        Showing all account transactions, most recent first.
+      </p></b>
+
+      <p>
+          "date": "7 October 2021",<br>
+          "title": "Payments started again"
+      </p>
+      <p>
+          "date": "7 October 2021",<br>
+          "title": "Payment returned - payments stopped"
+      </p>
+<p>
+    "date": "24 June 2021",<br>
+    "title": "Name changed"
+</p>
+<p>
+    "date": "24 June 2021",<br>
+    "title": "Marital status changed"
+</p>
+<p>
+    "date": "24 June 2021",<br>
+    "title": "Spouse details updated"
+</p>
+<p>
+    "date": "10 June 2021",<br>
+    "title": "Work number removed"
+</p>
+<p>
+    "date": "10 June 2021",<br>
+    "title": "Email address removed"
+</p>
+
+<p>
+    "date": "3 June 2021",<br>
+    "title": "Email address changed"
+</p>
+<p>
+    "date": "3 June 2021",<br>
+    "title": "Mobile number changed"
+</p>
+<p>
+    "date": "12 March 2020",<br>
+    "title": "Work number changed"
+</p>
+<p>
+    "date": "12 March 2020",<br>
+    "title": "Home number changed"
+
+</p>
+<p>
+    "date": "12 March 2020",<br>
+    "title": "No entitlement to inherited State Pension"
+
+</p>
+<p>
+    "date": "3 September 2019",<br>
+    "title": "Banking details changed"
+
+</p>
+<p>
+    "date": "15 April 2017",<br>
+    "title": "Frequency changed"
+</p>
+
+
+
+    </div>
+  </div>
+<br>
+  <button type="submit" class="govuk-button">
+    Continue
+  </button>
+
+
+
+</div>
+
+</div>
+
+
+
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
