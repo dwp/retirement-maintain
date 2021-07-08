@@ -5,6 +5,7 @@ const router = express.Router()
 const newclaims = require('./routes/newclaims');
 const newclaims2 = require('./routes/newclaims2');
 const newclaims3 = require('./routes/newclaims3');
+const newclaim7 = require('./routes/newclaim7');
 const bpviteration = require('./routes/bpviteration');
 const bpviteration2 = require('./routes/bpviteration2');
 const changebanktype = require('./routes/changebanktype');
@@ -54,6 +55,7 @@ const widowstask = require('./routes/widowstask');
 router.use(newclaims);
 router.use(newclaims2);
 router.use(newclaims3);
+router.use(newclaim7);
 router.use(bpviteration);
 router.use(bpviteration2);
 router.use(changebanktype);
