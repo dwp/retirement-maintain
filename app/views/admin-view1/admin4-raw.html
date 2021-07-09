@@ -78,56 +78,60 @@ GOV.UK Prototype Kit
 
 
 
-                                 <h1 class="govuk-heading-m">Invite Key</h1>
-                                 <br>
-                                 <p> <b>Mr Jose Dominguez</b> VICT2O91PY</p>
-                                <br>
-                                <h1 class="govuk-heading-m">Personal details</h1>
-                                <br>
-                                <p><b>State Pension Date</b>  1 November 2020  </p>
-                                <p><b>Claim Created Date</b>  3 November 2020  </p>
-                                <p><b>Home Telephone Number</b>  0191 234 5321  </p>
-                                <p><b>Email</b>   j.dominguez@gmail.com  </p>
-                                <p><b>Residential Address</b>  31 Whitby Avenue, Newcastle, N1 3BD  </p>
-                                <p><b>Account Holder</b>  J DOMINGUEZ  </p>
-                                <p><b>Account Number</b>  41282612  </p>
-                                <p><b>Sort Code</b>  40 47 87  </p>
-                                <p><b>Award Status</b>  ARCHIVED  </p>
-                                <p><b>Award Status Date</b>  3 November 2020  </p>
-                                <h1 class="govuk-heading-m">Payment Details</h1>
-                                <br>
-                                <p><b>Payment Frequency</b>  4W  </p>
-                               <p><b>Weekly State Pension Amount</b>  168.6  </p>
-                               <p><b>Weekly Protected Payment Amount</b>  5.3  </p>
-                               <p><b>Weekly Extra State Pension Amount</b>  0.0  </p>
-                               <p><b>Weekly Inherited Extra State Pension Amount</b>  0.0  </p>
-                               <p><b>Total Amount</b>  173.9  </p>
-                               <p><b>Start Date</b>  3 November 2020  </p>
-                               <p><b>End Date</b>  3 November 2021  </p>
-                               <p><b>Award Amount Reason Code</b> FIRSTAWARD  </p>
-                               <p><b>Date Added</b>  3 November 2020  </p>
-                               <p><b>Weekly State Pension Amount</b>  172.83  </p>
-                               <p><b>Weekly Protected Payment Amount</b>  5.33  </p>
-                               <p><b>Weekly Extra State Pension Amount</b>  0.0  </p>
-                               <p><b>Weekly Inherited Extra State Pension Amount</b>  0.0  </p>
-                               <p><b>Total Amount</b>  178.16  </p>
-                               <p><b>Start Date</b>  13 November 2020  </p>
-                               <p><b>Award Amount Reason Code</b>  ANNUALUPRATING  </p>
-                               <p><b>Date Added</b>  13 November 2020  </p>
-                               <h1 class="govuk-heading-m">Other</h1>
-                               <br>
-                              <p><b>Gender</b>  M  </p>
-                              <p><b>Version Number</b>  0  </p>
-                              <p><b>Marital Status</b>  Single  </p>
-                              <p><b>Marital Status Verified</b>  false  </p>
-                              <p><b>Prioritised Claim Date</b>  3 November 2020  </p>
+        <div class="govuk-form-group">
+
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="30" aria-describedby="more-detail-hint">
+            "inviteKey" : "VICT2O91PY",
+            Mr Jose Dominguez
+           "statePensionDate" 1 November 2020
+            "claimCreatedDate" 3 November 2020
+                "homeTelephoneNumber" 0191 234 5321
+                "email" : j.dominguez@gmail.com
+            "residentialAddress" 31 Whitby Avenue, Newcastle, N1 3BD
+
+                "accountHolder" : J DOMINGUEZ
+                "accountNumber" : 41282612
+                "sortCode" : 40 47 87
+            "awardStatus" : "ARCHIVED",
+            "awardStatusDate" 3 November 2020
+            "paymentDetails"
+                "paymentFrequency" : "4W",
+                "awards" : [
+                        "weeklyStatePensionAmount" : 168.6,
+                        "weeklyProtectedPaymentAmount" : 5.3,
+                        "weeklyExtraStatePensionAmount" : 0.0,
+                        "weeklyInheritedExtraStatePensionAmount" : 0.0,
+                        "totalAmount" : 173.9,
+                        "startDate" : 3 November 2020
+                        "endDate" : 3 November 2021
+                        "awardAmountReasonCode" : "FIRSTAWARD",
+                        "dateAdded" 3 November 2020
+                    },
+                    {
+                        "weeklyStatePensionAmount" : 172.83,
+                        "weeklyProtectedPaymentAmount" : 5.33,
+                        "weeklyExtraStatePensionAmount" : 0.0,
+                        "weeklyInheritedExtraStatePensionAmount" : 0.0,
+                        "totalAmount" : 178.16,
+                        "startDate" : 13 November 2020
+                        "awardAmountReasonCode" : "ANNUALUPRATING",
+                        "dateAdded" : 13 November 2020
+            "gender" : M
+
+            "versionNumber" : 0,
+            "maritalStatus" : "Single",
+            "maritalStatusVerified" : false,
+            "prioritisedClaimDate" : 3 November 2020
 
 
 
-                            <h1 class="govuk-heading-m">Schedules</h1>
-                            <br>
-                              <p><b>Processing Status</b>  COMPLETE</p>
+        Schedules:
 
+            "processingStatus" : "COMPLETE",
+
+
+          </textarea>
+        </div>
 
     </div>
   </div>
