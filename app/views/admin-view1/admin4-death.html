@@ -39,12 +39,12 @@ GOV.UK Prototype Kit
   Summary
   </a>
 
-  <a href="admin4-raw" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-  All transactions
+  <a href="admin4-cases" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  All cases
   </a>
 
   <a href="admin4-death" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-    Enter death details
+    Change a verified date
   </a>
 
   <a href="admin4-remove" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button" >
@@ -70,38 +70,58 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-l">
-        Enter information about a death</h1>
+        Change a verified date</h1>
 
         <div class="govuk-inset-text">
-          A death certificate is needed to verify dates
+          A death certificate is needed to verify a date of death
 
 
         </div>
 
-      <div class="govuk-form-group">
-
-        <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-
-            <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
-                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
-                  Add or override date of widowhood
-                </label>
-              </div>
-
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                  Add or override date of death
-                </label>
-              </div>
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
 
 
 
-    </div>
-  </div>
+            <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col"> Date </th>
+                <th class="govuk-table__header" scope="col"> Status </th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <a href="marriage-date" class="govuk-link">Married 14 July 1947</a>
+                </td>
+                <td class="govuk-table__cell">
+                  <span  style="margin-left: 10%" class="verified-badge verified">
+                      <b>Verified</b>
+                    </span>
+
+                </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <a href="death-date" class="govuk-link">Widowed 3 December 1989</a>
+                </td>
+                <td class="govuk-table__cell">
+                  <span  style="margin-left: 10%" class="verified-badge verified">
+                      <b>Verified</b>
+                    </span>
+
+                </td>
+              </tr>
+
+
+
+
+            </tbody>
+          </table>
+
+          </div>
+        </div>
 <br>
   <a href="death-date" role="button" class="govuk-button">
     Continue

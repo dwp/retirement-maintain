@@ -1,0 +1,205 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/servicename-tasks.html' %}
+
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-full">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+<br>
+
+
+  <div class="govuk-form-group">
+    <strong class="govuk-tag govuk-tag--turquoise">Administrator - Sarah Jones</strong>
+      <br>
+      <br>
+</div>
+
+<div class="govuk-button-group">
+
+  <a href="admin4" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+  Summary
+  </a>
+
+  <a href="admin4-cases" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  All cases
+  </a>
+
+  <a href="admin4-death" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Change a verified date
+  </a>
+
+  <a href="admin4-remove" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button" >
+    Delete account
+  </a>
+
+
+</div>
+
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+            {% include './_bar.html' %}
+
+          </div>
+        </div>
+      </main>
+
+
+
+
+<form action="admin4-raw" method="post" class="form">
+<form method="post" >
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-l">
+        All cases
+      </h1>
+
+
+
+      <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="col"> Case number </th>
+          <th class="govuk-table__header" scope="col"> Status </th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <a href="admin4-raw" class="govuk-link">Case 001</a>
+          </td>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag govuk-tag--grey">
+      Inactive
+    </strong>
+
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <a href="admin4-raw" class="govuk-link">Case 002</a>
+          </td>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag govuk-tag--grey">
+      Inactive
+    </strong>
+
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <a href="admin4-raw" class="govuk-link">Case 003</a>
+          </td>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag">
+      Active
+    </strong>
+
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <a href="admin4-raw" class="govuk-link">Case 004</a>
+          </td>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag">
+      Active
+    </strong>
+
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <a href="admin4-raw" class="govuk-link">Case 005</a>
+          </td>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag govuk-tag--grey">
+      Inactive
+    </strong>
+
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <a href="admin4-raw" class="govuk-link">Case 006</a>
+          </td>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag">
+      Active
+    </strong>
+
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <a href="admin4-raw" class="govuk-link">Case 007</a>
+          </td>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag govuk-tag--grey">
+      Inactive
+    </strong>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    </div>
+  </div>
+<br>
+  <button type="submit" class="govuk-button">
+    Continue
+  </button>
+
+
+
+</div>
+
+</div>
+
+
+
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
