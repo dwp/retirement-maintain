@@ -12,39 +12,51 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav-enquiries.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
-{% include './_find-someone-enquiries.html' %}
 
 
-<br><br><br><br><br>
 <div class="govuk-width-container">
-    <div class="govuk-grid-column-two-thirds">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+      <br>
 
-      <main id="content" role="main">
-        <div class="grid-row">
+      {% include './_bar.html' %}
+
+        <form method="post">
+
+          <a href="personal" button type="submit" class="govuk-button">
+          Continue
+          </button>
+        </a>
+        </form>
 
 
-          {% include './_bar.html' %}
 
-            <a href="personal" button type="submit" class="govuk-button">
-              Continue</a>
-            </main>
+        </div>
+
+      </div>
+
     </div>
 
-</div>
-
-
-{% endblock %}
-
-{% block content %}
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
   </div>
-</div>
 
-{% endblock %}
+
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
