@@ -22,7 +22,11 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
 
       <div class="govuk-grid-column-two-thirds">
-        <a href="find-1" class="govuk-back-link">Back</a>
+        {{ govukBackLink({
+            text: "Back",
+            href: "javascript:history.go(-1)"
+          }) }}
+
 <br><br>
         <form method="post" action="address">
 
@@ -32,7 +36,7 @@ GOV.UK Prototype Kit
 <div class=" govuk-inset-text"><p class="govuk-body-l">17 December 1954
 </p></div>
 
-<p><a href="#" class="govuk-link">This is not the claimants date of birth 🚧</a></p>
+<p><a href="dob-input" class="govuk-link">This is not the claimants date of birth 🚧</a></p>
 
     <button type="submit" class="govuk-button">
       Continue
