@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+<!--{{ govukHeader({
+  serviceName: serviceName,
+  serviceUrl: "/"
+}) }}
+-->
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full">
+
+
+          <br><br><br>
+          {% include './_bar.html' %}
+
+<form method="post">
+
+          <a href="personal" class="govuk-back-link">Back</a>
+          <br><br>
+          <h2 class="govuk-heading-l">Reason for stopping the State Pension</h2>
+
+          <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="stop-sp" name="stop-sp" type="radio" value="death">
+        <label class="govuk-label govuk-radios__label" for="stop-sp">
+          Death
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
+        <label class="govuk-label govuk-radios__label" for="stop-sp-2">
+          Deferral
+        </label>
+      </div>
+
+  </fieldset>
+</div>
+
+
+          <button type="submit" class="govuk-button">Continue</button>
+        </div>
+      </div>
+    </main>
+
+  </form>
+</div>
+</div>
+
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
