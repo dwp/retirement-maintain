@@ -12,12 +12,10 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav-enquiries.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
-
-{% include './_find-someone-enquiries.html' %}
 
 <div class="govuk-width-container">
   <div class="govuk-grid-column-two-thirds">
@@ -39,8 +37,15 @@ GOV.UK Prototype Kit
       </div>
     </main>
 
-    </br>
-    </br>
+<br><br>
+
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        Task description <a href="#" class="govuk-link">Link to start the task</a>
+      </strong>
+    </div>
 
     <div>
       <h2 class="govuk-heading-m">Contact details</h2>
