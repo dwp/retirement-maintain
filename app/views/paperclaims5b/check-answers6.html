@@ -12,7 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav-paper.html' %}
+{% include './_header-nav-unselected.html' %}
 {% block headEnd %}
 {% endblock %}
 
@@ -21,16 +21,17 @@ GOV.UK Prototype Kit
 
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
-                      {% include './_bar-incomplete.html' %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <a href="enquiries" class="govuk-back-link">Back</a>
 <br>
 <br>
+
+                      {% include './_bar-incomplete.html' %}
         <form method="post" action="complete2">
 
-          <h1 class="govuk-heading-xl">Review claim details<br>
-                    <span class="govuk-caption-xl">Claim started 30 March 2021</span></h1>
+          <h1 class="govuk-heading-l">Review claim details<br>
+                    <span class="govuk-caption-l">Claim started 30 March 2021</span></h1>
 
 
           <h2 class="govuk-heading-m" style="width: 670px;">1. &nbsp Personal details</h2>
