@@ -70,8 +70,8 @@ GOV.UK Prototype Kit
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header" style="width: 40%">National Insurance number</th>
                     <td class="govuk-table__cell" style="width: 30%">XX123456X</td>
-                    <td class="govuk-table__cell"><span class="verified-badge not-verified">
-                      <b>Not verified</b>
+                    <td class="govuk-table__cell"><span class="verified-badge verified">
+                      <b>Verified</b>
                     </span> </td>
                     <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
                                             <a class="govuk-link" href="change-nino">Change</a>
@@ -93,8 +93,8 @@ GOV.UK Prototype Kit
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Date of birth</th>
                     <td class="govuk-table__cell">12 January 1940</td>
-                    <td class="govuk-table__cell"><span class="verified-badge not-verified">
-                      <b>Not verified</b>
+                    <td class="govuk-table__cell"><span class="verified-badge verified">
+                      <b>Verified</b>
                     </span> </td>
                     <td class="govuk-table__cell" style="text-align: right">
                       <a class="govuk-link" href="change-dob">Change</a>
@@ -104,9 +104,22 @@ GOV.UK Prototype Kit
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Date of marriage</th>
                     <td class="govuk-table__cell">1 May 1985</td>
-                    <td class="govuk-table__cell"><span class="verified-badge not-verified">
+                    <td class="govuk-table__cell">
+
+                      {% if data['dom'] === 'verified' %}
+                      <span class="verified-badge verified">
+                          <b>Verified</b>
+                      </span>
+                  {% elseif data['dom'] === 'notverified' %}
+                  <span class="verified-badge not-verified">
                       <b>Not verified</b>
-                    </span> </td>
+                  </span>
+                  {% else %}
+                  <span class="verified-badge not-verified">
+                      <b>Not verified</b>
+                  </span>
+                  {% endif %}
+                   </td>
                     <td class="govuk-table__cell" style="text-align: right">
                       <a class="govuk-link" href="change-dom">
                   Change</a>
@@ -116,8 +129,8 @@ GOV.UK Prototype Kit
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Date of death</th>
                     <td class="govuk-table__cell">1 April 2019</td>
-                    <td class="govuk-table__cell"><span class="verified-badge not-verified">
-                      <b>Not verified</b>
+                    <td class="govuk-table__cell"><span class="verified-badge verified">
+                      <b>Verified</b>
                     </span> </td>
                     <td class="govuk-table__cell" style="text-align: right">
                       <a class="govuk-link" href="change-dod">Change</a>
@@ -126,10 +139,10 @@ GOV.UK Prototype Kit
 
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">State Pension</th>
-                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell">Claimed</td>
                     <td class="govuk-table__cell"></td>
                     <td class="govuk-table__cell" style="text-align: right">
-                      <a class="govuk-link" href="change-sp">Add</a>
+                      <a class="govuk-link" href="change-sp">Change</a>
                     </td>
                   </tr>
 

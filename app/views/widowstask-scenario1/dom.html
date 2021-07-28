@@ -29,20 +29,43 @@ GOV.UK Prototype Kit
 
         <form method="post" action="widows-task-1">
 
-
           <div class="govuk-form-group">
-              <h1 class="govuk-heading-xl">Date of marriage</h1>
-
-              <div class="govuk-inset-text">
-                <p class="govuk-body-l">1 May 1985<br>
-
-                <a href="dom" class="govuk-link">Change</a></p>
-
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="marriage-date-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                  Date of marriage
+                </h1>
+              </legend>
+              <Br>
+              <div id="marriage-date-hint" class="govuk-hint">
+                For example, 27 3 2007
+              </div>
+              <div class="govuk-date-input" id="dom">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="domd">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="domd" name="domd" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="domm">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dinn" name="domm" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="domy">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="domy" name="domy" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
               </div>
 
-
+            </fieldset>
           </div>
-
 
           <br>
 
