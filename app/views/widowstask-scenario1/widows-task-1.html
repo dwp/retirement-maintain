@@ -59,9 +59,6 @@ GOV.UK Prototype Kit
 
           <h1 class="govuk-heading-m">Late spouse's details</h1>
 
-
-
-
             <form method="post">
 
 
@@ -92,7 +89,7 @@ GOV.UK Prototype Kit
                   </tr>
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Date of birth</th>
-                    <td class="govuk-table__cell">12 January 1940</td>
+                    <td class="govuk-table__cell">12/01/1940</td>
                     <td class="govuk-table__cell"><span class="verified-badge verified">
                       <b>Verified</b>
                     </span> </td>
@@ -103,32 +100,37 @@ GOV.UK Prototype Kit
                   </tr>
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Date of marriage</th>
-                    <td class="govuk-table__cell">1 May 1985</td>
                     <td class="govuk-table__cell">
-
-                      {% if data['dom'] === 'verified' %}
+                      {% if data.domd1 %}
+                      {{data.domd1}}/{{data.domm1}}/{{data.domy1}}
+                      {% else %}
+                      {% endif %}
+                    </td>
+                    <td class="govuk-table__cell">
+                      {% if data['dom1'] === 'verified' %}
                       <span class="verified-badge verified">
                           <b>Verified</b>
                       </span>
-                  {% elseif data['dom'] === 'notverified' %}
+                  {% elseif data['dom1'] === 'notverified' %}
                   <span class="verified-badge not-verified">
                       <b>Not verified</b>
                   </span>
                   {% else %}
-                  <span class="verified-badge not-verified">
-                      <b>Not verified</b>
-                  </span>
                   {% endif %}
                    </td>
                     <td class="govuk-table__cell" style="text-align: right">
-                      <a class="govuk-link" href="change-dom">
-                  Change</a>
+                      <a class="govuk-link" href="dom">
+                        {% if not data.domd1 %}
+                      Add<span class="govuk-visually-hidden"></span>
+                      {% else %}
+                      Change<span class="govuk-visually-hidden"></span>
+                      {% endif %}</a>
                     </td>
                   </tr>
 
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Date of death</th>
-                    <td class="govuk-table__cell">1 April 2019</td>
+                    <td class="govuk-table__cell">1/04/2019</td>
                     <td class="govuk-table__cell"><span class="verified-badge verified">
                       <b>Verified</b>
                     </span> </td>
