@@ -27,20 +27,16 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
       <br>
 
-      <h1 class="govuk-heading-xl">
-      Beth Riley
-                        <span class="govuk-caption-xl">QQ 12 34 56 X</span>
-                      </h1>
-
         <form method="post" action="widows-task-1">
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" role="group" aria-describedby="marriage-date-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
                   Date of marriage
                 </h1>
               </legend>
+              <Br>
               <div id="marriage-date-hint" class="govuk-hint">
                 For example, 27 3 2007
               </div>
@@ -57,7 +53,7 @@ GOV.UK Prototype Kit
                     <label class="govuk-label govuk-date-input__label" for="domm">
                       Month
                     </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dinn" name="domm" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="domm" name="domm" type="text" pattern="[0-9]*" inputmode="numeric"></div>
                 </div>
                 <div class="govuk-date-input__item">
                   <div class="govuk-form-group">
@@ -71,10 +67,36 @@ GOV.UK Prototype Kit
             </fieldset>
           </div>
 
+          <br>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="dom-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Is the date of marriage verified?
+                </h1>
+              </legend>
+              <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="dom" name="dom" type="radio" value="verified">
+                  <label class="govuk-label govuk-radios__label" for="dom">
+                    Verified
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="dom-2" name="dom1" type="radio" value="notverified">
+                  <label class="govuk-label govuk-radios__label" for="dom-2">
+                    Not verified
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
           <button class="govuk-button" data-module="govuk-button">
             Continue
           </button>
-
 
         </form>
 

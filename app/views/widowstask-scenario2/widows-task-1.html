@@ -95,30 +95,37 @@ GOV.UK Prototype Kit
                     </td>
 
                   </tr>
+
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Date of marriage</th>
-                    <td class="govuk-table__cell">                      {{data.domd}}/{{data.domm}}/{{data.domy}}</td>
                     <td class="govuk-table__cell">
-                      {% if data['dom-verified'] === 'verified' %}
+                      {% if data.domd %}
+                      {{data.domd}}/{{data.domm}}/{{data.domy}}
+                      {% else %}
+                      {% endif %}
+                    </td>
+                    <td class="govuk-table__cell">
+                      {% if data['dom'] === 'verified' %}
                       <span class="verified-badge verified">
                           <b>Verified</b>
                       </span>
-                  {% elseif data['dom-verified'] === 'notverified' %}
+                  {% elseif data['dom'] === 'notverified' %}
                   <span class="verified-badge not-verified">
                       <b>Not verified</b>
                   </span>
                   {% else %}
-
                   {% endif %}
-                    </td>
+                   </td>
                     <td class="govuk-table__cell" style="text-align: right">
-                      <a class="govuk-link" href="change-dom">                    {% if not data.domd %}
-                    Add<span class="govuk-visually-hidden"></span>
-                    {% else %}
-                    Change<span class="govuk-visually-hidden"></span>
-                    {% endif %}</a>
+                      <a class="govuk-link" href="dom">
+                        {% if not data.domd %}
+                      Add<span class="govuk-visually-hidden"></span>
+                      {% else %}
+                      Change<span class="govuk-visually-hidden"></span>
+                      {% endif %}</a>
                     </td>
                   </tr>
+
 
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Date of death</th>
