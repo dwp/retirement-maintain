@@ -92,10 +92,12 @@ GOV.UK Prototype Kit
                   </tr>
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Date of marriage</th>
-                    <td class="govuk-table__cell"></td>
-                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell">19 December 1994</td>
+                    <td class="govuk-table__cell"><span class="verified-badge verified">
+                        <b>Verified</b>
+                    </span></td>
                     <td class="govuk-table__cell" style="text-align: right">
-                      <a class="govuk-link" href="">Add</a>
+                      <a class="govuk-link" href="">Change</a>
                     </td>
                   </tr>
 
@@ -112,10 +114,22 @@ GOV.UK Prototype Kit
 
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">State Pension</th>
-                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell">
+                      {% if data['spclaim'] === 'claimed' %}
+                  Claimed
+                  {% elseif data['spclaim'] === 'notclaimed' %}
+                  Not claimed
+                  {% else %}
+                  {% endif %}
+                    </td>
                     <td class="govuk-table__cell"></td>
                     <td class="govuk-table__cell" style="text-align: right">
-                      <a class="govuk-link" href="change-sp-claim">Add</a>
+                      <a class="govuk-link" href="change-sp-claim">
+                        {% if not data.spclaim %}
+                      Add<span class="govuk-visually-hidden"></span>
+                      {% else %}
+                      Change<span class="govuk-visually-hidden"></span>
+                      {% endif %}</a>
                     </td>
                   </tr>
 
