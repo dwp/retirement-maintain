@@ -12,7 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav-tasks.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -37,7 +37,7 @@ GOV.UK Prototype Kit
                         <span class="govuk-hint">For example, 123.45</span>
                                <div class="govuk-currency-input__inner">
                                  <span class="govuk-currency-input__inner__unit">£</span>
-                                 <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="addsp" data-non-numeric type="text" id="addsp" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
+                                 <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="addpp" data-non-numeric type="text" id="addsp" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
                                </div>
                     </div>
 

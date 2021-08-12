@@ -19,6 +19,7 @@ GOV.UK Prototype Kit
 
 
 
+
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -26,23 +27,27 @@ GOV.UK Prototype Kit
 
         <br>
 
-          {% include './_bar.html' %}
+          {% include './_bar1.html' %}
 
-        <form method="post" action="review-award">
+        <form method="post" action="get-a-task-2">
+
+          <h1 class="govuk-heading-l">Change to award</h1>
+
+  <h1 class="govuk-heading-s">The State Pension award is now £200.94 per week.</h1>
+
+  <p>The award has been revised from 	8 January 2021 from £148.67 to £152.66 per week.</p>
+
+    <p>The award has been revised from 	9 May 2021 from £194.89 to £200.94 per week.</p>
 
 
-                    <div class="govuk-form-group">
-                        <h1 class="govuk-heading-l">Enter new State Pension amount</h1>
+  <p>
+  Arrears of £153.10, owed from 8 January 2021 to 1 June 2021, will be paid.</p>
 
-                        <span class="govuk-hint">For example, 123.45</span>
-                               <div class="govuk-currency-input__inner">
-                                 <span class="govuk-currency-input__inner__unit">£</span>
-                                 <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="addsp" data-non-numeric type="text" id="addsp" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
-                               </div>
-                    </div>
+  <p>A new award letter will be sent to the claimant.</p>
 
+  <br>
           <button class="govuk-button" data-module="govuk-button">
-           Confirm
+           End task
          </button>
 
         </form>
