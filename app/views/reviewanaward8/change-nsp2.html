@@ -14,6 +14,7 @@ GOV.UK Prototype Kit
 
 
 
+
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -21,9 +22,9 @@ GOV.UK Prototype Kit
 
         <br>
 
-          {% include './_bar1.html' %}
+          {% include './_bar.html' %}
 
-        <form method="post" action="review-award-1">
+        <form method="post" action="review-award2">
 
 
                     <div class="govuk-form-group">
@@ -32,7 +33,7 @@ GOV.UK Prototype Kit
                         <span class="govuk-hint">For example, 123.45</span>
                                <div class="govuk-currency-input__inner">
                                  <span class="govuk-currency-input__inner__unit">£</span>
-                                 <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="addsp1" data-non-numeric type="text" id="addsp11" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
+                                 <input class="govuk-input govuk-currency-input__inner__input govuk-input--width-10" aria-label="Enter amount in pounds" name="addsp4" data-non-numeric type="text" id="addsp" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
                                </div>
                     </div>
 

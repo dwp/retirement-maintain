@@ -34,7 +34,11 @@ GOV.UK Prototype Kit
               <thead class="govuk-table__head">
                 <tr class="govuk-table__row">
                   <th class="govuk-table__header award_detail2" scope="col">Total</th>
-                  <th class="govuk-table__header award_detail" scope="col">£0.00k	</th>
+                  <th class="govuk-table__header award_detail" scope="col">{% if data.addsp4 %}
+                    £{{data.addsp4}} per week
+                    {% else %}
+                    £0.00 per week
+                    {% endif %}	</th>
                   <td class="govuk-table__cell award_detail">
           </td>
                 </tr>
@@ -42,11 +46,17 @@ GOV.UK Prototype Kit
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
                   <td class="govuk-table__cell" scope="row">New State Pension</td>
-                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">{% if data.addsp4 %}
+                    £{{data.addsp4}}
+                    {% else %}
+                    {% endif %}	</td>
                   <td class="govuk-table__cell">
-                    <a href="change-nsp">
-                      Add<span class="govuk-visually-hidden">Change New State Pension</span>
-                    </a></td>
+                    <a class="govuk-link" href="change-nsp2">
+                      {% if not data.addsp4 %}
+                    Add<span class="govuk-visually-hidden"></span>
+                    {% else %}
+                    Change<span class="govuk-visually-hidden"></span>
+                    {% endif %}</a>
                 </tr>
                 <tr class="govuk-table__row">
                   <td class="govuk-table__cell" scope="row">Protected payment</td>
@@ -71,11 +81,18 @@ GOV.UK Prototype Kit
               <table class="govuk-table">
                 <tr class="govuk-table__row">
                     <td class="govuk-table__header award_detail2" scope="row">Entitlement date</td>
-                    <td class="govuk-table__cell award_detail"></td>
+                  <td class="govuk-table__cell">                    {% if not data.entdate4day %}
+                                    {% else %}
+                                    30 March 2021
+                                    {% endif %}</td>
                     <td class="govuk-table__cell award_detail">
-                      <a href="change-date">
-                        Add<span class="govuk-visually-hidden">Change address</span>
-                      </a></td>
+                      <a class="govuk-link" href="change-date2">
+                        {% if not data.entdate4day %}
+                      Add<span class="govuk-visually-hidden"></span>
+                      {% else %}
+                      Change<span class="govuk-visually-hidden"></span>
+                      {% endif %}</a>
+                    </td>
                   </tr>
               </table>
 
