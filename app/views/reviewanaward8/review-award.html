@@ -33,7 +33,8 @@ GOV.UK Prototype Kit
               <thead class="govuk-table__head">
                 <tr class="govuk-table__row">
                   <th class="govuk-table__header award_detail2" scope="col">Total</th>
-                  <th class="govuk-table__header award_detail" scope="col">{% if data.addsp %}
+                  <th class="govuk-table__header award_detail" scope="col">
+                  {% if data.addsp %}
                   £{{data.addsp}}
                   {% else %}
                   £149.87
@@ -79,7 +80,15 @@ GOV.UK Prototype Kit
               <table class="govuk-table">
                 <tr class="govuk-table__row">
                     <td class="govuk-table__header award_detail2" scope="row">Entitlement date</td>
-                    <td class="govuk-table__cell award_detail">8 January 2021</td>
+                    <td class="govuk-table__cell award_detail">
+
+                      {% if not data.entdate4day %}
+                                        9 March 2021
+                                          {% else %}
+                                        
+                                        {% endif %}
+
+                    </td>
                     <td class="govuk-table__cell award_detail">
                       <a href="change-date">
                         Change<span class="govuk-visually-hidden">Change address</span>
