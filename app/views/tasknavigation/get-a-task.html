@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{% include './_header-nav-tasks.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+      <br>
+        <h1 class="govuk-heading-xl">Tasks</h1>
+
+        <nav class="moj-sub-navigation" aria-label="Sub navigation">
+
+                  <ul class="moj-sub-navigation__list">
+                    <li class="moj-sub-navigation__item">
+                      <a class="moj-sub-navigation__link" aria-current="page" href="tasks">New claim tasks</a>
+                    </li>
+
+                    <li class="moj-sub-navigation__item">
+                      <a class="moj-sub-navigation__link" href="tasks-2">X tasks</a>
+                    </li>
+
+                  </ul>
+
+                </nav>
+
+
+        <form method="post">
+
+          <h1 class="govuk-heading-l">New claim tasks</h1>
+
+          <p>Text goes here</p>
+<br>
+          <a href="review" button type="submit" class="govuk-button">
+            View next task
+        </a>
+        </form>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+
+      {% endblock %}
