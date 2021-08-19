@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav-tasks.html' %}
 
 {% block headEnd %}
@@ -28,7 +24,7 @@ GOV.UK Prototype Kit
       </div>
       <br>
         <form method="post">
-         
+
           <h1 class="govuk-heading-xl">Consider spouse entitlement</h1>
 
 
@@ -61,7 +57,7 @@ GOV.UK Prototype Kit
                 <td class="govuk-table__cell">17 July 1950</td>
                 <td class="govuk-table__cell"></td>
               </tr>
-          
+
             </tbody>
           </table>
 
@@ -80,7 +76,7 @@ GOV.UK Prototype Kit
                 <td class="govuk-table__cell" style="width: 50%">Rachel Smith</td>
                 <td class="govuk-table__cell"></td>
               </tr>
-          
+
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Address</th>
                 <td class="govuk-table__cell">55 Main Street
@@ -88,11 +84,11 @@ GOV.UK Prototype Kit
                   <br>GU79 6YW</td>
                 <td class="govuk-table__cell"></td>
               </tr>
-          
+
             </tbody>
           </table>
 
-          <a href="tasks-4" button type="submit" class="govuk-button"> 
+          <a href="tasks-4" button type="submit" class="govuk-button">
             Continue
           </button>
         </a>

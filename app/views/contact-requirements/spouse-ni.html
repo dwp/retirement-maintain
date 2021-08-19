@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav-enquiries.html' %}
 
 {% block headEnd %}
@@ -34,18 +30,18 @@ GOV.UK Prototype Kit
           <a href="spouse-details" class="govuk-back-link">Back</a>
           <br><br>
 
-         
+
           <form method="post">
             <div class="govuk-form-group">
               <h2 class="govuk-heading-l">Spouse's National Insurance number</h2>
-     
+
 
               <div class="govuk-form-group">
                 <input class="govuk-input govuk-input--width-20" id="event-name" name="event-name" type="text">
               </div>
-  
+
             </div>
-  
+
             <button type="submit" class="govuk-button">
               Save
             </button>

@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav-tasks.html' %}
 
 {% block headEnd %}
@@ -27,16 +23,16 @@ GOV.UK Prototype Kit
       <form method="post">
       <div>
         <a href="tasks-3" class="govuk-back-link">Back</a>
-        
+
       </div>
       <br>
         <h1 class="govuk-heading-xl">Complete task</h1>
 
-        <p>If you have checked the spouse's record and completed 
+        <p>If you have checked the spouse's record and completed
           any necessary actions, you can end this task.</p>
-         
+
 <br>
-          <a href="tasks" button type="submit" class="govuk-button"> 
+          <a href="tasks" button type="submit" class="govuk-button">
             End task
           </a>
 

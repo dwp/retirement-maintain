@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav-enquiries.html' %}
 
 {% block headEnd %}
@@ -35,18 +31,18 @@ GOV.UK Prototype Kit
           <br><br>
           <h2 class="govuk-heading-l">Spouse's other names</h2>
 
-         
+
           <form method="post">
             <div class="govuk-form-group">
               <span id="passport-issued-hint" class="govuk-hint">
                 Include middle names, maiden name, former married names and changes of family name.
               </span>
-      
+
               <div class="govuk-form-group">
                 <input class="govuk-input" id="event-name" name="event-name" type="text">
               </div>
             </div>
-  
+
             <button type="submit" class="govuk-button">
               Save
             </button>

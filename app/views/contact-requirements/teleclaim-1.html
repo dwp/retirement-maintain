@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav-teleclaim.html' %}
 
 {% block headEnd %}
@@ -26,12 +22,12 @@ GOV.UK Prototype Kit
 
       <main id="content" role="main">
         <div class="grid-row">
-         
+
 
             {% include './_bar-ready.html' %}
-           
+
             <a href="teleclaim-2" button type="submit" class="govuk-button">
-              Continue</a>     
+              Continue</a>
             </main>
     </div>
 

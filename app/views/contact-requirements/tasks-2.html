@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav-tasks.html' %}
 
 {% block headEnd %}
@@ -31,13 +27,13 @@ GOV.UK Prototype Kit
         </p>
 
         <form method="post" action="tasks-3">
-         
+
 <br>
           <button class="govuk-button" data-module="govuk-button">
             Start this task
           </button>
 
-        <!-- <a href="tasks" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary"> 
+        <!-- <a href="tasks" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
           Return task to queue
         </a> -->
 
