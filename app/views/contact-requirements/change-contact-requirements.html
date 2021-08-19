@@ -28,23 +28,49 @@ GOV.UK Prototype Kit
 
 <form method="post" action="contact-homephone">
 
-          <a href="contact" class="govuk-back-link">Back</a>
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:history.go(-1)"
+                    }) }}
+
           <br><br>
-          <h2 class="govuk-heading-l">Home phone number</h2>
+          <h2 class="govuk-heading-l">Contact requirements</h2>
 
           <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="contactrequirement-hint">
 
-            <input class="govuk-input govuk-input--width-20" id="full-name" name="full-name" type="text" autocomplete="name" spellcheck="false">
+        <div id="contactrequirement-hint" class="govuk-hint">
+          Select all that apply.
+        </div>
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="contactrequirement" name="contactrequirement" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="contactrequirement">
+              1
+            </label>
           </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="contactrequirement-2" name="contactrequirement" type="checkbox" value="mines">
+            <label class="govuk-label govuk-checkboxes__label" for="contactrequirement-2">
+              2
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="contactrequirement-3" name="contactrequirement" type="checkbox" value="farm">
+            <label class="govuk-label govuk-checkboxes__label" for="contactrequirement-3">
+              3
+            </label>
+          </div>
+        </div>
+
+      </fieldset>
+    </div>
 
           <button type="submit" class="govuk-button">Save</button>
         </div>
       </div>
     </main>
 
-
-    <a href="remove-homephone" class="govuk-body">Remove home phone number</a>
-  </form>
 </div>
 </div>
 
