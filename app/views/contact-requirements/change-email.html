@@ -7,17 +7,11 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
-{% include './_header-nav-enquiries.html' %}
+
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
-
-{% include './_find-someone-enquiries.html' %}
 
 <div class="govuk-width-container">
   <div class="govuk-grid-column-two-thirds">
@@ -37,7 +31,7 @@ GOV.UK Prototype Kit
           <h2 class="govuk-heading-l">Email address</h2>
 
           <div class="govuk-form-group">
-            
+
             <input class="govuk-input" id="full-name" name="full-name" type="text" autocomplete="name" spellcheck="false">
           </div>
 

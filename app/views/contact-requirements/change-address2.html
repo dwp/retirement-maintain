@@ -7,17 +7,12 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
-{% include './_header-nav-enquiries.html' %}
+
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
-{% include './_find-someone-enquiries.html' %}
 
 <div class="govuk-width-container">
   <div class="govuk-grid-column-two-thirds">
@@ -37,10 +32,10 @@ GOV.UK Prototype Kit
             <h2 class="govuk-heading-l">Address</h2>
 
             <div class="govuk-form-group">
-    
+
               <p>1 address found for <b>5</b> and <b>NE3 1YL</b> &nbsp <a href="change-address1" style=" margin-left: 10;">Change</a></p>
-          
-              
+
+
               <div class="govuk-radios govuk-radios--inline">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
@@ -48,14 +43,14 @@ GOV.UK Prototype Kit
                    5 Windsor Street, South Gosforth, Newcastle Upon Tyne, NE3 1YL <a href></a>
                   </label>
                 </div>
-              
+
               </div>
-          
+
               <br><br>
           <button type="submit" class="govuk-button">
           Save
           </button>
-          
+
             </div>
 
         </div>

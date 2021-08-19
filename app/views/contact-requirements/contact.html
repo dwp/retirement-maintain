@@ -7,16 +7,11 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
-
 
 <div class="govuk-width-container">
   <div class="govuk-grid-column-two-thirds">
@@ -25,21 +20,17 @@ GOV.UK Prototype Kit
       <div class="grid-row">
         <div class="column-full">
 
-
           <br><br>
           {% include './_bar.html' %}
 
           {% include './_tab-contact.html' %}
 
-
-
-
         </div>
       </div>
     </main>
 
-    </br>
-    </br>
+    <br>
+    <br>
 
     <div>
       <h2 class="govuk-heading-m">Contact details</h2>

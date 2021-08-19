@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav-claimform.html' %}
 
 {% block headEnd %}
@@ -38,7 +34,7 @@ GOV.UK Prototype Kit
 
           <p>Get the next available paper claim.</p>
 <br>
-          <a href="#" button type="submit" class="govuk-button"> 
+          <a href="#" button type="submit" class="govuk-button">
             Get next claim
           </button>
         </a>

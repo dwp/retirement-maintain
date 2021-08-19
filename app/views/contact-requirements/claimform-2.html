@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav-claimform.html' %}
 
 {% block headEnd %}
@@ -56,7 +52,7 @@ GOV.UK Prototype Kit
                       Change
                     </a></td>
                 </tr>
-            
+
               </tbody>
             </table>
 

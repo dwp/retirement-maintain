@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav-enquiries.html' %}
 
 {% block headEnd %}
@@ -36,7 +32,7 @@ GOV.UK Prototype Kit
           <br><br>
           <h2 class="govuk-heading-l">International address</h2>
 
-         
+
           <div class="govuk-form-group">
             <label class="govuk-label" for="address-line-1">
               Address line 1<span class="govuk-visually-hidden">line 1 of 2</span>
