@@ -7,11 +7,6 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
 {% include './_header-nav.html' %}
 {% block headEnd %}
 {% endblock %}
@@ -69,9 +64,9 @@ What is your current marital status?</h1>
           Dissolved civil partnership
         </label>
       </div>
-  
+
     </div>
-     
+
 <br><br>
       <button type="submit" class="govuk-button">
         Continue

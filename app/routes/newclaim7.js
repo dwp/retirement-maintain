@@ -22,6 +22,16 @@ router.post('/newclaim7/frequency', (req, res) => {
 })
 ;
 
+router.post('/newclaim7/alternative', function(req, res) {
+  if ( req.body['alternative'] === 'yes' ) {
+    res.redirect('/newclaim7/alternative2');
+  } else {
+    res.redirect('/newclaim7/marital-status');
+  }
+});
+
+
+
 router.post('/newclaim7/lived-worked', function(req, res) {
   if ( req.body['lived-outside'] === 'yes' ) {
     res.redirect('/newclaim7/lived');
