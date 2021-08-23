@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav-name.html' %}
 
 {% block headEnd %}
@@ -28,7 +24,7 @@ GOV.UK Prototype Kit
           }) }}
 
 <br><br>
-        <form method="post" action="address">
+        <form method="post">
 
           <h1 class="govuk-heading-xl">
               Can you confirm your date of birth?
@@ -38,9 +34,9 @@ GOV.UK Prototype Kit
 
 <p><a href="dob-input" class="govuk-link">This is not the claimants date of birth 🚧</a></p>
 
-    <button type="submit" class="govuk-button">
-      Continue
-    </button>
+<a href="address" button type="submit" class="govuk-button">
+  Continue
+</a>
 
   </div>
 

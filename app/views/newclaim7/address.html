@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav.html' %}
 
 {% block headEnd %}
@@ -27,7 +23,7 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
         <a href="address" class="govuk-back-link">Back</a>
         <br> <br>
-        <form method="post" action="bank">
+        <form method="post">
 
           <h1 class="govuk-heading-xl">
 What is your property number and postcode?         </h1>

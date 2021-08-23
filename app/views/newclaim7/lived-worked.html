@@ -7,11 +7,6 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
 {% include './_header-nav.html' %}
 {% block headEnd %}
 {% endblock %}
@@ -26,25 +21,25 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
         <a href="marital-details" class="govuk-back-link">Back</a>
         <br> <br>
-        <form method="post" action="lived">
+        <form method="post">
 
           <h1 class="govuk-heading-xl">
 Have you ever lived outside of the UK?   </h1>
 
 <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+  <fieldset class="govuk-fieldset" aria-describedby="lived-outside-conditional-hint">
 
     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
-        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+        <input class="govuk-radios__input" id="lived-outside-conditional" name="lived-outside" type="radio" value="yes" data-aria-controls="conditional-lived-outside-conditional">
+        <label class="govuk-label govuk-radios__label" for="lived-outside-conditional">
           Yes
         </label>
       </div>
 
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+        <input class="govuk-radios__input" id="lived-outside-conditional-2" name="lived-outside" type="radio" value="no" data-aria-controls="conditional-lived-outside-conditional-2">
+        <label class="govuk-label govuk-radios__label" for="lived-outside-conditional-2">
           No
         </label>
       </div>

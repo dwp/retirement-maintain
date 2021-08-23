@@ -27,36 +27,50 @@ GOV.UK Prototype Kit
 
         <a href="sp-date" class="govuk-back-link">Back</a>
 
-        <form method="post" action="frequency2">
+        <form method="post">
 <br>
           <h1 class="govuk-heading-xl">
-              You will get your State Pension every 4 weeks
+            How often would you like to be paid?
           </h1>
 
-<h2 class="govuk-heading-m">
-Are you happy to be paid every 4 weeks?</h2>
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Where do you live?
+                </h1>
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    England
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    Scotland
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                    Wales
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                    Northern Ireland
+                  </label>
+                </div>
+              </div>
 
-  <div class="govuk-form-group">
-    
-    <div class="govuk-radios govuk-radios--inline">
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-        <label class="govuk-label govuk-radios__label" for="changed-name">
-          Yes
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-        <label class="govuk-label govuk-radios__label" for="changed-name-2">
-          No
-        </label>
-      </div>
-    </div>
+            </fieldset>
+          </div>
 
-  </div>
 
-           
-      
     <button type="submit" class="govuk-button">
       Continue
     </button>

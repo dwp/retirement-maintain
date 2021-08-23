@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav.html' %}
 
 {% block headEnd %}
@@ -24,7 +20,7 @@ GOV.UK Prototype Kit
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
-      <form method="post" action="sp-date">
+      <form method="post">
         <div class="govuk-grid-column-two-thirds">
           <a href="address2" class="govuk-back-link">Back</a>
           <br> <br>

@@ -7,11 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
+
 {% include './_header-nav.html' %}
 {% block headEnd %}
 {% endblock %}
@@ -31,7 +27,7 @@ GOV.UK Prototype Kit
   }) }}
 
         <br> <br>
-        <form method="post" action="lived-worked">
+        <form method="post">
 
           <h1 class="govuk-heading-xl">
             The earliest you can get your State Pension is 6 May 2020</h1>
