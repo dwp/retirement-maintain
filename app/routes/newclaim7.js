@@ -21,6 +21,10 @@ router.post('/newclaim7/frequency', (req, res) => {
   res.redirect('/newclaim7/contact')
 })
 ;
+router.post('/newclaim7/contact', (req, res) => {
+  res.redirect('/newclaim7/alternative')
+})
+;
 
 router.post('/newclaim7/alternative', function(req, res) {
   if ( req.body['alternative'] === 'yes' ) {
