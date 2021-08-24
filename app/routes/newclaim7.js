@@ -8,7 +8,7 @@ router.post('/newclaim7/address', (req, res) => {
 ;
 
 router.post('/newclaim7/bank', (req, res) => {
-  res.redirect('/newclaim7/freqency')
+  res.redirect('/newclaim7/frequency')
 })
 ;
 
