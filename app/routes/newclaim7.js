@@ -8,16 +8,16 @@ router.post('/newclaim7/address', (req, res) => {
 ;
 
 router.post('/newclaim7/bank', (req, res) => {
+  res.redirect('/newclaim7/freqency')
+})
+;
+
+router.post('/newclaim7/frequency', (req, res) => {
   res.redirect('/newclaim7/sp-date')
 })
 ;
 
 router.post('/newclaim7/sp-date', (req, res) => {
-  res.redirect('/newclaim7/frequency')
-})
-;
-
-router.post('/newclaim7/frequency', (req, res) => {
   res.redirect('/newclaim7/contact')
 })
 ;
