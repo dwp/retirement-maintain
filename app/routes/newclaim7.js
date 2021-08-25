@@ -21,6 +21,7 @@ router.post('/newclaim7/sp-date', (req, res) => {
   res.redirect('/newclaim7/contact')
 })
 ;
+
 router.post('/newclaim7/contact', (req, res) => {
   res.redirect('/newclaim7/alternative')
 })
@@ -33,6 +34,11 @@ router.post('/newclaim7/alternative', function(req, res) {
     res.redirect('/newclaim7/marital-status');
   }
 });
+
+router.post('/newclaim7/marital-details', (req, res) => {
+  res.redirect('/newclaim7/lived-worked')
+})
+;
 
 
 
