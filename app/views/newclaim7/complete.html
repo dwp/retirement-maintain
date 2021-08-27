@@ -7,11 +7,6 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
 {% include './_header-nav.html' %}
 
 {% block headEnd %}
@@ -42,9 +37,6 @@ GOV.UK Prototype Kit
           <h1 class="govuk-panel__title">
             Application complete
           </h1>
-          <div class="govuk-panel__body">
-            Your reference is your National Insurance number
-          </div>
         </div>
 
         <form method="post" action="find">
