@@ -7,11 +7,6 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
 {% include './_header-nav.html' %}
 
 {% block headEnd %}
@@ -54,25 +49,6 @@ GOV.UK Prototype Kit
               </strong>
             </div>
 
-
-         <!--  <h1 class="govuk-heading-m">Do you agree to submit this application?</h1>
-
-          <div class="govuk-radios govuk-radios--inline">
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="changed-name">
-                Yes
-              </label>
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                No
-              </label>
-            </div>
-          </div> -->
-
-          <br>
           <button type="submit" class="govuk-button">
             I agree - submit my application
           </button>

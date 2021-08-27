@@ -30,13 +30,31 @@ GOV.UK Prototype Kit
         <form method="post">
 
           <h1 class="govuk-heading-xl">
-            The earliest you can get your State Pension is 20 September 2021</h1>
+            Does the claimant want their State Pension from the earliest possible date?</h1>
+
+            <div class="govuk-inset-text">
+              The earliest date they can claim their State Pension is 6 October 2021
+            </div>
 
             <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="sp-date-hint">
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="sp-date" name="sp-date" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="sp-date">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="sp-date-2" name="sp-date" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="sp-date-2">
+                      No
+                    </label>
+                  </div>
+                </div>
 
-<p class="govuk-body-l">You will get your State Pension from this date unless
-you<a href="#" class="govuk-link"> tell us a different date.</a> </p>
-
+              </fieldset>
+            </div>
 
             <button type="submit" class="govuk-button">
               Continue
