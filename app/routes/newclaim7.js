@@ -8,11 +8,6 @@ router.post('/newclaim7/address', (req, res) => {
 ;
 
 router.post('/newclaim7/bank', (req, res) => {
-  res.redirect('/newclaim7/frequency')
-})
-;
-
-router.post('/newclaim7/frequency', (req, res) => {
   res.redirect('/newclaim7/sp-date')
 })
 ;
@@ -39,8 +34,6 @@ router.post('/newclaim7/marital-details', (req, res) => {
   res.redirect('/newclaim7/lived-worked')
 })
 ;
-
-
 
 router.post('/newclaim7/lived-worked', function(req, res) {
   if ( req.body['lived-outside'] === 'yes' ) {
