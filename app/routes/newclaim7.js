@@ -43,5 +43,22 @@ router.post('/newclaim7/lived-worked', function(req, res) {
   }
 });
 
+router.post('/newclaim7/marital-status', function(req, res) {
+  if ( req.body['marital-status'] === 'married' ) {
+    res.redirect('marital-details');
+  } else if ( req.body['marital-status'] === 'never' ) {
+    res.redirect('lived-worked');
+  } else if ( req.body['marital-status'] === 'civil-partnership' ) {
+    res.redirect('civil-details');
+  } else if ( req.body['marital-status'] === "widowed" ) {
+    res.redirect('widow-details');
+  } else if ( req.body['marital-status'] === "divorced" ) {
+    res.redirect('divorce-details');
+  } else if ( req.body['marital-status'] === "dissolved" ) {
+    res.redirect('dissolved-details');
+  }
+});
+
+
 
   module.exports = router;
