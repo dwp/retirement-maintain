@@ -30,6 +30,11 @@ router.post('/newclaim7/alternative', function(req, res) {
   }
 });
 
+router.post('/newclaim7/alternative2', (req, res) => {
+  res.redirect('/newclaim7/marital-status')
+})
+;
+
 router.post('/newclaim7/marital-details', (req, res) => {
   res.redirect('/newclaim7/lived-worked')
 })
