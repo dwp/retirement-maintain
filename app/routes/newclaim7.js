@@ -14,6 +14,11 @@ router.post('/newclaim7/find', (req, res) => {
 })
 ;
 
+router.post('/newclaim7/dob-request', (req, res) => {
+  res.redirect('/newclaim7/find')
+})
+;
+
 router.post('/newclaim7/address', (req, res) => {
   res.redirect('/newclaim7/address-result')
 })
