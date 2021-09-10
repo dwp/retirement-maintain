@@ -20,7 +20,18 @@ GOV.UK Prototype Kit
 
     <div class="moj-identity-bar__details">
 
-      <span class="moj-identity-bar__title"><b>Ken Adams</b></span>
+      <span class="moj-identity-bar__title"><b>
+        {% if data['nino'] === 'xx347612a' %}
+        Theodora Best
+        {% elseif data['nino'] === 'XX347612A' %}
+        Theodora Best
+        {% elseif data['nino'] === 'XX89161B' %}
+        Yara Croft
+        {% elseif data['nino'] === 'xx89161b' %}
+        Yara Croft
+        {% else %}
+        Samira Mcgill
+        {% endif %}</b></span>
 
     </div>
     <div class="moj-identity-bar__details">

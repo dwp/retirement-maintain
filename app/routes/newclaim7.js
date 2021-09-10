@@ -15,6 +15,10 @@ router.post('/newclaim7/find', (req, res) => {
 ;
 
 router.post('/newclaim7/address', (req, res) => {
+  res.redirect('/newclaim7/address-result')
+})
+;
+router.post('/newclaim7/address-result', (req, res) => {
   res.redirect('/newclaim7/bank')
 })
 ;
@@ -59,6 +63,23 @@ router.post('/newclaim7/lived-worked', function(req, res) {
     res.redirect('/newclaim7/worked');
   }
 });
+
+router.post('/newclaim7/lived-2', (req, res) => {
+  res.redirect('/newclaim7/france')
+})
+;
+
+router.post('/newclaim7/france', (req, res) => {
+  res.redirect('/newclaim7/switzerland')
+})
+;
+
+
+router.post('/newclaim7/switzerland', (req, res) => {
+  res.redirect('/newclaim7/worked')
+})
+;
+
 
 router.post('/newclaim7/worked', function(req, res) {
   if ( req.body['worked-outside'] === 'yes' ) {
