@@ -91,6 +91,11 @@ router.post('/newclaim7/switzerland', (req, res) => {
 })
 ;
 
+router.post('/newclaim7/divorce-details', (req, res) => {
+  res.redirect('/newclaim7/lived-worked')
+})
+;
+
 
 router.post('/newclaim7/worked', function(req, res) {
   if ( req.body['worked-outside'] === 'yes' ) {
