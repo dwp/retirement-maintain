@@ -65,5 +65,16 @@ router.post('/newclaim7/marital-status', function(req, res) {
 });
 
 
+router.post('/newclaim7/dob', function(req, res) {
+  if (req.session.data["nino"] === "xx347612a") {
+    res.redirect('dob-request');
+  } else if (req.session.data["nino"] === "XX347612A") {
+    res.redirect('dob-request');
+  } else {
+    res.redirect('address');
+  }
+});
+
+
 
   module.exports = router;

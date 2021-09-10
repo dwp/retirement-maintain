@@ -29,7 +29,21 @@ GOV.UK Prototype Kit
           <h1 class="govuk-heading-xl">Can you confirm your full name?</h1>
 
           <div class="govuk-inset-text">
-<p class="govuk-body-l">Kali Booth
+
+<p class="govuk-body-l">
+
+  {% if data['nino'] === 'xx347612a' %}
+  Theodora Best
+  {% elseif data['nino'] === 'XX347612A' %}
+  Theodora Best
+  {% elseif data['nino'] === 'XX89161B' %}
+  Yara Croft
+  {% elseif data['nino'] === 'xx89161b' %}
+  Yara Croft
+  {% else %}
+  Samira Mcgill
+  {% endif %}
+
 </p>
   </div>
 
