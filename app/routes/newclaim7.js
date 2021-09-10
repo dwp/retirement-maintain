@@ -1,6 +1,18 @@
 const express = require('express');
 const router = express.Router()
 
+router.use((req, res, next) => {
+  if (req.method === 'POST') {
+    console.log(JSON.stringify(req.session.data, null, 2))
+  }
+  next()
+})
+
+
+router.post('/newclaim7/find', (req, res) => {
+  res.redirect('/newclaim7/find-1')
+})
+;
 
 router.post('/newclaim7/address', (req, res) => {
   res.redirect('/newclaim7/bank')
@@ -43,6 +55,14 @@ router.post('/newclaim7/marital-details', (req, res) => {
 router.post('/newclaim7/lived-worked', function(req, res) {
   if ( req.body['lived-outside'] === 'yes' ) {
     res.redirect('/newclaim7/lived');
+  } else {
+    res.redirect('/newclaim7/worked');
+  }
+});
+
+router.post('/newclaim7/worked', function(req, res) {
+  if ( req.body['worked-outside'] === 'yes' ) {
+    res.redirect('/newclaim7/worked-countries');
   } else {
     res.redirect('/newclaim7/check-answers');
   }
