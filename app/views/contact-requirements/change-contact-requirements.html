@@ -37,56 +37,78 @@ GOV.UK Prototype Kit
           <h2 class="govuk-heading-l">Contact requirements</h2>
 
           <div class="govuk-form-group">
-      <fieldset class="govuk-fieldset" aria-describedby="contactrequirement-hint">
+                  <fieldset class="govuk-fieldset" aria-describedby="alt-hint">
+                    <div id="contactrequirement-hint" class="govuk-hint">
+                      Select all that apply.
+                    </div>
+                    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="alt" name="alt" type="checkbox" value="carcasses">
+                        <label class="govuk-label govuk-checkboxes__label" for="alt">
+                        Audio form
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="alt-2" name="alt" type="checkbox" value="mines">
+                        <label class="govuk-label govuk-checkboxes__label" for="alt-2">
+                        Audio CD, cassette or MP3
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="alt-3" name="alt" type="checkbox" value="farm">
+                        <label class="govuk-label govuk-checkboxes__label" for="alt-3">
+                        Braille
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="alt-4" name="alt" type="checkbox" value="farm">
+                        <label class="govuk-label govuk-checkboxes__label" for="alt-4">
+                        Email
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="alt-5" name="alt" type="checkbox" value="farm">
+                        <label class="govuk-label govuk-checkboxes__label" for="alt-5">
+                        Large print
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="alt-6" name="alt" type="checkbox" value="farm">
+                        <label class="govuk-label govuk-checkboxes__label" for="alt-6">
+                        Typetalk
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="alt-7" name="alt" type="checkbox" value="farm">
+                        <label class="govuk-label govuk-checkboxes__label" for="alt-7">
+                        Relay UK
+                        </label>
+                      </div>
 
-        <div id="contactrequirement-hint" class="govuk-hint">
-          Select all that apply.
-        </div>
-        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="contactrequirement" name="contactrequirement" type="checkbox" value="carcasses">
-            <label class="govuk-label govuk-checkboxes__label" for="contactrequirement">
-                Braille
-            </label>
-          </div>
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="contactrequirement-2" name="contactrequirement" type="checkbox" value="mines">
-            <label class="govuk-label govuk-checkboxes__label" for="contactrequirement-2">
-              Large print
-            </label>
-          </div>
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="contactrequirement-3" name="contactrequirement" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="contactrequirement-3">
-              Audio forms
-            </label>
-          </div>
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="contactrequirement-3" name="contactrequirement" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="contactrequirement-3">
-              Relay UK/Typetalk/Textphone
-            </label>
-          </div>
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="contactrequirement-3" name="contactrequirement" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="contactrequirement-3">
-                Minicom
-            </label>
-          </div>
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="contactrequirement-3" name="contactrequirement" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="contactrequirement-3">
-                Email (as reasonable adjustment)
-            </label>
-          </div>
-        </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="alt-8" name="alt" type="checkbox" value="farm">
+                        <label class="govuk-label govuk-checkboxes__label" for="alt-8">
+                        Some other method
+                        </label>
+                        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact-8">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="contact-by-text">
+                              Mobile phone number
+                            </label>
+                            <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel" autocomplete="tel">
+                          </div>
+                      </div>
 
-      </fieldset>
-    </div>
+
+                    </div>
+</div>
+</div>
+</div>
 
           <button type="submit" class="govuk-button">Save</button>
         </div>
       </div>
+
     </main>
 
 </div>
