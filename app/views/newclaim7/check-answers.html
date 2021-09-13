@@ -38,7 +38,17 @@ GOV.UK Prototype Kit
               Name
             </dt>
             <dd class="govuk-summary-list__value">
-              Ken Adams
+              {% if data['nino'] === 'xx347612a' %}
+              Theodora Best
+              {% elseif data['nino'] === 'XX347612A' %}
+              Theodora Best
+              {% elseif data['nino'] === 'XX89161B' %}
+              Yara Croft
+              {% elseif data['nino'] === 'xx89161b' %}
+              Yara Croft
+              {% else %}
+              Samira Mcgill
+              {% endif %}
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="find-1">
@@ -52,7 +62,7 @@ GOV.UK Prototype Kit
           Date of birth
         </dt>
         <dd class="govuk-summary-list__value">
-          17 December 1954
+          12 December 1955
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="dob-c">
@@ -67,7 +77,19 @@ GOV.UK Prototype Kit
           Address
         </dt>
         <dd class="govuk-summary-list__value">
-          5 Windsor Street<br>South Gosforth<br>Newcastle upon Tyne<br>NE31 1YL
+          {% if data['nino'] === 'XX89161B' %}
+          63 Seafield Place<br>
+          Fosten<br>
+          YO6 4HN
+          {% elseif data['nino'] === 'xx89161b' %}
+          63 Seafield Place<br>
+          Fosten<br>
+          YO6 4HN
+          {% else %}
+          14 Mill Lane<br>
+          Arleston<br>
+          TF1 2HN
+          {% endif %}
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="address-c">
@@ -80,7 +102,17 @@ GOV.UK Prototype Kit
           Bank account details
         </dt>
         <dd class="govuk-summary-list__value">
-        Mr Ken Adams<br>54 65 66<br>24678900
+          {% if data['nino'] === 'xx347612a' %}
+          Theodora Best
+          {% elseif data['nino'] === 'XX347612A' %}
+          Theodora Best
+          {% elseif data['nino'] === 'XX89161B' %}
+          Yara Croft
+          {% elseif data['nino'] === 'xx89161b' %}
+          Yara Croft
+          {% else %}
+          Samira Mcgill
+          {% endif %}<br>54 65 66<br>24678900
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="bank-c">
@@ -88,27 +120,14 @@ GOV.UK Prototype Kit
           </a>
         </dd>
       </div>
-     
-    <!--   <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Payment frequency
-        </dt>
-        <dd class="govuk-summary-list__value">
-         Every 2 weeks
-        </dd>
-        <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="frequency-c">
-            Change
-          </a>
-        </dd>
-      </div> -->
+
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           State Pension claim date
         </dt>
         <dd class="govuk-summary-list__value">
-         20 September 2021
+         12 December 2021
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="sp-date-c">
@@ -121,7 +140,24 @@ GOV.UK Prototype Kit
           Contact details
         </dt>
         <dd class="govuk-summary-list__value">
-         Mobile: 07919192873 <br> kenadams45@gmail.com <br> Other formats: Large print
+         Mobile: 07919192873 <br>
+         {% if data['nino'] === 'xx347612a' %}
+         best@hotmail.com
+         {% elseif data['nino'] === 'XX347612A' %}
+            best@hotmail.com
+         {% elseif data['nino'] === 'XX89161B' %}
+            croft@hotmail.com
+         {% elseif data['nino'] === 'xx89161b' %}
+            croft@hotmail.com
+         {% else %}
+            sam@hotmail.com
+         {% endif %} <br>
+
+         {% if data['nino'] === 'XX89161B' %}
+         {% elseif data['nino'] === 'xx89161b' %}
+         {% else %}
+          Other formats: Braille
+         {% endif %}
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="contacted2-c">
@@ -142,19 +178,41 @@ GOV.UK Prototype Kit
           </a>
         </dd>
       </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-         Lived or worked outside the UK
-        </dt>
-        <dd class="govuk-summary-list__value">
-         France<br>Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004<br><br> Germany<br>Lived: Oct 2007 - Dec 2010<br>
-        </dd>
-        <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="lived-worked-c">
-            Change<span class="govuk-visually-hidden"> contact details</span>
-          </a>
-        </dd>
-      </div>
+
+
+               {% if data['nino'] === 'XX89161B' %}
+               <div class="govuk-summary-list__row">
+                 <dt class="govuk-summary-list__key">
+                  Lived or worked outside the UK
+                 </dt>
+                 <dd class="govuk-summary-list__value">
+                  France<br>Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004<br><br> Germany<br>Lived: Oct 2007 - Dec 2010<br>
+                 </dd>
+                 <dd class="govuk-summary-list__actions">
+                   <a class="govuk-link" href="lived-worked-c">
+                     Change<span class="govuk-visually-hidden"> contact details</span>
+                   </a>
+                 </dd>
+               </div>
+               {% elseif data['nino'] === 'xx89161b' %}
+               <div class="govuk-summary-list__row">
+                 <dt class="govuk-summary-list__key">
+                  Lived or worked outside the UK
+                 </dt>
+                 <dd class="govuk-summary-list__value">
+                  France<br>Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004<br><br> Germany<br>Lived: Oct 2007 - Dec 2010<br>
+                 </dd>
+                 <dd class="govuk-summary-list__actions">
+                   <a class="govuk-link" href="lived-worked-c">
+                     Change<span class="govuk-visually-hidden"> contact details</span>
+                   </a>
+                 </dd>
+               </div>
+               {% else %}
+                
+               {% endif %}
+
+
     </dl>
   </div>
     <button type="submit" class="govuk-button">
