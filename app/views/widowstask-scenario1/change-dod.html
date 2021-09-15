@@ -27,16 +27,72 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
       <br>
 
-      <h1 class="govuk-heading-xl">
-      Alan Smith
-                        <span class="govuk-caption-xl">XX 12 34 56 X</span>
-                      </h1>
-
-
-
         <form method="post" action="widows-not-complete-1">
 
-          <h2 class="govuk-heading-l">Late spouse's date of death</h2>
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="marriage-date-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                Late spouse's date of death
+                </h1>
+              </legend>
+              <Br>
+              <div id="marriage-date-hint" class="govuk-hint">
+                For example, 27 3 2007
+              </div>
+              <div class="govuk-date-input" id="dom">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="domd1">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="domd1" name="domd1" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="domm1">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dinn" name="domm1" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="domy1">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="domy1" name="domy1" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <br>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="dom1-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Is the date of death verified?
+                </h1>
+              </legend>
+              <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="dom1" name="dom1" type="radio" value="verified">
+                  <label class="govuk-label govuk-radios__label" for="dom1">
+                    Verified
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="dom1-2" name="dom1" type="radio" value="notverified">
+                  <label class="govuk-label govuk-radios__label" for="dom1-2">
+                    Not verified
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
 
 
           <button class="govuk-button" data-module="govuk-button">
