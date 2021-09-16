@@ -7,12 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
-{% include './_header-nav-paper.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -30,16 +25,16 @@ GOV.UK Prototype Kit
         </h1>
 
 
-      
+
 
           <div class="govuk-form-group">
             <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
-          
+
             <button type="submit" class="govuk-button">
               Continue
             </button>
-          
+
         </form>
         </div>
 

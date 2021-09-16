@@ -7,12 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
-{% include './_header-nav-paper.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -29,7 +24,7 @@ GOV.UK Prototype Kit
 <h1 class="govuk-heading-xl">Get claim details</h1>
 
 <h2 class="govuk-heading-m">Envelope ID: 34567890DSBCJS</h2>
-<p class="govuk-hint">Use the envelope ID to find the form 
+<p class="govuk-hint">Use the envelope ID to find the form
   and get the claimant’s National Insurance number or invitation code.</p>
   <br>
 

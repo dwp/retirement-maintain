@@ -7,13 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
-{% include './_header-nav-paper.html' %}
-
+{% include './_header-nav-unselected.html' %}
 {% block headEnd %}
 {% endblock %}
 
@@ -38,7 +32,7 @@ GOV.UK Prototype Kit
           <p>If you have checked all of the information on the claim form has been entered correctly, you can submit this claim and end the task.</p>
 
           <br>
-          <a href="tasks" button type="submit" class="govuk-button">
+          <a href="paper-claim" button type="submit" class="govuk-button">
             End task
           </a>
 

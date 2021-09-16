@@ -7,12 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
-{% include './_header-nav-paper.html' %}
+{% include './_header-nav-unselected.html' %}
 {% block headEnd %}
 {% endblock %}
 
@@ -380,8 +375,8 @@ GOV.UK Prototype Kit
 
 
 
-        
-          
+
+
           <div class="govuk-form-group">
             <h2 class="govuk-heading-m">
               Dates they worked there</h2>
@@ -439,8 +434,8 @@ GOV.UK Prototype Kit
           </div>
 
 
-          
-           
+
+
                     <div class="govuk-form-group">
                       <label class="govuk-label" for="location-autocomplete">
                         Social Security or National Insurance number
@@ -453,7 +448,7 @@ GOV.UK Prototype Kit
               <button type="submit" class="govuk-button">
              Continue
               </button>
-  
+
             </div>
 
 

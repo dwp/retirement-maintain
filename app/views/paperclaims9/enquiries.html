@@ -7,11 +7,6 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
 {% include './_header-nav-enq.html' %}
 
 {% block headEnd %}
@@ -34,7 +29,7 @@ GOV.UK Prototype Kit
             <input class="govuk-input govuk-!-width-two-thirds" id="nino" name="nino" type="nino" aria-describedby="nino-hint">
           </div>
 
-          <a href="find" button type="submit" class="govuk-button"> 
+          <a href="find" button type="submit" class="govuk-button">
             Find
           </button>
         </a>

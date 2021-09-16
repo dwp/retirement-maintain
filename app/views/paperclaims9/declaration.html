@@ -7,12 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
-{% include './_header-nav-paper.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -27,7 +22,7 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
         <a href="bank" class="govuk-back-link">Back</a>
 
-        <form method="post" action="check-answers5">
+        <form method="post" action="check-answers">
 <br>
           <h1 class="govuk-heading-xl">
              Has the claimant signed the form?

@@ -7,12 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
-{% include './_header-nav.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -36,11 +31,11 @@ GOV.UK Prototype Kit
     <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
           <div class="govuk-form-group">
             <label class="govuk-label" for="contact-by-phone">
-              
+
 
               <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-                   
+
                   <div class="govuk-date-input" id="passport-issued">
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
@@ -72,9 +67,9 @@ GOV.UK Prototype Kit
 
             </label>
           </div>
-  
-   
-  
+
+
+
         </div>
       </fieldset>
       </div>
@@ -86,7 +81,7 @@ GOV.UK Prototype Kit
   </div>
 
 
-            
+
           </form>
 
 
