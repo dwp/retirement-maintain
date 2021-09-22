@@ -23,7 +23,7 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './_bar.html' %}
 
-<form method="post" action="personal-name">
+<form method="post">
 
           <a href="personal" class="govuk-back-link">Back</a>
           <br><br>
@@ -35,16 +35,17 @@ GOV.UK Prototype Kit
         Reason for stopping the State Pension
         </h1>
       </legend>
+      <br>
       <div class="govuk-radios">
         <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          <input class="govuk-radios__input" id="stop-sp" name="stop-sp" type="radio" value="death">
+          <label class="govuk-label govuk-radios__label" for="stop-sp">
             Death
           </label>
         </div>
         <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-          <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
+          <label class="govuk-label govuk-radios__label" for="stop-sp-2">
             Deferral
           </label>
         </div>
