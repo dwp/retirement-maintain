@@ -33,5 +33,49 @@ router.post('/death/dap-details', function(req, res) {
   }
 });
 
+// DAP name to DAP number
+router.post('/death/dap-name', (req, res) => {
+  res.redirect('/death/dap-number')
+})
+;
+
+// DAP number to DAP address
+router.post('/death/dap-number', (req, res) => {
+  res.redirect('/death/dap-address')
+})
+;
+
+//Dap address, to find address results
+router.post('/death/dap-address', (req, res) => {
+  res.redirect('/death/dap-address-2')
+})
+;
+
+// Dap address, to find address results
+router.post('/death/dap-address-2', (req, res) => {
+  res.redirect('/death/dap-bank')
+})
+;
+
+// DAP bank details
+router.post('/death/dap-bank', function(req, res) {
+  if ( req.body['dap-bank-details'] === 'yes' ) {
+    res.redirect('dap-bank-details');
+  } else {
+    res.redirect('arrears-no-bank');
+  }
+});
+
+//
+router.post('/death/arrears-no-bank', (req, res) => {
+  res.redirect('/death/br330')
+})
+;
+
+//
+router.post('/death/br330', (req, res) => {
+  res.redirect('/overview-dead-bank')
+})
+;
 
   module.exports = router;
