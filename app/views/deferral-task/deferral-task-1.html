@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+      <br>
+      {% include './_bar.html' %}
+
+
+        <form method="post">
+
+          <table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">?</caption>
+
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">State Pension date</th>
+      <td class="govuk-table__cell">19 January 2021</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Date of claim?</th>
+      <td class="govuk-table__cell">10 August 2021</td>
+    </tr>
+  </tbody>
+</table>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+               Was Rossy getting any benefits between his SPa and now?
+                </h1>
+              </legend>
+              <div id="changed-name-hint" class="govuk-hint">
+              Might need this for something
+              </div>
+              <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="changed-name">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                    No
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <a href="get-a-task" button class="govuk-button" data-module="govuk-button">
+            Confirm?
+          </a>
+
+        </form>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}

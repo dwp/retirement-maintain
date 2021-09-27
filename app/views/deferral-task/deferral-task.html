@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+      <br>
+        <h1 class="govuk-heading-xl">Check to see if someone was getting any relevant benefits... between SPa and claim date?
+        </h1>
+        <p>Check ya systems.
+        </p>
+
+        <form method="post"">
+
+<br>
+          <a href="deferral-task-1" button class="govuk-button" data-module="govuk-button">
+            Start this task
+          </a>
+
+
+
+     <a href="get-next-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+          Return task to queue
+        </a>
+
+        </form>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
