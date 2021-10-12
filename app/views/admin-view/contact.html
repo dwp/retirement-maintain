@@ -7,19 +7,40 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
-{% include './_header-nav-enquiries.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
 
-
 <div class="govuk-width-container">
+
+  <br>
+  <br>
+
+  <div class="govuk-grid-column-full">
+
+  <div class="govuk-button-group">
+    
+    <a href="admin4-cases" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    All cases
+    </a>
+
+    <a href="change-verified-date" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+      Change a verified date
+    </a>
+
+    <a href="remove" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button" >
+      Delete account
+    </a>
+
+
+  </div>
+
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+  </div>
+
   <div class="govuk-grid-column-two-thirds">
 
 
