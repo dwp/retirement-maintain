@@ -1,0 +1,155 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/servicename-tasks.html' %}
+
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-full">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+<br>
+
+
+
+
+<div class="govuk-button-group">
+  <a href="admin4" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+  Summary
+  </a>
+
+  <a href="admin4-cases" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  All cases
+  </a>
+
+  <a href="admin4-death" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Change a verified date
+  </a>
+
+  <a href="admin4-remove" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button" >
+    Delete account
+  </a>
+
+
+</div>
+
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+            {% include './_bar.html' %}
+
+          </div>
+        </div>
+      </main>
+
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Change a verified date</h1>
+
+        <div class="govuk-inset-text">
+          The appropriate certificate is needed to verify birth, death or marriage dates
+
+
+        </div>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+
+
+
+            <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col"> Event and date </th>
+                <th class="govuk-table__header" scope="col"> Status </th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <a href="marriage-date" class="govuk-link">Married 14 July 1947</a>
+                </td>
+                <td class="govuk-table__cell">
+                  <span  style="margin-left: 10%" class="verified-badge verified">
+                      <b>Verified</b>
+                    </span>
+
+                </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <a href="death-date" class="govuk-link">Widowed 3 December 1989</a>
+                </td>
+                <td class="govuk-table__cell">
+                  <span  style="margin-left: 10%" class="verified-badge verified">
+                      <b>Verified</b>
+                    </span>
+
+                </td>
+              </tr>
+
+
+
+
+            </tbody>
+          </table>
+
+          </div>
+        </div>
+<br>
+  <a href="death-date" role="button" class="govuk-button">
+    Continue
+  </a>
+
+
+
+</div>
+
+</div>
+
+
+
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
