@@ -22,61 +22,49 @@ GOV.UK Prototype Kit
         <form method="post" action="marital-status">
 
           <h1 class="govuk-heading-xl">
-            Alternative contact preferences</h1>
+            Alternative format for letters</h1>
 
   <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
     <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-     <!--  <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="Audio form" data-aria-controls="conditional-contact">
-        <label class="govuk-label govuk-checkboxes__label" for="contact">
-          Audio form
-        </label>
-      </div> -->
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="audio" data-aria-controls="conditional-contact-2">
-        <label class="govuk-label govuk-checkboxes__label" for="contact-2">
-        Audio form
-        </label>
+    
+      <div id="event-name-hint" class="govuk-hint">
+        Select one option.
       </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="braille" data-aria-controls="conditional-contact-3">
-        <label class="govuk-label govuk-checkboxes__label" for="contact-3">
+
+
+
+      <div class="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+            Audio cassette
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+            Audio CD
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
             Audio MP3
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="contact-4" name="contact" type="checkbox" value="large" data-aria-controls="conditional-contact-4">
-        <label class="govuk-label govuk-checkboxes__label" for="contact-4">
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
             Braille
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="contact-5" name="contact" type="checkbox" value="texbox" data-aria-controls="conditional-contact-5">
-        <label class="govuk-label govuk-checkboxes__label" for="contact-5">
-            Email
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="contact-6" name="contact" type="checkbox" value="typetalk" data-aria-controls="conditional-contact-6">
-        <label class="govuk-label govuk-checkboxes__label" for="contact-6">
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
             Large print
-        </label>
-      </div>
-
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="contact-6" name="contact" type="checkbox" value="typetalk" data-aria-controls="conditional-contact-6">
-        <label class="govuk-label govuk-checkboxes__label" for="contact-6">
-          Relay UK
-        </label>
-      </div>
-
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="contact-6" name="contact" type="checkbox" value="typetalk" data-aria-controls="conditional-contact-6">
-        <label class="govuk-label govuk-checkboxes__label" for="contact-6">
-          Typetalk
-        </label>
-      </div>
+          </label>
+        </div>
 
   </fieldset>
 
