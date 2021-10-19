@@ -37,10 +37,22 @@ router.post('/newclaim7/address', (req, res) => {
   res.redirect('/newclaim7/address-result')
 })
 ;
-router.post('/newclaim7/address-result', (req, res) => {
+
+
+router.post('/newclaim7/address-result', function(req, res) {
+  if ( req.body['address-results'] === 'address-not-found' ) {
+    res.redirect('/newclaim7/manual-address');
+  } else {
+    res.redirect('/newclaim7/bank');
+  }
+});
+
+
+router.post('/newclaim7/manual-address', (req, res) => {
   res.redirect('/newclaim7/bank')
 })
 ;
+
 
 router.post('/newclaim7/bank', (req, res) => {
   res.redirect('/newclaim7/sp-date')
