@@ -165,6 +165,11 @@ router.post('/newclaim7/declaration', (req, res) => {
 })
 ;
 
+router.post('/newclaim7/dob-evidence', (req, res) => {
+  res.redirect('/newclaim7/find')
+})
+;
+
 
 
 
