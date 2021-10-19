@@ -96,34 +96,42 @@ router.post('/newclaim7/marital-details', (req, res) => {
 ;
 
 router.post('/newclaim7/lived-worked', function(req, res) {
-  if ( req.body['lived-outside'] === 'yes' ) {
-    res.redirect('/newclaim7/lived');
+  if ( req.body['lived-worked'] === 'yes' ) {
+    res.redirect('/newclaim7/country-1');
   } else {
-    res.redirect('/newclaim7/worked');
+    res.redirect('/newclaim7/check-answers');
   }
 });
 
-router.post('/newclaim7/lived-2', (req, res) => {
-  res.redirect('/newclaim7/france')
+
+router.post('/newclaim7/country-1', function(req, res) {
+  if ( req.body['another-country-1'] === 'yes' ) {
+    res.redirect('/newclaim7/country-2');
+  } else {
+    res.redirect('/newclaim7/check-answers');
+  }
+});
+
+router.post('/newclaim7/country-2', function(req, res) {
+  if ( req.body['another-country-2'] === 'yes' ) {
+    res.redirect('/newclaim7/country-3');
+  } else {
+    res.redirect('/newclaim7/check-answers');
+  }
+});
+
+router.post('/newclaim7/country-3', function(req, res) {
+  if ( req.body['another-country-3'] === 'yes' ) {
+    res.redirect('/newclaim7/country-4');
+  } else {
+    res.redirect('/newclaim7/check-answers');
+  }
+});
+
+router.post('/newclaim7/country-4', (req, res) => {
+  res.redirect('/newclaim7/check-answers')
 })
 ;
-
-router.post('/newclaim7/france', (req, res) => {
-  res.redirect('/newclaim7/switzerland')
-})
-;
-
-
-router.post('/newclaim7/switzerland', (req, res) => {
-  res.redirect('/newclaim7/worked')
-})
-;
-
-router.post('/newclaim7/divorce-details', (req, res) => {
-  res.redirect('/newclaim7/lived-worked')
-})
-;
-
 
 router.post('/newclaim7/worked', function(req, res) {
   if ( req.body['worked-outside'] === 'yes' ) {
