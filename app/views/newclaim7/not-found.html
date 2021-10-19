@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        {{ govukBackLink({
+    text: "Back",
+    href: "javascript:history.go(-1)"
+  }) }}
+
+        <div>
+          <br>
+
+          <h1 class="govuk-heading-xl">*Citizen cannot be found*</h1>
+
+<p>No citizen was found using National Insurance number <b>XX 12 34 56.</b></p>
+
+<p>OR</p>
+
+<p>No citizen was found using invitation code <b>SMIT0382.</b></p>
+
+<br>
+
+        <a href="find" button type="submit" class="govuk-button">
+        Enter National Insurance number again
+        </button>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

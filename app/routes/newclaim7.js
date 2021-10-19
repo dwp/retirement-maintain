@@ -8,6 +8,14 @@ router.use((req, res, next) => {
   next()
 })
 
+router.post('/newclaim7/find', function(req, res) {
+  if ( req.body['nino'] === 'XX 12 34 56' ) {
+    res.redirect('/newclaim7/not-found');
+  } else {
+    res.redirect('/newclaim7/find-1');
+  }
+});
+
 
 router.post('/newclaim7/find', (req, res) => {
   res.redirect('/newclaim7/find-1')
