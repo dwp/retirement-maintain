@@ -39,11 +39,19 @@ router.post('/newclaim7/bank', (req, res) => {
 })
 ;
 
-router.post('/newclaim7/sp-date', (req, res) => {
+// Do you want your State Pension from the earliest possible date? YES/NO
+router.post('/newclaim7/sp-date', function(req, res) {
+  if ( req.body['sp-date'] === 'yes' ) {
+    res.redirect('/newclaim7/contact');
+  } else {
+    res.redirect('/newclaim7/claim-date');
+  }
+});
+
+router.post('/newclaim7/claim-date', (req, res) => {
   res.redirect('/newclaim7/contact')
 })
 ;
-
 router.post('/newclaim7/contact', (req, res) => {
   res.redirect('/newclaim7/alternative')
 })
