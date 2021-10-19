@@ -168,6 +168,12 @@ router.post('/newclaim7/dob', function(req, res) {
   }
 });
 
+
+router.post('/newclaim7/check-answers', (req, res) => {
+  res.redirect('/newclaim7/declaration')
+})
+;
+
 router.post('/newclaim7/declaration', (req, res) => {
   res.redirect('/newclaim7/complete')
 })
