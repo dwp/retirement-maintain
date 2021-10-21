@@ -22,13 +22,22 @@ GOV.UK Prototype Kit
 
               {% include './_bar.html' %}
 
-              <p>Put the back button in Becky</p>
+                      <form method="post" action="">
 
-        <h2 class="govuk-heading-m">Reason the award needs to be reviewed</h2>
-        <p>Change in cont/credit position (compliance and yield).</p>
+<p>New award heading</p>
 
-        <form method="post" action="review-award">
-          <br>
+<p>Table for update award</p>
+
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    The award won't be changed until the PC task has been completed and returned?
+  </strong>
+</div>
+
+
+
           <button class="govuk-button" data-module="govuk-button">
             Continue
           </button>
