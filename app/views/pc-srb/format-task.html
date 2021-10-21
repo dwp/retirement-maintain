@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+              {% include './_bar.html' %}
+
+        <form method="post">
+
+          <p>Gethin Collier has requested letters are sent using <strong>braille</strong>.</p>
+
+          <p><a href="#" class="govuk-link govuk-link--no-visited-state">Download the letter (PDF, 212KB).</a></p>
+
+        <!--   <ul class="govuk-list govuk-list--bullet">
+          <li>braille</li>
+          </ul> 
+
+<p>You should:</p>
+
+          <ol class="govuk-list govuk-list--number">
+            <li><a href="#" class="govuk-link govuk-link--no-visited-state">Download the letter (PDF, 212KB).</a></li>
+            <li>Email the letter and the claimant's format preference to the <a href="">Alternative Media team</a>.</li>
+          </ol> -->
+
+<!-- <p>Complete the Alternative Media proforma spreadsheet and email it together with the downloaded letter to the Alternative Media team.</p>
+
+<p><a href="#" class="govuk-link govuk-link--no-visited-state">Download the letter (PDF, 212KB)</a></p> -->
+
+<br> 
+
+         <a href="task-format-complete" button class="govuk-button" data-module="govuk-button">
+            End task
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
