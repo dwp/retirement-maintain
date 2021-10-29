@@ -7,11 +7,6 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
 {% include './_header-nav-enquiries.html' %}
 
 {% block headEnd %}
@@ -74,7 +69,7 @@ GOV.UK Prototype Kit
                 <div class="govuk-form-group">
                   <fieldset class="govuk-fieldset" aria-describedby="expiry-hint" role="group">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--s"> Date of birth
-                    </legend> 
+                    </legend>
                     <div class="govuk-date-input" id="expiry">
                       <div class="govuk-date-input__item">
                         <div class="govuk-form-group">
@@ -107,9 +102,9 @@ GOV.UK Prototype Kit
                   </fieldset>
                 </div>
                 <br>
-              
+
               </div>
-              <br> 
+              <br>
               <br>
               <button type="submit" class="govuk-button">
                 Save

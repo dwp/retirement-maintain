@@ -7,11 +7,6 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
 {% include './_header-nav-enquiries.html' %}
 
 {% block headEnd %}
@@ -37,7 +32,7 @@ GOV.UK Prototype Kit
           <h2 class="govuk-heading-l">Work phone number</h2>
 
           <div class="govuk-form-group">
-            
+
             <input class="govuk-input govuk-input--width-20" id="full-name" name="full-name" type="text" autocomplete="name" spellcheck="false">
           </div>
 
