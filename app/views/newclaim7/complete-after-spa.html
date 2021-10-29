@@ -7,11 +7,6 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
 {% include './_header-nav.html' %}
 
 {% block headEnd %}
@@ -22,17 +17,28 @@ GOV.UK Prototype Kit
   <div class="moj-identity-bar">
 
     <div class="moj-identity-bar__container">
-    
+
     <div class="moj-identity-bar__details">
-    
-      <span class="moj-identity-bar__title"><b>Ken Adams</b></span>
-    
+
+      <span class="moj-identity-bar__title"><b>
+        {% if data['nino'] === 'xx347612a' %}
+        Theodora Best
+        {% elseif data['nino'] === 'XX347612A' %}
+        Theodora Best
+        {% elseif data['nino'] === 'XX89161B' %}
+        Yara Croft
+        {% elseif data['nino'] === 'xx89161b' %}
+        Yara Croft
+        {% else %}
+        Samira Mcgill
+        {% endif %}</b></span>
+
     </div>
     <div class="moj-identity-bar__details">
       <!-- <span class="moj-identity-bar__title" style="text-align: right;"><a href="find">Start a new claim</a></span> -->
     </div>
     </div>
-    </div> 
+    </div>
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
@@ -40,30 +46,20 @@ GOV.UK Prototype Kit
 
         <div class="govuk-panel govuk-panel--confirmation">
           <h1 class="govuk-panel__title">
-            Application complete
+            Application submitted
           </h1>
-          <div class="govuk-panel__body">
-            You will receive <br><strong>£329.34</strong> every 4 weeks
-          </div>
         </div>
 
-        <form method="post" action="find">
+        <form method="post">
 <br>
-          
+
 <p>We have sent an email to <b>firstnamelastname@provider.com</b> to confirm your application has been submitted.<br>
 
   <div class="govuk-form-group">
-    <h1 class="govuk-heading-m">Payment details</h1>
 
-    <p>You will receive <b>£329.34</b> every <b>4 weeks</b>.<br>
-      <p>Your State Pension is calculated from <b>20 September 2021</b>.<br>
-        <p>To get you on a regular payment cycle, your first payment will be <b>£180.84</b> for 2 weeks and will be paid on <b>27 September 2021</b>.<br>
-          <p>Your second payment of <b>£329.34</b>  will be paid on <b>4 October 2021</b> and every 4 weeks after that.</p>
 <h1 class="govuk-heading-m">What happens next</h1>
     <p>You will get a letter up to 2 weeks before your State Pension date. We may also contact you if we need more information.</p>
 
-
-<br>
 <button type="submit" class="govuk-button">
       End call
     </button>
