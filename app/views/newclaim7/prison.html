@@ -30,10 +30,28 @@ GOV.UK Prototype Kit
         <form method="post">
 
           <h1 class="govuk-heading-xl">
-            header</h1>
+            Have you spent any time in prison since 12 April 2021?</h1>
 
 
-              <p>Contenty content</p>
+            <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="prison-hint">
+        <div class="govuk-radios govuk-radios--inline">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="prison" name="prison" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="prison">
+              Yes
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="prison-2" name="prison" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="prison-2">
+              No
+            </label>
+          </div>
+        </div>
+
+      </fieldset>
+    </div>
 
 
             <button type="submit" class="govuk-button">
