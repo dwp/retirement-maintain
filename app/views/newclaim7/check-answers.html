@@ -33,29 +33,6 @@ GOV.UK Prototype Kit
 
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Name
-            </dt>
-            <dd class="govuk-summary-list__value">
-              {% if data['nino'] === 'xx347612a' %}
-              Theodora Best
-              {% elseif data['nino'] === 'XX347612A' %}
-              Theodora Best
-              {% elseif data['nino'] === 'XX89161B' %}
-              Yara Croft
-              {% elseif data['nino'] === 'xx89161b' %}
-              Yara Croft
-              {% else %}
-              Samira Mcgill
-              {% endif %}
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="find-1">
-                Change
-              </a>
-            </dd>
-          </div>
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
@@ -97,6 +74,8 @@ GOV.UK Prototype Kit
           </a>
         </dd>
       </div>
+
+
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Bank account details
@@ -135,6 +114,8 @@ GOV.UK Prototype Kit
           </a>
         </dd>
       </div>
+
+
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Contact details
@@ -166,6 +147,7 @@ GOV.UK Prototype Kit
         </dd>
       </div>
 
+
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Alternative format for letters
@@ -194,8 +176,8 @@ GOV.UK Prototype Kit
           {% endif %}
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="marital-status-c">
-            Change<span class="govuk-visually-hidden"> contact details</span>
+          <a class="govuk-link" href="marital-status">
+            Change<span class="govuk-visually-hidden"></span>
           </a>
         </dd>
       </div>
@@ -210,8 +192,8 @@ GOV.UK Prototype Kit
                   France<br>Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004<br><br> Germany<br>Lived: Oct 2007 - Dec 2010<br>
                  </dd>
                  <dd class="govuk-summary-list__actions">
-                   <a class="govuk-link" href="lived-worked-c">
-                     Change<span class="govuk-visually-hidden"> contact details</span>
+                   <a class="govuk-link" href="">
+                     Change<span class="govuk-visually-hidden"></span>
                    </a>
                  </dd>
                </div>
@@ -224,13 +206,29 @@ GOV.UK Prototype Kit
                   France<br>Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004<br><br> Germany<br>Lived: Oct 2007 - Dec 2010<br>
                  </dd>
                  <dd class="govuk-summary-list__actions">
-                   <a class="govuk-link" href="lived-worked-c">
-                     Change<span class="govuk-visually-hidden"> contact details</span>
+                   <a class="govuk-link" href="">
+                     Change<span class="govuk-visually-hidden"></span>
                    </a>
                  </dd>
                </div>
                {% else %}
-
+               <div class="govuk-summary-list__row">
+                 <dt class="govuk-summary-list__key">
+                  Lived or worked outside the UK
+                 </dt>
+                 <dd class="govuk-summary-list__value">
+                  France<br>Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004<br>
+                  <br> Germany<br>Lived: Oct 2007 - Dec 2010<br>
+                  <br> Switzerland<br>Lived: Oct 2007 - Dec 2010<br>
+                  <br> Italy<br>Lived: Oct 2007 - Dec 2010<br>
+                  <br> More countries?*<br>Yes/no<br>
+                 </dd>
+                 <dd class="govuk-summary-list__actions">
+                   <a class="govuk-link" href="">
+                     Change<span class="govuk-visually-hidden"> </span>
+                   </a>
+                 </dd>
+               </div>
                {% endif %}
 
 
