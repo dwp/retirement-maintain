@@ -34,7 +34,35 @@ GOV.UK Prototype Kit
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
 
 
-      <div class="govuk-summary-list__row">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Samira McGill
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="">
+    
+              </a>
+            </dd>
+          </div>
+            
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              National Insurance number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              QQ 12 34 56 X
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="">
+    
+              </a>
+            </dd>
+          </div>
+
+            <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Date of birth
         </dt>
@@ -115,6 +143,22 @@ GOV.UK Prototype Kit
         </dd>
       </div>
 
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Spent time in prison?
+        </dt>
+        <dd class="govuk-summary-list__value">
+        No
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="prison">
+            Change<span class="govuk-visually-hidden"> contact details</span>
+          </a>
+        </dd>
+      </div>
+
+
+
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
@@ -137,7 +181,6 @@ GOV.UK Prototype Kit
          {% if data['nino'] === 'XX89161B' %}
          {% elseif data['nino'] === 'xx89161b' %}
          {% else %}
-          Other formats: Braille
          {% endif %}
         </dd>
         <dd class="govuk-summary-list__actions">
@@ -164,15 +207,15 @@ GOV.UK Prototype Kit
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-         Marital details
+         Marital status
         </dt>
         <dd class="govuk-summary-list__value">
           {% if data['nino'] === 'XX89161B' %}
-          Never been married
+          Never been married or in a civil partnership
           {% elseif data['nino'] === 'xx89161b' %}
-          Never been married
+          Never been married or in a civil partnership
           {% else %}
-          Married <br> 7 May 1969 <br><br> QQ 12 55 87 X <br>John McGill<br><br> 3 July 1950
+          Married <br> Date of marriage: 7 May 1969 <br><br>Spouse: John McGill<br>QQ 12 55 87 X<br>3 July 1950
           {% endif %}
         </dd>
         <dd class="govuk-summary-list__actions">
@@ -189,7 +232,7 @@ GOV.UK Prototype Kit
                   Lived or worked outside the UK
                  </dt>
                  <dd class="govuk-summary-list__value">
-                  France<br>Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004<br><br> Germany<br>Lived: Oct 2007 - Dec 2010<br>
+                  France<br>Lived: Jun 2001 to Sep 2004 <br>Worked: Jun 2001 to Sep 2004<br><br> Germany<br>Lived: Oct 2007 to Dec 2010<br>
                  </dd>
                  <dd class="govuk-summary-list__actions">
                    <a class="govuk-link" href="">
@@ -203,7 +246,7 @@ GOV.UK Prototype Kit
                   Lived or worked outside the UK
                  </dt>
                  <dd class="govuk-summary-list__value">
-                  France<br>Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004<br><br> Germany<br>Lived: Oct 2007 - Dec 2010<br>
+                  France<br>Lived: Jun 2001 to Sep 2004 <br>Worked: Jun 2001 to Sep 2004<br><br> Germany<br>Lived: Oct 2007 to Dec 2010<br>
                  </dd>
                  <dd class="govuk-summary-list__actions">
                    <a class="govuk-link" href="">
@@ -217,11 +260,11 @@ GOV.UK Prototype Kit
                   Lived or worked outside the UK
                  </dt>
                  <dd class="govuk-summary-list__value">
-                  France<br>Lived: Jun 2001 - Sep 2004 <br>Worked: Jun 2001 - Sep 2004<br>
-                  <br> Germany<br>Lived: Oct 2007 - Dec 2010<br>
-                  <br> Switzerland<br>Lived: Oct 2007 - Dec 2010<br>
-                  <br> Italy<br>Lived: Oct 2007 - Dec 2010<br>
-                  <br> More countries?*<br>Yes/no<br>
+                  France<br>Lived: Jun 2001 to Sep 2004 <br>Worked: Jun 2001 to Sep 2004<br>
+                  <br> Germany<br>Lived: Feb 2007 to Mar 2010<br>
+                  <br> Switzerland<br>Lived: Jun 2011 to Jul 2012<br>
+                  <br> Italy<br>Lived: Jan 2014 to Oct 2016<br>
+                  <br> Has the claimant lived or worked in any other countries?<br>Yes<br>
                  </dd>
                  <dd class="govuk-summary-list__actions">
                    <a class="govuk-link" href="">
