@@ -170,6 +170,11 @@ router.post('/newclaim7/dob', function(req, res) {
 
 
 router.post('/newclaim7/check-answers', (req, res) => {
+  res.redirect('/newclaim7/dob-evidence')
+})
+;
+
+router.post('/newclaim7/dob-evidence', (req, res) => {
   res.redirect('/newclaim7/declaration')
 })
 ;
