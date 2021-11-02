@@ -95,6 +95,26 @@ router.post('/newclaim7/marital-details', (req, res) => {
 })
 ;
 
+router.post('/newclaim7/civilpartnership-details', (req, res) => {
+  res.redirect('/newclaim7/lived-worked')
+})
+;
+
+router.post('/newclaim7/widowed-details', (req, res) => {
+  res.redirect('/newclaim7/lived-worked')
+})
+;
+
+router.post('/newclaim7/divorced-details', (req, res) => {
+  res.redirect('/newclaim7/lived-worked')
+})
+;
+
+router.post('/newclaim7/dissolvedcp-details', (req, res) => {
+  res.redirect('/newclaim7/lived-worked')
+})
+;
+
 router.post('/newclaim7/lived-worked', function(req, res) {
   if ( req.body['lived-worked'] === 'yes' ) {
     res.redirect('/newclaim7/country-1');
@@ -147,13 +167,13 @@ router.post('/newclaim7/marital-status', function(req, res) {
   } else if ( req.body['marital-status'] === 'never' ) {
     res.redirect('lived-worked');
   } else if ( req.body['marital-status'] === 'civil-partnership' ) {
-    res.redirect('civil-details');
+    res.redirect('civilpartnership-details');
   } else if ( req.body['marital-status'] === "widowed" ) {
-    res.redirect('widow-details');
+    res.redirect('widowed-details');
   } else if ( req.body['marital-status'] === "divorced" ) {
-    res.redirect('divorce-details');
+    res.redirect('divorced-details');
   } else if ( req.body['marital-status'] === "dissolved" ) {
-    res.redirect('dissolved-details');
+    res.redirect('dissolvedcp-details');
   }
 });
 
