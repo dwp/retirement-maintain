@@ -1,0 +1,141 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/servicename-tasks.html' %}
+
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-full">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+<br>
+
+
+
+
+<div class="govuk-button-group">
+  <a href="admin4" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+  Summary
+  </a>
+
+  <a href="admin4-cases" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  All cases
+  </a>
+
+  <a href="admin4-death" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Change a verified date
+  </a>
+
+  <a href="admin4-remove" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button" >
+    Delete account
+  </a>
+
+
+</div>
+
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+            {% include './_bar.html' %}
+
+          </div>
+        </div>
+      </main>
+
+
+
+
+      <form method="post" action="admin4-death">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            </legend>
+
+            <h2 class="govuk-heading-l">Reason for stopping claimant's State Pension</h2>
+
+          <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="stop-sp-1" name="stop-sp" type="radio" value="death">
+        <label class="govuk-label govuk-radios__label" for="stop-sp">
+          Claimant has died
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
+        <label class="govuk-label govuk-radios__label" for="stop-sp">
+          Claimant has deferred
+        </label>
+      </div>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="stop-sp-3" name="stop-sp" type="radio" value="prison">
+        <label class="govuk-label govuk-radios__label" for="stop-sp">
+          Claimant is in prison
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="stop-sp">
+            Date entered prison
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="date-entered-prison" type="email" spellcheck="false" autocomplete="date-entered-prison"></div>
+
+      </div>
+
+  </fieldset>
+</div>
+
+<br>
+
+          <button type="submit" class="govuk-button">Continue</button>
+  </a>
+
+
+
+</div>
+
+</div>
+
+
+
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
