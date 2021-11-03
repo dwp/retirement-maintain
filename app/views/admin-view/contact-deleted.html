@@ -20,7 +20,15 @@ GOV.UK Prototype Kit
 
   <div class="govuk-grid-column-full">
 
-    {% include './_bar-small-admin.html' %}
+    <div class="govuk-button-group">
+
+      <a href="admin4-cases" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+      All cases
+      </a>
+
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
   </div>  
 
@@ -35,12 +43,27 @@ GOV.UK Prototype Kit
 
 
           <br><br>
-          {% include './_bar.html' %}
+          {% include './_bar-deleted.html' %}
 
-          {% include './_tab-contact.html' %}
-
-
-
+          <nav class="navigation-secondary">
+            <ul>
+                          
+              <li>
+                  <a href="personal-deleted">Personal</a>
+                </li>
+              <li>
+                <a href="contact-deleted" class="active" aria-current="page">Contact</a>
+              </li>
+            
+              <li>
+                <a href="award-deleted">Award</a>
+              </li>
+                <li>
+                  <a href="payment-deleted">Payment</a>
+                </li>
+                  
+            </ul>
+          </nav>
 
         </div>
       </div>
@@ -60,28 +83,28 @@ GOV.UK Prototype Kit
               <br> Guildford <br> GU79 6YW
             </td>
             <td class="govuk-table__cell"> <a class="govuk-link" href="change-address1">
-                Change
+                
               </a></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Home phone number</th>
             <td class="govuk-table__cell">0191 4461056</td>
             <td class="govuk-table__cell"> <a class="govuk-link" href="change-homephone">
-                Change
+                
               </a></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Work phone number</th>
             <td class="govuk-table__cell">0191 2798475</td>
             <td class="govuk-table__cell"> <a class="govuk-link" href="change-workphone">
-                Change
+                
               </a></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Mobile phone number </th>
             <td class="govuk-table__cell"> </td>
             <td class="govuk-table__cell" style="text-align: right;"><a class="govuk-link" href="change-mobilephone">
-                Add
+                
               </a></td>
           </tr>
           <tr class="govuk-table__row">
@@ -89,7 +112,7 @@ GOV.UK Prototype Kit
             <td class="govuk-table__cell" style="width: 50%"></td>
             <td class="govuk-table__cell" style="text-align: right;">
               <a class="govuk-link" href="change-email">
-                Add
+                
               </a></td>
           </tr>
 

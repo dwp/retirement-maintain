@@ -19,52 +19,67 @@ GOV.UK Prototype Kit
   <br>
 
   <div class="govuk-grid-column-full">
-  <div class="govuk-grid-row">
-  <div class="govuk-button-group">
-
-    <a href="admin4" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
-  Summary
-    </a>
-
-    <a href="admin4-cases" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-    All cases
-    </a>
-
-    <a href="admin4-death" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-      Change a verified date
-    </a>
-
-    <a href="admin4-remove" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button" >
-      Delete account
-    </a>
-
-
-  </div>
-
-
-      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-
+ 
+    <div class="govuk-grid-column-two-thirds"></div>
 
             {% include './_bar.html' %}
 
 
-      <h1 class="govuk-heading-l">
-        Remove claimant</h1>
+            {{ govukBackLink({
+              text: "Back",
+              href: "javascript:history.go(-1)"
+                              }) }}
 
-<p>Are you sure you want to delete this account?</p>
 
-<div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Warning</span>
-    This cannot be undone
-  </strong>
-</div>
-<a href="remove-confirmation" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button">
-  Permanently remove claimant
-</a>
+            <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h2 class="govuk-fieldset__heading-l">
+              Select a reason to remove the claimaint
+              </h2>
+            </legend>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                  Claimant needs to be moved to PSCS
+                </label>
+              </div>
+
+                <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                 Claimant moved abroad and cannot be paid
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                  Duplicate claim
+                </label>
+              </div>
+            </div>
+
+            </fieldset>
+            </div>
+
+            <br>
+
+            <a href="" role="button" draggable="false" button class="govuk-button">
+            Cancel
+            </a>
+            <a href="remove-confirmation.html" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button">
+            Remove claimant
+            </a>
+
+
+
+
+
     </div>
   </div>
+
+</div>
 
 </div>
 
@@ -94,3 +109,4 @@ GOV.UK Prototype Kit
 </div>
 
 {% endblock %}
+

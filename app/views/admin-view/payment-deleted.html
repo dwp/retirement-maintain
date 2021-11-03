@@ -20,8 +20,17 @@ GOV.UK Prototype Kit
 
   <div class="govuk-grid-column-full">
 
-    {% include './_bar-small-admin.html' %}
-    
+    <div class="govuk-button-group">
+
+      <a href="admin4-cases" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+      All cases
+      </a>
+
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+     
   </div>
 
   <div class="govuk-grid-column-two-thirds">
@@ -30,9 +39,27 @@ GOV.UK Prototype Kit
       <div class="grid-row">
         <div class="column-full">
           <br><br>
-          {% include './_bar.html' %}
+          {% include './_bar-deleted.html' %}
 
-          {% include './_tab-payment.html' %}
+          <nav class="navigation-secondary">
+            <ul>
+                          
+              <li>
+                  <a href="personal-deleted">Personal</a>
+                </li>
+              <li>
+                <a href="contact-deleted">Contact</a>
+              </li>
+            
+              <li>
+                <a href="award-deleted">Award</a>
+              </li>
+                <li>
+                  <a href="payment-deleted" class="active" aria-current="page">Payment</a>
+                </li>
+                  
+            </ul>
+          </nav>
         </div>
       </div>
     </main>
@@ -48,7 +75,7 @@ GOV.UK Prototype Kit
 
 
               <a href="changebanktype">
-                <span class="govuk-link govuk-!-font-size-19" style="margin-left: 90%">Change</span>
+                <span class="govuk-link govuk-!-font-size-19" style="margin-left: 90%"></span>
               </a>
 
 
@@ -80,7 +107,7 @@ GOV.UK Prototype Kit
             <th scope="row" class="govuk-table__header" style="width: 45%"> Payment frequency</th>
             <td class="govuk-table__cell" style="width: 45%">Every week</td>
             <td class="govuk-table__cell" style="width: 10%"><a href="change-frequency">
-                <span class="govuk-link govuk-!-font-size-19">Change</span>
+                <span class="govuk-link govuk-!-font-size-19"></span>
               </a></td>
           </tr>
 

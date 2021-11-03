@@ -15,24 +15,6 @@ GOV.UK Prototype Kit
 
 <div class="govuk-width-container">
 
-  <br>
-  <br>
-
-  <div class="govuk-grid-column-full">
-
-  <div class="govuk-button-group">
-
-    <a href="personal" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-    Summary
-    </a>
-
-  </div>
-
-
-      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-  </div>
-
-
   <main class="govuk-main-wrapper">
 
     <div class="govuk-grid-column-full">
@@ -40,7 +22,6 @@ GOV.UK Prototype Kit
       <main id="content" role="main">
         <div class="grid-row">
           <div class="column-full">
-<br>
 
             {% include './_bar.html' %}
 
@@ -53,15 +34,18 @@ GOV.UK Prototype Kit
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      
+      {{ govukBackLink({
+        text: "Back",
+        href: "javascript:history.go(-1)"
+                        }) }}
+
+                        <br><br>
 
       <h1 class="govuk-heading-l">
         Change a verified date</h1>
 
-        <div class="govuk-inset-text">
-          The appropriate certificate is needed to verify birth, death or marriage dates
 
-
-        </div>
 
         <div class="govuk-grid-row">
           <div class="govuk-grid-column-full">
