@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-GOV.UK Prototype Kit
+Why are you stopping the claimant's State Pension? - GOV.UK 
 {% endblock %}
 
 {% block header %}
@@ -30,26 +30,12 @@ GOV.UK Prototype Kit
 
 
 
-<div class="govuk-button-group">
-  <a href="admin4" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
-  Summary
-  </a>
 
-  <a href="admin4-cases" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-  All cases
-  </a>
+<div class="govuk-grid-column-full">
 
-  <a href="admin4-death" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-    Change a verified date
-  </a>
-
-  <a href="admin4-remove" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button" >
-    Delete account
-  </a>
-
+  {% include './_bar-small-admin.html' %}
 
 </div>
-
 
 
 <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
@@ -62,42 +48,73 @@ GOV.UK Prototype Kit
 
 
 
-      <form method="post" action="admin4-death">
+      <form method="post" action="personal-prison">
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
             </legend>
 
-            <h2 class="govuk-heading-l">Reason for stopping claimant's State Pension</h2>
+            <h2 class="govuk-heading-l">Why are you stopping the claimant's <br>State Pension?</h2>
 
           <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
-    <div class="govuk-radios">
+    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="stop-sp-1" name="stop-sp" type="radio" value="death">
         <label class="govuk-label govuk-radios__label" for="stop-sp">
           Claimant has died
         </label>
       </div>
+      
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
         <label class="govuk-label govuk-radios__label" for="stop-sp">
-          Claimant has deferred
+          Claimant has deferred their State Pension
         </label>
       </div>
 
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="stop-sp-3" name="stop-sp" type="radio" value="prison">
-        <label class="govuk-label govuk-radios__label" for="stop-sp">
-          Claimant is in prison
-        </label>
-      </div>
-      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
-        <div class="govuk-form-group">
-          <label class="govuk-label" for="stop-sp">
-            Date entered prison
+      
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="prison" data-aria-controls="conditional-contact">
+          <label class="govuk-label govuk-radios__label" for="stop-sp">
+            Claimant is in prison
           </label>
-          <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="date-entered-prison" type="email" spellcheck="false" autocomplete="date-entered-prison"></div>
+        </div>
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="contact-by-email">
+              <strong>Date claimant entered prison</strong>
+            </label>
+            
+
+            <div class="govuk-date-input" id="passport-issued">
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                    Day
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                    Month
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                    Year
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+              </div>
+            </div>
+
+
+          </div>
+
+        
 
       </div>
 
@@ -106,8 +123,8 @@ GOV.UK Prototype Kit
 
 <br>
 
-          <button type="submit" class="govuk-button">Continue</button>
-  </a>
+          <button type="submit" class="govuk-button">Save</button>
+  </a> <p><a href="personal">Cancel</a></p>
 
 
 
