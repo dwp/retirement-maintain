@@ -26,19 +26,27 @@ GOV.UK Prototype Kit
         <div>
           <br>
 
-          <h1 class="govuk-heading-xl">*Citizen cannot be found*</h1>
+          <h1 class="govuk-heading-xl">Start a new telephone claim</h1>
 
-<p>No citizen was found using National Insurance number <b>XX 12 34 56.</b></p>
+        <form method="post">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="nino">
+              National Insurance number or invitation code
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="nino" name="nino" type="nino" aria-describedby="nino-hint">
+          </div>
 
-<p>OR</p>
+          <button class="govuk-button" data-module="govuk-button">
+            Find claimant
+          </button>
+          
+          <h1 class="govuk-heading-l">Result</h1>
 
-<p>No citizen was found using invitation code <b>SMIT0382.</b></p>
+          <p>No results found. </p>
+          
+          <p>Check the National Insurance number or invitation code and try again.</p>
 
-<br>
-
-        <a href="find" button type="submit" class="govuk-button">
-        Enter National Insurance number again
-        </button>
+      
         </a>
       </div>
 
