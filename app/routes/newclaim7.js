@@ -27,6 +27,13 @@ router.post('/newclaim7/dob-request', (req, res) => {
 })
 ;
 
+
+router.post('/newclaim7/dob-evidence', (req, res) => {
+  res.redirect('/newclaim7/address')
+})
+;
+
+
 router.post('/newclaim7/complete', (req, res) => {
   res.redirect('/newclaim7/find')
 })
@@ -194,10 +201,6 @@ router.post('/newclaim7/check-answers', (req, res) => {
 })
 ;
 
-router.post('/newclaim7/dob-evidence', (req, res) => {
-  res.redirect('/newclaim7/declaration')
-})
-;
 
 router.post('/newclaim7/declaration', (req, res) => {
   res.redirect('/newclaim7/complete')
