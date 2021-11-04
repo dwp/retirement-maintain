@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Why are you restarting the claimant's State Pension? - GOV.UK 
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/servicename-tasks.html' %}
+
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-full">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+<br>
+
+
+
+
+
+<div class="govuk-grid-column-full">
+
+  {% include './_bar-small-admin.html' %}
+
+</div>
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+            {% include './_bar-prison.html' %}
+
+          </div>
+        </div>
+      </main>
+
+
+
+
+      <form method="post" action="personal">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            </legend>
+
+            <h2 class="govuk-heading-l">Why are you restarting the claimant's <br>State Pension?</h2>
+
+          <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="stop-sp-1" name="stop-sp" type="radio" value="death">
+        <label class="govuk-label govuk-radios__label" for="stop-sp">
+          Claimant has left prison
+        </label>
+      </div>
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
+        <label class="govuk-label govuk-radios__label" for="stop-sp">
+          Claimant no longer deferring State Pension
+        </label>
+      </div>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
+        <label class="govuk-label govuk-radios__label" for="stop-sp">
+          A N Other reason
+        </label>
+      </div>
+
+
+
+          </div>
+
+        
+
+      </div>
+
+  </fieldset>
+</div>
+
+<br>
+
+          <button type="submit" class="govuk-button">Save</button>
+  </a> <p><a href="personal">Cancel</a></p>
+
+
+
+</div>
+
+</div>
+
+
+
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
