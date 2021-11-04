@@ -20,11 +20,11 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-              {% include './_bar-pc.html' %}
+        {% include './_bar.html' %}
 
-                      <form method="post" action="tasks-award-complete">
+                      <form method="post" action="confirm">
 
-                      <h1 class="govuk-heading-l">Complete part A of form BR403 with this information</h1>
+                      <h1 class="govuk-heading-l">BR403 summary</h1>
 
                     <!--   <h2 class="govuk-heading-m">New award details</h2>
 
@@ -74,18 +74,36 @@ GOV.UK Prototype Kit
                           <td class="govuk-table__cell">£149.87
                             </td>
 
-                      <tbody class="govuk-table__body">
-                      <tr class="govuk-table__row">
-                      <td class="govuk-table__cell" scope="row">Date change from</td>
-                      <td class="govuk-table__cell">
-                      8 Sep 2021  </td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                      <td class="govuk-table__cell" scope="row">Difference in weekly amount</td>
-                      <td class="govuk-table__cell">
-                      £4.59  </td>
+                            <tbody class="govuk-table__body">
+                              <tr class="govuk-table__row">
+                              <td class="govuk-table__cell" scope="row">From</td>
+                              <td class="govuk-table__cell">5 Jun 2021
+                                </td>
 
-                      </tr>
+
+                                <tbody class="govuk-table__body">
+                                  <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell" scope="row">To</td>
+                                  <td class="govuk-table__cell">29 Oct 2021
+                                    </td>
+
+                                    <tbody class="govuk-table__body">
+                                      <tr class="govuk-table__row">
+                                      <td class="govuk-table__cell" scope="row">Weekly State Pension increase</td>
+                                      <td class="govuk-table__cell">£5.00
+                                        </td>
+
+                                        <tbody class="govuk-table__body">
+                                          <tr class="govuk-table__row">
+                                          <td class="govuk-table__cell" scope="row">Weekly Pension Credit to recover</td>
+                                          <td class="govuk-table__cell">£3.50
+                                            </td>
+
+                                            <tbody class="govuk-table__body">
+                                              <tr class="govuk-table__row">
+                                              <td class="govuk-table__cell" scope="row"><strong>Difference in weekly amounts</strong></td>
+                                              <td class="govuk-table__cell"><strong>£1.50</strong>
+                                                </td>
 
                       </tbody>
                       </table>
@@ -93,7 +111,7 @@ GOV.UK Prototype Kit
 
 
 <button class="govuk-button" data-module="govuk-button">
- Confirm part A of form BR403 sent to Pension Credit team
+ Confirm award
 </button>
 
 <p> <a href="#" class="govuk-link">Postpone or stop review</a> </p>
