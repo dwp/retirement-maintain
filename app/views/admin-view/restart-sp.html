@@ -56,33 +56,63 @@ Why are you restarting the claimant's State Pension? - GOV.UK
 
             <h2 class="govuk-heading-l">Why are you restarting the claimant's <br>State Pension?</h2>
 
-          <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="stop-sp-1" name="stop-sp" type="radio" value="death">
-        <label class="govuk-label govuk-radios__label" for="stop-sp">
-          Claimant has left prison
-        </label>
-      </div>
-      
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
-        <label class="govuk-label govuk-radios__label" for="stop-sp">
-          Claimant no longer deferring State Pension
-        </label>
-      </div>
-
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
-        <label class="govuk-label govuk-radios__label" for="stop-sp">
-          A N Other reason
-        </label>
-      </div>
-
-
-
-          </div>
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="stop-sp-1" name="stop-sp" type="radio" value="death">
+                    <label class="govuk-label govuk-radios__label" for="stop-sp">
+                      A N Other reason
+                    </label>
+                  </div>
+                  
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
+                    <label class="govuk-label govuk-radios__label" for="stop-sp">
+                      Claimant has stopped deferring their State Pension
+                    </label>
+                  </div>
+            
+                  
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="prison" data-aria-controls="conditional-contact">
+                      <label class="govuk-label govuk-radios__label" for="stop-sp">
+                        Claimant has left prison
+                      </label>
+                    </div>
+                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-email">
+                          <strong>Date claimant was discharged from prison</strong>
+                        </label>
+                        
+            
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                Year
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                          </div>
+                        </div>
+            
+            
+                      </div>
 
         
 
