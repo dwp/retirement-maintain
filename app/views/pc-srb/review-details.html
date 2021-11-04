@@ -18,12 +18,18 @@ GOV.UK Prototype Kit
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
+
+      {{ govukBackLink({
+        text: "Back",
+        href: "javascript:history.go(-1)"
+                        }) }}
+
+      <br><br>
       <div class="govuk-grid-column-two-thirds">
 
               {% include './_bar-pc.html' %}
 
-              <p>Put the back button in Becky</p>
-
+              
         <h2 class="govuk-heading-m">Reason the award needs to be reviewed</h2>
         <p>Change in cont/credit position (compliance and yield).</p>
 
