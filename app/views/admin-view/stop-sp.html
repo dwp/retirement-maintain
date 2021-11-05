@@ -7,8 +7,9 @@ Why are you stopping the claimant's State Pension? - GOV.UK
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
+{% include './_header-nav-unselected.html' %}
 
-{% include 'includes/servicename-tasks.html' %}
+
 
 
 {% block headEnd %}
@@ -34,6 +35,7 @@ Why are you stopping the claimant's State Pension? - GOV.UK
 <div class="govuk-grid-column-full">
 
   {% include './_bar-small-admin.html' %}
+
 
 </div>
 
