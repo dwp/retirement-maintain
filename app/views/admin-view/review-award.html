@@ -44,6 +44,8 @@ GOV.UK Prototype Kit
                     <td class="govuk-table__cell" scope="row">New State Pension</td>
                     <td class="govuk-table__cell">                  {% if data.addsp %}
                   £{{data.addsp}}
+                  {% else %}
+                      £127.67
                   {% endif %}</td>
                     <td class="govuk-table__cell"><a href="review-award-add-sp">
                       {% if not data.addsp %}
@@ -77,7 +79,7 @@ GOV.UK Prototype Kit
 
                   <tr class="govuk-table__row">
                       <td class="govuk-table__header award_detail2" scope="row">Entitlement date</td>
-                      <td class="govuk-table__cell award_detail">15 October 2020</td>
+                      <td class="govuk-table__cell award_detail">8 Sep 2021</td>
                       <td class="govuk-table__cell award_detail">
                         <a href="change-date">
                           Change<span class="govuk-visually-hidden">Change address</span>
