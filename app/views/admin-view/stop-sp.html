@@ -63,6 +63,7 @@ Why are you stopping the claimant's State Pension? - GOV.UK
           <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+      
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="stop-sp-1" name="stop-sp" type="radio" value="death">
         <label class="govuk-label govuk-radios__label" for="stop-sp">
@@ -76,14 +77,22 @@ Why are you stopping the claimant's State Pension? - GOV.UK
           Claimant has deferred their State Pension
         </label>
       </div>
-
       
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+         Claimant moved abroad and cannot be paid
+        </label>
+      </div>
+
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="prison" data-aria-controls="conditional-contact">
           <label class="govuk-label govuk-radios__label" for="stop-sp">
             Claimant is in prison
           </label>
         </div>
+
+
         <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
           <div class="govuk-form-group">
             <label class="govuk-label" for="contact-by-email">
@@ -160,3 +169,5 @@ Why are you stopping the claimant's State Pension? - GOV.UK
 </div>
 
 {% endblock %}
+
+

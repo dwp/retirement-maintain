@@ -43,11 +43,9 @@ GOV.UK Prototype Kit
                 <tr class="govuk-table__row">
                   <th class="govuk-table__header award_detail2" scope="col">Total</th>
                   <th class="govuk-table__header award_detail" scope="col">
-                  {% if data.addsp %}
-                  £{{data.addsp}}
-                  {% else %}
+                  
                   £127.67
-                  {% endif %} per week	</th>
+                   per week	</th>
                   <td class="govuk-table__cell award_detail">
           </td>
                 </tr>
@@ -56,16 +54,14 @@ GOV.UK Prototype Kit
                 <tbody class="govuk-table__body">
                   <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">New State Pension</td>
-                    <td class="govuk-table__cell">                  {% if data.addsp %}
-                  £{{data.addsp}}
-                  {% else %}
+                    <td class="govuk-table__cell">
                       £127.67
-                  {% endif %}</td>
+               </td>
                     <td class="govuk-table__cell"><a href="review-award-change-sp">
-                      {% if not data.addsp %}
+                      
                       
                       Change<span class="govuk-visually-hidden">Change</span>
-                      {% endif %}
+                      
                     </a></td>
                   </tr>
                   <tr class="govuk-table__row">
