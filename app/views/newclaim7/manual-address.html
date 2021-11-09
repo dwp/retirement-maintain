@@ -35,7 +35,7 @@ GOV.UK Prototype Kit
               </legend>
 
               <p><span id="passport-issued-hint" class="govuk-hint">
-                I need your property number, street name, town or city, county and postcode.
+                I need your property name or number, street name, town or city, county and postcode.
               </span></p>
 
               <br>
@@ -43,25 +43,37 @@ GOV.UK Prototype Kit
 
               <div class="govuk-form-group">
                 <label class="govuk-label" for="address-line-1">
-                  Building number or name <span class="govuk-visually-hidden">line 1 of 2</span>
+                  Building number <span class="govuk-visually-hidden">building number</span>
                 </label>
                 <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1"></div>
 
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-line-1">
+                    Building name <span class="govuk-visually-hidden">building name</span>
+                  </label>
+                  <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1"></div>
+
               <div class="govuk-form-group">
                 <label class="govuk-label" for="address-line-2">
-                  Street<span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+                  Street<span class="govuk-visually-hidden">Street line 1 of 2</span>
                 </label>
                 <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2"></div>
 
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-line-2">
+                    Street<span class="govuk-visually-hidden">Street line 2 of 2</span>
+                  </label>
+                  <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2"></div>
+
               <div class="govuk-form-group">
                 <label class="govuk-label" for="address-town">
-                  Town or city
+                  Town or city<span class="govuk-visually-hidden">town or city</span>
                 </label>
                 <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
 
               <div class="govuk-form-group">
                 <label class="govuk-label" for="address-county">
-                  County
+                  County<span class="govuk-visually-hidden">county</span>
                 </label>
 
                 <select name="county">
@@ -180,7 +192,7 @@ GOV.UK Prototype Kit
               <p></p>
               <div class="govuk-form-group">
                 <label class="govuk-label" for="address-postcode">
-                  Postcode
+                  Postcode<span class="govuk-visually-hidden">postcode</span>
                 </label>
                 <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"></div>
 
