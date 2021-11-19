@@ -26,7 +26,7 @@ GOV.UK Prototype Kit
         <div class="column-full-width">
           <br><br>
 
-          {% include './name-bar/_bar-zara.html' %}
+          {% include './name-bar/_bar-jose.html' %}
 
         </div>
       </div>
@@ -38,7 +38,7 @@ GOV.UK Prototype Kit
     }) }}
 
     <div>
-            <form method="post" action="personal-marriagedate">
+            <form method="post" action="personal">
               <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset">
                   <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
@@ -77,24 +77,24 @@ GOV.UK Prototype Kit
                 </fieldset>
               </div>
 
-              <fieldset class="govuk-fieldset" aria-describedby="marriage-verification-2-hint">
+              <fieldset class="govuk-fieldset" aria-describedby="marriage-verification-hint">
                 <div class="govuk-radios govuk-radios--inline">
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="marriage-verification-2-2" name="marriage-verification-2" type="radio"
+                    <input class="govuk-radios__input" id="marriage-verification" name="marriage-verification" type="radio"
                       value="verified">
-                    <label class="govuk-label govuk-radios__label" for="marriage-verification-2-2">
+                    <label class="govuk-label govuk-radios__label" for="marriage-verification-1">
                       Verified
                     </label> </div>
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="marriage-verification-2-2" name="marriage-verification-2" type="radio"
+                    <input class="govuk-radios__input" id="marriage-verification" name="marriage-verification" type="radio"
                       value="not-verified">
-                    <label class="govuk-label govuk-radios__label" for="marriage-verification-2-2">
+                    <label class="govuk-label govuk-radios__label" for="marriage-verification-2">
                       Not verified
                     </label> </div>
                 </div>
               </fieldset>
       <br>
-        <a href="personal-divorced" role="button" class="govuk-button">
+        <a href="personal" role="button" class="govuk-button">
           Continue
         </a>
       </div>
