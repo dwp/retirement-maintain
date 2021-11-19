@@ -7,7 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{% include './navigation/_header-nav-unselected.html' %}
+{% include './nagivation/_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -19,23 +19,17 @@ GOV.UK Prototype Kit
   <br>
 
   <div class="govuk-grid-column-full">
-
-    {% include './_bar-admin.html' %}
-
+  {% include './_bar-admin.html' %}
   </div>
-
-
 
   <div class="govuk-grid-column-two-thirds">
 
     <main id="content" role="main">
       <div class="grid-row">
-
-
         <div class="column-full-width">
-
           <br><br>
-          {% include './name-bar/_bar-jose.html' %}
+
+          {% include './name-bar/_bar-zara.html' %}
 
           {% include './tabs/_tab-overview.html' %}
 
@@ -43,8 +37,7 @@ GOV.UK Prototype Kit
       </div>
     </main>
 
-    <br>
-    <br>
+    <br><br>
 
     <div>
       <h2 class="govuk-heading-m">Personal details</h2>
@@ -52,7 +45,7 @@ GOV.UK Prototype Kit
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header" style="width: 50%" >Full name</th>
-            <td class="govuk-table__cell" style="width: 50%">Jose Dominguez</td>
+            <td class="govuk-table__cell" style="width: 50%">Zara Green</td>
             <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
               Change
             </a></td>
@@ -67,8 +60,12 @@ GOV.UK Prototype Kit
             <td class="govuk-table__cell">12 December 1952</td>
             <td class="govuk-table__cell"></td>
           </tr>
-
-
+          <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Gender</th>
+              <td class="govuk-table__cell">Female</td>
+              <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+                Change</a></td>
+          </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">State Pension date </th>
             <td class="govuk-table__cell">10 April 2019 </td>
@@ -76,11 +73,23 @@ GOV.UK Prototype Kit
           </tr>
           <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Marital status </th>
-              <td class="govuk-table__cell">Married</td>
+              <td class="govuk-table__cell">Divorced</td>
               <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
-                  Change
-                </a></td>
-            </tr>
+                Change</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Date of marriage</th>
+            <td class="govuk-table__cell">1 April 2001</td>
+            <td class="govuk-table__cell"><a class="govuk-link" href=change-marriage-date>
+              Change</a></td>
+          </tr>
+              <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Date of divorce</th>
+                  <td class="govuk-table__cell">9 September 2009</td>
+                  <td class="govuk-table__cell"><a class="govuk-link" href=change-divorce-date>
+                      Change
+                    </a></td>
+                </tr>
 
         </tbody>
       </table>

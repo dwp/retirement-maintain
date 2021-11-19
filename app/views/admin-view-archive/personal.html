@@ -7,7 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{% include './navigation/_header-nav-unselected.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -20,7 +20,7 @@ GOV.UK Prototype Kit
 
   <div class="govuk-grid-column-full">
 
-    {% include './_bar-admin.html' %}
+    {% include './_bar-admin-personal.html' %}
 
   </div>
 
@@ -35,9 +35,9 @@ GOV.UK Prototype Kit
         <div class="column-full-width">
 
           <br><br>
-          {% include './name-bar/_bar-jose.html' %}
+          {% include './_bar.html' %}
 
-          {% include './tabs/_tab-overview.html' %}
+          {% include './_tab-overview.html' %}
 
         </div>
       </div>
@@ -67,8 +67,6 @@ GOV.UK Prototype Kit
             <td class="govuk-table__cell">12 December 1952</td>
             <td class="govuk-table__cell"></td>
           </tr>
-
-
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">State Pension date </th>
             <td class="govuk-table__cell">10 April 2019 </td>
