@@ -33,9 +33,9 @@ GOV.UK Prototype Kit
     </main>
 
     {{ govukBackLink({
-text: "Back",
-href: "javascript:history.go(-1)"
-}) }}
+    text: "Back",
+    href: "javascript:history.go(-1)"
+    }) }}
 
     <div>
             <form method="post" action="personal-marriagedate">
@@ -43,32 +43,32 @@ href: "javascript:history.go(-1)"
                 <fieldset class="govuk-fieldset">
                   <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                   </legend>
-                  <h1 class="govuk-heading-l">Date of divorce</h1>
-                  <div class="govuk-date-input" id="divorce-date">
+                  <h1 class="govuk-heading-l">Date of marriage</h1>
+                  <div class="govuk-date-input" id="marriage-date">
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="divorce-day">
+                        <label class="govuk-label govuk-date-input__label" for="marriage-day">
                           Day
                         </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="divorce-day" name="dead-day"
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="marriage-day" name="dead-day"
                           type="number" pattern="[0-9]*">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="divorce-month">
+                        <label class="govuk-label govuk-date-input__label" for="marriage-month">
                           Month
                         </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="divorce-month"
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="marriage-month"
                           name="dead-month" type="number" pattern="[0-9]*">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="divorce-year">
+                        <label class="govuk-label govuk-date-input__label" for="marriage-year">
                           Year
                         </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="divorce-year"
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="marriage-year"
                           name="dead-year" type="number" pattern="[0-9]*">
                       </div>
                     </div>
@@ -77,18 +77,18 @@ href: "javascript:history.go(-1)"
                 </fieldset>
               </div>
 
-              <fieldset class="govuk-fieldset" aria-describedby="divorce-verification-hint">
+              <fieldset class="govuk-fieldset" aria-describedby="marriage-verification-2-hint">
                 <div class="govuk-radios govuk-radios--inline">
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="divorce-verification-1" name="divorce-verification" type="radio"
+                    <input class="govuk-radios__input" id="marriage-verification-2-2" name="marriage-verification-2" type="radio"
                       value="verified">
-                    <label class="govuk-label govuk-radios__label" for="divorce-verification-1">
+                    <label class="govuk-label govuk-radios__label" for="marriage-verification-2-2">
                       Verified
                     </label> </div>
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="divorce-verification-2" name="divorce-verification" type="radio"
+                    <input class="govuk-radios__input" id="marriage-verification-2-2" name="marriage-verification-2" type="radio"
                       value="not-verified">
-                    <label class="govuk-label govuk-radios__label" for="divorce-verification-2">
+                    <label class="govuk-label govuk-radios__label" for="marriage-verification-2-2">
                       Not verified
                     </label> </div>
                 </div>
