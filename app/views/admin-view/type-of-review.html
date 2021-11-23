@@ -23,9 +23,14 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './name-bar/_bar-jose.html' %}
 
-<form method="post" action="award-updated-arrears">
+<form method="post" action="review-award">
 
-          <a href="award" class="govuk-back-link">Back</a>
+
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:history.go(-1)"
+  }) }}
+
 
           <br>
           <br>
