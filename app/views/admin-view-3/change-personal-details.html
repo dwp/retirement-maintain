@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{% include './navigation/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+<br><br>
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full-width">
+<br><br>
+          {% include './name-bar/_bar-jose.html' %}
+
+          {{ govukBackLink({
+      text: "Back",
+      href: "javascript:history.go(-1)"
+      }) }}
+<br><br>
+
+
+<h2 class="govuk-heading-l">Change personal details</h2>
+
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+
+    <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Gender</th>
+        <td class="govuk-table__cell">Male</td>
+        <td class="govuk-table__cell"><a class="govuk-link" href="change-gender">
+          Change</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Date of marriage</th>
+        <td class="govuk-table__cell">12 July 1994</td>
+        <td class="govuk-table__cell"><a class="govuk-link" href="change-marriage-date">
+            Change
+          </a></td>
+      </tr>
+  </tbody>
+</table>
+
+
+        </div>
+      </div>
+    </main>
+
+
+
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
