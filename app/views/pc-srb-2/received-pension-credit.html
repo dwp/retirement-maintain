@@ -29,27 +29,33 @@ GOV.UK Prototype Kit
                           <fieldset class="govuk-fieldset">
                             <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                               <h1 class="govuk-fieldset__heading">
-                                Who's involved here, from these dates
+                                Has the claimant (or their partner) received any Pension Credit after 4 Jun 2021?
                               </h1>
                             </legend>
+                            <br>
+                            <div id="event-name-hint" class="govuk-hint">
+                              You should get this information from CIS.
+                            </div>
+                            
+
                             <br>
                             <div class="govuk-radios">
                               <div class="govuk-radios__item">
                                 <input class="govuk-radios__input" id="receiving-pc" name="receiving-pc" type="radio" value="citizen">
                                 <label class="govuk-label govuk-radios__label" for="receiving-pc">
-                                  England
+                                  Yes, the claimant received Pension Credit
                                 </label>
                               </div>
                               <div class="govuk-radios__item">
                                 <input class="govuk-radios__input" id="receiving-pc-2" name="receiving-pc" type="radio" value="partner">
                                 <label class="govuk-label govuk-radios__label" for="receiving-pc-2">
-                                  Scotland
+                                  Yes, the claimant’s partner received Pension Credit
                                 </label>
                               </div>
                               <div class="govuk-radios__item">
                                 <input class="govuk-radios__input" id="receiving-pc-3" name="receiving-pc" type="radio" value="none">
                                 <label class="govuk-label govuk-radios__label" for="receiving-pc-3">
-                                  Wales
+                                  No, neither the claimant or their partner received Pension Credit
                                 </label>
                               </div>
                             </div>
