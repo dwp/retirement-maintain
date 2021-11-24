@@ -22,97 +22,46 @@ GOV.UK Prototype Kit
 
               {% include './_bar-pc.html' %}
 
-                      <form method="post" action="">
+                      <form method="post">
 
-                        <h1 class="govuk-heading-l">Review award</h1>
 
-                      <table class="govuk-table">
-                      <thead class="govuk-table__head">
+                        <div class="govuk-form-group">
+                          <fieldset class="govuk-fieldset">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                              <h1 class="govuk-fieldset__heading">
+                                Who's involved here, from these dates
+                              </h1>
+                            </legend>
+                            <br>
+                            <div class="govuk-radios">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="receiving-pc" name="receiving-pc" type="radio" value="citizen">
+                                <label class="govuk-label govuk-radios__label" for="receiving-pc">
+                                  England
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="receiving-pc-2" name="receiving-pc" type="radio" value="partner">
+                                <label class="govuk-label govuk-radios__label" for="receiving-pc-2">
+                                  Scotland
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="receiving-pc-3" name="receiving-pc" type="radio" value="none">
+                                <label class="govuk-label govuk-radios__label" for="receiving-pc-3">
+                                  Wales
+                                </label>
+                              </div>
+                            </div>
 
-                        <tr class="govuk-table__row">
-                      <th class="govuk-table__header award_detail2" scope="col">Total</th>
-                      <th class="govuk-table__header award_detail" scope="col">
-                      {% if data.addsp %}
-                      £{{data.addsp}}
-                      {% else %}
-                      £149.87
-                      {% endif %} per week	</th>
-                      <td class="govuk-table__cell award_detail">
-                      </td>
-                      </tr>
-                      </thead>
-                      <tbody class="govuk-table__body">
-                      <tr class="govuk-table__row">
-                      <td class="govuk-table__cell" scope="row">New State Pension</td>
-                      <td class="govuk-table__cell">
-                        {% if data.addsp %}
-                        £{{data.addsp}}
-                        {% else %}
-                        £149.87
-                        {% endif %}</td>
-                      <td class="govuk-table__cell">
-                        <a href="change-nsp">
-                          Change<span class="govuk-visually-hidden">Change New State Pension</span>
-                        </a></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                      <td class="govuk-table__cell" scope="row">Protected payment</td>
-                      <td class="govuk-table__cell">£0.00</td>
-                      <td class="govuk-table__cell">
-                        <a href="change-pp">
-                          Change<span class="govuk-visually-hidden">Change Protected Payment</span>
-                        </a></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                      <td class="govuk-table__cell" scope="row">Extra State Pension</td>
-                      <td class="govuk-table__cell">£0.00</td>
-                      <td class="govuk-table__cell"></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                      <td class="govuk-table__cell" scope="row">Inherited extra State Pension</td>
-                      <td class="govuk-table__cell">£0.00</td>
-                      <td class="govuk-table__cell"></td>
-                      </tr>
-                      </tbody>
-                      </table>
-                      <table class="govuk-table">
-                      <tr class="govuk-table__row">
-                        <td class="govuk-table__header award_detail2" scope="row">Entitlement date</td>
-                        <td class="govuk-table__cell award_detail">
-
-                          {% if not data.entdate4day %}
-                                            5 Jun 2021
-                                              {% else %}
-
-                                            {% endif %}
-
-                        </td>
-                        <td class="govuk-table__cell award_detail">
-                          <a href="change-date">
-                            Change<span class="govuk-visually-hidden">Change address</span>
-                          </a></td>
-                      </tr>
-                      </table>
+                          </fieldset>
+                        </div>
 
 
 
 <button class="govuk-button" data-module="govuk-button">
  Continue
 </button>
-
-<a href="review-award2" button class="govuk-button govuk-button--secondary" data-module="govuk-button">
- Add another review
-</a>
-
-<p> <a href="#" class="govuk-link">Postpone or stop review</a> </p>
-
-
-<!--
-     <a href="get-next-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
-          Return task to queue
-        </a>
-
-        </form> -->
 
 
 
