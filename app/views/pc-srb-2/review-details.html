@@ -19,10 +19,7 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
 
-      {{ govukBackLink({
-        text: "Back",
-        href: "javascript:history.go(-1)"
-                        }) }}
+    
 
       <br><br>
       <div class="govuk-grid-column-two-thirds">
@@ -37,8 +34,15 @@ GOV.UK Prototype Kit
                       </strong>
                   </h1>
                 </div>
+
+                {{ govukBackLink({
+                  text: "Back",
+                  href: "javascript:history.go(-1)"
+                                  }) }}
           </div>
         </div>
+
+     
 
         <h2 class="govuk-heading-m">Reason the award needs to be reviewed</h2>
         <p>Change in cont/credit position (compliance and yield).</p>
