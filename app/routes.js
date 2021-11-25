@@ -51,6 +51,7 @@ const widowstask = require('./routes/widowstask');
 const iteration52 = require('./routes/iteration52');
 const death = require('./routes/death');
 const pcsrb2 = require('./routes/pcsrb2');
+const adminview3 = require('./routes/adminview3');
 
 
 
@@ -104,6 +105,7 @@ router.use(widowstask);
 router.use(iteration52);
 router.use(death);
 router.use(pcsrb2);
+router.use(adminview3);
 
 
 
