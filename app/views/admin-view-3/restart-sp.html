@@ -1,19 +1,17 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Why are you restarting the claimant's State Pension? - GOV.UK 
+GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-
 {% include './navigation/_header-nav-unselected.html' %}
 
-
 {% block headEnd %}
-{% include 'includes/remove-blue-bar.html' %}
 {% endblock %}
+
 
 
 <div class="govuk-width-container">
@@ -56,9 +54,9 @@ Why are you restarting the claimant's State Pension? - GOV.UK
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset">
                 <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                  
-                  
-                  
+
+
+
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="custody" data-aria-controls="conditional-custody">
                       <label class="govuk-label govuk-radios__label" for="stop-sp">
@@ -70,8 +68,8 @@ Why are you restarting the claimant's State Pension? - GOV.UK
                         <label class="govuk-label" for="contact-by-email">
                           <strong>Date claimant left custody</strong>
                         </label>
-                        
-            
+
+
                         <div class="govuk-date-input" id="passport-issued">
                           <div class="govuk-date-input__item">
                             <div class="govuk-form-group">
@@ -96,16 +94,16 @@ Why are you restarting the claimant's State Pension? - GOV.UK
                           </div>
 
                         </div>
-            
-                        
-                  
-            
+
+
+
+
                       </div>
 
                     </div>
-               
-            
-                  
+
+
+
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="stop-sp-3" name="stop-sp" type="radio" value="prison" data-aria-controls="conditional-prison">
                       <label class="govuk-label govuk-radios__label" for="stop-sp">
@@ -117,8 +115,8 @@ Why are you restarting the claimant's State Pension? - GOV.UK
                         <label class="govuk-label" for="contact-by-email">
                           <strong>Date claimant was discharged from prison</strong>
                         </label>
-                        
-            
+
+
                         <div class="govuk-date-input" id="passport-issued">
                           <div class="govuk-date-input__item">
                             <div class="govuk-form-group">
@@ -142,12 +140,12 @@ Why are you restarting the claimant's State Pension? - GOV.UK
                               <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
                           </div>
                         </div>
-            
-                        
-                     
+
+
+
                       </div>
 
-        
+
 
       </div>
 
@@ -157,13 +155,13 @@ Why are you restarting the claimant's State Pension? - GOV.UK
         Temporary suspension lifted
         </label>
       </div>
-      
+
   </fieldset>
 </div>
 
 <br>
 
-          <button type="submit" class="govuk-button">Save</button>
+          <button type="submit" class="govuk-button">Continue</button>
   </a> <p><a href="personal">Cancel</a></p>
 
 
