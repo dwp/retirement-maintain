@@ -13,6 +13,8 @@ router.use((req, res, next) => {
 router.post('/admin-view-3/stop-sp', function(req, res) {
   if ( req.body['stop-sp'] === 'suspend' ) {
     res.redirect('personal-suspended');
+  } else if ( req.body['stop-sp'] === 'prison' ) {
+    res.redirect('personal-prison');
   } else {
     res.redirect('personal');
   }
