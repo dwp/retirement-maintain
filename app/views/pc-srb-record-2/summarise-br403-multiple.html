@@ -22,13 +22,18 @@ GOV.UK Prototype Kit
 
         {% include './_bar.html' %}
 
+        {{ govukBackLink({
+          text: "Back",
+          href: "javascript:history.go(-1)"
+                          }) }}
+
                       <form method="post" action="confirm-multiple">
 
                       <h1 class="govuk-heading-l">BR403 part B summary</h1>
 
                       <table class="govuk-table">
 
-                        BACK
+                        
 
                         <h2 class="govuk-heading-m">Adjustment 1</h2>
 
