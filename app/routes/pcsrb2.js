@@ -23,7 +23,7 @@ router.post('/pc-srb-2/review-award', (req, res) => {
   else if ( req.body['receiving-pc'] === 'partner' ) {
     res.redirect('/pc-srb-2/enter-partner-details');
   }  else {
-    res.redirect('/pc-srb-2/')
+    res.redirect('/pc-srb-2/confirm')
   }
 })
 
