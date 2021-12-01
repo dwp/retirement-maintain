@@ -35,6 +35,11 @@ router.post('/pc-srb-2/review-award2', (req, res) => {
 })
 ;
 
+router.post('/pc-srb-2/change-nsp-2', (req, res) => {
+  res.redirect('/pc-srb-2/review-award2')
+})
+;
+
 
 router.post('/pc-srb-2/review-award', (req, res) => {
   res.redirect('/pc-srb-2/received-pension-credit')
