@@ -5,9 +5,28 @@ router.post('/pc-srb-2/review', (req, res) => {
   res.redirect('/pc-srb-2/review-details')
 })
 ;
+router.post('/pc-srb-2/change-pp', (req, res) => {
+  res.redirect('/pc-srb-2/review-award')
+})
+;
 
 router.post('/pc-srb-2/review-details', (req, res) => {
   res.redirect('/pc-srb-2/review-award')
+})
+;
+
+router.post('/pc-srb-2/change-date', (req, res) => {
+  res.redirect('/pc-srb-2/review-award')
+})
+;
+
+router.post('/pc-srb-2/change-date2', (req, res) => {
+  res.redirect('/pc-srb-2/review-award2')
+})
+;
+
+router.post('/pc-srb-2/change-pp2', (req, res) => {
+  res.redirect('/pc-srb-2/review-award2')
 })
 ;
 
