@@ -30,6 +30,12 @@ router.post('/pc-srb-2/change-pp2', (req, res) => {
 })
 ;
 
+router.post('/pc-srb-2/review-award2', (req, res) => {
+  res.redirect('/pc-srb-2/received-pension-credit')
+})
+;
+
+
 router.post('/pc-srb-2/review-award', (req, res) => {
   res.redirect('/pc-srb-2/received-pension-credit')
 })
@@ -37,7 +43,7 @@ router.post('/pc-srb-2/review-award', (req, res) => {
 
   router.post('/pc-srb-2/received-pension-credit', (req, res) => {
     if ( req.body['receiving-pc'] === 'citizen' ) {
-      res.redirect('/pc-srb-2/pc-review-task');
+      res.redirect('/pc-srb-2/pc-review-task-multiple');
     }
   else if ( req.body['receiving-pc'] === 'partner' ) {
     res.redirect('/pc-srb-2/enter-partner-details');
