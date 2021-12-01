@@ -52,6 +52,7 @@ const iteration52 = require('./routes/iteration52');
 const death = require('./routes/death');
 const pcsrb2 = require('./routes/pcsrb2');
 const adminview3 = require('./routes/adminview3');
+const pcsrbrecord2 = require('./routes/pcsrbrecord2');
 
 
 
@@ -106,6 +107,7 @@ router.use(iteration52);
 router.use(death);
 router.use(pcsrb2);
 router.use(adminview3);
+router.use(pcsrbrecord2);
 
 
 
