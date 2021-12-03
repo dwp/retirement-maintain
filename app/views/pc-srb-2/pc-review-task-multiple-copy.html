@@ -1,0 +1,225 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+              {% include './_bar-pc.html' %}
+
+              {{ govukBackLink({
+                text: "Back",
+                href: "javascript:history.go(-1)"
+                                }) }}
+
+                                <br><br>
+
+                      <form method="post" action="tasks-award-complete">
+
+                      <h1 class="govuk-heading-l">Complete part A of form BR403 with this information</h1>
+
+
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--m">State Pension revised awards</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header app-custom-class">Reason</th>
+                            <th scope="col" class="govuk-table__header app-custom-class">Weekly amount</th>
+                            <th scope="col" class="govuk-table__header app-custom-class">Date from</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">SRB 1</th>
+                            <td class="govuk-table__cell">£149.87</td>
+                            <td class="govuk-table__cell">05/06/2021</td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">SRB 2</th>
+                            <td class="govuk-table__cell">£154.87</td>
+                            <td class="govuk-table__cell">01/07/2021</td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Inheritance</th>
+                            <td class="govuk-table__cell">£170.00</td>
+                            <td class="govuk-table__cell">29/07/2021</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--m">Arrears currently being withheld</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header app-custom-class">Weekly amount</th>
+                            <th scope="col" class="govuk-table__header app-custom-class">Date from</th>
+                            <th scope="col" class="govuk-table__header app-custom-class">Date to</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">£5.00</th>
+                            <td class="govuk-table__cell">05/06/2021</td>
+                            <td class="govuk-table__cell">30/06/2021</td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">£10.00</th>
+                            <td class="govuk-table__cell">01/07/2021</td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+
+
+                  <!--    <span class="govuk-caption-m">SRB</span>
+                      <h1 class="govuk-heading-m">Revision 1</h1>
+
+                      <table class="govuk-table">
+
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                          <td class="govuk-table__cell" scope="row">Revised State Pension amount</td>
+                          <td class="govuk-table__cell">£149.87</td>
+                          <td class="govuk-table__cell">£149.87</td>
+
+                      <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                      <td class="govuk-table__cell" scope="row">Date change from</td>
+                      <td class="govuk-table__cell">
+                      5 Jun 2021  </td>
+                      </tr>
+
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                        <td class="govuk-table__cell" scope="row">Date change to</td>
+                        <td class="govuk-table__cell">
+                        30 Jun 2021  </td>
+                        </tr>
+
+                      <tr class="govuk-table__row">
+                      <td class="govuk-table__cell" scope="row">Difference in weekly amount</td>
+                      <td class="govuk-table__cell">
+                      £5.00  </td>
+
+                      </tr>
+
+                      </tbody>
+                      </table>
+
+                      <span class="govuk-caption-m">SRB</span>
+                      <h1 class="govuk-heading-m">Revision 2</h1>
+
+                      <table class="govuk-table">
+
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                          <td class="govuk-table__cell" scope="row">Revised State Pension amount</td>
+                          <td class="govuk-table__cell">£154.87
+                            </td>
+
+                      <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                      <td class="govuk-table__cell" scope="row">Date change from</td>
+                      <td class="govuk-table__cell">
+                      1 Jul 2021  </td>
+                      </tr>
+
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                        <td class="govuk-table__cell" scope="row">Date change to</td>
+                        <td class="govuk-table__cell">
+                        28 Jul 2021  </td>
+                        </tr>
+
+                      <tr class="govuk-table__row">
+                      <td class="govuk-table__cell" scope="row">Difference in weekly amount</td>
+                      <td class="govuk-table__cell">
+                      £10.00  </td>
+
+                      </tr>
+
+                      </tbody>
+                      </table>
+
+                      <span class="govuk-caption-m">Widowhood</span>
+                      <h1 class="govuk-heading-m">Revision 3</h1>
+
+                      <table class="govuk-table">
+
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                          <td class="govuk-table__cell" scope="row">Revised State Pension amount</td>
+                          <td class="govuk-table__cell">£170.00
+                            </td>
+
+                      <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                      <td class="govuk-table__cell" scope="row">Date change from</td>
+                      <td class="govuk-table__cell">
+                      29 Jul 2021  </td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                      <td class="govuk-table__cell" scope="row">Difference in weekly amount</td>
+                      <td class="govuk-table__cell">
+                      £10.00 </td>
+
+                      </tr>
+
+                      </tbody>
+                      </table> --> 
+
+
+
+<button class="govuk-button" data-module="govuk-button">
+ Confirm part A of form BR403 sent to Pension Credit team
+</button>
+
+<p> <a href="#" class="govuk-link">Postpone or stop review</a> </p>
+
+
+<!--
+     <a href="get-next-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+          Return task to queue
+        </a>
+
+        </form> -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
