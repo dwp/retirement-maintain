@@ -35,6 +35,11 @@ router.post('/prison/prison-debt-referral', (req, res) => {
 })
 ;
 
+router.post('/prison/prison-restart-sp', (req, res) => {
+  res.redirect('personal')
+})
+;
+
 
 // Reason for restarting SP
 router.post('/admin-view-3/restart-sp', function(req, res) {
