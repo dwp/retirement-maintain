@@ -53,6 +53,7 @@ const death = require('./routes/death');
 const pcsrb2 = require('./routes/pcsrb2');
 const adminview3 = require('./routes/adminview3');
 const pcsrbrecord2 = require('./routes/pcsrbrecord2');
+const prison = require('./routes/prison');
 
 
 
@@ -108,6 +109,8 @@ router.use(death);
 router.use(pcsrb2);
 router.use(adminview3);
 router.use(pcsrbrecord2);
+router.use(prison);
+
 
 
 
