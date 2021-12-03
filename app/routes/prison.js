@@ -21,6 +21,21 @@ router.post('/prison/stop-sp', function(req, res) {
 });
 
 
+// Prison overpayment referral
+router.post('/prison/prison-overpayment', function(req, res) {
+  if ( req.body['prison-overpayment'] === 'yes' ) {
+    res.redirect('prison-debt-referral');
+  } else {
+    res.redirect('personal-prison-overpayment');
+  }
+});
+
+router.post('/prison/prison-debt-referral', (req, res) => {
+  res.redirect('personal-prison')
+})
+;
+
+
 // Reason for restarting SP
 router.post('/admin-view-3/restart-sp', function(req, res) {
   if ( req.body['restart-sp'] === 'prison' ) {
