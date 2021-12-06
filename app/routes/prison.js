@@ -42,7 +42,7 @@ router.post('/prison/prison-restart-sp', (req, res) => {
 
 
 // Reason for restarting SP
-router.post('/admin-view-3/restart-sp', function(req, res) {
+router.post('/prison/restart-sp', function(req, res) {
   if ( req.body['restart-sp'] === 'prison' ) {
     res.redirect('personal-left-prison');
   } else if ( req.body['restart-sp'] === 'suspend' ) {
