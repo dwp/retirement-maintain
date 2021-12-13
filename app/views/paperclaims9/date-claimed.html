@@ -21,8 +21,58 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
 
 
-<h1 class="govuk-heading-xl">What day did this delightful postal claim arrive?</h1>
+<h1 class="govuk-heading-xl">When was this postal claim received?</h1>
 
+
+<div id="event-name-hint" class="govuk-hint">
+  Enter the date listed in DRS.
+</div>
+
+<fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="contact-by-phone">
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+
+          <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+    </label>
+  </div>
+
+
+
+</div>
+</fieldset>
+</div>
 
         <a href="ni" button type="submit" class="govuk-button">
           Continue
