@@ -14,14 +14,15 @@ GOV.UK Prototype Kit
 
 
 <div class="govuk-width-container">
-  <div class="govuk-grid-column-two-thirds">
+
 
     <main id="content" role="main">
       <div class="grid-row">
         <div class="column-full">
+            <div class="govuk-grid-column-full-width">
+          <br>
+          <br>
 
-          <br>
-          <br>
 
           <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
             <div class="govuk-notification-banner__header">
@@ -36,27 +37,27 @@ GOV.UK Prototype Kit
             </div>
           </div>
 
+</div>
+
+
+        <div class="govuk-grid-column-two-thirds">
+
           {% include './_bar.html' %}
 
           {% include './tabs/_tab-overview-updated.html' %}
 
-
-        </div>
-      </div>
-    </main>
-
     <br>
     <br>
 
-
-    <div>
       <h2 class="govuk-heading-m">Personal details</h2>
       <table class="govuk-table">
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header" style="width: 50%" >Full name</th>
             <td class="govuk-table__cell" style="width: 50%">Nayan Busby</td>
-            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
+              Change
+            </a></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">National Insurance number</th>
@@ -76,7 +77,9 @@ GOV.UK Prototype Kit
           <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Marital status </th>
               <td class="govuk-table__cell">Married</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+                  Change
+                </a></td>
             </tr>
 
         </tbody>
@@ -84,6 +87,25 @@ GOV.UK Prototype Kit
 
     </div>
 
+
+
+  <div class="govuk-grid-column-one-third">
+    <br><br>
+    <h2 class="govuk-heading-m">
+      Personal changes
+    </h2>
+    <ol class="app-timeline">
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          No changes made
+        </h3>
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">No changes made</span>
+          <span class="app-timeline__date">
+          </span>
+        </p>
+      </li>
+    </ol>
   </div>
 
 
