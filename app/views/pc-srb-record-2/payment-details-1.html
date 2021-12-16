@@ -26,7 +26,11 @@ GOV.UK Prototype Kit
 
           <form method="post" action="payment-frequency">
 
-            <a href="payment" class="govuk-back-link">Back</a>
+            {{ govukBackLink({
+              text: "Back",
+              href: "javascript:history.go(-1)"
+            }) }}
+
             <br><br>
             <h2 class="govuk-heading-l">Payment details</h2>
 
