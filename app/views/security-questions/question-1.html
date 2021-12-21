@@ -21,60 +21,42 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-
-        <br> <br>
         <form method="post">
 
-
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                <span class="govuk-caption-l">Question one - delete if unrequired</span>
-                <h1 class="govuk-heading-l">govuk-heading-l</h1>
-              </legend>
-              <div class="govuk-radios" data-module="govuk-radios">
+            <fieldset class="govuk-fieldset" aria-describedby="security-question-one-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                  <span class="govuk-caption-l">Question one - delete if unrequired
+                  <br> OR question one of three etc</span>
+                  <h1 class="govuk-heading-l">Yes/No (example)</h1>
+                </legend>
+              <div id="security-question-one-hint" class="govuk-hint">
+                Hinty mchinton
+              </div>
+              <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-                    England
+                  <input class="govuk-radios__input" id="security-question-one" name="security-question-one" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="security-question-one">
+                    Yes
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                    Scotland
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-                    Wales
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-                    Northern Ireland
+                  <input class="govuk-radios__input" id="security-question-one-2" name="security-question-one" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="security-question-one-2">
+                    No
                   </label>
                 </div>
               </div>
 
             </fieldset>
           </div>
-  <div class="govuk-form-group">
 
-
-<br><br>
       <button type="submit" class="govuk-button">
         Confirm
       </button>
 
-  </div>
 
   </div>
-
-
- </form>
 
 
 
