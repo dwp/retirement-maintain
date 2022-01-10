@@ -48,7 +48,7 @@ router.post('/pc-srb-2/review-award', (req, res) => {
 
   router.post('/pc-srb-2/received-pension-credit', (req, res) => {
     if ( req.body['receiving-pc'] === 'citizen' ) {
-      res.redirect('/pc-srb-2/pc-review-task-multiple');
+      res.redirect('/pc-srb-2/pc-review-task');
     }
   else if ( req.body['receiving-pc'] === 'partner' ) {
     res.redirect('/pc-srb-2/enter-partner-details');
