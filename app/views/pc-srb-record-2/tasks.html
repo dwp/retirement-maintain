@@ -22,6 +22,14 @@ GOV.UK Prototype Kit
       <br>
         <h1 class="govuk-heading-xl">Input information received from Pension Credit team
         </h1>
+
+        {{ govukBackLink({
+          text: "Back",
+          href: "javascript:history.go(-1)"
+                          }) }}
+
+                          <br><br>
+
         <p>The Pension Credit team have returned part B of form BR403.
         </p>
 
@@ -35,9 +43,9 @@ GOV.UK Prototype Kit
           </a>
 
 
-     <a href="personal" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+     <!-- <a href="personal" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
           Return task to queue
-        </a>
+        </a> -->
 
         </form>
 

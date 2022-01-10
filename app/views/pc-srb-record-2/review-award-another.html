@@ -129,6 +129,31 @@ GOV.UK Prototype Kit
  Continue
 </button>
 
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> /enter-partb-br403-information <br>
+        <b>Error messages:</b> 
+        <br><strong>From date is too early:</strong> From date must be after start date of award
+        <br><strong>From date is too early:</strong> From date must be after To date of previous adjustment
+        <br><strong>From date is after To date:</strong> From date cannot be after To date
+        <br><strong>To date is before From date:</strong> To date cannot be before From date
+        <br><strong>Amount to withhold:</strong> Weekly amount to withhold cannot be more than £XX.XX (dev note: £XX.XX is the amount of increase for this award)
+        <br><strong>Amount to withhold is zero:</strong> Weekly amount to withhold must be more than zero
+        <br><strong>Amount to withhold is blank:</strong> Enter a weekly amount to withhold 
+        <b>Notes:</b> None <br>
+      </div>
+    </details>
+
+  </div>
+
 <!--
      <a href="get-next-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
           Return task to queue
