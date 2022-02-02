@@ -8,12 +8,11 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './_header-nav-enquiries.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
-{% include './_find-someone-enquiries.html' %}
 
 <div class="govuk-width-container">
   <div class="govuk-grid-column-two-thirds">
@@ -60,7 +59,7 @@ GOV.UK Prototype Kit
                   <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">Status</td>
                     <td class="govuk-table__cell">Paid</td>
-                    <td class="govuk-table__cell"><a href=#>Mark as returned</a>
+                    <td class="govuk-table__cell"><a href=payment-returned>Mark as returned</a>
                     </td>
                   </tr>
                 </tbody>
