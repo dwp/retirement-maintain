@@ -15,19 +15,37 @@ GOV.UK Prototype Kit
 
 
 <div class="govuk-width-container">
+
+    <div class="govuk-grid-column-full">
+
+
+<br><Br>
+
+  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__header">
+      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+        Success
+      </h2>
+    </div>
+    <div class="govuk-notification-banner__content">
+      <h3 class="govuk-notification-banner__heading">
+        Payment marked as returned
+      </h3>
+    </div>
+  </div>
+
+  </div>
+
+
   <div class="govuk-grid-column-two-thirds">
 
     <main id="content" role="main">
       <div class="grid-row">
-        <div class="column-full">
 
-
-          <br><br>
-          {% include './_bar.html' %}
+          {% include './_bar-returned.html' %}
 
           {% include './tabs/_tab-overview-returned.html' %}
         </div>
-      </div>
     </main>
 
     <br>
