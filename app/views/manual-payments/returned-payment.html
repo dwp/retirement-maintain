@@ -27,10 +27,15 @@ GOV.UK Prototype Kit
 
           <form method="post">
 
-            <a href="payment" class="govuk-back-link">Back</a>
+            {{ govukBackLink({
+              text: "Back",
+              href: "javascript:history.go(-1)"
+                              }) }}
+
+                              
             <br><br>
             <div class="govuk-form-group">
-              <form method="post" action="payment-returned" class="form">
+              <form method="post" class="form">
               <h2 class="govuk-heading-l">Has this payment been returned by the bank?</h2>
               <fieldset class="govuk-fieldset" aria-describedby="returned-hint">
 

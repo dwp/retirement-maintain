@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full">
+
+
+          <br><br>
+          {% include './_bar.html' %}
+
+          <form method="post">
+
+            {{ govukBackLink({
+              text: "Back",
+              href: "javascript:history.go(-1)"
+                              }) }}
+            <br><br>
+            <div class="govuk-form-group">
+              <form method="post" action="payment-returned" class="form">
+
+                <h1 class="govuk-heading-l">Send a faster payment via CPS local please</h1>
+
+                <table class="govuk-table">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Payment details</caption>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Total</th>
+                      <th scope="col" class="govuk-table__header">£650.72</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">New State Pension</th>
+                      <td class="govuk-table__cell">£650.72</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Protected payment</th>
+                      <td class="govuk-table__cell">£0.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+                <table class="govuk-table">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Bank or building society account details</caption>
+
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Account holder</th>
+                      <td class="govuk-table__cell">Mr M Rooney</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Sort code</th>
+                      <td class="govuk-table__cell">	54 76 98</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Account number</th>
+                      <td class="govuk-table__cell">98765409</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+
+
+              <button class="govuk-button" data-module="govuk-button">
+                Confirm payment sent*
+              </button>
+
+            </div>
+
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+  </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

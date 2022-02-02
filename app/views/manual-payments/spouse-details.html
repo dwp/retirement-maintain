@@ -24,8 +24,11 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './_bar.html' %}
 
+          {{ govukBackLink({
+            text: "Back",
+            href: "javascript:history.go(-1)"
+                            }) }}
 
-          <a href="personal" class="govuk-back-link">Back</a>
           <br><br>
           <h2 class="govuk-heading-l">Marital details</h2>
 

@@ -25,8 +25,11 @@ GOV.UK Prototype Kit
           {% include './_bar.html' %}
 
 <form method="post" action="contact-workphone-r">
-
-          <a href="change-workphone" class="govuk-back-link">Back</a>
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:history.go(-1)"
+                    }) }}
+                    
           <br><br>
           <h2 class="govuk-heading-l">Do you want to remove this number?</h2>
 

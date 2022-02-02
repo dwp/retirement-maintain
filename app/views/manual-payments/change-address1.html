@@ -26,7 +26,11 @@ GOV.UK Prototype Kit
 
 <form method="post" action="change-address2">
 
-          <a href="contact" class="govuk-back-link">Back</a>
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:history.go(-1)"
+                    }) }}
+                    
           <br><br>
           <h2 class="govuk-heading-l">Address</h2>
 

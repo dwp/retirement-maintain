@@ -27,7 +27,11 @@ GOV.UK Prototype Kit
 
         <form method="post" action="contact-address">
 
-          <a href="change-address1" class="govuk-back-link">Back</a>
+          {{ govukBackLink({
+            text: "Back",
+            href: "javascript:history.go(-1)"
+                            }) }}
+                            
           <br><br>
           <h2 class="govuk-heading-l">International address</h2>
 

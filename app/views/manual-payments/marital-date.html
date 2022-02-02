@@ -24,8 +24,11 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './_bar.html' %}
 
-
-          <a href="change-maritalstatus" class="govuk-back-link">Back</a>
+          {{ govukBackLink({
+            text: "Back",
+            href: "javascript:history.go(-1)"
+                            }) }}
+                            
           <br><br>
           <form method="post" action="marital-details">
             <div class="govuk-form-group">
