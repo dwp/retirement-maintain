@@ -8,7 +8,7 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './_header-nav-unselected.html' %}
+{% include './header/_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -25,7 +25,7 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './_bar.html' %}
 
-          <form method="post" action="payment-frequency">
+          <form method="post">
 
             <a href="payment" class="govuk-back-link">Back</a>
             <br><br>

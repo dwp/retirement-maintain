@@ -8,7 +8,7 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './_header-nav-unselected.html' %}
+{% include './header/_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -25,10 +25,7 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './_bar.html' %}
 
-          {% include './_tab-overview.html' %}
-
-
-
+          {% include './tabs/_tab-overview.html' %}
 
         </div>
       </div>

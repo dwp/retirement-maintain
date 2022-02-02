@@ -16,48 +16,33 @@ GOV.UK Prototype Kit
 
 <div class="govuk-width-container">
   <div class="govuk-grid-column-two-thirds">
-<br>
-
 
     <main id="content" role="main">
       <div class="grid-row">
         <div class="column-full">
 
-          <div class="moj-banner moj-banner--success">
 
-            <svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
-            <path d="M25,6.2L8.7,23.2L0,14.1l4-4.2l4.7,4.9L21,2L25,6.2z" /></svg>
+          <br><br>
+          {% include './_bar.html' %}
 
-            <div class="moj-banner__message">
-            <span class="moj-banner__assistive">Success</span>Name changed</div>
-
-            </div>
-
-
-          {% include './_bar-name.html' %}
-
-          {% include './tabs/_tab-overview.html' %}
-
-
-
-
+          {% include './tabs/_tab-overview-returned.html' %}
         </div>
       </div>
     </main>
 
-    </br>
-    </br>
+    <br>
+    <br>
 
     <div>
       <h2 class="govuk-heading-m">Personal details</h2>
       <table class="govuk-table">
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header" style="width: 50%">Full name</th>
-            <td class="govuk-table__cell" style="width: 50%">Ken Phillips</td>
+            <th scope="row" class="govuk-table__header" style="width: 50%" >Full name</th>
+            <td class="govuk-table__cell" style="width: 50%">Maisie Feeney</td>
             <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
-                Change
-              </a></td>
+              Change
+            </a></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">National Insurance number</th>
@@ -75,19 +60,19 @@ GOV.UK Prototype Kit
             <td class="govuk-table__cell"></td>
           </tr>
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Marital status </th>
-            <td class="govuk-table__cell">Never been married</td>
-            <td class="govuk-table__cell"><a class="govuk-link" href=#>
-                Change
-              </a></td>
-          </tr>
+              <th scope="row" class="govuk-table__header">Marital status </th>
+              <td class="govuk-table__cell">Never been married</td>
+              <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+                  Change
+                </a></td>
+            </tr>
 
         </tbody>
       </table>
 
     </div>
     <a class="govuk-body" href="death-date">
-      Add date of death
+      Stop State Pension
     </a>
   </div>
 
@@ -95,20 +80,20 @@ GOV.UK Prototype Kit
 
 
   <div class="govuk-grid-column-one-third">
-    <br><br> <br><br><br><br>
+    <br><br>
     <h2 class="govuk-heading-m">
       Personal changes
     </h2>
     <ol class="app-timeline">
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-          Name changed
+          No changes made
         </h3>
 
         <p class="app-timeline__info govuk-!-margin-bottom-0">
           <span class="govuk-visually-hidden">No changes made</span>
           <span class="app-timeline__date">
-            25 March 2020
+
           </span>
         </p>
       </li>
