@@ -23,9 +23,9 @@ GOV.UK Prototype Kit
 
 
           <br><br>
-          {% include './_bar.html' %}
+          {% include './_bar-returned.html' %}
 
-          <form method="post">
+          <form method="post" action="personal-reissued">
 
             {{ govukBackLink({
               text: "Back",
@@ -33,7 +33,7 @@ GOV.UK Prototype Kit
                               }) }}
             <br><br>
             <div class="govuk-form-group">
-              <form method="post" action="payment-returned" class="form">
+
 
                 <h1 class="govuk-heading-l">Send a faster payment via CPS local please</h1>
 
@@ -85,6 +85,8 @@ GOV.UK Prototype Kit
               </button>
 
             </div>
+
+</form>
 
         </div>
       </div>
