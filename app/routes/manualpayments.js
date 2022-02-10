@@ -7,6 +7,7 @@ router.post('/manual-payments/returned-payment', function(req, res) {
   } if ( req.body['returned'] === 'no' ) {
     res.redirect('payment-details-2');
   }
+
 });
 
   module.exports = router
