@@ -7,11 +7,6 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
 {% include './_header-nav.html' %}
 
 {% block headEnd %}
@@ -38,7 +33,7 @@ GOV.UK Prototype Kit
   Is this correct? </h2>
 
   <div class="govuk-form-group">
-    
+
     <div class="govuk-radios govuk-radios--inline">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
@@ -56,8 +51,8 @@ GOV.UK Prototype Kit
 
   </div>
 
-           
-      
+
+
     <button type="submit" class="govuk-button">
       Continue
     </button>

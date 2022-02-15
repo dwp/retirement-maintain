@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full">
+
+
+          <br><br>
+          {% include './_bar-returned.html' %}
+
+          <form method="post" action="payment-reissued">
+
+            {{ govukBackLink({
+              text: "Back",
+              href: "javascript:history.go(-1)"
+                              }) }}
+            <br><br>
+            <div class="govuk-form-group">
+
+
+                <h1 class="govuk-heading-xl">Reissue payment with CPS Local faster payments</h1>
+
+                <div id="more-detail-hint" class="govuk-hint">
+                  Reissuing the payment with CPS Local faster payments will restart regular payments to this account
+                </div>
+
+                <br>
+
+                <table class="govuk-table">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Payment amount</caption>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Total</th>
+                      <th scope="col" class="govuk-table__header">£650.72</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">New State Pension</th>
+                      <td class="govuk-table__cell">£650.72</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Protected payment</th>
+                      <td class="govuk-table__cell">£0.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+<br><br>
+                <table class="govuk-table">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Bank or building society account details</caption>
+
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Account holder</th>
+                      <td class="govuk-table__cell">Mr M Rooney</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Sort code</th>
+                      <td class="govuk-table__cell">	54 76 98</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Account number</th>
+                      <td class="govuk-table__cell">98765409</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+
+
+              <button class="govuk-button" data-module="govuk-button">
+                Confirm payment reissued
+              </button>
+
+            </div>
+
+</form>
+
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+  </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
