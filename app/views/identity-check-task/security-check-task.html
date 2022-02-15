@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+              {% include './_bar.html' %}
+
+        <form method="post" action="get-a-task-banner">
+
+<p>SWIs for the question set and NURS to get the answers to check
+</p>
+
+
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Did they get it right?
+                </h1>
+              </legend>
+              <div id="changed-name-hint" class="govuk-hint">
+                Hinty hint
+              </div>
+              <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="changed-name">
+                    Pass
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                    Fail
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <br>
+          <p>
+          <a href="#" class="govuk-link">Unable to contact citizen, or they won't answer Qs</a>
+          </p>
+
+          </div>
+
+
+          <button class="govuk-button" data-module="govuk-button">
+            Confirm
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}

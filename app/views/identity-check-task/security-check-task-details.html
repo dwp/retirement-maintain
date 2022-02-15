@@ -8,7 +8,7 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './_header-nav-paper-claim.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -19,21 +19,19 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-      <br>
 
-        <h2 class="govuk-heading-xl">Start a new paper claim</h2>
-        <form method="post">
+        <h1 class="govuk-heading-xl">Ring a human and grill them
+        </h1>
+        <p>A claimant has failed bank authentication when making a online or paper claim...</p>
 
-<p class="govuk-body">View and process the next available paper claim.</p>
-
-<br>
-
-          <a href="find" button type="submit" class="govuk-button">
-            Get next task
-        </a>
-        </form>
-
-
+        <form method="post" action="security-check-task">
+          <br>
+          <button class="govuk-button" data-module="govuk-button">
+            Start this task
+          </button>
+          <a href="get-a-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+            Return task to queue
+          </a>
 
         </div>
 
@@ -41,12 +39,6 @@ GOV.UK Prototype Kit
 
     </div>
 
-  </div>
-
-
-
-</main>
-      </div>
 
       {% endblock %}
 
