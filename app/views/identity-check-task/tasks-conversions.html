@@ -29,7 +29,7 @@ GOV.UK Prototype Kit
                     </li>
 
                     <li class="moj-sub-navigation__item">
-                      <a class="moj-sub-navigation__link" aria-current="page" href="tasks-award">Award updates (SRBs)</a>
+                      <a class="moj-sub-navigation__link" href="tasks-award">Award updates (SRBs)</a>
                     </li>
 
                     <li class="moj-sub-navigation__item">
@@ -37,7 +37,7 @@ GOV.UK Prototype Kit
                     </li>
 
                     <li class="moj-sub-navigation__item">
-                      <a class="moj-sub-navigation__link" href="tasks-conversions">Widows conversions</a>
+                      <a class="moj-sub-navigation__link" aria-current="page" href="tasks-conversions">Widows conversions</a>
                     </li>
 
                     <li class="moj-sub-navigation__item">
@@ -51,14 +51,28 @@ GOV.UK Prototype Kit
 
         <form method="post">
 
-          <h1 class="govuk-heading-l">Award updates (SRBs)</h1>
+          <h1 class="govuk-heading-l">Widows conversions</h1>
 
-          <h3 class="govuk-heading-l"> 0
-            <p class="govuk-body govuk-!-font-size-24">tasks</p>
-          </h3>
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-third">
+              <h3 class="govuk-heading-l"> 25
+                <p class="govuk-body govuk-!-font-size-24">total tasks</p>
+              </h3>
 
-<p class="govuk-body"></p>
+              <h3 class="govuk-heading-l"> 25
+                <p class="govuk-body govuk-!-font-size-24">tasks ready to work</p>
+              </h3>
 
+            </div>
+
+
+          </div>
+
+
+
+          <a href="review" button type="submit" class="govuk-button">
+            Get next task
+        </a>
         </form>
 
 
@@ -69,6 +83,10 @@ GOV.UK Prototype Kit
 
     </div>
 
+  </div>
+
+</main>
+      </div>
 
       {% endblock %}
 
