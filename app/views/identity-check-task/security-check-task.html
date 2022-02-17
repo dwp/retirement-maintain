@@ -22,7 +22,7 @@ GOV.UK Prototype Kit
 
               {% include './_bar.html' %}
 
-        <form method="post" action="get-a-task-banner">
+        <form method="post" action="get-a-task-complete">
 
 <p>SWIs for the question set and NURS to get the answers to check
 </p>
@@ -39,7 +39,7 @@ GOV.UK Prototype Kit
               <div id="changed-name-hint" class="govuk-hint">
                 Hinty hint
               </div>
-              <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+              <div class="govuk-radios govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
                   <label class="govuk-label govuk-radios__label" for="changed-name">
@@ -52,13 +52,15 @@ GOV.UK Prototype Kit
                     Fail
                   </label>
                 </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                    Unable to contact citizen, or they won't answer Qs
+                  </label>
+                </div>
               </div>
             </fieldset>
 
-            <br>
-          <p>
-          <a href="#" class="govuk-link">Unable to contact citizen, or they won't answer Qs</a>
-          </p>
 
           </div>
 

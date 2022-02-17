@@ -7,7 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{% include './header/_header-nav-teleclaim.html' %}
+{% include './_header-nav.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -19,20 +19,17 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
       <br>
-      <h1 class="govuk-heading-xl">Telephone claim</h1>
 
-        <h2 class="govuk-heading-m">Find someone</h2>
-
-
+        <h2 class="govuk-heading-xl">Find someone</h2>
         <form method="post">
           <div class="govuk-form-group">
             <label class="govuk-label" for="nino">
-              National Insurance number or invitation code
+              National Insurance number
             </label>
             <input class="govuk-input govuk-!-width-two-thirds" id="nino" name="nino" type="nino" aria-describedby="nino-hint">
           </div>
 
-          <a href="teleclaim-1" button type="submit" class="govuk-button">
+          <a href="find" button type="submit" class="govuk-button">
             Find
           </button>
         </a>
@@ -47,6 +44,8 @@ GOV.UK Prototype Kit
     </div>
 
   </div>
+
+
 
 </main>
       </div>
