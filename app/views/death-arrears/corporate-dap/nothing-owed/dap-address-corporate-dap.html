@@ -38,24 +38,20 @@ GOV.UK Prototype Kit
     }) 
   }}
         <br><br>
-        <form action="dap-number" method="post" class="form">
-          <h1 class="govuk-heading-l">Full name of the person dealing with Mark's estate</h1>
+
+        <h1 class="govuk-heading-l">Address of the corporate death arrears payee dealing with Mark's estate</h1>
+
+        <form action="dap-address-1-corporate-dap" method="post">
           <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              
+            <label class="govuk-label" for="postcode">
+              UK postcode
             </label>
-            <input class="govuk-input" id="event-name" name="event-name" type="text">
+            <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="postcode" aria-describedby="postcode-hint">
           </div>
 
           <button type="submit" class="govuk-button">
-            Continue
+            Find address
           </button>
-
-<br>
-          <a class="govuk-body" href="dap-name-corporate-dap">
-      Enter Corporate death arrears payee details
-    </a>
-
         </form>
 
       </div>

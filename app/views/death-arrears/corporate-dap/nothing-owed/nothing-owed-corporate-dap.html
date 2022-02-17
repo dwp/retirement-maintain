@@ -38,33 +38,30 @@ GOV.UK Prototype Kit
     }) 
   }}
         <br><br>
-        <form action="dap-number" method="post" class="form">
-          <h1 class="govuk-heading-l">Full name of the person dealing with Mark's estate</h1>
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              
-            </label>
-            <input class="govuk-input" id="event-name" name="event-name" type="text">
-          </div>
 
-          <button type="submit" class="govuk-button">
-            Continue
-          </button>
+      <form method="post" class="form" action="send-letter-corporate-dap">
+        <h1 class="govuk-heading-l">All payments are up to date</h1>
+        <p>There has been no overpayment and there are no more State Pension payments due.</p>
+        <br>
 
-<br>
-          <a class="govuk-body" href="dap-name-corporate-dap">
-      Enter Corporate death arrears payee details
-    </a>
 
-        </form>
+    
 
-      </div>
-
+       
+        <button type="submit" class="govuk-button">
+          Continue
+        </button>
+        </a>
+        </dd>
     </div>
-
-  </div>
+    <br>
 
 </div>
+
+</div>
+
+</form>
+
 
 </main>
 </div>
@@ -73,7 +70,7 @@ GOV.UK Prototype Kit
 
 {% block content %}
 <div class="govuk-grid-row">
-<div class="govuk-grid-column-two-thirds"></div>
+  <div class="govuk-grid-column-two-thirds"></div>
 </div>
 
 {% endblock %}
