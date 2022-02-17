@@ -7,29 +7,45 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{% include './_header-nav-unselected.html' %}
+
+{% include 'includes/header/_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
 
 <div class="govuk-width-container">
+
+    <div class="govuk-grid-column-full">
+
+
+<br><Br>
+
+  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__header">
+      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+        Success
+      </h2>
+    </div>
+    <div class="govuk-notification-banner__content">
+      <h3 class="govuk-notification-banner__heading">
+        Payment marked as returned
+      </h3>
+    </div>
+  </div>
+
+  </div>
+
+
   <div class="govuk-grid-column-two-thirds">
 
     <main id="content" role="main">
       <div class="grid-row">
-        <div class="column-full">
 
+          {% include 'includes/_bar-returned.html' %}
 
-          <br><br>
-          {% include './_bar.html' %}
-
-          {% include './_tab-overview.html' %}
-
-
-
+          {% include 'includes/tabs/_tab-overview-returned.html' %}
         </div>
-      </div>
     </main>
 
     <br>
@@ -41,7 +57,7 @@ GOV.UK Prototype Kit
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header" style="width: 50%" >Full name</th>
-            <td class="govuk-table__cell" style="width: 50%">Maisie Feeney</td>
+            <td class="govuk-table__cell" style="width: 50%">Mark Rooney</td>
             <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
               Change
             </a></td>
@@ -73,7 +89,7 @@ GOV.UK Prototype Kit
       </table>
 
     </div>
-    <a class="govuk-body" href="stop-sp">
+    <a class="govuk-body" href="death-date">
       Stop State Pension
     </a>
   </div>
