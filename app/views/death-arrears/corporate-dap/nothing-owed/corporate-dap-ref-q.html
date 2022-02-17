@@ -43,29 +43,24 @@ GOV.UK Prototype Kit
 
 
           <br><br>
-
-          
-
 <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="cor$rate-dap-ref-hint">
+  <fieldset class="govuk-fieldset" aria-describedby="dap-details-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
       Do you have the reference number of the corporate death arrears payee?
       </h1>
     </legend>
     <br>
-    <form method="post">
     <div class="govuk-radios govuk-radios--inline">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="corporate-dap-ref" name="corporate-dap-ref" type="radio" value="yes">
-        <label class="govuk-label 
-        govuk-radios__label" for="corporate-dap-ref">
+        <input class="govuk-radios__input" id="dap-details" name="dap-details" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="dap-details">
           Yes
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="corporate-dap-ref-2" name="corporate-dap-ref" type="radio" value="no">
-        <label class="govuk-label govuk-radios__label" for="corporate-dap-ref-2">
+        <input class="govuk-radios__input" id="dap-details-2" name="dap-details" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="dap-details-2">
           No
         </label>
       </div>
@@ -76,13 +71,11 @@ GOV.UK Prototype Kit
 
 
           <button type="submit" class="govuk-button">Continue</button>
-        </form>
-        
         </div>
       </div>
     </main>
 
-  
+  </form>
 </div>
 </div>
 
@@ -99,8 +92,8 @@ GOV.UK Prototype Kit
 
 <script>
     nextPageRoutes = {
-        'yes': 'corporate-dap-ref',
-        'no': 'nothing-owed-corporate-dap',
+        'yes': '/death-arrears/corporate-dap/nothing-owed/corporate-dap-ref.html',
+        'no': '/death-arrears/corporate-dap/nothing-owed/nothing-owed-corporate-dap.html',
         }
 </script>
 

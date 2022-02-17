@@ -1,16 +1,6 @@
 const express = require('express')
 const router = express.Router()
 
-router.post('*', function (req, res, next) {
-    console.log(req.body);
-  
-    if (req.body['next-page']) {
-      res.redirect(req.body['next-page']);
-    } else {
-      next();
-    }
-  });
-
 // copy the const name and the file path to new version
 const newclaims = require('./routes/newclaims');
 const newclaims2 = require('./routes/newclaims2');
