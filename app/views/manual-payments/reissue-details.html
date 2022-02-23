@@ -25,7 +25,6 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './_bar-returned.html' %}
 
-          <form method="post" action="payment-frequency">
 
             {{ govukBackLink({
               text: "Back",
@@ -34,7 +33,10 @@ GOV.UK Prototype Kit
 
 
             <br><br>
-            <h2 class="govuk-heading-l">Payment details</h2>
+            <h2 class="govuk-heading-xl">A returned payment matches the dates you entered</h2>
+
+
+            <h2 class="govuk-heading-m">Payment details</h2>
 
             <div class="govuk-form-group">
 
@@ -64,7 +66,7 @@ GOV.UK Prototype Kit
                 </tbody>
               </table>
 
-              <h2 class="govuk-heading-m">Account the payment was  to</h2>
+              <h2 class="govuk-heading-m">Account the payment was to</h2>
               <dl class="app-check-your-answers app-check-your-answers--short">
                   <table class="govuk-table">
                   <tbody class="govuk-table__body">
@@ -89,11 +91,11 @@ GOV.UK Prototype Kit
   <fieldset class="govuk-fieldset" aria-describedby="reissue-payment-1-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
       <h1 class="govuk-fieldset__heading">
-        Is this the payment you wanna to re-issue?
+        Do you want to re-issue this payment?
       </h1>
     </legend>
     <div id="reissue-payment-1-hint" class="govuk-hint">
-      Hinty hint hint...
+      If you select yes, this will be sent as a faster payment
     </div>
     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
       <div class="govuk-radios__item">
@@ -103,8 +105,8 @@ GOV.UK Prototype Kit
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="reissue-payment-1-2" name="reissue-payment-1" type="radio" value="no">
-        <label class="govuk-label govuk-radios__label" for="reissue-payment-1-2">
+        <input class="govuk-radios__input" id="reissue-payment-1" name="reissue-payment-1" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="reissue-payment-1">
           No
         </label>
       </div>
@@ -143,7 +145,7 @@ GOV.UK Prototype Kit
             <span class="govuk-visually-hidden">
             </span>
             <span class="app-timeline__date">
-                21 January 2021
+                27 January 2021
             </span>
           </p>
         </li>
@@ -157,7 +159,7 @@ GOV.UK Prototype Kit
               <span class="govuk-visually-hidden">
               </span>
               <span class="app-timeline__date">
-                  19 January 2021
+                  24 January 2021
               </span>
             </p>
           </li>
