@@ -24,7 +24,7 @@ GOV.UK Prototype Kit
 
         <form method="post" action="get-a-task-complete">
 
-<p>SWIs for the question set and NURS to get the answers to check
+<p>Refer to the SWIs for the questions and to NURS to check the claimant's answers
 </p>
 
 
@@ -33,31 +33,40 @@ GOV.UK Prototype Kit
             <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 <h1 class="govuk-fieldset__heading">
-                  Did they get it right?
+                  What was the outcome of the call?
                 </h1>
               </legend>
               <div id="changed-name-hint" class="govuk-hint">
-                Hinty hint
+               
               </div>
               <div class="govuk-radios govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
                   <label class="govuk-label govuk-radios__label" for="changed-name">
-                    Pass
+                    Passed
                   </label>
                 </div>
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
                   <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                    Fail
+                    Failed
                   </label>
                 </div>
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
                   <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                    Unable to contact citizen, or they won't answer Qs
+                    Refused to answer
                   </label>
                 </div>
+                <div class="govuk-radios__divider">or</div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                    Could not reach claimant by phone
+                  </label>
+                </div>
+
+
               </div>
             </fieldset>
 
