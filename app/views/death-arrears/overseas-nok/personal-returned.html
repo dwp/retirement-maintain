@@ -7,62 +7,49 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
-{% include './_header-nav-enquiries.html' %}
+
+{% include 'includes/header/_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
-{% include './_find-someone-enquiries.html' %}
 
 <div class="govuk-width-container">
+
+    <div class="govuk-grid-column-full">
+
+
+<br><Br>
+
+  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__header">
+      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+        Success
+      </h2>
+    </div>
+    <div class="govuk-notification-banner__content">
+      <h3 class="govuk-notification-banner__heading">
+        Payment marked as returned
+      </h3>
+    </div>
+  </div>
+
+  </div>
+
+
   <div class="govuk-grid-column-two-thirds">
 
     <main id="content" role="main">
       <div class="grid-row">
-        <div class="column-full">
 
+          {% include 'includes/_bar-returned.html' %}
 
-          <br><br>
-          {% include './_bar-dead.html' %}
-
-          <div class="govuk-warning-text">
-            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-            <strong class="govuk-warning-text__text">
-              <span class="govuk-warning-text__assistive">Warning</span>
-             Awaiting details of the person dealing with the estate <br>
-              <a href="dead-name">
-                Enter details
-              </a>
-            </strong>
-          </div>
-
-          <div class="govuk-warning-text">
-            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-            <strong class="govuk-warning-text__text">
-              <span class="govuk-warning-text__assistive">Warning</span>
-             Awaiting details of the person dealing with the estate <br>
-              <a href="dead-name">
-                Enter details
-              </a>
-            </strong>
-          </div>
-
-          {% include './_tab-overview.html' %}
-
-
-
-
+          {% include 'includes/tabs/_tab-overview-returned.html' %}
         </div>
-      </div>
     </main>
 
-    </br>
-    </br>
+    <br>
+    <br>
 
     <div>
       <h2 class="govuk-heading-m">Personal details</h2>
@@ -70,7 +57,7 @@ GOV.UK Prototype Kit
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header" style="width: 50%" >Full name</th>
-            <td class="govuk-table__cell" style="width: 50%">Ken Adams</td>
+            <td class="govuk-table__cell" style="width: 50%">Mark Rooney</td>
             <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
               Change
             </a></td>
@@ -89,25 +76,22 @@ GOV.UK Prototype Kit
             <th scope="row" class="govuk-table__header">State Pension date </th>
             <td class="govuk-table__cell">10 April 2019 </td>
             <td class="govuk-table__cell"></td>
-          </tr>         
+          </tr>
           <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Marital status </th>
               <td class="govuk-table__cell">Never been married</td>
               <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
                   Change
                 </a></td>
-            </tr>       
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Date of death </th>
-              <td class="govuk-table__cell">4 April 2020</td>
-              <td class="govuk-table__cell"><span class="verified-badge verified"><b>Verified</b></span></td>
-            </tr>  
+            </tr>
 
         </tbody>
       </table>
 
     </div>
-  
+    <a class="govuk-body" href="death-date">
+      Stop State Pension
+    </a>
   </div>
 
 
@@ -121,12 +105,13 @@ GOV.UK Prototype Kit
     <ol class="app-timeline">
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-          Date of death - verified
+          No changes made
         </h3>
 
         <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">No changes made</span>
           <span class="app-timeline__date">
-            5 April 2020
+
           </span>
         </p>
       </li>
