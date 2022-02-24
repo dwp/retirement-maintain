@@ -17,6 +17,7 @@ GOV.UK Prototype Kit
 <div class="govuk-width-container">
   <div class="govuk-grid-column-two-thirds">
 
+    <form method="post" action="reissue-details">
     <main id="content" role="main">
       <div class="grid-row">
         <div class="column-full">
@@ -25,9 +26,13 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './_bar-returned.html' %}
 
-          <form method="post" action="reissue-details">
 
-            <a href="payment-returned" class="govuk-back-link">Back</a>
+            {{ govukBackLink({
+              text: "Back",
+              href: "javascript:history.go(-1)"
+                              }) }}
+
+
             <br><br>
             <h2 class="govuk-heading-l">Manual payment details</h2>
 
@@ -128,22 +133,30 @@ GOV.UK Prototype Kit
 
 
 
-<br><br>
+          <br><br>
             <button class="govuk-button" data-module="govuk-button">
               Continue
             </button>
 
+
+
+            </div>
+
+
         </div>
       </div>
-    </main>
 
   </div>
 
+  <div class="govuk-grid-column-one-third">
+<br><br><br>
 
+
+  </div>
 
 </div>
 
-
+</form>
 
 {% endblock %}
 
