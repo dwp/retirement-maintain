@@ -10,4 +10,18 @@ router.post('/manual-payments/returned-payment', function(req, res) {
 
 });
 
+router.post('/manual-payments/manual-payment', (req, res) => {
+  res.redirect('/manual-payments/reissue-details')
+})
+;
+
+router.post('/manual-payments/reissue-details', function(req, res) {
+  if ( req.body['reissue'] === 'yes' ) {
+    res.redirect('reissue-payment');
+  } if ( req.body['reissue'] === 'no' ) {
+    res.redirect('manual-payment');
+  }
+
+});
+
   module.exports = router
