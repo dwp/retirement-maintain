@@ -37,9 +37,6 @@ GOV.UK Prototype Kit
 
                 <h1 class="govuk-heading-l">Reissue payment with CPS Local faster payments</h1>
 
-                <div id="more-detail-hint" class="govuk-hint">
-                  Confirming that the payment has been reissued will restart regular payments to this account
-                </div>
 
                 <br>
 
@@ -117,14 +114,19 @@ GOV.UK Prototype Kit
     {% endif %}
   </tbody>
 </table>
+<br>
 
 
 
 
-              <button class="govuk-button" data-module="govuk-button">
-                Confirm payment reissued
-              </button>
 
+
+
+              <div class="govuk-inset-text">Confirm that the payment has been reissued to restart regular payments
+                            </div>
+                            <button class="govuk-button" data-module="govuk-button">
+                              Confirm payment reissued
+                            </button>
             </div>
 
 </form>
