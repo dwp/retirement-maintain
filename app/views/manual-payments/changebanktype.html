@@ -23,15 +23,15 @@ GOV.UK Prototype Kit
 
 
           <br><br>
-          {% include './_bar.html' %}
+          {% include './_bar-returned.html' %}
 
-<form method="post">
+<form method="post" action="change-bank">
 
   {{ govukBackLink({
     text: "Back",
     href: "javascript:history.go(-1)"
                     }) }}
-                    
+
           <br><br>
           <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">

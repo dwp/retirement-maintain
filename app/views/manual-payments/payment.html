@@ -44,23 +44,48 @@ GOV.UK Prototype Kit
 
           <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header" style="width: 45%">Account holder</th>
-          <td class="govuk-table__cell" style="width: 45%"> Mr M Rooney</td>
+          <td class="govuk-table__cell" style="width: 45%">
+            {% if data['name-on-the-account'] %}
+            {{data['name-on-the-account']}}
+            {% else %}
+            Mr M Rooney
+            {% endif %}</td>
           <td class="govuk-table__cell" style="width: 10%"></td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Sort code </th>
-          <td class="govuk-table__cell">54 76 98 </td>
+          <td class="govuk-table__cell">
+            {% if data['sort-code'] %}
+            {{data['sort-code']}}
+            {% else %}
+            54 76 98
+            {% endif %}</td>
           <td class="govuk-table__cell"></td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Account number</th>
-          <td class="govuk-table__cell">98765409</td>
+          <td class="govuk-table__cell">
+            {% if data['account-number'] %}
+            {{data['account-number']}}
+            {% else %}
+            98765409
+            {% endif %}</td>
           <td class="govuk-table__cell"></td>
         </tr>
 
+        {% if data['roll-number'] %}
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Building society roll or reference number</th>
+          <td class="govuk-table__cell">
+            {{data['roll-number']}}</td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        {% else %}
 
+        {% endif %}
       </tbody>
     </table>
+    
 <br>
     <h2 class="govuk-heading-m">Payment details</h2>
     <br>

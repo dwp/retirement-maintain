@@ -13,8 +13,8 @@ router.post('/manual-payments/returned-payment', function(req, res) {
 router.post('/manual-payments/reissue-details', function(req, res) {
   if ( req.body['reissue-payment-1'] === 'yes' ) {
     res.redirect('reissue-payment');
-  } if ( req.body['reissue-payment-1'] === 'no' ) {
-    res.redirect('payment-details-2');
+  } if ( req.body[''] === 'no' ) {
+    res.redirect('');
   }
 
 });
