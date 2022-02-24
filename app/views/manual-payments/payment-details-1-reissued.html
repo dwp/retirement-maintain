@@ -58,7 +58,7 @@ GOV.UK Prototype Kit
                   </tr>
                   <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">Status</td>
-                    <td class="govuk-table__cell">Sent</td>
+                    <td class="govuk-table__cell">Paid</td>
                     <td class="govuk-table__cell"> <a href=>Mark as returned</a>
                     </td>
                   </tr>
@@ -67,22 +67,53 @@ GOV.UK Prototype Kit
 
               <h2 class="govuk-heading-m">Account the payment was  to</h2>
               <dl class="app-check-your-answers app-check-your-answers--short">
-                  <table class="govuk-table">
+                <table class="govuk-table">
                   <tbody class="govuk-table__body">
+
                       <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" scope="row" style="width: 43%">Account holder </td>
-                        <td class="govuk-table__cell">Mr M Rooney</td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                          <td class="govuk-table__cell" scope="row">Account number</td>
-                          <td class="govuk-table__cell">98765409</td>
-                        </tr>
-                        <tr class="govuk-table__row">
-                            <td class="govuk-table__cell" scope="row">Sort code</td>
-                            <td class="govuk-table__cell">54 76 98</td>
-                          </tr>
-                    </tbody>
-                  </table>
+                      <th scope="row" class="govuk-table__header" style="width: 45%">Account holder</th>
+                      <td class="govuk-table__cell" style="width: 45%">
+                        {% if data['name-on-the-account'] %}
+                        {{data['name-on-the-account']}}
+                        {% else %}
+                        Mr M rooney
+                        {% endif %}</td>
+                      <td class="govuk-table__cell" style="width: 10%"></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Sort code </th>
+                      <td class="govuk-table__cell">
+                        {% if data['sort-code'] %}
+                        {{data['sort-code']}}
+                        {% else %}
+                        54 76 98
+                        {% endif %}</td>
+                      <td class="govuk-table__cell"></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Account number</th>
+                      <td class="govuk-table__cell">
+                        {% if data['account-number'] %}
+                        {{data['account-number']}}
+                        {% else %}
+                        98765409
+                        {% endif %}</td>
+                      <td class="govuk-table__cell"></td>
+                    </tr>
+
+                    {% if data['roll-number'] %}
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Building society roll or reference number</th>
+                      <td class="govuk-table__cell">
+                        {{data['roll-number']}}</td>
+                      <td class="govuk-table__cell"></td>
+                    </tr>
+                    {% else %}
+
+                    {% endif %}
+                  </tbody>
+                </table>
+
 
 
             </div>
