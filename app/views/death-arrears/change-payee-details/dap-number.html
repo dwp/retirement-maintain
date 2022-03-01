@@ -1,22 +1,17 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
-  {% include "includes/cookie-banner.html" %}
-  {# Set serviceName in config.js. #}
-  {{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
 
-  {% block headEnd %}
-    {% include 'includes/remove-blue-bar.html' %}
-  {% endblock %}
+{% include 'includes/header/_header-nav-unselected.html' %}
 
-  {% include './_find-someone.html' %}
+{% block headEnd %}
+{% endblock %}
 
   <div class="govuk-width-container">
 
@@ -28,7 +23,7 @@
           <div class="grid-row">
             <div class="column-full">
 
-              {% include './_rachel-smith.html' %}
+              {% include 'includes/_bar.html' %}
 
 
             </div>
@@ -37,15 +32,17 @@
 
         
 
-        <div>
-          <a href="death-date" class="govuk-back-link">Back</a>
-        </div>
-        <br>
+        {{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    }) 
+  }}
+        <br><br>
         <form action="dap-address" method="post" class="form">
-          <h1 class="govuk-heading-l">Phone number of the person dealing with Rachel's estate</h1>
+          <h1 class="govuk-heading-l">Phone number of the person dealing with Mark's estate</h1>
           <div class="govuk-form-group">
             <label class="govuk-label" for="event-name">
-              Phone number
+            
             </label>
             <input class="govuk-input govuk-input--width-30" id="event-name" name="event-name" type="text">
           </div>

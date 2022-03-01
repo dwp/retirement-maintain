@@ -1,22 +1,17 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
-  {% include "includes/cookie-banner.html" %}
-  {# Set serviceName in config.js. #}
-  {{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
 
-  {% block headEnd %}
-    {% include 'includes/remove-blue-bar.html' %}
-  {% endblock %}
+{% include 'includes/header/_header-nav-unselected.html' %}
 
-  {% include './_find-someone.html' %}
+{% block headEnd %}
+{% endblock %}
 
   <div class="govuk-width-container">
 
@@ -29,15 +24,15 @@
           <path d="M25,6.2L8.7,23.2L0,14.1l4-4.2l4.7,4.9L21,2L25,6.2z" /></svg>
           
           <div class="moj-banner__message">
-          <span class="moj-banner__assistive">Success</span>Arrears calculated – awaiting payee details </div>
+          <span class="moj-banner__assistive">Success</span>Arrears calculated - awaiting payee details</div>
           
           </div> 
         <main id="content" role="main">
           <div class="grid-row">
             <div class="column-full">
 
-              {% include './_bar-dead.html' %}
-              
+              {% include 'includes/_bar-dead-rooney.html' %}
+
               <div class="govuk-warning-text">
                 <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
                 <strong class="govuk-warning-text__text">
@@ -48,8 +43,8 @@
                   </a>
                 </strong>
               </div>
-
-              {% include './_tab-overview.html' %}
+              
+              {% include 'includes/_tab-overview.html' %}
 
             </div>
           </div>
@@ -64,7 +59,7 @@
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Full name</th>
-              <td class="govuk-table__cell">Rachel Smith</td>
+              <td class="govuk-table__cell">Mark Rooney</td>
               <td class="govuk-table__cell"></td>
             </tr>
             <tr class="govuk-table__row">
@@ -84,7 +79,7 @@
             </tr>
               <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Date of death</th>
-                  <td class="govuk-table__cell">10 February 2020</td>
+                  <td class="govuk-table__cell">10 February 2019</td>
                   <td class="govuk-table__cell"> 
                       <span  style="margin-left: 20%" class="verified-badge verified">
                           <b>Verified</b>
@@ -107,36 +102,18 @@
       Personal changes
     </h2>
     <ol class="app-timeline">
-        <li class="app-timeline__entry">
-            <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-              Arrears calculated - awaiting payee details
-            </h3>
-    
-            <p class="app-timeline__info govuk-!-margin-bottom-0">
-              <span class="govuk-visually-hidden">Date of death - verified</span>
-              <span class="app-timeline__date">17 February 2020</span>
-            </p>
-          </li>
-        <li class="app-timeline__entry">
-            <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-              Date of death - verified
-            </h3>
-    
-            <p class="app-timeline__info govuk-!-margin-bottom-0">
-              <span class="govuk-visually-hidden">Date of death - verified</span>
-              <span class="app-timeline__date">14 February 2020</span>
-            </p>
-          </li>
+      
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-          Date of death - not verified
+          Arrears calculated - awaiting payee details
         </h3>
 
         <p class="app-timeline__info govuk-!-margin-bottom-0">
-          <span class="govuk-visually-hidden">Date of death - verified</span>
+          <span class="govuk-visually-hidden">Arrears calculated - awaiting payee details</span>
           <span class="app-timeline__date">12 February 2020</span>
         </p>
       </li>
+     
     </ol>
 
   </div>
