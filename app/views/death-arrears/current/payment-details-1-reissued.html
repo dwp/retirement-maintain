@@ -8,7 +8,7 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './header/_header-nav-unselected.html' %}
+{% include 'includes/header/_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -17,15 +17,15 @@ GOV.UK Prototype Kit
 <div class="govuk-width-container">
   <div class="govuk-grid-column-two-thirds">
 
-<form method="post">
     <main id="content" role="main">
       <div class="grid-row">
         <div class="column-full">
 
 
           <br><br>
-          {% include './_bar-returned.html' %}
+          {% include 'includes/_bar.html' %}
 
+          <form method="post" action="payment-frequency">
 
             {{ govukBackLink({
               text: "Back",
@@ -33,13 +33,8 @@ GOV.UK Prototype Kit
                               }) }}
 
 
-          
-
-            <div class="govuk-inset-text">
-              A returned payment matches the dates you entered
-            </div>
-
-            <h2 class="govuk-heading-m">Returned payment details</h2>
+            <br><br>
+            <h2 class="govuk-heading-l">Payment details</h2>
 
             <div class="govuk-form-group">
 
@@ -52,57 +47,43 @@ GOV.UK Prototype Kit
                   <th class="govuk-table__header" scope="col" style="width: 43%">Total</th>
                   <th class="govuk-table__header" scope="col">£650.72</th>
                   <th class="govuk-table__header" scope="col"></th>
+
                 </thead>
 
                 <tbody class="govuk-table__body">
                   <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">Period</td>
-                    <td class="govuk-table__cell">27 Jan 2022 to <br>23 Feb 2022</td>
+                    <td class="govuk-table__cell">29 December 2020 to <br>26 January 2021</td>
                     <th class="govuk-table__header" scope="col"></th>
                   </tr>
                   <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">Status</td>
-                    <td class="govuk-table__cell">Returned</td>
-                    <td class="govuk-table__cell">
+                    <td class="govuk-table__cell">Sent</td>
+                    <td class="govuk-table__cell"> <a href=>Mark as returned</a>
                     </td>
                   </tr>
                 </tbody>
               </table>
 
-                  <br>
+              <h2 class="govuk-heading-m">Account the payment was  to</h2>
+              <dl class="app-check-your-answers app-check-your-answers--short">
+                  <table class="govuk-table">
+                  <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell" scope="row" style="width: 43%">Account holder </td>
+                        <td class="govuk-table__cell">Mr M Rooney</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                          <td class="govuk-table__cell" scope="row">Account number</td>
+                          <td class="govuk-table__cell">98765409</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell" scope="row">Sort code</td>
+                            <td class="govuk-table__cell">54 76 98</td>
+                          </tr>
+                    </tbody>
+                  </table>
 
-                  <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="reissue-hint">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-      <h1 class="govuk-fieldset__heading">
-        Do you want to reissue this payment?
-      </h1>
-      <div id="changed-name-hint" class="govuk-hint">
-        If you select yes, this will be sent as a faster payment.
-      </div>
-    </legend>
-    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="reissue" name="reissue" type="radio" value="yes">
-        <label class="govuk-label govuk-radios__label" for="reissue">
-          Yes
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="reissue" name="reissue" type="radio" value="no">
-        <label class="govuk-label govuk-radios__label" for="reissue-2">
-          No
-        </label>
-      </div>
-    </div>
-
-  </fieldset>
-</div>
-
-<br>
-<button class="govuk-button" data-module="govuk-button">
-Continue
-</button>
 
             </div>
 
@@ -120,6 +101,35 @@ Continue
       Status changes
     </h2>
     <ol class="app-timeline">
+
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Paid with CPS Local faster payments
+        </h3>
+
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">
+          </span>
+          <span class="app-timeline__date">
+              27 January 2021
+          </span>
+        </p>
+      </li>
+
+      <li class="app-timeline__entry">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+            Sent with CPS Local faster payments
+          </h3>
+
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">
+            </span>
+            <span class="app-timeline__date">
+                27 January 2021
+            </span>
+          </p>
+        </li>
+
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
             Returned
@@ -129,7 +139,7 @@ Continue
             <span class="govuk-visually-hidden">
             </span>
             <span class="app-timeline__date">
-                24 February 2022
+                27 January 2021
             </span>
           </p>
         </li>
@@ -143,7 +153,7 @@ Continue
               <span class="govuk-visually-hidden">
               </span>
               <span class="app-timeline__date">
-                  22 February 2022
+                  25 January 2021
               </span>
             </p>
           </li>
@@ -154,7 +164,7 @@ Continue
 
 </div>
 
-</form>
+
 
 {% endblock %}
 
