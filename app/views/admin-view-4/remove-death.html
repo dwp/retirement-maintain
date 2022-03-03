@@ -21,7 +21,7 @@ GOV.UK Prototype Kit
   <div class="govuk-grid-column-full">
 
 
-            {% include './name-bar/_bar-jose.html' %}
+            {% include './name-bar/_bar-jose-dead.html' %}
 
              {{ govukBackLink({
                 text: "Back",
@@ -31,24 +31,25 @@ GOV.UK Prototype Kit
               <br><br>
 
                  <h1 class="govuk-heading-l">
-                  Confirm you want to remove the date of death</h1>
+                  Confirm you want to remove <br>the date of death</h1>
 
                 <p>Removing the date of death will:</p>
 
                 <ul class="govuk-list govuk-list--bullet">
-                  <li>restart payments</li>
-                  <li>archive their account on the GySP system</li>
+                  <li>calculate any arrears owed</li>
+                  <li>restart payments to the claimant</li>
                 </ul>
 
-                <div class="govuk-warning-text">
+               <!--  <div class="govuk-warning-text">
                   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
                   <strong class="govuk-warning-text__text">
                     <span class="govuk-warning-text__assistive">Warning</span>
-                    This action cannot be undone
+                    This action cannot be undone?<br>
+                    (Not sure if we need this or red button)
                   </strong>
-                </div>
-                <a href="personal-deleted.html" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button">
-                  Remove claimant
+                </div> -->
+                <a href="remove-death-arrears" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button">
+                  Remove date of death
                 </a>
 
 
