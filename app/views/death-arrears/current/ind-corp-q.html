@@ -43,6 +43,7 @@ GOV.UK Prototype Kit
 
 
           <br><br>
+          <form method="post" class="form" >
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -79,6 +80,7 @@ GOV.UK Prototype Kit
            </form>
         </div>
       </div>
+      
     </main>
 
  
@@ -86,21 +88,18 @@ GOV.UK Prototype Kit
 </div>
 
 
-
 {% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-  </div>
+<div class="govuk-grid-column-two-thirds"></div>
 </div>
 
 <script>
     nextPageRoutes = {
-        'individual': '#',
-        'corp-ref-no': '#',
-        'corp-ref-yes': '#',
+        'individual': 'dap-name',
+        'corp-ref-no': 'dap-name-corporate-dap',
+        'corp-ref-yes': 'dap-name-corporate-dap',
         }
 </script>
 
