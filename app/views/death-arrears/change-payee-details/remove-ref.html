@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+              {% include 'includes/_bar.html' %}
+
+
+            </div>
+          </div>
+        </main>
+
+        
+
+        {{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    }) 
+  }}
+        <br><br>
+        <form method="post" class="form">
+          <h2 class="govuk-heading-l">Are you sure you want to remove this reference number?</h2>
+<p>
+  SS-MROO<br>
+   
+
+
+    <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="remove-address" name="remove-address" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="remove-address">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="remove-address-2" name="remove-address" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="remove-address">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div><br>                
+
+          <button type="submit" class="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</main>
+</div>
+</div>
+
+<script>
+    nextPageRoutes = {
+        'yes': 'send-letter-corporate-dap-none',
+        'no': 'send-letter-corporate-dap',
+        }
+</script>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds"></div>
+</div>
+
+{% endblock %}

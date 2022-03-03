@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+              {% include 'includes/_bar.html' %}
+
+
+            </div>
+          </div>
+        </main>
+
+        
+
+        {{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    }) 
+  }}
+        
+          
+
+
+
+          <br><br>
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        What are they?
+      </h1>
+    </legend>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="individual">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          Individual
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="corp-ref-no">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          Corporate without reference
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="corp-ref-yes">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Corporate with reference
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+
+          <button type="submit" class="govuk-button">Continue</button>
+           </form>
+        </div>
+      </div>
+    </main>
+
+ 
+</div>
+</div>
+
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+<script>
+    nextPageRoutes = {
+        'individual': '#',
+        'corp-ref-no': '#',
+        'corp-ref-yes': '#',
+        }
+</script>
+
+{% endblock %}
