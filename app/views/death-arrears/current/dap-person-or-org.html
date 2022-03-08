@@ -30,39 +30,38 @@ GOV.UK Prototype Kit
           </div>
         </main>
 
-        
+
 
         {{ govukBackLink({
       "text": "Back",
       "href": "javascript: window.history.go(-1)"
-    }) 
+    })
   }}
-        
-          
+
+
 
 
 
           <br><br>
-          <form method="post">
+          <form method="post" class="form" >
 <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="dap-details-hint">
+  <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
-      Do you have the reference number of the corporate death arrears payee?
+        Is a person or an organisation dealing with Mark's estate?
       </h1>
     </legend>
-    <br>
-    <div class="govuk-radios govuk-radios--inline">
+    <div class="govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="dap-details" name="dap-details" type="radio" value="yes">
-        <label class="govuk-label govuk-radios__label" for="dap-details">
-          Yes
+        <input class="govuk-radios__input" id="corp-ref" name="corp-ref" type="radio" value="individual">
+        <label class="govuk-label govuk-radios__label" for="corp-ref">
+          Person
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="dap-details-2" name="dap-details" type="radio" value="no">
-        <label class="govuk-label govuk-radios__label" for="dap-details-2">
-          No
+        <input class="govuk-radios__input" id="corp-ref-2" name="corp-ref" type="radio" value="corp-ref">
+        <label class="govuk-label govuk-radios__label" for="corp-ref-2">
+          Organisation
         </label>
       </div>
     </div>
@@ -75,27 +74,25 @@ GOV.UK Prototype Kit
            </form>
         </div>
       </div>
+
     </main>
 
- 
-</div>
-</div>
 
+</div>
+</div>
 
 
 {% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-  </div>
+<div class="govuk-grid-column-two-thirds"></div>
 </div>
 
 <script>
     nextPageRoutes = {
-        'yes': 'corporate-dap-ref',
-        'no': 'nothing-owed-corporate-dap',
+        'individual': 'dap-name',
+        'corp-ref': 'dap-name-corporate-dap',
         }
 </script>
 
