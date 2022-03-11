@@ -46,12 +46,12 @@ GOV.UK Prototype Kit
           <form method="post">
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="dap-details-hint">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-      <h1 class="govuk-fieldset__heading">
-      Do the organisation who are dealing with Mark's estate have a reference number?
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <span class="govuk-caption-l">Organisation dealing with Mark's estate</span>
+      <h1 class="govuk-heading-l">
+      Do the organisation have a reference number?
       </h1>
     </legend>
-    <br>
     <div class="govuk-radios govuk-radios--inline">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="dap-details" name="dap-details" type="radio" value="yes">
@@ -94,7 +94,7 @@ GOV.UK Prototype Kit
 
 <script>
     nextPageRoutes = {
-        'yes': 'corporate-dap-ref',
+        'yes': 'org-dap-ref',
         'no': 'nothing-owed-corporate-dap',
         }
 </script>

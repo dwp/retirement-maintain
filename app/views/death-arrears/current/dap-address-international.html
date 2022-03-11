@@ -30,50 +30,58 @@ GOV.UK Prototype Kit
           </div>
         </main>
 
-        
+
 
         {{ govukBackLink({
       "text": "Back",
       "href": "javascript: window.history.go(-1)"
-    }) 
+    })
   }}
-        
+
      <form action="nothing-owed">
 
           <br><br>
-          <h2 class="govuk-heading-l">International address</h2>
+          <span class="govuk-caption-l">Person dealing with Mark's estate</span>
+          <h1 class="govuk-heading-l">Non-UK address</h1>
 
 
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="address-line-1">
-              Address line 1<span class="govuk-visually-hidden">line 1 of 2</span>
-            </label>
-            <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+             <div class="govuk-form-group">
+               <label class="govuk-label" for="address-line-1">
+                 Address line 1<span class="govuk-visually-hidden">line 1 of 5</span>
+               </label>
+               <div id="line-1-hint" class="govuk-hint">
+               Apartment and building name
+                </div>
+               <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
 
-            <br><br>
-            <label class="govuk-label" for="address-line-1">
-              Address line 2<span class="govuk-visually-hidden">line 1 of 2</span>
-            </label>
-            <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
-            <br><br>
+               <br><br>
+               <label class="govuk-label" for="address-line-1">
+                 Address line 2<span class="govuk-visually-hidden">line 2 of 5</span>
+                 <div id="line-2-hint" class="govuk-hint">
 
-            <label class="govuk-label" for="address-line-1">
-              Address line 3<span class="govuk-visually-hidden">line 1 of 2</span>
-            </label>
-            <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
-            <br><br>
+                 Property name or number and street address
+                  </div>
+               </label>
+               <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+               <br><br>
 
-            <label class="govuk-label" for="address-line-1">
-              Address line 4<span class="govuk-visually-hidden">line 1 of 2</span>
-            </label>
-            <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+               <label class="govuk-label" for="address-line-1">
+                 City<span class="govuk-visually-hidden">line 3 of 5</span>
+               </label>
+               <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+               <br><br>
 
-            <br><br>
-            <label class="govuk-label" for="address-line-1">
-              Address line 5<span class="govuk-visually-hidden">line 1 of 2</span>
-            </label>
-            <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
-          </div>
+               <label class="govuk-label" for="address-line-1">
+                 State, province or region<span class="govuk-visually-hidden">line 4 of 5</span>
+               </label>
+               <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+
+               <br><br>
+               <label class="govuk-label" for="address-line-1">
+                 Zip or postal code<span class="govuk-visually-hidden">line 5 of 5</span>
+               </label>
+               <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+             </div>
 
 
 
@@ -83,13 +91,13 @@ GOV.UK Prototype Kit
             <label class="govuk-label" for="address-country">
               Country
             </label>
-            
-          
 
 
-            
-           
-              
+
+
+
+
+
                       {% set addresses = [
                   'Select country',
                   'Afghanistan',

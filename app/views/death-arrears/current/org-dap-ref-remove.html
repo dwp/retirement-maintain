@@ -30,19 +30,20 @@ GOV.UK Prototype Kit
           </div>
         </main>
 
-        
+
 
         {{ govukBackLink({
       "text": "Back",
       "href": "javascript: window.history.go(-1)"
-    }) 
+    })
   }}
         <br><br>
         <form method="post" class="form">
-          <h2 class="govuk-heading-l">Are you sure you want to remove this reference number?</h2>
-<p>
-  SS-MROO<br>
-   
+          <div class="govuk-inset-text">
+          <h1 class="govuk-heading-l">SS-MROO</h1></div>
+              <h2 class="govuk-heading-m">Are you sure you want to remove this reference number?</h2>
+
+
 
 
     <div class="govuk-form-group">
@@ -62,7 +63,7 @@ GOV.UK Prototype Kit
             </div>
           </div>
         </fieldset>
-      </div><br>                
+      </div><br>
 
           <button type="submit" class="govuk-button">
             Continue
@@ -84,7 +85,7 @@ GOV.UK Prototype Kit
 <script>
     nextPageRoutes = {
         'yes': 'send-letter-corporate-dap-none',
-        'no': 'send-letter-corporate-dap',
+        'no': 'org-dap-send-letter',
         }
 </script>
 

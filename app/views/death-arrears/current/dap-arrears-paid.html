@@ -18,7 +18,13 @@ GOV.UK Prototype Kit
     <main class="govuk-main-wrapper">
 
       <div class="govuk-grid-column-two-thirds">
-        <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+<div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
   <div class="govuk-notification-banner__header">
     <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
       Success
@@ -26,31 +32,28 @@ GOV.UK Prototype Kit
   </div>
   <div class="govuk-notification-banner__content">
     <h3 class="govuk-notification-banner__heading">
-<<<<<<< Updated upstream
-      Verified date of death - account closed
-=======
-      Date of death updated - payments stopped
->>>>>>> Stashed changes
+      Arrears paid - account closed
     </h3>
-
+    
   </div>
 </div>
-        <main id="content" role="main">
-          <div class="grid-row">
-            <div class="column-full">
+
 
               {% include 'includes/_bar-dead-rooney.html' %}
 
 
-
+ 
+              
               {% include 'includes/_tab-overview.html' %}
+
+<br><br>
+
+
 
             </div>
           </div>
         </main>
 
-      </br>
-    </br>
 
     <div>
       <h2 class="govuk-heading-m">Personal details</h2>
@@ -60,7 +63,7 @@ GOV.UK Prototype Kit
               <th scope="row" class="govuk-table__header">Full name</th>
               <td class="govuk-table__cell">Mark Rooney</td>
               <td class="govuk-table__cell"><a class="govuk-link" href="#">Change</td>
-           </tr>
+            </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">National Insurance number</th>
               <td class="govuk-table__cell">QQ 12 34 56 X</td>
@@ -76,7 +79,7 @@ GOV.UK Prototype Kit
               <td class="govuk-table__cell">12 December 2017	</td>
               <td class="govuk-table__cell"></td>
             </tr>
-              <tr class="govuk-table__row">
+            <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Marital status</th>
               <td class="govuk-table__cell">Never been married</td>
               <td class="govuk-table__cell"><a class="govuk-link" href="#">Change</td>
@@ -84,13 +87,11 @@ GOV.UK Prototype Kit
               <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Date of death</th>
                   <td class="govuk-table__cell">10 February 2019</td>
-                  <td class="govuk-table__cell">
+                  <td class="govuk-table__cell"> 
                       <span  style="margin-left: 20%" class="verified-badge verified">
                           <b>Verified</b>
                         </span> </td>
                 </tr>
-
-
           </tbody>
         </table>
 
@@ -99,40 +100,37 @@ GOV.UK Prototype Kit
     </div>
 
   </div>
-<br><br><br><br>
+
   <div class="govuk-grid-column-one-third">
 
     <h2 class="govuk-heading-m">
       Personal changes
     </h2>
     <ol class="app-timeline">
-
+      
+      
       <li class="app-timeline__entry">
-        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-          Verified date of death - account closed
-        </h3>
-
-        <p class="app-timeline__info govuk-!-margin-bottom-0">
-          <span class="govuk-visually-hidden">Arrears calculated - awaiting payee details</span>
-          <span class="app-timeline__date">8 October 2019</span>
-        </p>
-      </li>
-<<<<<<< Updated upstream
-     
-=======
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+            Arrears paid - account closed
+          </h3>
+  
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">Date of death - verified</span>
+            <span class="app-timeline__date">8 October 2019</span>
+          </p>
+        </li>
 
  <li class="app-timeline__entry">
-        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-          Date of death - verified
-        </h3>
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+            Arrears calculated - awaiting payee details
+          </h3>
+  
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">Date of death - verified</span>
+            <span class="app-timeline__date">8 October 2019</span>
+          </p>
+        </li>
 
-        <p class="app-timeline__info govuk-!-margin-bottom-0">
-          <span class="govuk-visually-hidden">Arrears calculated - awaiting payee details</span>
-          <span class="app-timeline__date">12 February 2019</span>
-        </p>
-      </li>
-
->>>>>>> Stashed changes
     </ol>
 
   </div>
