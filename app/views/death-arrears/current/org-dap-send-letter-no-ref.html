@@ -30,15 +30,17 @@ GOV.UK Prototype Kit
           </div>
         </main>
 
-        
+
 
         {{ govukBackLink({
       "text": "Back",
       "href": "javascript: window.history.go(-1)"
-    }) 
+    })
   }}
         <br><br>
       <form action="overview-death-verified" method="post" class="form">
+        <span class="govuk-caption-l">Organisation dealing with Mark's estate</span>
+
         <h1 class="govuk-heading-l">Check details and send letter</h1>
 <br>
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
@@ -97,15 +99,16 @@ GOV.UK Prototype Kit
 
         </dl>
 
-       
-          <p>A letter will be sent to this person letting them know we have updated the State Pension record and stopped any future payments.</p>
-         
+
+        <div class="govuk-inset-text">
+           This will send a letter to <strong>Smart Solicitors LTD</strong> confirming that we have updated our records and stopped any future payments.</p>
+          </div>
 <br>
-       
 
-        
 
-     
+
+
+
         <button type="submit" class="govuk-button">
           Send letter
         </button>
