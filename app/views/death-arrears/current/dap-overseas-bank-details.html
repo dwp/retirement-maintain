@@ -29,26 +29,28 @@ GOV.UK Prototype Kit
           </div>
         </main>
 
-        
+
 
         {{ govukBackLink({
       "text": "Back",
       "href": "javascript: window.history.go(-1)"
-    }) 
+    })
   }}
         <br><br>
 
         <form action="dap-overseas-bank-details-payment" method="post" class="form">
-          <h1 class="govuk-heading-l">Overseas payee bank or building society account details
+          <h1 class="govuk-heading-l">Payee's Non-UK bank or building society account details
           </h1>
-
           <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Account holder name
+            </label>
+            <input class="govuk-input govuk-input--width-10" id="bic-code" name="bic-code" type="text" spellcheck="false" aria-describedby="bic-code-hint">
+</div>          <div class="govuk-form-group">
   <label class="govuk-label" for="bic-code">
     BIC or SWIFT code
   </label>
-  <div id="bic-code-hint" class="govuk-hint">
-    Must be between 8 and 11 characters long. You can ask your bank or check your bank statement
-  </div>
+
   <input class="govuk-input govuk-input--width-10" id="bic-code" name="bic-code" type="text" spellcheck="false" aria-describedby="bic-code-hint">
 </div>
 
@@ -56,21 +58,26 @@ GOV.UK Prototype Kit
   <label class="govuk-label" for="iban">
     IBAN
   </label>
-  <div id="iban-hint" class="govuk-hint">
-    You can ask your bank or check your bank statement
-  </div>
+
   <input class="govuk-input" id="iban" name="iban" type="text" spellcheck="false" aria-describedby="iban-hint">
 </div>
 
-          
+<div class="govuk-form-group">
+
+      <div class="govuk-checkboxes__divider">or</div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="countries-5" name="countries" type="checkbox" value="none" checked data-behaviour="exclusive">
+        <label class="govuk-label govuk-checkboxes__label" for="countries-5">
+        I don't have the BIC or SWIFT code, or the IBAN
+        </label>
+      </div>
+    </div>
           <br>
 
-        <div class="govuk-button-group">
-  <button class="govuk-button" data-module="govuk-button">
+          <button type="submit" class="govuk-button">
     Continue
   </button>
 
-  <a class="govuk-link" href="dap-overseas-bank-details-manual-payment">I don't have either of these</a>
 </div>
 
         </form>
