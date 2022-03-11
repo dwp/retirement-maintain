@@ -50,17 +50,24 @@ GOV.UK Prototype Kit
             <input class="govuk-input govuk-input--width-30" id="event-name" name="event-name" type="text">
           </div>
 
-          <div class="govuk-form-group">
+          
 
-                <div class="govuk-checkboxes__divider">or</div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="countries-5" name="countries" type="ref" value="yes" checked data-behaviour="exclusive">
-                  <label class="govuk-label govuk-checkboxes__label" for="countries-5">
-                  Remove reference number
-                  </label>
-                </div>
-              </div>
 
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="countries-hint">
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+     <div class="govuk-checkboxes__divider">or</div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="countries-5" name="ref" type="checkbox" value="yes" data-behaviour="exclusive">
+        <label class="govuk-label govuk-checkboxes__label" for="countries-5">
+          Remove reference number
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
 
 
           <button type="submit" class="govuk-button">
