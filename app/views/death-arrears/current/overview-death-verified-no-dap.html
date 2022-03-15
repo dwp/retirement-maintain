@@ -18,8 +18,20 @@ GOV.UK Prototype Kit
     <main class="govuk-main-wrapper">
 
       <div class="govuk-grid-column-two-thirds">
-        
 
+        <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Success
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <h3 class="govuk-notification-banner__heading">
+              Date of death verified - payments stopped
+            </h3>
+
+          </div>
+        </div>
         <main id="content" role="main">
           <div class="grid-row">
             <div class="column-full">
@@ -27,8 +39,8 @@ GOV.UK Prototype Kit
               {% include 'includes/_bar-dead-rooney.html' %}
 
 
- 
-              
+
+
               {% include 'includes/_tab-overview.html' %}
 
 <br><br>
@@ -76,7 +88,7 @@ GOV.UK Prototype Kit
               <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Date of death</th>
                   <td class="govuk-table__cell">10 February 2019</td>
-                  <td class="govuk-table__cell"> 
+                  <td class="govuk-table__cell">
                       <span  style="margin-left: 20%" class="verified-badge verified">
                           <b>Verified</b>
                         </span> </td>
@@ -98,15 +110,15 @@ GOV.UK Prototype Kit
       Personal changes
     </h2>
     <ol class="app-timeline">
-      
-      
+
+
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-            Date of death - verified
+            Date of death verified - payments stopped
           </h3>
-  
+
           <p class="app-timeline__info govuk-!-margin-bottom-0">
-            <span class="govuk-visually-hidden">Date of death - verified</span>
+            <span class="govuk-visually-hidden">Awaiting payee details</span>
             <span class="app-timeline__date">12 February 2019</span>
           </p>
         </li>
