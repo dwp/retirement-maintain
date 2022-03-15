@@ -22,7 +22,7 @@ GOV.UK Prototype Kit
 
               {% include './_bar.html' %}
 
-        <form method="post" action="get-a-task-complete">
+        <form method="post">
 
 
           <h1 class="govuk-heading-l">Phone the claimant</h1>
@@ -57,38 +57,38 @@ GOV.UK Prototype Kit
 
 
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+            <fieldset class="govuk-fieldset" aria-describedby="security-questions-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 <h1 class="govuk-fieldset__heading">
                   What was the outcome of the call?
                 </h1>
               </legend>
-              <div id="changed-name-hint" class="govuk-hint">
+              <div id="security-questions-hint" class="govuk-hint">
 
               </div>
               <div class="govuk-radios govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <input class="govuk-radios__input" id="security-questions" name="security-questions" type="radio" value="passed">
+                  <label class="govuk-label govuk-radios__label" for="security-questions">
                     Passed
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  <input class="govuk-radios__input" id="security-questions-2" name="security-questions" type="radio" value="failed">
+                  <label class="govuk-label govuk-radios__label" for="security-questions-2">
                     Failed
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  <input class="govuk-radios__input" id="security-questions-2" name="security-questions" type="radio" value="refused">
+                  <label class="govuk-label govuk-radios__label" for="security-questions-3">
                     Refused to answer questions
                   </label>
                 </div>
                 <div class="govuk-radios__divider">or</div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  <input class="govuk-radios__input" id="security-questions-2" name="security-questions" type="radio" value="no-answer">
+                  <label class="govuk-label govuk-radios__label" for="security-questions-4">
                     Could not reach claimant by phone
                   </label>
                 </div>
