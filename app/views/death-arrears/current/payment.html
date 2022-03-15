@@ -13,21 +13,31 @@ GOV.UK Prototype Kit
 {% block headEnd %}
 {% endblock %}
 
-<div class="govuk-width-container">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-width-container">
 
-    <main id="content" role="main">
-      <div class="grid-row">
-        <div class="column-full">
-          <br><br>
-          {% include 'includes/_bar.html' %}
+    <main class="govuk-main-wrapper">
 
-          {% include 'includes/tabs/_tab-payment.html' %}
-        </div>
-      </div>
-    </main>
+      <div class="govuk-grid-column-two-thirds">
 
-    <br><br>
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+              {% include 'includes/_bar.html' %}
+
+
+            </div>
+          </div>
+        </main>
+
+
+
+        {{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    })
+  }}
+        <br><br>
     <h2 class="govuk-heading-m">Bank or building society account details</h2>
     <table class="govuk-table">
       <tbody class="govuk-table__body">
