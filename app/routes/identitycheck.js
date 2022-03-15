@@ -24,7 +24,7 @@ router.post('/identity-check-task/security-check-task-record', function(req, res
   if ( req.body['security-questions'] === 'passed' ) {
     res.redirect('personal-2');
   } else if ( req.body['security-questions'] === 'failed' ) {
-    res.redirect('personal-2');
+    res.redirect('personal');
   } else {
     res.redirect('personal');
   }
