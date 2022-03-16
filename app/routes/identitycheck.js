@@ -24,15 +24,19 @@ router.post('/identity-check-task/security-check-task', function(req, res) {
     res.redirect('no-answer');
   }
 });
+
+
 //
 router.post('/identity-check-task/security-check-task-record', function(req, res) {
   if ( req.body['security-questions'] === 'passed' ) {
-    res.redirect('personal-2');
+    res.redirect('passed-2');
   } else if ( req.body['security-questions'] === 'failed' ) {
-    res.redirect('personal-2');
+    res.redirect('failed-2');
   } else {
-    res.redirect('personal');
+    res.redirect('refused-2');
   }
 });
+
+
 
   module.exports = router;
