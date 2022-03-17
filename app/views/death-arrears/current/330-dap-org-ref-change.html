@@ -38,24 +38,42 @@ GOV.UK Prototype Kit
     })
   }}
         <br><br>
-        <span class="govuk-caption-l">Person dealing with Mark's estate</span>
+        <form action="330-org-check" method="post" class="form">
 
-        <h1 class="govuk-heading-l">Postcode</h1>
 
-        <form action="dap-address-1change" method="post">
+          <span class="govuk-caption-l">Organisation dealing with Mark's estate</span>
+          <h1 class="govuk-heading-l">Reference number (optional)</h1>
           <div class="govuk-form-group">
-            <label class="govuk-label" for="postcode">
-              Enter UK postcode
+            <label class="govuk-label" for="event-name">
+
             </label>
-            <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="postcode" aria-describedby="postcode-hint">
+            <input class="govuk-input govuk-input--width-30" id="event-name" name="event-name" type="text">
           </div>
 
+
+
+
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="countries-hint">
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+     <div class="govuk-checkboxes__divider">or</div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="countries-5" name="ref" type="checkbox" value="yes" data-behaviour="exclusive">
+        <label class="govuk-label govuk-checkboxes__label" for="countries-5">
+          Remove reference number
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
           <button type="submit" class="govuk-button">
-            Find address
+            Continue
           </button>
         </form>
-
-<a href="dap-address-international-change" class="govuk-link govuk-!-font-size-19">Enter non-UK address</a>
 
       </div>
 

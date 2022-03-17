@@ -30,21 +30,23 @@ GOV.UK Prototype Kit
           </div>
         </main>
 
-        
+
 
         {{ govukBackLink({
       "text": "Back",
       "href": "javascript: window.history.go(-1)"
-    }) 
+    })
   }}
         <br><br>
 
-        <h1 class="govuk-heading-l">Address of the person dealing with Mark's estate</h1>
+        <span class="govuk-caption-l">Person dealing with Mark's estate</span>
+
+        <h1 class="govuk-heading-l">Postcode</h1>
 
         <form action="330-dap-address-1change" method="post">
           <div class="govuk-form-group">
             <label class="govuk-label" for="postcode">
-              Enter postcode
+              Enter UK postcode
             </label>
             <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="postcode" aria-describedby="postcode-hint">
           </div>
@@ -54,7 +56,7 @@ GOV.UK Prototype Kit
           </button>
         </form>
 
-<a href="330-international-address2" class="govuk-link govuk-!-font-size-19">Enter an international address</a>
+<a href="330-international-address-change" class="govuk-link govuk-!-font-size-19">Enter a non-UK address</a>
 
       </div>
 
