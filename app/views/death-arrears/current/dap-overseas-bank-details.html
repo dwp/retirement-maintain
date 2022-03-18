@@ -41,7 +41,13 @@ GOV.UK Prototype Kit
         <form action="dap-overseas-bank-details-payment" method="post" class="form">
           <h1 class="govuk-heading-l">Payee's overseas bank details
           </h1>
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="iban">
+              IBAN
+            </label>
 
+            <input class="govuk-input" id="iban" name="iban" type="text" spellcheck="false" aria-describedby="iban-hint">
+          </div>
           <div class="govuk-form-group">
             <label class="govuk-label" for="event-name">
               Name of bank
@@ -62,13 +68,6 @@ GOV.UK Prototype Kit
   <input class="govuk-input govuk-input--width-10" id="bic-code" name="bic-code" type="text" spellcheck="false" aria-describedby="bic-code-hint">
 </div>
 
-<div class="govuk-form-group">
-  <label class="govuk-label" for="iban">
-    IBAN
-  </label>
-
-  <input class="govuk-input" id="iban" name="iban" type="text" spellcheck="false" aria-describedby="iban-hint">
-</div>
 
 
 
