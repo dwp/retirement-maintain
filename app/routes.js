@@ -67,6 +67,7 @@ const prison = require('./routes/prison');
 const manualpayments = require('./routes/manualpayments');
 const deatharrears = require('./routes/deatharrears');
 const identitycheck = require('./routes/identitycheck');
+const identitycheck2 = require('./routes/identitycheck2');
 
 
 //copy the router use and update the sprint version
@@ -125,6 +126,7 @@ router.use(prison);
 router.use(manualpayments);
 router.use(deatharrears);
 router.use(identitycheck);
+router.use(identitycheck2);
 
 
 
