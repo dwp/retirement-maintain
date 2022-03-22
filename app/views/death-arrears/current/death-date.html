@@ -41,11 +41,13 @@ GOV.UK Prototype Kit
 
 
 
-        <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset">
-            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-            </legend>
-            <h1 class="govuk-heading-l">Enter date of death</h1>
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">Date of death</h1>
+            <div id="passport-issued-hint" class="govuk-hint">
+      Entering a date of death will stop future State Pension payments.
+    </div></legend>
             <div class="govuk-date-input" id="passport-issued">
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
