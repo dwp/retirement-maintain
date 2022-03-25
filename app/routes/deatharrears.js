@@ -10,6 +10,12 @@ router.post('/death-arrears/current/org-dap-ref-change', function(req, res) {
 
 });
 
-
+router.post('/dap-overseas-bank-details', function(req, res) {
+  if ( req.body['iban'] == 'ES') {
+    res.redirect('dap-arrears-paid');
+  } else {
+    res.redirect('dap-overseas-bank-details-payment.html');
+  }
+});
 
   module.exports = router

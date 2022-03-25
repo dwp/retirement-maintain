@@ -23,12 +23,18 @@ GOV.UK Prototype Kit
           <div class="grid-row">
             <div class="column-full">
 
+            {% if data['iban'] == 'ES'  %}
+<form action="dap-arrears-paid">
+{% else %}
+<form action="dap-overseas-bank-details-payment">
+{% endif %}
+
           {% include 'includes/_bar-dead-rooney.html' %}
 
             </div>
           </div>
         </main>
-
+ 
 
 
         {{ govukBackLink({
@@ -38,7 +44,6 @@ GOV.UK Prototype Kit
   }}
         <br><br>
 
-        <form action="dap-overseas-bank-details-payment" method="post" class="form">
           <h1 class="govuk-heading-l">Payee's overseas bank details
           </h1>
         <div class="govuk-form-group">
@@ -71,9 +76,17 @@ Account holder            </label>
 
 
 
-          <button type="submit" class="govuk-button">
-    Continue
-  </button>
+         <div class="govuk-inset-text">
+            We will also send a letter to the payeee confirming that we have updated our records and paid them the arrears.
+             </div>
+
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Send payment
+            </button>
+
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+Return to overview              </button>
 
 </div>
 
