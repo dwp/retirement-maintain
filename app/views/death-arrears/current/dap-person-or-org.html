@@ -44,36 +44,38 @@ GOV.UK Prototype Kit
 
           <br><br>
           <form method="post" class="form" >
-            <div class="govuk-form-group">
-              <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
-                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
         Who is dealing with Mark's estate?
       </h1>
     </legend>
+
     <div class="govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="corp-ref" name="corp-ref" type="radio" value="individual">
-        <label class="govuk-label govuk-radios__label" for="corp-ref">
+        <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="individual" aria-describedby="sign-in-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in">
           Person
         </label>
-        <div id="sign-in-hint" class="govuk-hint">
-For example, a family member, friend or another individual.     </div>
+        <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+          For example, a family member, friend or another individual.     </div>
+
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="corp-ref-2" name="corp-ref" type="radio" value="corp-ref">
-        <label class="govuk-label govuk-radios__label" for="corp-ref-2">
-          Company
-        </label>
-        <div id="sign-in-hint" class="govuk-hint">
-      For example, a solicitor, the local council or another organisation.     </div>
+        <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="corp-ref" aria-describedby="sign-in-2-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in-2">
+Company        </label>
+        <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+          For example, a solicitor, the local council or another organisation.     </div>
+
       </div>
-<div class="govuk-radios__divider">or</div>      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="corp-ref-3" name="corp-ref" type="radio" value="do-not-know">
-        <label class="govuk-label govuk-radios__label" for="corp-ref-3">
-          I don't know
-        </label>
-      </div>
+      <div class="govuk-radios__divider">or</div>      <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="corp-ref-3" name="corp-ref" type="radio" value="do-not-know" aria-describedby="sign-in-item-hint">
+              <label class="govuk-label govuk-radios__label" for="corp-ref-3">
+                I don't know</div>
     </div>
 
   </fieldset>
