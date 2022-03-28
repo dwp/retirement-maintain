@@ -22,9 +22,13 @@ GOV.UK Prototype Kit
 
               {% include './_barplain.html' %}
 
-        <form method="post" action="get-a-task-complete">
+        <form method="post" action="passed-bank-details">
 
-          <h1 class="govuk-heading-l">We need better bank or building society account details</h1>
+          <h1 class="govuk-heading-xl">Check the bank or building society account details</h1>
+
+          <p class="govuk-body">
+            Tell the claimant they have passed the additional security. Now ask them to confirm their bank or building society details.
+          </p>
 
           <div class="govuk-form-group">
             <label class="govuk-label" for="name-on-the-account">
@@ -55,10 +59,10 @@ GOV.UK Prototype Kit
 
           <div class="govuk-form-group">
             <label class="govuk-label" for="roll-number">
-              Building society roll number (if you have one)
+              Building society roll number (if they have one)
             </label>
             <div id="roll-number-hint" class="govuk-hint">
-              You can find it on your card, statement or passbook
+              They can find it on their card, statement or passbook
             </div>
             <input class="govuk-input govuk-input--width-10" id="roll-number" name="roll-number" type="text" spellcheck="false" aria-describedby="roll-number-hint">
           </div>

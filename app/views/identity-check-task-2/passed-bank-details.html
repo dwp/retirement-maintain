@@ -20,24 +20,26 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-              {% include './_bar.html' %}
+              {% include './_barplain.html' %}
 
-        <form method="post" action="get-a-task-returned">
+        <form method="post" action="get-a-task-complete">
 
+          <h1 class="govuk-heading-xl">Claimant passed bank and security checks</h1>
 
-          <h1 class="govuk-heading-l">Claimant refused to answer additional security questions</h1>
+          <p class="govuk-body">
+            Tell the claimant you have verified their bank details.
+          </p>
+          
+          <p class="govuk-body">
+            Their claim will now be processed shortly.
+          </p>
+          <p class="govuk-body">
+            The claimant will be notified of the outcome of the claim by letter within 3 to 5 working days.
+          </p>
 
-         <!--  <h2 class="govuk-heading-m">What happens next</h2> -->
-
-
-         <p class="govuk-body">Tell the claimant that is OK but they must call the State Pension new claims line to complete their claim.</p>
-
-         <p class="govuk-body">The number is on 0800 731 7898 and lines are open 8am to 6pm Monday to Friday, except public holidays.</p>
-
-         <p class="govuk-body">They will need their National Insurance number when they call.</p>
-
+         
           <button class="govuk-button" data-module="govuk-button">
-            Continue
+            End task
           </button>
 
         </div>
