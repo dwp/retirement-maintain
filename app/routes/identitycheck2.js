@@ -15,7 +15,7 @@ router.post('/identity-check-task-2/security-check-task-details', (req, res) => 
 
 router.post('/identity-check-task-2/security-check-task', function(req, res) {
   if ( req.body['security-questions'] === 'passed' ) {
-    res.redirect('passed');
+    res.redirect('passed-payment-details');
   } else if ( req.body['security-questions'] === 'failed' ) {
     res.redirect('first-fail');
   } else if ( req.body['security-questions'] === 'refused' ) {
@@ -26,12 +26,24 @@ router.post('/identity-check-task-2/security-check-task', function(req, res) {
 });
 
 
+router.post('/identity-check-task-2/security-check-task-2', function(req, res) {
+  if ( req.body['security-questions'] === 'passed' ) {
+    res.redirect('');
+  } else if ( req.body['security-questions'] === 'failed' ) {
+    res.redirect('');
+  } else if ( req.body['security-questions'] === 'refused' ) {
+    res.redirect('');
+  } else {
+    res.redirect('no-answer-2');
+  }
+});
+
 //
 router.post('/identity-check-task-2/security-check-task-record', function(req, res) {
   if ( req.body['security-questions'] === 'passed' ) {
     res.redirect('passed-2');
   } else if ( req.body['security-questions'] === 'failed' ) {
-    res.redirect('first-fail-2');
+    res.redirect('second-fail');
   } else {
     res.redirect('refused-2');
   }

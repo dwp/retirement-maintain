@@ -1,4 +1,3 @@
-
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -21,26 +20,24 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-              {% include './_bar.html' %}
+              {% include './_bar-2.html' %}
 
-        <form method="post" action="personal-2">
+        <form method="post" action="get-a-task-returned">
 
 
-          <h1 class="govuk-heading-l">Claimant failed security check</h1>
+          <h1 class="govuk-heading-l">Could not reach claimant by phone <br>
+          Third attempt</h1>
 
 
                  <p class="govuk-body">
-                   Tell the claimant they have failed the security check.
+                   A text and email will be automatically sent to the claimant, asking them to call us.
+                 </p>
+                 <p class="govuk-body">
+                   If this is the third time we have tried to call the claimant, a letter will also be sent out automatically giving the claimant 14 days to contact us.
                  </p>
 
-                 <p class="govuk-body">They must call 0800 731 7898 to complete their claim.</p>
-
-                 <p class="govuk-body">Lines are open 8am to 6pm Monday to Friday, except public holidays.</p>
-
-                 <p class="govuk-body">They will need their National Insurance number when they call.</p>
-
           <button class="govuk-button" data-module="govuk-button">
-            End task
+            Continue
           </button>
 
         </div>
