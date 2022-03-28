@@ -23,11 +23,7 @@ GOV.UK Prototype Kit
           <div class="grid-row">
             <div class="column-full">
 
-            {% if data['iban'] == 'ES'  %}
-<form action="dap-arrears-paid">
-{% else %}
-<form action="dap-overseas-bank-details-payment">
-{% endif %}
+           
 
           {% include 'includes/_bar-dead-rooney.html' %}
 
@@ -82,12 +78,13 @@ Account holder            </label>
          
 
           <div class="govuk-button-group">
-            <button class="govuk-button" data-module="govuk-button">
-              Send payment
-            </button>
-
-            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-Return to overview              </button>
+                      <a href="/death-arrears/current/dap-arrears-paid.html" button type="submit" style="margin-left: 2%" class="govuk-button">
+           Send Payment
+          </a>
+                      <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="/death-arrears/current/330-overview-death-verified-start.html">
+                        Return to overview
+                      </a>
+                    </div>
 
 
 
