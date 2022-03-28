@@ -23,7 +23,8 @@ GOV.UK Prototype Kit
           <div class="grid-row">
             <div class="column-full">
 
-           
+          
+
 
           {% include 'includes/_bar-dead-rooney.html' %}
 
@@ -42,13 +43,15 @@ GOV.UK Prototype Kit
 
           <h1 class="govuk-heading-l">Payee's overseas bank details
           </h1>
+        <form class="form" action="dap-arrears-paid" method="post">
+
         <div class="govuk-form-group">
             <label class="govuk-label" for="iban">
               IBAN
             </label>
-
             <input class="govuk-input" id="iban" name="iban" type="text" spellcheck="false" aria-describedby="iban-hint">
           </div>
+
           <div class="govuk-form-group">
             <label class="govuk-label" for="event-name">
               Bank name
@@ -78,9 +81,10 @@ Account holder            </label>
          
 
           <div class="govuk-button-group">
-                      <a href="/death-arrears/current/dap-arrears-paid.html" button type="submit" style="margin-left: 2%" class="govuk-button">
-           Send Payment
-          </a>
+                     <button type="submit" class="govuk-button">
+            Send Payment
+          </button>
+          </form>
                       <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="/death-arrears/current/330-overview-death-verified-start.html">
                         Return to overview
                       </a>
@@ -113,3 +117,4 @@ Account holder            </label>
 </div>
 
 {% endblock %}
+
