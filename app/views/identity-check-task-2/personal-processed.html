@@ -19,14 +19,24 @@ GOV.UK Prototype Kit
     <main id="content" role="main">
       <div class="grid-row">
         <div class="column-full">
-
-
-          <br><br>
-          {% include './_barplain.html' %}
-
-          {% include './_tab-overview.html' %}
-
-
+        <br><br>
+          {% include './_bar-receiving.html' %}
+          <nav class="navigation-secondary">
+            <ul>
+              <li>
+                <a href="personal-processed" class="active">Personal</a>
+              </li>
+              <li>
+                  <a href="contact-processed" >Contact</a>
+                </li>
+                <li>
+                  <a href="award-processed">Award</a>
+                </li>
+                <li>
+                  <a href="payment-processed">Payment</a>
+                </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </main>
@@ -72,7 +82,50 @@ GOV.UK Prototype Kit
   </div>
 
 
+  <div class="govuk-grid-column-one-third">
+    <br><br>
+    <h2 class="govuk-heading-m">
+      Personal changes
+    </h2>
+    <ol class="app-timeline">
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Passed security task
+        </h3>
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">   </span>
+          <span class="app-timeline__date">
+            31 March 2022
+          </span>
+        </p>
+      </li>
 
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Contact attempted for security task
+        </h3>
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">   </span>
+          <span class="app-timeline__date">
+            24 March 2022
+          </span>
+        </p>
+      </li>
+
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Claim made
+        </h3>
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">   </span>
+          <span class="app-timeline__date">
+            1 March 2022
+          </span>
+        </p>
+      </li>
+    </ol>
+
+  </div>
 
 </div>
 </div>

@@ -27,9 +27,13 @@ GOV.UK Prototype Kit
 
           <h1 class="govuk-heading-l">Phone the claimant</h1>
 
-          <div class="govuk-inset-text">
-            Refer to SWIs for questions and NIRS to check answers
-          </div>
+          <ol class="govuk-list govuk-list--number">
+            <li>Ask handshake questions and verify their identity.</li>
+            <li>Refer to CIS, NIRS and Searchlight for additional security questions and answers.</li>
+            <li>Leave a voicemail if the claimant does not answer.</li>
+          </ol>
+
+<br><br>
 
           <table class="govuk-table">
             <caption class="govuk-table__caption govuk-table__caption--m">Claimant information</caption>
@@ -60,7 +64,7 @@ GOV.UK Prototype Kit
             <fieldset class="govuk-fieldset" aria-describedby="security-questions-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 <h1 class="govuk-fieldset__heading">
-                  What was the outcome of the call?
+                  What was the outcome of the additional security check?
                 </h1>
               </legend>
               <div id="security-questions-hint" class="govuk-hint">
@@ -82,14 +86,13 @@ GOV.UK Prototype Kit
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="security-questions-2" name="security-questions" type="radio" value="refused">
                   <label class="govuk-label govuk-radios__label" for="security-questions-3">
-                    Refused to answer questions
-                  </label>
+                    Claimant prefers to call us back</label>
                 </div>
                 <div class="govuk-radios__divider">or</div>
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="security-questions-2" name="security-questions" type="radio" value="no-answer">
                   <label class="govuk-label govuk-radios__label" for="security-questions-4">
-                    Could not reach claimant by phone
+                    Could not reach claimant by phone - left a voicemail
                   </label>
                 </div>
 
