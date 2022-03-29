@@ -24,9 +24,9 @@ router.post('/death-arrears/current/org-dap-ref-change', function(req, res) {
 
 router.post('/death-arrears/current/dap-overseas-bank-details', function(req, res) {
   if ( req.body['iban'] === 'ES320054285411112222' ) {
-    res.redirect('death-arrears/current/dap-arrears-paid');
+    res.redirect('dap-arrears-paid');
   } else {
-    res.redirect('death-arrears/current/dap-overseas-bank-details-payment');
+    res.redirect('dap-overseas-bank-details-payment');
   }
 });
 
