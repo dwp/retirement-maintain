@@ -39,7 +39,7 @@ GOV.UK Prototype Kit
 
               {% include './_bar.html' %}
 
-        <form method="post" action="passed-bank-details">
+        <form method="post">
 
           <h1 class="govuk-heading-l">Check bank or building society account details</h1>
 
@@ -70,13 +70,13 @@ GOV.UK Prototype Kit
           </div>
 
           <div class="govuk-form-group govuk-form-group--error">
-  <label class="govuk-label" for="account-number">
+  <label class="govuk-label" for="">
     Account number
   </label>
-  <div id="account-number-hint" class="govuk-hint">
+  <div id="-hint" class="govuk-hint">
   Must be between 6 and 8 digits long
   </div>
-  <p id="account-number-error" class="govuk-error-message">
+  <p id="-error" class="govuk-error-message">
     <span class="govuk-visually-hidden">Error:</span> The account number does not exist - check it and try again
   </p>
   <input class="govuk-input govuk-input--error" id="account-number" name="account-number" type="text" aria-describedby="account-number-hint account-number-error">

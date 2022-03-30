@@ -50,5 +50,22 @@ router.post('/identity-check-task-2/security-check-task-record', function(req, r
 });
 
 
+router.post('/identity-check-task-2/passed-payment-details', function(req, res) {
+  if ( req.body['account-number'] === '12343212' ) {
+    res.redirect('passed-payment-details-error');
+  } else {
+    res.redirect('passed-bank-details');
+  }
+});
+
+router.post('/identity-check-task-2/passed-payment-details-error', function(req, res) {
+  if ( req.body['account-number'] === '12343212' ) {
+    res.redirect('passed-payment-details-error');
+  } else {
+    res.redirect('passed-bank-details');
+  }
+});
+
+
 
   module.exports = router;
