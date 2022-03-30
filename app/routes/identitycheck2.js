@@ -67,6 +67,11 @@ router.post('/identity-check-task-2/passed-payment-details-error', function(req,
 });
 
 
+router.post('/identity-check-task-2/enquiries', (req, res) => {
+  res.redirect('/identity-check-task-2/find')
+})
+;
+
 
 router.post('/identity-check-task-2/find', function(req, res) {
   if ( req.session.data['nino'] === 'XX 12 34 56' ) {
