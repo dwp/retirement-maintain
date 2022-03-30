@@ -68,4 +68,20 @@ router.post('/identity-check-task-2/passed-payment-details-error', function(req,
 
 
 
+router.post('/identity-check-task-2/find', function(req, res) {
+  if ( req.session.data['nino'] === 'XX 12 34 56' ) {
+    res.redirect('personal-one-fail');
+  } else if ( req.session.data['nino'] === 'XX123456' ) {
+    res.redirect('personal-one-fail');
+  } else if ( req.session.data['nino'] === 'xx123456' ) {
+    res.redirect('personal-one-fail');
+  } else if ( req.session.data['nino'] === 'xx 12 34 56' ) {
+    res.redirect('personal-one-fail');
+  } else {
+    res.redirect('personal');
+  }
+});
+
+
+
   module.exports = router;
