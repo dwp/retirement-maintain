@@ -1,0 +1,251 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+              {% include 'includes/_bar-dead-rooney.html' %}
+              {% include 'includes/tabs/_tab-payment.html' %}
+
+            </div>
+          </div>
+        </main>
+
+
+
+
+        <br><br>
+    <h2 class="govuk-heading-m">Payment details</h2>
+    <table class="govuk-table">
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row"></th>
+          <td class="govuk-table__cell"></td>
+        </tr></tbody>
+        <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">IBAN</th>
+            <td class="govuk-table__cell">NO19452374385</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row" style="width: 40%">Bank name</th>
+            <td class="govuk-table__cell">Norges Bank</td>
+          </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row" style="width: 40%">Account holder</th>
+          <td class="govuk-table__cell">Mr K Rooney</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">BIC or SWIFT code</th>
+          <td class="govuk-table__cell">NBHKNOKKS02</td>
+        </tr>
+
+
+      </table>
+
+    <br>
+    <br>
+
+    <div>
+    </div>
+
+  </div>
+
+
+  <div class="govuk-grid-column-one-third">
+    <br><br><br>
+    <h2 class="govuk-heading-m">
+      Payment changes
+    </h2>
+    <ol class="app-timeline">
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Paid
+        </h3>
+
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">
+          </span>
+          <span class="app-timeline__date">
+            2 April 2022
+          </span>
+        </p>
+      </li>
+
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Sent
+        </h3>
+
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">
+          </span>
+          <span class="app-timeline__date">
+            30 March 2022
+          </span>
+        </p>
+      </li>
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Paid
+        </h3>
+
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">
+          </span>
+          <span class="app-timeline__date">
+            26 March 2022
+          </span>
+        </p>
+      </li>
+
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Sent
+        </h3>
+
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">
+          </span>
+          <span class="app-timeline__date">
+            22 March 2022
+          </span>
+        </p>
+      </li>
+
+
+    </ol>
+
+  </div>
+
+
+
+
+  <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-m">Payment history</h2>
+    <table class="govuk-table">
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+
+              <th class="govuk-table__header" scope="col" style="width: 15%">Payment date</th>
+              <th class="govuk-table__header" scope="col" style="width:20%">Period</th>
+              <th class="govuk-table__header" scope="col" style="width: 10%">Amount</th>
+              <th class="govuk-table__header" scope="col" style="width: 10%">Status</th>
+              <th class="govuk-table__header" scope="col" style="width: 5%;"></th>
+            </tr>
+          </thead>
+      <tbody class="govuk-table__body">
+
+
+        <tr class="govuk-table__row">
+
+          <td class="govuk-table__cell">Saturday 2 April 2022</td>
+          <td class="govuk-table__cell">22 March 2022 to 29 March 2022</td>
+          <td class="govuk-table__cell">£179.60</td>
+          <td class="govuk-table__cell" class="govuk-orange">Paid
+          </td>
+          <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-arrears-overseas-manual">Details</a></td>
+        </tr>
+
+
+        <tr class="govuk-table__row">
+
+          <td class="govuk-table__cell">Saturday 26 March 2022</td>
+          <td class="govuk-table__cell">22 Feb 2022 to 21 March 2022</td>
+          <td class="govuk-table__cell">£718.40</td>
+          <td class="govuk-table__cell" class="govuk-orange">Paid
+          </td>
+          <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-1">Details</a></td>
+        </tr>
+
+        <tr class="govuk-table__row">
+
+          <td class="govuk-table__cell">Saturday 26 Feb 2022</td>
+          <td class="govuk-table__cell">25 Jan 2022 to 21 Feb 2022</td>
+          <td class="govuk-table__cell">£718.40</td>
+          <td class="govuk-table__cell" class="govuk-orange">Paid
+          </td>
+          <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-1">Details</a></td>
+        </tr>
+
+        <tr class="govuk-table__row">
+
+          <td class="govuk-table__cell">Saturday 29 Jan 2022</td>
+          <td class="govuk-table__cell">28 Dec 2021 to 24 Jan 2022</td>
+          <td class="govuk-table__cell">£718.40</td>
+          <td class="govuk-table__cell" class="govuk-orange">Paid
+          </td>
+          <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-1">Details</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+
+          <td class="govuk-table__cell">Friday 31 Dec 2022</td>
+          <td class="govuk-table__cell">30 Nov 2021 to 27 Dec 2021</td>
+          <td class="govuk-table__cell">£718.40</td>
+          <td class="govuk-table__cell" class="govuk-orange">Paid
+          </td>
+          <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-1">Details</a></td>
+        </tr>
+
+        <tr class="govuk-table__row">
+
+          <td class="govuk-table__cell">Saturday 4 Dec 2021</td>
+          <td class="govuk-table__cell">2 Nov 2021 to 29 Nov 2021</td>
+          <td class="govuk-table__cell">£718.40</td>
+          <td class="govuk-table__cell" class="govuk-orange">Paid
+          </td>
+          <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-1">Details</a></td>
+        </tr>
+
+        <tr class="govuk-table__row">
+
+          <td class="govuk-table__cell">Saturday 6 Nov 2021</td>
+          <td class="govuk-table__cell">5 Oct 2021 to 1 Nov 2021</td>
+          <td class="govuk-table__cell">£718.40</td>
+          <td class="govuk-table__cell" class="govuk-orange">Paid
+          </td>
+          <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-1">Details</a></td>
+        </tr>
+
+
+        </tbody>
+        </table>
+
+  </div>
+
+
+</div>
+</div>
+</main>
+</div>
+<!-- </div> -->
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
