@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+              {% include './_barplain.html' %}
+
+        <form method="post" action="">
+
+          <h1 class="govuk-heading-xl">No valid payment details</h1>
+
+<p>Cannot take payment details at this time<br>
+  The task will be postponed for 14 days?</p>
+
+          <button class="govuk-button" data-module="govuk-button">
+            End task
+          </button>
+
+
+<p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
