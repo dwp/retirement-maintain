@@ -44,7 +44,7 @@ GOV.UK Prototype Kit
 
           <div class="govuk-form-group">
             <label class="govuk-label" for="event-name">
-Account holder          </label>
+Account holder name         </label>
             <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
           <div class="govuk-form-group">
@@ -67,19 +67,55 @@ Account holder          </label>
             </div>
 
           <a href="dap-overseas-bank" class="govuk-link govuk-!-font-size-19">Enter details for an overseas account</a>
+<br><br><br><br>
 
-          <div class="govuk-inset-text">
-            We will also send a letter to the payeee confirming that we have updated our records and paid them the arrears.
-             </div>
 
-          
 
 <div class="govuk-button-group">
                       <button class="govuk-button" data-module="govuk-button" button type="submit" href="/death-arrears/current/dap-arrears-paid.html">
                         Send payment
-                      </button>
-                      
-                    </div>
+                      </button></div>
+<br>
+<br>
+<details class="govuk-details" data-module="govuk-details">
+<summary class="govuk-details__summary">
+<span class="govuk-details__summary-text">
+<b>URL, errors and notes</b>
+</span>
+</summary>
+<div class="govuk-details__text">
+  <b>URL:</b> use existing URL<br><br>
+
+  <b>Error messages:<br><br>
+
+<u>Account holder name</u><br><br>
+
+Empty -</b> Enter the Account holder name<br>
+<b>  Length -</b> Account holder name must be 70 characters or less<br>
+<b>  Invalid -</b> Account holder name must start with a letter and only include letters, hyphens, apostrophes, full stops, spaces and ampersands<br>
+<br><br>
+
+<b>  <u>Sort code</u><br><br>
+
+  Does not exist - </b>The sort code does not exist - check it and try again<br>
+<b>  Empty - </b>Enter a sort code<br>
+<b>  Invalid - </b>Enter a valid sort code like 309430<br>
+<br><br>
+<b> <u> Account number</u>
+<br><br>
+     Length - </b>Account number must be 8 digits<br>
+<b>  Invalid - </b>Enter a valid account number like 00733445<br>
+<b>  Empty - </b>Enter an account number<br>
+<b>  Does not exist - </b>The account number does not exist - check it and try again<br><br><br>
+<b>  <u>Roll number</u></b>
+<br><br>
+<b>  Does not exist -</b>Roll number does not exist - check it and try again<br>
+<b>  Invalid -</b> Roll number must only include letters a to z, numbers, hyphens, spaces, forward slashes and full stops<br>
+<b>  Length -</b> Roll number must be between 1 and 18 characters<br>
+<b>  Empty -</b> Enter a roll number<br>
+  </div>
+</details>
+
 
             </div>
           </div>

@@ -55,7 +55,7 @@ GOV.UK Prototype Kit
               <input class="govuk-input govuk-input--width-10" id="bic-code" name="bic-code" type="text" spellcheck="false" aria-describedby="bic-code-hint">
   </div><div class="govuk-form-group">
               <label class="govuk-label" for="event-name">
-Account holder              </label>
+Account holder name              </label>
               <input class="govuk-input govuk-input--width-10" id="bic-code" name="bic-code" type="text" spellcheck="false" aria-describedby="bic-code-hint">
   </div>          <div class="govuk-form-group">
     <label class="govuk-label" for="bic-code">
@@ -71,15 +71,58 @@ BIC or SWIFT code (if you know it)
 <input class="govuk-input govuk-input--width-10" id="bic-code" name="bic-code" type="text" spellcheck="false" aria-describedby="bic-code-hint">
 
 </div>
-
+<br><br>
 
 
 
               <button type="submit" class="govuk-button">
                 Continue
               </button>
+              <br><br>
+              <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+              <b>URL, errors and notes</b>
+              </span>
+              </summary>
+              <div class="govuk-details__text">
+                <b>URL:</b> /overseas-bank-details-manual<br><br>
+
+                <b>Error messages:<br><br></b>
+
+
+
+              <b>  <u>Bank account number</u></b>
+              <br><br>
+              <b>     Does not exist - </b>Bank account number does not exist - check it and try again<br>
+              <b>  Empty - </b>Enter an Bank account number<br><br><br>
+              <b> <u> Bank name</u><br><br>
+
+          Empty - </b>Enter the bank name<br>
+              <b>  Length -</b> Bank name must be 70 characters or less<br>
+              <b>  Invalid - </b>Bank name must only include letters, numbers, hyphens, apostrophes, full stops, spaces and ampersands<br>
+              <br><br>
+              <b><u>Account holder name</u><br><br>
+
+              Empty -</b> Enter the account holder name<br>
+              <b>  Length -</b> Account holder name must be 70 characters or less<br>
+              <b>  Invalid -</b> Account holder name must start with a letter and only include letters, hyphens, apostrophes, full stops, spaces and ampersands<br>
+              <br><br>
+              <b><u>Sort code, branch code or routing code</u></b>
+              <br><br>
+              <b>  Empty -</b> Enter a sort code, branch code or routing code
+<br><br><br>
+              <b><u> BIC or SWIFT code</u></b>
+              <br><br>
+              <b>Does not exist - </b>BIC or SWIFT code does not exist - check it and try again<br>
+              <b>  Length -</b> BIC or SWIFT code must be 11 characters or less<br>
+              <b>  Invalid -</b> Enter a BIC or SWIFT code
+<br><br>
+                </div>
+              </details>
             </form>
           </div>
+          
         </fieldset>
       </div>
     </div>
