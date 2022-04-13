@@ -20,7 +20,7 @@ GOV.UK Prototype Kit
       <div class="grid-row">
         <div class="column-full">
           <br><br>
-          {% include './nav/_bar.html' %}
+          {% include './nav/_bar_deferred.html' %}
 
           {% include './nav/_tab-payment.html' %}
         </div>
@@ -101,13 +101,13 @@ GOV.UK Prototype Kit
 
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Next payment date</th>
-              <td class="govuk-table__cell">Friday 25 Feb 2021</td>
+              <td class="govuk-table__cell">Deferred</td>
               <td class="govuk-table__cell"></td>
             </tr>
 
             <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Next payment amount</th>
-                <td class="govuk-table__cell">£650.72</td>
+                <td class="govuk-table__cell"></td>
                 <td class="govuk-table__cell"></td>
               </tr>
 
@@ -131,13 +131,13 @@ GOV.UK Prototype Kit
     <ol class="app-timeline">
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-      No changes made
+      Payments stopped - State Pension deferred
         </h3>
 
         <p class="app-timeline__info govuk-!-margin-bottom-0">
           <span class="govuk-visually-hidden">No changes made</span>
           <span class="app-timeline__date">
-
+          9 Jun 2021      
           </span>
         </p>
       </li>
@@ -165,16 +165,16 @@ GOV.UK Prototype Kit
 
         <tr class="govuk-table__row">
 
-          <td class="govuk-table__cell">Saturday 25 Jan 2022</td>
-          <td class="govuk-table__cell">28 Dec 2019 to 24 Jan 2022</td>
-          <td class="govuk-table__cell">£650.72</td>
+          <td class="govuk-table__cell">Wed 9 Jun 2021</td>
+          <td class="govuk-table__cell">12 May 2021 to 9 Jun 2021</td>
+          <td class="govuk-table__cell">£641.36</td>
           <td class="govuk-table__cell" class="govuk-orange">Paid
           </td>
           <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-2">Details</a></td>
         </tr>
 
 
-        <tr class="govuk-table__row">
+       <!--  <tr class="govuk-table__row">
 
           <td class="govuk-table__cell">Saturday 28 Dec 2021</td>
           <td class="govuk-table__cell">30 Nov 2020 to 27 Dec 2021</td>
@@ -183,7 +183,7 @@ GOV.UK Prototype Kit
           </td>
           <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-1">Details</a></td>
         </tr>
-
+-->
 
         </tbody>
         </table>
