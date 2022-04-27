@@ -17,19 +17,17 @@ GOV.UK Prototype Kit
 
   <br>
   <br>
-    <div class="govuk-grid-column-full-width">
-    <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-  <div class="govuk-notification-banner__header">
-  <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-  Success
-  </h2>
-  </div>
-  <div class="govuk-notification-banner__content">
-  <h3 class="govuk-notification-banner__heading">
-  Task complete
-  </h3>
-  </div>
-  </div>
+  <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__header">
+      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+        Success
+      </h2>
+    </div>
+    <div class="govuk-notification-banner__content">
+      <p class="govuk-notification-banner__heading">
+        Task returned to queue
+      </p>
+    </div>
   </div>
 
   <div class="govuk-grid-column-two-thirds">
@@ -38,7 +36,7 @@ GOV.UK Prototype Kit
       <div class="grid-row">
         <div class="column-full">
 
-          {% include './_bar-cancelled.html' %}
+          {% include './_bar-2.html' %}
 
           {% include './_tab-overview.html' %}
 
@@ -54,7 +52,7 @@ GOV.UK Prototype Kit
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
   <strong class="govuk-warning-text__text">
     <span class="govuk-warning-text__assistive">Warning</span>
-    Claim cancelled as claimant failed additional security twice
+    Claim referred to DWP visiting officers - awaiting outcome
   </strong>
 </div>
 
@@ -105,7 +103,7 @@ GOV.UK Prototype Kit
 
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-          Claim cancelled
+          Claim referred to DWP visiting officers
         </h3>
 
         <p class="app-timeline__info govuk-!-margin-bottom-0">
