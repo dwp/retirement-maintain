@@ -33,7 +33,7 @@ Get your State Pension
                       </h1>
                     </legend>
                         <div id="passport-issued-hint" class="govuk-hint">
-                          For example, 27 3 2007
+                          For example, 27 3 2022
                         </div>
                 <div class="govuk-date-input" id="passport-issued">
                   <div class="govuk-date-input__item">
@@ -75,7 +75,7 @@ Get your State Pension
       </h1>
     </legend>
     <div id="passport-issued-hint" class="govuk-hint">
-      For example, 27 3 2007
+      For example, 27 3 2022
     </div>
     <div class="govuk-date-input" id="passport-issued">
       <div class="govuk-date-input__item">
@@ -112,35 +112,171 @@ Get your State Pension
 <div class="vTabGroup">
 
     <!-- Text only tab -->
-    <div><a id="vTabA" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-ONE')" href="javascript: void(0)">Tab one</a></div>
+    <div><a id="vTabA" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-ONE')" href="javascript: void(0)">Claim filter</a></div>
 
-    <!-- Tab with secondary text -->
-    <div><a id="vTabB" class="vTab" onclick="vTabGroup(vTabContent, 'TAB-TWO')" href="javascript: void(0)">Tab two<br><span class="vTabSecondaryText">Secondary</span></a></div>
+    <!-- Text only tab -->
+    <div><a id="vTabB" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-TWO')" href="javascript: void(0)">Claims</a></div>
 
-    <!-- Tab with secondary text and tick icon -->
-    <div><a id="vTabC" class="vTab" onclick="vTabGroup(vTabContent, 'TAB-THREE')" href="javascript: void(0)">Tab three<br><span class="vTabSecondaryText">Secondary</span><img src="/public/images/design_patterns/vertical-tabs/tick-green.svg"></a></div>
+    <!-- Text only tab -->
+    <div><a id="vTabC" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-THREE')" href="javascript: void(0)">Pre-claim activity</a></div>
+
+    <!-- Text only tab -->
+    <div><a id="vTabD" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-FOUR')" href="javascript: void(0)">Tasks</a></div>
+
+    <!-- Text only tab -->
+    <div><a id="vTabE" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-FIVE')" href="javascript: void(0)">Tier 2 checking team</a></div>
 
 </div>
+
 <div id="vTabContent">
     <div id="vTabOneContent">
-        <h4 class="heading-small bottom_15">Tab one</h4>
-        <p>This is a standard text only tab.</p>
-        <p>Additional placeholder content.</p>
+        <h4 class="heading-small bottom_15">Claim filter</h4>
+        <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+   </legend>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          Claim filter
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+          Claim filter (paper only)
+        </label>
+      </div>
+    </div>
 
-    </div>
-    <div id="vTabTwoContent">
-        <h4 class="heading-small bottom_15">Tab two</h4>
-        <p>This tab includes optional secondary text.</p>
-        <p>Additional placeholder content.</p>
-    </div>
-    <div id="vTabThreeContent">
-        <h4 class="heading-small bottom_15">Tab three</h4>
-        <p>This tab includes optional secondary text and optional tick icon.</p>
-        <p>Additional placeholder content.</p>
-    </div>
+  </fieldset>
 </div>
 
-<br>
+    </div>
+
+    <div id="vTabContent">
+    <div id="vTabTwoContent">
+        <h4 class="heading-small bottom_15">Claims</h4>
+        <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+   </legend>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          Claims
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Claim details
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+          KBV
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+<div id="vTabContent">
+    <div id="vTabThreeContent">
+        <h4 class="heading-small bottom_15">Pre-claim activity</h4>
+        <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+   </legend>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          Citizen details
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          HMRC feed
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+          Letters
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+<div id="vTabContent">
+    <div id="vTabFourContent">
+        <h4 class="heading-small bottom_15">Tasks</h4>
+        <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+   </legend>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          Alt formats
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          New claim widow
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          SRB details
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+          Tasks with unchanged awards
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+<div id="vTabContent">
+    <div id="vTabFiveContent">
+        <h4 class="heading-small bottom_15">Tier 2 checking team</h4>
+        <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+   </legend>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          Invite key retrieval
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+
+
+
+<br><br><br><br>
 
                 {{ govukButton ({
                     html: 'Continue'
@@ -150,5 +286,6 @@ Get your State Pension
 
   </div>
 </div>
+
 
 {% endblock %}
