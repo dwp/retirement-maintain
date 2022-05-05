@@ -113,7 +113,12 @@ Get your State Pension
 
     <!-- Text only tab -->
     <div><a id="vTabA" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-ONE')" href="javascript: void(0)">Tab one</a></div>
-    <div id="vTabA" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-ONE')">Tab one</div>
+
+    <!-- Tab with secondary text -->
+    <div><a id="vTabB" class="vTab" onclick="vTabGroup(vTabContent, 'TAB-TWO')" href="javascript: void(0)">Tab two<br><span class="vTabSecondaryText">Secondary</span></a></div>
+
+    <!-- Tab with secondary text and tick icon -->
+    <div><a id="vTabC" class="vTab" onclick="vTabGroup(vTabContent, 'TAB-THREE')" href="javascript: void(0)">Tab three<br><span class="vTabSecondaryText">Secondary</span><img src="/public/images/design_patterns/vertical-tabs/tick-green.svg"></a></div>
 
 </div>
 <div id="vTabContent">
