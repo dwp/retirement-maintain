@@ -8,7 +8,7 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './nav/_header-nav-unselected.html' %}
+{% include './header/_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -23,9 +23,9 @@ GOV.UK Prototype Kit
 
 
           <br><br>
-          {% include './nav/_bar.html' %}
+          {% include './_bar.html' %}
 
-          {% include './nav/_tab-overview.html' %}
+          {% include './tabs/_tab-overview.html' %}
 
         </div>
       </div>
@@ -40,7 +40,7 @@ GOV.UK Prototype Kit
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header" style="width: 50%" >Full name</th>
-            <td class="govuk-table__cell" style="width: 50%">Sacha Downs</td>
+            <td class="govuk-table__cell" style="width: 50%">Mark Rooney</td>
             <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
               Change
             </a></td>
@@ -52,21 +52,32 @@ GOV.UK Prototype Kit
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Date of birth</th>
-            <td class="govuk-table__cell">10 May 1954</td>
+            <td class="govuk-table__cell">12 December 1952</td>
             <td class="govuk-table__cell"></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">State Pension date </th>
-            <td class="govuk-table__cell">10 May 2021 </td>
+            <td class="govuk-table__cell">10 April 2019 </td>
             <td class="govuk-table__cell"></td>
           </tr>
           <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Marital status </th>
-              <td class="govuk-table__cell">Never been married</td>
+              <td class="govuk-table__cell">Widowed</td>
               <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
                   Change
                 </a></td>
             </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Date of marriage</th>
+                <td class="govuk-table__cell">9 May 1989</td>
+                <td class="govuk-table__cell">
+                  </td>
+              </tr>
+              <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Date of widowhood</th>
+                  <td class="govuk-table__cell">12 July 2021</td>
+                  <td class="govuk-table__cell"></td>
+                </tr>
 
         </tbody>
       </table>
@@ -88,34 +99,13 @@ GOV.UK Prototype Kit
     <ol class="app-timeline">
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-      Online claim received
+          No changes made
         </h3>
+
         <p class="app-timeline__info govuk-!-margin-bottom-0">
           <span class="govuk-visually-hidden">No changes made</span>
           <span class="app-timeline__date">
-            15 Apr 2022
-          </span>
-        </p>
-      </li>
-      <li class="app-timeline__entry">
-        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-      State Pension deferred
-        </h3>
-        <p class="app-timeline__info govuk-!-margin-bottom-0">
-          <span class="govuk-visually-hidden">No changes made</span>
-          <span class="app-timeline__date">
-            9 Jun 2021
-          </span>
-        </p>
-      </li>
-      <li class="app-timeline__entry">
-        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-      Telephone claim received
-        </h3>
-        <p class="app-timeline__info govuk-!-margin-bottom-0">
-          <span class="govuk-visually-hidden">No changes made</span>
-          <span class="app-timeline__date">
-            12 Feb 2021
+
           </span>
         </p>
       </li>

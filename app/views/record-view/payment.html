@@ -8,7 +8,7 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './nav/_header-nav-unselected.html' %}
+{% include './header/_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -20,9 +20,9 @@ GOV.UK Prototype Kit
       <div class="grid-row">
         <div class="column-full">
           <br><br>
-          {% include './nav/_bar.html' %}
+          {% include './_bar.html' %}
 
-          {% include './nav/_tab-payment.html' %}
+          {% include './tabs/_tab-payment.html' %}
         </div>
       </div>
     </main>
@@ -48,7 +48,7 @@ GOV.UK Prototype Kit
             {% if data['name-on-the-account'] %}
             {{data['name-on-the-account']}}
             {% else %}
-            Mrs S Downs
+            Mr M Rooney
             {% endif %}</td>
           <td class="govuk-table__cell" style="width: 10%"></td>
         </tr>
@@ -85,7 +85,7 @@ GOV.UK Prototype Kit
         {% endif %}
       </tbody>
     </table>
-
+    
 <br>
     <h2 class="govuk-heading-m">Payment details</h2>
     <br>
@@ -101,13 +101,13 @@ GOV.UK Prototype Kit
 
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Next payment date</th>
-              <td class="govuk-table__cell">9 May 2022</td>
+              <td class="govuk-table__cell">Friday 25 Feb 2021</td>
               <td class="govuk-table__cell"></td>
             </tr>
 
             <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Next payment amount</th>
-                <td class="govuk-table__cell">£694.00</td>
+                <td class="govuk-table__cell">£650.72</td>
                 <td class="govuk-table__cell"></td>
               </tr>
 
@@ -129,29 +129,15 @@ GOV.UK Prototype Kit
       Payment changes
     </h2>
     <ol class="app-timeline">
-
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-      Payments started again
+          TBC
         </h3>
 
         <p class="app-timeline__info govuk-!-margin-bottom-0">
           <span class="govuk-visually-hidden">No changes made</span>
           <span class="app-timeline__date">
-          14 Mar 2022
-          </span>
-        </p>
-      </li>
 
-      <li class="app-timeline__entry">
-        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-      Payments stopped - State Pension deferred
-        </h3>
-
-        <p class="app-timeline__info govuk-!-margin-bottom-0">
-          <span class="govuk-visually-hidden">No changes made</span>
-          <span class="app-timeline__date">
-          9 Jun 2021
           </span>
         </p>
       </li>
@@ -179,34 +165,16 @@ GOV.UK Prototype Kit
 
         <tr class="govuk-table__row">
 
-          <td class="govuk-table__cell">Mon 11 Apr 2022</td>
-          <td class="govuk-table__cell">14 Mar 2022 to 11 Apr 2022</td>
-          <td class="govuk-table__cell">£683.50</td>
+          <td class="govuk-table__cell">Saturday 25 Jan 2022</td>
+          <td class="govuk-table__cell">28 Dec 2019 to 24 Jan 2022</td>
+          <td class="govuk-table__cell">£650.72</td>
           <td class="govuk-table__cell" class="govuk-orange">Paid
           </td>
           <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-2">Details</a></td>
         </tr>
 
-        <td class="govuk-table__cell">Mon 14 Mar 2022</td>
-          <td class="govuk-table__cell">14 Feb 2022 to 14 Mar 2022</td>
-          <td class="govuk-table__cell">£682.00</td>
-          <td class="govuk-table__cell" class="govuk-orange">Paid
-          </td>
-          <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-2">Details</a></td>
-        </tr>
 
         <tr class="govuk-table__row">
-
-          <td class="govuk-table__cell">Wed 9 Jun 2021</td>
-          <td class="govuk-table__cell">12 May 2021 to 9 Jun 2021</td>
-          <td class="govuk-table__cell">£641.36</td>
-          <td class="govuk-table__cell" class="govuk-orange">Paid
-          </td>
-          <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-2">Details</a></td>
-        </tr>
-
-
-       <!--  <tr class="govuk-table__row">
 
           <td class="govuk-table__cell">Saturday 28 Dec 2021</td>
           <td class="govuk-table__cell">30 Nov 2020 to 27 Dec 2021</td>
@@ -215,7 +183,7 @@ GOV.UK Prototype Kit
           </td>
           <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-1">Details</a></td>
         </tr>
--->
+
 
         </tbody>
         </table>
