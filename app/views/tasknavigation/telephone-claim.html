@@ -7,8 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-
-{% include './_header-nav-paper-claim.html' %}
+{% include './_header-nav-teleclaim.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -21,16 +20,20 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
       <br>
 
-        <h2 class="govuk-heading-xl">Start a new paper claim</h2>
+        <h1 class="govuk-heading-xl">Start a new telephone claim</h1>
+
         <form method="post">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="nino">
+              National Insurance number or invitation code
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="nino" name="nino" type="nino" aria-describedby="nino-hint">
+          </div>
 
-<p class="govuk-body">View and process the next available paper claim.</p>
-
-<br>
-
-          <a href="find-1" button type="submit" class="govuk-button">
-            Get next task
+          <a href="find-2" button type="submit" class="govuk-button">
+            Find claimant
         </a>
+
         </form>
 
 
@@ -39,11 +42,13 @@ GOV.UK Prototype Kit
 
       </div>
 
+      <br>
+
+
+
     </div>
 
   </div>
-
-
 
 </main>
       </div>
