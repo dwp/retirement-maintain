@@ -13,11 +13,10 @@ GOV.UK Prototype Kit
 {% endblock %}
 
 <div class="govuk-width-container">
-  <div class="govuk-grid-column-two-thirds">
 
     <main id="content" role="main">
       <div class="grid-row">
-        <div class="column-full"
+        <div class="govuk-grid-column-two-thirds"
 
           <br><br><br>
           {% include './_bar.html' %}
@@ -25,15 +24,31 @@ GOV.UK Prototype Kit
           {% include './tabs/_tab-award.html' %}
 
         </div>
+
+        <div class="govuk-grid-column-one-third">
+          <br><br>
+          <h2 class="govuk-heading-m">
+            Award changes
+          </h2>
+          <ol class="app-timeline">
+
+              <li class="app-timeline__entry">
+                  <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                    No changes made
+                  </h3>
+                </li>
+
+          </ol>
+
+        </div>
+
       </div>
     </main>
 
-    <br>
-    <br>
-
     <div>
 
-
+  <div class="govuk-grid-column-two-thirds">
+        <br><br>
         <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">State Pension award details</h2>
 
         <a href="review-award" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 80%">Review award</span>
@@ -92,6 +107,12 @@ GOV.UK Prototype Kit
 
           </div>
 
+            </div>
+
+
+
+
+  <div class="govuk-grid-column-full">
           <br><br>
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">State Pension award history</h2>
               <br><br>
@@ -124,29 +145,11 @@ GOV.UK Prototype Kit
 
     </div>
 
+    </div>
 
-  </div>
+
 </div>
 
-
-
-
-<div class="govuk-grid-column-one-third">
-  <br><br>
-  <h2 class="govuk-heading-m">
-    Award changes
-  </h2>
-  <ol class="app-timeline">
-
-      <li class="app-timeline__entry">
-          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-            No changes made
-          </h3>
-        </li>
-
-  </ol>
-
-</div>
 
 
 </div>
