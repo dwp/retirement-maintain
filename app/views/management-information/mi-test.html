@@ -18,6 +18,43 @@ Get your State Pension
 {% endblock %}
 
 {% block content %}
+
+<script>
+
+    /* TABS PATTERN */
+function vTabGroup(tableObj, which) {
+
+    vTabA = 'TAB-ONE';
+    vTabB = 'TAB-TWO';
+    vTabC = 'TAB-THREE';
+
+    if(which == vTabA) {
+        document.getElementById("vTabA").className = "vTab-on";
+        document.getElementById("vTabB").className = "vTab";
+        document.getElementById("vTabC").className = "vTab";
+        document.getElementById("vTabOneContent").style.display = "block";
+        document.getElementById("vTabTwoContent").style.display = "none";
+        document.getElementById("vTabThreeContent").style.display = "none";
+    } else if(which == vTabB) {
+        document.getElementById("vTabA").className = "vTab";
+        document.getElementById("vTabB").className = "vTab-on";
+        document.getElementById("vTabC").className = "vTab";
+        document.getElementById("vTabOneContent").style.display = "none";
+        document.getElementById("vTabTwoContent").style.display = "block";
+        document.getElementById("vTabThreeContent").style.display = "none";
+    } else if(which == vTabC) {
+        document.getElementById("vTabA").className = "vTab";
+        document.getElementById("vTabB").className = "vTab";
+        document.getElementById("vTabC").className = "vTab-on";
+        document.getElementById("vTabOneContent").style.display = "none";
+        document.getElementById("vTabTwoContent").style.display = "none";
+        document.getElementById("vTabThreeContent").style.display = "block";
+    } 
+}
+
+</script>
+
+
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 

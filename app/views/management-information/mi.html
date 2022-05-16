@@ -18,6 +18,78 @@ Get your State Pension
 {% endblock %}
 
 {% block content %}
+
+<script>
+
+    /* TABS PATTERN */
+function vTabGroup(tableObj, which) {
+
+    vTabA = 'TAB-ONE';
+    vTabB = 'TAB-TWO';
+    vTabC = 'TAB-THREE';
+    vTabC = 'TAB-FOUR';
+    vTabC = 'TAB-FIVE';
+
+    if(which == vTabA) {
+        document.getElementById("vTabA").className = "vTab-on";
+        document.getElementById("vTabB").className = "vTab";
+        document.getElementById("vTabC").className = "vTab";
+        document.getElementById("vTabD").className = "vTab";
+        document.getElementById("vTabE").className = "vTab";
+        document.getElementById("vTabOneContent").style.display = "block";
+        document.getElementById("vTabTwoContent").style.display = "none";
+        document.getElementById("vTabThreeContent").style.display = "none";
+        document.getElementById("vTabFourContent").style.display = "none";
+        document.getElementById("vTabFiveContent").style.display = "none";
+    } else if(which == vTabB) {
+        document.getElementById("vTabA").className = "vTab";
+        document.getElementById("vTabB").className = "vTab-on";
+        document.getElementById("vTabC").className = "vTab";
+        document.getElementById("vTabD").className = "vTab";
+        document.getElementById("vTabE").className = "vTab";
+        document.getElementById("vTabOneContent").style.display = "none";
+        document.getElementById("vTabTwoContent").style.display = "block";
+        document.getElementById("vTabThreeContent").style.display = "none";
+        document.getElementById("vTabFourContent").style.display = "none";
+        document.getElementById("vTabFiveContent").style.display = "none";
+    } else if(which == vTabC) {
+        document.getElementById("vTabA").className = "vTab";
+        document.getElementById("vTabB").className = "vTab";
+        document.getElementById("vTabC").className = "vTab-on";
+        document.getElementById("vTabD").className = "vTab";
+        document.getElementById("vTabE").className = "vTab";
+        document.getElementById("vTabOneContent").style.display = "none";
+        document.getElementById("vTabTwoContent").style.display = "none";
+        document.getElementById("vTabThreeContent").style.display = "block";
+        document.getElementById("vTabFourContent").style.display = "none";
+        document.getElementById("vTabFiveContent").style.display = "none";
+    } else if(which == vTabD) {
+        document.getElementById("vTabA").className = "vTab";
+        document.getElementById("vTabB").className = "vTab";
+        document.getElementById("vTabC").className = "vTab";
+        document.getElementById("vTabD").className = "vTab-on";
+        document.getElementById("vTabE").className = "vTab";
+        document.getElementById("vTabOneContent").style.display = "none";
+        document.getElementById("vTabTwoContent").style.display = "none";
+        document.getElementById("vTabThreeContent").style.display = "none";
+        document.getElementById("vTabFourContent").style.display = "block";
+        document.getElementById("vTabFiveContent").style.display = "none";
+    } else if(which == vTabE) {
+        document.getElementById("vTabA").className = "vTab";
+        document.getElementById("vTabB").className = "vTab";
+        document.getElementById("vTabC").className = "vTab";
+        document.getElementById("vTabD").className = "vTab";
+        document.getElementById("vTabE").className = "vTab-on";
+        document.getElementById("vTabOneContent").style.display = "none";
+        document.getElementById("vTabTwoContent").style.display = "none";
+        document.getElementById("vTabThreeContent").style.display = "none";
+        document.getElementById("vTabFourContent").style.display = "none";
+        document.getElementById("vTabFiveContent").style.display = "block";
+    } 
+}
+
+</script>
+
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
@@ -112,19 +184,19 @@ Get your State Pension
 <div class="vTabGroup">
 
     <!-- Text only tab -->
-    <div><a id="vTabA" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-ONE')" href="javascript: void(0)">Claim filter</a></div>
+    <div><a id="vTabA" class="vTab-on" onclick="vTabGroup('vTabContent', 'TAB-ONE')" href="javascript: void(0)">Claim filter</a></div>
 
     <!-- Text only tab -->
-    <div><a id="vTabB" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-TWO')" href="javascript: void(0)">Claims</a></div>
+    <div><a id="vTabB" class="vTab" onclick="vTabGroup('vTabContent', 'TAB-TWO')" href="javascript: void(0)">Claims</a></div>
 
     <!-- Text only tab -->
-    <div><a id="vTabC" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-THREE')" href="javascript: void(0)">Pre-claim activity</a></div>
+    <div><a id="vTabC" class="vTab" onclick="vTabGroup('vTabContent', 'TAB-THREE')" href="javascript: void(0)">Pre-claim activity</a></div>
 
     <!-- Text only tab -->
-    <div><a id="vTabD" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-FOUR')" href="javascript: void(0)">Tasks</a></div>
+    <div><a id="vTabD" class="vTab" onclick="vTabGroup('vTabContent', 'TAB-FOUR')" href="javascript: void(0)">Tasks</a></div>
 
     <!-- Text only tab -->
-    <div><a id="vTabE" class="vTab-on" onclick="vTabGroup(vTabContent, 'TAB-FIVE')" href="javascript: void(0)">Tier 2 checking team</a></div>
+    <div><a id="vTabE" class="vTab" onclick="vTabGroup('vTabContent', 'TAB-FIVE')" href="javascript: void(0)">Tier 2 checking team</a></div>
 
 </div>
 
