@@ -442,11 +442,11 @@ Country 1</h1>
 
 <br>
 
-<div class="govuk-form-group">
+<!-- <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="another-country-1-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
       <h1 class="govuk-fieldset__heading">
-        Have you lived or worked in any other country? <!-- (or another time in this country? need to confirm if we need to ask this)-->
+        Have you lived or worked in any other country? (or another time in this country? need to confirm if we need to ask this)
       </h1>
     </legend>
     <div class="govuk-radios govuk-radios--inline">
@@ -465,7 +465,7 @@ Country 1</h1>
     </div>
 
   </fieldset>
-</div>
+</div> -->
 
       <button type="submit" class="govuk-button">
         Continue
@@ -483,14 +483,16 @@ Country 1</h1>
         </div>
         <div class="govuk-details__text">
           <b>Errors:</b> <br>
-          Empty: Enter the name of the country<br>
-          Empty: Enter a date<br>
-          Incomplete: Date must include a Month<br>
-          Incomplete: Date must include a Year<br>
-          Future: Date cannot be in the future<br>
+          Empty: Enter the country where the claimant lived or worked<br>
+          Empty: Enter a date the claimant lived in the country 'from'<br>
+          Empty: Enter a date the claimant lived in the country 'to'<br>
+          Empty: Enter a date the claimant worked in the country 'from'<br>
+          Empty: Enter a date the claimant worked in the country 'to'<br>
+          Invalid date: Enter a real date as a month and a year, like 06 1983<br>
+          Future: Date must be in the past<br>
           Invalid: Date cannot be before from date<br>
-          Nothing entered: Enter a Social Security or National Insurance number<br>
-          Nothing selected: Select yes if the claimant has lived or worked in any other country<br>
+          Social Security or National Insurance number must have 24 characters or less<br>
+     
 
         </div>
       </details>

@@ -7,11 +7,6 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
 {% include './_header-nav-tasks.html' %}
 
 {% block headEnd %}
@@ -28,10 +23,10 @@ GOV.UK Prototype Kit
 
 
         <form method="post">
-         
+
           <p>View the next available task that requires an action.</p>
 <br>
-          <a href="tasks-2" button type="submit" class="govuk-button"> 
+          <a href="tasks-2" button type="submit" class="govuk-button">
             View next task
           </button>
         </a>
