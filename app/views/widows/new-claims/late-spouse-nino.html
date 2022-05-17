@@ -25,14 +25,16 @@ GOV.UK Prototype Kit
 {{ govukBackLink({
       "text": "Back",
       "href": "javascript: window.history.go(-1)"
-    }) 
+    })
   }}
 
   <br><br>
 
-        <h1 class="govuk-heading-l">Late spouse or civil partner NINO
-        </h1>
+  <h1 class="govuk-heading-l">Add the missing details</h1>
 
+                <p>Use CAM, NIRs and Searchlight to find the spouse or civil partner's missing details.</p>
+
+<!--
         <h2 class="govuk-heading-m">Claimant details</h2>
 
 
@@ -67,31 +69,39 @@ GOV.UK Prototype Kit
             </tbody>
           </table>
 
-          <br>
 
 
-        <h1 class="govuk-heading-m">Late spouse or civil partner details</h1>
+-->  <br>  <br>
+        <h2 class="govuk-heading-m">Spouse or civil partner details</h2>
 
             <form method="post">
 
 
               <table class="govuk-table">
                 <tbody class="govuk-table__body">
-                 
+
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">First name </th>
-                    <td class="govuk-table__cell">Alan</td>
+                    <td class="govuk-table__cell">Sandra</td>
                     <td class="govuk-table__cell"></td>
                     <td class="govuk-table__cell"></td>
 
                   </tr>
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Last name</th>
-                    <td class="govuk-table__cell">Smith</td>
+                    <td class="govuk-table__cell">Penny</td>
                     <td class="govuk-table__cell"></td>
                     <td class="govuk-table__cell"></td>
                   </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Address</th>
+                    <td class="govuk-table__cell">55 Main Street
+                      <br>Guildford
+                      <br>GU79 6YW</td>
+                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell"></td>
 
+                  </tr>
                       <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Date of birth</th>
                     <td class="govuk-table__cell">12 January 1940</td>
@@ -102,7 +112,7 @@ GOV.UK Prototype Kit
                     </span> </td>
 
                   </tr>
-                  
+
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Date of death</th>
                     <td class="govuk-table__cell">6 July 2021</td>
@@ -110,7 +120,7 @@ GOV.UK Prototype Kit
                       <b></b>
                     </span> </td>
                     <td class="govuk-table__cell" style="text-align: right">
-                      
+
                     </td>
                   </tr>
 
@@ -122,6 +132,14 @@ GOV.UK Prototype Kit
                                             <a class="govuk-link" href="nino">Add</a>
                     </td>
                   </tr>
+                  <tr class="govuk-table__row">
+                   <th scope="row" class="govuk-table__header" style="width: 40%">Gender</th>
+                   <td class="govuk-table__cell" style="width: 30%"></td>
+                   <td class="govuk-table__cell"></td>
+                   <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
+                                           <a class="govuk-link" href="gender">Add</a>
+                   </td>
+                 </tr>
 
                 </tbody>
               </table>
@@ -131,11 +149,9 @@ GOV.UK Prototype Kit
         <form method="post" action="#">
           <br>
           <button class="govuk-button" data-module="govuk-button">
-            Start this task
+            Continue
           </button>
-          <a href="#" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
-            Return task to queue
-          </a>
+
 
 
 <!--
