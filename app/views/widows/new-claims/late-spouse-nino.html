@@ -1,0 +1,170 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+      {% include 'includes/_bar-widows2.html' %}
+
+{{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    }) 
+  }}
+
+  <br><br>
+
+        <h1 class="govuk-heading-l">Late spouse or civil partner NINO
+        </h1>
+
+        <h2 class="govuk-heading-m">Claimant details</h2>
+
+
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Address</th>
+                <td class="govuk-table__cell">55 Main Street
+                  <br>Guildford
+                  <br>GU79 6YW</td>
+                <td class="govuk-table__cell"></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Marital status</th>
+                <td class="govuk-table__cell">Widowed</td>
+                <td class="govuk-table__cell"></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Age when widowed</th>
+                <td class="govuk-table__cell">49</td>
+                <td class="govuk-table__cell"></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">State Pension date</th>
+                <td class="govuk-table__cell">13 July 2020</td>
+                <td class="govuk-table__cell"></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <br>
+
+
+        <h1 class="govuk-heading-m">Late spouse or civil partner details</h1>
+
+            <form method="post">
+
+
+              <table class="govuk-table">
+                <tbody class="govuk-table__body">
+                 
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">First name </th>
+                    <td class="govuk-table__cell">Alan</td>
+                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell"></td>
+
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Last name</th>
+                    <td class="govuk-table__cell">Smith</td>
+                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell"></td>
+                  </tr>
+
+                      <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Date of birth</th>
+                    <td class="govuk-table__cell">12 January 1940</td>
+                    <td class="govuk-table__cell"><span class="verified-badge verified">
+                      <b></b>
+                      <td class="govuk-table__cell" style="text-align: right">
+                    </td>
+                    </span> </td>
+
+                  </tr>
+                  
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Date of death</th>
+                    <td class="govuk-table__cell">6 July 2021</td>
+                    <td class="govuk-table__cell"><span class="verified-badge verified">
+                      <b></b>
+                    </span> </td>
+                    <td class="govuk-table__cell" style="text-align: right">
+                      
+                    </td>
+                  </tr>
+
+                   <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header" style="width: 40%">National Insurance number</th>
+                    <td class="govuk-table__cell" style="width: 30%"></td>
+                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
+                                            <a class="govuk-link" href="nino">Add</a>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+
+
+        <form method="post" action="#">
+          <br>
+          <button class="govuk-button" data-module="govuk-button">
+            Start this task
+          </button>
+          <a href="#" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+            Return task to queue
+          </a>
+
+
+<!--
+     <a href="get-next-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+          Return task to queue
+        </a>
+
+        </form> -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
