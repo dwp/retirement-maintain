@@ -181,60 +181,18 @@ function vTabGroup(tableObj, which) {
 
 <br>
 
-<div class="vTabGroup">
 
-    <!-- Text only tab -->
-    <div><a id="vTabA" class="vTab-on" onclick="vTabGroup('vTabContent', 'TAB-ONE')" href="javascript: void(0)">Claim filter</a></div>
-
-    <!-- Text only tab -->
-    <div><a id="vTabB" class="vTab" onclick="vTabGroup('vTabContent', 'TAB-TWO')" href="javascript: void(0)">Claims</a></div>
-
-    <!-- Text only tab -->
-    <div><a id="vTabC" class="vTab" onclick="vTabGroup('vTabContent', 'TAB-THREE')" href="javascript: void(0)">Pre-claim activity</a></div>
-
-    <!-- Text only tab -->
-    <div><a id="vTabD" class="vTab" onclick="vTabGroup('vTabContent', 'TAB-FOUR')" href="javascript: void(0)">Tasks</a></div>
-
-    <!-- Text only tab -->
-    <div><a id="vTabE" class="vTab" onclick="vTabGroup('vTabContent', 'TAB-FIVE')" href="javascript: void(0)">Tier 2 checking team</a></div>
-
-</div>
-
-<div id="vTabContent">
-    <div id="vTabOneContent">
-        <h4 class="heading-small bottom_15">Claim filter</h4>
-        <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-   </legend>
-    <div class="govuk-radios" data-module="govuk-radios">
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+<div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
           Claim filter
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-          Claim filter (paper only)
-        </label>
-      </div>
+        </span>
+      </h2>
     </div>
-
-  </fieldset>
-</div>
-
-    </div>
-
-    <div id="vTabContent">
-    <div id="vTabTwoContent">
-        <h4 class="heading-small bottom_15">Claims</h4>
-        <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-   </legend>
-    <div class="govuk-radios" data-module="govuk-radios">
+    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+      <div class="govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live">
@@ -254,18 +212,18 @@ function vTabGroup(tableObj, which) {
         </label>
       </div>
     </div>
-
-  </fieldset>
-</div>
-
-<div id="vTabContent">
-    <div id="vTabThreeContent">
-        <h4 class="heading-small bottom_15">Pre-claim activity</h4>
-        <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-   </legend>
-    <div class="govuk-radios" data-module="govuk-radios">
+    </div>
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+          Claims
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+      <div class="govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live">
@@ -285,18 +243,47 @@ function vTabGroup(tableObj, which) {
         </label>
       </div>
     </div>
-
-  </fieldset>
-</div>
-
-<div id="vTabContent">
-    <div id="vTabFourContent">
-        <h4 class="heading-small bottom_15">Tasks</h4>
-        <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-   </legend>
-    <div class="govuk-radios" data-module="govuk-radios">
+    </div>
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+          Pre-claim activity
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+      <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          Citizen details
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          HMRC feed
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+          Letters
+        </label>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+          Tasks
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+      <div class="govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live">
@@ -322,18 +309,18 @@ function vTabGroup(tableObj, which) {
         </label>
       </div>
     </div>
-
-  </fieldset>
-</div>
-
-<div id="vTabContent">
-    <div id="vTabFiveContent">
-        <h4 class="heading-small bottom_15">Tier 2 checking team</h4>
-        <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-   </legend>
-    <div class="govuk-radios" data-module="govuk-radios">
+    </div>
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+          Tier 2 checking team
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+      <div class="govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live">
@@ -341,14 +328,11 @@ function vTabGroup(tableObj, which) {
         </label>
       </div>
     </div>
-
-  </fieldset>
+    </div>
+  </div>
 </div>
 
-
-
-
-<br><br><br><br>
+<br><br><br>
 
                 {{ govukButton ({
                     html: 'Continue'
