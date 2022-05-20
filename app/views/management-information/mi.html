@@ -19,76 +19,7 @@ Get your State Pension
 
 {% block content %}
 
-<script>
 
-    /* TABS PATTERN */
-function vTabGroup(tableObj, which) {
-
-    vTabA = 'TAB-ONE';
-    vTabB = 'TAB-TWO';
-    vTabC = 'TAB-THREE';
-    vTabD = 'TAB-FOUR';
-    vTabE = 'TAB-FIVE';
-
-    if(which == vTabA) {
-        document.getElementById("vTabA").className = "vTab-on";
-        document.getElementById("vTabB").className = "vTab";
-        document.getElementById("vTabC").className = "vTab";
-        document.getElementById("vTabD").className = "vTab";
-        document.getElementById("vTabE").className = "vTab";
-        document.getElementById("vTabOneContent").style.display = "block";
-        document.getElementById("vTabTwoContent").style.display = "none";
-        document.getElementById("vTabThreeContent").style.display = "none";
-        document.getElementById("vTabFourContent").style.display = "none";
-        document.getElementById("vTabFiveContent").style.display = "none";
-    } else if(which == vTabB) {
-        document.getElementById("vTabA").className = "vTab";
-        document.getElementById("vTabB").className = "vTab-on";
-        document.getElementById("vTabC").className = "vTab";
-        document.getElementById("vTabD").className = "vTab";
-        document.getElementById("vTabE").className = "vTab";
-        document.getElementById("vTabOneContent").style.display = "none";
-        document.getElementById("vTabTwoContent").style.display = "block";
-        document.getElementById("vTabThreeContent").style.display = "none";
-        document.getElementById("vTabFourContent").style.display = "none";
-        document.getElementById("vTabFiveContent").style.display = "none";
-    } else if(which == vTabC) {
-        document.getElementById("vTabA").className = "vTab";
-        document.getElementById("vTabB").className = "vTab";
-        document.getElementById("vTabC").className = "vTab-on";
-        document.getElementById("vTabD").className = "vTab";
-        document.getElementById("vTabE").className = "vTab";
-        document.getElementById("vTabOneContent").style.display = "none";
-        document.getElementById("vTabTwoContent").style.display = "none";
-        document.getElementById("vTabThreeContent").style.display = "block";
-        document.getElementById("vTabFourContent").style.display = "none";
-        document.getElementById("vTabFiveContent").style.display = "none";
-    } else if(which == vTabD) {
-        document.getElementById("vTabA").className = "vTab";
-        document.getElementById("vTabB").className = "vTab";
-        document.getElementById("vTabC").className = "vTab";
-        document.getElementById("vTabD").className = "vTab-on";
-        document.getElementById("vTabE").className = "vTab";
-        document.getElementById("vTabOneContent").style.display = "none";
-        document.getElementById("vTabTwoContent").style.display = "none";
-        document.getElementById("vTabThreeContent").style.display = "none";
-        document.getElementById("vTabFourContent").style.display = "block";
-        document.getElementById("vTabFiveContent").style.display = "none";
-    } else if(which == vTabE) {
-        document.getElementById("vTabA").className = "vTab";
-        document.getElementById("vTabB").className = "vTab";
-        document.getElementById("vTabC").className = "vTab";
-        document.getElementById("vTabD").className = "vTab";
-        document.getElementById("vTabE").className = "vTab-on";
-        document.getElementById("vTabOneContent").style.display = "none";
-        document.getElementById("vTabTwoContent").style.display = "none";
-        document.getElementById("vTabThreeContent").style.display = "none";
-        document.getElementById("vTabFourContent").style.display = "none";
-        document.getElementById("vTabFiveContent").style.display = "block";
-    } 
-}
-
-</script>
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
@@ -179,7 +110,6 @@ function vTabGroup(tableObj, which) {
   </fieldset>
 </div>
 
-<br>
 
 
 <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
@@ -196,24 +126,19 @@ function vTabGroup(tableObj, which) {
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-          Claims
+          Claim filter
         </label>
       </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-          Claim details
+          Claim filter (paper only)
         </label>
       </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-          KBV
-        </label>
       </div>
-    </div>
     </div>
   </div>
+
   <div class="govuk-accordion__section ">
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
@@ -227,33 +152,42 @@ function vTabGroup(tableObj, which) {
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-          Citizen details
+          Claims
         </label>
       </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-          HMRC feed
+          Claim details
         </label>
       </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-          Letters
+          HMRC initial calc 404 errors
         </label>
       </div>
-    </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+          KBV
+        </label>
+      </div>
+      </div>
     </div>
   </div>
+
   <div class="govuk-accordion__section ">
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
           Pre-claim activity
         </span>
       </h2>
     </div>
     <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+         <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live">
           Citizen details
@@ -274,6 +208,7 @@ function vTabGroup(tableObj, which) {
     </div>
     </div>
   </div>
+
   <div class="govuk-accordion__section ">
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
@@ -314,28 +249,29 @@ function vTabGroup(tableObj, which) {
   <div class="govuk-accordion__section ">
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-5">
           Tier 2 checking team
         </span>
       </h2>
     </div>
-    <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+    <div id="accordion-default-content-5" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
       <div class="govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live">
           Invite key retrieval
         </label>
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
+      
+   </div>
+   </div>
+   </div>
+   </div>
+   </div>
 
-<br><br><br>
+<br>
 
                 {{ govukButton ({
-                    html: 'Continue'
+                    html: 'Download report'
                 }) }}
 
             </form>
