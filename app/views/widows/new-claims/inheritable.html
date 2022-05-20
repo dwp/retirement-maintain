@@ -31,25 +31,65 @@ GOV.UK Prototype Kit
   <br><br>
 
       <div class="govuk-form-group">
-          <h1 class="govuk-heading-l">Any inheritable amounts?</h1>
+        <h1 class="govuk-heading-l">Check NIRs for any inheritable amounts
+        </h1>
 
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-              <div id="changed-name-hint" class="govuk-hint">
-              Hinty
-              </div>
-              <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="changed-name">
-                    Yes
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                    No
-                  </label>
+<br><br>
+        <h2 class="govuk-heading-m">Late spouse or civil partner details</h2>
+
+            <form method="post">
+
+
+              <table class="govuk-table">
+                <tbody class="govuk-table__body">
+
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">First name </th>
+                    <td class="govuk-table__cell">Sandra</td>
+                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell"></td>
+
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Last name</th>
+                    <td class="govuk-table__cell">Penny</td>
+                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell"></td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                   <th scope="row" class="govuk-table__header">National Insurance number</th>
+                   <td class="govuk-table__cell">JS 12 34 56 D</td>
+                   <td class="govuk-table__cell"></td>
+                   <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
+                   </td>
+                 </tr>
+
+
+
+
+                </tbody>
+              </table>
+              <br><br>
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                    <h2 class="govuk-fieldset__heading">
+                      Are there any inheritable amounts?
+                    </h2>
+                  </legend>
+                  <div class="govuk-radios" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                        No
+                      </label>
+
                 </div>
               </div>
 
@@ -59,9 +99,9 @@ GOV.UK Prototype Kit
           <br>
 
 
-          <a href="widows-task-1" button type="submit" class="govuk-button">
+          <a href="end-task" button type="submit" class="govuk-button">
             Continue
-            </button>
+
 
 
           </a>
