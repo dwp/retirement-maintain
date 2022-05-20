@@ -1,40 +1,21 @@
 // global styles for <a> and <p> tags
 $govuk-global-styles: true;
+$govuk-new-link-styles: true;
 
 // We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
 $govuk-assets-path: '/govuk/assets/';
 
 // Import GOV.UK Frontend and any extension styles if extensions have been configured
 @import "lib/extensions/extensions";
-@import '../../../node_modules/govuk-country-and-territory-autocomplete/dist/location-autocomplete.min';
 
 // Patterns that aren't in Frontend
-@import "patterns/check-your-answers";
-@import "patterns/step-by-step-navigation";
+@import "patterns/step-by-step-header";
+@import "patterns/step-by-step-nav";
+@import "patterns/step-by-step-related";
 @import "patterns/task-list";
 @import "patterns/related-items";
-@import "patterns/currency-input";
 
-// Components that aren't in Frontend
-@import "components/cookie-banner";
-
-@import 'most-recent';
-@import 'index-top';
-@import 'key-details-bar';
-@import 'key-details-bar-white';
-@import 'key-details-bar2';
-@import 'navigation-global';
-@import 'timeline';
-@import 'navigation-secondary';
-@import 'app-c-tag';
-@import 'verified-badge';
-@import 'not-verified-badge';
-@import 'work-queue-nav';
-@import 'download';
-@import 'vertical-tab';
-// @import 'alert-warning';
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
- 
 
 .award_detail {
 
