@@ -9,4 +9,14 @@ router.post('/widows/new-claims/inheritable', function(req, res) {
     }
   });
 
+  router.post('/widows/new-claims/spouse-spa', function(req, res) {
+      if ( req.body['receiving-sp'] === 'yes' ) {
+        res.redirect('/widows/new-claims/check-details');
+      } else {
+        res.redirect('/widows/new-claims/end-task-pscs');
+      }
+    });
+
+
+
 module.exports = router;
