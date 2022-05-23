@@ -20,19 +20,70 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl">Check if the claimant is entitled to inherit any State Pension
+        <h1 class="govuk-heading-xl">Check if the claimant can inherit any State Pension
         </h1>
 
-        <p>Check the records of the claimant and their spouse or civil partner to see if this changes their State Pension entitlement.</p><p> Use CAM, NIRs and Searchlight to:</p>
-<ol class="govuk-list govuk-list--number">
-    <li>Check for inheritable amounts.</li>
-  <li>Check if the spouse claimed their State Pension.</li>
-  <li>Enter and verify the date of marriage and death.</li>
-  <li>Calculate inheritable amounts.</li></ol>
 
 
 
-        <form method="post" action="late-spouse-nino">
+        <table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col"> Task </th>
+      <th class="govuk-table__header" scope="col"> Status </th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        Check for inheritable amounts
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--red">
+  Task outstanding
+</strong>
+
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+Check if the spouse claimed their State Pension      </td>
+<td class="govuk-table__cell">
+  <strong class="govuk-tag govuk-tag--red">
+Task outstanding
+</strong>
+
+</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+Verify the date of birth, marriage and death      </td>
+<td class="govuk-table__cell">
+  <strong class="govuk-tag govuk-tag--red">
+Task outstanding
+</strong>
+
+</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        Calculate inheritable amounts
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--red">
+  Task outstanding
+</strong>
+
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+
+        <form method="post" action="check-inherited-amounts">
           <br>
           <button class="govuk-button" data-module="govuk-button">
             Start this task
