@@ -100,7 +100,24 @@ GOV.UK Prototype Kit
 
     <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
 
-
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
+              style="font-size: 16pt;">
+              Widows claim task
+            </span>
+          </h2>
+          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
+            style="font-size: 14pt;">
+            Task to check for inheritable components when a claimant is widowed when they make a claim
+            </div>
+        </div>
+        <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
+          aria-labelledby="accordion-with-summary-sections-heading-3">
+              {% include 'notes/widowstask.html' %}
+        </div>
+      </div>
 
       <div class="govuk-accordion__section ">
 
@@ -311,34 +328,6 @@ A task for agents to check if a citizen claiming after their State Pension date 
           aria-labelledby="accordion-with-summary-sections-heading-3">
             <div class="app-most-recent">
               {% include 'notes/addresstask1.html' %}
-            </div>
-        </div>
-      </div>
-
-
-      <div class="govuk-accordion__section ">
-        <div class="govuk-accordion__section-header">
-          <h2 class="govuk-accordion__section-heading">
-            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
-              style="font-size: 16pt;">
-              Widows claim task
-            </span>
-          </h2>
-          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
-            style="font-size: 14pt;">
-            Task to check for inheritable components when a claimant is widowed when they make a claim
-            </div>
-        </div>
-        <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
-          aria-labelledby="accordion-with-summary-sections-heading-3">
-            <div class="app-most-recent">
-              {% include 'notes/widowstask2.html' %}
-            </div>
-        </div>
-        <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
-          aria-labelledby="accordion-with-summary-sections-heading-3">
-            <div class="app-most-recent">
-              {% include 'notes/widowstask1.html' %}
             </div>
         </div>
       </div>

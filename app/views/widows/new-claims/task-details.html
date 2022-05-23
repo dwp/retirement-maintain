@@ -39,30 +39,21 @@ GOV.UK Prototype Kit
         Check for inheritable amounts
       </td>
       <td class="govuk-table__cell">
-        <strong class="govuk-tag govuk-tag--red">
-  Task outstanding
-</strong>
-
+  <b>Task outstanding</b>
       </td>
     </tr>
     <tr class="govuk-table__row">
       <td class="govuk-table__cell">
 Check if the spouse claimed their State Pension      </td>
 <td class="govuk-table__cell">
-  <strong class="govuk-tag govuk-tag--red">
-Task outstanding
-</strong>
-
+<b>Task outstanding</b>
 </td>
     </tr>
     <tr class="govuk-table__row">
       <td class="govuk-table__cell">
 Verify the date of birth, marriage and death      </td>
 <td class="govuk-table__cell">
-  <strong class="govuk-tag govuk-tag--red">
-Task outstanding
-</strong>
-
+<b>Task outstanding</b>
 </td>
     </tr>
     <tr class="govuk-table__row">
@@ -70,10 +61,7 @@ Task outstanding
         Calculate inheritable amounts
       </td>
       <td class="govuk-table__cell">
-        <strong class="govuk-tag govuk-tag--red">
-  Task outstanding
-</strong>
-
+  <b>Task outstanding</b>
       </td>
     </tr>
 
@@ -81,24 +69,14 @@ Task outstanding
 </table>
 
 
-
-
-        <form method="post" action="check-inherited-amounts">
+        <form method="post" action="/widows/new-claims/nino">
           <br>
           <button class="govuk-button" data-module="govuk-button">
             Start this task
           </button>
-          <a href="#" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+          <a href="/widows/new-claims/get-a-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
             Return task to queue
           </a>
-
-
-<!--
-     <a href="get-next-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
-          Return task to queue
-        </a>
-
-        </form> -->
 
 
 
@@ -107,11 +85,6 @@ Task outstanding
       </div>
 
     </div>
-
-  </div>
-
-</main>
-      </div>
 
       {% endblock %}
 
