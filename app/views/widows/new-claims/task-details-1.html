@@ -29,14 +29,14 @@ GOV.UK Prototype Kit
         <table class="govuk-table">
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col"> Task </th>
+      <th class="govuk-table__header" scope="col"> Steps to complete </th>
       <th class="govuk-table__header" scope="col"> Status </th>
     </tr>
   </thead>
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <td class="govuk-table__cell">
-        Check for inheritable amounts
+        Check for inheritable components
       </td>
       <td class="govuk-table__cell">
 <b>
@@ -67,9 +67,8 @@ Verify the date of birth, marriage and death      </td>
         Calculate inheritable amounts
       </td>
       <td class="govuk-table__cell">
-<b>
-  Task outstanding
-</b>
+        <b>Action required</b>
+
 
       </td>
     </tr>
@@ -78,9 +77,11 @@ Verify the date of birth, marriage and death      </td>
 </table>
 
 
-          <br>
+<form method="post" action="/widows/new-claims/nino">
+  <br>
 
-          <a href="inheritable" button type="submit" style="margin-left: 2%" class="govuk-button">
+
+          <a href="inheritable" button type="submit" class="govuk-button">
             Start this task
           </a>
           <a href="get-a-task-2" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
