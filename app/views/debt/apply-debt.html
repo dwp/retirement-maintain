@@ -22,13 +22,16 @@ GOV.UK Prototype Kit
 
               {% include './_bar.html' %}
 
-                      <form method="post" action="summarise-br403">
+                      <form method="post" action="confirm-debt">
 
-                        <h1 class="govuk-heading-l">Enter details of debtz</h1>
+                        <h1 class="govuk-heading-l">Enter details of debt</h1>
 
+                        {{ govukBackLink({
+                    text: "Back",
+                    href: "javascript:history.go(-1)"
+                    }) }}
 
-
-
+<Br>
                         <div class="govuk-form-group">
                           <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
                             <legend class="govuk-fieldset__legend">
@@ -95,21 +98,6 @@ GOV.UK Prototype Kit
                           </fieldset>
                         </div>
 
-                        <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
-        <label class="govuk-label govuk-checkboxes__label" for="organisation">
-          No end date? More than 12 month?
-          (Do we even need this?)
-        </label>
-      </div>
-    </div>
-
-  </fieldset>
-</div>
-
 
                         <div class="govuk-form-group">
                           <label class="govuk-label" for="currency">
@@ -125,12 +113,8 @@ GOV.UK Prototype Kit
                         </div>
 
 
+<p>Code?</p>
 
-
-
-<p></p>
-
-<p><a href="review-award-another">Add another adjustment (do we need this?)</a></p>
 
 <button class="govuk-button" data-module="govuk-button">
  Continue
