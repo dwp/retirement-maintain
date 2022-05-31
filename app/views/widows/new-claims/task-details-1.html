@@ -20,81 +20,23 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl">Check if the claimant can inherit any State Pension
+        <h1 class="govuk-heading-xl">Consider the State Pension entitlement of a widowed claimant
         </h1>
 
+<p>Check the record of the claimant's late spouse or partner to see if this changes their State Pension entitlement.</p>
 
 
 
-        <table class="govuk-table">
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col"> Steps to complete </th>
-      <th class="govuk-table__header" scope="col"> Status </th>
-    </tr>
-  </thead>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">
-        Check for inheritable components
-      </td>
-      <td class="govuk-table__cell">
-<b>
-  Completed
-</b>
-
-      </td>
-    </tr>
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">
-Check if the spouse claimed their State Pension      </td>
-      <td class="govuk-table__cell">
-<b>Completed</b>
-      </td>
-    </tr>
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">
-Verify the date of birth, marriage and death      </td>
-      <td class="govuk-table__cell">
-<b>
-  Completed
-</b>
-
-      </td>
-    </tr>
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">
-        Calculate inheritable amounts
-      </td>
-      <td class="govuk-table__cell">
-        <b>Action required</b>
 
 
-      </td>
-    </tr>
-
-  </tbody>
-</table>
-
-
-<form method="post" action="/widows/new-claims/nino">
-  <br>
-
-
-          <a href="inheritable" button type="submit" class="govuk-button">
+        <form method="post" action="/widows/new-claims/nino">
+          <br>
+          <button class="govuk-button" data-module="govuk-button">
             Start this task
-          </a>
-          <a href="get-a-task-2" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+          </button>
+          <a href="/widows/new-claims/get-a-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
             Return task to queue
           </a>
-
-
-<!--
-     <a href="get-next-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
-          Return task to queue
-        </a>
-
-        </form> -->
 
 
 
@@ -103,11 +45,6 @@ Verify the date of birth, marriage and death      </td>
       </div>
 
     </div>
-
-  </div>
-
-</main>
-      </div>
 
       {% endblock %}
 
@@ -118,4 +55,4 @@ Verify the date of birth, marriage and death      </td>
         </div>
       </div>
 
-      {% endblock %}
+      {% endblock %e
