@@ -19,6 +19,20 @@ router.post('/widows/new-claims/check-details-info-missing', function(req, res) 
   }
   });
 
+  router.post('/widows/new-claims/more-info-letter', (req, res) => {
+    res.redirect('/widows/new-claims/get-a-task-2')
+  })
+  ;
+
+  router.post('/widows/new-claims/nothing-to-inherit', (req, res) => {
+    res.redirect('/widows/new-claims/get-a-task-2')
+  })
+  ;
+
+  router.post('/widows/new-claims/award-without-inheritance', (req, res) => {
+    res.redirect('/widows/new-claims/get-a-task-2')
+  })
+  ;
 
 router.post('/widows/new-claims/inheritable', function(req, res) {
     if ( req.body['inheritable-amounts'] === 'yes' ) {
