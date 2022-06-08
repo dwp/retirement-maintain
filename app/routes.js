@@ -70,6 +70,7 @@ const identitycheck = require('./routes/identitycheck');
 const identitycheck2 = require('./routes/identitycheck2');
 const identitycheck3 = require('./routes/identitycheck3');
 const widowsnewclaims = require('./routes/widowsnewclaims');
+const debt = require('./routes/debt');
 
 
 //copy the router use and update the sprint version
@@ -131,6 +132,7 @@ router.use(identitycheck);
 router.use(identitycheck2);
 router.use(identitycheck3);
 router.use(widowsnewclaims);
+router.use(debt);
 
 
 
