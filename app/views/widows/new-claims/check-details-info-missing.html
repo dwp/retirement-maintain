@@ -19,216 +19,221 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+        {% include 'includes/_bar-widows.html' %}
 
-      {% include 'includes/_bar-widows.html' %}
+  {{ govukBackLink({
+        "text": "Back",
+        "href": "javascript: window.history.go(-1)"
+      })
+    }}
 
-{{ govukBackLink({
-      "text": "Back",
-      "href": "javascript: window.history.go(-1)"
-    })
-  }}
+    <br><br>
+
+    <h1 class="govuk-heading-l">Check the details and decide how to continue</h1>
+    <p>Complete the information and verify the dates, or choose another way to continue.</p>
 
   <br><br>
 
-  <h1 class="govuk-heading-l">Check the details and decide how to continue</h1>
-  <p>Complete the information and verify the dates, or choose another way to continue.</p>
-
-<br><br>
-
-        <h2 class="govuk-heading-m">Claimant</h2>
+          <h2 class="govuk-heading-m">Claimant</h2>
 
 
-          <table class="govuk-table">
-            <tbody class="govuk-table__body">
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
 
 
 
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Address</th>
-                <td class="govuk-table__cell">55 Main Street
-                  <br>Guildford
-                  <br>GU79 6YW</td>
-                <td class="govuk-table__cell"></td>
-              </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Address</th>
+                  <td class="govuk-table__cell">55 Main Street
+                    <br>Guildford
+                    <br>GU79 6YW</td>
+                  <td class="govuk-table__cell"></td>
+                </tr>
 
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Marital status</th>
-                <td class="govuk-table__cell">Widowed</td>
-                <td class="govuk-table__cell"></td>
-              </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Marital status</th>
+                  <td class="govuk-table__cell">Widowed</td>
+                  <td class="govuk-table__cell"></td>
+                </tr>
 
-              <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Date of birth</th>
-            <td class="govuk-table__cell">12 January 1955</td>
-            <td class="govuk-table__cell"><span class="verified-badge verified">
-              <b></b>
-              <td class="govuk-table__cell" style="text-align: right">
-            </td>
-            </span> </td>
+                <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of birth</th>
+              <td class="govuk-table__cell">12 January 1955</td>
+              <td class="govuk-table__cell"><span class="verified-badge verified">
+                <b></b>
+                <td class="govuk-table__cell" style="text-align: right">
+              </td>
+              </span> </td>
 
-          </tr>
-
-
-
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">State Pension date</th>
-                <td class="govuk-table__cell">12 January 2022</td>
-                <td class="govuk-table__cell"></td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Age when widowed</th>
-                <td class="govuk-table__cell">66</td>
-                <td class="govuk-table__cell"></td>
-              </tr>
-
-            </tbody>
-          </table>
+            </tr>
 
 
-<br>  <br>
-        <h2 class="govuk-heading-m">Late spouse or civil partner</h2>
 
-            <form method="post">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">State Pension date</th>
+                  <td class="govuk-table__cell">12 January 2022</td>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Age when widowed</th>
+                  <td class="govuk-table__cell">66</td>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+
+              </tbody>
+            </table>
 
 
-              <table class="govuk-table">
-                <tbody class="govuk-table__body">
+  <br>  <br>
+          <h2 class="govuk-heading-m">Late spouse or civil partner</h2>
 
-                  <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">First name </th>
-                    <td class="govuk-table__cell">Sandra Penny</td>
-                    <td class="govuk-table__cell"></td>
-                    <td class="govuk-table__cell"></td>
+              <form method="post">
 
-                  </tr>
-                  <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">Address</th>
-                    <td class="govuk-table__cell">55 Main Street
-                      <br>Guildford
-                      <br>GU79 6YW</td>
-                    <td class="govuk-table__cell"></td>
-                    <td class="govuk-table__cell"></td>
 
-                  </tr>
-                  <tr class="govuk-table__row">
-                   <th scope="row" class="govuk-table__header" style="width: 40%">National Insurance number</th>
-                   <td class="govuk-table__cell" style="width: 30%">JS 12 34 56 D</td>
-                   <td class="govuk-table__cell"></td>
-                   <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
-                     <a class="govuk-link" href="nino">Change</a>
-                   </td>
-                 </tr>
-                  <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">Gender</th>
-                    <td class="govuk-table__cell"></td>
-                    <td class="govuk-table__cell"> </td>
-                    <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
-                                            <a class="govuk-link" href="nino">Add</a>
-                    </td>
-                  </tr>
+                <table class="govuk-table">
+                  <tbody class="govuk-table__body">
 
-                      <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">Date of birth</th>
-                    <td class="govuk-table__cell">25 March 1958</td>
-                    <td class="govuk-table__cell"><span class="verified-badge verified">
-                      <b>Verified</b>
-                    <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
-                                            <a class="govuk-link" href="nino">Change</a>
-                    </td>
-                    </span> </td>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">First name </th>
+                      <td class="govuk-table__cell">Sandra Penny</td>
+                      <td class="govuk-table__cell"></td>
+                      <td class="govuk-table__cell"></td>
 
-                  </tr>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Address</th>
+                      <td class="govuk-table__cell">55 Main Street
+                        <br>Guildford
+                        <br>GU79 6YW</td>
+                      <td class="govuk-table__cell"></td>
+                      <td class="govuk-table__cell"></td>
 
-                  <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">Date of death</th>
-                    <td class="govuk-table__cell">6 July 2021</td>
-                    <td class="govuk-table__cell"><span class="verified-badge verified">
-                      <b>Verified</b>
-                    </span> </td>
-                    <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
-                                            <a class="govuk-link" href="nino">Change</a>
-                    </td>
-                  </tr>
+                    </tr>
+                    <tr class="govuk-table__row">
+                     <th scope="row" class="govuk-table__header" style="width: 40%">National Insurance number</th>
+                     <td class="govuk-table__cell" style="width: 30%">JS 12 34 56 D</td>
+                     <td class="govuk-table__cell"></td>
+                     <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
+                       <a class="govuk-link" href="nino">Change</a>
+                     </td>
+                   </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Gender</th>
+                      <td class="govuk-table__cell"></td>
+                      <td class="govuk-table__cell"> </td>
+                      <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
+                                              <a class="govuk-link" href="nino">Add</a>
+                      </td>
+                    </tr>
 
-                  <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">Date of marriage</th>
-                    <td class="govuk-table__cell">6 August 1978</td>
-                    <td class="govuk-table__cell"><span class="verified-badge verified">
-                      <b>Unverified</b>
-                    </span> </td>
-                    <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
-                                            <a class="govuk-link" href="date-of-marriage">Change</a>
-                    </td>
-                  </tr>
+                        <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Date of birth</th>
+                      <td class="govuk-table__cell">25 March 1958</td>
+                      <td class="govuk-table__cell"><span class="verified-badge verified">
+                        <b>Verified</b>
+                      <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
+                                              <a class="govuk-link" href="nino">Change</a>
+                      </td>
+                      </span> </td>
+
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Date of death</th>
+                      <td class="govuk-table__cell">6 July 2021</td>
+                      <td class="govuk-table__cell"><span class="verified-badge verified">
+                        <b>Verified</b>
+                      </span> </td>
+                      <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
+                                              <a class="govuk-link" href="nino">Change</a>
+                      </td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Date of marriage</th>
+                      <td class="govuk-table__cell">6 August 1978</td>
+                      <td class="govuk-table__cell"><span class="verified-badge verified">
+                        <b>Unverified</b>
+                      </span> </td>
+                      <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
+                                              <a class="govuk-link" href="date-of-marriage">Change</a>
+                      </td>
+                    </tr>
 
 
 
 
-                </tbody>
-              </table>
+                  </tbody>
+                </table>
 
 
-<br>  <br>
+  <br>  <br>
 
-<div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
 
-      <h2 class="govuk-fieldset__heading">
-      How do you want to continue?
-      </h2>
-    </legend>
-  <div id="changed-name-hint" class="govuk-hint">You cannot check for inheritable amounts until you complete all details and verify all dates.</div>
-  <br>
-
-
+        <h2 class="govuk-fieldset__heading">
+        How do you want to continue?
+        </h2>
+      </legend>
+    <div id="changed-name-hint" class="govuk-hint">You cannot check for inheritable amounts until you complete all details and verify all dates.</div>
+    <br>
 
 
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="specialist-decision-2" name="specialist-decision" type="radio" value="support-queue">
-        <label class="govuk-label govuk-radios__label" for="specialist-decision-2">
-          Send to support queue
-        </label>
+
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="specialist-decision-2" name="specialist-decision" type="radio" value="support-queue">
+          <label class="govuk-label govuk-radios__label" for="specialist-decision-2">
+            Send to support queue
+          </label>
+
+    </div>
+
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="specialist-decision-2" name="specialist-decision" type="radio" value="more-info">
+    <label class="govuk-label govuk-radios__label" for="specialist-decision-2">
+  Ask claimant for more information</label>
 
   </div>
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="specialist-decision-2" name="specialist-decision" type="radio" value="award">
+    <label class="govuk-label govuk-radios__label" for="specialist-decision-2">
+  Award without inheritance - Nothing to inherit   </label>
 
-<div class="govuk-radios__item">
-  <input class="govuk-radios__input" id="specialist-decision-2" name="specialist-decision" type="radio" value="more-info">
-  <label class="govuk-label govuk-radios__label" for="specialist-decision-2">
-Ask claimant for more information</label>
+  </div>
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="specialist-decision-2" name="specialist-decision" type="radio" value="award-spa">
+    <label class="govuk-label govuk-radios__label" for="specialist-decision-2">
+  Award without inheritance - State Pension date approaching  </label>
 
-</div>
-<div class="govuk-radios__item">
-  <input class="govuk-radios__input" id="specialist-decision-2" name="specialist-decision" type="radio" value="award">
-  <label class="govuk-label govuk-radios__label" for="specialist-decision-2">
-Award without inheritance - Nothing to inherit   </label>
+  </div>
+  <br><br>
 
-</div>
-<div class="govuk-radios__item">
-  <input class="govuk-radios__input" id="specialist-decision-2" name="specialist-decision" type="radio" value="award">
-  <label class="govuk-label govuk-radios__label" for="specialist-decision-2">
-Award without inheritance - State Pension date approaching  </label>
+          <div class="govuk-button-group">
 
-</div>
-<br><br>
-
-        <div class="govuk-button-group">
-      <a href="specialist-decision" button type="submit" class="govuk-button">
-        Continue
-      </a>
-
-</div>
-</div>
-</div>
-
-
-      {% endblock %}
-
-      {% block content %}
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-
-        </div>
+            <button class="govuk-button" data-module="govuk-button">
+              Continue
+            </button>
       </div>
 
-      {% endblock %}
+    </div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
