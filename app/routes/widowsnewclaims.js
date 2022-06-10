@@ -76,4 +76,26 @@ router.post('/widows/scenario-1/check-details-info-missing', function(req, res) 
   })
   ;
 
+
+
+  // Scenario 4
+
+  router.post('/widows/scenario-4/task-details', (req, res) => {
+    res.redirect('/widows/scenario-4/inheritable')
+  })
+  ;
+
+  router.post('/widows/scenario-4/inheritable', function(req, res) {
+      if ( req.body['inheritable-amounts'] === 'yes' ) {
+        res.redirect('/widows/scenario-4/inheritable-amounts');
+      } else {
+      res.redirect('/widows/scenario-4/nothing-to-inherit');
+    }
+    });
+
+    router.post('/widows/scenario-4/nothing-to-inherit', (req, res) => {
+      res.redirect('/widows/scenario-4/get-a-task-2')
+    })
+    ;
+
 module.exports = router;
