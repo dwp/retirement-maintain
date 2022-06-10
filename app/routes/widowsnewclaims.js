@@ -135,11 +135,11 @@ router.post('/widows/scenario-3/task-details', (req, res) => {
 ;
 
 router.post('/widows/scenario-3/check-details-info-missing', function(req, res) {
-    if ( req.body['specialist-decision'] === 'support-queue' ) {
-      res.redirect('/widows/scenario-3/get-a-task');
-    } else if  ( req.body['specialist-decision'] === 'more-info' ) {
+    if ( req.body['specialist-decision-3'] === 'support-queue' ) {
+      res.redirect('/widows/scenario-3/get-a-task-2');
+    } else if  ( req.body['specialist-decision-3'] === 'more-info' ) {
       res.redirect('/widows/scenario-3/more-info-letter');
-    } else if  ( req.body['specialist-decision'] === 'award' ) {
+    } else if  ( req.body['specialist-decision-3'] === 'award' ) {
       res.redirect('/widows/scenario-3/nothing-to-inherit');
     } else {
     res.redirect('/widows/scenario-3/award-without-inheritance');
@@ -175,6 +175,7 @@ router.post('/widows/scenario-3/check-details-info-missing', function(req, res) 
     res.redirect('/widows/scenario-3/check-details-info-missing')
   })
   ;
+
 
   // Scenario 4
 
