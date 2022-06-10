@@ -127,6 +127,55 @@ router.post('/widows/scenario-1/check-details-info-missing', function(req, res) 
     ;
 
 
+//Scenario 3
+
+router.post('/widows/scenario-3/task-details', (req, res) => {
+  res.redirect('/widows/scenario-3/check-details-info-missing')
+})
+;
+
+router.post('/widows/scenario-3/check-details-info-missing', function(req, res) {
+    if ( req.body['specialist-decision'] === 'support-queue' ) {
+      res.redirect('/widows/scenario-3/get-a-task');
+    } else if  ( req.body['specialist-decision'] === 'more-info' ) {
+      res.redirect('/widows/scenario-3/more-info-letter');
+    } else if  ( req.body['specialist-decision'] === 'award' ) {
+      res.redirect('/widows/scenario-3/nothing-to-inherit');
+    } else {
+    res.redirect('/widows/scenario-3/award-without-inheritance');
+  }
+  });
+
+  router.post('/widows/scenario-3/nothing-to-inherit', (req, res) => {
+    res.redirect('/widows/scenario-3/get-a-task-2')
+  })
+  ;
+
+  router.post('/widows/scenario-3/nino', (req, res) => {
+    res.redirect('/widows/scenario-3/check-details-info-missing')
+  })
+  ;
+
+  router.post('/widows/scenario-3/gender', (req, res) => {
+    res.redirect('/widows/scenario-3/check-details-info-missing')
+  })
+  ;
+
+  router.post('/widows/scenario-3/dom', (req, res) => {
+    res.redirect('/widows/scenario-3/check-details-info-missing')
+  })
+  ;
+
+  router.post('/widows/scenario-3/dod', (req, res) => {
+    res.redirect('/widows/scenario-3/check-details-info-missing')
+  })
+  ;
+
+  router.post('/widows/scenario-3/dob', (req, res) => {
+    res.redirect('/widows/scenario-3/check-details-info-missing')
+  })
+  ;
+
   // Scenario 4
 
   router.post('/widows/scenario-4/task-details', (req, res) => {
