@@ -24,41 +24,6 @@ Get your State Pension
 
               
 
-<div class="govuk-grid-row">
-      <div class="govuk-grid-column-full">
-        <div class="sp-panel-deck">
-
-          <a href="claim-filters" class="sp-panel-deck__panel sp-panel-deck__link-panel govuk-heading-m sp-panel-deck__panel_content sp-panel--white-text" style="color: #ffffff">
-            Claim filters
-          </a>
-
-          <a href="claim-insights" class="sp-panel-deck__panel sp-panel-deck__link-panel govuk-heading-m sp-panel-deck__panel_content sp-panel--white-text" style="color: #ffffff">
-            Claim insights
-          </a>
-
-          <a href="pre-claim" class="sp-panel-deck__panel sp-panel-deck__link-panel govuk-heading-m sp-panel-deck__panel_content sp-panel--white-text" style="color: #ffffff">
-            Pre-claim activity
-          </a>
-
-          <a href="tasks" class="sp-panel-deck__panel  sp-panel-deck__link-panel govuk-heading-m sp-panel-deck__panel_content sp-panel--white-text" style="color: #ffffff" >
-            Tasks
-          </a>
-
-          <a href="tier-2" class="sp-panel-deck__panel sp-panel-deck__link-panel sp-panel-deck__last-panel--no-border govuk-heading-m sp-panel-deck__panel_content sp-panel--white-text"
-            style="color: #ffffff">
-            Tier 2 checking team
-          </a>
-
-          
-        </div>
-
-      </div>
-
-    </div>
-
-    <h6 class="govuk-heading-s">could these be a different type of button? or links?</h6>
-
-    <br><br>
 
     {{ govukBackLink ({
       text: 'Back',
@@ -167,9 +132,15 @@ Get your State Pension
 
 <br><br><br>
 
-                {{ govukButton ({
-                    html: 'Download report'
-                }) }}
+               <div class="govuk-button-group">
+          <a href="#" button type="submit" class="govuk-button">
+           Download report
+          </a>
+          
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="mi-4">
+           Return to management information
+          </a>
+        </div>
 
             </form>
 
