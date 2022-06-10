@@ -31,12 +31,12 @@ GOV.UK Prototype Kit
 
 <Br><br>
 
-                        <h1 class="govuk-heading-l">Enter details of debt</h1>
+                        <h1 class="govuk-heading-l">Enter debt payment details</h1>
 
                         <div class="govuk-form-group">
                           <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
                             <legend class="govuk-fieldset__legend">
-                              <strong>From date</strong>
+                              <strong>Date of first debt payment</strong>
                             </legend>
 
                             <div class="govuk-date-input" id="passport-issued">
@@ -69,7 +69,7 @@ GOV.UK Prototype Kit
                         <div class="govuk-form-group">
                           <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
                             <legend class="govuk-fieldset__legend">
-                              <strong>To date</strong>
+                              <strong>Date of final debt payment</strong>
                             </legend>
 
                             <div class="govuk-date-input" id="passport-issued">
@@ -118,6 +118,9 @@ GOV.UK Prototype Kit
                           <label class="govuk-label" for="width-5">
                             <b>Benefit code</b>
                           </label>
+                          <div id="currency-hint" class="govuk-hint">
+                            Enter the code for the benefit with the highest amount outstanding
+                          </div>
                           <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text">
                         </div>
 
