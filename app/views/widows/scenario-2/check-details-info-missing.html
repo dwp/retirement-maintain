@@ -111,7 +111,12 @@ GOV.UK Prototype Kit
                     </tr>
                     <tr class="govuk-table__row">
                      <th scope="row" class="govuk-table__header" style="width: 40%">National Insurance number</th>
-                     <td class="govuk-table__cell" style="width: 30%">JS 12 34 56 D</td>
+                     <td class="govuk-table__cell" style="width: 30%">
+                       {% if data.nationalinsurancenumber2 %}
+                       {{data.nationalinsurancenumber2}}
+                       {% else %}
+                       JS 12 34 56 D
+                       {% endif %}</td>
                      <td class="govuk-table__cell"></td>
                      <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
                        <a class="govuk-link" href="nino">Change</a>
@@ -119,18 +124,37 @@ GOV.UK Prototype Kit
                    </tr>
                     <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Gender</th>
-                      <td class="govuk-table__cell"></td>
+                      <td class="govuk-table__cell">
+                        {% if data.gender %}
+                        {{data.gender}}
+                        {% else %}
+
+                        {% endif %}</td>
                       <td class="govuk-table__cell"> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
-                                              <a class="govuk-link" href="gender">Add</a>
+                                              <a class="govuk-link" href="gender">
+                                              {% if data.gender %}
+                                              Change
+                                              {% else %}
+                                              Add
+                                              {% endif %}</a>
                       </td>
                     </tr>
 
                         <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Date of birth</th>
-                      <td class="govuk-table__cell">25/03/1958</td>
+                      <td class="govuk-table__cell">
+                        {% if data.dobd %}
+                        {{data.dobd}}/{{data.dobm}}/{{data.doby}}
+                        {% else %}
+                      25/03/1958
+                        {% endif %}</td>
                       <td class="govuk-table__cell"><span class="verified-badge verified">
-                        <b>Verified</b>
+                        <b>{% if data.dob %}
+                        {{data.dom}}
+                        {% else %}
+                        Unverified
+                        {% endif %}</b>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
                                               <a class="govuk-link" href="dob">Change</a>
                       </td>
@@ -140,9 +164,18 @@ GOV.UK Prototype Kit
 
                     <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Date of death</th>
-                      <td class="govuk-table__cell">6/07/2021</td>
+                      <td class="govuk-table__cell">
+                        {% if data.dodd %}
+                        {{data.dodd}}/{{data.dodm}}/{{data.dody}}
+                        {% else %}
+                        6/07/2021
+                        {% endif %}</td>
                       <td class="govuk-table__cell"><span class="verified-badge verified">
-                        <b>Verified</b>
+                        <b>{% if data.dom %}
+                        {{data.dod}}
+                        {% else %}
+                        Unverified
+                        {% endif %}</b>
                       </span> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
                                               <a class="govuk-link" href="dod">Change</a>
@@ -152,16 +185,24 @@ GOV.UK Prototype Kit
                     <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Date of marriage</th>
                       <td class="govuk-table__cell">
-                        {% if data.dom %}
+                        {% if data.domd %}
                         {{data.domd}}/{{data.domm}}/{{data.domy}}
                         {% else %}
-                        6/08/1978
+
                         {% endif %}</td>
                       <td class="govuk-table__cell"><span class="verified-badge verified">
-                        <b>Unverified</b>
+                        <b>{% if data.dom %}
+                        {{data.dom}}
+                        {% else %}
+                        Unverified
+                        {% endif %}</b>
                       </span> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
-                                              <a class="govuk-link" href="dom">Change</a>
+                                              <a class="govuk-link" href="dom">{% if data.domd %}
+                                              Change
+                                              {% else %}
+                                              Add
+                                              {% endif %}</a>
                       </td>
                     </tr>
 

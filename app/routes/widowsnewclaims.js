@@ -101,6 +101,30 @@ router.post('/widows/scenario-1/check-details-info-missing', function(req, res) 
     })
     ;
 
+    router.post('/widows/scenario-2/nino', (req, res) => {
+      res.redirect('/widows/scenario-2/check-details-info-missing')
+    })
+    ;
+
+    router.post('/widows/scenario-2/gender', (req, res) => {
+      res.redirect('/widows/scenario-2/check-details-info-missing')
+    })
+    ;
+
+    router.post('/widows/scenario-2/dom', (req, res) => {
+      res.redirect('/widows/scenario-2/check-details-info-missing')
+    })
+    ;
+
+    router.post('/widows/scenario-2/dod', (req, res) => {
+      res.redirect('/widows/scenario-2/check-details-info-missing')
+    })
+    ;
+
+    router.post('/widows/scenario-2/dob', (req, res) => {
+      res.redirect('/widows/scenario-2/check-details-info-missing')
+    })
+    ;
 
 
   // Scenario 4

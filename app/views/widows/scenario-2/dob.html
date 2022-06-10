@@ -31,7 +31,7 @@ GOV.UK Prototype Kit
 
   <br>  <br>
 
-
+        <form method="post">
           <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -39,29 +39,29 @@ GOV.UK Prototype Kit
 Sandra Penny's date of birth</h1>
     </legend>
     <br>
-    <div class="govuk-date-input" id="late-spouse-dob">
+    <div class="govuk-date-input" id="dob">
         <div class="govuk-date-input__item">
           <div class="govuk-form-group">
-            <label class="govuk-label govuk-date-input__label" for="late-spouse-dob-day">
+            <label class="govuk-label govuk-date-input__label" for="dobd">
               Day
             </label>
-            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="late-spouse-dob-day" name="late-spouse-dob-day" type="text" inputmode="numeric">
+            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dobd" name="dobd" type="text" inputmode="numeric">
           </div>
         </div>
         <div class="govuk-date-input__item">
           <div class="govuk-form-group">
-            <label class="govuk-label govuk-date-input__label" for="late-spouse-dob-month">
+            <label class="govuk-label govuk-date-input__label" for="dobm">
               Month
             </label>
-            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="late-spouse-dob-month" name="late-spouse-dob-month" type="text" inputmode="numeric">
+            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dobm" name="dobm" type="text" inputmode="numeric">
           </div>
         </div>
         <div class="govuk-date-input__item">
           <div class="govuk-form-group">
-            <label class="govuk-label govuk-date-input__label" for="late-spouse-dob-year">
+            <label class="govuk-label govuk-date-input__label" for="doby">
               Year
             </label>
-            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="late-spouse-dob-year" name="late-spouse-dob-year" type="text" inputmode="numeric">
+            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="doby" name="doby" type="text" inputmode="numeric">
           </div>
         </div>
       </div>
@@ -79,13 +79,13 @@ Sandra Penny's date of birth</h1>
     </legend>
     <div class="govuk-radios govuk-radios--inline">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="dob" name="dob" type="radio" value="verified">
+        <input class="govuk-radios__input" id="dob" name="dob" type="radio" value="Verified">
         <label class="govuk-label govuk-radios__label" for="dob">
           Verified
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="dob-2" name="dob" type="radio" value="notverified">
+        <input class="govuk-radios__input" id="dob-2" name="dob" type="radio" value="Unverified">
         <label class="govuk-label govuk-radios__label" for="dob-2">
           Not verified
         </label>
@@ -96,12 +96,9 @@ Sandra Penny's date of birth</h1>
 </div>
 
 
-          <a href="check-details-info-missing" button type="submit" class="govuk-button">
-            Continue
-            </button>
-
-
-          </a>
+<button class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
         </form>
 
 
