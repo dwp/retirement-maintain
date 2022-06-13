@@ -19,8 +19,30 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full">
 
-        {% if data['specialist-decision-2'] === 'support-queue' %}
-        <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        {% if data['specialist-decision'] === 'support-queue' %}
+        <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Success
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+              <p class="govuk-body">Task sent to support queue</p>
+          </div>
+        </div>
+        {% elseif data['specialist-decision'] === 'more-info' %}
+        <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Success
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+              <p class="govuk-body">Letter sent to claimant</p>
+          </div>
+        </div>
+        {% elseif data['specialist-decision'] === 'award' %}
+        div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
           <div class="govuk-notification-banner__header">
             <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
               Success
@@ -30,14 +52,21 @@ GOV.UK Prototype Kit
             <p class="govuk-body">Task complete and letter sent</p>
           </div>
         </div>
-        {% elseif data['specialist-decision-2'] === 'more-info' %}
-
-        {% elseif data['specialist-decision-2'] === 'award' %}
-
-        {% elseif data['specialist-decision-2'] === 'award-spa' %}
-
+        {% elseif data['specialist-decision'] === 'award-spa' %}
+        div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Success
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p class="govuk-body">Task complete and letter sent</p>
+          </div>
+        </div>
         {% else %}
+
         {% endif %}
+
       <br>
         <h1 class="govuk-heading-xl">Tasks</h1>
 

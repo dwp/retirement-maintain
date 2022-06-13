@@ -86,7 +86,7 @@ router.post('/widows/scenario-1/check-details-info-missing', function(req, res) 
 
   router.post('/widows/scenario-2/check-details-info-missing', function(req, res) {
       if ( req.body['specialist-decision'] === 'support-queue' ) {
-        res.redirect('/widows/scenario-2/get-a-task');
+        res.redirect('/widows/scenario-2/get-a-task-2');
       } else if  ( req.body['specialist-decision'] === 'more-info' ) {
         res.redirect('/widows/scenario-2/more-info-letter');
       } else if  ( req.body['specialist-decision'] === 'award' ) {
