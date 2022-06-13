@@ -126,6 +126,20 @@ router.post('/widows/scenario-1/check-details-info-missing', function(req, res) 
     })
     ;
 
+    router.post('/widows/scenario-2/more-info-letter', (req, res) => {
+      res.redirect('/widows/scenario-2/get-a-task-2')
+    })
+    ;
+
+    router.post('/widows/scenario-2/nothing-to-inherit', (req, res) => {
+      res.redirect('/widows/scenario-2/get-a-task-2')
+    })
+    ;
+
+    router.post('/widows/scenario-2/award-without-inheritance', (req, res) => {
+      res.redirect('/widows/scenario-2/get-a-task-2')
+    })
+    ;
 
 //Scenario 3
 

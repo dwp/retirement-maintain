@@ -19,21 +19,25 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full">
 
-{% if data['specialist-decision-3'] === 'support-queue' %}
-<div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-  <div class="govuk-notification-banner__header">
-    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-      Success
-    </h2>
-  </div>
-  <div class="govuk-notification-banner__content">
-    <p class="govuk-body">Task complete and letter sent</p>
-  </div>
-</div>
-{% elseif data.homephone %}
-{{data.homephone}}
+        {% if data['specialist-decision-3'] === 'support-queue' %}
+        <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Success
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p class="govuk-body">Task complete and letter sent</p>
+          </div>
+        </div>
+        {% elseif data['specialist-decision-3'] === 'more-info' %}
 
-{% else %} ? {% endif %}
+        {% elseif data['specialist-decision-3'] === 'award' %}
+
+        {% elseif data['specialist-decision-3'] === 'award-spa' %}
+
+        {% else %}
+        {% endif %}
 
 
       <br>
