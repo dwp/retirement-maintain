@@ -62,7 +62,15 @@ GOV.UK Prototype Kit
           </div>
           <div class="govuk-notification-banner__content">
             <p>
-              A weekly debt adjustment of £50.66 will be applied to the current award from 3 July 2022.
+              A weekly debt adjustment of
+              {% if data.amount %} £{{data.amount}}
+              {% else %}£50.66
+              {% endif %}
+              will be applied to the current award from {% if data.debtstartdate %}
+              {{data.dedday}}/{{data.dedmonth}}/{{data.dedyear}}
+              {% else %}
+              19 March 2023
+              {% endif %}.
               <a class="govuk-notification-banner__link" href="debt-edit">Edit debt payment details</a>.
             </p>
           </div>

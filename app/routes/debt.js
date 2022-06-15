@@ -11,7 +11,7 @@ router.use((req, res, next) => {
 
 // DAP details yes/no
 router.post('/debt/debt-start-date', function(req, res) {
-  if ( req.body['debt-start-date'] === 'manual-date' ) {
+  if ( req.body['debtstartdate'] === 'manual-date' ) {
     res.redirect('debt-start-date-manual');
   } else {
     res.redirect('debt-details');
@@ -23,5 +23,7 @@ router.post('/', (req, res) => {
   res.redirect('/')
 })
 ;
+
+
 
   module.exports = router;

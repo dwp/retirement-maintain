@@ -35,21 +35,41 @@ GOV.UK Prototype Kit
                           <thead class="govuk-table__head">
                             <tr class="govuk-table__row">
                               <th scope="col" class="govuk-table__header">Date of first payment</th>
-                              <td class="govuk-table__cell">3 July 2022</td>
+                              <td class="govuk-table__cell">
+                                  {% if data.debtstartdate %}
+                                  {{data.debtstartdate}}
+                                  {% else %}
+                                  {% endif %}</td>
                             </tr>
                           </thead>
                           <tbody class="govuk-table__body">
                             <tr class="govuk-table__row">
                               <th scope="row" class="govuk-table__header">Date of final payment</th>
-                              <td class="govuk-table__cell">19 March 2023</td>
+                              <td class="govuk-table__cell">
+                                {% if data.debtstartdate %}
+                                {{data.dedday}}/{{data.dedmonth}}/{{data.dedyear}}
+                                {% else %}
+                                19 March 2023
+                                {% endif %}
+                              </td>
                             </tr>
                             <tr class="govuk-table__row">
                               <th scope="row" class="govuk-table__header">Weekly amount</th>
-                              <td class="govuk-table__cell">£50.66</td>
+                              <td class="govuk-table__cell">
+                                {% if data.amount %}
+                                £{{data.amount}}
+                                {% else %}
+                                £50.66
+                                {% endif %}</td>
                             </tr>
                             <tr class="govuk-table__row">
                               <th scope="row" class="govuk-table__header">Benefit code</th>
-                              <td class="govuk-table__cell">50798</td>
+                              <td class="govuk-table__cell">
+                                {% if data.code %}
+                                {{data.code}}
+                                {% else %}
+                                50798
+                                {% endif %}</td>
                             </tr>
                           </tbody>
                         </table>
