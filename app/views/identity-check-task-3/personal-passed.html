@@ -15,20 +15,22 @@ GOV.UK Prototype Kit
 
 <div class="govuk-width-container">
 
-  <br>
-  <br>
-  <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-    <div class="govuk-notification-banner__header">
-      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-        Success
-      </h2>
-    </div>
-    <div class="govuk-notification-banner__content">
-      <p class="govuk-notification-banner__heading">
-        Task returned to queue
-      </p>
-    </div>
-  </div>
+ <br>
+<br>
+  <div class="govuk-grid-column-full-width">
+  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+<div class="govuk-notification-banner__header">
+<h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+Success
+</h2>
+</div>
+<div class="govuk-notification-banner__content">
+<h3 class="govuk-notification-banner__heading">
+Passed. claim processed.
+</h3>
+</div>
+</div>
+</div>
 
   <div class="govuk-grid-column-two-thirds">
 
@@ -36,9 +38,9 @@ GOV.UK Prototype Kit
       <div class="grid-row">
         <div class="column-full">
 
-          {% include './_bar-2.html' %}
+          {% include './_bar-receiving.html' %}
 
-          {% include './_tab-overview.html' %}
+          {% include './_tab-overview-passed.html' %}
 
 
         </div>
@@ -48,14 +50,7 @@ GOV.UK Prototype Kit
     <br>
     <br>
 
-    <div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Warning</span>
-    Claim referred to DWP visiting officers - awaiting outcome 
-    <a class="govuk-link" href="personal-decision">enter decision</a>
-  </strong>
-</div>
+  
 
     <div>
       <h2 class="govuk-heading-m">Personal details</h2>
@@ -101,6 +96,32 @@ GOV.UK Prototype Kit
     </h2>
     <ol class="app-timeline">
 
+
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Claim processed
+        </h3>
+
+         <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">No changes made</span>
+          <span class="app-timeline__date">
+            31 March 2022 - date to sort
+          </span>
+        </p>
+      </li>
+
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Security passed
+        </h3>
+
+         <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">No changes made</span>
+          <span class="app-timeline__date">
+            31 March 2022 - date to sort
+          </span>
+        </p>
+      </li>
 
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
@@ -174,5 +195,6 @@ GOV.UK Prototype Kit
 
   </div>
 </div>
+
 
 {% endblock %}

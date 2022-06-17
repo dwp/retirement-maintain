@@ -25,7 +25,7 @@ GOV.UK Prototype Kit
     </div>
     <div class="govuk-notification-banner__content">
       <p class="govuk-notification-banner__heading">
-        Task returned to queue
+        Security failed and claim cancelled
       </p>
     </div>
   </div>
@@ -36,7 +36,7 @@ GOV.UK Prototype Kit
       <div class="grid-row">
         <div class="column-full">
 
-          {% include './_bar-2.html' %}
+          {% include './_bar-failed.html' %}
 
           {% include './_tab-overview.html' %}
 
@@ -48,14 +48,7 @@ GOV.UK Prototype Kit
     <br>
     <br>
 
-    <div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Warning</span>
-    Claim referred to DWP visiting officers - awaiting outcome 
-    <a class="govuk-link" href="personal-decision">enter decision</a>
-  </strong>
-</div>
+  
 
     <div>
       <h2 class="govuk-heading-m">Personal details</h2>
@@ -101,6 +94,32 @@ GOV.UK Prototype Kit
     </h2>
     <ol class="app-timeline">
 
+
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Claim cancelled
+        </h3>
+
+         <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">No changes made</span>
+          <span class="app-timeline__date">
+            31 March 2022 - date to sort
+          </span>
+        </p>
+      </li>
+
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Security failed
+        </h3>
+
+         <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">No changes made</span>
+          <span class="app-timeline__date">
+            31 March 2022 - date to sort
+          </span>
+        </p>
+      </li>
 
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
@@ -174,5 +193,6 @@ GOV.UK Prototype Kit
 
   </div>
 </div>
+
 
 {% endblock %}
