@@ -19,7 +19,7 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full">
 
-        {% if data['specialist-decision-3'] === 'support-queue' %}
+        {% if data['inheritable-amounts'] === 'yes' %}
         <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
           <div class="govuk-notification-banner__header">
             <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
@@ -27,10 +27,10 @@ GOV.UK Prototype Kit
             </h2>
           </div>
           <div class="govuk-notification-banner__content">
-              <p class="govuk-body">Task sent to support queue</p>
+              <p class="govuk-body">       </p>
           </div>
         </div>
-        {% elseif data['specialist-decision-3'] === 'more-info' %}
+        {% elseif data['inheritable-amounts'] === 'no' %}
         <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
           <div class="govuk-notification-banner__header">
             <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
@@ -38,10 +38,10 @@ GOV.UK Prototype Kit
             </h2>
           </div>
           <div class="govuk-notification-banner__content">
-              <p class="govuk-body">Letter sent to claimant</p>
+              <p class="govuk-body">    </p>
           </div>
         </div>
-        {% elseif data['specialist-decision-3'] === 'award' %}
+        {% elseif data['inheritable-amounts'] === 'dunno' %}
         <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
           <div class="govuk-notification-banner__header">
             <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
@@ -49,10 +49,10 @@ GOV.UK Prototype Kit
             </h2>
           </div>
           <div class="govuk-notification-banner__content">
-            <p class="govuk-body">Task complete and letter sent</p>
+            <p class="govuk-body">Saved and returned...</p>
           </div>
         </div>
-        {% elseif data['specialist-decision-3'] === 'award-spa' %}
+        {% elseif data['decision'] === 'save-return' %}
         <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
           <div class="govuk-notification-banner__header">
             <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
@@ -60,7 +60,29 @@ GOV.UK Prototype Kit
             </h2>
           </div>
           <div class="govuk-notification-banner__content">
-            <p class="govuk-body">Task complete and letter sent</p>
+            <p class="govuk-body">Save and returned...</p>
+          </div>
+        </div>
+        {% elseif data['decision'] === 'more-info' %}
+        <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Success
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p class="govuk-body">     </p>
+          </div>
+        </div>
+        {% elseif data['decision'] === 'nothing-to-inherit' %}
+        <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Success
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p class="govuk-body">Save and returned...</p>
           </div>
         </div>
         {% else %}
