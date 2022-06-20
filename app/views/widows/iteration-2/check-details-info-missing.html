@@ -217,46 +217,87 @@ GOV.UK Prototype Kit
 
   <br>  <br>
 
-  <div class="govuk-form-group">
-    <fieldset class="govuk-fieldset">
-      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
 
-        <h2 class="govuk-fieldset__heading">
-        How do you want to continue?
-        </h2>
-      </legend>
-    <div id="changed-name-hint" class="govuk-hint">You cannot check for inheritable amounts until you complete all details and verify all dates.</div>
-    <br>
+    {% if data['dom'] === 'Verified' %}
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <h2 class="govuk-fieldset__heading">
+            Are there any inheritable amounts?
+          </h2>
+        </legend>
+      <br>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="inheritable-amounts-6" name="inheritable-amounts" type="radio" value="abroad">
+        <label class="govuk-label govuk-radios__label" for="inheritable-amounts-6">
+    Yes </label>
+    </div>
 
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="inheritable-amounts-2" name="inheritable-amounts" type="radio" value="no">
+      <label class="govuk-label govuk-radios__label" for="inheritable-amounts-2">
+    No    </label>
+    </div>
+          <div class="govuk-radios__divider">or</div>
 
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="inheritable-amounts-3" name="inheritable-amounts" type="radio" value="dunno">
+            <label class="govuk-label govuk-radios__label" for="inheritable-amounts-3">
+          I dunno    </label>
+          </div>
 
+    <br><br>
 
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="more-info">
-          <label class="govuk-label govuk-radios__label" for="decision">
-            More info needed
-          </label>
+            <div class="govuk-button-group">
+          <a href="inheritable-amounts" button type="submit" class="govuk-button">
+            Continue
+          </a>
+        </div>
+
+  <a href="get-a-task-2" class="govuk-link govuk-link--no-visited-state">Save and return to queue</a>
 
     </div>
 
-  <div class="govuk-radios__item">
-    <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="nothing-to-inherit">
-    <label class="govuk-label govuk-radios__label" for="decision">
-  Nothing to inherit</label>
 
-  </div>
-  <br><br>
+    {% else %}
 
-          <div class="govuk-button-group">
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
 
-            <button class="govuk-button" data-module="govuk-button">
-              Continue
-            </button>
+          <h2 class="govuk-fieldset__heading">
+          How do you want to continue?
+          </h2>
+        </legend>
+      <div id="changed-name-hint" class="govuk-hint">You cannot check for inheritable amounts until you complete all details and verify all dates.</div>
+      <br>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="more-info">
+            <label class="govuk-label govuk-radios__label" for="decision">
+              More info needed
+            </label>
       </div>
 
-      <a href="get-a-task-2" class="govuk-link govuk-link--no-visited-state">Save and return to queue</a>
-
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="nothing-to-inherit">
+      <label class="govuk-label govuk-radios__label" for="decision">
+    Nothing to inherit</label>
     </div>
+
+    <br><br>
+
+            <div class="govuk-button-group">
+              <button class="govuk-button" data-module="govuk-button">
+                Continue
+              </button>
+        </div>
+
+        <a href="get-a-task-2" class="govuk-link govuk-link--no-visited-state">Save and return to queue</a>
+
+      </div>
+    {% endif %}
+
+
 
 </div>
 
