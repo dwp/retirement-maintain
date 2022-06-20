@@ -243,7 +243,7 @@ GOV.UK Prototype Kit
           <div class="govuk-radios__item">
             <input class="govuk-radios__input" id="inheritable-amounts-3" name="inheritable-amounts" type="radio" value="dunno">
             <label class="govuk-label govuk-radios__label" for="inheritable-amounts-3">
-          I dunno    </label>
+          I cannot calculate this inheritance   </label>
           </div>
 
     <br><br>
@@ -253,8 +253,6 @@ GOV.UK Prototype Kit
             Continue
           </a>
         </div>
-
-  <a href="get-a-task-2" class="govuk-link govuk-link--no-visited-state">Save and return to queue</a>
 
     </div>
 
@@ -269,19 +267,25 @@ GOV.UK Prototype Kit
           How do you want to continue?
           </h2>
         </legend>
-      <div id="changed-name-hint" class="govuk-hint">You cannot check for inheritable amounts until you complete all details and verify all dates.</div>
+      <div id="changed-name-hint" class="govuk-hint">Complete all details and verify all dates before checking for inheritable amounts.</div>
       <br>
           <div class="govuk-radios__item">
             <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="more-info">
             <label class="govuk-label govuk-radios__label" for="decision">
-              More info needed
-            </label>
+Request more information from claimant              </label>
       </div>
 
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="nothing-to-inherit">
       <label class="govuk-label govuk-radios__label" for="decision">
-    Nothing to inherit</label>
+Award pension - nothing to inherit</label>
+    </div>
+    <div class="govuk-radios__divider">or</div>
+
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="save">
+      <label class="govuk-label govuk-radios__label" for="inheritable-amounts-3">
+Save progress and return to queue   </label>
     </div>
 
     <br><br>
@@ -292,7 +296,6 @@ GOV.UK Prototype Kit
               </button>
         </div>
 
-        <a href="get-a-task-2" class="govuk-link govuk-link--no-visited-state">Save and return to queue</a>
 
       </div>
     {% endif %}
