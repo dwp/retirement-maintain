@@ -29,8 +29,26 @@ GOV.UK Prototype Kit
 
     <br><br>
 
+    {% if data['dom'] === 'Verified' %}
+
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Success
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <p class="govuk-notification-banner__heading">
+    All information completed and dates verified.
+        </p>
+      </div>
+    </div>
+    <h1 class="govuk-heading-l">Check for inheritable amounts</h1>
+
+    {% else %}
     <h1 class="govuk-heading-l">Check the details and decide how to continue</h1>
     <p>Complete the information and verify the dates, or choose another way to continue.</p>
+    {% endif %}
 
   <br><br>
 
