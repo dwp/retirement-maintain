@@ -121,8 +121,7 @@ GOV.UK Prototype Kit
                     </tr>
                     <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Address</th>
-                      <td class="govuk-table__cell">5
-                        62 High Street<br>
+                      <td class="govuk-table__cell">62 High Street<br>
                         NORTH LONDON<br>
                         N93 3KJ</td>
                       <td class="govuk-table__cell"></td>
@@ -234,83 +233,65 @@ GOV.UK Prototype Kit
 
 
   <br>  <br>
-
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h2 class="govuk-fieldset__heading">
+          How do you want to continue?
+        </h2>
+      </legend>
 
     {% if data['dom'] === 'Verified' %}
-    <div class="govuk-form-group">
-      <fieldset class="govuk-fieldset">
-        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-          <h2 class="govuk-fieldset__heading">
-            Are there any inheritable amounts?
-          </h2>
-        </legend>
-      <br>
+
+
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="inheritable-amounts" name="inheritable-amounts" type="radio" value="yes">
         <label class="govuk-label govuk-radios__label" for="inheritable-amounts">
-    Yes </label>
+    Enter inheritable amounts </label>
     </div>
 
-    <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="inheritable-amounts-2" name="inheritable-amounts" type="radio" value="no">
-      <label class="govuk-label govuk-radios__label" for="inheritable-amounts-2">
-    No    </label>
-    </div>
-          <div class="govuk-radios__divider">or</div>
-
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="inheritable-amounts-3" name="inheritable-amounts" type="radio" value="dunno">
-            <label class="govuk-label govuk-radios__label" for="inheritable-amounts-3">
-          Unable to calculate inheritance   </label>
-          </div>
 
 
 
-    </div>
 
 
     {% else %}
 
-    <div class="govuk-form-group">
-      <fieldset class="govuk-fieldset">
-        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
 
-          <h2 class="govuk-fieldset__heading">
-          How do you want to continue?
-          </h2>
-        </legend>
-      <div id="changed-name-hint" class="govuk-hint">Complete all details and verify all dates before checking for inheritable amounts.</div>
-      <br>
+      <div id="changed-name-hint" class="govuk-hint">To check for inheritable amounts, enter all missing information and verify all dates.</div>
           <div class="govuk-radios__item">
             <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="more-info">
             <label class="govuk-label govuk-radios__label" for="decision">
-Request more information from claimant              </label>
+Request more information</label>
       </div>
 
+{% endif %}
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="nothing-to-inherit">
       <label class="govuk-label govuk-radios__label" for="decision">
-Award pension - nothing to inherit</label>
+Award State Pension - nothing to inherit</label>
     </div>
+
     <div class="govuk-radios__divider">or</div>
 
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="save">
       <label class="govuk-label govuk-radios__label" for="inheritable-amounts-3">
-Save progress and return to queue   </label>
+Save information and return task to queue   </label>
     </div>
 
 
 
-      </div>
-    {% endif %}
 
+
+
+<br>
     <div class="govuk-button-group">
       <button class="govuk-button" data-module="govuk-button">
         Continue
       </button>
     </div>
-
+  </div>
 </div>
 
 </div>
