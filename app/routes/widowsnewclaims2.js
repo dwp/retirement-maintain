@@ -8,10 +8,10 @@ router.post('/widows/iteration-2/task-details', (req, res) => {
 ;
 
 router.post('/widows/iteration-2/check-details-info-missing', function(req, res) {
-    if ( req.body['decision'] === 'support-queue' ) {
-      res.redirect('/widows/iteration-2/get-a-task');
+    if ( req.body['decision'] === 'more-info' ) {
+      res.redirect('/widows/iteration-2/more-info-letter');
     } else {
-    res.redirect('/widows/iteration-2/');
+    res.redirect('/widows/iteration-2/nothing-to-inherit');
   }
   });
 
