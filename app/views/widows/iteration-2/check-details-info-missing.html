@@ -193,8 +193,8 @@ GOV.UK Prototype Kit
 
                         {% endif %}</td>
                       <td class="govuk-table__cell"><span class="verified-badge verified">
-                        <b>{% if data.dom2 %}
-                        {{data.dom2}}
+                        <b>{% if data.dom %}
+                        {{data.dom}}
                         {% else %}
 
                         {% endif %}</b>
@@ -228,8 +228,8 @@ GOV.UK Prototype Kit
         </legend>
       <br>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="inheritable-amounts-6" name="inheritable-amounts" type="radio" value="abroad">
-        <label class="govuk-label govuk-radios__label" for="inheritable-amounts-6">
+        <input class="govuk-radios__input" id="inheritable-amounts" name="inheritable-amounts" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="inheritable-amounts">
     Yes </label>
     </div>
 
@@ -243,16 +243,10 @@ GOV.UK Prototype Kit
           <div class="govuk-radios__item">
             <input class="govuk-radios__input" id="inheritable-amounts-3" name="inheritable-amounts" type="radio" value="dunno">
             <label class="govuk-label govuk-radios__label" for="inheritable-amounts-3">
-          I cannot calculate this inheritance   </label>
+          Unable to calculate inheritance   </label>
           </div>
 
     <br><br>
-
-            <div class="govuk-button-group">
-          <a href="inheritable-amounts" button type="submit" class="govuk-button">
-            Continue
-          </a>
-        </div>
 
     </div>
 
@@ -288,19 +282,16 @@ Award pension - nothing to inherit</label>
 Save progress and return to queue   </label>
     </div>
 
-    <br><br>
-
-            <div class="govuk-button-group">
-              <button class="govuk-button" data-module="govuk-button">
-                Continue
-              </button>
-        </div>
 
 
       </div>
     {% endif %}
 
-
+    <div class="govuk-button-group">
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+    </div>
 
 </div>
 
