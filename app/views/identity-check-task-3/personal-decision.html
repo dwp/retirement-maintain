@@ -25,33 +25,13 @@ GOV.UK Prototype Kit
         <form method="post" action="">
 
 
-          <h1 class="govuk-heading-l">What was the decision from the visiting officer?</h1>
-
-
-        <!--   <table class="govuk-table">
-            <caption class="govuk-table__caption govuk-table__caption--m">Claimant information</caption>
-
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Date of birth</th>
-                <td class="govuk-table__cell">12 December 1954</td>
-              </tr>
-            </tbody>
-
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Method of application</th>
-                <td class="govuk-table__cell">Online</td>
-              </tr>
-            </tbody>
-
-          </table> -->
+          <h1 class="govuk-heading-l">Did the claimant pass the visiting officer's additional security checks?</h1>
 
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="security-questions-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                <p class="govuk-body-m">Select the decision</p>
+                <p class="govuk-body-m"></p>
               </legend>
               <div id="security-questions-hint" class="govuk-hint">
 
@@ -60,13 +40,13 @@ GOV.UK Prototype Kit
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="security-questions" name="security-questions" type="radio" value="passed">
                   <label class="govuk-label govuk-radios__label" for="security-questions">
-                    Passed! woohoo!<!-- - answered at least 2 questions correctly -->
+                    Yes
                   </label>
                 </div>
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="security-questions-2" name="security-questions" type="radio" value="failed">
                   <label class="govuk-label govuk-radios__label" for="security-questions-2">
-                    Failed<!--  - answered fewer than 2 questions correctly -->
+                    No
                   </label>
                 </div>
                 
@@ -91,8 +71,8 @@ GOV.UK Prototype Kit
         </span>
       </summary>
       <div class="govuk-details__text">
-        <b>URL:</b> /ask-security-questions-inbound <br>
-        <b>Error messages:</b> If nothing selected: Select what was the outcome of the additional security check<br>
+        <b>URL:</b> /visiting-officer-outcome <br>
+        <b>Error messages:</b> If nothing selected: Select yes if the claimant passed the visiting officer's additional security checks<br>
         <b>Notes:</b> None <br>
       </div>
     </details>
