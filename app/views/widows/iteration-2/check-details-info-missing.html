@@ -77,7 +77,7 @@ GOV.UK Prototype Kit
 
                 <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Date of birth</th>
-              <td class="govuk-table__cell">12/07/1956</td>
+              <td class="govuk-table__cell">25/07/1956</td>
               <td class="govuk-table__cell"><span class="verified-badge verified">
                 <b></b>
                 <td class="govuk-table__cell" style="text-align: right">
@@ -90,7 +90,7 @@ GOV.UK Prototype Kit
 
                 <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">State Pension date</th>
-                  <td class="govuk-table__cell">12/07/2022</td>
+                  <td class="govuk-table__cell">25/07/2022</td>
                   <td class="govuk-table__cell"></td>
                 </tr>
                 <tr class="govuk-table__row">
@@ -172,7 +172,7 @@ GOV.UK Prototype Kit
                         <b>{% if data.dob2 %}
                         {{data.dob2}}
                         {% else %}
-                        Unverified
+                        Verified
                         {% endif %}</b>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
                                               <a class="govuk-link" href="dob">Change</a>
@@ -193,7 +193,7 @@ GOV.UK Prototype Kit
                         <b>{% if data.dod2 %}
                         {{data.dod2}}
                         {% else %}
-                        Unverified
+                        Verified
                         {% endif %}</b>
                       </span> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
@@ -251,12 +251,7 @@ GOV.UK Prototype Kit
     </div>
 
 
-
-
-
-
     {% else %}
-
 
       <div id="changed-name-hint" class="govuk-hint">To check for inheritable amounts, enter all missing information and verify all dates.</div>
           <div class="govuk-radios__item">
