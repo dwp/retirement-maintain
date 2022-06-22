@@ -131,8 +131,8 @@ GOV.UK Prototype Kit
                     <tr class="govuk-table__row">
                      <th scope="row" class="govuk-table__header" style="width: 40%">National Insurance number</th>
                      <td class="govuk-table__cell" style="width: 30%">
-                       {% if data.nationalinsurancenumber3 %}
-                       {{data.nationalinsurancenumber3}}
+                       {% if data.nationalinsurancenumber %}
+                       {{data.nationalinsurancenumber}}
                        {% else %}
                        JS 12 34 56 D
                        {% endif %}</td>
@@ -144,15 +144,15 @@ GOV.UK Prototype Kit
                     <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Gender</th>
                       <td class="govuk-table__cell">
-                        {% if data.gender2 %}
-                        {{data.gender2}}
+                        {% if data.gender %}
+                        {{data.gender}}
                         {% else %}
 
                         {% endif %}</td>
                       <td class="govuk-table__cell"> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
                                               <a class="govuk-link" href="gender">
-                                              {% if data.gender2 %}
+                                              {% if data.gender %}
                                               Change
                                               {% else %}
                                               Add
@@ -163,14 +163,14 @@ GOV.UK Prototype Kit
                         <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Date of birth</th>
                       <td class="govuk-table__cell">
-                        {% if data.dobd2 %}
-                        {{data.dobd2}}/{{data.dobm2}}/{{data.doby2}}
+                        {% if data.dobd %}
+                        {{data.dobd}}/{{data.dobm}}/{{data.doby}}
                         {% else %}
                       25/04/1953
                         {% endif %}</td>
                       <td class="govuk-table__cell"><span class="verified-badge verified">
-                        <b>{% if data.dob2 %}
-                        {{data.dob2}}
+                        <b>{% if data.dob %}
+                        {{data.dob}}
                         {% else %}
                         Verified
                         {% endif %}</b>
@@ -184,14 +184,14 @@ GOV.UK Prototype Kit
                     <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Date of death</th>
                       <td class="govuk-table__cell">
-                        {% if data.dodd2 %}
-                        {{data.dodd2}}/{{data.dodm2}}/{{data.dody2}}
+                        {% if data.dodd %}
+                        {{data.dodd}}/{{data.dodm}}/{{data.dody}}
                         {% else %}
                         9/04/2013
                         {% endif %}</td>
                       <td class="govuk-table__cell"><span class="verified-badge verified">
-                        <b>{% if data.dod2 %}
-                        {{data.dod2}}
+                        <b>{% if data.dod %}
+                        {{data.dod}}
                         {% else %}
                         Verified
                         {% endif %}</b>
@@ -204,8 +204,8 @@ GOV.UK Prototype Kit
                     <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Date of marriage</th>
                       <td class="govuk-table__cell">
-                        {% if data.domd2 %}
-                        {{data.domd2}}/{{data.domm2}}/{{data.domy2}}
+                        {% if data.domd %}
+                        {{data.domd}}/{{data.domm}}/{{data.domy}}
                         {% else %}
 
                         {% endif %}</td>
@@ -245,8 +245,8 @@ GOV.UK Prototype Kit
 
 
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="inheritable-amounts" name="inheritable-amounts" type="radio" value="yes">
-        <label class="govuk-label govuk-radios__label" for="inheritable-amounts">
+        <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="inheritable-amounts">
+        <label class="govuk-label govuk-radios__label" for="decision">
     Enter inheritable amounts </label>
     </div>
 
@@ -272,7 +272,7 @@ Award State Pension - nothing to inherit</label>
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="save">
       <label class="govuk-label govuk-radios__label" for="inheritable-amounts-3">
-Save information and return task to queue   </label>
+Save changes and return task to queue   </label>
     </div>
 
 <br>
@@ -283,7 +283,7 @@ Save information and return task to queue   </label>
     </div>
 
 
-    <p><a href="pscs" class="govuk-link govuk-link--no-visited-state">Send claim to PSCS?</a></p>
+    <p><a href="pscs" class="govuk-link govuk-link--no-visited-state">Send claim to PSCS</a></p>
   </div>
 
 </div>

@@ -20,7 +20,9 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        {% include 'widows/scenario-3/_bar-widows.html' %}
+          <form method="post">
+
+            {% include 'widows/scenario-3/_bar-widows.html' %}
 
 {{ govukBackLink({
       "text": "Back",
@@ -31,19 +33,14 @@ GOV.UK Prototype Kit
   <br><br>
 
       <div class="govuk-form-group">
-          <h1 class="govuk-heading-l">Claimant record handed off to PSCS</h1>
+          <h1 class="govuk-heading-l">Return this task to the queue</h1>
 
-<p>This claimant does not meet the criteria for the Get your State Pension service.</p>      <br><br>
+          <p>Any changes you made will be saved. The task will be placed on hold for 5 minutes.</p>
 
-
-          <a href="widows-task-1" button type="submit" class="govuk-button">
-            End task
-            </button>
-
-
-          </a>
-        </form>
-
+      <br>
+      <button class="govuk-button" data-module="govuk-button">
+      Return task to queue
+      </button>
 
 
       </div>
