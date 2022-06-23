@@ -71,6 +71,7 @@ const identitycheck2 = require('./routes/identitycheck2');
 const identitycheck3 = require('./routes/identitycheck3');
 const widowsnewclaims = require('./routes/widowsnewclaims');
 const widowsnewclaims2 = require('./routes/widowsnewclaims2');
+const widowsnewclaims3 = require('./routes/widowsnewclaims3');
 const debt = require('./routes/debt');
 
 
@@ -134,6 +135,7 @@ router.use(identitycheck2);
 router.use(identitycheck3);
 router.use(widowsnewclaims);
 router.use(widowsnewclaims2);
+router.use(widowsnewclaims3);
 router.use(debt);
 
 
