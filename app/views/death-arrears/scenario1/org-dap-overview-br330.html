@@ -26,18 +26,28 @@ GOV.UK Prototype Kit
   </div>
   <div class="govuk-notification-banner__content">
     <h3 class="govuk-notification-banner__heading">
-      Verified date of death - account closed
+      Verified date of death - awaiting payee details
     </h3>
 
   </div>
 </div>
+
         <main id="content" role="main">
           <div class="grid-row">
             <div class="column-full">
 
               {% include 'includes/_bar-dead-rooney.html' %}
 
-
+              <div class="govuk-warning-text">
+                 <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                 <strong class="govuk-warning-text__text">
+                   <span class="govuk-warning-text__assistive">Warning</span>
+                  £51.60  arrears payment due <br>
+                   <a href="330-check">
+                       Enter payee details and send payment<span class="govuk-visually-hidden">Add payee</span>
+                   </a>
+                 </strong>
+               </div>
 
               {% include 'includes/_tab-overview.html' %}
 
@@ -79,7 +89,7 @@ GOV.UK Prototype Kit
             </tr>
               <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Date of death</th>
-                  <td class="govuk-table__cell">10 February 2022</td>
+                  <td class="govuk-table__cell">17 June 2022</td>
                   <td class="govuk-table__cell">
                       <span  style="margin-left: 20%" class="verified-badge verified">
                           <b>Verified</b>
@@ -105,11 +115,10 @@ GOV.UK Prototype Kit
 
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-Verified date of death - account closed       </h3>
+Verified date of death - awaiting payee details       </h3>
 
         <p class="app-timeline__info govuk-!-margin-bottom-0">
-          <span class="app-timeline__date">22 February 2022</span>
-        </p>
+          <span class="app-timeline__date">28 June 2022</span>
       </li>
 
     </ol>

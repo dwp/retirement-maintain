@@ -43,7 +43,7 @@ GOV.UK Prototype Kit
 
           <h1 class="govuk-heading-l">Payee's overseas bank details
           </h1>
-        <form class="form" method="post">
+        <form action="dap-send-payment" class="form" method="post">
 
         <div class="govuk-form-group">
             <label class="govuk-label" for="iban">
@@ -74,49 +74,10 @@ Account holder name           </label>
 
           <div class="govuk-button-group">
                      <button type="submit" class="govuk-button">
-            Send Payment
-          </button>
+Continue          </button>
           </form>
                     </div>
-                    <details class="govuk-details" data-module="govuk-details">
-                    <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                    <b>URL, errors and notes</b>
-                    </span>
-                    </summary>
-                    <div class="govuk-details__text">
-                      <b>URL:</b> /changes-and-enquiries/personal/death/overseas-account-details<br><br>
 
-                      <b>Error messages:<br><br></b>
-
-
-
-                    <b><u>  IBAN</u>
-                    <br><br>
-                    Empty - </b>Enter an IBAN<br>
-                    <b>  Invalid <br>- </b>IBAN must only contain letters or numbers<br>
-                    <b>-</b> IBAN must start with two letters<br>
-                    <b>Length -</b> IBANs for [country name] must include exactly [XX] letters and numbers
-                    <br><br><br>
-                    <b>  <u>Bank name</u><br><br>
-
-                    Empty - </b>Enter the bank name<br>
-                    <b>  Length -</b> Bank name must be 70 characters or less<br>
-                    <br><br>
-                    <b><u>Account holder name</u><br><br>
-
-                    Empty -</b> Enter the account holder's full name<br>
-                    <b>  Length -</b> Account holder name must be 70 characters or less<br>
-                    <b>  Invalid -</b> Name must start with a letter and not contain numbers<br>
-                    <br><br>
-                    <b> <u>BIC or SWIFT code</u></b>
-                    <br><br>
-                    <b>  Empty -</b> Enter a BIC or SWIFT code<br>
-                    <b>  Length -</b> BIC or SWIFT code must be 11 characters or less<br>
-                    <b>  Invalid -</b> BIC or SWIFT code must start with a letter and must not include spaces
-<br><br>
-                      </div>
-                    </details>
 
 
 
