@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+              {% include 'includes/_bar.html' %}
+
+
+            </div>
+          </div>
+        </main>
+
+
+
+        {{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    })
+  }}
+        <br><br>
+
+
+
+
+        <span class="govuk-caption-l">Company dealing with Mark's estate</span>
+        <h1 class="govuk-heading-l">UK postcode</h1>
+        <form action="org-dap-address-1-change" method="post">
+
+          <div class="govuk-form-group">
+            <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="postcode" aria-describedby="postcode-hint">
+          </div>
+
+          <button type="submit" class="govuk-button">
+            Find address
+          </button>
+        </form>
+
+<a href="org-dap-address-international-change" class="govuk-link govuk-!-font-size-19">Enter a non-UK address</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds"></div>
+</div>
+
+{% endblock %}

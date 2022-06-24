@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+              {% include 'includes/_bar.html' %}
+
+
+            </div>
+          </div>
+        </main>
+
+
+
+        {{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    })
+  }}
+        <br><br>
+        <form action="dap-address" method="post" class="form">
+
+          <h1 class="govuk-heading-l">Full name of the person dealing with Mark's estate</h1>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <button type="submit" class="govuk-button">
+            Continue
+          </button>
+
+          <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+          <b>URL, errors and notes</b>
+          </span>
+          </summary>
+          <div class="govuk-details__text">
+          <b>URL:</b> Use existing URL
+<br><br>
+          <b>  Error messages:<br>
+            Empty -</b> Enter the name of the person dealing with the estate
+          <br>  <b>Length -</b> Full name must be 140 characters or less<br><br>
+          <b>Notes:</b><br>
+          <b>H1 and error messages</b> should be dynamic based on whether person or company was selected on /who-is-dealing-with-estate
+          </div>
+          </details>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds"></div>
+</div>
+
+{% endblock %}

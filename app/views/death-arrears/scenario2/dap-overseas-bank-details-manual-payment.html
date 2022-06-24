@@ -1,0 +1,163 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+          {% include 'includes/_bar-dead-rooney.html' %}
+
+            </div>
+          </div>
+        </main>
+
+
+
+        {{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    })
+  }}
+        <br><br>
+        <form action="dap-arrears-paid" method="post" class="form">
+          <h1 class="govuk-heading-l">Complete a SOP5 form to pay the arrears manually</h1>
+          <br>
+          <br>
+          <br>
+          <h2 class="govuk-heading-m">Arrears amount</h2>
+          <table class="govuk-table">
+
+              <thead class="govuk-table__head"></thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row"></th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row" style="width: 40%">Total</th>
+                  <td class="govuk-table__cell">	£179.60</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">Period</th>
+                  <td class="govuk-table__cell">22 March 2022 to 29 March 2022</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+
+
+            <h2 class="govuk-heading-m">Payee's details</h2>
+
+          <table class="govuk-table">
+
+              <thead class="govuk-table__head"></thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row"></th>
+                  <td class="govuk-table__cell"></td>
+                </tr></tbody>
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row" style="width: 40%">Payee's name</th>
+                    <td class="govuk-table__cell">Shane Rooney</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Payee's address</th>
+                      <td class="govuk-table__cell">63 Bland Rd<br>
+York<br> WA<br> 6302<br>
+Australia</td>
+                    </tr>
+
+      </table>
+      <br>
+
+
+            <h2 class="govuk-heading-m">Overseas bank details</h2>
+
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row"></th>
+                <td class="govuk-table__cell"></td>
+              </tr></tbody>
+              <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">Account number
+</th>
+                  <td class="govuk-table__cell">5321498</td>
+                </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row" style="width: 40%">Bank name</th>
+              <td class="govuk-table__cell">National Australia Bank	</td>
+            </tr>
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row" style="width: 40%">Account holder name</th>
+                  <td class="govuk-table__cell">Mr S Rooney</td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row">Sort code, branch code or routing code
+</th>
+                    <td class="govuk-table__cell">873627</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row">BIC or SWIFT code</th>
+                    <td class="govuk-table__cell">NATAAU3303M</td>
+                  </tr>
+
+
+            </table>
+
+            <button type="submit" class="govuk-button">
+              Confirm SOP5 completed
+            </button>
+
+            <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+            <b>URL, errors and notes</b>
+            </span>
+            </summary>
+            <div class="govuk-details__text">
+            <b>URL:</b> /changes-and-enquiries/personal/death/overseas-manual-payment
+
+            </div>
+            </details>
+            </form>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds"></div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full">
+
+
+          <br><br>
+          {% include 'includes/_bar.html' %}
+
+<form action="death-date">
+
+          {{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    }) 
+  }}
+          
+          <br><br>
+
+          <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+        Why are you stopping the claimant's State Pension
+        </h1>
+      </legend>
+      <br>
+      <div class="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="stop-sp" name="stop-sp" type="radio" value="death">
+          <label class="govuk-label govuk-radios__label" for="stop-sp">
+            Claimaint has died
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
+          <label class="govuk-label govuk-radios__label" for="stop-sp-2">
+            Claimant has deferred their State Pension
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
+          <label class="govuk-label govuk-radios__label" for="stop-sp-2">
+            Temporary suspension pending investigation
+          </label>
+        </div>
+      </div>
+
+    </fieldset>
+  </div>
+
+
+          <button type="submit" class="govuk-button">Save</button>
+        </div>
+      </div>
+    </main>
+
+  </form>
+</div>
+</div>
+
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
