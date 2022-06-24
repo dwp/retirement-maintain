@@ -34,6 +34,17 @@ GOV.UK Prototype Kit
 
             <li class="app-timeline__entry">
               <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                Debt payments started
+              </h3>
+
+              <p class="app-timeline__info govuk-!-margin-bottom-0">
+                <span class="govuk-visually-hidden">Debt payment details entered</span>
+                <span class="app-timeline__date">
+                  3 Jul 2022
+                  </li>
+
+            <li class="app-timeline__entry">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
                 Debt payment details entered
               </h3>
 
@@ -41,6 +52,7 @@ GOV.UK Prototype Kit
                 <span class="govuk-visually-hidden">Debt payment details entered</span>
                 <span class="app-timeline__date">
                   8 Jun 2022
+                  </li>
 
           </ol>
 
@@ -54,31 +66,10 @@ GOV.UK Prototype Kit
   <div class="govuk-grid-column-two-thirds">
         <br><br>
 
-        <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-          <div class="govuk-notification-banner__header">
-            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-              Important
-            </h2>
-          </div>
-          <div class="govuk-notification-banner__content">
-            <p>
-              A weekly debt adjustment of
-              {% if data.amount %} £{{data.amount}}
-              {% else %}£50.66
-              {% endif %}
-              will be applied to the current award from {% if data.debtstartdate %}
-              {{data.dedday}}/{{data.dedmonth}}/{{data.dedyear}}
-              {% else %}
-              19 March 2023
-              {% endif %}.
-              <a class="govuk-notification-banner__link" href="debt-edit">Edit debt payment details</a>.
-            </p>
-          </div>
-        </div>
-
         <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Current award</h2>
 
-
+        <a href="" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 80%">Review award</span>
+        </a>
 
           <br>
           <br>
@@ -131,37 +122,34 @@ GOV.UK Prototype Kit
                       </tr>
             </table>
 
-        <!--     <h2 class="govuk-heading-s" style="margin-bottom:-27px;float:left">Adjustment</h2>
-<br>
-            <a href="apply-debt" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 90%">Edit</span>
-            </a>
 
-            <table class="govuk-table">
-              <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Reason</th>
-              <td class="govuk-table__cell">Debt</td>
-              <td class="govuk-table__cell"><a class="govuk-link" href="marital-details">
-              </a></td>
-              </tr>
-            <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Weekly amount</th>
-            <td class="govuk-table__cell" style="width: 50%">£49.31</td>
-            <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Start date</th>
-            <td class="govuk-table__cell">17 June 2022</td>
-            <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">End date</th>
-            <td class="govuk-table__cell">5 December 2022</td>
-            <td class="govuk-table__cell"></td>
-            </tr>
-            </table>
+                        <h2 class="govuk-heading-s" style="margin-bottom:-27px;float:left">Adjustments</h2>
+            <br>
+            <br>
 
-            -->
-
+                        <table class="govuk-table">
+                          <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Reason</th>
+                          <td class="govuk-table__cell">Debt</td>
+                          <td class="govuk-table__cell"><a class="govuk-link" href="marital-details">
+                          </a></td>
+                          </tr>
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Weekly amount</th>
+                        <td class="govuk-table__cell" style="width: 50%">£50.66</td>
+                        <td class="govuk-table__cell"></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Start date</th>
+                        <td class="govuk-table__cell">3 July 2022</td>
+                        <td class="govuk-table__cell"></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">End date</th>
+                        <td class="govuk-table__cell">5 December 2022</td>
+                        <td class="govuk-table__cell"></td>
+                        </tr>
+                        </table>
 
           </div>
 
