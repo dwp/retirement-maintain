@@ -27,4 +27,11 @@ router.post('/death-arrears/current/dap-overseas-bank-details', function (req, r
     res.redirect('/death-arrears/current/dap-overseas-bank-details-payment');
   }
 });
+router.post('/death-arrears/scenario1/dap-overseas-bank-details', function (req, res) {
+  if (req.body['iban'] === 'ES22320054285411112222') {
+    res.redirect('/death-arrears/scenario1/dap-arrears-paid');
+  } else {
+    res.redirect('/death-arrears/scenario1/dap-overseas-bank-details-payment');
+  }
+});
 module.exports = router;
