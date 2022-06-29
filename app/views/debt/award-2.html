@@ -21,7 +21,7 @@ GOV.UK Prototype Kit
           <br><br><br>
           {% include './_bar.html' %}
 
-          {% include './tabs/_tab-award-updated.html' %}
+          {% include './tabs/_tab-award.html' %}
 
         </div>
 
@@ -32,15 +32,11 @@ GOV.UK Prototype Kit
           </h2>
           <ol class="app-timeline">
 
-            <li class="app-timeline__entry">
-              <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                Debt payment details entered
-              </h3>
-
-              <p class="app-timeline__info govuk-!-margin-bottom-0">
-                <span class="govuk-visually-hidden">Debt payment details entered</span>
-                <span class="app-timeline__date">
-                  29 Jun 2022
+              <li class="app-timeline__entry">
+                  <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                    No changes made
+                  </h3>
+                </li>
 
           </ol>
 
@@ -53,32 +49,10 @@ GOV.UK Prototype Kit
 
   <div class="govuk-grid-column-two-thirds">
         <br><br>
+        <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">State Pension award details</h2>
 
-        <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-          <div class="govuk-notification-banner__header">
-            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-              Important
-            </h2>
-          </div>
-          <div class="govuk-notification-banner__content">
-            <p>
-              A weekly debt adjustment of
-              {% if data.amount %} £{{data.amount}}
-              {% else %}£50.66
-              {% endif %}
-              will be applied to the current award from {% if data.debtstartdate %}
-              {{data.debtstartdate}}
-              {% else %}
-              {{data.dsdday}}/{{data.dsdmonth}}/{{data.dsdyear}}
-              {% endif %}.
-              <a class="govuk-notification-banner__link" href="debt-edit">Edit debt payment details</a>.
-            </p>
-          </div>
-        </div>
-
-        <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Current award</h2>
-
-
+        <a href="apply-debt" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 80%">Apply a debt</span>
+        </a>
 
           <br>
           <br>
@@ -131,8 +105,6 @@ GOV.UK Prototype Kit
                       </tr>
             </table>
 
-
-
           </div>
 
             </div>
@@ -142,7 +114,7 @@ GOV.UK Prototype Kit
 
   <div class="govuk-grid-column-full">
           <br><br>
-              <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Award history</h2>
+              <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">State Pension award history</h2>
               <br><br>
 
       <table class="govuk-table">
@@ -165,7 +137,7 @@ GOV.UK Prototype Kit
             <td class="govuk-table__cell"><a href="award-current">Details</a></td>
           </tr>
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell">12 Apr 2020</td>
+            <td class="govuk-table__cell">15 Jun 2020</td>
             <td class="govuk-table__cell">7 Apr 2021</td>
             <td class="govuk-table__cell">£155.27</td>
             <td class="govuk-table__cell"></td>
