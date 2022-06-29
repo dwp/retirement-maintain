@@ -60,14 +60,18 @@ GOV.UK Prototype Kit
             </h2>
           </div>
           <div class="govuk-notification-banner__content">
-<<<<<<< Updated upstream
             <p class="govuk-body">Changes saved and task returned to queue</p>
           </div>
         </div>
         {% elseif data['decision'] === 'save' %}
-        <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-=======
-              <p class="govuk-body">    </p>
+        <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Success
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p class="govuk-body">Changes saved and task returned to queue</p>
           </div>
         </div>
         {% elseif data['inheritable-amounts'] === 'no' %}
@@ -83,7 +87,6 @@ GOV.UK Prototype Kit
         </div>
         {% elseif data['inheritable-amounts'] === 'dunno' %}
         <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
->>>>>>> Stashed changes
           <div class="govuk-notification-banner__header">
             <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
               Success
