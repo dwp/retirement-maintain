@@ -22,7 +22,7 @@ GOV.UK Prototype Kit
 
               {% include './_bar.html' %}
 
-                      <form method="post" action="award-updated">
+                      <form method="post">
 
                         {{ govukBackLink({
                     text: "Back",
@@ -39,6 +39,7 @@ GOV.UK Prototype Kit
                                   {% if data.debtstartdate %}
                                   {{data.debtstartdate}}
                                   {% else %}
+                                  21 July 2022
                                   {% endif %}</td>
                             </tr>
                           </thead>
