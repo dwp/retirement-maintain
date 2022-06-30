@@ -26,6 +26,7 @@ GOV.UK Prototype Kit
               {% include 'includes/_bar-dead-rooney.html' %}
 
 
+
             </div>
           </div>
         </main>
@@ -38,9 +39,9 @@ GOV.UK Prototype Kit
     })
   }}
         <br><br>
-        <form action="dap2-address" method="post" class="form">
+        <form action="payee-company-address" method="post" class="form">
 
-          <h1 class="govuk-heading-l">Full name of the person dealing with Mark's estate</h1>
+          <h1 class="govuk-heading-l">Payee name</h1>
           <div class="govuk-form-group">
             <label class="govuk-label" for="event-name">
 
@@ -49,7 +50,7 @@ GOV.UK Prototype Kit
           </div>
 
           <button type="submit" class="govuk-button">
-            Continue
+            Cotinue
           </button>
 
           <details class="govuk-details" data-module="govuk-details">
@@ -64,8 +65,6 @@ GOV.UK Prototype Kit
           <b>  Error messages:<br>
             Empty -</b> Enter the name of the person dealing with the estate
           <br>  <b>Length -</b> Full name must be 140 characters or less<br><br>
-          <b>Notes:</b><br>
-          <b>H1 and error messages</b> should be dynamic based on whether person or company was selected on /who-is-dealing-with-estate
           </div>
           </details>
 

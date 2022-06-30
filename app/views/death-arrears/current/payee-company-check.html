@@ -23,7 +23,7 @@ GOV.UK Prototype Kit
           <div class="grid-row">
             <div class="column-full">
 
-              {% include 'includes/_bar-dead-rooney.html' %}
+              {% include 'includes/_bar.html' %}
 
 
             </div>
@@ -40,35 +40,49 @@ GOV.UK Prototype Kit
         <br><br>
       <form action="dap-uk-bank-details" method="post" class="form">
         <h1 class="govuk-heading-l">Check payee details</h1>
+<br>
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
               Name
             </dt>
             <dd class="govuk-summary-list__value">
-              Jane Rooney
-            </dd>
+Smart Solicitors LTD            </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="payee-company-name">
                 Change<span class="govuk-visually-hidden"> name</span>
               </a>
             </dd>
           </div>
+
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
               Address
             </dt>
             <dd class="govuk-summary-list__value">
-              72 Guild Street<br>London<br>SE23 6FH
+              14 Command Road<br>Liverpool<br>L23 4FH
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="payee-company-address">
                 Change<span class="govuk-visually-hidden"> address</span>
               </a>
             </dd>
           </div>
-
+         <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Reference number
+            </dt>
+            <dd class="govuk-summary-list__value">
+             None
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="payee-company-ref">
+                Change<span class="govuk-visually-hidden"> reference number</span>
+              </a>
+            </dd>
+          </div>
         </dl>
+
 
 
 
@@ -78,18 +92,16 @@ GOV.UK Prototype Kit
           Confirm
         </button>
 
+
 <br>
-<a class="govuk-body" href="org2-dap-name">
-      Change to a company
+<a class="govuk-body" href="payee-name">
+      Change to a person
     </a>
   </div>
 
     </div>
 
-
-
 </div>
-
 
 </form>
 
@@ -104,28 +116,11 @@ GOV.UK Prototype Kit
 </main>
 </div>
 </div>
-
-
-
 {% endblock %}
-
-
-
-
 
 {% block content %}
-
-
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds"></div>
-
-  
 </div>
 
-
-
-
-
-
 {% endblock %}
-
