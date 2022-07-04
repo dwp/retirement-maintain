@@ -64,6 +64,15 @@ GOV.UK Prototype Kit
                                 {% endif %}</td>
                             </tr>
                             <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Itty bitty amount</th>
+                              <td class="govuk-table__cell">
+                                {% if data.remaining %}
+                                £{{data.remaining}}
+                                {% else %}
+                                £34.56
+                                {% endif %}</td>
+                            </tr>
+                            <tr class="govuk-table__row">
                               <th scope="row" class="govuk-table__header">Benefit code</th>
                               <td class="govuk-table__cell">
                                 {% if data.code %}
