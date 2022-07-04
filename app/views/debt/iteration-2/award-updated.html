@@ -34,11 +34,11 @@ GOV.UK Prototype Kit
 
             <li class="app-timeline__entry">
               <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                Debt payment details entered
+                Debt deduction details entered
               </h3>
 
               <p class="app-timeline__info govuk-!-margin-bottom-0">
-                <span class="govuk-visually-hidden">Debt payment details entered</span>
+                <span class="govuk-visually-hidden">Debt payment deduction entered</span>
                 <span class="app-timeline__date">
                   29 Jun 2022
 
@@ -62,7 +62,7 @@ GOV.UK Prototype Kit
           </div>
           <div class="govuk-notification-banner__content">
             <p>
-              A weekly debt adjustment of
+              A weekly debt deduction of
               {% if data.amount %} £{{data.amount}}
               {% else %}£50.66
               {% endif %}
@@ -71,7 +71,7 @@ GOV.UK Prototype Kit
               {% else %}
               {{data.dsdday}}/{{data.dsdmonth}}/{{data.dsdyear}}
               {% endif %}.
-              <a class="govuk-notification-banner__link" href="debt-edit">Edit debt payment details</a>.
+              <a class="govuk-notification-banner__link" href="debt-edit">Edit debt deduction details</a>.
             </p>
           </div>
         </div>
