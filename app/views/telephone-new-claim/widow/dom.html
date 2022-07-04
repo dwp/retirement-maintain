@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{% include './_header-nav.html' %}
+{% block headEnd %}
+{% endblock %}
+
+<div class="govuk-width-container">
+
+  {% include './_bar-small.html' %}
+
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <a href="marital-status" class="govuk-back-link">Back</a>
+        <br> <br>
+        <form method="post" action="widowed-details">
+
+          <h1 class="govuk-heading-xl">
+            What date was your civil partnership or marriage?</h1>
+
+
+            <div id="date-of-marriage-hint" class="govuk-hint">
+                For example, 27 3 2007
+              </div>
+            <div class="govuk-date-input" id="date-of-marriage">
+                 <div class="govuk-date-input__item">
+                   <div class="govuk-form-group">
+                     <label class="govuk-label govuk-date-input__label" for="date-of-marriage-day">
+                       Day
+                     </label>
+                     <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-of-marriage-day" name="date-of-marriage-day" type="text" inputmode="numeric">
+                   </div>
+                 </div>
+                 <div class="govuk-date-input__item">
+                   <div class="govuk-form-group">
+                     <label class="govuk-label govuk-date-input__label" for="date-of-marriage-month">
+                       Month
+                     </label>
+                     <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-of-marriage-month" name="date-of-marriage-month" type="text" inputmode="numeric">
+                   </div>
+                 </div>
+                 <div class="govuk-date-input__item">
+                   <div class="govuk-form-group">
+                     <label class="govuk-label govuk-date-input__label" for="date-of-marriage-year">
+                       Year
+                     </label>
+                     <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="date-of-marriage-year" name="date-of-marriage-year" type="text" inputmode="numeric">
+                   </div>
+                 </div>
+               </div>
+
+            <br>
+            <button type="submit" class="govuk-button">
+              Continue
+            </button>
+
+            <br>
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+          <b>URL, errors and notes</b>
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <b>URL:</b> /widowed-details<br>
+        </div>
+        <div class="govuk-details__text">
+          <b>Errors:</b>
+
+        </div>
+      </details>
+
+          </div>
+
+      </div>
+
+
+      </form>
+
+
+
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}
