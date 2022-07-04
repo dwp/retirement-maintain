@@ -1,0 +1,154 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+              {% include './_bar.html' %}
+
+                      <form method="post">
+
+                        {{ govukBackLink({
+                    text: "Back",
+                    href: "javascript:history.go(-1)"
+                    }) }}
+
+<Br><br>
+
+                        <h1 class="govuk-heading-l">Enter debt payment details</h1>
+
+                        <div class="govuk-form-group">
+                          <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                            <legend class="govuk-fieldset__legend">
+                              <strong>Date of first debt payment</strong>
+                            </legend>
+
+                            <div class="govuk-date-input" id="passport-issued">
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                    Day
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                              </div>
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                    Month
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                              </div>
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                    Year
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                              </div>
+                            </div>
+
+                          </fieldset>
+                        </div>
+
+                        <div class="govuk-form-group">
+                          <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                            <legend class="govuk-fieldset__legend">
+                              <strong>Date of final debt payment</strong>
+                            </legend>
+
+                            <div class="govuk-date-input" id="passport-issued">
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                    Day
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                              </div>
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                    Month
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                              </div>
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                    Year
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                              </div>
+                            </div>
+
+                          </fieldset>
+                        </div>
+
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="currency">
+                            <strong>Weekly amount to withhold</strong>
+                          </label>
+                          <div id="currency-hint" class="govuk-hint">
+                            For example, £15 or £23.54
+                          </div>
+                          <div class="govuk-input__wrapper">
+                            <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                            <input class="govuk-input govuk-input--width-10" id="currency" name="currency" type="text" spellcheck="false" aria-describedby="currency-hint">
+                          </div>
+                        </div>
+
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-5">
+                            <b>Benefit code</b>
+                          </label>
+                          <div id="currency-hint" class="govuk-hint">
+                            Enter the code for the benefit with the highest amount outstanding
+                          </div>
+                          <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text">
+                        </div>
+
+<button class="govuk-button" data-module="govuk-button">
+ Continue
+</button>
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}

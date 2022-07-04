@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+              {% include './_bar.html' %}
+
+                      <form method="post">
+
+                        {{ govukBackLink({
+                    text: "Back",
+                    href: "javascript:history.go(-1)"
+                    }) }}
+
+                        <h1 class="govuk-heading-l">Confirm details of debt payments</h1>
+
+                        <table class="govuk-table">
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                              <th scope="col" class="govuk-table__header">Date of first payment</th>
+                              <td class="govuk-table__cell">
+                                  {% if data.debtstartdate %}
+                                  {{data.debtstartdate}}
+                                  {% else %}
+                                  21 July 2022
+                                  {% endif %}</td>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Date of final payment</th>
+                              <td class="govuk-table__cell">
+                                {% if data.debtstartdate %}
+                                {{data.dedday}}/{{data.dedmonth}}/{{data.dedyear}}
+                                {% else %}
+                                19 March 2023
+                                {% endif %}
+                              </td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Weekly amount</th>
+                              <td class="govuk-table__cell">
+                                {% if data.amount %}
+                                £{{data.amount}}
+                                {% else %}
+                                £50.66
+                                {% endif %}</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Benefit code</th>
+                              <td class="govuk-table__cell">
+                                {% if data.code %}
+                                {{data.code}}
+                                {% else %}
+                                50798
+                                {% endif %}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <button class="govuk-button" data-module="govuk-button">
+                          Confirm
+                        </button>
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
