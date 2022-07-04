@@ -31,12 +31,12 @@ GOV.UK Prototype Kit
 
 <Br><br>
 
-                        <h1 class="govuk-heading-l">Enter debt payment details</h1>
+                        <h1 class="govuk-heading-l">Debt deduction details</h1>
 
                         <div class="govuk-form-group">
                           <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
                             <legend class="govuk-fieldset__legend">
-                              <strong>Date of first debt payment</strong>
+                              <strong>Date of first regular deduction</strong>
                             </legend>
 
                             <div class="govuk-date-input" id="passport-issued">
@@ -69,7 +69,7 @@ GOV.UK Prototype Kit
                         <div class="govuk-form-group">
                           <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
                             <legend class="govuk-fieldset__legend">
-                              <strong>Date of final debt payment</strong>
+                              <strong>Date of final regular deduction</strong>
                             </legend>
 
                             <div class="govuk-date-input" id="passport-issued">
@@ -102,7 +102,7 @@ GOV.UK Prototype Kit
 
                         <div class="govuk-form-group">
                           <label class="govuk-label" for="currency">
-                            <strong>Weekly amount to withhold</strong>
+                            <strong>Regular weekly amount to deduct</strong>
                           </label>
                           <div id="currency-hint" class="govuk-hint">
                             For example, £15 or £23.54
@@ -115,10 +115,10 @@ GOV.UK Prototype Kit
 
                         <div class="govuk-form-group">
                           <label class="govuk-label" for="currency">
-                            <strong>Itty bitty payment</strong>
+                            <strong>Balancing deduction</strong>
                           </label>
                           <div id="currency-hint" class="govuk-hint">
-                            For example, £15 or £23.54
+                            This will be added to the final regular deduction
                           </div>
                           <div class="govuk-input__wrapper">
                             <div class="govuk-input__prefix" aria-hidden="true">£</div>
@@ -129,10 +129,10 @@ GOV.UK Prototype Kit
 
                         <div class="govuk-form-group">
                           <label class="govuk-label" for="width-5">
-                            <b>Benefit code</b>
+                            <b>Overpayment type</b>
                           </label>
                           <div id="currency-hint" class="govuk-hint">
-                            Enter the code for the benefit with the highest amount outstanding
+                            Enter the deduction code for the benefit with the highest amount outstanding
                           </div>
                           <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text">
                         </div>

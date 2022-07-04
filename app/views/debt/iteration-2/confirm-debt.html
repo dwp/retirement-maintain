@@ -29,12 +29,12 @@ GOV.UK Prototype Kit
                     href: "javascript:history.go(-1)"
                     }) }}
 
-                        <h1 class="govuk-heading-l">Confirm details of debt payments</h1>
+                        <h1 class="govuk-heading-l">Confirm details of debt deductions</h1>
 
                         <table class="govuk-table">
                           <thead class="govuk-table__head">
                             <tr class="govuk-table__row">
-                              <th scope="col" class="govuk-table__header">Date of first payment</th>
+                              <th scope="col" class="govuk-table__header">Date of first regular deduction</th>
                               <td class="govuk-table__cell">
                                   {% if data.debtstartdate %}
                                   {{data.debtstartdate}}
@@ -45,7 +45,7 @@ GOV.UK Prototype Kit
                           </thead>
                           <tbody class="govuk-table__body">
                             <tr class="govuk-table__row">
-                              <th scope="row" class="govuk-table__header">Date of final payment</th>
+                              <th scope="row" class="govuk-table__header">Date of final regular deduction</th>
                               <td class="govuk-table__cell">
                                 {% if data.debtstartdate %}
                                 {{data.dedday}}/{{data.dedmonth}}/{{data.dedyear}}
@@ -55,7 +55,7 @@ GOV.UK Prototype Kit
                               </td>
                             </tr>
                             <tr class="govuk-table__row">
-                              <th scope="row" class="govuk-table__header">Weekly amount</th>
+                              <th scope="row" class="govuk-table__header">Regular weekly amount to deduct</th>
                               <td class="govuk-table__cell">
                                 {% if data.amount %}
                                 £{{data.amount}}
@@ -64,16 +64,16 @@ GOV.UK Prototype Kit
                                 {% endif %}</td>
                             </tr>
                             <tr class="govuk-table__row">
-                              <th scope="row" class="govuk-table__header">Itty bitty amount</th>
+                              <th scope="row" class="govuk-table__header">Balancing deduction</th>
                               <td class="govuk-table__cell">
                                 {% if data.remaining %}
                                 £{{data.remaining}}
                                 {% else %}
-                                £34.56
+                                £1.10
                                 {% endif %}</td>
                             </tr>
                             <tr class="govuk-table__row">
-                              <th scope="row" class="govuk-table__header">Benefit code</th>
+                              <th scope="row" class="govuk-table__header">Overpayment type</th>
                               <td class="govuk-table__cell">
                                 {% if data.code %}
                                 {{data.code}}
