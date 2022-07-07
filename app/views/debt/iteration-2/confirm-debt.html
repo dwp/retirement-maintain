@@ -29,12 +29,12 @@ GOV.UK Prototype Kit
                     href: "javascript:history.go(-1)"
                     }) }}
 
-                        <h1 class="govuk-heading-l">Confirm details of debt deductions</h1>
+                        <h1 class="govuk-heading-l">Confirm details of debt recovery</h1>
 
                         <table class="govuk-table">
                           <thead class="govuk-table__head">
                             <tr class="govuk-table__row">
-                              <th scope="col" class="govuk-table__header">Date of first regular deduction</th>
+                              <th scope="col" class="govuk-table__header">Start of debt recovery</th>
                               <td class="govuk-table__cell">
                                   {% if data.debtstartdate %}
                                   {{data.debtstartdate}}
@@ -45,7 +45,7 @@ GOV.UK Prototype Kit
                           </thead>
                           <tbody class="govuk-table__body">
                             <tr class="govuk-table__row">
-                              <th scope="row" class="govuk-table__header">Date of final regular deduction</th>
+                              <th scope="row" class="govuk-table__header">End of debt recovery</th>
                               <td class="govuk-table__cell">
                                 {% if data.debtstartdate %}
                                 {{data.dedday}}/{{data.dedmonth}}/{{data.dedyear}}
@@ -55,7 +55,7 @@ GOV.UK Prototype Kit
                               </td>
                             </tr>
                             <tr class="govuk-table__row">
-                              <th scope="row" class="govuk-table__header">Regular weekly amount to deduct</th>
+                              <th scope="row" class="govuk-table__header">Weekly amount to deduct</th>
                               <td class="govuk-table__cell">
                                 {% if data.amount %}
                                 £{{data.amount}}

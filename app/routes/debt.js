@@ -74,28 +74,28 @@ router.post('/debt/iteration-2/debt-edit', function(req, res) {
   if ( req.body['edit-remove-debt'] === 'remove' ) {
     res.redirect('remove-confirmation');
   } else {
-    res.redirect('debt-start-date-manual');
+    res.redirect('apply-debt');
   }
 });
 
 router.post('/debt/iteration-2/apply-debt', (req, res) => {
-  res.redirect('/debt/confirm-debt')
+  res.redirect('/debt/iteration-2/confirm-debt')
 })
 ;
 
 router.post('/debt/iteration-2/debt-start-date-manual', (req, res) => {
-  res.redirect('/debt/debt-details')
+  res.redirect('/debt/iteration-2/debt-details')
 })
 ;
 
 router.post('/debt/iteration-2/debt-details', (req, res) => {
-  res.redirect('/debt/debt-end-date')
+  res.redirect('/debt/iteration-2/debt-end-date')
 })
 ;
 
 
 router.post('/debt/iteration-2/debt-end-date', (req, res) => {
-  res.redirect('/debt/confirm-debt')
+  res.redirect('/debt/iteration-2/confirm-debt')
 })
 ;
 
