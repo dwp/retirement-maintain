@@ -37,7 +37,7 @@ router.post('/widows/iteration-2/check-details-info-missing', function(req, res)
     if ( req.body['decision'] === 'more-info' ) {
       res.redirect('/widows/iteration-2/more-info-letter');
     } else if  ( req.body['decision'] === 'save-return' ) {
-      res.redirect('/widows/iteration-3/get-a-task-2');
+      res.redirect('/widows/iteration-2/save-and-return');
     } else if ( req.body['decision'] === 'nothing-to-inherit' ) {
     res.redirect('/widows/iteration-2/nothing-to-inherit');
   } else if ( req.body['decision'] === 'inheritable-amounts' ) {
