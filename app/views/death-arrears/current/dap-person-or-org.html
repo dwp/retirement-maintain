@@ -70,6 +70,16 @@ GOV.UK Prototype Kit
 Company        </label>
         <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
           For example, a solicitor, the local council or another organisation.     </div>
+</div>
+
+<p>or</p>
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="unknown" aria-describedby="sign-in-2-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in-2">
+Unknown        </label>
+        <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+          If you don't have a scooby.     </div>
 
       </div>
 
@@ -121,7 +131,7 @@ Company        </label>
     nextPageRoutes = {
         'individual': 'dap-name',
         'corp-ref': 'org-dap-name',
-
+        'unknown': 'personal-no',
         }
 </script>
 
