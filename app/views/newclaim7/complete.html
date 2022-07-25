@@ -14,31 +14,8 @@ GOV.UK Prototype Kit
 
 <div class="govuk-width-container">
 
-  <div class="moj-identity-bar">
+  {% include './_bar-small.html' %}
 
-    <div class="moj-identity-bar__container">
-
-    <div class="moj-identity-bar__details">
-
-      <span class="moj-identity-bar__title"><b>
-        {% if data['nino'] === 'xx347612a' %}
-        Theodora Best
-        {% elseif data['nino'] === 'XX347612A' %}
-        Theodora Best
-        {% elseif data['nino'] === 'XX89161B' %}
-        Yara Croft
-        {% elseif data['nino'] === 'xx89161b' %}
-        Yara Croft
-        {% else %}
-        Samira McGill
-        {% endif %}</b></span>
-
-    </div>
-    <div class="moj-identity-bar__details">
-      <!-- <span class="moj-identity-bar__title" style="text-align: right;"><a href="find">Start a new claim</a></span> -->
-    </div>
-    </div>
-    </div>
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
@@ -75,8 +52,8 @@ GOV.UK Prototype Kit
         <b>URL:</b> /application-submitted<br>
       </div>
       <div class="govuk-details__text">
-        <b>Errors:</b> 
-        
+        <b>Errors:</b>
+
       </div>
     </details>
 
