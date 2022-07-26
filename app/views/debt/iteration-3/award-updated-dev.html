@@ -34,24 +34,14 @@ GOV.UK Prototype Kit
 
             <li class="app-timeline__entry">
               <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                Debt recovery started
+                Debt recovery details entered
               </h3>
 
               <p class="app-timeline__info govuk-!-margin-bottom-0">
-                <span class="govuk-visually-hidden">Debt recovery started</span>
+                <span class="govuk-visually-hidden">Debt recovery details entered</span>
                 <span class="app-timeline__date">
-                   12 August 2022</li>
+                  13 Jul 2022
 
-
-                  <li class="app-timeline__entry">
-                    <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-                      Debt recovery details entered
-                    </h3>
-
-                    <p class="app-timeline__info govuk-!-margin-bottom-0">
-                      <span class="govuk-visually-hidden">Debt recovery details entered</span>
-                      <span class="app-timeline__date">
-                        13 Jul 2022</li>
           </ol>
 
         </div>
@@ -63,6 +53,25 @@ GOV.UK Prototype Kit
 
   <div class="govuk-grid-column-two-thirds">
         <br><br>
+
+        <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Important
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p>
+              A weekly debt deduction of
+              {% if data.amount %} £{{data.amount}}
+              {% else %}£50.66
+              {% endif %}
+              will be applied to the current award from
+              12 August 2022.
+              <a class="govuk-notification-banner__link" href="debt-edit">Edit debt recovery details</a>.
+            </p>
+          </div>
+        </div>
 
 
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Award history</h2>
@@ -82,8 +91,8 @@ GOV.UK Prototype Kit
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">8 Apr 2021</td>
             <td class="govuk-table__cell">£160.34</td>
-            <td class="govuk-table__cell">Yes</td>
-            <td class="govuk-table__cell"><a href="award-current-dev">Details</a></td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"><a href="award-current">Details</a></td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">12 Apr 2020</td>

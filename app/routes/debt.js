@@ -124,6 +124,70 @@ router.post('/debt/iteration-2/confirm-debt-edit', function(req, res) {
 
 
 
+// Iteration three
+
+router.post('/debt/iteration-3/debt-start-date', function(req, res) {
+  if ( req.body['debtstartdate'] === 'manual-date' ) {
+    res.redirect('debt-start-date-manual');
+  } else {
+    res.redirect('debt-details');
+  }
+});
+
+router.post('/debt/iteration-3/debt-edit', function(req, res) {
+  if ( req.body['edit-remove-debt'] === 'remove' ) {
+    res.redirect('remove-confirmation');
+  } else {
+    res.redirect('apply-debt-edit');
+  }
+});
+
+router.post('/debt/iteration-3/apply-debt', (req, res) => {
+  res.redirect('/debt/iteration-3/confirm-debt')
+})
+;
+
+router.post('/debt/iteration-3/apply-debt-edit', (req, res) => {
+  res.redirect('/debt/iteration-3/confirm-debt-edit')
+})
+;
+
+
+router.post('/debt/iteration-3/debt-start-date-manual', (req, res) => {
+  res.redirect('/debt/iteration-3/debt-details')
+})
+;
+
+router.post('/debt/iteration-3/debt-details', (req, res) => {
+  res.redirect('/debt/iteration-3/debt-end-date')
+})
+;
+
+
+router.post('/debt/iteration-3/debt-end-date', (req, res) => {
+  res.redirect('/debt/iteration-3/confirm-debt')
+})
+;
+
+router.post('/debt/iteration-3/confirm-debt', function(req, res) {
+  if ( req.session.data['edit-remove-debt'] === 'edit' ) {
+    res.redirect('award-debt-edited');
+  } else {
+    res.redirect('award-updated');
+  }
+});
+
+router.post('/debt/iteration-3/confirm-debt-edit', function(req, res) {
+  if ( req.session.data['edit-remove-debt'] === 'edit' ) {
+    res.redirect('award-debt-edited');
+  } else {
+    res.redirect('award-debt-edited');
+  }
+});
+
+
+
+
 
 //
 router.post('/', (req, res) => {
