@@ -7,25 +7,37 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-
-{% include './nav/_header-nav-unselected.html' %}
+{% include './navigation/_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
 
 <div class="govuk-width-container">
+
+  <br>
+  <br>
+
+  <div class="govuk-grid-column-full">
+
+    {% include './navigation/_bar-admin.html' %}
+
+  </div>
+
+
+
   <div class="govuk-grid-column-two-thirds">
 
     <main id="content" role="main">
       <div class="grid-row">
-        <div class="column-full">
 
+
+        <div class="column-full-width">
 
           <br><br>
-          {% include './nav/_bar.html' %}
+          {% include './name-bar/_bar-jose.html' %}
 
-          {% include './nav/_tab-overview.html' %}
+          {% include './tabs/_tab-overview.html' %}
 
         </div>
       </div>
@@ -40,46 +52,80 @@ GOV.UK Prototype Kit
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header" style="width: 50%" >Full name</th>
-            <td class="govuk-table__cell" style="width: 50%">Jadon Ruiz</td>
+            <td class="govuk-table__cell" style="width: 50%">Jose Dominguez</td>
             <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
               Change
             </a></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">National Insurance number</th>
-            <td class="govuk-table__cell">QQ 12 34 56 X</td>
+            <td class="govuk-table__cell">QQ 56 43 21 M</td>
             <td class="govuk-table__cell"></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Date of birth</th>
-            <td class="govuk-table__cell">4 January 1955</td>
+            <td class="govuk-table__cell">10 April 1956</td>
             <td class="govuk-table__cell"></td>
           </tr>
+          <!-- <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Gender</th>
+              <td class="govuk-table__cell">Male</td>
+              <td class="govuk-table__cell"><a class="govuk-link" href="change-gender">
+                Change</a></td> 
+          </tr> -->
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">State Pension entitlement date </th>
-            <td class="govuk-table__cell">4 January 2021</td>
+            <td class="govuk-table__cell">10 April 2022 </td>
             <td class="govuk-table__cell"></td>
           </tr>
+        </tr>
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Deferral period </th>
-            <td class="govuk-table__cell">26 February 2021 to 24 November 2021</td>
+            <th scope="row" class="govuk-table__header">State Pension start date </th>
+            <td class="govuk-table__cell">15 September 2022 </td>
             <td class="govuk-table__cell"></td>
           </tr>
+
           <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Marital status </th>
               <td class="govuk-table__cell">Married</td>
-              <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
+              <td class="govuk-table__cell"><a class="govuk-link" href=change-marital-status>
                   Change
                 </a></td>
             </tr>
+           <!--  <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Date of marriage</th>
+                <td class="govuk-table__cell">12 July 1994</td>
+                <td class="govuk-table__cell"><a class="govuk-link" href=change-marriage-date>
+                    Change
+                  </a></td>
+              </tr> -->
 
         </tbody>
       </table>
 
     </div>
-    <a class="govuk-body" href="death-date">
+    <a class="govuk-body" href="stop-sp">
       Stop State Pension
     </a>
+
+
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> /personal <br>
+        <b>Error messages:</b> None needed   <br>
+        <b>Notes:</b> None <br>
+      </div>
+    </details>
+
   </div>
 
 
@@ -91,37 +137,12 @@ GOV.UK Prototype Kit
       Personal changes
     </h2>
     <ol class="app-timeline">
-
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-        Paper claim processed
+          No changes made
         </h3>
-        <p class="app-timeline__info govuk-!-margin-bottom-0">
-                  24 Nov 2021
-          <span class="govuk-visually-hidden">No changes made</span>
-          <span class="app-timeline__date">
 
-          </span>
-        </p>
-      </li>
-      <li class="app-timeline__entry">
-        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-        State Pension deferred
-        </h3>
         <p class="app-timeline__info govuk-!-margin-bottom-0">
-                  26 Feb 2021
-          <span class="govuk-visually-hidden">No changes made</span>
-          <span class="app-timeline__date">
-
-          </span>
-        </p>
-      </li>
-      <li class="app-timeline__entry">
-        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-        Paper claim processed
-        </h3>
-        <p class="app-timeline__info govuk-!-margin-bottom-0">
-                  12 Feb 2021
           <span class="govuk-visually-hidden">No changes made</span>
           <span class="app-timeline__date">
 
@@ -135,6 +156,7 @@ GOV.UK Prototype Kit
   </div>
 
 
+
 </div>
 </div>
 </main>
@@ -145,6 +167,8 @@ GOV.UK Prototype Kit
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+
+
 
   </div>
 </div>
