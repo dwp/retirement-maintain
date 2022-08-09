@@ -42,9 +42,6 @@ GOV.UK Prototype Kit
                 <table class="govuk-table">
                   <caption class="govuk-table__caption govuk-table__caption--m">Payment details</caption>
 
-                  <div class="govuk-inset-text">
-                    Original payment was reduced by £210.00 due to a Pension Credit adjustment.
-                  </div>
 
                   <thead class="govuk-table__head">
                     <tr class="govuk-table__row">
@@ -121,10 +118,28 @@ GOV.UK Prototype Kit
 
               
 <br>
-            <h1 class="govuk-heading-l">2. Record nil payment adjustment</h1>
+            <h1 class="govuk-heading-l">2. Go into CPS Local and record the nil payment adjustment.</h1>
 
- <div class="govuk-inset-text">Go into CPS Local and record the nil payment adjustment. 
-              </div>
+
+
+ <table class="govuk-table">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Payment details</caption>
+                  
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">New State Pension</th>
+                      <td class="govuk-table__cell">£210.00</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Pension Credit</th>
+                      <td class="govuk-table__cell">-£210.00</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+
+<br>
+ 
                             <button class="govuk-button" data-module="govuk-button">
                               Confirm faster payment reissued and NPA recorded
                             </button>
