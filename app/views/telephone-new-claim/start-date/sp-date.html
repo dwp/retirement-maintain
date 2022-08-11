@@ -30,35 +30,39 @@ GOV.UK Prototype Kit
         <form method="post">
 
           <h1 class="govuk-heading-xl">
-            Do you want your State Pension from the earliest possible date?</h1>
+            Do you want to start your State Pension from 28 July 2022?</h1>
 
             <div class="govuk-inset-text">
-              The earliest date you can claim your State Pension from is 12 December 2021
+              The claimant will reach State Pension age on 28 July 2022.
             </div>
 
-            <div class="govuk-form-group">
-              <fieldset class="govuk-fieldset" aria-describedby="sp-date-hint">
-                <div class="govuk-radios govuk-radios--inline">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="sp-date" name="sp-date" type="radio" value="yes">
-                    <label class="govuk-label govuk-radios__label" for="sp-date">
-                      Yes
-                    </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="sp-date-2" name="sp-date" type="radio" value="no">
-                    <label class="govuk-label govuk-radios__label" for="sp-date-2">
-                      No
-                    </label>
-                  </div>
-                </div>
 
-              </fieldset>
-            </div>
+                        <div class="govuk-form-group">
+                          <fieldset class="govuk-fieldset" aria-describedby="sp-date-hint">
+                            <div class="govuk-radios govuk-radios--inline">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="sp-date" name="sp-date" type="radio" value="yes">
+                                <label class="govuk-label govuk-radios__label" for="sp-date">
+                                  Yes, start on 28 July 2022 </label>
 
-            <button type="submit" class="govuk-button">
-              Continue
-            </button>
+                                  <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">This is the earliest date you can start your State Pension from.</div>
+
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="sp-date-2" name="sp-date" type="radio" value="no">
+                                <label class="govuk-label govuk-radios__label" for="sp-date-2">
+                                  No, choose a later date</label>
+
+                                <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">Delay starting your start date by at least 9 weeks to increase your regular payments by just over 0.1% a week.</div>
+                                </div>
+                            </div>
+
+                          </fieldset>
+                        </div>
+
+                        <button type="submit" class="govuk-button">
+                          Continue
+                        </button>
 
             <br>
       <details class="govuk-details" data-module="govuk-details">
