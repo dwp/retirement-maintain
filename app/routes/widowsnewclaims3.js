@@ -76,4 +76,17 @@ router.post('/widows/iteration-3/check-details-info-missing', function(req, res)
       }
     });
 
+
+
+
+    // Widows conversions
+
+    router.post('/widows/conversion/spouse-dod', function(req, res) {
+        if ( req.body['spouse-dod-verification'] === 'verified' ) {
+          res.redirect('/widows/conversion/check-details-info-complete');
+        } else {
+          res.redirect('/widows/conversion/check-details-info-missing');
+        }
+      });
+
 module.exports = router;

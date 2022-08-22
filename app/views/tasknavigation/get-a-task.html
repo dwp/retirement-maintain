@@ -7,7 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{% include './_header-nav.html' %}
+{% include './_header-nav-tasks.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -21,32 +21,28 @@ GOV.UK Prototype Kit
       <br>
         <h1 class="govuk-heading-xl">Tasks</h1>
 
-        <nav class="moj-sub-navigation" aria-label="Sub navigation">
-
-                  <ul class="moj-sub-navigation__list">
-                    <li class="moj-sub-navigation__item">
-                      <a class="moj-sub-navigation__link" aria-current="page" href="get-a-task">New claims</a>
+                <nav class="navigation-secondary">
+                  <ul>
+                    <li>
+                      <a href="get-a-task-claims">New claims</a>
                     </li>
 
-                    <li class="moj-sub-navigation__item">
-                      <a class="moj-sub-navigation__link" href="tasks-award">Award updates (SRBs)</a>
+                    <li>
+                      <a class="active" aria-current="page" href="get-a-task-award">Award changes</a>
                     </li>
 
-                    <li class="moj-sub-navigation__item">
-                      <a class="moj-sub-navigation__link" href="tasks-alt-formats">Alternative formats</a>
+                    <li>
+                      <a href="get-a-task-death">Death</a>
                     </li>
 
-                    <li class="moj-sub-navigation__item">
-                      <a class="moj-sub-navigation__link" href="tasks-conversions">Widows conversions</a>
-                    </li>
-
-                    <li class="moj-sub-navigation__item">
-                      <a class="moj-sub-navigation__link" href="tasks-other">Other</a>
+                    <li>
+                      <a href="get-a-task-other">Other</a>
                     </li>
 
                   </ul>
-
                 </nav>
+                <br>
+                <br>
 
 
         <form method="post">

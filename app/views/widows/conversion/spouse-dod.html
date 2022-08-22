@@ -19,9 +19,8 @@ GOV.UK Prototype Kit
     <main id="content" role="main">
       <div class="grid-row">
         <div class="column-full">
-
-
           <br><br>
+
           {% include './_bar.html' %}
 
           {{ govukBackLink({
@@ -33,9 +32,7 @@ GOV.UK Prototype Kit
           <h2 class="govuk-heading-l">Date spouse or partner died</h2>
 
 
-          <form method="post" action="spouse-dod">
-
-
+          <form method="post">
             <div class="govuk-date-input" id="spouse-dod">
                   <div class="govuk-date-input__item">
                     <div class="govuk-form-group">
@@ -67,15 +64,15 @@ GOV.UK Prototype Kit
                   <div class="govuk-radios--inline">
 
                     <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="marital-status-2" name="spouse-dod-verification" type="radio" value="verified">
-                        <label class="govuk-label govuk-radios__label" for="marital-status-2">
+                        <input class="govuk-radios__input" id="spouse-dod-verification-2" name="spouse-dod-verification" type="radio" value="verified">
+                        <label class="govuk-label govuk-radios__label" for="spouse-dod-verification-2">
                           Verified
                         </label>
                       </div>
 
                       <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="marital-status-1" name="spouse-dod-verification" type="radio" value="not-verified">
-                        <label class="govuk-label govuk-radios__label" for="marital-status-1">
+                        <input class="govuk-radios__input" id="spouse-dod-verification-1" name="spouse-dod-verification" type="radio" value="not-verified">
+                        <label class="govuk-label govuk-radios__label" for="spouse-dod-verification-1">
                           Not verified
                         </label>
                       </div>
@@ -93,7 +90,6 @@ GOV.UK Prototype Kit
       </div>
     </main>
 
-  </form>
 </div>
 </div>
 
