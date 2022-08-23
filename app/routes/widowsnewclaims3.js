@@ -2,6 +2,21 @@ const express = require('express');
 const router = express.Router()
 
 
+
+// conversions
+
+router.post('/widows/conversion-task/task-details', (req, res) => {
+  res.redirect('/widows/conversion-task/check-details-info-missing')
+})
+;
+
+
+
+
+
+
+// new claims
+
 router.post('/widows/iteration-3/task-details', (req, res) => {
   res.redirect('/widows/iteration-3/check-details-info-missing')
 })
