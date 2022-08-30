@@ -10,8 +10,22 @@ router.post('/widows/conversion-task/task-details', (req, res) => {
 })
 ;
 
+router.post('/widows/conversion-task/check-details-info-missing', function(req, res) {
+    if ( req.body['decision'] === 'nothing-to-inherit' ) {
+      res.redirect('/widows/conversion-task/nothing-to-inherit');
+    } else if  ( req.body['decision'] === 'save' ) {
+      res.redirect('/widows/conversion-task/get-a-task-return');
+    } else if  ( req.body['decision'] === 'inheritable-amounts' ) {
+      res.redirect('/widows/conversion-task/inheritable-amounts');
+    } else {
+      res.redirect('/widows/conversion-task/more-info-letter');
+    }
+  });
 
-
+  router.post('/widows/conversion-task/dom', (req, res) => {
+    res.redirect('/widows/conversion-task/check-details-info-missing')
+  })
+  ;
 
 
 

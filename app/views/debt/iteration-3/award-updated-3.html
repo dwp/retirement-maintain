@@ -1,0 +1,133 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+<div class="govuk-width-container">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="govuk-grid-column-two-thirds"
+
+          <br><br><br>
+          {% include './_bar.html' %}
+
+          {% include './tabs/_tab-award-updated.html' %}
+
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+          <br><br>
+          <h2 class="govuk-heading-m">
+            Award changes
+          </h2>
+          <ol class="app-timeline">
+
+            <li class="app-timeline__entry">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+                Debt recovery details entered
+              </h3>
+
+              <p class="app-timeline__info govuk-!-margin-bottom-0">
+                <span class="govuk-visually-hidden">Debt recovery details entered</span>
+                <span class="app-timeline__date">
+                  13 Jul 2022
+
+          </ol>
+
+        </div>
+
+      </div>
+    </main>
+
+    <div>
+
+  <div class="govuk-grid-column-two-thirds">
+        <br><br>
+
+        <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Important
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p>
+              This award will increase on 15 April 2023.<br>
+              <a href="#" class="govuk-link govuk-link--no-visited-state">View new award</a>
+              <br><br>
+
+              A weekly debt deduction of
+              {% if data.amount %} £{{data.amount}}
+              {% else %}£50.66
+              {% endif %}
+              will be applied to the current award from
+              12 August 2022.<br>
+              <a class="govuk-notification-banner__link" href="debt-edit">Edit debt recovery details</a>.
+            </p>
+          </div>
+        </div>
+
+
+              <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Award history</h2>
+              <br><br>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col" style="width: 25%">From</th>
+            <th class="govuk-table__header " scope="col" style="width: 30%">Weekly amount</th>
+            <th class="govuk-table__header" scope="col" style="width: 20%">Adjustment</th>
+            <th class="govuk-table__header" scope="col" style="width: 15%"></th>
+
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">8 Apr 2021</td>
+            <td class="govuk-table__cell">£160.34</td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"><a href="award-current">Details</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">12 Apr 2020</td>
+            <td class="govuk-table__cell">£155.27</td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"><a href="award-previous">Details</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    </div>
+
+
+</div>
+
+
+
+</div>
+</div>
+</main>
+</div>
+<!-- </div> -->
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
