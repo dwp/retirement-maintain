@@ -28,6 +28,29 @@ router.post('/widows/conversion-task/check-details-info-missing', function(req, 
   ;
 
 
+  router.post('/widows/conversion/dom', (req, res) => {
+    res.redirect('/widows/conversion/check-details-info-missing')
+  })
+  ;
+
+  router.post('/widows/conversion/check-details-info-missing', function(req, res) {
+      if ( req.body['conversion-decision'] === 'nothing-to-inherit' ) {
+        res.redirect('/widows/conversion/nothing-to-inherit');
+      } else if  ( req.body['conversion-decision'] === 'save' ) {
+        res.redirect('/widows/conversion/get-a-task-return');
+      } else if  ( req.body['conversion-decision'] === 'inheritable-amounts' ) {
+        res.redirect('/widows/conversion/inheritable-amounts');
+      } else {
+        res.redirect('/widows/conversion/more-info-letter');
+      }
+    });
+
+    router.post('/widows/conversion/inheritable-amounts', (req, res) => {
+      res.redirect('/widows/conversion/')
+    })
+    ;
+
+
 
 // new claims
 

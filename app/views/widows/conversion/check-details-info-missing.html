@@ -28,11 +28,26 @@ GOV.UK Prototype Kit
     }}
 
     <br><br>
+    {% if data['dom'] === 'Verified' %}
 
-    <h1 class="govuk-heading-l">Complete details and decide how to continue</h1>
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Success
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <p class="govuk-notification-banner__heading">
+    All information completed and dates verified.
+        </p>
+      </div>
+    </div>
+    <h1 class="govuk-heading-l">Check for inheritable amounts</h1>
 
-
+    {% else %}
+    <h1 class="govuk-heading-l">Check the details and decide how to continue</h1>
     <p>Complete the information and verify the dates, or choose another way to continue.</p>
+    {% endif %}
 
   <br><br>
 
@@ -195,7 +210,7 @@ GOV.UK Prototype Kit
                                               <a class="govuk-link" href="dom">{% if data.domd %}
                                               Change
                                               {% else %}
-                                              Add
+                                              Change
                                               {% endif %}</a>
                       </td>
                     </tr>
@@ -217,15 +232,30 @@ GOV.UK Prototype Kit
       </legend>
 
 
+      {% if data['dom'] === 'Verified' %}
+
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="inheritable-amounts">
+          <label class="govuk-label govuk-radios__label" for="conversion-decision">
+      Enter inheritable amounts </label>
+      </div>
+
+
+      {% else %}
+
+  {% endif %}
+
+
     <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="nothing-to-inherit">
-      <label class="govuk-label govuk-radios__label" for="decision">
+      <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="nothing-to-inherit">
+      <label class="govuk-label govuk-radios__label" for="conversion-decision">
         Award State Pension - nothing to inherit</label>
     </div>
 
     <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="save-return">
-      <label class="govuk-label govuk-radios__label" for="decision">
+      <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="save-return">
+      <label class="govuk-label govuk-radios__label" for="conversion-decision">
         Create a new task</label>
     </div></div>
 
