@@ -8,12 +8,12 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include 'includes/header/_header-nav-teleclaim.html' %}
+{% include './header/_header-nav-teleclaim.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
-{% include 'includes/_find-someone-teleclaim.html' %}
+{% include './_find-someone-teleclaim.html' %}
 
 
 <br><br><br><br><br>
@@ -24,7 +24,7 @@ GOV.UK Prototype Kit
         <div class="grid-row">
 
 
-            {% include 'includes/_bar-ready.html' %}
+            {% include './_bar-ready.html' %}
 
             <a href="teleclaim-2" button type="submit" class="govuk-button">
               Continue</a>
