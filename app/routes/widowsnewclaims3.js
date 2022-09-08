@@ -33,6 +33,11 @@ router.post('/widows/conversion-task/check-details-info-missing', function(req, 
   })
   ;
 
+  router.post('/widows/conversion/inheritable-amounts', (req, res) => {
+    res.redirect('/widows/conversion/check-details-info-missing')
+  })
+  ;
+
   router.post('/widows/conversion/check-details-info-missing', function(req, res) {
       if ( req.body['conversion-decision'] === 'nothing-to-inherit' ) {
         res.redirect('/widows/conversion/nothing-to-inherit');
