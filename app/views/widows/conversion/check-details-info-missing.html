@@ -231,7 +231,6 @@ GOV.UK Prototype Kit
         </h2>
       </legend>
 
-
       {% if data['dom'] === 'Verified' %}
 
 
@@ -243,6 +242,7 @@ GOV.UK Prototype Kit
 
 
       {% else %}
+      <div id="changed-name-hint" class="govuk-hint">To award with inheritable amounts, enter all missing information and verify all dates.</div>
 
   {% endif %}
 
@@ -250,13 +250,13 @@ GOV.UK Prototype Kit
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="nothing-to-inherit">
       <label class="govuk-label govuk-radios__label" for="conversion-decision">
-        Award State Pension - nothing to inherit</label>
+        No change to award - Nothing to inherit</label>
     </div>
 
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="save-return">
       <label class="govuk-label govuk-radios__label" for="conversion-decision">
-        Create a new task</label>
+        Create a widows conversion task</label>
     </div></div>
 
 
