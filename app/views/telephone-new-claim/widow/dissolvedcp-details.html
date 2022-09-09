@@ -24,7 +24,7 @@ GOV.UK Prototype Kit
         <form method="post">
 
           <h1 class="govuk-heading-xl">
-            About your husband, wife or civil partner</h1>
+            About your former civil partner</h1>
 
           <div class="govuk-form-group">
 
@@ -87,7 +87,7 @@ GOV.UK Prototype Kit
             <br><br>
             <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
               <label class="govuk-label" for="firstname">
-                <b>Date of marriage or civil partnership</b>
+                <b>Date civil partnership was dissolved</b>
               </label>
               <div class="govuk-date-input" id="passport-issued">
                 <div class="govuk-date-input__item">
@@ -120,40 +120,7 @@ GOV.UK Prototype Kit
               </div>
               <br><br>
             </fieldset>
-            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-              <label class="govuk-label" for="firstname">
-                <b>Date of death</b>
-              </label>
-              <div class="govuk-date-input" id="passport-issued">
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                      Day
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
-                      name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
-                  </div>
-                </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                      Month
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
-                      name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
-                  </div>
-                </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                      Year
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
-                      name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric">
-                  </div>
-                </div>
-              </div>
-            </fieldset>
+
 
             <br><br><br>
             <button type="submit" class="govuk-button">
@@ -184,17 +151,14 @@ GOV.UK Prototype Kit
           Length: Last name must be 70 characters or less<br></p>
           <p>
           Invalid: Other name must start with a letter and only include letters, hyphens, apostrophes, full stops and spaces<br> Length: Other name must be 70 characters or less<br></p>
-        <p>  DoB invalid: Date of birth must be before date of marriage and date of death<br>
+        <p>  DoB invalid: Date of birth must be before date civil partnership was dissolved<br>
           Future DoB date: Date must be in the past <br>
           DoB date incomplete: Enter a real date of death, like 12 2 2019<br>
 </p>
-          <p>  DoM invalid: Date must be after date of birth<br>
-            Future DoM date: Date must be in the past <br>
-            DoM date incomplete: Enter a real date of death, like 12 2 2019<br>
+          <p>CP dissolved date invalid: Date civil partnership was dissolved must be after date of birth<br>
+            Future CP dissolved date: Date must be in the past <br>
+            CP dissolved date incomplete: Enter a real date of death, like 12 2 2019<br>
   </p>
-          <p>DoD invalid: Date of death must be after date of birth and date of marriage<br>
-            Future DoD date: Date must be in the past <br>
-            DoD date incomplete: Enter a real date of death, like 12 2 2019</p>
         </div>
       </details>
 
