@@ -14,12 +14,16 @@ router.post('/prison/stop-sp', function(req, res) {
   if ( req.body['stop-sp'] === 'suspend' ) {
     res.redirect('personal-suspended');
   } else if ( req.body['stop-sp'] === 'prison' ) {
-    res.redirect('prison-overpayment');
+    res.redirect('date-entered-prison');
   } else {
     res.redirect('personal');
   }
 });
 
+router.post('/prison/date-entered-prison', (req, res) => {
+  res.redirect('prison-overpayment')
+})
+;
 
 // Prison overpayment referral
 router.post('/prison/prison-overpayment', function(req, res) {
