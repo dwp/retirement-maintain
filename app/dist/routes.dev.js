@@ -133,7 +133,11 @@ var widowsnewclaims2 = require('./routes/widowsnewclaims2');
 
 var widowsnewclaims3 = require('./routes/widowsnewclaims3');
 
-var debt = require('./routes/debt'); //copy the router use and update the sprint version
+var debt = require('./routes/debt');
+
+var startdate = require('./routes/startdate');
+
+var startdate2 = require('./routes/startdate2'); //copy the router use and update the sprint version
 
 
 router.use(newclaims);
@@ -197,4 +201,6 @@ router.use(widowsnewclaims);
 router.use(widowsnewclaims2);
 router.use(widowsnewclaims3);
 router.use(debt);
+router.use(startdate);
+router.use(startdate2);
 module.exports = router;
