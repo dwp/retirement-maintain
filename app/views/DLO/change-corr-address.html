@@ -32,7 +32,11 @@ GOV.UK Prototype Kit
                           }) }}
 
           <br><br>
-          <h2 class="govuk-heading-l">Do you want to change the address or stop letters?</h2>
+          <h2 class="govuk-heading-l">How do you want to update the correspondence address?</h2>
+          <div class="govuk-inset-text">
+          14 West Avenue<br>
+          Leeds<br>
+          LS1 1WA                          </div>
 
           <div class="govuk-form-group">
 
@@ -46,11 +50,18 @@ GOV.UK Prototype Kit
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="change-address-2" name="change-address" type="radio" value="remove">
                 <label class="govuk-label govuk-radios__label" for="change-address2">
-                Stop letters
-                </label>
+   Remove address                </label>
               </div>
+               <div class="govuk-radios__divider">or</div>
+              <div class="govuk-radios govuk-radios">
+               <div class="govuk-radios__item">
+                 <input class="govuk-radios__input" id="change-address" name="change-address" type="radio" value="change">
+                 <label class="govuk-label govuk-radios__label" for="change-address">
+                Stop letters
+                 </label>
+               </div>
             </div>
-
+  </div>
            </div>
 
           <button type="submit" class="govuk-button">Save</button>
