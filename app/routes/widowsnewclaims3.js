@@ -34,9 +34,15 @@ router.post('/widows/conversion-task/check-details-info-missing', function(req, 
   ;
 
   router.post('/widows/conversion/inheritable-amounts', (req, res) => {
-    res.redirect('/widows/conversion/check-details-info-missing')
+    res.redirect('/widows/conversion/award-calculated')
   })
   ;
+
+  router.post('/widows/conversion/award-calculcated', (req, res) => {
+    res.redirect('/widows/conversion/personal-widowed')
+  })
+  ;
+
 
   router.post('/widows/conversion/check-details-info-missing', function(req, res) {
       if ( req.body['conversion-decision'] === 'nothing-to-inherit' ) {
