@@ -25,16 +25,40 @@ GOV.UK Prototype Kit
 
 
 
-
           <br><br>
+
+          <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Success
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <h3 class="govuk-notification-banner__heading">
+      Letters to the address were stopped
+    </h3>
+    
+  </div>
+</div>
+
           {% include './_bar.html' %}
 
           {% include '././_tab-overview.html' %}
 
-      
+        </div>
+      </div>
+    </main>
 
-   
     <br>
+    <br>
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+                                We have stopped sending letters to this claimant. To start sending letters, <a href="change-address1">update address</a>.
+                              </strong>
+    
+    <div><br>
     <br>
       <h2 class="govuk-heading-m">Personal details</h2>
 
@@ -74,16 +98,15 @@ GOV.UK Prototype Kit
         </tbody>
       </table>
 
-
-
+      </div>
     <a class="govuk-body" href="stop-sp">
       Stop State Pension
     </a>
-  
-  </div>  
   </div>
-
+  </div>
+  </div>
 </div>
+
 
 
   <div class="govuk-grid-column-one-third">
@@ -111,12 +134,11 @@ GOV.UK Prototype Kit
   </div>
 
 
-
-
+</div>
+</div>
 </main>
 </div>
-</div>
-
+<!-- </div> -->
 {% endblock %}
 
 {% block content %}

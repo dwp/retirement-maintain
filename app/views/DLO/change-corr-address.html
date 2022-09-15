@@ -24,7 +24,7 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './_bar.html' %}
 
-      <form method="post" action="change-homephone-r">
+      <form method="post">
 
         {{ govukBackLink({
           text: "Back",
@@ -55,7 +55,7 @@ GOV.UK Prototype Kit
                <div class="govuk-radios__divider">or</div>
               <div class="govuk-radios govuk-radios">
                <div class="govuk-radios__item">
-                 <input class="govuk-radios__input" id="change-address" name="change-address" type="radio" value="change">
+                 <input class="govuk-radios__input" id="change-address" name="change-address" type="radio" value="stop">
                  <label class="govuk-label govuk-radios__label" for="change-address">
                 Stop letters
                  </label>
@@ -83,5 +83,14 @@ GOV.UK Prototype Kit
 
   </div>
 </div>
+
+<script>
+    nextPageRoutes = {
+        'change': 'change-corr-address2',
+        'remove': '#',
+        'stop': 'stop-letters2',
+        }
+</script>
+
 
 {% endblock %}
