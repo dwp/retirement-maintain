@@ -46,7 +46,6 @@ GOV.UK Prototype Kit
 
     {% else %}
     <h1 class="govuk-heading-l">Check the details and decide how to continue</h1>
-    <p>Complete the information and verify the dates, or choose another way to continue.</p>
     {% endif %}
 
   <br><br>
@@ -242,7 +241,7 @@ GOV.UK Prototype Kit
 
 
       {% else %}
-      <div id="changed-name-hint" class="govuk-hint">To award with inheritable amounts, enter all missing information and verify all dates.</div>
+      <div id="changed-name-hint" class="govuk-hint">You must enter all missing information and verify all dates before you can enter inheritable amounts.</div>
 
   {% endif %}
 
@@ -250,7 +249,7 @@ GOV.UK Prototype Kit
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="nothing-to-inherit">
       <label class="govuk-label govuk-radios__label" for="conversion-decision">
-        No change to award - Nothing to inherit</label>
+        Keep existing award - nothing to inherit</label>
     </div>
 
     <div class="govuk-radios__item">

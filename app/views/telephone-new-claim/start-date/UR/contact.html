@@ -20,8 +20,10 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <a href="check-answers" class="govuk-back-link">Back</a>
-        <br> <br>
+        {{ govukBackLink({
+    text: "Back",
+    href: "javascript:history.go(-1)"
+  }) }}        <br> <br>
         <form method="post" ">
 
           <h1 class="govuk-heading-xl">
@@ -106,7 +108,7 @@ GOV.UK Prototype Kit
           <b>URL:</b> /contact-details <br>
         </div>
         <div class="govuk-details__text">
-          <b>Errors:</b> 
+          <b>Errors:</b>
           Invalid: Enter an email address in the correct format, like name@example.com<br>
           Length: Email address must be 100 characters or less    <br>
           Nothing entered: Eneter at least one telephone number  <br>
