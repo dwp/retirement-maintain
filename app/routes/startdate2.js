@@ -65,14 +65,19 @@ router.post('/telephone-new-claim/start-date/ur/bank', function(req, res) {
     res.redirect('/telephone-new-claim/start-date/ur/sp-date');
   }
   else if ( req.body['sort-code'] === '164392' ) {
-      res.redirect('/telephone-new-claim/start-date/ur/claim-date-post-spa');
+      res.redirect('/telephone-new-claim/start-date/ur/sp-date-post-spa');
   }
   else if ( req.body['sort-code'] === '763098' ) {
-        res.redirect('/telephone-new-claim/start-date/ur/claim-date-post-spa');
+        res.redirect('/telephone-new-claim/start-date/ur/sp-date-post-spa');
   } else {
     res.redirect('/telephone-new-claim/start-date/ur/sp-date');
   }
 });
+
+router.post('/telephone-new-claim/start-date/ur/sp-date-post-spa', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/ur/claim-date-post-spa')
+})
+;
 
 router.post('/telephone-new-claim/start-date/ur/claim-date-post-spa', (req, res) => {
   res.redirect('/telephone-new-claim/start-date/ur/prison')
