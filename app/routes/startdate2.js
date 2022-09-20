@@ -225,14 +225,10 @@ router.post('/telephone-new-claim/start-date/UR/marital-status', function(req, r
 });
 
 
-router.post('/telephone-new-claim/start-date/UR/dob', function(req, res) {
-  if (req.session.data["nino"] === "xx347612a") {
-    res.redirect('dob-request');
-  } else if (req.session.data["nino"] === "XX347612A") {
-    res.redirect('dob-request');
-  } else {
-    res.redirect('address');
-  }
+router.post('/telephone-new-claim/start-date/UR/dob', (req, res) => {
+
+    res.redirect('address')
+
 });
 
 
