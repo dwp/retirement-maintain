@@ -22,24 +22,20 @@ GOV.UK Prototype Kit
 
       {% include 'widows/new-claims/_bar-widows.html' %}
 
-{{ govukBackLink({
-      "text": "Back",
-      "href": "javascript: window.history.go(-1)"
-    })
-  }}
+
 
   <br><br>
 
       <div class="govuk-form-group">
 
                          <h1 class="govuk-heading-l">
-                          There is a problem with this claim</h1>
+                          Claim could not be saved</h1>
 
                         <p>We cannot save this claim on the Get your State Pension service. It has automatically been sent to PSCS.</p>
 
 
                         </div>
-                        <a href="get-a-task-2" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button">
+                        <a href="get-a-task-2" role="button" draggable="false" button class="govuk-button govuk-button" data-module="govuk-button">
                           End task
                         </a>
 
