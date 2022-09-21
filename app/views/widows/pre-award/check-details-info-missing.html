@@ -19,7 +19,7 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        {% include 'widows/conversion/_bar.html' %}
+        {% include 'widows/new-claims/_bar.html' %}
 
   {{ govukBackLink({
         "text": "Back",
@@ -42,10 +42,17 @@ GOV.UK Prototype Kit
         </p>
       </div>
     </div>
+
     <h1 class="govuk-heading-l">Check for inheritable amounts</h1>
 
     {% else %}
     <h1 class="govuk-heading-l">Check the details and decide how to continue</h1>
+
+
+    <p>Complete the information and verify the dates, or choose another way to continue.</p>
+
+
+
     {% endif %}
 
   <br><br>
@@ -111,8 +118,17 @@ GOV.UK Prototype Kit
                   <tbody class="govuk-table__body">
 
                     <tr class="govuk-table__row">
-                      <th scope="row" class="govuk-table__header">Full name </th>
+                      <th scope="row" class="govuk-table__header">First name </th>
                       <td class="govuk-table__cell">Lilly Bennett</td>
+                      <td class="govuk-table__cell"></td>
+                      <td class="govuk-table__cell"></td>
+
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Address</th>
+                      <td class="govuk-table__cell">62 High Street<br>
+                        NORTH LONDON<br>
+                        N93 3KJ</td>
                       <td class="govuk-table__cell"></td>
                       <td class="govuk-table__cell"></td>
 
@@ -136,7 +152,7 @@ GOV.UK Prototype Kit
                         {% if data.gender %}
                         {{data.gender}}
                         {% else %}
-                        Female
+
                         {% endif %}</td>
                       <td class="govuk-table__cell"> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
@@ -144,7 +160,7 @@ GOV.UK Prototype Kit
                                               {% if data.gender %}
                                               Change
                                               {% else %}
-                                              Change
+                                              Add
                                               {% endif %}</a>
                       </td>
                     </tr>
@@ -176,7 +192,7 @@ GOV.UK Prototype Kit
                         {% if data.dodd %}
                         {{data.dodd}}/{{data.dodm}}/{{data.dody}}
                         {% else %}
-                        23/07/2013
+                        9/04/2013
                         {% endif %}</td>
                       <td class="govuk-table__cell"><span class="verified-badge verified">
                         <b>{% if data.dod %}
@@ -191,25 +207,25 @@ GOV.UK Prototype Kit
                     </tr>
 
                     <tr class="govuk-table__row">
-                      <th scope="row" class="govuk-table__header">Date of marriage or<br> civil partnership</th>
+                      <th scope="row" class="govuk-table__header">Date of marriage</th>
                       <td class="govuk-table__cell">
                         {% if data.domd %}
                         {{data.domd}}/{{data.domm}}/{{data.domy}}
                         {% else %}
-9/04/1975
+
                         {% endif %}</td>
                       <td class="govuk-table__cell"><span class="verified-badge verified">
                         <b>{% if data.dom %}
                         {{data.dom}}
                         {% else %}
-Not verified
+
                         {% endif %}</b>
                       </span> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
                                               <a class="govuk-link" href="dom">{% if data.domd %}
                                               Change
                                               {% else %}
-                                              Change
+                                              Add
                                               {% endif %}</a>
                       </td>
                     </tr>
@@ -230,32 +246,43 @@ Not verified
         </h2>
       </legend>
 
-      {% if data['dom'] === 'Verified' %}
+    {% if data['dom'] === 'Verified' %}
 
 
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="inheritable-amounts">
-          <label class="govuk-label govuk-radios__label" for="conversion-decision">
-      Enter inheritable amounts </label>
-      </div>
-
-
-      {% else %}
-      <div id="changed-name-hint" class="govuk-hint">You must enter all missing information and verify all dates before you can enter inheritable amounts.</div>
-
-  {% endif %}
-
-
-    <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="nothing-to-inherit">
-      <label class="govuk-label govuk-radios__label" for="conversion-decision">
-        Keep existing award - nothing to inherit</label>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="inheritable-amounts">
+        <label class="govuk-label govuk-radios__label" for="decision">
+    Enter inheritable amounts </label>
     </div>
 
+
+    {% else %}
+
+<!--        <div id="changed-name-hint" class="govuk-hint">To check for inheritable amounts, enter all missing information and verify all dates.</div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="more-info">
+            <label class="govuk-label govuk-radios__label" for="decision">
+Place task on hold for 14 days</label>
+      </div>-->
     <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="save-return">
-      <label class="govuk-label govuk-radios__label" for="conversion-decision">
-        Create a widows conversion task</label>
+        <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="more-info">
+        <label class="govuk-label govuk-radios__label" for="decision">
+Request more information</label>
+  </div>
+
+{% endif %}
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="nothing-to-inherit">
+      <label class="govuk-label govuk-radios__label" for="decision">
+Award State Pension - nothing to inherit</label>
+    </div>
+
+    <div class="govuk-radios__divider">or</div>
+
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="save">
+      <label class="govuk-label govuk-radios__label" for="inheritable-amounts-3">
+Return task to queue   </label>
     </div></div>
 
 
@@ -266,6 +293,8 @@ Not verified
       </button>
     </div>
 
+
+    <p><a href="pscs" class="govuk-link govuk-link--no-visited-state">Remove from GySP</a></p>
     <details class="govuk-details" data-module="govuk-details">
     <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
