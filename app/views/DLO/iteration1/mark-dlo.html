@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        {% include './_bar.html' %}
+
+{{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    })
+  }}
+
+  <br><br>
+
+      <div class="govuk-form-group">
+
+                         <h1 class="govuk-heading-l">
+                          Do you want to stop letters being sent to this address?</h1>
+    <div class="govuk-inset-text">
+14 West Avenue<br>
+  Leeds<br>
+  LS12 2WE<br></div>
+
+                        <div class="govuk-warning-text">
+                          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                          <strong class="govuk-warning-text__text">
+                            <span class="govuk-warning-text__assistive">Warning</span>
+This address will stay on the claimant's file until a new address is added                          </strong>
+                        </div>
+                        <a href="get-a-task-2" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button">
+                          Stop letters
+                        </a>
+
+
+
+      </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
