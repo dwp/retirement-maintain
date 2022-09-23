@@ -239,10 +239,19 @@ Not verified
       Enter inheritable amounts </label>
       </div>
 
-
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="save-return">
+        <label class="govuk-label govuk-radios__label" for="conversion-decision">
+          Save task - unable to calculate amounts</label>
+    </div>
       {% else %}
       <div id="changed-name-hint" class="govuk-hint">You must enter all missing information and verify all dates before you can enter inheritable amounts.</div>
 
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="save-return">
+        <label class="govuk-label govuk-radios__label" for="conversion-decision">
+          Request more information</label>
+    </div>
   {% endif %}
 
 
@@ -250,12 +259,6 @@ Not verified
       <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="nothing-to-inherit">
       <label class="govuk-label govuk-radios__label" for="conversion-decision">
         Keep existing award - nothing to inherit</label>
-    </div>
-
-    <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="conversion-decision" name="conversion-decision" type="radio" value="save-return">
-      <label class="govuk-label govuk-radios__label" for="conversion-decision">
-        Create a widows conversion task</label>
     </div></div>
 
 
