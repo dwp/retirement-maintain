@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        {% include './_bar.html' %}
+
+
+{{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    })
+  }}
+
+  <br><br>
+
+      <div class="govuk-form-group">
+
+                         <h1 class="govuk-heading-l">
+                          Do you wish to change your written language preference to Welsh?</h1>
+                          
+
+
+                        <p>Large print is currently offered in Welsh and English. All other alternative formats are offered in English only.</p> 
+                        
+                        <p>You currently have your alternative format preference set to Braille, which is offered in English only</p>
+
+<!--
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+                          </strong> -->
+    </div>
+
+
+                        <div class="govuk-button-group">
+                        <a href="change-written" role="button" draggable="false" button class="govuk-button govuk-button" data-module="govuk-button">
+                          Change preference
+                        </a>
+                        <a class="govuk-link" href="contact">Cancel</a>
+                        </div>
+
+                        
+
+      </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
