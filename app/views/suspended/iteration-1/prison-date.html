@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './navigation/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+          {% include './name-bar/_bar-jose-suspended.html' %}
+
+                      <form method="post">
+
+                        {{ govukBackLink({
+                    text: "Back",
+                    href: "javascript:history.go(-1)"
+                    }) }}
+
+<Br><br>
+
+                        <div class="govuk-form-group">
+                          <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                              <h1 class="govuk-fieldset__heading">
+                              Date claimant entered prison
+                              </h1>
+                            </legend>
+                          <br>
+                            <div class="govuk-date-input" id="passport-issued">
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                    Day
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                                </div>
+                              </div>
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                    Month
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                                </div>
+                              </div>
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                    Year
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                                </div>
+                              </div>
+                            </div>
+
+                          </fieldset>
+                        </div>
+
+
+<button class="govuk-button" data-module="govuk-button">
+ Continue
+</button>
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
