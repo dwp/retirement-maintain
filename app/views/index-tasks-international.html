@@ -93,7 +93,7 @@ GOV.UK Prototype Kit
 <nav class="navigation-secondary">
   <ul>
       <li>
-          <a href="index-tasks" class="active" aria-current="page">New claims</a>
+          <a href="index-tasks">New claims</a>
         </li>
     <li>
       <a href="index-tasks-award">Award changes</a>
@@ -102,7 +102,7 @@ GOV.UK Prototype Kit
       <a href="index-tasks-bereavement">Bereavement</a>
     </li>
     <li>
-      <a href="index-tasks-international">International</a>
+      <a href="index-tasks-international" class="active" aria-current="page">International</a>
     </li>
     <li>
       <a href="index-tasks-other">Other</a>
@@ -119,113 +119,41 @@ GOV.UK Prototype Kit
           <h2 class="govuk-accordion__section-heading">
             <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
               style="font-size: 16pt;">
-              Widows new claim task
+              International task
             </span>
           </h2>
           <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
             style="font-size: 14pt;">
-            Task to check for inheritable components when a claimant is widowed when they make a claim
+            Task to send letters to citizens who have living or worked abroad
             </div>
         </div>
         <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
           aria-labelledby="accordion-with-summary-sections-heading-3">
-              {% include 'notes/widowstask.html' %}
+              {% include 'notes/international.html' %}
         </div>
       </div>
 
-    <div class="govuk-accordion__section ">
+
+
+      <div class="govuk-accordion__section ">
 
         <div class="govuk-accordion__section-header">
           <h2 class="govuk-accordion__section-heading">
             <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
               style="font-size: 16pt;">
-              Identity check task
+              Lived/worked abroad task
             </span>
           </h2>
 
           <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
             style="font-size: 14pt;">
-    When a citizen fails the bank authentication check when completing an online or paper claim
+
         </div>
         <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
           aria-labelledby="accordion-with-summary-sections-heading-3">
-              {% include 'notes/identitychecktask.html' %}
+              {% include 'notes/livedworked.html' %}
         </div>
       </div>
-</div>
-
-      <div class="govuk-accordion__section ">
-        <div class="govuk-accordion__section-header">
-          <h2 class="govuk-accordion__section-heading">
-            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
-              style="font-size: 16pt;">
-              Deferral task
-            </span>
-          </h2>
-          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
-            style="font-size: 14pt;">
-A task for agents to check if a citizen claiming after their State Pension date has been in receipt of any impacting benefits.
-            </div>
-        </div>
-        <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
-          aria-labelledby="accordion-with-summary-sections-heading-3">
-            <div class="app-most-recent">
-              {% include 'notes/deferraltask.html' %}
-            </div>
-
-        </div>
-      </div>
-
-
-      <div class="govuk-accordion__section ">
-        <div class="govuk-accordion__section-header">
-          <h2 class="govuk-accordion__section-heading">
-            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
-              style="font-size: 16pt;">
-              Incomplete claim
-            </span>
-          </h2>
-          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
-            style="font-size: 14pt;"> Paper claims that require more information before they can be processed
-            </div>
-        </div>
-        <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
-          aria-labelledby="accordion-with-summary-sections-heading-3">
-            <div class="app-most-recent">
-              {% include 'notes/paperclaims5.html' %}
-            </div>
-
-        </div>
-      </div>
-
-      <div class="govuk-accordion__section ">
-        <div class="govuk-accordion__section-header">
-          <h2 class="govuk-accordion__section-heading">
-            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2"
-              style="font-size: 16pt;">
-              Process a claim
-            </span>
-          </h2>
-          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2"
-            style="font-size: 14pt;">
-            Benton Park View manual process a claim journeys
-
-          </div>
-        </div>
-        <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content"
-          aria-labelledby="accordion-with-summary-sections-heading-2">
-
-
-          <div class="app-most-recent">
-            {% include 'notes/processaclaim.html' %}
-          </div>
-
-            <div class="app-most-recent">
-              {% include 'notes/manualpayment.html' %}
-            </div>
-
-
-        </div>
       </div>
 
 </div>

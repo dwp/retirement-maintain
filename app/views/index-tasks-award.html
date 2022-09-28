@@ -93,10 +93,10 @@ GOV.UK Prototype Kit
 <nav class="navigation-secondary">
   <ul>
       <li>
-          <a href="index-tasks" class="active" aria-current="page">New claims</a>
+          <a href="index-tasks">New claims</a>
         </li>
     <li>
-      <a href="index-tasks-award">Award changes</a>
+      <a href="index-tasks-award" class="active" aria-current="page">Award changes</a>
     </li>
     <li>
       <a href="index-tasks-bereavement">Bereavement</a>
@@ -119,59 +119,39 @@ GOV.UK Prototype Kit
           <h2 class="govuk-accordion__section-heading">
             <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
               style="font-size: 16pt;">
-              Widows new claim task
+              Widows conversion task
             </span>
           </h2>
           <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
             style="font-size: 14pt;">
-            Task to check for inheritable components when a claimant is widowed when they make a claim
-            </div>
+            Journey to allow an agent to manually change a citizen State Pension award based on their late spouse's contributions</div>
         </div>
         <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
           aria-labelledby="accordion-with-summary-sections-heading-3">
-              {% include 'notes/widowstask.html' %}
+            {% include 'notes/widowsconversion.html' %}
         </div>
       </div>
 
-    <div class="govuk-accordion__section ">
-
-        <div class="govuk-accordion__section-header">
-          <h2 class="govuk-accordion__section-heading">
-            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
-              style="font-size: 16pt;">
-              Identity check task
-            </span>
-          </h2>
-
-          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
-            style="font-size: 14pt;">
-    When a citizen fails the bank authentication check when completing an online or paper claim
-        </div>
-        <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
-          aria-labelledby="accordion-with-summary-sections-heading-3">
-              {% include 'notes/identitychecktask.html' %}
-        </div>
-      </div>
-</div>
 
       <div class="govuk-accordion__section ">
         <div class="govuk-accordion__section-header">
           <h2 class="govuk-accordion__section-heading">
             <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
               style="font-size: 16pt;">
-              Deferral task
+              Pension Credit SRB task
             </span>
           </h2>
+
           <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
             style="font-size: 14pt;">
-A task for agents to check if a citizen claiming after their State Pension date has been in receipt of any impacting benefits.
+Performing an SRB and then identifying that either the claimant or their partner has been in receipt of Pension Credit. This triggers the agent to send a BR403 form to the PC team who then return the form with additional calculations that have to be inputted at the GySP end before the award can be finalised.
             </div>
         </div>
         <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
           aria-labelledby="accordion-with-summary-sections-heading-3">
-            <div class="app-most-recent">
-              {% include 'notes/deferraltask.html' %}
-            </div>
+
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+              {% include 'notes/pensioncredittask.html' %}
 
         </div>
       </div>
@@ -182,48 +162,85 @@ A task for agents to check if a citizen claiming after their State Pension date 
           <h2 class="govuk-accordion__section-heading">
             <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
               style="font-size: 16pt;">
-              Incomplete claim
+            Review an award SRBs
             </span>
           </h2>
           <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
-            style="font-size: 14pt;"> Paper claims that require more information before they can be processed
-            </div>
-        </div>
-        <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
-          aria-labelledby="accordion-with-summary-sections-heading-3">
-            <div class="app-most-recent">
-              {% include 'notes/paperclaims5.html' %}
-            </div>
-
-        </div>
-      </div>
-
-      <div class="govuk-accordion__section ">
-        <div class="govuk-accordion__section-header">
-          <h2 class="govuk-accordion__section-heading">
-            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2"
-              style="font-size: 16pt;">
-              Process a claim
-            </span>
-          </h2>
-          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2"
             style="font-size: 14pt;">
-            Benton Park View manual process a claim journeys
-
+            Tasks to review a State Pension award based on information from HMRC
           </div>
         </div>
-        <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content"
-          aria-labelledby="accordion-with-summary-sections-heading-2">
-
-
+        <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
+          aria-labelledby="accordion-with-summary-sections-heading-3">
           <div class="app-most-recent">
-            {% include 'notes/processaclaim.html' %}
+            {% include 'notes/reviewanaward8.html' %}
           </div>
+          <div class="app-most-recent">
+            {% include 'notes/reviewanaward6.html' %}
+          </div>
+          <div class="app-most-recent">
+            {% include 'notes/reviewanaward5.html' %}
+          </div>
+          <div class="app-most-recent">
+            {% include 'notes/reviewanaward4.html' %}
+          </div>
+          <div class="app-most-recent">
+            {% include 'notes/reviewanaward3.html' %}
+          </div>
+            <!-- <div class="app-most-recent">
+              {% include 'notes/taskiteration3.html' %}
+            </div> -->
+          <div class="app-most-recent">
+            {% include 'notes/taskiteration2.html' %}
+          </div>
+          <!-- <div class="app-most-recent">
+            {% include 'notes/reviewanaward.html' %}
+          </div> -->
+        </div>
+      </div>
 
+
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
+              style="font-size: 16pt;">
+              Refer an SRB overpayment to debt management
+            </span>
+          </h2>
+          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
+            style="font-size: 14pt;">
+            Journey to allow an agent to send an overpayment referral following an SRB</div>
+        </div>
+        <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
+          aria-labelledby="accordion-with-summary-sections-heading-3">
             <div class="app-most-recent">
-              {% include 'notes/manualpayment.html' %}
+              {% include 'notes/taskiteration18.html' %}
             </div>
 
+        </div>
+      </div>
+
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
+              style="font-size: 16pt;">
+              Consider spouse or civil partner entitlement
+            </span>
+          </h2>
+          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
+            style="font-size: 14pt;">
+            Journey to allow an agent see a citizen’s spouse or civil partner’s details so that they can manually check their entitlement to State Pension          </div>
+        </div>
+        <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
+          aria-labelledby="accordion-with-summary-sections-heading-3">
+          <div class="app-most-recent">
+            {% include 'notes/taskiteration12.html' %}
+          </div>
+            <div class="app-most-recent">
+              {% include 'notes/tasks-1.html' %}
+            </div>
 
         </div>
       </div>
