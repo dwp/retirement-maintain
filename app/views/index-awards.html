@@ -129,66 +129,97 @@ GOV.UK Prototype Kit
 
   <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
 
+
     <div class="govuk-accordion__section ">
       <div class="govuk-accordion__section-header">
         <h2 class="govuk-accordion__section-heading">
-          <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2"
+          <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
             style="font-size: 16pt;">
-            Change an award from record view
+          Award tab layout
           </span>
         </h2>
-        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2"
+        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
+          style="font-size: 14pt;">
+          Iterations to the award tab based on user feedback
+          </div>
+      </div>
+      <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
+        aria-labelledby="accordion-with-summary-sections-heading-3">
+            {% include 'notes/awardtab.html' %}
+      </div>
+    </div>
+
+    <div class="govuk-accordion__section ">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
+            style="font-size: 16pt;">
+          Change an award from record view
+          </span>
+        </h2>
+        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
           style="font-size: 14pt;">
           Journey allowing agents to record a payment that they’ve had to manually make to the claimant outside of our service.
-        </div>
+          </div>
       </div>
-      <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content"
-        aria-labelledby="accordion-with-summary-sections-heading-2">
-
-        <div class="app-most-recent">
-          {% include 'notes/manual-payments.html' %}
-        </div>
-
-        <div class="app-most-recent">
+      <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
+        aria-labelledby="accordion-with-summary-sections-heading-3">
+            {% include 'notes/manual-payments.html' %}
+      </div>
+      <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
+        aria-labelledby="accordion-with-summary-sections-heading-3">
           {% include 'notes/iteration44.html' %}
+      </div>
+    </div>
+
+
+
+    <div class="govuk-accordion__section ">
+
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
+            style="font-size: 16pt;">
+          Archive
+          </span>
+        </h2>
+
+        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
+          style="font-size: 14pt;">
+
+      </div>
+      <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
+        aria-labelledby="accordion-with-summary-sections-heading-3">
+        <div class="app-most-recent">
+            {% include 'notes/iteration51.html' %}
+        </div>
+        <div class="app-most-recent">
+          {% include 'notes/iteration34.html' %}
+        </div>
+        <div class="app-most-recent">
+          {% include 'notes/iteration25.html' %}
+        </div>
+        <!-- <div class="app-most-recent">
+          {% include 'notes/iteration33.html' %}
+        </div> -->
+        <div class="app-most-recent">
+          {% include 'notes/iteration24.html' %}
         </div>
 
+        <div class="app-most-recent">
+          {% include 'notes/iteration23.html' %}
+        </div>
+
+        <div class="app-most-recent">
+          {% include 'notes/iteration14.html' %}
+        </div>
+
+        <div class="app-most-recent">
+          {% include 'notes/iteration9.html' %}
+        </div>
       </div>
     </div>
     </div>
-
-
-          <div class="app-most-recent">
-              {% include 'notes/iteration51.html' %}
-          </div>
-          <div class="app-most-recent">
-            {% include 'notes/iteration34.html' %}
-          </div>
-          <div class="app-most-recent">
-            {% include 'notes/iteration25.html' %}
-          </div>
-          <!-- <div class="app-most-recent">
-            {% include 'notes/iteration33.html' %}
-          </div> -->
-          <div class="app-most-recent">
-            {% include 'notes/iteration24.html' %}
-          </div>
-
-          <div class="app-most-recent">
-            {% include 'notes/iteration23.html' %}
-          </div>
-
-          <div class="app-most-recent">
-            {% include 'notes/iteration14.html' %}
-          </div>
-
-          <div class="app-most-recent">
-            {% include 'notes/iteration9.html' %}
-          </div>
-
-
-
-
 
 </div>
 
