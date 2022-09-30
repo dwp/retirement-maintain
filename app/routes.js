@@ -55,7 +55,7 @@ const widowstask = require('./routes/widowstask');
 const iteration52 = require('./routes/iteration52');
 const death = require('./routes/death');
 const pcsrb2 = require('./routes/pcsrb2');
-const adminview3 = require('./routes/adminview3');
+const adminview = require('./routes/adminview');
 const pcsrbrecord2 = require('./routes/pcsrbrecord2');
 const prison = require('./routes/prison');
 const manualpayments = require('./routes/manualpayments');
@@ -109,7 +109,6 @@ router.use(widowstask);
 router.use(iteration52);
 router.use(death);
 router.use(pcsrb2);
-router.use(adminview3);
 router.use(pcsrbrecord2);
 router.use(prison);
 router.use(manualpayments);
@@ -120,6 +119,7 @@ router.use(debt);
 router.use(startdate);
 router.use(startdate2);
 router.use(reviewanaward);
+router.use(adminview);
 
 
 
