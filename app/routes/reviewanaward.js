@@ -11,8 +11,6 @@ router.post('/reviewanaward/iteration-5/tasks-4-4', function(req, res) {
     }
   });
 
-module.exports = router;
-
 // Iteration 4a
 
 router.post('/reviewanaward/iteration-4a/tasks-4-4', function(req, res) {
@@ -32,3 +30,6 @@ router.post('/reviewanaward/iteration-3e/tasks-4-4', function(req, res) {
       res.redirect('/reviewanaward/iteration-3e/end-task');
     }
   });
+
+
+  module.exports = router;

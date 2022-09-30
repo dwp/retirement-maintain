@@ -13,9 +13,6 @@ router.post('*', function (req, res, next) {
 
 // copy the const name and the file path to new version
 const newclaims = require('./routes/newclaims');
-const newclaims2 = require('./routes/newclaims2');
-const newclaims3 = require('./routes/newclaims3');
-const newclaim7 = require('./routes/newclaim7');
 const bpviteration = require('./routes/bpviteration');
 const bpviteration2 = require('./routes/bpviteration2');
 const changebanktype = require('./routes/changebanktype');
@@ -66,18 +63,13 @@ const deatharrears = require('./routes/deatharrears');
 const identitycheck = require('./routes/identitycheck');
 const identitycheck2 = require('./routes/identitycheck2');
 const identitycheck3 = require('./routes/identitycheck3');
-const widowsnewclaims = require('./routes/widowsnewclaims');
-const widowsnewclaims2 = require('./routes/widowsnewclaims2');
-const widowsnewclaims3 = require('./routes/widowsnewclaims3');
 const debt = require('./routes/debt');
 const startdate = require('./routes/startdate');
 const startdate2 = require('./routes/startdate2');
+const widowsnewclaims = require('./routes/widowsnewclaims');
 
 //copy the router use and update the sprint version
 router.use(newclaims);
-router.use(newclaims2);
-router.use(newclaims3);
-router.use(newclaim7);
 router.use(bpviteration);
 router.use(bpviteration2);
 router.use(changebanktype);
@@ -128,8 +120,6 @@ router.use(identitycheck);
 router.use(identitycheck2);
 router.use(identitycheck3);
 router.use(widowsnewclaims);
-router.use(widowsnewclaims2);
-router.use(widowsnewclaims3);
 router.use(debt);
 router.use(startdate);
 router.use(startdate2);
