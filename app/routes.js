@@ -52,9 +52,7 @@ const iteration39 = require('./routes/iteration39');
 const paperclaims = require('./routes/paperclaims');
 const iteration43abefore = require('./routes/iteration43abefore');
 const iteration43b = require('./routes/iteration43b');
-const reviewanaward3e = require('./routes/reviewanaward3e');
-const reviewanaward4a = require('./routes/reviewanaward4a');
-const reviewanaward5 = require('./routes/reviewanaward5');
+const reviewanaward = require('./routes/reviewanaward');
 const addresstask = require('./routes/addresstask');
 const widowstask = require('./routes/widowstask');
 const iteration52 = require('./routes/iteration52');
@@ -115,9 +113,6 @@ router.use(iteration32c);
 router.use(iteration39);
 router.use(iteration43abefore);
 router.use(iteration43b);
-router.use(reviewanaward3e);
-router.use(reviewanaward4a);
-router.use(reviewanaward5);
 router.use(paperclaims);
 router.use(addresstask);
 router.use(widowstask);
@@ -138,6 +133,7 @@ router.use(widowsnewclaims3);
 router.use(debt);
 router.use(startdate);
 router.use(startdate2);
+router.use(reviewanaward);
 
 
 
