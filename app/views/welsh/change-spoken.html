@@ -8,31 +8,37 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './_header-nav-unselected.html' %}
+{% include '././_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
-
-
 <div class="govuk-width-container">
-  <main class="govuk-main-wrapper">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-two-thirds">
 
-        {{ govukBackLink ({
-          text: 'Back',
-          href: 'javascript:history.back()'
-        }) }}
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full">
 
 
-    <form method="post">
-    
-    <h1 class="govuk-heading-xl">
-      What language do you want us to speak to you in?
+
+          <br><br>
+          {% include './_bar.html' %}
+
+<form method="post" action="contact">
+
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:history.go(-1)"
+                    }) }}
+
+          <br><br>
+
+
+
+    <h1 class="govuk-heading-l">
+      Do you want us to speak to you in English or Welsh?
       </h1>
-
-     <p> If you live in Wales you can choose to communicate with us in Welsh.</p>
 
       <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="alt-formats-hint">
@@ -58,7 +64,7 @@ GOV.UK Prototype Kit
 </div>
 
       <button class="govuk-button" data-module="govuk-button">
-        Continue
+        Save
       </button>
       <br>
       <br>
@@ -73,16 +79,25 @@ GOV.UK Prototype Kit
         'welsh': '/welsh/contact.html',
         }
 </script>
-  
-    
+
+
 
   </div>
 
 
 </form>
-
+</div>
+</div>
 
 
 
 {% endblock %}
 
+{% block content %}
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+
+</div>
+</div>
+
+{% endblock %}
