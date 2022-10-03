@@ -77,10 +77,26 @@ router.post('/telephone-new-claim/start-date/iteration-4/sp-date', function(req,
   }
 });
 
-router.post('/telephone-new-claim/start-date/iteration-4/claim-date', (req, res) => {
-  res.redirect('/telephone-new-claim/start-date/iteration-4/contact')
-})
-;
+
+router.post('/telephone-new-claim/start-date/iteration-4/claim-date', function(req, res) {
+  if ( req.body['claim-date-month'] === '01' ) {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/are-you-sure');
+  } else if ( req.body['claim-date-month'] === '1' ) {
+    res.redirect('are-you-sure');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/contact');
+  }
+});
+
+router.post('/telephone-new-claim/start-date/iteration-4/are-you-sure', function(req, res) {
+  if ( req.body['confirm-claim-from'] === 'yes' ) {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/contact');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/claim-date');
+  }
+});
+
+
 router.post('/telephone-new-claim/start-date/iteration-4/contact', (req, res) => {
   res.redirect('/telephone-new-claim/start-date/iteration-4/alternative')
 })
