@@ -8,6 +8,215 @@ router.use((req, res, next) => {
   next()
 })
 
+// Claim from iteration 4
+
+router.post('/telephone-new-claim/start-date/iteration-4/find', function(req, res) {
+  if ( req.body['nino'] === 'XX 12 34 56' ) {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/not-found');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/find-1');
+  }
+});
+
+
+router.post('/telephone-new-claim/start-date/iteration-4/find', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-7/find-1')
+})
+;
+
+router.post('/telephone-new-claim/start-date/iteration-4/dob-request', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-7/find')
+})
+;
+
+
+router.post('/telephone-new-claim/start-date/iteration-4/dob-evidence', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/address')
+})
+;
+
+
+router.post('/telephone-new-claim/start-date/iteration-4/complete', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/find')
+})
+;
+
+
+router.post('/telephone-new-claim/start-date/iteration-4/address', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/address-result')
+})
+;
+
+
+router.post('/telephone-new-claim/start-date/iteration-4/address-result', function(req, res) {
+  if ( req.body['address-results'] === 'address-not-found' ) {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/manual-address');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/bank');
+  }
+});
+
+
+router.post('/telephone-new-claim/start-date/iteration-4/manual-address', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/bank')
+})
+;
+
+
+router.post('/telephone-new-claim/start-date/iteration-4/bank', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/sp-date')
+})
+;
+
+// Do you want your State Pension from the earliest possible date? YES/NO
+router.post('/telephone-new-claim/start-date/iteration-4/sp-date', function(req, res) {
+  if ( req.body['sp-date'] === 'yes' ) {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/contact');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/claim-date');
+  }
+});
+
+router.post('/telephone-new-claim/start-date/iteration-4/claim-date', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/contact')
+})
+;
+router.post('/telephone-new-claim/start-date/iteration-4/contact', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/alternative')
+})
+;
+
+router.post('/telephone-new-claim/start-date/iteration-4/alternative', function(req, res) {
+  if ( req.body['alternative'] === 'yes' ) {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/alternative2');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/marital-status');
+  }
+});
+
+router.post('/telephone-new-claim/start-date/iteration-4/alternative2', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/marital-status')
+})
+;
+
+router.post('/telephone-new-claim/start-date/iteration-4/marital-details', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/lived-worked')
+})
+;
+
+router.post('/telephone-new-claim/start-date/iteration-4/civilpartnership-details', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/lived-worked')
+})
+;
+
+router.post('/telephone-new-claim/start-date/iteration-4/widowed-details', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/lived-worked')
+})
+;
+
+router.post('/telephone-new-claim/start-date/iteration-4/divorced-details', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/lived-worked')
+})
+;
+
+router.post('/telephone-new-claim/start-date/iteration-4/dissolvedcp-details', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/lived-worked')
+})
+;
+
+router.post('/telephone-new-claim/start-date/iteration-4/lived-worked', function(req, res) {
+  if ( req.body['lived-worked'] === 'yes' ) {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/country-1');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/check-answers');
+  }
+});
+
+
+router.post('/telephone-new-claim/start-date/iteration-4/country-1', function(req, res) {
+  if ( req.body['another-country-1'] === 'yes' ) {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/country-2');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/check-answers');
+  }
+});
+
+router.post('/telephone-new-claim/start-date/iteration-4/country-2', function(req, res) {
+  if ( req.body['another-country-2'] === 'yes' ) {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/country-3');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/check-answers');
+  }
+});
+
+router.post('/telephone-new-claim/start-date/iteration-4/country-3', function(req, res) {
+  if ( req.body['another-country-3'] === 'yes' ) {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/country-4');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/check-answers');
+  }
+});
+
+router.post('/telephone-new-claim/start-date/iteration-4/country-4', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/check-answers')
+})
+;
+
+router.post('/telephone-new-claim/start-date/iteration-4/worked', function(req, res) {
+  if ( req.body['worked-outside'] === 'yes' ) {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/worked-countries');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/iteration-4/check-answers');
+  }
+});
+
+router.post('/telephone-new-claim/start-date/iteration-4/marital-status', function(req, res) {
+  if ( req.body['marital-status'] === 'married' ) {
+    res.redirect('marital-details');
+  } else if ( req.body['marital-status'] === 'never' ) {
+    res.redirect('lived-worked');
+  } else if ( req.body['marital-status'] === 'civil-partnership' ) {
+    res.redirect('civilpartnership-details');
+  } else if ( req.body['marital-status'] === "widowed" ) {
+    res.redirect('widowed-details');
+  } else if ( req.body['marital-status'] === "divorced" ) {
+    res.redirect('divorced-details');
+  } else if ( req.body['marital-status'] === "dissolved" ) {
+    res.redirect('dissolvedcp-details');
+  }
+});
+
+
+router.post('/telephone-new-claim/start-date/iteration-4/dob', function(req, res) {
+  if (req.session.data["nino"] === "xx347612a") {
+    res.redirect('dob-request');
+  } else if (req.session.data["nino"] === "XX347612A") {
+    res.redirect('dob-request');
+  } else {
+    res.redirect('address');
+  }
+});
+
+
+router.post('/telephone-new-claim/start-date/iteration-4/check-answers', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/declaration')
+})
+;
+
+
+router.post('/telephone-new-claim/start-date/iteration-4/declaration', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/complete')
+})
+;
+
+router.post('/telephone-new-claim/start-date/iteration-4/dob-evidence', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/iteration-4/find')
+})
+;
+
+
+
+
 
 // Iteration 7
 
