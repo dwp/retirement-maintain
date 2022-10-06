@@ -23,7 +23,19 @@ GOV.UK Prototype Kit
               {% include './_bar.html' %}
 
         <form method="post">
-
+          <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+            <div class="govuk-notification-banner__header">
+              <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                Important
+              </h2>
+            </div>
+            <div class="govuk-notification-banner__content">
+              <p class="govuk-notification-banner__heading">
+                This claimant has chosen to speak to us in Welsh</p>
+<p>  Send an email to the Welsh Language Team with the claimant's details.             <a class="govuk-notification-banner__link" href="#">Confirm and return task to queue</a>.
+              </p>
+            </div>
+          </div>
 
           <h1 class="govuk-heading-l">1. Phone the claimant</h1>
 
@@ -49,7 +61,7 @@ GOV.UK Prototype Kit
             </tbody>
           </table>
 
-      
+
             <h1 class="govuk-heading-l">2. Ask handshake questions</h1>
 
             <table class="govuk-table">
@@ -82,7 +94,7 @@ GOV.UK Prototype Kit
           <h1 class="govuk-heading-l">3. Ask additional security questions</h1>
 
 
-          
+
             <p>Refer to Searchlight (CIS) and NIRS (OLE) for additional security questions and answers. </p>
             <p>Claimant must answer at least 2 of 3 additional security questions correctly. </p>
 <br><br>
@@ -122,6 +134,7 @@ GOV.UK Prototype Kit
                     Could not reach claimant by phone - left a voicemail
                   </label>
                 </div>
+
 
 
               </div>
