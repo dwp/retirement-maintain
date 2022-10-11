@@ -15,12 +15,6 @@ router.post('*', function (req, res, next) {
 
 var newclaims = require('./routes/newclaims');
 
-var newclaims2 = require('./routes/newclaims2');
-
-var newclaims3 = require('./routes/newclaims3');
-
-var newclaim7 = require('./routes/newclaim7');
-
 var bpviteration = require('./routes/bpviteration');
 
 var bpviteration2 = require('./routes/bpviteration2');
@@ -87,19 +81,13 @@ var iteration32c = require('./routes/iteration32c');
 
 var iteration39 = require('./routes/iteration39');
 
-var paperclaims4 = require('./routes/paperclaims4');
+var paperclaims = require('./routes/paperclaims');
 
 var iteration43abefore = require('./routes/iteration43abefore');
 
 var iteration43b = require('./routes/iteration43b');
 
-var reviewanaward3e = require('./routes/reviewanaward3e');
-
-var reviewanaward4a = require('./routes/reviewanaward4a');
-
-var reviewanaward5 = require('./routes/reviewanaward5');
-
-var paperclaims5c = require('./routes/paperclaims5c');
+var reviewanaward = require('./routes/reviewanaward');
 
 var addresstask = require('./routes/addresstask');
 
@@ -111,7 +99,7 @@ var death = require('./routes/death');
 
 var pcsrb2 = require('./routes/pcsrb2');
 
-var adminview3 = require('./routes/adminview3');
+var adminview = require('./routes/adminview');
 
 var pcsrbrecord2 = require('./routes/pcsrbrecord2');
 
@@ -123,27 +111,16 @@ var deatharrears = require('./routes/deatharrears');
 
 var identitycheck = require('./routes/identitycheck');
 
-var identitycheck2 = require('./routes/identitycheck2');
-
-var identitycheck3 = require('./routes/identitycheck3');
-
-var widowsnewclaims = require('./routes/widowsnewclaims');
-
-var widowsnewclaims2 = require('./routes/widowsnewclaims2');
-
-var widowsnewclaims3 = require('./routes/widowsnewclaims3');
-
 var debt = require('./routes/debt');
 
 var startdate = require('./routes/startdate');
 
-var startdate2 = require('./routes/startdate2'); //copy the router use and update the sprint version
+var startdate2 = require('./routes/startdate2');
+
+var widowsnewclaims = require('./routes/widowsnewclaims'); //copy the router use and update the sprint version
 
 
 router.use(newclaims);
-router.use(newclaims2);
-router.use(newclaims3);
-router.use(newclaim7);
 router.use(bpviteration);
 router.use(bpviteration2);
 router.use(changebanktype);
@@ -177,30 +154,23 @@ router.use(iteration32a);
 router.use(iteration32b);
 router.use(iteration32c);
 router.use(iteration39);
-router.use(paperclaims4);
 router.use(iteration43abefore);
 router.use(iteration43b);
-router.use(reviewanaward3e);
-router.use(reviewanaward4a);
-router.use(reviewanaward5);
-router.use(paperclaims5c);
+router.use(paperclaims);
 router.use(addresstask);
 router.use(widowstask);
 router.use(iteration52);
 router.use(death);
 router.use(pcsrb2);
-router.use(adminview3);
 router.use(pcsrbrecord2);
 router.use(prison);
 router.use(manualpayments);
 router.use(deatharrears);
 router.use(identitycheck);
-router.use(identitycheck2);
-router.use(identitycheck3);
 router.use(widowsnewclaims);
-router.use(widowsnewclaims2);
-router.use(widowsnewclaims3);
 router.use(debt);
 router.use(startdate);
 router.use(startdate2);
+router.use(reviewanaward);
+router.use(adminview);
 module.exports = router;
