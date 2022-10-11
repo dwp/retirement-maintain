@@ -24,19 +24,7 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-  <div class="govuk-notification-banner__header">
-    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-      Important
-    </h2>
-  </div>
-  <div class="govuk-notification-banner__content">
-    <p class="govuk-notification-banner__heading">
-      This claimant has asked for letters in Welsh.
-      <a class="govuk-notification-banner__link" href="#"></a>
-    </p>
-  </div>
-</div>
+
 
       {% include 'widows/iteration-2/_bar-widows.html' %}
 
@@ -53,7 +41,17 @@ GOV.UK Prototype Kit
 
       <div class="govuk-form-group">
           <h1 class="govuk-heading-l">More information needed</h1>
-          <br>
+
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    This claimant asked for letters in Welsh.
+  </strong>
+</div>
+
+
+
 <p>Send a letter to the claimaint asking them to send in their:</p>
 <ul class="govuk-list govuk-list--bullet">
   <li>certificate of marriage or civil partnership</li>
@@ -62,7 +60,10 @@ GOV.UK Prototype Kit
         <li>spouse's National Insurance number</li></ul>
 
         <p>You can find the claimaint's gender on Searchlight.</p>
+
+
         <p>This task will be placed on hold for 2 weeks.</p>
+
 
 
       <br>
