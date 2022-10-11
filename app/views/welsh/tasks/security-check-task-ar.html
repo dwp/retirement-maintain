@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+              {% include './_bar.html' %}
+
+{{ govukBackLink ({
+  text: 'Back',
+  href: 'javascript:history.back()'
+}) }}
+
+<br><br>
+        
+          <h1 class="govuk-heading-l">Additional Security Task - Welsh</h1>
+
+          <p>This person wants to speak to someone in Welsh. You must send this task over to the Welsh language unit</p>
+
+
+
+        <p>This task will be placed on hold for 2 weeks.</p>
+
+
+
+      <br>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Confirm task sent to WLU
+      </button>
+
+          
+          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> /ask-security-questions-outbound <br>
+        <b>Error messages:</b> If nothing selected: Select what was the outcome of the additional security check<br>
+        <b>Notes:</b> None <br>
+      </div>
+    </details>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
