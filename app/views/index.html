@@ -123,8 +123,8 @@ GOV.UK Prototype Kit
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="accordion-default-heading-1" style="font-size: 16pt;">
-        Suspended State Pension
-          <p><br>Claimant in prision or temporary suspension<br></p>
+          Lived or worked abroad
+          <p><br>Claimants who have provided information about their time living and/or working abroad when making their SP claim.</p>
         </span>
       </h2>
     </div>
@@ -142,14 +142,17 @@ GOV.UK Prototype Kit
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="accordion-default-heading-1" style="font-size: 16pt;">
-          Allow a citizen's address to be marked as DLO
-          <p><br>If a letter does not reach the citizen, an agent needs to be able to stop further letters being sent.</p>
+        Suspended State Pension
+          <p><br>Claimant in prision or temporary suspension<br></p>
         </span>
       </h2>
     </div>
     <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
       <div class="app-most-recent">
-        {% include 'notes/dlo.html' %}
+        {% include 'notes/suspended.html' %}
+      </div>
+      <div class="app-most-recent">
+        {% include 'notes/prison.html' %}
       </div>
     </div>
   </div>
