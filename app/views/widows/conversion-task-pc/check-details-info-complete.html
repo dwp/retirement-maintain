@@ -29,7 +29,7 @@ GOV.UK Prototype Kit
 
     <br><br>
 
-    {% if data['dom'] === 'Verified' %}
+
 
       <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
       <div class="govuk-notification-banner__header">
@@ -44,13 +44,7 @@ GOV.UK Prototype Kit
       </div>
     </div>
     <h1 class="govuk-heading-l">Check for inheritable amounts</h1>
-
-    {% else %}
-    <h1 class="govuk-heading-l">Check the details and decide how to continue</h1>
-    <p>Complete the information and verify the dates, or choose another way to continue.</p>
-    {% endif %}
-
-  <br><br>
+    <br>
 
           <h2 class="govuk-heading-m">Claimant</h2>
 
@@ -106,6 +100,9 @@ GOV.UK Prototype Kit
   <br>  <br>
           <h2 class="govuk-heading-m">Late spouse or civil partner</h2>
 
+
+
+
                 <table class="govuk-table">
                   <tbody class="govuk-table__body">
 
@@ -114,8 +111,17 @@ GOV.UK Prototype Kit
                       <td class="govuk-table__cell">Lilly Bennett</td>
                       <td class="govuk-table__cell"></td>
                       <td class="govuk-table__cell"></td>
-                    </tr>
 
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Address</th>
+                      <td class="govuk-table__cell">62 High Street<br>
+                        NORTH LONDON<br>
+                        N93 3KJ</td>
+                      <td class="govuk-table__cell"></td>
+                      <td class="govuk-table__cell"></td>
+
+                    </tr>
                     <tr class="govuk-table__row">
                      <th scope="row" class="govuk-table__header" style="width: 40%">National Insurance number</th>
                      <td class="govuk-table__cell" style="width: 30%">
@@ -132,19 +138,12 @@ GOV.UK Prototype Kit
                     <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Gender</th>
                       <td class="govuk-table__cell">
-                        {% if data.gender %}
-                        {{data.gender}}
-                        {% else %}
-                        Female
-                        {% endif %}</td>
+                        Male</td>
                       <td class="govuk-table__cell"> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
                                               <a class="govuk-link" href="gender">
-                                              {% if data.gender %}
                                               Change
-                                              {% else %}
-                                              Change
-                                              {% endif %}</a>
+                                              </a>
                       </td>
                     </tr>
 
@@ -192,17 +191,9 @@ GOV.UK Prototype Kit
                     <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Date of marriage</th>
                       <td class="govuk-table__cell">
-                        {% if data.domd %}
-                        {{data.domd}}/{{data.domm}}/{{data.domy}}
-                        {% else %}
-
-                        {% endif %}</td>
+                        19/02/1990</td>
                       <td class="govuk-table__cell"><span class="verified-badge verified">
-                        <b>{% if data.dom %}
-                        {{data.dom}}
-                        {% else %}
-
-                        {% endif %}</b>
+                        <b>Verified</b>
                       </span> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
                                               <a class="govuk-link" href="dom">{% if data.domd %}
@@ -222,7 +213,9 @@ GOV.UK Prototype Kit
 
   <br>  <br>
 
-  <form method="post">
+
+
+                <form method="post">
   <div class="govuk-form-group">
     <fieldset class="govuk-fieldset">
       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -231,7 +224,7 @@ GOV.UK Prototype Kit
         </h2>
       </legend>
 
-    {% if data['dom'] === 'Verified' %}
+
 
 
       <div class="govuk-radios__item">
@@ -240,21 +233,10 @@ GOV.UK Prototype Kit
     Enter inheritable amounts </label>
     </div>
 
-
-    {% else %}
-      <div id="changed-name-hint" class="govuk-hint">To award with inheritable amounts, enter all missing information and verify all dates.</div>
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="more-info">
-            <label class="govuk-label govuk-radios__label" for="decision">
-Request more information</label>
-      </div>
-
-{% endif %}
-
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="nothing-to-inherit">
       <label class="govuk-label govuk-radios__label" for="decision">
-  No change to award - Nothing to inherit</label>
+Nothing to inherit</label>
     </div>
 
     <div class="govuk-radios__divider">or</div>
@@ -272,6 +254,7 @@ Save changes and return task to queue   </label>
       </button>
     </div>
   </div>
+
 
 </div>
 

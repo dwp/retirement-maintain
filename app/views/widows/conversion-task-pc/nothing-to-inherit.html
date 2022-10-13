@@ -20,7 +20,9 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        {% include 'widows/conversion-task/_bar.html' %}
+          <form method="post">
+
+            {% include 'widows/conversion-task/_bar.html' %}
 
 {{ govukBackLink({
       "text": "Back",
@@ -29,24 +31,17 @@ GOV.UK Prototype Kit
   }}
 
   <br><br>
-  <form method="post">
 
       <div class="govuk-form-group">
-          <h1 class="govuk-heading-l">More information needed</h1>
-          <br>
-<p>Send a letter to the claimaint asking them to send in their:</p>
-<ul class="govuk-list govuk-list--bullet">
-  <li>certificate of marriage or civil partnership</li>
-    <li>spouse's birth certificate</li>
-      <li>spouse's death certificate</li>
-        <li>spouse's National Insurance number</li></ul>
-        <p>A new task will be created to check for information again in 4 weeks.</p>
+          <h1 class="govuk-heading-l">There is nothing to inherit</h1>
 
+          <p>The claimant's State Pension will not change.</p>
+
+          <p>A letter will be sent to the claimant confirming that we checked for inheritable amounts.</p>
 
       <br>
-
       <button class="govuk-button" data-module="govuk-button">
-        Confirm letter sent
+      End task
       </button>
 
 

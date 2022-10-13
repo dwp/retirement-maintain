@@ -82,6 +82,24 @@ router.post('/telephone-new-claim/start-date/UR/sp-date-post-spa', function(req,
   }
 });
 
+router.post('/telephone-new-claim/start-date/iteration-3/claim-date', function(req, res) {
+  if ( req.body['claim-month'] === '10' ) {
+    res.redirect('/telephone-new-claim/start-date/UR/are-you-sure');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/UR/prison');
+  }
+});
+
+router.post('/telephone-new-claim/start-date/UR/are-you-sure', function(req, res) {
+  if ( req.body['confirm-claim-from'] === 'yes' ) {
+    res.redirect('/telephone-new-claim/start-date/UR/prison');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/iteration-3/claim-date');
+  }
+});
+
+
+
 router.post('/telephone-new-claim/start-date/iteration-3/claim-date', (req, res) => {
   res.redirect('/telephone-new-claim/start-date/UR/prison')
 })

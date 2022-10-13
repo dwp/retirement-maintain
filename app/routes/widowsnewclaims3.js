@@ -28,6 +28,11 @@ router.post('/widows/conversion-task/check-details-info-missing', function(req, 
   ;
 
 
+
+
+
+// Conversion record
+
   router.post('/widows/conversion/dom', (req, res) => {
     res.redirect('/widows/conversion/check-details-info-missing')
   })
@@ -42,6 +47,14 @@ router.post('/widows/conversion-task/check-details-info-missing', function(req, 
     res.redirect('/widows/conversion/personal-widowed')
   })
   ;
+
+  router.post('/widows/conversion/change-marital-status', function(req, res) {
+      if ( req.body['maritalstatus'] === 'divorced' ) {
+        res.redirect('/widows/conversion/divorced');
+      } else {
+        res.redirect('/widows/conversion/check-details-info-missing');
+      }
+    });
 
 
   router.post('/widows/conversion/check-details-info-missing', function(req, res) {
