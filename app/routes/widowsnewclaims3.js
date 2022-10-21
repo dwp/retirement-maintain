@@ -28,7 +28,10 @@ router.post('/widows/conversion-task/check-details-info-missing', function(req, 
   ;
 
 
-
+  router.post('/widows/conversion-task/award-calculated', (req, res) => {
+    res.redirect('/widows/conversion-task/get')
+  })
+  ;
 
 
 // Conversion record

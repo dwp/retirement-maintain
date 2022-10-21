@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full">
+
+
+          <br><br>
+          {% include './_bar.html' %}
+
+      <form method="post" action="personal-rf1">
+
+        {{ govukBackLink({
+          text: "Back",
+          href: "javascript:history.go(-1)"
+                          }) }}
+
+          <br><br>
+          <h2 class="govuk-heading-l">Request RF1</h2>
+
+          <br>
+
+<p>Do we need a table here with information? <br>
+  What information does the agent need to send to HMRC to get the RF1?
+</p>
+<br>
+          <button type="submit" class="govuk-button">Confirm - RF1 requested</button>
+        </div>
+      </div>
+    </main>
+
+  </form>
+</div>
+</div>
+
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

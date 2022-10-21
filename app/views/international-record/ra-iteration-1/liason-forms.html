@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full">
+
+
+          <br><br>
+          {% include './_bar.html' %}
+
+      <form method="post" action="personal-forms-sent">
+
+        {{ govukBackLink({
+          text: "Back",
+          href: "javascript:history.go(-1)"
+                          }) }}
+
+          <br><br>
+          <h2 class="govuk-heading-l">Complete foreign liaison forms?</h2>
+
+          <br>
+
+<p>Agent completes, prints and sends foreign liaison forms<br>
+  Agent uploads foreign liaison forms to DRS
+</p>
+<br>
+          <button type="submit" class="govuk-button">I have sent all the things</button>
+        </div>
+      </div>
+    </main>
+
+  </form>
+</div>
+</div>
+
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}

@@ -66,7 +66,11 @@ const startdate = require('./routes/startdate');
 const startdate2 = require('./routes/startdate2');
 const widowsnewclaims = require('./routes/widowsnewclaims');
 const widowsnewclaims3 = require('./routes/widowsnewclaims3');
+
+const widowsnewclaims2 = require('./routes/widowsnewclaims2');
 const widows = require('./routes/widows');
+const internationalra = require('./routes/internationalra');
+
 
 //copy the router use and update the sprint version
 router.use(newclaims);
@@ -123,7 +127,9 @@ router.use(startdate2);
 router.use(reviewanaward);
 router.use(adminview);
 router.use(widowsnewclaims3);
+router.use(widowsnewclaims2);
 router.use(widows);
+router.use(internationalra);
 
 
 
