@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+              {% include './_bar.html' %}
+
+        <form method="post">
+
+
+        <h2 class="govuk-heading-l">Use this information to fix the error</h2>
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m"></caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Error name</th>
+      <th scope="col" class="govuk-table__header">Invitation code</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td scope="row" class="govuk-table__cell">Overseas addresses</td>
+      <td class="govuk-table__cell">12345</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+<!--
+
+        <p>Use this information to fix the error.</p>
+
+            <div class="govuk-inset-text">
+              <p>The error name is Overseas address</p>
+              <p>The invitation code is 12345</p>
+</div>
+
+-->
+
+              </div>
+
+
+
+          </div>
+<br><br>
+
+          <a href="get-a-task-complete" button class="govuk-button" data-module="govuk-button">
+            Confirm error is fixed </a>
+
+
+          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>OTHER ERROR NAMES, URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <strong>Full list of error names:</strong>
+        <ul>
+          <li>Overseas address</li>
+          <li>Address received</li>
+          <li>CIS gender</li>
+          <li>Birth event</li>
+          <li>Error updating</li>
+        </ul>
+        <br>
+        <strong>URL:</strong> /fix-error-task <br>
+        <b>Error messages:</b> None<br>
+        <b>Notes:</b> None <br>
+      </div>
+    </details>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
