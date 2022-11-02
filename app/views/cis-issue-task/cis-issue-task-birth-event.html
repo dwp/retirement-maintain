@@ -1,0 +1,178 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+              {% include './_bar.html' %}
+
+        <form method="post">
+
+
+          <h2 class="govuk-heading-l">Update the claimant's address</h2>
+        <p>New address received without a postcode. Correct the claimant's address information.</p>
+
+<dl class="govuk-summary-list">
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Current address
+    </dt>
+    <dd class="govuk-summary-list__value">
+      14 West Avenue,<br> South Shields,<br> NE32 3HD
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      New address
+    </dt>
+    <dd class="govuk-summary-list__value">
+      65 North Road,<br> NEWCASTLE,
+    </dd>
+  </div>
+
+</dl>
+<br>
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h1 class="govuk-fieldset__heading">
+        How do you want to continue?
+      </h1>
+    </legend>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="change">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          Update address manually
+        </label>
+      </div>
+      <div class="govuk-radios" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="keep">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+            Keep current address
+          </label>
+        </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="exit">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+  Enter claimant's record      </label>
+      </div>
+
+    </div>
+
+  </fieldset>
+</div>
+
+<!--
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m"></caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Error name</th>
+      <th scope="col" class="govuk-table__header">Invitation code</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td scope="row" class="govuk-table__cell">Overseas addresses</td>
+      <td class="govuk-table__cell">12345</td>
+    </tr>
+
+  </tbody>
+</table>
+
+-->
+<!--
+
+        <p>Use this information to fix the error.</p>
+
+            <div class="govuk-inset-text">
+              <p>The error name is Overseas address</p>
+              <p>The invitation code is 12345</p>
+</div>
+
+-->
+
+              </div>
+
+
+
+          </div>
+<br><br>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Confirm</button>
+
+
+          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>OTHER ERROR NAMES, URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <strong>Full list of error names:</strong>
+        <ul>
+          <li>Overseas address</li>
+          <li>Address received with null postcode</li>
+          <li>CIS gender</li>
+          <li>Birth event</li>
+          <li>Error updating contact details</li>
+        </ul>
+        <br>
+        <strong>URL:</strong> /fix-error-task <br>
+        <b>Error messages:</b> None<br>
+        <b>Notes:</b> None <br>
+      </div>
+    </details>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+<script>
+    nextPageRoutes = {
+        'keep': '/cis-issue-task/keep-address.html',
+        'change': '/cis-issue-task/change-address3.html',
+        'exit': '/cis-issue-task/personal.html',
+        }
+</script>
+
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
