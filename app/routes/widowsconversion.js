@@ -52,9 +52,14 @@ router.post('/widows/conversion-task/check-details-info-missing', function(req, 
       if ( req.body['maritalstatus'] === 'divorced' ) {
         res.redirect('/widows/conversion/divorced');
       } else {
-        res.redirect('/widows/conversion/check-details-info-missing');
+        res.redirect('/widows/conversion/late-spouse-dod');
       }
     });
+
+    router.post('/widows/conversion/late-spouse-dod', (req, res) => {
+      res.redirect('/widows/conversion/check-details-info-missing')
+    })
+    ;
 
 
   router.post('/widows/conversion/check-details-info-missing', function(req, res) {

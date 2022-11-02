@@ -19,7 +19,7 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        {% include 'widows/conversion-task-pc/_bar.html' %}
+        {% include 'widows/conversion/_bar.html' %}
 
   {{ govukBackLink({
         "text": "Back",
@@ -32,23 +32,68 @@ GOV.UK Prototype Kit
     <h1 class="govuk-heading-l">Change to State Pension award</h1>
   <br><br>
 
-    <table class="govuk-table">
-      <caption class="govuk-table__caption govuk-table__caption--m">State Pension award</caption>
+
+  <table class="govuk-table">
+    <tbody class="govuk-table__body">
       <tr class="govuk-table__row">
-        <th scope="row" class="govuk-table__header">Previous amount</th>
-        <td class="govuk-table__cell">£132.66 a week</td>
+        <th scope="row" class="govuk-table__header" style="width: 50%" >From</th>
+        <td class="govuk-table__cell" style="width: 50%">11 September 2022</td>
+        <td class="govuk-table__cell"></td>
       </tr>
-      <tbody class="govuk-table__body">
-        <tr class="govuk-table__row">
-          <th scope="row" class="govuk-table__header">New amount</th>
-          <td class="govuk-table__cell">£142.26 a week</td>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Reason</th>
+        <td class="govuk-table__cell">Widows inheritance</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      </table>
+
+                  <table class="govuk-table">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Total</th>
+        <td class="govuk-table__cell" style="width: 50%">	<b>£164.68</b></td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">New State Pension</th>
+        <td class="govuk-table__cell">	£164.68</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Protected payment </th>
+          <td class="govuk-table__cell">	£0.00</td>
+          <td class="govuk-table__cell"><a class="govuk-link" href="marital-details">
+            </a></td>
         </tr>
         <tr class="govuk-table__row">
-          <th scope="row" class="govuk-table__header">Change from</th>
-          <td class="govuk-table__cell">11 September 2022</td>
-        </tr>
-      </tbody>
-    </table>
+            <th scope="row" class="govuk-table__header">Extra State Pension </th>
+            <td class="govuk-table__cell">	£0.00</td>
+            <td class="govuk-table__cell"><a class="govuk-link" href="marital-details">
+              </a></td>
+          </tr>
+          <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Inherited extra State Pension</th>
+              <td class="govuk-table__cell">	£10.00</td>
+              <td class="govuk-table__cell"><a class="govuk-link" href="marital-details">
+                </a></td>
+            </tr>
+  </table>
+
+
+  <table class="govuk-table">
+<caption class="govuk-table__caption govuk-table__caption--m">Inherited amounts</caption>
+<tbody class="govuk-table__body">
+  <tr class="govuk-table__row">
+    <th scope="row" class="govuk-table__header">Additional Pension</th>
+    <td class="govuk-table__cell">£4.98</td>
+  </tr>
+  <tr class="govuk-table__row">
+    <th scope="row" class="govuk-table__header">Graduated benefit</th>
+    <td class="govuk-table__cell" style="width: 51%">£0.34</td>
+  </tr>
+</tbody>
+</table>
+
+
 <br>
     <table class="govuk-table">
   <caption class="govuk-table__caption govuk-table__caption--m">Arrears payment</caption>
@@ -64,8 +109,11 @@ GOV.UK Prototype Kit
   </tbody>
 </table>
 
-<br>
+<div class="govuk-inset-text">
+  A new award letter will be sent to the claimant.
+</div>
 
+<br>
     <a href="get-a-task-2" button type="submit" class="govuk-button">
 Confirm and send award letter</a>
 
@@ -84,7 +132,6 @@ Confirm and send award letter</a>
 
     </div>
     </details>
-
 
   </div>
 
