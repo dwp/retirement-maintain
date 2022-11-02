@@ -25,64 +25,58 @@ GOV.UK Prototype Kit
         <form method="post">
 
 
-        <h2 class="govuk-heading-l">Fix CIS issue</h2>
+          <h2 class="govuk-heading-l">Update the claimant's address</h2>
+        <p>New address received without a postcode. Correct the claimant's address information.</p>
 
 <dl class="govuk-summary-list">
+
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
-      Error name
+      Current address
     </dt>
     <dd class="govuk-summary-list__value">
-      Overseas address
+      14 West Avenue,<br> South Shields,<br> NE32 3HD
     </dd>
   </div>
+
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
-      Address on GySP
+      New address
     </dt>
     <dd class="govuk-summary-list__value">
-      blah blah blah address
-    </dd>
-  </div>
-  
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">
-      Address causing the issue
-    </dt>
-    <dd class="govuk-summary-list__value">
-      123 Example Street Somewheretown Exampleshire
+      65 North Road,<br> NEWCASTLE,
     </dd>
   </div>
 
 </dl>
-
+<br>
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
       <h1 class="govuk-fieldset__heading">
-        Pick what you want to do
+        How do you want to continue?
       </h1>
     </legend>
-    <div class="govuk-radios" data-module="govuk-radios">
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="keep">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-          Keep existing address
-        </label>
-      </div>
+
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="change">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-          Update address
+          Update address manually
         </label>
       </div>
+      <div class="govuk-radios" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="keep">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+            Keep current address
+          </label>
+        </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="exit">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-          Exit task without changing owt
-        </label>
+  Enter claimant's record      </label>
       </div>
-      
+
     </div>
 
   </fieldset>

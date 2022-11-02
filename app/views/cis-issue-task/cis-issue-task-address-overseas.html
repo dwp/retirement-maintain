@@ -25,29 +25,31 @@ GOV.UK Prototype Kit
         <form method="post">
 
 
-        <h2 class="govuk-heading-l">Fix CIS issue</h2>
+          <h2 class="govuk-heading-l">Update the claimant's address</h2>
+        <p>New overseas address received. Check CIS to get the the claimant's new address.</p>
+<br><br>
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h1 class="govuk-fieldset__heading">
+                How do you want to continue?
+              </h1>
+            </legend>
 
-<p> Here's what you need to do. or not. upto you </p>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="change">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                  Update address manually
+                </label>
+              </div>
 
-<div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    
-    <div class="govuk-radios" data-module="govuk-radios">
-      
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-          Update address
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-          Exit task without changing owt
-        </label>
-      </div>
-      
-    </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="exit">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Enter claimant's record</label>
+              </div>
+
+
 
   </fieldset>
 </div>
