@@ -8,7 +8,7 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include 'includes/_header-nav-unselected.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -20,9 +20,7 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-          <form method="post">
-
-            {% include 'widows/conversion-task/_bar.html' %}
+              {% include './_bar.html' %}
 
 {{ govukBackLink({
       "text": "Back",
@@ -32,12 +30,14 @@ GOV.UK Prototype Kit
 
   <br><br>
 
+<form method="post" action='get-a-task-complete'>
+
       <div class="govuk-form-group">
-          <h1 class="govuk-heading-l">There is nothing to inherit</h1>
+          <h1 class="govuk-heading-l">Keep current address</h1>
 
-          <p>The claimant's State Pension will not change.</p>
+          <p>This will keep the current address.</p>
 
-          <p>A letter will be sent to the claimant confirming that we checked for inheritable amounts.</p>
+          <p>blah blah blah.</p>
 
       <br>
       <button class="govuk-button" data-module="govuk-button">
@@ -65,4 +65,5 @@ GOV.UK Prototype Kit
   </div>
 </div>
 
+</form>
 {% endblock %}
