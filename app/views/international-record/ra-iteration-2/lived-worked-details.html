@@ -40,7 +40,8 @@ GOV.UK Prototype Kit
           <div class="govuk-warning-text">
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
   <strong class="govuk-warning-text__text">
-    The claimant has returned their RA form. <a href="/international-record/ra-iteration-1/date-of-entry" class="govuk-link govuk-link--no-visited-state">Confirm their date of entry</a>.
+     Awaiting enquiry letters from claimant. <br><a href="/international-record/ra-iteration-2/date-of-entry" class="govuk-link govuk-link--no-visited-state">Confirm letters returned</a>.
+
   </strong>
 </div>
 
@@ -96,7 +97,7 @@ GOV.UK Prototype Kit
       <h2 class="govuk-heading-m">
       </h2>
       <ol class="app-timeline">
-        <li class="app-timeline__entry">
+        <!--<li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
             RA form returned
           </h3>
@@ -109,12 +110,13 @@ GOV.UK Prototype Kit
 
             </span>
           </p>
-        </li>
+        </li>-->
         <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-            RA form sent to claimant
+            Enquiry letters sent to claimant
           </h3>
-          <p>12 October 2022</p>
+          <p>12 October 2022<br>
+          <a href="/international-record/ra-iteration-2/date-of-entry" class="govuk-link govuk-link--no-visited-state">Confirm letters returned</a></p>
 
           <p class="app-timeline__info govuk-!-margin-bottom-0">
             <span class="govuk-visually-hidden">No changes made</span>
@@ -128,6 +130,20 @@ GOV.UK Prototype Kit
 
     </div>
 
+
+
 </div>
+<br>  <br>  <br>
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+    <b>Dev info: URL</b>
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <b>URL:</b> /lived-worked-abroad<br>
+  </div>
+
+
 
 {% endblock %}
