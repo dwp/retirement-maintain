@@ -15,15 +15,6 @@ GOV.UK Prototype Kit
 
 <div class="govuk-width-container">
 
-  <br>
-  <br>
-
-  <div class="govuk-grid-column-full">
-
-    {% include './navigation/_bar-admin.html' %}
-
-  </div>
-
   <div class="govuk-grid-column-two-thirds">
 
     <main id="content" role="main">
@@ -38,6 +29,15 @@ GOV.UK Prototype Kit
     </main>
 
     <br><br>
+
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        This record has been locked for performance measurement. You cannot make any changes until it is unlocked?
+      </strong>
+    </div>
+
     <h2 class="govuk-heading-m">Bank or building society account details</h2>
     <table class="govuk-table">
       <tbody class="govuk-table__body">
@@ -48,7 +48,7 @@ GOV.UK Prototype Kit
 
 
               <a href="changebanktype">
-                <span class="govuk-link govuk-!-font-size-19" style="margin-left: 90%">Change</span>
+                <span class="govuk-link govuk-!-font-size-19" style="margin-left: 90%"></span>
               </a>
 
 
@@ -80,7 +80,7 @@ GOV.UK Prototype Kit
             <th scope="row" class="govuk-table__header" style="width: 45%"> Payment frequency</th>
             <td class="govuk-table__cell" style="width: 45%">Every 4 weeks</td>
             <td class="govuk-table__cell" style="width: 10%"><a href="change-frequency">
-                <span class="govuk-link govuk-!-font-size-19">Change</span>
+                <span class="govuk-link govuk-!-font-size-19"></span>
               </a></td>
           </tr>
 

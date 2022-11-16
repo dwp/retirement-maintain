@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{% include './navigation/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+
+
+        <div class="column-full-width">
+
+          <br><br>
+          {% include './name-bar/_bar.html' %}
+
+          {% include './tabs/_tab-history-locked.html' %}
+
+        </div>
+      </div>
+    </main>
+
+    <br>
+    <br>
+
+    <p>
+              <a href="#" class="govuk-link govuk-link--no-visited-state">2022 to 2023</a><br>
+              <a href="#" class="govuk-link govuk-link--no-visited-state">2021 to 2022</a><br>
+              <a href="#" class="govuk-link govuk-link--no-visited-state">2020 to 2021</a>
+    </p>
+
+    <br>
+              <table class="govuk-table">
+                <caption class="govuk-table__caption govuk-table__caption--l">2022 to 2023 full action history</caption>
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header app-custom-class">Date</th>
+                    <th scope="col" class="govuk-table__header app-custom-class">Action</th>
+                    <th scope="col" class="govuk-table__header app-custom-class">By</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">24 September 2022</td>
+                    <td class="govuk-table__cell">£109.80 per week</td>
+                    <td class="govuk-table__cell">Performance measurement</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">28 July 2022</td>
+                    <td class="govuk-table__cell">£159.80 per week</td>
+                    <td class="govuk-table__cell">Admin</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">28 July 2022</td>
+                    <td class="govuk-table__cell">£159.80 per week</td>
+                    <td class="govuk-table__cell">Admin</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">9 July 2022</td>
+                    <td class="govuk-table__cell">SRB task complete<br>
+                    Award updated</td>
+                    <td class="govuk-table__cell">SP agent</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">9 January 2022</td>
+                    <td class="govuk-table__cell">Marital status changed</td>
+                    <td class="govuk-table__cell">CIS</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+</div>
+
+
+
+
+</div>
+</div>
+</main>
+</div>
+<!-- </div> -->
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+  </div>
+</div>
+
+{% endblock %}
