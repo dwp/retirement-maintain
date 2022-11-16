@@ -14,6 +14,18 @@ GOV.UK Prototype Kit
 
 
 <div class="govuk-width-container">
+
+  <br>
+  <br>
+
+  <div class="govuk-grid-column-full">
+
+    {% include './navigation/_bar-admin-locked.html' %}
+
+  </div>
+
+
+
   <div class="govuk-grid-column-two-thirds">
 
     <main id="content" role="main">
@@ -25,7 +37,7 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './name-bar/_bar.html' %}
 
-          {% include './tabs/_tab-history.html' %}
+          {% include './tabs/_tab-overview.html' %}
 
         </div>
       </div>
@@ -38,61 +50,58 @@ GOV.UK Prototype Kit
       <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
       <strong class="govuk-warning-text__text">
         <span class="govuk-warning-text__assistive">Warning</span>
-        This record has been locked for performance measurement?
+        This record has been locked for performance measurement. <a href="#" class="govuk-link">Unlock this record</a>.
       </strong>
     </div>
 
     <div>
       <h2 class="govuk-heading-m">Personal details</h2>
+      <table class="govuk-table">
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header" style="width: 50%" >Full name</th>
+            <td class="govuk-table__cell" style="width: 50%">Neve Bentley</td>
+            <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
+              Change
+            </a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">National Insurance number</th>
+            <td class="govuk-table__cell">QQ 56 43 21 M</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Date of birth</th>
+            <td class="govuk-table__cell">12 December 1952</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">State Pension date </th>
+            <td class="govuk-table__cell">10 April 2019 </td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Marital status </th>
+              <td class="govuk-table__cell">Married</td>
+              <td class="govuk-table__cell"><a class="govuk-link" href=change-marital-status>
+                  Details
+                </a></td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Lived or worked abroad</th>
+                <td class="govuk-table__cell">No</td>
+                <td class="govuk-table__cell"><a class="govuk-link" href=change-marital-status>
 
-      <p>
-                <a href="#" class="govuk-link govuk-link--no-visited-state">2022 to 2023</a><br>
-                <a href="#" class="govuk-link govuk-link--no-visited-state">2021 to 2022</a><br>
-                <a href="#" class="govuk-link govuk-link--no-visited-state">2020 to 2021</a>
-      </p>
+                  </a></td>
+              </tr>
 
-      <br>
-                <table class="govuk-table">
-                  <caption class="govuk-table__caption govuk-table__caption--l">2022 to 2023 full action history</caption>
-                  <thead class="govuk-table__head">
-                    <tr class="govuk-table__row">
-                      <th scope="col" class="govuk-table__header app-custom-class">Date</th>
-                      <th scope="col" class="govuk-table__header app-custom-class">Action</th>
-                      <th scope="col" class="govuk-table__header app-custom-class">By</th>
-                    </tr>
-                  </thead>
-                  <tbody class="govuk-table__body">
-                    <tr class="govuk-table__row">
-                      <td class="govuk-table__cell">24 September 2022</td>
-                      <td class="govuk-table__cell">£109.80 per week</td>
-                      <td class="govuk-table__cell">Performance measurement</td>
-                    </tr>
-                    <tr class="govuk-table__row">
-                      <td class="govuk-table__cell">28 July 2022</td>
-                      <td class="govuk-table__cell">£159.80 per week</td>
-                      <td class="govuk-table__cell">Admin</td>
-                    </tr>
-                    <tr class="govuk-table__row">
-                      <td class="govuk-table__cell">28 July 2022</td>
-                      <td class="govuk-table__cell">£159.80 per week</td>
-                      <td class="govuk-table__cell">Admin</td>
-                    </tr>
-                    <tr class="govuk-table__row">
-                      <td class="govuk-table__cell">9 July 2022</td>
-                      <td class="govuk-table__cell">SRB task complete<br>
-                      Award updated</td>
-                      <td class="govuk-table__cell">SP agent</td>
-                    </tr>
-                    <tr class="govuk-table__row">
-                      <td class="govuk-table__cell">9 January 2022</td>
-                      <td class="govuk-table__cell">Marital status changed</td>
-                      <td class="govuk-table__cell">CIS</td>
-                    </tr>
-                  </tbody>
-                </table>
-
+        </tbody>
+      </table>
 
     </div>
+    <a class="govuk-body" href="stop-sp">
+      Stop State Pension
+    </a>
 
 
 
@@ -114,7 +123,6 @@ GOV.UK Prototype Kit
 
   </div>
 
-</div>
 
 
 
