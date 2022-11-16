@@ -7,44 +7,35 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{% include './navigation/_header-nav-unselected.html' %}
 
+{% include '../navigation/_header-nav.html' %}
 {% block headEnd %}
 {% endblock %}
 
-
 <div class="govuk-width-container">
 
-  <br>
-  <br>
+  {% include '../navigation/_bar-small.html' %}
 
 
-  <div class="govuk-grid-column-two-thirds">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
 
-    <main id="content" role="main">
-      <div class="grid-row">
-        <div class="column-full-width">
-          <br><br>
-
-          {% include './name-bar/_bar-jose-prison.html' %}
-
-        </div>
-      </div>
-    </main>
-
-    {{ govukBackLink({
+        {{ govukBackLink({
     text: "Back",
     href: "javascript:history.go(-1)"
-    }) }}
+  }) }}
 
-    <div>
+        <br> <br>
+<form method="post" action="contact">
+
             <form method="post" action="personal">
               <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset">
                   <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                   </legend>
                   <h1 class="govuk-heading-xl"">
-                              What date did you leave prison?
+                              When did you leave prison?
                               </h1>
                   <div class="govuk-date-input" id="marriage-date">
                     <div class="govuk-date-input__item">
@@ -79,48 +70,33 @@ GOV.UK Prototype Kit
                 </fieldset>
               </div>
 
-              <!-- <fieldset class="govuk-fieldset" aria-describedby="marriage-verification-hint">
-                <div class="govuk-radios govuk-radios--inline">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="marriage-verification" name="marriage-verification" type="radio"
-                      value="verified">
-                    <label class="govuk-label govuk-radios__label" for="marriage-verification-1">
-                      Verified
-                    </label> </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="marriage-verification" name="marriage-verification" type="radio"
-                      value="not-verified">
-                    <label class="govuk-label govuk-radios__label" for="marriage-verification-2">
-                      Not verified
-                    </label> </div>
-                </div>
-              </fieldset> -->
+
       <br>
-        <a href="personal-left-prison" role="button" class="govuk-button">
-          Continue
-        </a>
+       <button class="govuk-button" data-module="govuk-button">
+ Continue
+</button>
+
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> /prison-leave-date  <br>
+        <b>Error messages:</b> <br>
+        Nothing entered: Enter the date the claimant left prison<br>
+        Invalid: Enter a real date, like 12 4 1993<br>
+      If user puts in date before date went into prison: Date you left prison must be after 22 April 2022 [date went in +1]<br>
+        <b>Notes:</b> None <br>
       </div>
+    </details>
 
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-
-      <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-          <b>URL, errors and notes</b>
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <b>URL:</b> /left-prison <br>
-          <b>Error messages:</b> Enters date before DOB: Date claimant left prison must be after date of birth
-          <br>Enters date before went into prison: Date claimant left prison must be after date claimant entered prison
-          <br>Enters date in future: Date claimant left prison must be today or in the past
-          <br><b>Notes:</b> None <br>
-        </div>
-      </details>
-
-      
 
     </div>
 
