@@ -31,6 +31,15 @@ router.post('/international-record/ra-iteration-2/date-of-entry', function(req, 
 });
 
 
+router.post('/international-record/ra-iteration-2/enquiry-letter-returned', function(req, res) {
+  if ( req.body['enquiry-letter-returned'] === 'yes' ) {
+    res.redirect('date-of-entry');
+  } else {
+    res.redirect('lived-worked-details');
+  }
+});
+
+
 router.post('/international-record/ra-iteration-2/rf1-returned', function(req, res) {
   if ( req.body['rf1-returned'] === 'yes' ) {
     res.redirect('liason-forms-rf1');
@@ -38,6 +47,8 @@ router.post('/international-record/ra-iteration-2/rf1-returned', function(req, r
     res.redirect('lived-worked-details-rf1');
   }
 });
+
+
 
 
 
