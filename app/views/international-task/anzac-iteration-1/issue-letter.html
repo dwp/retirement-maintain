@@ -20,18 +20,22 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl">Send ANZaC enquiry letters
-        </h1>
-<p>Use the information provided to select the correct letters and post them to the claimant.</p>
-        <form method="post" action="award-improvement">
-          <br>
-          <button class="govuk-button" data-module="govuk-button">
-            Start this task
-          </button>
-          <a href="get-a-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
-            Return task to queue
-          </a>
+{% include './_bar.html' %}
 
+<h1 class="govuk-heading-l">1. Select the correct letters</h1>
+
+
+        <form method="post" action="get-a-task-2">
+
+
+
+
+
+
+
+<button class="govuk-button" data-module="govuk-button">
+  Confirm letter sent
+</button>
 
 
         </div>
@@ -40,6 +44,7 @@ GOV.UK Prototype Kit
 
     </div>
 
+  </div>
 
 </main>
       </div>
