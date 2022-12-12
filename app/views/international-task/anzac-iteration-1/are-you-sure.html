@@ -21,18 +21,15 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
 
         <form method="post" action="get-a-task-2">
-
-          <h1 class="govuk-heading-xl">Confirm RA liaison already complete</h1>
-
           {{ govukBackLink({
         "text": "Back",
         "href": "javascript: window.history.go(-1)"
-      })
-    }}
+        })
+        }}
 
-    <br><br>
-
-        <p>For example, the claimant has already claimed directly from the foreign authorities.</p>
+          <h1 class="govuk-heading-xl">ANZaC actions already complete</h1>
+<p>Select end task to confirm all ANZaC actions are complete.</p>
+        <!--<p>For example, the claimant has already claimed directly from the Australian, New Zealand or Canadian authorities.</p>-->
 <br>
 <div class="govuk-warning-text">
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
@@ -42,7 +39,7 @@ GOV.UK Prototype Kit
                           </strong>
                         </div>
                         <a href="get-a-task-2" role="button" draggable="false" button class="govuk-button " data-module="govuk-button">
-                          Confirm
+                          End task
                         </a>
 
         </div>
