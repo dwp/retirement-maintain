@@ -20,14 +20,18 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <form method="post" action="get-a-task-2">
-          {{ govukBackLink({
-        "text": "Back",
-        "href": "javascript: window.history.go(-1)"
-        })
-        }}
+{% include './_bar.html' %}
 
-          <h1 class="govuk-heading-xl">ANZaC actions already complete</h1>
+
+{{ govukBackLink({
+"text": "Back",
+"href": "javascript: window.history.go(-1)"
+})
+}}
+
+        <form method="post" action="get-a-task-2">
+<br>
+          <h1 class="govuk-heading-l">ANZaC actions already complete</h1>
 <p>Select end task to confirm all ANZaC actions are complete.</p>
         <!--<p>For example, the claimant has already claimed directly from the Australian, New Zealand or Canadian authorities.</p>-->
 <br>
