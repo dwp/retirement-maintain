@@ -11,6 +11,14 @@ router.post('/international-task/anzac-iteration-1/award-improvement', function(
   }
 });
 
+router.post('/international-task/anzac-iteration-2/award-improvement', function(req, res) {
+  if ( req.body['improvement'] === 'yes' ) {
+    res.redirect('issue-letter');
+  } else {
+    res.redirect('no-improvement');
+  }
+});
+
 
 
 
