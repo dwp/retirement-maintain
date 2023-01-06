@@ -111,7 +111,21 @@ GOV.UK Prototype Kit
 
 <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
 
-
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+      Change payment details
+          <p><br>Change payment details, including bank accounts, building societies and international accounts.<br></p>
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+      <div class="app-most-recent">
+    {% include 'notes/change-payment.html' %}
+      </div>
+    </div>
+  </div>
 
   <div class="govuk-accordion__section ">
     <div class="govuk-accordion__section-header">
