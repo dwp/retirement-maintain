@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{% include './navigation/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <br>
+  <br>
+
+  <div class="govuk-grid-column-full">
+
+    {% include './navigation/_bar-admin.html' %}
+
+  </div>
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <main id="content" role="main">
+      <div class="grid-row">
+        <div class="column-full">
+
+          <form method="post" action="payment-frequency">
+
+            <a href="payment" class="govuk-back-link">Back</a>
+
+            <br><BR>
+            <h2 class="govuk-heading-l">R u sure?</h2>
+
+
+            <p class="govuk-body">If you do this... this payment will be:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>recalled</li>
+              <li>marked as fraudy</li>
+            </ul>
+
+
+            </div>
+
+
+            <a href="payment-fraud" role="button" button class="govuk-button govuk-button" data-module="govuk-button" >
+              Mark as fraudulent payment
+            </a>
+
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+
+
+</div>
+
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
