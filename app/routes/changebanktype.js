@@ -19,4 +19,14 @@ router.post('/whatislive2/changebanktype', function(req, res) {
       }
     });
 
+    router.post('/bank-name-check/iteration-1/bank-name', function(req, res) {
+        if ( req.body['bank-name'] === 'yes' ) {
+          res.redirect('/bank-name-check/iteration-1/payment');
+        } else {
+          res.redirect('/bank-name-check/iteration-1/bank-uk');
+        }
+      });
+
+
+
 module.exports = router;
