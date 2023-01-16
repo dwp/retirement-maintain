@@ -10,7 +10,7 @@ router.use((req, res, next) => {
 
 
 // Reason for stopping SP
-router.post('/prison/stop-sp', function(req, res) {
+router.post('/prison/iteration-1/stop-sp', function(req, res) {
   if ( req.body['stop-sp'] === 'suspend' ) {
     res.redirect('personal-suspended');
   } else if ( req.body['stop-sp'] === 'prison' ) {
@@ -20,13 +20,13 @@ router.post('/prison/stop-sp', function(req, res) {
   }
 });
 
-router.post('/prison/date-entered-prison', (req, res) => {
+router.post('/prison/iteration-1/date-entered-prison', (req, res) => {
   res.redirect('prison-overpayment')
 })
 ;
 
 // Prison overpayment referral
-router.post('/prison/prison-overpayment', function(req, res) {
+router.post('/prison/iteration-1/prison/iteration-1-overpayment', function(req, res) {
   if ( req.body['prison-overpayment'] === 'yes' ) {
     res.redirect('prison-debt-referral');
   } else {
@@ -34,19 +34,19 @@ router.post('/prison/prison-overpayment', function(req, res) {
   }
 });
 
-router.post('/prison/prison-debt-referral', (req, res) => {
+router.post('/prison/iteration-1/prison/iteration-1-debt-referral', (req, res) => {
   res.redirect('personal-prison')
 })
 ;
 
-router.post('/prison/prison-restart-sp', (req, res) => {
+router.post('/prison/iteration-1/prison/iteration-1-restart-sp', (req, res) => {
   res.redirect('personal')
 })
 ;
 
 
 // Reason for restarting SP
-router.post('/prison/restart-sp', function(req, res) {
+router.post('/prison/iteration-1/restart-sp', function(req, res) {
   if ( req.body['restart-sp'] === 'prison' ) {
     res.redirect('personal-left-prison');
   } else if ( req.body['restart-sp'] === 'suspend' ) {
