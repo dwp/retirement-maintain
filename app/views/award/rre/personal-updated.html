@@ -7,8 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-
-{% include './header/_header-nav-unselected.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -23,21 +22,10 @@ GOV.UK Prototype Kit
 
 
           <br><br>
+          {% include './_bar.html' %}
 
-          <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-  <div class="govuk-notification-banner__header">
-    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-      Success
-    </h2>
-  </div>
-  <div class="govuk-notification-banner__content">
-    <h3 class="govuk-notification-banner__heading">
-State Pension awarded    </h3>
-  </div>
-</div>
-          {% include './_bar-awarded.html' %}
+          {% include './tabs/_tab-personal-updated.html' %}
 
-          {% include './tabs/_tab-overview.html' %}
 
         </div>
       </div>
@@ -46,17 +34,14 @@ State Pension awarded    </h3>
     <br>
     <br>
 
-
     <div>
       <h2 class="govuk-heading-m">Personal details</h2>
       <table class="govuk-table">
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header" style="width: 50%" >Full name</th>
-            <td class="govuk-table__cell" style="width: 50%">Luke Beasley</td>
-            <td class="govuk-table__cell"><a class="govuk-link" href="change-name">
-
-            </a></td>
+            <td class="govuk-table__cell" style="width: 50%">Pearl Morton<td>
+            <td class="govuk-table__cell"></td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">National Insurance number</th>
@@ -70,31 +55,21 @@ State Pension awarded    </h3>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">State Pension date </th>
-            <td class="govuk-table__cell">10 April 2019 </td>
+            <td class="govuk-table__cell">5 June 2021 </td>
             <td class="govuk-table__cell"></td>
           </tr>
           <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Marital status </th>
               <td class="govuk-table__cell">Married</td>
-              <td class="govuk-table__cell"><a class="govuk-link" href=change-maritalstatus>
-                  Details
-                </a></td>
+              <td class="govuk-table__cell"></td>
             </tr>
-            <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Lived or worked abroad </th>
-                <td class="govuk-table__cell">No</td>
-                <td class="govuk-table__cell"><a class="govuk-link" href="lived-worked-details">
-
-                  </a></td>
-              </tr>
 
         </tbody>
       </table>
 
     </div>
+
   </div>
-
-
 
 
   <div class="govuk-grid-column-one-third">
@@ -104,18 +79,15 @@ State Pension awarded    </h3>
     </h2>
     <ol class="app-timeline">
 
-
       <li class="app-timeline__entry">
-          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-          Claim received
-          </h3>
-          <p class="app-timeline__info govuk-!-margin-bottom-0">
-            <span class="govuk-visually-hidden"></span>
-            <span class="app-timeline__date">
-              2 May 2021</span>
-        </li>
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Online claim received
+        </h3>
 
-
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden"></span>
+          <span class="app-timeline__date">
+            2 May 2020
     </ol>
 
   </div>
