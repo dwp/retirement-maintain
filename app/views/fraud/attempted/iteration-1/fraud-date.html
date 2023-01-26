@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{% include './navigation/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <br>
+  <br>
+
+  <div class="govuk-grid-column-two-thirds">
+
+
+            {% include './name-bar/_bar-jose.html' %}
+
+             {{ govukBackLink({
+                text: "Back",
+                href: "javascript:history.go(-1)"
+                                }) }}
+
+              <br><br>
+
+
+              <h2 class="govuk-heading-l">Date fraud attempted?</h2>
+
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" role="group" aria-describedby="fraud-date-hint">
+                  <div class="govuk-date-input" id="fraud-date">
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="fraud-date-day">
+                          Day
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="fraud-date-day" name="fraud-date-day" type="text" inputmode="numeric">
+                      </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="fraud-date-month">
+                          Month
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="fraud-date-month" name="fraud-date-month" type="text" inputmode="numeric">
+                      </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="fraud-date-year">
+                          Year
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="fraud-date-year" name="fraud-date-year" type="text" inputmode="numeric">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+
+              <a href="record-fraud" role="button" draggable="false" button class="govuk-button" data-module="govuk-button">
+                Confirm
+              </a>
+
+                  </div>
+                  </div>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> / <br>
+        <b>Error messages:</b> None  <br>
+        <b>Notes:</b> None <br>
+      </div>
+    </details>
+
+  </div>
+
+  </div>
+</div>
+
+{% endblock %}

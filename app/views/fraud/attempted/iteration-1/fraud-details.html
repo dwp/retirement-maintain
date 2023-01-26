@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{% include './navigation/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <br>
+  <br>
+
+  <div class="govuk-grid-column-two-thirds">
+
+
+            {% include './name-bar/_bar-jose.html' %}
+
+             {{ govukBackLink({
+                text: "Back",
+                href: "javascript:history.go(-1)"
+                                }) }}
+
+              <br><br>
+
+
+              <h2 class="govuk-heading-l">Details</h2>
+
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="fraud-details-hint">
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="fraud-details" name="fraud-details" type="checkbox" value="carcasses">
+                      <label class="govuk-label govuk-checkboxes__label" for="fraud-details">
+                        Bank details
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="fraud-details-2" name="fraud-details" type="checkbox" value="mines">
+                      <label class="govuk-label govuk-checkboxes__label" for="fraud-details-2">
+                        Phone number
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="fraud-details-3" name="fraud-details" type="checkbox" value="farm">
+                      <label class="govuk-label govuk-checkboxes__label" for="fraud-details-3">
+                        Address
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="fraud-details-3" name="fraud-details" type="checkbox" value="farm">
+                      <label class="govuk-label govuk-checkboxes__label" for="fraud-details-3">
+                        Payment frequency
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+
+
+              <a href="record-fraud" role="button" draggable="false" button class="govuk-button" data-module="govuk-button">
+                Confirm
+              </a>
+
+                  </div>
+                  </div>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> / <br>
+        <b>Error messages:</b> None  <br>
+        <b>Notes:</b> None <br>
+      </div>
+    </details>
+
+  </div>
+
+  </div>
+</div>
+
+{% endblock %}
