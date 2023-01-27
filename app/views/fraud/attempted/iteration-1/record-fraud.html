@@ -31,37 +31,69 @@ GOV.UK Prototype Kit
               <br><br>
 
 
-              <h2 class="govuk-heading-l">Record fraud</h2>
+  <form method="post">
+
+
+              <h2 class="govuk-heading-l">Log fraud attempt</h2>
+              <div id="changed-name-hint" class="govuk-hint">
+   Complete as much information as you can.
+ </div>
               <table class="govuk-table">
                 <tbody class="govuk-table__body">
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Date</th>
-                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell">{% if data.fdd %}
+                    {{data.fdd}}/{{data.fdm}}/{{data.fdy}}
+                    {% else %}
+                    {% endif %}</td>
                     <td class="govuk-table__cell"><a class="govuk-link" href="fraud-date">
-                        Add
+                      {% if data.fdd %}
+                      Change
+                      {% else %}
+                      Add
+                      {% endif %}
                       </a></td>
                   </tr>
                   <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">Method of contact</th>
-                    <td class="govuk-table__cell"></td>
+
+  <th scope="row" class="govuk-table__header">Contact method</th>
+  <td class="govuk-table__cell">
+                      {% if data.moc %}
+                      {{data.moc}}
+                      {% else %}
+                      {% endif %}</td>
+
                     <td class="govuk-table__cell"><a class="govuk-link" href="fraud-method">
-                        Add
+                      {% if data.moc %}
+                      Change
+                      {% else %}
+                      Add
+                      {% endif %}
                       </a></td>
                   </tr>
                   <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Details to change</th>
-                      <td class="govuk-table__cell"></td>
+                      <td class="govuk-table__cell">
+                      {% if data.fd %}
+                      {{data.fd}}
+                      {% else %}
+                      {% endif %}</td>
                       <td class="govuk-table__cell"><a class="govuk-link" href="fraud-details">
-                          Add
+                        {% if data.fd %}
+                        Change
+                        {% else %}
+                        Add
+                        {% endif %}
                         </a></td>
                     </tr>
 
                 </tbody>
               </table>
 
-              <a href="personal-deleted.html" role="button" draggable="false" button class="govuk-button" data-module="govuk-button">
-                Confirm
-              </a>
+
+              <button type="submit" class="govuk-button">
+              Continue
+              </button>
 
                   </div>
                   </div>

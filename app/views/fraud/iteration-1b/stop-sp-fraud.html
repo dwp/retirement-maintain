@@ -53,7 +53,7 @@ GOV.UK Prototype Kit
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
             </legend>
 
-            <h2 class="govuk-heading-l">Why are you stopping the claimant's <br>State Pension?</h2>
+            <h2 class="govuk-heading-l">Do you need to stop the claimant's <br>State Pension?</h2>
 
           <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
@@ -62,16 +62,23 @@ GOV.UK Prototype Kit
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="stop-sp-1" name="stop-sp" type="radio" value="death">
         <label class="govuk-label govuk-radios__label" for="stop-sp">
-          Claimant has died
+          Yes, stop payments
         </label>
       </div>
 
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
         <label class="govuk-label govuk-radios__label" for="stop-sp">
-          Claimant has deferred their State Pension
+          No
         </label>
       </div>
+
+      <!-- <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="stop-sp-3" name="stop-sp" type="radio" value="abroad">
+        <label class="govuk-label govuk-radios__label" for="stop-sp">
+         Claimant moved abroad and cannot be paid
+        </label>
+      </div> -->
 
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="stop-sp-4" name="stop-sp" type="radio" value="custody" data-aria-controls="conditional-custody">
@@ -160,13 +167,6 @@ GOV.UK Prototype Kit
         <input class="govuk-radios__input" id="stop-sp-5" name="stop-sp" type="radio" value="suspend" data-aria-controls="conditional-suspend">
         <label class="govuk-label govuk-radios__label" for="stop-sp">
         Temporary suspension pending investigation
-        </label>
-      </div>
-
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
-        <label class="govuk-label govuk-radios__label" for="stop-sp">
-          Fraud
         </label>
       </div>
 
