@@ -31,38 +31,58 @@ GOV.UK Prototype Kit
 
             <a href="payment" class="govuk-back-link">Back</a>
             <br><br>
-            <h2 class="govuk-heading-l">Event details</h2>
+            <h2 class="govuk-heading-l">Fraud attempt details</h2>
 
             <div class="govuk-form-group">
 
               <table class="govuk-table">
                 <tbody class="govuk-table__body">
                   <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">Date</th>
+                    <th scope="row" class="govuk-table__header">Date of contact</th>
                     <td class="govuk-table__cell">12 January 2023</td>
                   </tr>
                   <tr class="govuk-table__row">
 
-  <th scope="row" class="govuk-table__header">Contact method</th>
+  <th scope="row" class="govuk-table__header">Contact type</th>
   <td class="govuk-table__cell">
                       Telephone</td>
                   </tr>
+                  <th scope="row" class="govuk-table__header">Security questions</th>
+                  <td class="govuk-table__cell">
+                                      Failed</td>
+                                  </tr>
                   <tr class="govuk-table__row">
-                      <th scope="row" class="govuk-table__header">Details to change</th>
+                      <th scope="row" class="govuk-table__header">Change attempted</th>
                       <td class="govuk-table__cell">
                     Bank details<br>
                     Address</td>
                     </tr>
 
+
                 </tbody>
               </table>
 
             <p>  <a class="govuk-link" href="delete-timeline-entry">
-                Remove timeline entry
+                Delete timeline event
                 </a></p>
 
             </div>
 
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                <b>URL, errors and notes</b>
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                <b>URL:</b> /timeline-event <br>
+                <b>Error messages:</b> None  <br>
+                <b>Notes:</b> None <br>
+              </div>
+            </details>
 
         </div>
       </div>

@@ -32,7 +32,7 @@ GOV.UK Prototype Kit
 
             <a href="payment" class="govuk-back-link">Back</a>
             <br><br>
-            <h2 class="govuk-heading-l">Do you want to remove this timeline event?</h2>
+            <h2 class="govuk-heading-l">    Delete this timeline event?</h2>
 
             <div class="govuk-form-group">
 
@@ -40,18 +40,31 @@ GOV.UK Prototype Kit
                 <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
                 <strong class="govuk-warning-text__text">
                   <span class="govuk-warning-text__assistive">Warning</span>
-                  You will not be able to get this event back. You will need to re-enter details if you need
-                  em back once ya delete em.
+This will permanently delete this timeline event.<br> You cannot undo this action.
+
                 </strong>
               </div>
-
+<div class="govuk-button-group">
               <button class="govuk-button govuk-button--warning" data-module="govuk-button">
-                Remove event
-              </button>
-
+    Delete             </button>
+ <a class="govuk-link" href="timeline-fraud-details">Cancel</a>
             </div>
 
+            <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
+
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                <b>URL, errors and notes</b>
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                <b>URL:</b> /delete-timeline-event <br>
+                <b>Error messages:</b> None  <br>
+                <b>Notes:</b> None <br>
+              </div>
+            </details>
         </div>
       </div>
     </main>
