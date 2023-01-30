@@ -33,38 +33,31 @@ GOV.UK Prototype Kit
 
               <h2 class="govuk-heading-l">What details were they trying to change?</h2>
 
+  
               <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="fd-hint">
-                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="fd-3" name="fd" type="checkbox" value="Address">
-                      <label class="govuk-label govuk-checkboxes__label" for="fd-3">
-                        Address
-                      </label>
-                    </div>
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="fd" name="fd" type="checkbox" value="Bank details">
-                      <label class="govuk-label govuk-checkboxes__label" for="fd">
-                      Bank details
-                      </label>
-                    </div>
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="fd-2" name="fd" type="checkbox" value="Phone number">
-                      <label class="govuk-label govuk-checkboxes__label" for="fd-2">
-                        Contact details
-                      </label>
-                    </div>
+                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                      Did the caller pass the security questions?
+                    </h1>
+                  </legend>
 
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="fd-3" name="fd" type="checkbox" value="Payment frequency">
-                      <label class="govuk-label govuk-checkboxes__label" for="fd-3">
-                        Payment frequency
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                      <label class="govuk-label govuk-radios__label" for="changed-name">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                      <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                        No
                       </label>
                     </div>
                   </div>
                 </fieldset>
               </div>
-
 
               <button type="submit" class="govuk-button">
               Continue
