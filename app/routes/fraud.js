@@ -32,5 +32,15 @@ router.post('/fraud/attempted/iteration-1/record-fraud', (req, res) => {
 ;
 
 
+router.post('/fraud/attempted/iteration-1/stop-sp', function(req, res) {
+  if ( req.body['stop-sp'] === 'fraud' ) {
+    res.redirect('');
+  } else {
+    res.redirect('');
+  }
+});
+
+
+
 
   module.exports = router;
