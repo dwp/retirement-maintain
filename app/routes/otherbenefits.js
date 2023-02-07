@@ -25,7 +25,7 @@ router.post('/carers-allowance/iteration-1/carers-allowance-decision-1', functio
   if ( req.body['carers-allowance'] === 'yes' ) {
     res.redirect('carers-allowance-details');
   } else {
-    res.redirect('refused-2');
+    res.redirect('no-offset');
   }
 });
 
