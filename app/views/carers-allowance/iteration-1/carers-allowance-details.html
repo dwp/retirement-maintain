@@ -13,7 +13,6 @@ GOV.UK Prototype Kit
 {% block headEnd %}
 {% endblock %}
 
-
 <div class="govuk-width-container">
   <div class="govuk-grid-column-two-thirds">
 
@@ -23,49 +22,49 @@ GOV.UK Prototype Kit
 
 
           <br><br>
-          {% include './_bar-returned.html' %}
+          {% include './_bar-task-outstanding.html' %}
 
-<form method="post" action="change-bank">
-
-  {{ govukBackLink({
-    text: "Back",
-    href: "javascript:history.go(-1)"
-                    }) }}
+          {{ govukBackLink({
+            text: "Back",
+            href: "javascript:history.go(-1)"
+                            }) }}
 
           <br><br>
-          <div class="govuk-form-group">
+          <form>
+<form method="post">
+            <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
-        Select the location of the new account
+        Does Luke Beasley get any Unemployability Supplement?
       </h1>
-    </legend>
-
-<br>
-
-    <div class="govuk-radios">
+    </legend><br>
+    <div class="govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="bankaccounttype" name="bankaccounttype" type="radio" value="uk">
-        <label class="govuk-label govuk-radios__label" for="bankaccounttype">
-            UK bank or building society account
+        <input class="govuk-radios__input" id="war-pension-decision" name="war-pension-decision" type="radio" value="award-state-pension">
+        <label class="govuk-label govuk-radios__label" for="war-pension-decision">
+          Yes
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="bankaccounttype-2" name="bankaccounttype" type="radio" value="international">
-        <label class="govuk-label govuk-radios__label" for="bankaccounttype-2">
-          Overseas bank account
+        <input class="govuk-radios__input" id="war-pension-decision-2" name="war-pension-decision" type="radio" value="dont-award">
+        <label class="govuk-label govuk-radios__label" for="war-pension-decision-2">
+        No
         </label>
       </div>
+    </div>
   </fieldset>
 </div>
 
-
-          <button type="submit" class="govuk-button">Confirm</button>
+            <button type="submit" class="govuk-button">
+              Continue
+            </button>
+          </form>
         </div>
       </div>
     </main>
 
-
+  </form>
 </div>
 </div>
 
