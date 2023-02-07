@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+              {% include './_bar-task-outstanding.html' %}
+
+                      <form method="post" action="change-to-award">
+
+                        <h1 class="govuk-heading-l">Summary</h1>
+
+                        <table class="govuk-table">
+
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                            <td class="govuk-table__cell" scope="row">From</td>
+                            <td class="govuk-table__cell" scope="row"></td>
+                            <td class="govuk-table__cell" scope="row"></td>
+                            <td class="govuk-table__cell">5 Jun 2021</td>
+
+
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                            <td class="govuk-table__cell" scope="row">To</td>
+                            <td class="govuk-table__cell" scope="row"></td>
+                            <td class="govuk-table__cell" scope="row"></td>
+                            <td class="govuk-table__cell">29 Oct 2021</td>
+
+                            <tbody class="govuk-table__body">
+                              <tr class="govuk-table__row">
+                              <td class="govuk-table__cell" scope="row">Weekly amount to withhold</td>
+                              <td class="govuk-table__cell" scope="row"></td>
+                              <td class="govuk-table__cell" scope="row"></td>
+                              <td class="govuk-table__cell">£3.50</td>
+
+                        </table>
+
+
+
+<button class="govuk-button" data-module="govuk-button">
+ Continue
+</button>
+
+<!--
+     <a href="get-next-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+          Return task to queue
+        </a>
+
+        </form> -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
