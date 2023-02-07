@@ -67,13 +67,12 @@ const startdate2 = require('./routes/startdate2');
 const widowsnewclaims = require('./routes/widowsnewclaims');
 const widowsnewclaims3 = require('./routes/widowsnewclaims3');
 const widowsconversion = require('./routes/widowsconversion');
-const warpension = require('./routes/warpension');
+const otherbenefits = require('./routes/otherbenefits');
 const widowsnewclaims2 = require('./routes/widowsnewclaims2');
 const widows = require('./routes/widows');
 const internationalra = require('./routes/internationalra');
 const internationalanzac = require('./routes/internationalanzac');
 const fraud = require('./routes/fraud');
-const carersallowance = require('./routes/carersallowance');
 
 //copy the router use and update the sprint version
 router.use(newclaims);
@@ -136,7 +135,7 @@ router.use(internationalra);
 router.use(internationalanzac);
 router.use(widowsconversion);
 router.use(fraud);
-router.use(carersallowance);
+router.use(otherbenefits);
 
 
 
