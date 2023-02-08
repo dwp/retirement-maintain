@@ -8,7 +8,7 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './navigation/_header-nav-unselected.html' %}
+{% include './header/_header-nav-tasks.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -19,25 +19,25 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-
-<<<<<<< Updated upstream
-        <h1 class="govuk-heading-xl">Send CFN901 form
+      <br>
+        <h1 class="govuk-heading-xl">Consider the State Pension entitlement of a spouse
         </h1>
-<p>Use information from the citizen's claim to add details to the CFN901 form and post it to the claimant.</p>
-=======
-        <h1 class="govuk-heading-xl">Send form
-        </h1>
-<p>Use information from the citizen's claim to input details into the CFN901 System and then post the form to the claimant.</p>
->>>>>>> Stashed changes
+        <p>Check the record of the claimant's spouse to see if there is any change to their State Pension
+          entitlement.
+        </p>
 
-        <form method="post" action="rpc-task">
-          <br>
+        <form method="post" action="tasks-3">
+
+<br>
           <button class="govuk-button" data-module="govuk-button">
             Start this task
           </button>
-          <a href="get-a-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
-            Return task to queue
-          </a>
+
+        <!-- <a href="tasks" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+          Return task to queue
+        </a> -->
+
+        </form>
 
 
 
@@ -47,6 +47,7 @@ GOV.UK Prototype Kit
 
     </div>
 
+  </div>
 
 </main>
       </div>
