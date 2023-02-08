@@ -22,12 +22,53 @@ GOV.UK Prototype Kit
 
 {% include './_bar.html' %}
 
-<p>Enter this information into the CFN901 System.</p>
+<h1 class="govuk-heading-l">Print and send the form</h1>
 
-        <form method="post" action="confirm">
+
 
 <table class="govuk-table">
-  <caption class="govuk-table__caption govuk-table__caption--m">Claimant</caption>
+  <!--<caption class="govuk-table__caption govuk-table__caption--m">Claimant</caption>-->
+  <tbody class="govuk-table__body">
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header" style="width: 50%">Claim received</th>
+      <td class="govuk-table__cell">
+        12 October 2022</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+<h1 class="govuk-heading-m">1. Enter the information</h1>
+<p>Enter this information into the CFN901 system</p>
+
+        <form method="post" action="get-a-task-2">
+
+<table class="govuk-table">
+  <!--<caption class="govuk-table__caption govuk-table__caption--m">Countries claimant has lived or worked in</caption>-->
+  <tbody class="govuk-table__body">
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Spain</th>
+      <td class="govuk-table__cell" style="width: 50%">Lived</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">France</th>
+      <td class="govuk-table__cell">Lived and worked</td>
+    </tr>
+
+  </tbody>
+  </table>
+<!--  <p>Include this information on the United States letter.</p>-->
+
+<br>
+<h1 class="govuk-heading-m">2. Print and post the form</h1>
+<p>Print and send it to the claimant with a reply envelope.</p>
+<table class="govuk-table">
+  <!--<caption class="govuk-table__caption govuk-table__caption--m">Claimant</caption>-->
   <tbody class="govuk-table__body">
 
     <tr class="govuk-table__row">
@@ -40,28 +81,15 @@ GOV.UK Prototype Kit
   </tbody>
 </table>
 
-
-
-
-<table class="govuk-table">
-  <caption class="govuk-table__caption govuk-table__caption--m">Countries claimant has lived or worked in</caption>
-  <tbody class="govuk-table__body">
-
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Spain</th>
-      <td class="govuk-table__cell">Lived</td>
-    </tr>
-
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">France</th>
-      <td class="govuk-table__cell">Lived and worked</td>
-    </tr>
-  </tbody>
-</table>
-
 <button class="govuk-button" data-module="govuk-button">
-  Continue
+  Confirm form sent
 </button>
+
+<br>
+<a href="#" class="govuk-link govuk-link--no-visited-state">EEA liaison already complete</a>
+
+
+
 
 
         </div>
