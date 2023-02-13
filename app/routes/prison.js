@@ -28,7 +28,7 @@ router.post('/prison/iteration-1/date-entered-prison', (req, res) => {
 ;
 
 // Prison overpayment referral
-router.post('/prison/iteration-1/prison/iteration-1-overpayment', function(req, res) {
+router.post('/prison/iteration-1/prison-overpayment', function(req, res) {
   if ( req.body['prison-overpayment'] === 'yes' ) {
     res.redirect('prison-debt-referral');
   } else {
@@ -36,12 +36,12 @@ router.post('/prison/iteration-1/prison/iteration-1-overpayment', function(req, 
   }
 });
 
-router.post('/prison/iteration-1/prison/iteration-1-debt-referral', (req, res) => {
+router.post('/prison/iteration-1/prison-debt-referral', (req, res) => {
   res.redirect('personal-prison')
 })
 ;
 
-router.post('/prison/iteration-1/prison/iteration-1-restart-sp', (req, res) => {
+router.post('/prison/iteration-1/prison-restart-sp', (req, res) => {
   res.redirect('personal')
 })
 ;
@@ -81,12 +81,28 @@ router.post('/prison/iteration-2/stop-sp', function(req, res) {
 
 
 router.post('/prison/iteration-2/date-entered-prison', (req, res) => {
-  res.redirect('prison-overpayment')
+  res.redirect('in-prison')
 })
 ;
 
+// Is the claimant still in prison?
+router.post('/prison/iteration-2/in-prison', function(req, res) {
+  if ( req.body['in-prison'] === 'yes' ) {
+    res.redirect('prison-overpayment');
+  } else {
+    res.redirect('date-left-prison');
+  }
+});
+
+
+router.post('/prison/iteration-2/date-left-prison', (req, res) => {
+  res.redirect('prison-overpayment-1')
+})
+;
+
+
 // Prison overpayment referral
-router.post('/prison/iteration-2/prison/iteration-2-overpayment', function(req, res) {
+router.post('/prison/iteration-2/prison-overpayment', function(req, res) {
   if ( req.body['prison-overpayment'] === 'yes' ) {
     res.redirect('prison-debt-referral');
   } else {

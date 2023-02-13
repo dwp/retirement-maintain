@@ -23,7 +23,7 @@ GOV.UK Prototype Kit
 <br>
 
 
-{% include './name-bar/_bar-jose-prison.html' %}
+{% include './name-bar/_bar-jose.html' %}
 
         </div>
       </main>
@@ -33,30 +33,24 @@ GOV.UK Prototype Kit
               href: "javascript:history.go(-1)"
                               }) }}
 
-      <form method="post">
-<br>
-<h1 class="govuk-heading-l">There has been an overpayment <br>
-  of State Pension</h1>
+<br><br>
 
-<br>
+      <form method="post">
+
+<h1 class="govuk-heading-l">Is the claimant still in prison?</h1>
 
 <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="prison-overpayment-hint">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-      <h1 class="govuk-fieldset__heading">
-        Are you able to refer the overpayment to the debt management service now?
-      </h1>
-    </legend>
+  <fieldset class="govuk-fieldset" aria-describedby="in-prison-hint">
     <div class="govuk-radios govuk-radios--inline">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="prison-overpayment" name="prison-overpayment" type="radio" value="yes">
-        <label class="govuk-label govuk-radios__label" for="prison-overpayment">
+        <input class="govuk-radios__input" id="in-prison" name="in-prison" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="in-prison">
           Yes
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="prison-overpayment-2" name="prison-overpayment" type="radio" value="no">
-        <label class="govuk-label govuk-radios__label" for="prison-overpayment-2">
+        <input class="govuk-radios__input" id="in-prison-2" name="in-prison" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="in-prison-2">
           No
         </label>
       </div>
@@ -80,7 +74,7 @@ GOV.UK Prototype Kit
         </span>
       </summary>
       <div class="govuk-details__text">
-        <b>URL:</b> /prison-overpayment <br>
+        <b>URL:</b> /in-prison <br>
         <b>Error messages:</b> Nothing selected: Select yes if you are able to refer the overpayment to the debt management service now <br>
         <b>Notes:</b> None <br>
       </div>
