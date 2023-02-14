@@ -37,23 +37,23 @@ GOV.UK Prototype Kit
 
       <form method="post">
 
-<h1 class="govuk-heading-l">Is the claimant still in prison?</h1>
+<h1 class="govuk-heading-l">Have they left prison?</h1>
 
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="in-prison-hint">
     <div class="govuk-radios govuk-radios--inline">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="in-prison" name="in-prison" type="radio" value="yes">
-        <label class="govuk-label govuk-radios__label" for="in-prison">
+        <input class="govuk-radios__input" id="in-prison-2" name="in-prison" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="in-prison-2">
           Yes
         </label>
       </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="in-prison-2" name="in-prison" type="radio" value="no">
-        <label class="govuk-label govuk-radios__label" for="in-prison-2">
-          No
-        </label>
-      </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="in-prison" name="in-prison" type="radio" value="yes">
+          <label class="govuk-label govuk-radios__label" for="in-prison">
+            No
+          </label>
+        </div>
     </div>
 
   </fieldset>
@@ -75,7 +75,7 @@ GOV.UK Prototype Kit
       </summary>
       <div class="govuk-details__text">
         <b>URL:</b> /in-prison <br>
-        <b>Error messages:</b> Nothing selected: Select yes if you are able to refer the overpayment to the debt management service now <br>
+        <b>Error messages:</b><br> Nothing selected: Select yes if they have left prison<br>
         <b>Notes:</b> None <br>
       </div>
     </details>
