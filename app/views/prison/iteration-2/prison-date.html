@@ -43,7 +43,7 @@ GOV.UK Prototype Kit
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
             </legend>
 
-            <h2 class="govuk-heading-l">What date did the claimant enter prison?</h2>
+            <h2 class="govuk-heading-l">When did their prison sentence start?</h2>
 
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
@@ -94,8 +94,12 @@ GOV.UK Prototype Kit
       </summary>
       <div class="govuk-details__text">
         <b>URL:</b> /stop-state-pension <br>
-        <b>Error messages:</b> Nothing selected: Select why you are stopping the claimant's State Pension
-        <br>Prison date in the future: Date claimant entered prison must be today or in the past
+        <b>Error messages:</b> <br>
+
+        Empty: Enter a real date, like 12 2 2019<br>
+        Invalid: Enter a real date, like 12 2 2019  <br>
+        Date before DOB: Date their prison sentence started must be after their date of birth<br>
+        Date in the future: Date their sentence started must be today or in the past
         <br><b>Notes:</b> None <br>
       </div>
     </details>
