@@ -131,10 +131,15 @@ GOV.UK Prototype Kit
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-      Reissue payment
-          <p><br>Reissue payment with adjustment - pension credit and debt<br></p>
+      Returned payments
+          <p><br>Reissuing and restarting when a payment is returned<br></p>
         </span>
       </h2>
+    </div>
+    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+      <div class="app-most-recent">
+    {% include 'notes/restart-payments.html' %}
+      </div>
     </div>
     <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
       <div class="app-most-recent">

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form method="post">
+
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:history.go(-1)"
+                    }) }}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        How would you like to confirm your identity?
+      </h1>
+
+      <div class="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="confirm-identity" name="confirm-identity" type="radio"
+            value="code">
+          <label class="govuk-label govuk-radios__label" for="confirm-identity">
+            <b>I have an invitation letter</b><br>
+            If you’ve been sent a letter, your unique invitation code will be included in this letter.
+          </label>
+        </div>
+        <br>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="confirm-identity-2" name="confirm-identity" type="radio"
+            value="verify">
+          <label class="govuk-label govuk-radios__label" for="confirm-identity-2">
+            <b>I haven’t got an invitation letter</b> <br>You can prove your identity with GOV.UK Verify instead.
+          </label>
+        </div>
+      </div>
+      <br><br>
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+
+    </div>
+  </div>
+
+</form>
+
+
+
+{% endblock %}

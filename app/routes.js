@@ -73,6 +73,7 @@ const widows = require('./routes/widows');
 const internationalra = require('./routes/internationalra');
 const internationalanzac = require('./routes/internationalanzac');
 const fraud = require('./routes/fraud');
+const citizen = require('./routes/citizen');
 
 //copy the router use and update the sprint version
 router.use(newclaims);
@@ -136,6 +137,7 @@ router.use(internationalanzac);
 router.use(widowsconversion);
 router.use(fraud);
 router.use(otherbenefits);
+router.use(citizen);
 
 
 
