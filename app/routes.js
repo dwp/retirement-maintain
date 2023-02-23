@@ -72,6 +72,7 @@ const widowsnewclaims2 = require('./routes/widowsnewclaims2');
 const widows = require('./routes/widows');
 const internationalra = require('./routes/internationalra');
 const internationalanzac = require('./routes/internationalanzac');
+const internationaleea = require('./routes/internationaleea');
 const fraud = require('./routes/fraud');
 const citizen = require('./routes/citizen');
 
@@ -134,6 +135,7 @@ router.use(widowsnewclaims2);
 router.use(widows);
 router.use(internationalra);
 router.use(internationalanzac);
+router.use(internationaleea);
 router.use(widowsconversion);
 router.use(fraud);
 router.use(otherbenefits);
