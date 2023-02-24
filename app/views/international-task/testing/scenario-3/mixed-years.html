@@ -22,14 +22,15 @@ GOV.UK Prototype Kit
 
 {% include './_bar.html' %}
 
-<h1 class="govuk-heading-l">Time spent abroad</h1>
+<h1 class="govuk-heading-l">Check for mixed years and request foreign insurance record</h1>
+
 <bR>
 
             <table class="govuk-table">
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Spain</h2>
               {% if data.mixedyearsspain%}
               {% else %}
-                  <a href="mixed-years-spain" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 54%">Check for qualifying years</span>
+                  <a href="mixed-years-spain" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 60%">Consider mixed years</span>
                 {% endif %}
               </a>
               <br><br>
@@ -56,7 +57,7 @@ GOV.UK Prototype Kit
                 </tr>
               {% if data.mixedyearsspain %}
                 <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Partial quaifying years</th>
+                  <th scope="row" class="govuk-table__header">Mixed years</th>
                   <td class="govuk-table__cell"style="width: 35%">{{data.mixedyearsspain}}</td>
                   <td class="govuk-table__cell"><a href="mixed-years-spain" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right">
                     {% if data.spaininsurance %}
@@ -83,7 +84,7 @@ GOV.UK Prototype Kit
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Austria</h2>
               {% if data.mixedyearsaustria %}
               {% else %}
-                  <a href="mixed-years-austria" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 52%">Check for qualifying years</span></a>
+                  <a href="mixed-years-austria" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 57%">Consider mixed years</span></a>
                 {% endif %}
               <br><br>
               <tbody class="govuk-table__body">
@@ -109,7 +110,7 @@ GOV.UK Prototype Kit
                 </tr>
                 {% if data.mixedyearsaustria %}
                 <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Partial quaifying years</th>
+                  <th scope="row" class="govuk-table__header">Mixed years</th>
                   <td class="govuk-table__cell"style="width: 35%">{{data.mixedyearsaustria}}</td>
                   <td class="govuk-table__cell"><a href="mixed-years-austria" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right">
                     {% if data.spaininsurance %}

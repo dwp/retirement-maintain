@@ -3,33 +3,35 @@ const router = express.Router()
 
 // Iteration 1
 
-router.post('/international-task/eea-iteration-2/mixed-years-spain', function(req, res) {
-  if ( req.body['mixedyearsspain'] === 'Yes' ) {
-    res.redirect('foreign-insurance-request-spain');
+router.post('/international-task/testing/scenario-1/cfn-task', (req, res) => {
+  res.redirect('/international-task/testing/scenario-1/mixed-years-ireland')
+})
+;
+
+
+
+router.post('/international-task/testing/scenario-1/mixed-years-ireland', function(req, res) {
+  if ( req.body['mixedyearsireland'] === 'Yes' ) {
+    res.redirect('foreign-insurance-request-ireland');
   } else {
-    res.redirect('mixed-years');
+    res.redirect('confirmation');
   }
 });
 
 
-router.post('/international-task/eea-iteration-2/foreign-insurance-request-spain', function(req, res) {
+router.post('/international-task/testing/scenario-1/foreign-insurance-request-ireland', function(req, res) {
   if ( req.body['spaininsurance'] === 'Sent' ) {
-    res.redirect('mixed-years');
+    res.redirect('confirmation');
   } else {
-    res.redirect('mixed-years');
+    res.redirect('confirmation');
   }
 });
 
 
-
-router.post('/international-task/eea-iteration-2/mixed-years-austria', function(req, res) {
-  if ( req.body['mixedyearsaustria'] === 'Yes' ) {
-    res.redirect('foreign-insurance-request-austria');
-  } else {
-    res.redirect('mixed-years');
-  }
-});
-
+router.post('/international-task/testing/scenario-1/confirmation', (req, res) => {
+  res.redirect('/international-task/testing/scenario-1/get-a-task-2')
+})
+;
 
 
 
