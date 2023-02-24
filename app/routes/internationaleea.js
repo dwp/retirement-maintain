@@ -129,7 +129,46 @@ router.post('/international-task/testing/scenario-2/mixed-years', (req, res) => 
 ;
 
 
+// Scenario three
 
+router.post('/international-task/testing/scenario-3/cfn-task', (req, res) => {
+  res.redirect('/international-task/testing/scenario-3/mixed-years-spain')
+})
+;
 
+router.post('/international-task/testing/scenario-3/mixed-years-spain', function(req, res) {
+  if ( req.body['mixedyearsspain'] === 'Yes' ) {
+    res.redirect('foreign-insurance-request-spain');
+  } else {
+    res.redirect('mixed-years-france');
+  }
+});
+
+router.post('/international-task/testing/scenario-3/foreign-insurance-request-spain', function(req, res) {
+  if ( req.body['spaininsurance'] === 'Sent' ) {
+    res.redirect('mixed-years-france');
+  } else {res.redirect('mixed-years-france');
+}
+});
+
+router.post('/international-task/testing/scenario-3/mixed-years-france', function(req, res) {
+  if ( req.body['mixedyearsfrance'] === 'Yes' ) {
+    res.redirect('foreign-insurance-request-france');
+  } else {
+    res.redirect('confirmation');
+  }
+});
+
+router.post('/international-task/testing/scenario-3/foreign-insurance-request-france', function(req, res) {
+  if ( req.body['franceinsurance'] === 'Sent' ) {
+    res.redirect('confirmation');
+  } else {res.redirect('confirmation');
+}
+});
+
+router.post('/international-task/testing/scenario-3/confirmation', (req, res) => {
+  res.redirect('/international-task/testing/scenario-3/get-a-task-2')
+})
+;
 
   module.exports = router;
