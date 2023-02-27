@@ -24,23 +24,33 @@ GOV.UK Prototype Kit
 
 <form method="post">
 
-<h1 class="govuk-heading-l">Request foreign insurance record</h1>
+  <h1 class="govuk-heading-l">Request insurance record from Croatia</h1>
 
 <table class="govuk-table">
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Address</th>
+      <td class="govuk-table__cell">8 Mill Road<br>
+        Edinburgh<br>
+        EH23 1GR</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Date of birth</th>
+      <td class="govuk-table__cell">23 August 1957</td>
+    </tr>
+    <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Lived</th>
-      <td class="govuk-table__cell">Jun 1992 to Dec 2006</td>
+      <td class="govuk-table__cell">Mar 1986 to Sep 1993</td>
       <td class="govuk-table__cell"></td>
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Worked</th>
-      <td class="govuk-table__cell">Jun 1992 to Nov 2006</td>
+      <td class="govuk-table__cell">Mar 1986 to Aug 1993</td>
       <td class="govuk-table__cell"></td>
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Social security number</th>
-      <td class="govuk-table__cell">LBMSE93</td>
+      <td class="govuk-table__cell"></td>
       <td class="govuk-table__cell"></td>
     </tr>
   </tbody>
@@ -52,20 +62,20 @@ GOV.UK Prototype Kit
   <fieldset class="govuk-fieldset" aria-describedby="croatiainsurance-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
       <h1 class="govuk-fieldset__heading">
-        Have you sent the request?
+        Have you requested the insurance record?
       </h1>
     </legend>
     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="croatiainsurance" name="croatiainsurance" type="radio" value="Sent">
-        <label class="govuk-label govuk-radios__label" for="croatiainsurance">
-          Yes, sent it
+        <input class="govuk-radios__input" id="norwayinsurance" name="norwayinsurance" type="radio" value="Requested">
+        <label class="govuk-label govuk-radios__label" for="norwayinsurance">
+          Requested
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="croatiainsurance-2" name="croatiainsurance" type="radio" value="Not sent">
-        <label class="govuk-label govuk-radios__label" for="croatiainsurance-2">
-          No, not enough information
+        <input class="govuk-radios__input" id="norwayinsurance-2" name="norwayinsurance" type="radio" value="Not requested">
+        <label class="govuk-label govuk-radios__label" for="norwayinsurance-2">
+          Not requested
         </label>
       </div>
     </div>
