@@ -37,6 +37,12 @@ router.post('/international-task/eea-iteration-2/mixed-years-austria', function(
 
 // Scenario one
 
+router.post('/international-task/testing/scenario-1/task-details', (req, res) => {
+  res.redirect('/international-task/testing/scenario-1/cfn-task')
+})
+;
+
+
 router.post('/international-task/testing/scenario-1/cfn-task', (req, res) => {
   res.redirect('/international-task/testing/scenario-1/mixed-years-ireland')
 })
@@ -75,6 +81,10 @@ router.post('/international-task/testing/scenario-2/cfn-task', (req, res) => {
 })
 ;
 
+router.post('/international-task/testing/scenario-2/task-details', (req, res) => {
+  res.redirect('/international-task/testing/scenario-2/cfn-task')
+})
+;
 
 router.post('/international-task/testing/scenario-2/mixed-years-norway', function(req, res) {
   if ( req.body['mixedyearsnorway'] === 'Yes' ) {
@@ -130,6 +140,11 @@ router.post('/international-task/testing/scenario-2/mixed-years', (req, res) => 
 
 
 // Scenario three
+
+router.post('/international-task/testing/scenario-3/task-details', (req, res) => {
+  res.redirect('/international-task/testing/scenario-3/cfn-task')
+})
+;
 
 router.post('/international-task/testing/scenario-3/cfn-task', (req, res) => {
   res.redirect('/international-task/testing/scenario-3/mixed-years-spain')
