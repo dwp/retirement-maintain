@@ -22,7 +22,7 @@ GOV.UK Prototype Kit
 
 {% include './_bar.html' %}
 <form method="post">
-<h1 class="govuk-heading-l">All good?</h1>
+<h1 class="govuk-heading-l">Lived or worked abroad</h1>
 
 <bR>
 
@@ -47,7 +47,7 @@ GOV.UK Prototype Kit
                 </tr>
                 <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Social security number</th>
-                  <td class="govuk-table__cell">2300000-A</td>
+                  <td class="govuk-table__cell">3235432-A</td>
                   <td class="govuk-table__cell"></td>
                 </tr>
                 <tr class="govuk-table__row">
@@ -57,7 +57,7 @@ GOV.UK Prototype Kit
                 </tr>
               {% if data.mixedyearsspain %}
                 <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Mixed years</th>
+                  <th scope="row" class="govuk-table__header">Partial quaifying years</th>
                   <td class="govuk-table__cell"style="width: 35%">{{data.mixedyearsspain}}</td>
                   <td class="govuk-table__cell"><a href="mixed-years-spain" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right">
                     {% if data.spaininsurance %}
@@ -110,10 +110,10 @@ GOV.UK Prototype Kit
                 </tr>
                 {% if data.mixedyearsfrance %}
                 <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Mixed years</th>
+                  <th scope="row" class="govuk-table__header">Partial quaifying years</th>
                   <td class="govuk-table__cell"style="width: 35%">{{data.mixedyearsfrance}}</td>
                   <td class="govuk-table__cell"><a href="mixed-years-france" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right">
-                    {% if data.spaininsurance %}
+                    {% if data.franceinsurance %}
                     {% else %}
                     Change </a>{% endif %}</td>
                 </tr>
@@ -137,7 +137,7 @@ GOV.UK Prototype Kit
 
 
 <button class="govuk-button" data-module="govuk-button">
-  Continue
+  End task
 </button>
 
 
