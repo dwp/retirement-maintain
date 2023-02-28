@@ -60,7 +60,7 @@ router.post('/international-task/testing/scenario-1/mixed-years-ireland', functi
 
 
 router.post('/international-task/testing/scenario-1/foreign-insurance-request-ireland', function(req, res) {
-  if ( req.body['spaininsurance'] === 'Sent' ) {
+  if ( req.body['spaininsurance'] === 'Requested' ) {
     res.redirect('confirmation');
   } else {
     res.redirect('confirmation');
@@ -112,21 +112,21 @@ router.post('/international-task/testing/scenario-2/mixed-years-switzerland', fu
 });
 
 router.post('/international-task/testing/scenario-2/foreign-insurance-request-norway', function(req, res) {
-  if ( req.body['norwayinsurance'] === 'Sent' ) {
+  if ( req.body['norwayinsurance'] === 'Requested' ) {
     res.redirect('mixed-years');
   } else {res.redirect('mixed-years');
 }
 });
 
 router.post('/international-task/testing/scenario-2/foreign-insurance-request-switzerland', function(req, res) {
-  if ( req.body['switzerlandinsurance'] === 'Sent' ) {
+  if ( req.body['switzerlandinsurance'] === 'Requested' ) {
     res.redirect('mixed-years');
   } else {res.redirect('mixed-years');
 }
 });
 
 router.post('/international-task/testing/scenario-2/foreign-insurance-request-croatia', function(req, res) {
-  if ( req.body['croatiainsurance'] === 'Sent' ) {
+  if ( req.body['croatiainsurance'] === 'Requested' ) {
     res.redirect('mixed-years');
   } else {res.redirect('mixed-years');
 }
@@ -160,7 +160,7 @@ router.post('/international-task/testing/scenario-3/mixed-years-spain', function
 });
 
 router.post('/international-task/testing/scenario-3/foreign-insurance-request-spain', function(req, res) {
-  if ( req.body['spaininsurance'] === 'Sent' ) {
+  if ( req.body['spaininsurance'] === 'Requested' ) {
     res.redirect('mixed-years-france');
   } else {res.redirect('mixed-years-france');
 }
@@ -175,7 +175,7 @@ router.post('/international-task/testing/scenario-3/mixed-years-france', functio
 });
 
 router.post('/international-task/testing/scenario-3/foreign-insurance-request-france', function(req, res) {
-  if ( req.body['franceinsurance'] === 'Sent' ) {
+  if ( req.body['franceinsurance'] === 'Requested' ) {
     res.redirect('confirmation');
   } else {res.redirect('confirmation');
 }
