@@ -69,7 +69,7 @@ router.post('/international-task/testing/scenario-1/foreign-insurance-request-ir
 
 
 router.post('/international-task/testing/scenario-1/confirmation', (req, res) => {
-  res.redirect('/international-task/testing/scenario-1/get-a-task-2')
+  res.redirect('/international-task/testing/scenario-2/get-a-task')
 })
 ;
 
@@ -134,7 +134,7 @@ router.post('/international-task/testing/scenario-2/foreign-insurance-request-cr
 
 
 router.post('/international-task/testing/scenario-2/mixed-years', (req, res) => {
-  res.redirect('/international-task/testing/scenario-1/get-a-task-2')
+  res.redirect('/international-task/testing/scenario-3/get-a-task')
 })
 ;
 
