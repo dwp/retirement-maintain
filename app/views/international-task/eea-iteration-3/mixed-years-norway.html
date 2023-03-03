@@ -24,66 +24,55 @@ GOV.UK Prototype Kit
 
 <form method="post">
 
-  <h1 class="govuk-heading-l">Request insurance record from Spain</h1>
+  <h1 class="govuk-heading-l">Check for partial qualifying years</h1>
+  <p class="govuk-body">System to check: <b>NIRS</b></p>
 
+<h2 class="govuk-heading-m">Norway</h2>
 <table class="govuk-table">
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Address</th>
-      <td class="govuk-table__cell" style="width: 50%">35 Kingsway<br>
-Bolton<br>
-BL57 1XV</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Date of birth</th>
-      <td class="govuk-table__cell">23 May 1957</td>
-    </tr>
-    <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Lived</th>
-      <td class="govuk-table__cell">Jun 1992 to Dec 2006</td>
+      <td class="govuk-table__cell">Aug 1982 to Mar 1986</td>
       <td class="govuk-table__cell"></td>
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Worked</th>
-      <td class="govuk-table__cell">Jun 1992 to Nov 2006</td>
-      <td class="govuk-table__cell"></td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Social security number</th>
-      <td class="govuk-table__cell">3235432-A</td>
+      <td class="govuk-table__cell">Aug 1982 to Mar 1986</td>
       <td class="govuk-table__cell"></td>
     </tr>
   </tbody>
 </table>
 
-<br>
-
 <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="croatiainsurance-hint">
+  <fieldset class="govuk-fieldset" aria-describedby="mixed-years-norway-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
       <h1 class="govuk-fieldset__heading">
-        Have you requested the insurance record?
+        Can their time in Norway be used to increase their UK State Pension?
       </h1>
     </legend>
+    <div id="mixedyearsnorwayhint" class="govuk-hint">
+
+    </div>
     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="spaininsurance" name="spaininsurance" type="radio" value="Requested">
-        <label class="govuk-label govuk-radios__label" for="spaininsurance">
-          Requested
+        <input class="govuk-radios__input" id="mixedyearsnorway" name="mixedyearsnorway" type="radio" value="Yes">
+        <label class="govuk-label govuk-radios__label" for="mixedyearsnorway">
+          Yes
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="spaininsurance-2" name="spaininsurance" type="radio" value="Not requested">
-        <label class="govuk-label govuk-radios__label" for="spaininsurance-2">
-          Not requested
+        <input class="govuk-radios__input" id="mixedyearsnorway2" name="mixedyearsnorway" type="radio" value="No">
+        <label class="govuk-label govuk-radios__label" for="mixedyearsnorway2">
+          No
         </label>
       </div>
     </div>
   </fieldset>
 </div>
 
+
 <button class="govuk-button" data-module="govuk-button">
-  Confirm
+  Continue
 </button>
 
 

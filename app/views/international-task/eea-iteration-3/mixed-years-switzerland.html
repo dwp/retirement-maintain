@@ -24,66 +24,55 @@ GOV.UK Prototype Kit
 
 <form method="post">
 
-  <h1 class="govuk-heading-l">Request insurance record from France</h1>
+  <h1 class="govuk-heading-l">Check for partial qualifying years</h1>
+  <p class="govuk-body">System to check: <b>NIRS</b></p>
 
+<h2 class="govuk-heading-m">Switzerland</h2>
 <table class="govuk-table">
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Address</th>
-      <td class="govuk-table__cell" style="width: 50%">35 Kingsway<br>
-Bolton<br>
-BL57 1XV</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Date of birth</th>
-      <td class="govuk-table__cell">23 May 1957</td>
-    </tr>
-    <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Lived</th>
-      <td class="govuk-table__cell" style="width: 60%"> Mar 1986 to Mar 1990</td>
+      <td class="govuk-table__cell">Feb 1994 to Apr 1996</td>
       <td class="govuk-table__cell"></td>
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Worked</th>
-      <td class="govuk-table__cell"> Mar 1986 to Mar 1990</td>
+      <td class="govuk-table__cell">Feb 1994 to Apr 1996</td>
       <td class="govuk-table__cell"></td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Social security number</th>
-        <td class="govuk-table__cell">119284627381728</td>
-      <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right"></a></td>
     </tr>
   </tbody>
 </table>
 
-<br>
-
 <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="croatiainsurance-hint">
+  <fieldset class="govuk-fieldset" aria-describedby="mixedyearsswitzerland-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
       <h1 class="govuk-fieldset__heading">
-        Have you requested the insurance record?
+        Can their time in Switzerland be used to increase their UK State Pension?
       </h1>
     </legend>
+    <div id="mixedyearsswitzerland-hint" class="govuk-hint">
+
+    </div>
     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="franceinsurance" name="franceinsurance" type="radio" value="Requested">
-        <label class="govuk-label govuk-radios__label" for="franceinsurance">
-          Requested
+        <input class="govuk-radios__input" id="mixedyearsswitzerland" name="mixedyearsswitzerland" type="radio" value="Yes">
+        <label class="govuk-label govuk-radios__label" for="mixedyearsswitzerland">
+          Yes
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="franceinsurance-2" name="franceinsurance" type="radio" value="Not requested">
-        <label class="govuk-label govuk-radios__label" for="franceinsurance-2">
-          Not requested
+        <input class="govuk-radios__input" id="mixedyearsswitzerland-2" name="mixedyearsswitzerland" type="radio" value="No">
+        <label class="govuk-label govuk-radios__label" for="mixedyearsswitzerland-2">
+          No
         </label>
       </div>
     </div>
   </fieldset>
 </div>
 
+
 <button class="govuk-button" data-module="govuk-button">
-  Confirm
+  Continue
 </button>
 
 

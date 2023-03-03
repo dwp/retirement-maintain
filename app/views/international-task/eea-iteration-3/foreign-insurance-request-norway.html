@@ -24,55 +24,66 @@ GOV.UK Prototype Kit
 
 <form method="post">
 
-  <h1 class="govuk-heading-l">Check for partial qualifying years</h1>
-  <p class="govuk-body">System to check: <b>NIRS</b></p>
+  <h1 class="govuk-heading-l">Request insurance record from Norway</h1>
 
-<h2 class="govuk-heading-m">Spain</h2>
 <table class="govuk-table">
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Address</th>
+      <td class="govuk-table__cell">8 Mill Road<br>
+        Edinburgh<br>
+        EH23 1GR</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Date of birth</th>
+      <td class="govuk-table__cell">23 August 1957</td>
+    </tr>
+    <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Lived</th>
-      <td class="govuk-table__cell">Apr 1982 to Mar 1986</td>
+      <td class="govuk-table__cell">Aug 1982 to Mar 1986</td>
       <td class="govuk-table__cell"></td>
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Worked</th>
-      <td class="govuk-table__cell"style="width: 60%">Apr 1982 to Mar 1986</td>
+      <td class="govuk-table__cell">Aug 1982 to Mar 1986</td>
       <td class="govuk-table__cell"></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Social security number</th>
+        <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right"></a></td>
     </tr>
   </tbody>
 </table>
 
+<br>
+
 <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="mixedyearsspain-hint">
+  <fieldset class="govuk-fieldset" aria-describedby="norwayinsurance-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
       <h1 class="govuk-fieldset__heading">
-        Can their time in Spain be used to increase their UK State Pension?
+        Have you requested the insurance record?
       </h1>
     </legend>
-    <div id="mixedyearsspain-hint" class="govuk-hint">
-
-    </div>
     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="mixedyearsspain" name="mixedyearsspain" type="radio" value="Yes">
-        <label class="govuk-label govuk-radios__label" for="mixedyearsspain">
-          Yes
+        <input class="govuk-radios__input" id="norwayinsurance" name="norwayinsurance" type="radio" value="Requested">
+        <label class="govuk-label govuk-radios__label" for="norwayinsurance">
+          Requested
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="mixedyearsspain-2" name="mixedyearsspain" type="radio" value="No">
-        <label class="govuk-label govuk-radios__label" for="mixedyearsspain-2">
-          No
+        <input class="govuk-radios__input" id="norwayinsurance-2" name="norwayinsurance" type="radio" value="Not requested">
+        <label class="govuk-label govuk-radios__label" for="norwayinsurance-2">
+          Not requested
         </label>
       </div>
     </div>
   </fieldset>
 </div>
 
-
 <button class="govuk-button" data-module="govuk-button">
-  Continue
+  Confirm
 </button>
 
 
