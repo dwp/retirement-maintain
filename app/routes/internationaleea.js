@@ -186,4 +186,53 @@ router.post('/international-task/testing/scenario-3/confirmation', (req, res) =>
 })
 ;
 
+
+
+// ITERATION 3
+
+router.post('/international-task/eea-iteration-3/task-details', (req, res) => {
+  res.redirect('/international-task/eea-iteration-3/cfn-task')
+})
+;
+
+router.post('/international-task/eea-iteration-3/cfn-task', (req, res) => {
+  res.redirect('/international-task/eea-iteration-3/mixed-years-spain')
+})
+;
+
+router.post('/international-task/eea-iteration-3/mixed-years-spain', function(req, res) {
+  if ( req.body['mixedyearsspain'] === 'Yes' ) {
+    res.redirect('foreign-insurance-request-spain');
+  } else {
+    res.redirect('mixed-years-france');
+  }
+});
+
+router.post('/international-task/eea-iteration-3/foreign-insurance-request-spain', function(req, res) {
+  if ( req.body['spaininsurance'] === 'Requested' ) {
+    res.redirect('mixed-years-france');
+  } else {res.redirect('mixed-years-france');
+}
+});
+
+router.post('/international-task/eea-iteration-3/mixed-years-france', function(req, res) {
+  if ( req.body['mixedyearsfrance'] === 'Yes' ) {
+    res.redirect('foreign-insurance-request-france');
+  } else {
+    res.redirect('confirmation');
+  }
+});
+
+router.post('/international-task/eea-iteration-3/foreign-insurance-request-france', function(req, res) {
+  if ( req.body['franceinsurance'] === 'Requested' ) {
+    res.redirect('confirmation');
+  } else {res.redirect('confirmation');
+}
+});
+
+router.post('/international-task/eea-iteration-3/confirmation', (req, res) => {
+  res.redirect('/international-task/eea-iteration-3/get-a-task-2')
+})
+;
+
   module.exports = router;
