@@ -209,4 +209,10 @@ router.post('/international-task/eea-iteration-3/mixed-years', (req, res) => {
 })
 ;
 
+router.post('/international-task/eea-iteration-3/request-records', (req, res) => {
+  res.redirect('/international-task/eea-iteration-3/get-a-task-2')
+})
+;
+
+
   module.exports = router;
