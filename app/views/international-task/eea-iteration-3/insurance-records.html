@@ -21,24 +21,9 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
 
 {% include './_bar.html' %}
-{% if data.mixedyearsswitzerland %}
-<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-<div class="govuk-notification-banner__header">
-  <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-    Success
-  </h2>
-</div>
-<div class="govuk-notification-banner__content">
-  <p class="govuk-notification-banner__heading">
-All countries updated.
-  </p>
-</div>
-</div>
-{% else %}
-{% endif %}
-<h1 class="govuk-heading-l">Check NIRs for mixed years</h1>
-<p class="govuk-body">Update whether there are mixed years for each country.</p>
 
+<h1 class="govuk-heading-l">Check for mixed years</h1>
+<p class="govuk-body">System to check: <b>NIRS</b></p>
 
 <bR>
 
@@ -49,7 +34,7 @@ All countries updated.
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Norway</h2>
               {% if data.mixedyearsnorway%}
               {% else %}
-                  <a href="mixed-years-norway" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 63%">Add mixed years</span>
+                  <a href="mixed-years-norway" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 57%">Consider mixed years</span>
                 {% endif %}
               </a>
               <br><br>
@@ -64,10 +49,14 @@ All countries updated.
                   <td class="govuk-table__cell">Aug 1982 to Mar 1986</td>
                   <td class="govuk-table__cell"></td>
                 </tr>
-
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Social security number</th>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell"></td>
+                </tr>
               {% if data.mixedyearsnorway %}
                 <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Mixed years</th>
+                  <th scope="row" class="govuk-table__header">Partial qualifying years</th>
                   <td class="govuk-table__cell"style="width: 35%">{{data.mixedyearsnorway}}</td>
                   <td class="govuk-table__cell"><a href="mixed-years-norway" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right">
                     {% if data.norwayinsurance %}
@@ -94,7 +83,7 @@ All countries updated.
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Croatia</h2>
               {% if data.mixedyearscroatia %}
               {% else %}
-                  <a href="mixed-years-croatia" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 64%">Add mixed years</span></a>
+                  <a href="mixed-years-croatia" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 57%">Consider mixed years</span></a>
                 {% endif %}
               <br><br>
               <tbody class="govuk-table__body">
@@ -108,11 +97,14 @@ All countries updated.
                   <td class="govuk-table__cell">Mar 1986 to Aug 1993</td>
                   <td class="govuk-table__cell"></td>
                 </tr>
-
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Social security number</th>
+                    <td class="govuk-table__cell"></td>
+                </tr>
 
                 {% if data.mixedyearscroatia %}
                 <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Mixed years</th>
+                  <th scope="row" class="govuk-table__header">Partial qualifying years</th>
                   <td class="govuk-table__cell"style="width: 35%">{{data.mixedyearscroatia}}</td>
                   <td class="govuk-table__cell"><a href="mixed-years-croatia" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right">
                     {% if data.croatiainsurance %}
@@ -133,12 +125,12 @@ All countries updated.
                 {% endif %}
               </tbody>
             </table>
-    <br><br>
+
             <table class="govuk-table">
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Switzerland</h2>
               {% if data.mixedyearsswitzerland %}
               {% else %}
-                  <a href="mixed-years-switzerland" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 55%">Add mixed years</span></a>
+                  <a href="mixed-years-switzerland" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 49%">Consider mixed years</span></a>
                 {% endif %}
               <br><br>
               <tbody class="govuk-table__body">
@@ -152,10 +144,13 @@ All countries updated.
                   <td class="govuk-table__cell">Feb 1994 to Apr 1996</td>
                   <td class="govuk-table__cell"></td>
                 </tr>
-
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Social security number</th>
+                    <td class="govuk-table__cell"></td>
+                </tr>
                 {% if data.mixedyearsswitzerland %}
                 <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Mixed years</th>
+                  <th scope="row" class="govuk-table__header">Partial qualifying years</th>
                   <td class="govuk-table__cell"style="width: 35%">{{data.mixedyearsswitzerland}}</td>
                   <td class="govuk-table__cell"><a href="mixed-years-switzerland" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right">
                     {% if data.switzerlandinsurance %}
@@ -178,13 +173,12 @@ All countries updated.
 </div>
 </div>
 
-{% if data.mixedyearsswitzerland %}
+
 
 <button class="govuk-button" data-module="govuk-button">
-  Continue
+  Confirm
 </button>
-{% else %}
-{% endif %}
+
 
         </div>
 
