@@ -203,7 +203,7 @@ router.post('/international-task/eea-iteration-3/task-details', (req, res) => {
 
 router.post('/international-task/eea-iteration-3/mixed-years-norway', function(req, res) {
   if ( req.body['mixedyearsnorway'] === 'Yes' ) {
-    res.redirect('foreign-insurance-request-norway');
+    res.redirect('mixed-years');
   } else {
     res.redirect('mixed-years');
   }
@@ -212,7 +212,7 @@ router.post('/international-task/eea-iteration-3/mixed-years-norway', function(r
 
 router.post('/international-task/eea-iteration-3/mixed-years-croatia', function(req, res) {
   if ( req.body['mixedyearscroatia'] === 'Yes' ) {
-    res.redirect('foreign-insurance-request-croatia');
+    res.redirect('mixed-years');
   } else {
     res.redirect('mixed-years');
   }
@@ -220,7 +220,7 @@ router.post('/international-task/eea-iteration-3/mixed-years-croatia', function(
 
 router.post('/international-task/eea-iteration-3/mixed-years-switzerland', function(req, res) {
   if ( req.body['mixedyearsswitzerland'] === 'Yes' ) {
-    res.redirect('foreign-insurance-request-switzerland');
+    res.redirect('mixed-years');
   } else {
     res.redirect('mixed-years');
   }

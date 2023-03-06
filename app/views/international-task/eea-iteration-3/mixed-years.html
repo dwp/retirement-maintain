@@ -47,11 +47,6 @@ All countries updated.
 
             <table class="govuk-table">
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Norway</h2>
-              {% if data.mixedyearsnorway%}
-              {% else %}
-                  <a href="mixed-years-norway" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 63%">Add mixed years</span>
-                {% endif %}
-              </a>
               <br><br>
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
@@ -64,38 +59,40 @@ All countries updated.
                   <td class="govuk-table__cell">Aug 1982 to Mar 1986</td>
                   <td class="govuk-table__cell"></td>
                 </tr>
-
-              {% if data.mixedyearsnorway %}
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Mixed years</th>
-                  <td class="govuk-table__cell"style="width: 35%">{{data.mixedyearsnorway}}</td>
-                  <td class="govuk-table__cell"><a href="mixed-years-norway" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right">
-                    {% if data.norwayinsurance %}
-                                  {% else %}
-                                  Change
-                                  {% endif %} </a></td></tr>
-                {% else %}
-                {% endif %}
-
-                {% if data.norwayinsurance %}
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Insurance record</th>
-                  <td class="govuk-table__cell">{{data.norwayinsurance}}</td>
-                  <td class="govuk-table__cell"></td>
-                </tr>
-                {% else %}
-                {% endif %}
               </tbody>
             </table>
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="mixed-years-norway-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                  <h1 class="govuk-fieldset__heading">Are there any mixed years during this period?
+                  </h1>
+                </legend>
+                <div id="mixedyearsnorwayhint" class="govuk-hint">
+
+                </div>
+                <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="mixedyearsnorway" name="mixedyearsnorway" type="radio" value="Yes">
+                    <label class="govuk-label govuk-radios__label" for="mixedyearsnorway">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="mixedyearsnorway2" name="mixedyearsnorway" type="radio" value="No">
+                    <label class="govuk-label govuk-radios__label" for="mixedyearsnorway2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
 
 <Br>
 
             <table class="govuk-table">
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Croatia</h2>
-              {% if data.mixedyearscroatia %}
-              {% else %}
-                  <a href="mixed-years-croatia" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 64%">Add mixed years</span></a>
-                {% endif %}
               <br><br>
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
@@ -108,38 +105,39 @@ All countries updated.
                   <td class="govuk-table__cell">Mar 1986 to Aug 1993</td>
                   <td class="govuk-table__cell"></td>
                 </tr>
-
-
-                {% if data.mixedyearscroatia %}
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Mixed years</th>
-                  <td class="govuk-table__cell"style="width: 35%">{{data.mixedyearscroatia}}</td>
-                  <td class="govuk-table__cell"><a href="mixed-years-croatia" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right">
-                    {% if data.croatiainsurance %}
-                    {% else %}
-                    Change </a>{% endif %}</td>
-                </tr>
-                {% else %}
-                {% endif %}
-
-
-                {% if data.croatiainsurance %}
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Insurance record</th>
-                  <td class="govuk-table__cell">{{data.croatiainsurance}}</td>
-                  <td class="govuk-table__cell"></td>
-                </tr>
-                {% else %}
-                {% endif %}
               </tbody>
             </table>
-    <br><br>
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="mixedyearscroatia-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                  <h1 class="govuk-fieldset__heading">
+                    Can their time in Croatia be used to increase their UK State Pension?
+                  </h1>
+                </legend>
+                <div id="mixedyearscroatia-hint" class="govuk-hint">
+
+                </div>
+                <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="mixedyearscroatia" name="mixedyearscroatia" type="radio" value="Yes">
+                    <label class="govuk-label govuk-radios__label" for="mixedyearscroatia">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="mixedyearscroatia-2" name="mixedyearscroatia" type="radio" value="No">
+                    <label class="govuk-label govuk-radios__label" for="mixedyearscroatia-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+    <br>
             <table class="govuk-table">
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Switzerland</h2>
-              {% if data.mixedyearsswitzerland %}
-              {% else %}
-                  <a href="mixed-years-switzerland" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 55%">Add mixed years</span></a>
-                {% endif %}
               <br><br>
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
@@ -164,28 +162,43 @@ All countries updated.
                 </tr>
                 {% else %}
                 {% endif %}
-
-                {% if data.switzerlandinsurance %}
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Insurance record</th>
-                  <td class="govuk-table__cell">{{data.switzerlandinsurance}}</td>
-                  <td class="govuk-table__cell"></td>
-                </tr>
-                {% else %}
-                {% endif %}
               </tbody>
             </table>
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="mixedyearsswitzerland-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                  <h1 class="govuk-fieldset__heading">
+                    Can their time in Switzerland be used to increase their UK State Pension?
+                  </h1>
+                </legend>
+                <div id="mixedyearsswitzerland-hint" class="govuk-hint">
+
+                </div>
+                <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="mixedyearsswitzerland" name="mixedyearsswitzerland" type="radio" value="Yes">
+                    <label class="govuk-label govuk-radios__label" for="mixedyearsswitzerland">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="mixedyearsswitzerland-2" name="mixedyearsswitzerland" type="radio" value="No">
+                    <label class="govuk-label govuk-radios__label" for="mixedyearsswitzerland-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
 </div>
 </div>
 
-{% if data.mixedyearsswitzerland %}
+
 
 <button class="govuk-button" data-module="govuk-button">
   Continue
 </button>
-{% else %}
-{% endif %}
-
         </div>
 
       </div>
