@@ -21,26 +21,13 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
 
 {% include './_bar.html' %}
-{% if data.mixedyearsswitzerland %}
-<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-<div class="govuk-notification-banner__header">
-  <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-    Success
-  </h2>
-</div>
-<div class="govuk-notification-banner__content">
-  <p class="govuk-notification-banner__heading">
-All countries updated.
-  </p>
-</div>
-</div>
-{% else %}
-{% endif %}
-<h1 class="govuk-heading-l">Check NIRs for mixed years</h1>
-<p class="govuk-body">Update whether there are mixed years for each country.</p>
+
+<h1 class="govuk-heading-l">Check for potential mixed years</h1>
+<p class="govuk-body">Use OLE to check if the claimant has any deficient qualifying years.
+</p>
 
 
-<bR>
+<bR><bR>
 
 
   <form method="post">
@@ -65,7 +52,9 @@ All countries updated.
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset" aria-describedby="mixed-years-norway-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                  <h1 class="govuk-fieldset__heading">Are there any mixed years during this period?
+                  <h1 class="govuk-fieldset__heading">
+                    Are there any mixed years during their time in Norway?
+
                   </h1>
                 </legend>
                 <div id="mixedyearsnorwayhint" class="govuk-hint">
@@ -112,7 +101,7 @@ All countries updated.
               <fieldset class="govuk-fieldset" aria-describedby="mixedyearscroatia-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
                   <h1 class="govuk-fieldset__heading">
-                    Can their time in Croatia be used to increase their UK State Pension?
+                    Are there any mixed years during their time in Croatia?
                   </h1>
                 </legend>
                 <div id="mixedyearscroatia-hint" class="govuk-hint">
@@ -150,18 +139,6 @@ All countries updated.
                   <td class="govuk-table__cell">Feb 1994 to Apr 1996</td>
                   <td class="govuk-table__cell"></td>
                 </tr>
-
-                {% if data.mixedyearsswitzerland %}
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Mixed years</th>
-                  <td class="govuk-table__cell"style="width: 35%">{{data.mixedyearsswitzerland}}</td>
-                  <td class="govuk-table__cell"><a href="mixed-years-switzerland" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right">
-                    {% if data.switzerlandinsurance %}
-                    {% else %}
-                    Change </a>{% endif %}</td>
-                </tr>
-                {% else %}
-                {% endif %}
               </tbody>
             </table>
 
@@ -169,7 +146,7 @@ All countries updated.
               <fieldset class="govuk-fieldset" aria-describedby="mixedyearsswitzerland-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
                   <h1 class="govuk-fieldset__heading">
-                    Can their time in Switzerland be used to increase their UK State Pension?
+                    Are there any mixed years during their time in Switzerland?
                   </h1>
                 </legend>
                 <div id="mixedyearsswitzerland-hint" class="govuk-hint">
@@ -199,6 +176,24 @@ All countries updated.
 <button class="govuk-button" data-module="govuk-button">
   Continue
 </button>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> /check-mixed-years  <br>
+        <b>Error messages:</b> <br>
+        Nothing selected: Select yes if there are any mixed years during their time in [COUNTRY]<br>
+        <b>Notes:</b> None <br>
+      </div>
+    </details>
+
         </div>
 
       </div>

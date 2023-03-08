@@ -21,13 +21,34 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
 
 {% include './_bar.html' %}
-<h1 class="govuk-heading-l">Request insurance records for these countries</h1>
-
-
-<bR>
-
+<h1 class="govuk-heading-l">Request insurance records</h1>
 
   <form method="post">
+<bR>
+  <table class="govuk-table">
+    <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Claimant details</h2>
+<br><br>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Address</th>
+        <td class="govuk-table__cell">8 Mill Road<br>
+          Edinburgh<br>
+          EH23 1GR</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Correspondence address</th>
+        <td class="govuk-table__cell">10 Mill Road<br>
+          Edinburgh<br>
+          EH23 1GR</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Date of birth</th>
+        <td class="govuk-table__cell">23 August 1957</td>
+      </tr>
+    </tbody>
+  </table>
+
+<br><br>
 
             <table class="govuk-table">
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Norway</h2>
@@ -35,20 +56,10 @@ GOV.UK Prototype Kit
 
               <br><br>
               <tbody class="govuk-table__body">
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Lived</th>
-                  <td class="govuk-table__cell">Aug 1982 to Mar 1986</td>
-                  <td class="govuk-table__cell"></td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Worked</th>
-                  <td class="govuk-table__cell">Aug 1982 to Mar 1986</td>
-                  <td class="govuk-table__cell"></td>
-                </tr>
+
                 <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Social security number</th>
-                  <td class="govuk-table__cell"></td>
-                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">8745STV23</td>
                 </tr>
 
                 <tr class="govuk-table__row">
@@ -60,7 +71,7 @@ GOV.UK Prototype Kit
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset" aria-describedby="mixed-years-norway-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                  <h1 class="govuk-fieldset__heading">Have you requested?
+                  <h1 class="govuk-fieldset__heading">Have you requested their insurance record from Norway?
                   </h1>
                 </legend>
                 <div id="insurancerequestnorwayhint" class="govuk-hint">
@@ -70,13 +81,13 @@ GOV.UK Prototype Kit
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="insurancerequestnorway" name="insurancerequestnorway" type="radio" value="Yes">
                     <label class="govuk-label govuk-radios__label" for="insurancerequestnorway">
-                      Yes
+                      Requested
                     </label>
                   </div>
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="insurancerequestnorway2" name="insurancerequestnorway" type="radio" value="No">
                     <label class="govuk-label govuk-radios__label" for="insurancerequestnorway2">
-                      No
+                      Not requested
                     </label>
                   </div>
                 </div>
@@ -91,19 +102,10 @@ GOV.UK Prototype Kit
 
               <br><br>
               <tbody class="govuk-table__body">
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Lived</th>
-                  <td class="govuk-table__cell">Mar 1986 to Sept 1993</td>
-                  <td class="govuk-table__cell"></td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Worked</th>
-                  <td class="govuk-table__cell">Mar 1986 to Aug 1993</td>
-                  <td class="govuk-table__cell"></td>
-                </tr>
+
                 <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Social security number</th>
-                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell">GEV98732</td>
                 </tr>
 
 
@@ -120,7 +122,7 @@ GOV.UK Prototype Kit
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset" aria-describedby="mixed-years-norway-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                  <h1 class="govuk-fieldset__heading">Have you requested?
+                  <h1 class="govuk-fieldset__heading">Have you requested their insurance record from Croatia?
                   </h1>
                 </legend>
                 <div id="insurancerequestcroatiahint" class="govuk-hint">
@@ -130,14 +132,13 @@ GOV.UK Prototype Kit
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="insurancerequestcroatia" name="insurancerequestcroatia" type="radio" value="Yes">
                     <label class="govuk-label govuk-radios__label" for="insurancerequestcroatia">
-                      Yes
+                      Requested
                     </label>
                   </div>
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="insurancerequestcroatia2" name="insurancerequestcroatia" type="radio" value="No">
                     <label class="govuk-label govuk-radios__label" for="insurancerequestcroatia2">
-                      No
-                    </label>
+  Not requested                    </label>
                   </div>
                 </div>
               </fieldset>
@@ -150,19 +151,10 @@ GOV.UK Prototype Kit
 
               <br><br>
               <tbody class="govuk-table__body">
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Lived</th>
-                  <td class="govuk-table__cell">Feb 1994 to Apr 1996</td>
-                  <td class="govuk-table__cell"></td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Worked</th>
-                  <td class="govuk-table__cell">Feb 1994 to Apr 1996</td>
-                  <td class="govuk-table__cell"></td>
-                </tr>
+
                 <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Social security number</th>
-                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell">5648487</td>
                 </tr>
 
                 <tr class="govuk-table__row">
@@ -175,7 +167,7 @@ GOV.UK Prototype Kit
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset" aria-describedby="mixed-years-norway-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                  <h1 class="govuk-fieldset__heading">Have you requested?
+                  <h1 class="govuk-fieldset__heading">Have you requested their insurance record from Switzerland?
                   </h1>
                 </legend>
                 <div id="insurancerequestswitzerlandhint" class="govuk-hint">
@@ -185,13 +177,13 @@ GOV.UK Prototype Kit
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="insurancerequestswitzerland" name="insurancerequestswitzerland" type="radio" value="Yes">
                     <label class="govuk-label govuk-radios__label" for="insurancerequestswitzerland">
-                      Yes
+                      Requested
                     </label>
                   </div>
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="insurancerequestswitzerland2" name="insurancerequestswitzerland" type="radio" value="No">
                     <label class="govuk-label govuk-radios__label" for="insurancerequestswitzerland2">
-                      No
+                      Not requested
                     </label>
                   </div>
                 </div>
@@ -207,7 +199,22 @@ GOV.UK Prototype Kit
   Confirm
 </button>
 
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> /request-insurance-records  <br>
+        <b>Error messages:</b> <br>
+        Nothing selected: Select whether you requested their insurance record from [COUNTRY]<br>
+        <b>Notes:</b> None <br>
+      </div>
+    </details>
         </div>
 
       </div>
