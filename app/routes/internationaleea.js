@@ -215,4 +215,62 @@ router.post('/international-task/eea-iteration-3/request-records', (req, res) =>
 ;
 
 
+
+
+
+// CFN901 RETURNED ITERATION 1
+
+
+router.post('/international-task/eea-cfn901-iteration-1/cfn-task', (req, res) => {
+  res.redirect('/international-task/eea-cfn901-iteration-1/mixed-years')
+})
+;
+
+router.post('/international-task/eea-cfn901-iteration-1/task-details', (req, res) => {
+  res.redirect('/international-task/eea-cfn901-iteration-1/cfn-task')
+})
+;
+
+
+
+
+router.post('/international-task/eea-cfn901-iteration-1/mixed-years', (req, res) => {
+  res.redirect('/international-task/eea-cfn901-iteration-1/request-records')
+})
+;
+
+router.post('/international-task/eea-cfn901-iteration-1/request-records', (req, res) => {
+  res.redirect('/international-task/eea-cfn901-iteration-1/get-a-task-2')
+})
+;
+
+
+
+// FIR RETURNED ITERATION 1
+
+
+router.post('/international-task/eea-fir-iteration-1/cfn-task', (req, res) => {
+  res.redirect('/international-task/eea-fir-iteration-1/mixed-years')
+})
+;
+
+router.post('/international-task/eea-fir-iteration-1/task-details', (req, res) => {
+  res.redirect('/international-task/eea-fir-iteration-1/fir-task')
+})
+;
+
+
+
+
+router.post('/international-task/eea-fir-iteration-1/mixed-years', (req, res) => {
+  res.redirect('/international-task/eea-fir-iteration-1/request-records')
+})
+;
+
+router.post('/international-task/eea-fir-iteration-1/request-records', (req, res) => {
+  res.redirect('/international-task/eea-fir-iteration-1/get-a-task-2')
+})
+;
+
+
   module.exports = router;
