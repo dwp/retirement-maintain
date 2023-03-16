@@ -221,13 +221,31 @@ router.post('/international-task/eea-iteration-3/request-records', (req, res) =>
 // CFN901 RETURNED ITERATION 1
 
 
-router.post('/international-task/eea-cfn901-iteration-1/cfn-task', (req, res) => {
-  res.redirect('/international-task/eea-cfn901-iteration-1/mixed-years')
-})
-;
 
 router.post('/international-task/eea-cfn901-iteration-1/task-details-cfn901', (req, res) => {
   res.redirect('/international-task/eea-cfn901-iteration-1/cfn-task')
+})
+;
+
+router.post('/international-task/eea-cfn901-iteration-1/cfn-task', function(req, res) {
+  if ( req.body['cfn901-returned'] === 'yes' ) {
+    res.redirect('date-of-entry');
+  } else {res.redirect('request-records');
+}
+});
+
+
+router.post('/international-task/eea-cfn901-iteration-1/date-of-entry', function(req, res) {
+  if ( req.body['date-of-entry'] === 'before' ) {
+    res.redirect('liason-forms');
+  } else {res.redirect('rf1-hmrc');
+}
+});
+
+
+
+router.post('/international-task/eea-cfn901-iteration-1/liason-forms', (req, res) => {
+  res.redirect('/international-task/eea-cfn901-iteration-1/request-records')
 })
 ;
 
@@ -236,6 +254,12 @@ router.post('/international-task/eea-cfn901-iteration-1/task-details-rf1', (req,
 })
 ;
 
+router.post('/international-task/eea-cfn901-iteration-1/rf1-task', function(req, res) {
+  if ( req.body['rf1-returned'] === 'yes' ) {
+    res.redirect('liason-forms');
+  } else {res.redirect('rf1-end-task');
+}
+});
 
 
 

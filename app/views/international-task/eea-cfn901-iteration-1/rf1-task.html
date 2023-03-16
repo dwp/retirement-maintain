@@ -22,32 +22,21 @@ GOV.UK Prototype Kit
 
 {% include './_bar.html' %}
 
-{{ govukBackLink({
-  text: "Back",
-  href: "javascript:history.go(-1)"
-                  }) }}
+<h1 class="govuk-heading-l">Has HMRC returned the RF1?</h1>
 
-  <br><br>
-
-
-<form method="post">
-
-<h1 class="govuk-heading-l">Has the CFN901 been returned?</h1>
-
-<p>Check DRS? Or CAMlite?</p>
-
+      <form method="post">
 <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="cfn901-returned-hint">
+  <fieldset class="govuk-fieldset" aria-describedby="rf1-returned-hint">
     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="cfn901-returned" name="cfn901-returned" type="radio" value="yes">
-        <label class="govuk-label govuk-radios__label" for="cfn901-returned">
+        <input class="govuk-radios__input" id="rf1-returned" name="rf1-returned" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="rf1-returned">
           Yes
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="cfn901-returned-2" name="cfn901-returned" type="radio" value="no">
-        <label class="govuk-label govuk-radios__label" for="cfn901-returned-2">
+        <input class="govuk-radios__input" id="rf1-returned-2" name="rf1-returned" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="rf1-returned-2">
           No
         </label>
       </div>
@@ -71,7 +60,6 @@ GOV.UK Prototype Kit
 
     </div>
 
-  </div>
 
 </main>
       </div>
