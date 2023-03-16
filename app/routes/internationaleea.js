@@ -226,8 +226,13 @@ router.post('/international-task/eea-cfn901-iteration-1/cfn-task', (req, res) =>
 })
 ;
 
-router.post('/international-task/eea-cfn901-iteration-1/task-details', (req, res) => {
+router.post('/international-task/eea-cfn901-iteration-1/task-details-cfn901', (req, res) => {
   res.redirect('/international-task/eea-cfn901-iteration-1/cfn-task')
+})
+;
+
+router.post('/international-task/eea-cfn901-iteration-1/task-details-rf1', (req, res) => {
+  res.redirect('/international-task/eea-cfn901-iteration-1/rf1-task')
 })
 ;
 
