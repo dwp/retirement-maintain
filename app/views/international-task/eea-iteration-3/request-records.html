@@ -21,10 +21,45 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
 
 {% include './_bar.html' %}
-<h1 class="govuk-heading-l">Request insurance records</h1>
+<h1 class="govuk-heading-l">Request insurance records from these countries</h1>
 
   <form method="post">
 <bR>
+
+  <table class="govuk-table">
+
+    <!--<caption class="govuk-table__caption govuk-table__caption--m">Countries claimant has lived or worked in</caption>-->
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">Country</th>
+        <th scope="col" class="govuk-table__header">Social security number</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Norway</th>
+        <td class="govuk-table__cell">8745STV23</td>
+
+      </tr>
+
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Croatia</th>
+        <td class="govuk-table__cell">GEV98732</td>
+
+      </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Switzerland</th>
+            <td class="govuk-table__cell">5648487</td>
+
+          </tr>
+
+    </tbody>
+    </table>
+  <div class="govuk-inset-text">Records from other countries should not be requested at this time.</div>
+
+    <Br>
+      <Br>
   <table class="govuk-table">
     <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Claimant details</h2>
 <br><br>
@@ -45,46 +80,16 @@ GOV.UK Prototype Kit
         <th scope="row" class="govuk-table__header">Date of birth</th>
         <td class="govuk-table__cell">23 August 1957</td>
       </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Sex</th>
+        <td class="govuk-table__cell">Female</td>
+      </tr>
     </tbody>
   </table>
 
 <br><br>
 
-<table class="govuk-table">
-  <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Lived or worked abroad</h2>
-<br><br>
-  <!--<caption class="govuk-table__caption govuk-table__caption--m">Countries claimant has lived or worked in</caption>-->
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th scope="col" class="govuk-table__header">Country</th>
-      <th scope="col" class="govuk-table__header govuk-table__header--numeric">Lived or worked</th>
-      <th scope="col" class="govuk-table__header govuk-table__header--numeric">Social security number</th>
-    </tr>
-  </thead>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Norway</th>
-      <td class="govuk-table__cell govuk-table__cell--numeric">Lived and worked</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric">8745STV23</td>
 
-    </tr>
-
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Croatia</th>
-      <td class="govuk-table__cell govuk-table__cell--numeric">Lived and worked</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric">GEV98732</td>
-
-    </tr>
-
-        <tr class="govuk-table__row">
-          <th scope="row" class="govuk-table__header">Switzerland</th>
-          <td class="govuk-table__cell govuk-table__cell--numeric">Lived and worked</td>
-          <td class="govuk-table__cell govuk-table__cell--numeric">5648487</td>
-
-        </tr>
-
-  </tbody>
-  </table>
 <!--
             <table class="govuk-table">
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Norway</h2>
@@ -149,14 +154,12 @@ GOV.UK Prototype Kit
             </table>
 
 -->
-
 </div>
 </div>
 
-  <br><br>
 
 <button class="govuk-button" data-module="govuk-button">
-  Confirm records requested
+  Confirm and end task
 </button>
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
