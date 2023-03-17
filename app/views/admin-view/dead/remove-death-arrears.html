@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{% include './navigation/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <br>
+  <br>
+
+  <div class="govuk-grid-column-two-thirds">
+
+<form method="post" action="personal-ressurected">
+            {% include './name-bar/_bar-dead.html' %}
+
+                  <h1 class="govuk-heading-l">Open CPS Local and issue these arrears as a faster payment</h1>
+
+
+                  <br>
+
+                  <table class="govuk-table">
+                    <caption class="govuk-table__caption govuk-table__caption--m">Arrears owed</caption>
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Total</th>
+                        <th scope="col" class="govuk-table__header">£650.72</th>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">New State Pension</th>
+                        <td class="govuk-table__cell">£650.72</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Protected payment</th>
+                        <td class="govuk-table__cell">£0.00</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Period</th>
+                        <td class="govuk-table__cell">27 Jan 2022 to 23 Feb 2022</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+
+
+                  <table class="govuk-table">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Bank or building society account details</caption>
+                  <tbody class="govuk-table__body">
+
+                  <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header" style="width: 45%">Account holder</th>
+                  <td class="govuk-table__cell" style="width: 45%">
+                  {% if data['name-on-the-account'] %}
+                  {{data['name-on-the-account']}}
+                  {% else %}
+                  Jose Dominguez
+                  {% endif %}</td>
+                  <td class="govuk-table__cell" style="width: 10%"></td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Sort code </th>
+                  <td class="govuk-table__cell">
+                  54 76 98
+                </td>
+                  <td class="govuk-table__cell"></td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Account number</th>
+                  <td class="govuk-table__cell">
+                  98765409
+                </td>
+                  <td class="govuk-table__cell"></td>
+                  </tr>
+
+
+                  </tbody>
+                  </table>
+
+                  <div class="govuk-inset-text">Confirm arrears payment is issued to restart future regular payments. There is no need to wait for payment approval.
+                  </div>
+                              <button class="govuk-button" data-module="govuk-button">
+                                Confirm faster payment issued in CPS Local
+                              </button>
+                  </div>
+
+                  </div>
+                  </div>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> /confirm-remove-claimant <br>
+        <b>Error messages:</b> None  <br>
+        <b>Notes:</b> None <br>
+      </div>
+    </details>
+
+  </div>
+
+  </div>
+</div>
+
+{% endblock %}
