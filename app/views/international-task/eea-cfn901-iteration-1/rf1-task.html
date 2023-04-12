@@ -21,10 +21,8 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
 
 {% include './_bar.html' %}
-<h1 class="govuk-heading-l">Check CAMlite for the RF1 from HMRC</h1>
-<br><br>
-<h1 class="govuk-heading-m">Have HMRC returned the RF1?</h1>
 
+<h1 class="govuk-heading-l">Have HMRC returned the RF1?</h1>
       <form method="post">
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="rf1-returned-hint">
@@ -52,7 +50,22 @@ GOV.UK Prototype Kit
 <br>
 
 
+<hr class="govuk-section-break govuk-section-break--s govuk-section-break--visible">
+<br>
 
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+            <b>URL, errors and notes</b>
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <b>URL:</b> /prison-enter-date <br>
+            <b>Error messages:</b> <br>
+            Nothing selected: Select yes if HMRC have returned the RF1<br>
+            <b>Notes:</b> None <br>
+          </div>
+        </details>
 
 
         </div>
