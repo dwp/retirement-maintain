@@ -28,22 +28,21 @@ GOV.UK Prototype Kit
   <fieldset class="govuk-fieldset" aria-describedby="mixedyearscroatia-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
-Can the claimant's State Pension amount be increased?      </h1>
+Do you need to change their award?      </h1>
     </legend>
-    <div id="mixedyearscroatia-hint" class="govuk-hint">
-Use OLE to check how many qualifying years the claimant has.
-    </div>
-    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+
+    <br>
+    <div class="govuk-radios govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="mixedyearscroatia" name="mixedyearscroatia" type="radio" value="Yes">
         <label class="govuk-label govuk-radios__label" for="mixedyearscroatia">
-          Yes, it can be increased
+          Change award
         </label>
       </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="mixedyearscroatia-2" name="mixedyearscroatia" type="radio" value="No">
         <label class="govuk-label govuk-radios__label" for="mixedyearscroatia-2">
-          No
+          No change to award
         </label>
       </div>
     </div>
@@ -55,7 +54,28 @@ Use OLE to check how many qualifying years the claimant has.
   Continue
 </button>
 
+<br>
 
+
+
+
+
+<hr class="govuk-section-break govuk-section-break--s govuk-section-break--visible">
+<br>
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+            <b>URL, errors and notes</b>
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <b>URL:</b> /state-pension-increase <br>
+            <b>Error messages:</b> <br>
+            Nothing selected: Select yes if the claimant's State Pension amount can be increased<br>
+            <b>Notes:</b> None <br>
+          </div>
+        </details>
         </div>
 
       </div>
