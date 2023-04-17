@@ -24,7 +24,7 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './_bar.html' %}
 
-      <form method="post" action="get-a-task-2">
+      <form method="post">
 
         {{ govukBackLink({
           text: "Back",
@@ -37,7 +37,7 @@ GOV.UK Prototype Kit
 <p></p>
 
 <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+  <fieldset class="govuk-fieldset" aria-describedby="rf1-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
 Do you need to request an RF1 from HMRC?      </h1>
@@ -49,19 +49,19 @@ Do you need to request an RF1 from HMRC?      </h1>
 
     <div class="govuk-radios govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-        <label class="govuk-label govuk-radios__label" for="changed-name">
+        <input class="govuk-radios__input" id="rf1" name="rf1" type="radio" value="request">
+        <label class="govuk-label govuk-radios__label" for="rf1">
           Request RF1
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-        <label class="govuk-label govuk-radios__label" for="changed-name-2">RF1 already received
+        <input class="govuk-radios__input" id="rf1-2" name="rf1" type="radio" value="received">
+        <label class="govuk-label govuk-radios__label" for="rf1-2">RF1 already received
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+        <input class="govuk-radios__input" id="rf1-3" name="rf1" type="radio" value="requested">
+        <label class="govuk-label govuk-radios__label" for="rf1-3">
 RF1 requested recently
         </label>
       </div>
