@@ -23,8 +23,13 @@ GOV.UK Prototype Kit
 {% include './_bar.html' %}
 
 <form method="post">
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:history.go(-1)"
+                    }) }}
 
-<h1 class="govuk-heading-l">Review award</h1>
+    <br><br>
+<h1 class="govuk-heading-l">Change award</h1>
 
 <div class="govuk-form-group">
   <h1 class="govuk-label-wrapper">
@@ -42,7 +47,7 @@ GOV.UK Prototype Kit
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
       <h1 class="govuk-fieldset__heading">
-        Agreement?
+        Which country is this change based on?
       </h1>
     </legend>
     <div class="govuk-radios" data-module="govuk-radios">
@@ -94,9 +99,9 @@ GOV.UK Prototype Kit
             </span>
           </summary>
           <div class="govuk-details__text">
-            <b>URL:</b> /state-pension-increase <br>
+            <b>URL:</b> /change-award <br>
             <b>Error messages:</b> <br>
-            Nothing selected: Select yes if the claimant's State Pension amount can be increased<br>
+            Nothing selected: Select which country the change is based on <br>
             <b>Notes:</b> None <br>
           </div>
         </details>
