@@ -29,16 +29,50 @@ GOV.UK Prototype Kit
 
           <br><br>
 
-          <form method="post">
+        <form method="post" action="get-a-task-2">
 
           <h2 class="govuk-heading-l">State Pension award</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Previous award</th>
+                <td class="govuk-table__cell">£132.66 per week</td>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Updated award</th>
+                <td class="govuk-table__cell"><b>£142.26 per week</b></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">From</th>
+                <td class="govuk-table__cell">£109.80 per week</td>
+              </tr>
+            </tbody>
+          </table>
 
-          <p>Use the CFN901 System to generate the form for the claimant.</p>
-          <p>Print the form and send it to the claimant with a reply envelope.</p>
-<br>
+          <h2 class="govuk-heading-m">Arrears payment</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Amount</th>
+                <td class="govuk-table__cell">£82.30</td>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Period</th>
+                <td class="govuk-table__cell" style="width: 50%">11 September 2022 to 21 April 2023</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="govuk-inset-text">
+          An award letter will be sent to the claimant.
+          </div>
 
 <button class="govuk-button" data-module="govuk-button">
-  Confirm form sent to claimant
+  Continue
 </button>
 
 
