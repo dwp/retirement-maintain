@@ -23,75 +23,31 @@ GOV.UK Prototype Kit
 {% include './_bar.html' %}
 
 <form method="post">
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:history.go(-1)"
+                    }) }}
 
-<h1 class="govuk-heading-l">Review award</h1>
+    <br><br>
+<h1 class="govuk-heading-l">Change award</h1>
 
-<table class="govuk-table">
-    <thead class="govuk-table__head">
-      <tr class="govuk-table__row">
-        <th class="govuk-table__header award_detail2" scope="col">Total</th>
-        <th class="govuk-table__header award_detail" scope="col">{% if data.addsp1 %}
-          £{{data.addsp1}} per week
-          {% else %}
-          £149.87 per week
-          {% endif %}	</th>
-        <td class="govuk-table__cell award_detail">
-</td>
-      </tr>
-    </thead>
-    <tbody class="govuk-table__body">
-      <tr class="govuk-table__row">
-        <td class="govuk-table__cell" scope="row">New State Pension</td>
-        <td class="govuk-table__cell">{% if data.addsp1 %}
-          £{{data.addsp1}}
-          {% else %}
-          £149.87
-          {% endif %}</td>
-        <td class="govuk-table__cell">
-          <a href="change-nsp-1">
-            Change<span class="govuk-visually-hidden">Change New State Pension</span>
-          </a></td>
-      </tr>
-      <tr class="govuk-table__row">
-        <td class="govuk-table__cell" scope="row">Protected payment</td>
-        <td class="govuk-table__cell">£0.00</td>
-        <td class="govuk-table__cell">
-          <a href="change-pp-1">
-            Change<span class="govuk-visually-hidden">Change Protected Payment</span>
-          </a></td>
-      </tr>
-      <tr class="govuk-table__row">
-        <td class="govuk-table__cell" scope="row">Extra State Pension</td>
-        <td class="govuk-table__cell">£0.00</td>
-        <td class="govuk-table__cell"></td>
-      </tr>
-      <tr class="govuk-table__row">
-        <td class="govuk-table__cell" scope="row">Inherited extra State Pension</td>
-        <td class="govuk-table__cell">£0.00</td>
-        <td class="govuk-table__cell"></td>
-      </tr>
-    </tbody>
-    </table>
-    <table class="govuk-table">
-      <tr class="govuk-table__row">
-          <td class="govuk-table__header award_detail2" scope="row">Entitlement date</td>
-          <td class="govuk-table__cell award_detail">{% if not data.entdate1day %}
-                            9 March 2021
-                            {% else %}
-                            30 March 2021
-                            {% endif %}</td>
-          <td class="govuk-table__cell award_detail">
-            <a href="change-date-1">
-              Change<span class="govuk-visually-hidden">Change address</span>
-            </a></td>
-        </tr>
-    </table>
+<div class="govuk-form-group">
+  <h1 class="govuk-label-wrapper">
+    <label class="govuk-label govuk-label--s" for="cost">
+      New State Pension
+    </label>
+  </h1>
+  <div class="govuk-input__wrapper">
+    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+    <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+  </div>
+</div>
 
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
       <h1 class="govuk-fieldset__heading">
-        Agreement?
+        Which country is this change based on?
       </h1>
     </legend>
     <div class="govuk-radios" data-module="govuk-radios">
@@ -143,9 +99,9 @@ GOV.UK Prototype Kit
             </span>
           </summary>
           <div class="govuk-details__text">
-            <b>URL:</b> /state-pension-increase <br>
+            <b>URL:</b> /change-award <br>
             <b>Error messages:</b> <br>
-            Nothing selected: Select yes if the claimant's State Pension amount can be increased<br>
+            Nothing selected: Select which country the change is based on <br>
             <b>Notes:</b> None <br>
           </div>
         </details>
