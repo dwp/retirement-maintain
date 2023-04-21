@@ -13,25 +13,23 @@ GOV.UK Prototype Kit
 {% block headEnd %}
 {% endblock %}
 
+
+
 <div class="govuk-width-container">
-  <div class="govuk-grid-column-two-thirds">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
 
-    <main id="content" role="main">
-      <div class="grid-row">
-        <div class="column-full">
+{% include './_bar.html' %}
 
-
-          <br><br>
-          {% include './_bar.html' %}
-
-      <form method="post">
-
-        {{ govukBackLink({
-          text: "Back",
-          href: "javascript:history.go(-1)"
-                          }) }}
+{{ govukBackLink({
+  text: "Back",
+  href: "javascript:history.go(-1)"
+                  }) }}
 
           <br><br>
+
+          <form method="post">
 
           <h2 class="govuk-heading-l">When did they first live or work in an ANZaC country?</h2>
 
