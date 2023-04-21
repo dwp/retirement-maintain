@@ -20,12 +20,19 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
+{% include './_bar.html' %}
 
-<p></p>
+{{ govukBackLink({
+  text: "Back",
+  href: "javascript:history.go(-1)"
+                  }) }}
 
-        <form method="post" action="get-a-task-2">
+          <br><br>
 
-          <h1 class="govuk-heading-xl">Print and send form</h1>
+          <form method="post">
+
+          <h2 class="govuk-heading-l">State Pension award</h2>
+
           <p>Use the CFN901 System to generate the form for the claimant.</p>
           <p>Print the form and send it to the claimant with a reply envelope.</p>
 <br>
