@@ -31,7 +31,18 @@ GOV.UK Prototype Kit
 
         <form method="post" action="upload">
 
-<h1 class="govuk-heading-l">Change to award</h1>
+<!-- <h1 class="govuk-heading-l">1. Calculate new award</h1>
+
+<p class="govuk-body">
+  Use the VOLNICs calculator to work out how much the claimant's State Pension will increase. You may also need information from:</p>
+<ul class="govuk-list govuk-list--bullet">    <li>OLE</li>
+    <li>the CFN1282</li>
+    <li>the RF1</li>
+  </ul>
+<p class="govuk-body">Record the increase on a 975 form.</p> -->
+
+
+<h1 class="govuk-heading-l">Change award</h1>
 
 <table class="govuk-table">
     <thead class="govuk-table__head">
@@ -40,7 +51,7 @@ GOV.UK Prototype Kit
         <th class="govuk-table__header award_detail" scope="col">{% if data.addsp1 %}
           £{{data.addsp1}} per week
           {% else %}
-          £149.87 per week
+          £198.87 per week
           {% endif %}	</th>
         <td class="govuk-table__cell award_detail">
 </td>
@@ -52,7 +63,7 @@ GOV.UK Prototype Kit
         <td class="govuk-table__cell">{% if data.addsp1 %}
           £{{data.addsp1}}
           {% else %}
-          £149.87
+          £198.87
           {% endif %}</td>
         <td class="govuk-table__cell">
           <a href="change-nsp">
