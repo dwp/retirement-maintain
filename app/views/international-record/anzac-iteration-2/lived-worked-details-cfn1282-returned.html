@@ -14,7 +14,19 @@ GOV.UK Prototype Kit
 {% endblock %}
 
 
+
 <div class="govuk-width-container">
+      <br><br>
+  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+  <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+  Success
+  </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+  <h3 class="govuk-notification-banner__heading">
+  Award change confirmed       </h3>
+  </div></div>
   <div class="govuk-grid-column-two-thirds">
 
     <main id="content" role="main">
@@ -22,18 +34,9 @@ GOV.UK Prototype Kit
         <dv class="column-full">
 
 
-          <br><br>
+        
 
-          <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-        <div class="govuk-notification-banner__header">
-        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-        Success
-        </h2>
-        </div>
-        <div class="govuk-notification-banner__content">
-        <h3 class="govuk-notification-banner__heading">
-Award change confirmed       </h3>
-        </div></div>
+
           {% include './_bar.html' %}
 
 <form method="post" action="award-updated-arrears">
