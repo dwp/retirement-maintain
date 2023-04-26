@@ -12,13 +12,16 @@ GOV.UK Prototype Kit
 {% block headEnd %}
 {% endblock %}
 
-
 <div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
 
   <br>
   <br>
 
-  <div class="govuk-grid-column-full">
 
 
             {% include './name-bar/_bar-jose-dead.html' %}
@@ -30,10 +33,11 @@ GOV.UK Prototype Kit
 
               <br><br>
 
-                 <h1 class="govuk-heading-l">
-                  Confirm you want to remove <br>the date of death</h1>
 
-                <p>Removing the date of death will:</p>
+                 <h1 class="govuk-heading-l">
+                  Confirm you want to remove the date of death</h1>
+
+                <p>This will restore the account to its previous status. It may:</p>
 
                 <ul class="govuk-list govuk-list--bullet">
                   <li>calculate any arrears owed</li>
@@ -48,13 +52,14 @@ GOV.UK Prototype Kit
                     (Not sure if we need this or red button)
                   </strong>
                 </div> -->
-                <a href="remove-death-arrears" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button">
+                <a href="personal-ressurected" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button">
                   Remove date of death
                 </a>
 
 
                   </div>
                   </div>
+                </div>
 
 
 {% endblock %}
