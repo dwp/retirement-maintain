@@ -257,7 +257,7 @@ router.post('/international-task/eea-cfn901-iteration-1/task-details-rf1', (req,
 router.post('/international-task/eea-cfn901-iteration-1/rf1-task', function(req, res) {
   if ( req.body['rf1-returned'] === 'yes' ) {
     res.redirect('liason-forms');
-  } else {res.redirect('rf1-end-task');
+  } else {res.redirect('rf1-reminder');
 }
 });
 
