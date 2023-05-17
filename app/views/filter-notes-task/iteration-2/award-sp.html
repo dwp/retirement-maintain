@@ -36,32 +36,72 @@ GOV.UK Prototype Kit
           <div class="govuk-form-group">
 
 
-            <div class="govuk-form-group">
+         <div class="govuk-form-group">
               <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                   <h1 class="govuk-fieldset__heading">
-Do you want to award State Pension?
+Do you want to award their State Pension with errors?
                   </h1>
                 </legend>
-
+             <div id="changed-name-hint" class="govuk-hint">
+              If you award with errors, HMRC will send an SRB once they are fixed.
+                </div>
                 <br>
 
-                <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+
+              <div class="govuk-radios govuk-radios" data-module="govuk-radios">
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
                     <label class="govuk-label govuk-radios__label" for="changed-name">
-                      Yes
+                      Award with errors
                     </label>
                   </div>
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
                     <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                      No
+                      Do not award yet
                     </label>
                   </div>
                 </div>
               </fieldset>
             </div>
+
+
+        <!--        <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <h1 class="govuk-fieldset__heading">
+                        Do you want to award their State Pension?
+                      </h1>
+                    </legend>
+                    <div id="sign-in-hint" class="govuk-hint">
+                    </div>
+                    <div class="govuk-radios" data-module="govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+                        <label class="govuk-label govuk-radios__label" for="sign-in">
+                          Award State Pension with errors
+                        </label>
+                        <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                          Once the errors are fixed HMRC will send an SRB.
+                        </div>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+                        <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                          Do not award State Pension
+                        </label>
+                        <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                          This will postpone this task for 4 weeks.
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div> -->
+
+
+
+
 
 
 <br>
@@ -83,7 +123,7 @@ Do you want to award State Pension?
                      </summary>
                      <div class="govuk-details__text">
                        <b>URL:</b> <br>
-                       <b>Error messages:</b> <br>
+                       <b>Error messages: <br>Nothing selected:</b> Select whether you want to award their State Pension<br>
                        <b>Notes:</b> None <br>
                      </div>
                    </details>
