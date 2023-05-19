@@ -24,30 +24,14 @@ GOV.UK Prototype Kit
 
 
 
-<h1 class="govuk-heading-l">Have all records been returned?</h1>
-
-<p>Check DRS? Or CAMlite?</p>
-
-<table class="govuk-table">
-  <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Records requested</h2>
-<br><br><br>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Norway</th>
-      <td class="govuk-table__cell govuk-table__cell--numeric">Lived and worked</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Spain</th>
-      <td class="govuk-table__cell govuk-table__cell--numeric">Lived and worked</td>
-    </tr>
-  </tbody>
-  </table>
+<h1 class="govuk-heading-l">Check CAMlite for insurance records</h1>
+<br>
 
   <div class="govuk-form-group">
     <fieldset class="govuk-fieldset" aria-describedby="norway-records-hint">
       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
         <h1 class="govuk-fieldset__heading">
-          Have Norway sent records?
+          Have we received the records from Norway?
         </h1>
       </legend>
       <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
@@ -71,7 +55,7 @@ GOV.UK Prototype Kit
   <fieldset class="govuk-fieldset" aria-describedby="spain-records-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
       <h1 class="govuk-fieldset__heading">
-          Have Spain sent records?
+          Have we received the records from Spain?
       </h1>
     </legend>
     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
@@ -96,7 +80,22 @@ GOV.UK Prototype Kit
 </button>
 
 <br>
+<hr class="govuk-section-break govuk-section-break--s govuk-section-break--visible">
+<br>
 
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+            <b>URL, errors and notes</b>
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <b>URL:</b> /records-returned <br>
+            <b>Error messages:</b> <br>
+            Nothing selected: Select yes if [COUNTRY] have returned the claimant's records<br>
+            <b>Notes:</b> None <br>
+          </div>
+        </details>
 
 
 
