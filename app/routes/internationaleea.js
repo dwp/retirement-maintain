@@ -326,20 +326,28 @@ router.post('/international-task/eea-fir-iteration-1/scenario-1/change-award', f
 }
 });
 
+// FIR RETURNED ITERATION 1 - Scenario 2
 
 
-router.post('/international-task/eea-fir-iteration-1/scenario-1/mixed-years', (req, res) => {
-  res.redirect('/international-task/eea-fir-iteration-1/scenario-1/request-records')
+router.post('/international-task/eea-fir-iteration-1/scenario-2/cfn-task', (req, res) => {
+  res.redirect('/international-task/eea-fir-iteration-1/scenario-2/mixed-years')
 })
 ;
 
-router.post('/international-task/eea-fir-iteration-1/scenario-1/request-records', (req, res) => {
-  res.redirect('/international-task/eea-fir-iteration-1/scenario-1/get-a-task-2')
+router.post('/international-task/eea-fir-iteration-1/scenario-2/task-details', (req, res) => {
+  res.redirect('/international-task/eea-fir-iteration-1/scenario-2/fir-task')
+})
+;
+
+router.post('/international-task/eea-fir-iteration-1/scenario-2/fir-task', (req, res) => {
+  res.redirect('/international-task/eea-fir-iteration-1/scenario-2/record-request-reminder')
 })
 ;
 
 
-// Record view - EEA iteration 2
-
+router.post('/international-task/eea-fir-iteration-1/scenario-2/record-request-reminder', (req, res) => {
+  res.redirect('/international-task/eea-fir-iteration-1/scenario-2/get-a-task-2')
+})
+;
 
   module.exports = router;
