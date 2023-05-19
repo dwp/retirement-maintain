@@ -350,4 +350,24 @@ router.post('/international-task/eea-fir-iteration-1/scenario-2/record-request-r
 })
 ;
 
+
+// FIR RETURNED ITERATION 1 - Scenario 2
+
+
+router.post('/international-task/eea-fir-iteration-1/scenario-3/cfn-task', (req, res) => {
+  res.redirect('/international-task/eea-fir-iteration-1/scenario-3/mixed-years')
+})
+;
+
+router.post('/international-task/eea-fir-iteration-1/scenario-3/task-details', (req, res) => {
+  res.redirect('/international-task/eea-fir-iteration-1/scenario-3/fir-task')
+})
+;
+
+router.post('/international-task/eea-fir-iteration-1/scenario-3/fir-task', (req, res) => {
+  res.redirect('/international-task/eea-fir-iteration-1/scenario-3/get-a-task-2')
+})
+;
+
+
   module.exports = router;
