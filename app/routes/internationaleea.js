@@ -312,6 +312,21 @@ router.post('/international-task/eea-fir-iteration-1/scenario-1/task-details', (
 })
 ;
 
+router.post('/international-task/eea-fir-iteration-1/scenario-1/fir-task', function(req, res) {
+  if ( req.body['ireland-record'] === 'yes' ) {
+    res.redirect('change-award');
+  } else {res.redirect('record-request-reminder');
+}
+});
+
+router.post('/international-task/eea-fir-iteration-1/scenario-1/change-award', function(req, res) {
+  if ( req.body['change-award'] === 'yes' ) {
+    res.redirect('review-award');
+  } else {res.redirect('get-a-task-2');
+}
+});
+
+
 
 router.post('/international-task/eea-fir-iteration-1/scenario-1/mixed-years', (req, res) => {
   res.redirect('/international-task/eea-fir-iteration-1/scenario-1/request-records')
