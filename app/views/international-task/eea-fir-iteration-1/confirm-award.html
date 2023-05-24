@@ -42,7 +42,11 @@ GOV.UK Prototype Kit
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Updated award</th>
-                <td class="govuk-table__cell"><b>£141.91 per week</b></td>
+                <td class="govuk-table__cell"><b>{% if data.addsp1 %}
+                  £{{data.addsp1}} per week
+                  {% else %}
+                  £132.25 per week
+                  {% endif %}</b></td>
               </tr>
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">From</th>
@@ -62,13 +66,13 @@ GOV.UK Prototype Kit
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Period</th>
-                <td class="govuk-table__cell" style="width: 50%">13 September 2022 to 25 April 2023</td>
+                <td class="govuk-table__cell" style="width: 50%">13 September 2022 to 22 May 2023</td>
               </tr>
             </tbody>
           </table>
 
           <div class="govuk-inset-text">
-            This will automatically send a change of award letter to the claimant.
+        This will automatically send a change of award letter to the claimant.
           </div>
 
 <button class="govuk-button" data-module="govuk-button" href="/international-record/anzac-iteration-2/lived-worked-details-cfn1282-returned">
