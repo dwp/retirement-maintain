@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+              {% include './_bar.html' %}
+
+                      <form method="post">
+
+                        {{ govukBackLink({
+                    text: "Back",
+                    href: "javascript:history.go(-1)"
+                    }) }}
+
+<Br><br>
+
+                        <h1 class="govuk-heading-l">When do you want the debt payments to start?</h1>
+
+
+                        <div class="govuk-form-group">
+                          <fieldset class="govuk-fieldset">
+                            <div class="govuk-radios" data-module="govuk-radios">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="debtstartdate" name="debtstartdate" type="radio" value="21/07/2022">
+                                <label class="govuk-label govuk-radios__label" for="debtstartdate">
+                                21 July 2022
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="debtstartdate-2" name="debtstartdate" type="radio" value="18/08/2022">
+                                <label class="govuk-label govuk-radios__label" for="debtstartdate-2">
+                                18 August 2022
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="debtstartdate-3" name="debtstartdate" type="radio" value="manual-date">
+                                <label class="govuk-label govuk-radios__label" for="debtstartdate-3">
+                                A different date
+                                </label>
+                              </div>
+                            </div>
+
+                          </fieldset>
+                        </div>
+
+
+
+<button class="govuk-button" data-module="govuk-button">
+ Continue
+</button>
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
