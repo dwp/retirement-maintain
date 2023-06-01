@@ -60,7 +60,7 @@ router.post('/international-task/anzac-cfn1282-iteration-1/rf1-task', function(r
   if ( req.body['rf1-returned'] === 'yes' ) {
     res.redirect('sp-increase');
   } else {
-    res.redirect('rf1-send');
+    res.redirect('rf1-hmrc');
   }
 });
 
