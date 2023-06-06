@@ -14,8 +14,10 @@ GOV.UK Prototype Kit
 
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
-    <a href="tasks-2" class="govuk-back-link">Back</a>
-
+    {{ govukBackLink({
+      text: "Back",
+      href: "javascript:history.go(-1)"
+                      }) }}
     <br><br>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
@@ -27,14 +29,6 @@ GOV.UK Prototype Kit
 <div id="event-name-hint" class="govuk-hint">
   <p>Check when the claimant first made contact and enter the date.</p>
 </div>
-
-<!--<div id="event-name-hint" class="govuk-hint">
-  <p>Enter the earliest of:</p>
-  <ul class="govuk-list govuk-list--bullet">
-  <li>the date stamped on the claim form, if there is one</li>
-  <li>the date displayed in DRS</li>
-    </ul>
-</div>-->
 
 <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
   <div class="govuk-form-group">

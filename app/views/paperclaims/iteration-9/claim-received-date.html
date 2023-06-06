@@ -18,26 +18,22 @@ GOV.UK Prototype Kit
                       {% include './_bar.html' %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <a href="dob" class="govuk-back-link">Back</a>
-
+        {{ govukBackLink({
+          text: "Back",
+          href: "javascript:history.go(-1)"
+                          }) }}
         <br> <br>
         <form method="post" action="prison">
 
           <h1 class="govuk-heading-xl">
             Claim received date</h1>
 
-            <!--<div class="govuk-inset-text">
-              The earliest date they can claim their State Pension is 18 February 2021
 
-
-            </div>-->
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
 
                 <div class="govuk-date-input" id="passport-issued">
-                 <!--<label class="govuk-hint" for="contact-by-email">
-                    What date do you want to get your State Pension from?
-                  </label>-->
+
                   <div class="govuk-date-input__item">
                     <div class="govuk-form-group">
                       <label class="govuk-label govuk-date-input__label" for="passport-issued-day">

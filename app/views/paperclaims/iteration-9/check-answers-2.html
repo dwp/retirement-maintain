@@ -24,7 +24,10 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <a href="bank" class="govuk-back-link">Back</a>
+        {{ govukBackLink({
+          text: "Back",
+          href: "javascript:history.go(-1)"
+                          }) }}
 
         <form method="post" action="complete">
 <br>
@@ -34,34 +37,9 @@ GOV.UK Prototype Kit
 
 
   <div class="govuk-form-group">
-    
+
     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-      <!-- <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Date of birth
-        </dt>
-        <dd class="govuk-summary-list__value">
-          11 July 1954
-        </dd>
-        <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="#">
-            Change
-          </a>
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Address
-        </dt>
-        <dd class="govuk-summary-list__value">
-          5 Windsor Street<br>South Gosforth<br>Newcastle upon Tyne<br>NE31 1YL
-        </dd>
-        <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="#">
-            Change
-          </a>
-        </dd>
-      </div> -->
+
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Contact details
@@ -129,7 +107,7 @@ GOV.UK Prototype Kit
           </a>
         </dd>
       </div>
-  
+
     </dl>
 
 

@@ -27,9 +27,12 @@ GOV.UK Prototype Kit
 
           <div class="moj-banner__message">
             <span class="moj-banner__assistive">Success</span>Verification complete - continue with claim</div>
-
         </div>
-        <a href="bank" class="govuk-back-link">Back</a>
+        
+        {{ govukBackLink({
+          text: "Back",
+          href: "javascript:history.go(-1)"
+                          }) }}
 
         <form method="post" action="sp-date">
 <br>

@@ -23,7 +23,10 @@ GOV.UK Prototype Kit
 
         <form method="post">
           <div>
-            <a href="check-answers" class="govuk-back-link">Back</a>
+            {{ govukBackLink({
+              text: "Back",
+              href: "javascript:history.go(-1)"
+                              }) }}
 
           </div>
           <br>
