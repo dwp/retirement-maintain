@@ -20,4 +20,44 @@ router.post('/paperclaims/iteration-5c/marital-status', function(req, res) {
     }
   });
 
+
+
+
+// Iteration 9 (POST SPA)
+
+  router.post('/paperclaims/iteration-9/find-1', function(req, res) {
+    if ( req.body['process'] === 'yes' ) {
+      res.redirect('/paperclaims/iteration-9/ni');
+    } else {
+      res.redirect('/paperclaims/iteration-9/drop-out');
+    }
+  });
+
+
+
+  router.post('/paperclaims/iteration-9/ni', (req, res) => {
+    res.redirect('/paperclaims/iteration-9/dob')
+  })
+  ;
+
+  router.post('/paperclaims/iteration-9/dob', (req, res) => {
+    res.redirect('/paperclaims/iteration-9/sp-date')
+  })
+  ;
+
+
+  router.post('/paperclaims/iteration-9/sp-date', (req, res) => {
+    res.redirect('/paperclaims/iteration-9/prison')
+  })
+  ;
+
+
+  router.post('/paperclaims/iteration-9/prison', function(req, res) {
+      if ( req.body['prison'] === 'yes' ) {
+        res.redirect('/paperclaims/iteration-9/prison-details');
+      } else {
+        res.redirect('/paperclaims/iteration-9/contacted');
+      }
+    });
+
 module.exports = router;

@@ -18,19 +18,16 @@ GOV.UK Prototype Kit
                       {% include './_bar.html' %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <a href="dob" class="govuk-back-link">Back</a>
-
+        {{ govukBackLink({
+          text: "Back",
+          href: "javascript:history.go(-1)"
+                          }) }}
         <br> <br>
         <form method="post" action="prison">
 
           <h1 class="govuk-heading-xl">
             What date will the claimant get their State Pension from?</h1>
 
-            <!--<div class="govuk-inset-text">
-              The earliest date they can claim their State Pension is 18 February 2021
-
-
-            </div>-->
 
           <div class="govuk-form-group">
 
