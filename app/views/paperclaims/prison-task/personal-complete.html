@@ -14,6 +14,20 @@ GOV.UK Prototype Kit
 
 
 <div class="govuk-width-container">
+
+  <br><br>
+
+  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Success
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <h3 class="govuk-notification-banner__heading">
+          Task complete
+        </h3>
+      </div>
+    </div>
   <div class="govuk-grid-column-two-thirds">
 
     <main id="content" role="main">
@@ -22,7 +36,7 @@ GOV.UK Prototype Kit
 
 
           <br><br>
-          {% include './_bar.html' %}
+          {% include './_bar2.html' %}
 
           {% include './_tab-overview.html' %}
 
@@ -34,13 +48,7 @@ GOV.UK Prototype Kit
     <br>
     <br>
 
-    <div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Warning</span>
-    Waiting for the claimant's prison dates.<br> <a href="paper-prison-task-record" class="govuk-link govuk-link--no-visited-state">Enter dates</a>
-  </strong>
-</div>
+
 
     <div>
       <h2 class="govuk-heading-m">Personal details</h2>
@@ -84,7 +92,30 @@ GOV.UK Prototype Kit
       Personal changes
     </h2>
     <ol class="app-timeline">
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          State Pension awarded
+        </h3>
 
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">No changes made</span>
+          <span class="app-timeline__date">
+            15 June 2022
+          </span>
+        </p>
+      </li>
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Prison dates added
+        </h3>
+
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">No changes made</span>
+          <span class="app-timeline__date">
+            15 June 2022
+          </span>
+        </p>
+      </li>
 
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">

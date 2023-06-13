@@ -80,13 +80,13 @@ GOV.UK Prototype Kit
           </table>
 
 
-            <h1 class="govuk-heading-l">3. Prison dates</h1>
+            <h1 class="govuk-heading-l">3. Ask these questions</h1>
 
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset" role="group" aria-describedby="prison-entered-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                   <h1 class="govuk-fieldset__heading">
-                    When did the claimant enter prison?
+                    When did you go into prison?
                   </h1>
                 </legend>
                 <div id="prison-entered-hint" class="govuk-hint">
@@ -125,7 +125,7 @@ GOV.UK Prototype Kit
               <fieldset class="govuk-fieldset" role="group" aria-describedby="prison-entered-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                   <h1 class="govuk-fieldset__heading">
-                    When did the claimant leave prison?
+                    When did you leave prison?
                   </h1>
                 </legend>
                 <div id="prison-entered-hint" class="govuk-hint">
@@ -187,8 +187,18 @@ GOV.UK Prototype Kit
         </span>
       </summary>
       <div class="govuk-details__text">
-        <b>URL:</b> /ask-security-questions-outbound <br>
-        <b>Error messages:</b> If nothing selected: Select what was the outcome of the additional security check<br>
+        <b>URL:</b> /ask-prison-dates <br>
+        <b>Error messages:<br><br>
+          Go into prison</b><br>
+          Nothing entered: Enter the date the claimant went into prison<br>
+          Invalid: Enter a real date, like 12 4 1993<br>
+        Today or future: Date the claimant went into prison must be in the past<br><br>
+        <b>
+          Go into prison</b><br>
+          Nothing entered: Enter the date the claimant left prison<br>
+          Invalid: Enter a real date, like 12 4 1993<br>
+        Before date went into prison: Date the claimant left prison must be after 22 4 2022 [date went in +1]<br>
+        Future: Date the claimant left prison must be today or in the past<br>
         <b>Notes:</b> None <br>
       </div>
     </details>
