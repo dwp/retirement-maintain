@@ -1,12 +1,9 @@
 
 
-
-
-
 {% extends "layout.html" %}
 
 {% block header %}
-{% include 'current/includes/_header-manage.html' %}
+{% include './navigation/_header-nav-unselected.html' %}
 {% endblock %}
 
 {% block content %}
@@ -20,18 +17,46 @@
 
     <h1 class="govuk-heading-xl">Jobs run</h1>
 
-    <div class="govuk-grid-row govuk-!-margin-bottom-9">
+    <div class="govuk-grid-row govuk-!-margin-bottom-2">
       <div class="govuk-grid-column-one-third">
         <label class="govuk-label--m" for="wfstart">
-          <!-- just an example, we should have proper content below to read correctly -->
+
           <span class="govuk-visually-hidden"> Jobs </span> From <span class="govuk-visually-hidden"> date</span>
           <div class="govuk-hint"> For example, 12-06-2007</div>
-          <duet-date-picker
-              name="start"
-              class="wfstart"
-              id="wfstart"
-              label="From">
-          </duet-date-picker>
+
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+
         </label>
       </div>
     </div>
@@ -39,16 +64,41 @@
     <div class="govuk-grid-row govuk-!-margin-bottom-9">
       <div class="govuk-grid-column-one-third">
         <label class="govuk-label--m" for="wfend">
-          <!-- just an example, we should have proper content below to read correctly -->
+
           <span class="govuk-visually-hidden"> Jobs </span> To <span class="govuk-visually-hidden"> date</span>
           <div class="govuk-hint"> For example, 12-06-2007</div>
         </label>
-        <duet-date-picker
-            name="start"
-            class="wfend"
-            id="wfend"
-            label="To">
-        </duet-date-picker>
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+            <div class="govuk-date-input" id="passport-issued">
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                    Day
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                </div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                    Month
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                </div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                    Year
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
       </div>
     </div>
 
@@ -152,7 +202,7 @@
                         <div id="event-name-hint" class="govuk-hint">
                         Select the jobs you want to see
                         </div>
-                        
+
                         <div class="govuk-checkboxes__item">
                           <input class="govuk-checkboxes__input" id="jobs-3" name="jobs-3" type="checkbox" value="jobs-3" data-aria-controls="jobs-3">
                           <label class="govuk-label govuk-checkboxes__label" for="jobs-3">
@@ -194,7 +244,7 @@
                             Data and analytics file
                           </label>
                         </div>
-                  
+
                         <div class="govuk-checkboxes__item">
                           <input class="govuk-checkboxes__input" id="jobs-7" name="jobs-7" type="checkbox" value="jobs-7" data-aria-controls="jobs-7">
                           <label class="govuk-label govuk-checkboxes__label" for="jobs-7">
@@ -251,7 +301,7 @@
       Continue
       </button>
       <input type="hidden" name="jobs-run" value="true">
-     
+
 
       <form method="post">
 

@@ -121,6 +121,29 @@ GOV.UK Prototype Kit
 
 <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
 
+
+
+<div class="govuk-accordion__section ">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3">
+            Performance measurement
+          </span>
+        </h2>
+        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
+          style="font-size: 14pt;">
+          Performance measurement agents to lock and unlock a record for a period of time. Whilst the record is locked
+          SP agents will only be able to complete limited changes.
+        </div>
+      </div>
+      <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
+        aria-labelledby="accordion-with-summary-sections-heading-3">
+
+          {% include 'notes/performancemeasurement.html' %}
+
+      </div>
+    </div>
+
   <div class="govuk-accordion__section ">
         <div class="govuk-accordion__section-header">
           <h2 class="govuk-accordion__section-heading">
@@ -130,7 +153,7 @@ GOV.UK Prototype Kit
           </h2>
           <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
             style="font-size: 14pt;">
-            Blob blob blob
+
           </div>
         </div>
         <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
