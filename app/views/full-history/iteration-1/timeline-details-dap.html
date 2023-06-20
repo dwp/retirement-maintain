@@ -7,7 +7,7 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-{% include './_header-nav-unselected.html' %}
+{% include './navigation/_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -29,37 +29,42 @@ GOV.UK Prototype Kit
 
           <form method="post" action="payment-frequency">
 
-            <a href="payment" class="govuk-back-link">Back</a>
+            <a href="personal-account-closed" class="govuk-back-link">Back</a>
             <br><br>
-            <h2 class="govuk-heading-l">Martial status changed details</h2>
+            <h2 class="govuk-heading-l">Details of who is dealing with Mark's estate</h2>
 
             <div class="govuk-form-group">
+
 
               <table class="govuk-table">
                 <tbody class="govuk-table__body">
                   <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">Date of action</th>
-                    <td class="govuk-table__cell">23 June 2023</td>
+                    <th scope="row" class="govuk-table__header">Date added</th>
+                    <td class="govuk-table__cell">12 May 2023</td>
                   </tr>
-                  <tr class="govuk-table__row">
 
-              <th scope="row" class="govuk-table__header">To</th>
-              <td class="govuk-table__cell">
-                      Widowed</td>
-                  </tr>
-                  <tr class="govuk-table__row">
 
-  <th scope="row" class="govuk-table__header">From</th>
+
+
+
+
+
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Name</th>
+        <td class="govuk-table__cell">Sally Rooney</td>
+      </tr>
+      <tr class="govuk-table__row">
+
+  <th scope="row" class="govuk-table__header">Address</th>
   <td class="govuk-table__cell">
-                      Married</td>
-                  </tr>
+    5 Main Street
+      <br> Guildford <br> GU79 6YW</td>
+      </tr>
+    </tbody>
+  </table>
 
 
 
-
-
-                </tbody>
-              </table>
 
    <p>  <a class="govuk-link" href="delete-timeline-entry">
                 Delete timeline event
