@@ -1,7 +1,7 @@
 $govuk-global-styles: true;
 
 .app-most-recent {
-  border: 1px solid $govuk-border-colour;
+  border: 1px solid govuk-colour("mid-grey");
   margin-bottom: 15px;
   margin-top: 15px;
   overflow: hidden;
@@ -12,7 +12,7 @@ $govuk-global-styles: true;
   position: relative;
 
   &::before {
-    background: $govuk-border-colour;
+    background: govuk-colour("mid-grey");
     color: govuk-colour('white');
     content: 'PROTOTYPE';
     font-family: 'nta', Arial, sans-serif;

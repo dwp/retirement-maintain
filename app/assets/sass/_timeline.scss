@@ -22,7 +22,7 @@ $govuk-global-styles: true;
 
     .app-timeline__author,
     .app-timeline__date {
-      color: $govuk-secondary-text-colour;
+      color: govuk-colour('blue');
       display: block;
     }
 

@@ -51,7 +51,7 @@
       }
 
       .timeline-reference {
-        @extend .govuk-heading-s;
+        @extend .govuk-heading-m !optional;
         display: table;
         position: relative;
         &:before {
@@ -79,7 +79,7 @@
       }
 
       h2 {
-        @extend .govuk-heading-m;
+        @extend .govuk-heading-m !optional;
         margin-top: 0.5em;
         font-size: 0.9em;
       }
