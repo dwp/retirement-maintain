@@ -1,5 +1,5 @@
-const express = require('express');
-const router = express.Router()
+const govukPrototypeKit = require('govuk-prototype-kit')
+const router = govukPrototypeKit.requests.setupRouter()
 
 router.use((req, res, next) => {
   if (req.method === 'POST') {
@@ -8,38 +8,33 @@ router.use((req, res, next) => {
   next()
 })
 
-
 // WAR PENSION
-router.post('/war-pension/iteration-1/war-pension-decision', function(req, res) {
-  if ( req.body['war-pension-decision'] === 'award-state-pension' ) {
-    res.redirect('award-change');
+router.post('/war-pension/iteration-1/war-pension-decision', function (req, res) {
+  if (req.body['war-pension-decision'] === 'award-state-pension') {
+    res.redirect('award-change')
   } else {
-    res.redirect('no-award');
+    res.redirect('no-award')
   }
-});
-
+})
 
 // CARERS ALLOWANCE
 
-router.post('/carers-allowance/iteration-1/carers-allowance-decision-1', function(req, res) {
-  if ( req.body['carers-allowance'] === 'yes' ) {
-    res.redirect('carers-allowance-details');
+router.post('/carers-allowance/iteration-1/carers-allowance-decision-1', function (req, res) {
+  if (req.body['carers-allowance'] === 'yes') {
+    res.redirect('carers-allowance-details')
   } else {
-    res.redirect('no-offset');
+    res.redirect('no-offset')
   }
-});
-
+})
 
 // PENSION CREDIT
 
-router.post('/pension-credit/iteration-1/pension-credit-decision-1', function(req, res) {
-  if ( req.body['pension-credit'] === 'yes' ) {
-    res.redirect('pension-credit-details');
+router.post('/pension-credit/iteration-1/pension-credit-decision-1', function (req, res) {
+  if (req.body['pension-credit'] === 'yes') {
+    res.redirect('pension-credit-details')
   } else {
-    res.redirect('no-offset');
+    res.redirect('no-offset')
   }
-});
+})
 
-
-
-  module.exports = router;
+module.exports = router

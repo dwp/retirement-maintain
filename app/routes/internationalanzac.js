@@ -1,70 +1,66 @@
-const express = require('express');
-const router = express.Router()
+const govukPrototypeKit = require('govuk-prototype-kit')
+const router = govukPrototypeKit.requests.setupRouter()
 
 // Iteration 1
 
-router.post('/international-task/anzac-iteration-1/award-improvement', function(req, res) {
-  if ( req.body['improvement'] === 'yes' ) {
-    res.redirect('issue-letter');
+router.post('/international-task/anzac-iteration-1/award-improvement', function (req, res) {
+  if (req.body.improvement === 'yes') {
+    res.redirect('issue-letter')
   } else {
-    res.redirect('no-improvement');
+    res.redirect('no-improvement')
   }
-});
+})
 
-router.post('/international-task/anzac-iteration-2/award-improvement', function(req, res) {
-  if ( req.body['improvement'] === 'yes' ) {
-    res.redirect('issue-letter');
+router.post('/international-task/anzac-iteration-2/award-improvement', function (req, res) {
+  if (req.body.improvement === 'yes') {
+    res.redirect('issue-letter')
   } else {
-    res.redirect('no-improvement');
+    res.redirect('no-improvement')
   }
-});
+})
 
 // CFN1282
 
-router.post('/international-task/anzac-cfn1282-iteration-1/cfn-task', function(req, res) {
-  if ( req.body['cfn1282-returned'] === 'yes' ) {
-    res.redirect('date-of-entry');
+router.post('/international-task/anzac-cfn1282-iteration-1/cfn-task', function (req, res) {
+  if (req.body['cfn1282-returned'] === 'yes') {
+    res.redirect('date-of-entry')
   } else {
-    res.redirect('get-a-task-2');
+    res.redirect('get-a-task-2')
   }
-});
+})
 
-router.post('/international-task/anzac-cfn1282-iteration-1/date-of-entry', function(req, res) {
-  if ( req.body['date-of-entry'] === 'before' ) {
-    res.redirect('rf1-send');
+router.post('/international-task/anzac-cfn1282-iteration-1/date-of-entry', function (req, res) {
+  if (req.body['date-of-entry'] === 'before') {
+    res.redirect('rf1-send')
   } else {
-    res.redirect('sp-increase');
+    res.redirect('sp-increase')
   }
-});
+})
 
-router.post('/international-task/anzac-cfn1282-iteration-1/rf1-send', function(req, res) {
-  if ( req.body['rf1'] === 'request' ) {
-    res.redirect('rf1-hmrc');
-  } else if ( req.body['rf1'] === 'received' ) {
-    res.redirect('sp-increase');
+router.post('/international-task/anzac-cfn1282-iteration-1/rf1-send', function (req, res) {
+  if (req.body.rf1 === 'request') {
+    res.redirect('rf1-hmrc')
+  } else if (req.body.rf1 === 'received') {
+    res.redirect('sp-increase')
   } else {
-    res.redirect('get-a-task-2');
+    res.redirect('get-a-task-2')
   }
-});
+})
 
-router.post('/international-task/anzac-cfn1282-iteration-1/sp-increase', function(req, res) {
-  if ( req.body['sp-increase'] === 'change' ) {
-    res.redirect('review-award');
+router.post('/international-task/anzac-cfn1282-iteration-1/sp-increase', function (req, res) {
+  if (req.body['sp-increase'] === 'change') {
+    res.redirect('review-award')
   } else {
-    res.redirect('get-a-task-2');
+    res.redirect('get-a-task-2')
   }
-});
+})
 
-
-router.post('/international-task/anzac-cfn1282-iteration-1/rf1-task', function(req, res) {
-  if ( req.body['rf1-returned'] === 'yes' ) {
-    res.redirect('sp-increase');
+router.post('/international-task/anzac-cfn1282-iteration-1/rf1-task', function (req, res) {
+  if (req.body['rf1-returned'] === 'yes') {
+    res.redirect('sp-increase')
   } else {
-    res.redirect('rf1-hmrc');
+    res.redirect('rf1-hmrc')
   }
-});
+})
 
-
-
-
-  module.exports = router;
+module.exports = router

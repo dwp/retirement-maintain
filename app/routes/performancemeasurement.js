@@ -1,5 +1,5 @@
-const express = require('express');
-const router = express.Router()
+const govukPrototypeKit = require('govuk-prototype-kit')
+const router = govukPrototypeKit.requests.setupRouter()
 
 router.use((req, res, next) => {
   if (req.method === 'POST') {
@@ -8,9 +8,6 @@ router.use((req, res, next) => {
   next()
 })
 
-
 // ITERATION ONE
 
-
-
-  module.exports = router;
+module.exports = router

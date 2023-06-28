@@ -1,5 +1,5 @@
-const express = require('express');
-const router = express.Router()
+const govukPrototypeKit = require('govuk-prototype-kit')
+const router = govukPrototypeKit.requests.setupRouter()
 
 router.use((req, res, next) => {
   if (req.method === 'POST') {
@@ -7,15 +7,13 @@ router.use((req, res, next) => {
   }
   next()
 })
-  ;
 
 router.post('/iteration22b/payment-details-bank', function (req, res) {
   if (req.body['bank-change'] === 'yes') {
-    res.redirect('payment-details-resend');
+    res.redirect('payment-details-resend')
   } else {
-    res.redirect('bankdetails');
+    res.redirect('bankdetails')
   }
-});
+})
 
-
-module.exports = router;
+module.exports = router

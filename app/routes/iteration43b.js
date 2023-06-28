@@ -1,13 +1,12 @@
-const express = require('express');
-const router = express.Router()
+const govukPrototypeKit = require('govuk-prototype-kit')
+const router = govukPrototypeKit.requests.setupRouter()
 
+router.post('/iteration43/cancel-date', function (req, res) {
+  if (req.body.claim === 'yes') {
+    res.redirect('/iteration43/cancel-confirm')
+  } else {
+    res.redirect('/iteration43/cancel-defer-date')
+  }
+})
 
-  router.post('/iteration43/cancel-date', function(req, res) {
-    if ( req.body['claim'] === 'yes' ) {
-      res.redirect('/iteration43/cancel-confirm');
-    } else {
-      res.redirect('/iteration43/cancel-defer-date');
-    }
-  });
-
-module.exports = router;
+module.exports = router
