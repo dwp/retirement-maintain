@@ -44,6 +44,9 @@ GOV.UK Prototype Kit
 
 <h1 class="govuk-heading-l">Change award</h1>
 
+<!-- <div class="govuk-inset-text">
+These amounts do not include inherited State Pension.</div> -->
+
 <table class="govuk-table">
     <thead class="govuk-table__head">
       <tr class="govuk-table__row">
@@ -51,7 +54,7 @@ GOV.UK Prototype Kit
         <th class="govuk-table__header award_detail" scope="col">{% if data.addsp1 %}
           £{{data.addsp1}} per week
           {% else %}
-          £132.25 per week
+          £208.85 per week
           {% endif %}	</th>
         <td class="govuk-table__cell award_detail">
 </td>
@@ -63,7 +66,7 @@ GOV.UK Prototype Kit
         <td class="govuk-table__cell">{% if data.addsp1 %}
           £{{data.addsp1}}
           {% else %}
-          £132.25
+          £203.85
           {% endif %}</td>
         <td class="govuk-table__cell">
           <a href="change-nsp">
@@ -82,18 +85,22 @@ GOV.UK Prototype Kit
             Change<span class="govuk-visually-hidden">Change Protected Payment</span>
           </a></td>
       </tr>
-      <tr class="govuk-table__row">
+       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row">Extra State Pension</td>
-        <td class="govuk-table__cell">£0.00</td>
+        <td class="govuk-table__cell">£5.00</td>
         <td class="govuk-table__cell">  </td>
       </tr>
-      <tr class="govuk-table__row">
+       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row">Inherited extra State Pension</td>
         <td class="govuk-table__cell">£0.00</td>
         <td class="govuk-table__cell"></td>
       </tr>
     </tbody>
     </table>
+
+
+
+
     <table class="govuk-table">
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
@@ -101,7 +108,7 @@ GOV.UK Prototype Kit
           <td class="govuk-table__cell">13 September 2022</td>
         </tr>
         <tr class="govuk-table__row">
-          <th scope="row" class="govuk-table__header">Entitlement date</th>
+          <th scope="row" class="govuk-table__header">Review award from</th>
           <td class="govuk-table__cell">13 September 2022</td>
         </tr>
       </tbody>

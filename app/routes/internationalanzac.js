@@ -63,4 +63,14 @@ router.post('/international-task/anzac-cfn1282-iteration-1/rf1-task', function (
   }
 })
 
+// PENSION CREDIT
+
+router.post('/pension-credit/anzac/pension-credit-decision-1', function (req, res) {
+  if (req.body['pension-credit'] === 'yes') {
+    res.redirect('pension-credit-details')
+  } else {
+    res.redirect('no-offset')
+  }
+})
+
 module.exports = router
