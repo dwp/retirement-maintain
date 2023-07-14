@@ -20,7 +20,14 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-              {% include './_bar-task-outstanding.html' %}
+        {% include './_bar-task-outstanding.html' %}
+
+        {{ govukBackLink({
+          text: "Back",
+          href: "javascript:history.go(-1)"
+                          }) }}
+
+                          <br><br>
 
                       <form method="post" action="personal-complete">
                         <h1 class="govuk-heading-l">Pension Credit to deduct</h1>
@@ -75,8 +82,8 @@ GOV.UK Prototype Kit
 
                             </table> -->
 
-
-                          <div class="govuk-inset-text">An award letter will be sent with details of the deduction.
+                            <div class="govuk-inset-text">
+                            This will automatically pay any arrears and send an award letter to the claimant. It will include details of the deduction.
     </div>
 <br>
 
