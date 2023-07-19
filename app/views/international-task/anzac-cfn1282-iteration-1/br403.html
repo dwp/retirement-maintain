@@ -20,7 +20,10 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
               {% include './_bar.html' %}
-
+              {{ govukBackLink({
+                text: "Back",
+                href: "javascript:history.go(-1)"
+                                }) }}
               <h1 class="govuk-heading-l">Complete part A of the BR403</h1>
               <p>Use this information to complete part A of the BR403 and send it to the Pension Credit team.</p>
 <br>
