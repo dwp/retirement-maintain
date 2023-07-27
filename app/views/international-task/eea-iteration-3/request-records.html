@@ -21,6 +21,11 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
 
 {% include './_bar.html' %}
+{{ govukBackLink({
+  text: "Back",
+  href: "javascript:history.go(-1)"
+                  }) }}
+                  <br>
 <h1 class="govuk-heading-l">Request insurance records from these countries</h1>
 
   <form method="post">

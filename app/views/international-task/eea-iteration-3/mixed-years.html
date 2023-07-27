@@ -21,7 +21,11 @@ GOV.UK Prototype Kit
       <div class="govuk-grid-column-two-thirds">
 
 {% include './_bar.html' %}
-
+{{ govukBackLink({
+  text: "Back",
+  href: "javascript:history.go(-1)"
+                  }) }}
+                  <br>
 <h1 class="govuk-heading-l">Check for potential mixed years</h1>
 <p class="govuk-body">Use OLE to check if the claimant has any deficient qualifying years.
 </p>

@@ -176,6 +176,10 @@ router.post('/international-task/testing/scenario-3/confirmation', (req, res) =>
 // ITERATION 3
 
 router.post('/international-task/eea-iteration-3/cfn-task', (req, res) => {
+  res.redirect('/international-task/eea-iteration-3/award-improvement')
+})
+
+router.post('/international-task/eea-iteration-3/award-improvement', (req, res) => {
   res.redirect('/international-task/eea-iteration-3/mixed-years')
 })
 
