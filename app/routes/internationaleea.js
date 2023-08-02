@@ -195,6 +195,28 @@ router.post('/international-task/eea-iteration-3/request-records', (req, res) =>
   res.redirect('/international-task/eea-iteration-3/get-a-task-2')
 })
 
+// ITERATION 3
+
+router.post('/international-task/eea-iteration-4/cfn-task', (req, res) => {
+  res.redirect('/international-task/eea-iteration-4/award-improvement')
+})
+
+router.post('/international-task/eea-iteration-4/award-improvement', (req, res) => {
+  res.redirect('/international-task/eea-iteration-4/mixed-years')
+})
+
+router.post('/international-task/eea-iteration-4/task-details', (req, res) => {
+  res.redirect('/international-task/eea-iteration-4/cfn-required')
+})
+
+router.post('/international-task/eea-iteration-4/mixed-years', (req, res) => {
+  res.redirect('/international-task/eea-iteration-4/request-records')
+})
+
+router.post('/international-task/eea-iteration-4/request-records', (req, res) => {
+  res.redirect('/international-task/eea-iteration-4/get-a-task-2')
+})
+
 // CFN901 RETURNED ITERATION 1
 
 router.post('/international-task/eea-cfn901-iteration-1/task-details-cfn901', (req, res) => {
