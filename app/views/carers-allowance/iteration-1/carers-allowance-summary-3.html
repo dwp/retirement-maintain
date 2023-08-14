@@ -22,8 +22,15 @@ GOV.UK Prototype Kit
 
               {% include './_bar-task-outstanding.html' %}
 
+              {{ govukBackLink({
+                text: "Back",
+                href: "javascript:history.go(-1)"
+                                }) }} <br><br>
+
                       <form method="post" action="personal-complete">
-                        <h1 class="govuk-heading-l">Confirm days to exclude</h1>
+                        <h1 class="govuk-heading-">Carer's Allowance to deduct</h1>
+                        <p class="govuk-body">The claimant was paid too much Carer's Allowance and needs to repay it from their State Pension.</p>
+
                       <br><br>  <h2 class="govuk-heading-m">1. Check the information you entered</h2>
 
                       <table class="govuk-table">
@@ -39,7 +46,7 @@ GOV.UK Prototype Kit
                        <td class="govuk-table__cell" scope="row">From</td>
                        <td class="govuk-table__cell" scope="row"></td>
                        <td class="govuk-table__cell" scope="row"></td>
-                       <td class="govuk-table__cell">22 Dec 2022</td>
+                       <td class="govuk-table__cell">25 June 2022</td>
 
 
                      <tbody class="govuk-table__body">
@@ -47,7 +54,7 @@ GOV.UK Prototype Kit
                        <td class="govuk-table__cell" scope="row">To</td>
                        <td class="govuk-table__cell" scope="row"></td>
                        <td class="govuk-table__cell" scope="row"></td>
-                       <td class="govuk-table__cell">25 Mar 2023</td>
+                       <td class="govuk-table__cell">25 August 2023</td>
 
 
 
@@ -60,34 +67,36 @@ GOV.UK Prototype Kit
 
                    </table>
 
-                        <h2 class="govuk-heading-m">2. Confirm and send letter</h2>
-<p class="givuk-body"> The claimant will not build up any extra State Pension during this period.</p>
+                   <h2 class="govuk-heading-m">2. Confirm and send letter</h2>
 
-  <p class="givuk-body">An award letter will be sent. </p>
 
+
+                        <table class="govuk-table">
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                         <td class="govuk-table__cell" scope="row">Excluded days</td>
+                            <td class="govuk-table__cell" scope="row"></td>
+                            <td class="govuk-table__cell" scope="row"></td>
+                            <td class="govuk-table__cell">  45 days </td>
+                        </tr>
+                            <tr class="govuk-table__row">
+                         <td class="govuk-table__cell" scope="row">Amount to deduct</td>
+                            <td class="govuk-table__cell" scope="row"></td>
+                            <td class="govuk-table__cell" scope="row"></td>
+                            <td class="govuk-table__cell">  £1459.50</td></tr>
+
+                            </table>
+
+
+                          <div class="govuk-inset-text">                            This will automatically pay any arrears and send an award letter to the claimant. It will include details of the deduction.
+
+    </div>
 <br>
 
 <button class="govuk-button" data-module="govuk-button">
  Confirm and send letter
 </button>
 
-
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-
-<details class="govuk-details" data-module="govuk-details">
-<summary class="govuk-details__summary">
-<span class="govuk-details__summary-text">
-<b>URL, errors and notes</b>
-</span>
-</summary>
-<div class="govuk-details__text">
-<b>URL:</b> /carers-allowance-summary <br>
-<b>Error messages:</b><br><br>
-
-<b>Notes:</b> <br>
-</div>
-</details>
 <!--
      <a href="get-next-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
           Return task to queue
@@ -95,7 +104,22 @@ GOV.UK Prototype Kit
 
         </form> -->
 
+        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
+
+        <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+        </summary>
+        <div class="govuk-details__text">
+        <b>URL:</b> /carers-allowance-summary <br>
+        <b>Error messages:</b><br><br>
+
+        <b>Notes:</b> <br>
+        </div>
+        </details>
 
         </div>
 

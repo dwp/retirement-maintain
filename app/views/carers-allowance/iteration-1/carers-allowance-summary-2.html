@@ -22,6 +22,11 @@ GOV.UK Prototype Kit
 
               {% include './_bar-task-outstanding.html' %}
 
+              {{ govukBackLink({
+                text: "Back",
+                href: "javascript:history.go(-1)"
+                                }) }} <br><br>
+
                       <form method="post" action="personal-complete">
                         <h1 class="govuk-heading-">Carer's Allowance to deduct</h1>
                         <p class="govuk-body">The claimant was paid too much Carer's Allowance and needs to repay it from their State Pension.</p>
@@ -101,16 +106,22 @@ GOV.UK Prototype Kit
 
 
 
-                        <table class="govuk-table">
-                          <tbody class="govuk-table__body">
-                            <tr class="govuk-table__row">
-                         <td class="govuk-table__cell" scope="row">Amount to deduct</td>
-                            <td class="govuk-table__cell" scope="row"></td>
-                            <td class="govuk-table__cell" scope="row"></td>
-                            <td class="govuk-table__cell">  £1459.50</td>
+     <table class="govuk-table">
+       <tbody class="govuk-table__body">
+         <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">Excluded days</td>
+         <td class="govuk-table__cell" scope="row"></td>
+         <td class="govuk-table__cell" scope="row"></td>
+         <td class="govuk-table__cell">  45 days </td>
+       </tr>
+         <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">Amount to deduct</td>
+         <td class="govuk-table__cell" scope="row"></td>
+         <td class="govuk-table__cell" scope="row"></td>
+         <td class="govuk-table__cell">  £1459.50</td></tr>
 
+         </table>
 
-                            </table>
 
 
                           <div class="govuk-inset-text">This amount will be deducted from their State Pension. An award letter will be sent with details of the deduction.
