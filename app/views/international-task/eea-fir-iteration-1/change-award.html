@@ -22,6 +22,12 @@ GOV.UK Prototype Kit
 
 {% include './_bar.html' %}
 
+{{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    })
+  }}
+
 <form method="post">
 
 
