@@ -17,25 +17,26 @@ GOV.UK Prototype Kit
 
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-        How would you like to confirm your identity?
-      </h1>
+Do you have your invitation code?      </h1>
 
-      <div class="govuk-radios">
-        <div class="govuk-radios__item">
+<div class="govuk-radios" data-module="govuk-radios">
+  <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="confirm-identity" name="confirm-identity" type="radio"
             value="code">
           <label class="govuk-label govuk-radios__label" for="confirm-identity">
-            <b>I have an invitation letter</b><br>
-            If you’ve been sent a letter, your unique invitation code will be included in this letter.
-          </label>
+            <b>Yes, I have my invitation code </b> </label>
+<div id="signIn-item-hint" class="govuk-hint govuk-radios__hint">
+              You can find this on your Get your State Pension letter</div>
+
         </div>
-        <br>
+
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="confirm-identity-2" name="confirm-identity" type="radio"
             value="verify">
-          <label class="govuk-label govuk-radios__label" for="confirm-identity-2">
-            <b>I haven’t got an invitation letter</b> <br>You can prove your identity with GOV.UK Verify instead.
-          </label>
+<label class="govuk-label govuk-radios__label" for="confirm-identity-2">
+            <b>No, I do not have my invitation code</b></label>
+            <div id="signIn-item-hint" class="govuk-hint govuk-radios__hint">You can prove your identity with GOV.UK Verify instead</div>
+
         </div>
       </div>
       <br><br>
