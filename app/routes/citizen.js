@@ -11,7 +11,20 @@ router.post('/citizen/confirm-identity', function (req, res) {
   }
 })
 
+router.post('/citizen/check-your-start-date', (req, res) => {
+  res.redirect('/citizen/prison')
+})
+
+// Prison
 router.post('/citizen/prison', (req, res) => {
+  res.redirect('/citizen/prison-date')
+})
+
+router.post('/citizen/prison-date', (req, res) => {
+  res.redirect('/citizen/prison-date-leave')
+})
+
+router.post('/citizen/prison-date-leave', (req, res) => {
   res.redirect('/citizen/lived-abroad')
 })
 
