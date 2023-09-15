@@ -30,7 +30,7 @@ router.post('/carers-allowance/iteration-1/carers-allowance-decision-1', functio
 // CARERS SUPPORT
 
 router.post('/carers-support/iteration-1/carers-support-decision-1', function (req, res) {
-  if (req.body['carers-support'] === 'yes') {
+  if (req.body['carers-allowance'] === 'yes') {
     res.redirect('carers-support-details')
   } else {
     res.redirect('no-offset')
