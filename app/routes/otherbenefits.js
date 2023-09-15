@@ -27,6 +27,16 @@ router.post('/carers-allowance/iteration-1/carers-allowance-decision-1', functio
   }
 })
 
+// CARERS ALLOWANCE
+
+router.post('/carers-support/iteration-1/carers-support-decision-1', function (req, res) {
+  if (req.body['carers-allowance'] === 'yes') {
+    res.redirect('carers-allowance-details')
+  } else {
+    res.redirect('no-offset')
+  }
+})
+
 // PENSION CREDIT
 
 router.post('/pension-credit/iteration-1/pension-credit-decision-1', function (req, res) {
