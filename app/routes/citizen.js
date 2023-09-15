@@ -40,10 +40,18 @@ router.post('/citizen/alt-formats', function (req, res) {
 // Lived abroad yes/no
 router.post('/citizen/lived-abroad', function (req, res) {
   if (req.body['lived-abroad'] === 'yes') {
-    res.redirect('worked-abroad')
+    res.redirect('countries-lived')
   } else {
     res.redirect('worked-abroad')
   }
+})
+
+router.post('/citizen/countries-lived', (req, res) => {
+    res.redirect('countries-lived-details')
+})
+
+router.post('/citizen/countries-lived-details', (req, res) => {
+    res.redirect('worked-abroad')
 })
 
 // Worked abroad yes/no

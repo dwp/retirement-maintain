@@ -6,7 +6,7 @@ GOV.UK Prototype Kit
 
 {% block content %}
 
-<form method="post" action="worked-abroad">
+<form method="post">
 
   {{ govukBackLink({
     text: "Back",
@@ -347,7 +347,5 @@ GOV.UK Prototype Kit
 
 
   {% endblock %}
-
   {% block pageScripts %}
-    {% include 'additionalsecurity/scripts/countries.html' %}
 {% endblock %}
