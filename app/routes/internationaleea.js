@@ -201,12 +201,25 @@ router.post('/international-task/eea-iteration-4/cfn-task', (req, res) => {
   res.redirect('/international-task/eea-iteration-4/award-improvement')
 })
 
-router.post('/international-task/eea-iteration-4/award-improvement', (req, res) => {
-  res.redirect('/international-task/eea-iteration-4/mixed-years')
+router.post('/international-task/eea-iteration-4/award-improvement', function (req, res) {
+  if (req.body['improvement'] === 'yes') {
+    res.redirect('mixed-years')
+  } else {
+    res.redirect('get-a-task-2')
+  }
 })
+
 
 router.post('/international-task/eea-iteration-4/task-details', (req, res) => {
   res.redirect('/international-task/eea-iteration-4/cfn-required')
+})
+
+router.post('/international-task/eea-iteration-4/cfn-required', function (req, res) {
+  if (req.body['send-cfn901'] === 'yes') {
+    res.redirect('cfn-task')
+  } else {
+    res.redirect('award-improvement')
+  }
 })
 
 router.post('/international-task/eea-iteration-4/mixed-years', (req, res) => {
