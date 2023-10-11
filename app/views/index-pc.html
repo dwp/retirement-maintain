@@ -7,7 +7,9 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<header class="govuk-header " role="banner" data-module="govuk-header">
+
+
+<header class="govuk-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="govuk-header__logo">
       <a href="#" class="govuk-header__link govuk-header__link--homepage">
@@ -34,40 +36,28 @@ GOV.UK Prototype Kit
         aria-label="Show or hide Top Level Navigation">Menu</button>
       <nav>
         <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
-          <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
+          <li class="govuk-header__navigation-item govuk-header__navigation-item-">
             <a class="govuk-header__link" href="index">
               State Pension
             </a>
           </li>
-
-            <li class="govuk-header__navigation-item govuk-header__navigation-item">
-              <a class="govuk-header__link" href="index-pc">
-                Pension Credit
-              </a>
-            </li>
+          <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
+            <a class="govuk-header__link" href="index-pc">
+              Pension Credit
+            </a>
+          </li>
 
           <li class="govuk-header__navigation-item govuk-header__navigation-item">
             <a class="govuk-header__link" href="index-tasks">
               Tasks
             </a>
           </li>
+
           <li class="govuk-header__navigation-item">
             <a class="govuk-header__link" href="#">
 
             </a>
           </li>
-          <li class="govuk-header__navigation-item govuk-header__navigation-item">
-            <a class="govuk-header__link" href="index-newclaims">
-              New claims
-            </a>
-          </li>
-          <li class="govuk-header__navigation-item">
-            <a class="govuk-header__link" href="#">
-
-            </a>
-          </li>
-
-
         </ul>
       </nav>
     </div>
@@ -84,56 +74,33 @@ GOV.UK Prototype Kit
   <div class="govuk-grid-column-full">
 <h1 class="govuk-heading-xl" style="margin-bottom: 3%;">Agent prototype</h1>
 <br>
-<h2 class="govuk-heading-m">SP changes and enquiries</h2>
-<p>The interface that agents use to look into a citizen’s account at their personal and contact details, their State Pension award and payment information. Agents can perform common change of circumstances.</p>
-
+<h2 class="govuk-heading-m">Pension Credit changes and enquiries</h2>
+<p>tbc</p>
 <br>
-</div>
-</div>
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
 
-    <nav class="navigation-secondary">
-      <ul>
-          <li>
-              <a href="index-examples" class="active" aria-current="page">Examples</a>
-            </li>
-        <li>
-          <a href="index">Personal</a>
+<nav class="navigation-secondary">
+  <ul>
+      <li>
+          <a href="index-examples">Examples</a>
         </li>
-        <li>
-          <a href="index-contact">Contact</a>
-        </li>
-        <li>
-          <a href="index-awards">Awards</a>
-        </li>
-        <li>
-          <a href="index-payments">Payments</a>
-        </li>
-        <li>
-          <a href="index-general">General</a>
-        </li>
-        <li>
-          <a href="index-admin">Admin</a>
-        </li>
-        <li>
-          <a href="index-migration">Migration</a>
-        </li>
-      </ul>
-    </nav>
+    <li>
+      <a href="" class="active" aria-current="page">TBC</a>
+    </li>
+    <li>
+      <a href="">TBC</a>
+    </li>
 
+  </ul>
+</nav>
 <br><br>
 
-    <h1 class="govuk-heading-m">Prototype examples</h1>
-    <p>Most workable prototypes for SP changes and enquiries to use as examples. <b>Note- </b>Does not replicate what is live.</p>
-    <br>
 
-    <div class="app-most-recent">
-      {% include 'notes/read-only.html' %}
-    </div>
-    <div class="app-most-recent">
-      {% include 'notes/example-2.html' %}
-    </div>
+
+<div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+
+
+
 </div>
-</div>
-    {% endblock %}
+
+
+      {% endblock %}
