@@ -76,41 +76,9 @@ GOV.UK Prototype Kit
 <br>
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-<h1 class="govuk-heading-xl" style="margin-bottom: 3%;">Agent prototype</h1>
-<br>
-<h2 class="govuk-heading-m">State Pension and Pension Credit changes and enquiries</h2>
+<h1 class="govuk-heading-xl" style="margin-bottom: 3%;">State Pension and Pension Credit changes and enquiries</h1>
 <p>The interface that agents use to look into a citizen’s account at their personal and contact details, their State Pension and Pension Credit award and payment information.</p>
 <br>
-
-<nav class="navigation-secondary">
-  <ul>
-      <li>
-          <a href="index-examples">Examples</a>
-        </li>
-    <li>
-      <a href="index" class="active" aria-current="page">Personal</a>
-    </li>
-    <li>
-      <a href="index-contact">Contact</a>
-    </li>
-    <li>
-      <a href="index-awards">Awards</a>
-    </li>
-    <li>
-      <a href="index-payments">Payments</a>
-    </li>
-    <li>
-      <a href="index-general">General</a>
-    </li>
-    <li>
-      <a href="index-admin">Admin</a>
-    </li>
-    <li>
-      <a href="index-migration">Migration</a>
-    </li>
-  </ul>
-</nav>
-<br><br>
 
 
 
@@ -121,171 +89,19 @@ GOV.UK Prototype Kit
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
           style="font-size: 16pt;">
-          National Insurance record error
+        Test
         </span>
       </h2>
     </div>
     <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
       aria-labelledby="accordion-with-summary-sections-heading-3">
-          {% include 'notes/nierrorrecord.html' %}
-    </div>
-  </div>
-
-
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
-          style="font-size: 16pt;">
-          Other benefits
-        </span>
-      </h2>
-      <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
-        style="font-size: 14pt;">
-        New claim with benefit interest
-        </div>
-    </div>
-    <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
-      aria-labelledby="accordion-with-summary-sections-heading-3">
-          {% include 'notes/otherbenefits.html' %}
-    </div>
-  </div>
-
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-1" style="font-size: 16pt;">
-          Lived or worked abroad
-          <p><br>Claimants who have provided information about their time living and/or working abroad when making their SP claim.</p>
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-        {% include 'notes/internationalrecord.html' %}
-    </div>
-  </div>
-
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-1" style="font-size: 16pt;">
-          Change marital status
-          <p><br>Changing a marital status from married to widowed<p>
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-        {% include 'notes/maritalstatus.html' %}
-    </div>
-  </div>
-
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-1" style="font-size: 16pt;">
-        Suspended State Pension
-          <p><br>Claimant in prision or temporary suspension<br></p>
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-      <div class="app-most-recent">
-        {% include 'notes/suspended.html' %}
-      </div>
-      <div class="app-most-recent">
-        {% include 'notes/prison.html' %}
-      </div>
-    </div>
-  </div>
-
-
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-2" style="font-size: 16pt;">
-          Outcome of visit from visiting officer
-          <p><br>Once the visiting officer has been out to check security info, the agent needs to record their decision.</p>
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-      <div class="app-most-recent">
-        {% include 'notes/visiting.html' %}
-      </div>
-    </div>
-  </div>
-
-
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-3" style="font-size: 16pt;">
-        Citizen dies before award
-        <p><br>Enter a date of death on a claim which has not yet been considered for award (task outstanding) and then display the required information on the citizen’s record.</p>
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-      <div class="app-most-recent">
-        {% include 'notes/dies.html' %}
-      </div>
-    </div>
-  </div>
-
-
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-4" style="font-size: 16pt;">
-          Death features
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-      <div class="app-most-recent">
-        {% include 'notes/death-features.html' %}
-      </div>
-    </div>
-  </div>
-
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-4" style="font-size: 16pt;">
-          Incomplete claim record
-          <p><br>Record of a citizen who has made a claim but has an outstanding task before the claim can be processed.</p>
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-      <div class="app-most-recent">
-        {% include 'notes/incompleteclaim.html' %}
-      </div>
-    </div>
-  </div>
-
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-4" style="font-size: 16pt;">
-        Defer
-        <p><br>  Postponing, detretiring and withdrawing from a claim or 'stopping payments'</p>
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-      <div class="app-most-recent">
-        {% include 'notes/iteration52.html' %}
-      </div>
-      <div class="app-most-recent">
-        {% include 'notes/iteration48.html' %}
-      </div>
-      <div class="app-most-recent">
-        {% include 'notes/iteration43.html' %}
-      </div>
 
     </div>
   </div>
+
+
+
+
 </div>
 
 
