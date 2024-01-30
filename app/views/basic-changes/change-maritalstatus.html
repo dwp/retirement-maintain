@@ -7,17 +7,10 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-<!--{{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
-}) }}
--->
-{% include './_header-nav-enquiries.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
-
-{% include './_find-someone-enquiries.html' %}
 
 <div class="govuk-width-container">
   <div class="govuk-grid-column-two-thirds">
@@ -35,30 +28,30 @@ GOV.UK Prototype Kit
           <br><br>
           <h2 class="govuk-heading-l">Marital status</h2>
 
-         
+
           <form method="post" action="marital-date">
             <div class="govuk-form-group">
               <div class="govuk-radios--inline">
-              
+
                 <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="marital-status-2" name="maritalstatus" type="radio" value="civil-partnership">
                     <label class="govuk-label govuk-radios__label" for="marital-status-2">
                       In a civil partnership
                     </label>
                   </div>
-                
+
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="marital-status-1" name="maritalstatus" type="radio" value="married">
                     <label class="govuk-label govuk-radios__label" for="marital-status-1">
                       Married
                     </label>
                   </div>
-                 
-                 
+
+
                 </div>
-  
+
             </div>
-  
+
             <button type="submit" class="govuk-button">
               Continue
             </button>
