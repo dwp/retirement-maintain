@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+          {% include 'includes/_bar-dead-rooney.html' %}
+
+            </div>
+          </div>
+        </main>
+
+
+
+        {{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    })
+  }}
+        <br><br>
+
+        <form action="dap-send-payment" method="post" class="form">
+          <h1 class="govuk-heading-l">Payee's UK bank or building society account details
+          </h1>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+Account holder name         </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+          <div class="govuk-form-group">
+ <label class="govuk-label" for="one-quarter">              Sort code
+            </label>
+<input class="govuk-input govuk-!-width-one-quarter" id="one-quarter" name="one-quarter" type="text">          </div>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="one-third">
+              Account number
+            </label>
+<input class="govuk-input govuk-!-width-one-third" id="one-third" name="one-third" type="text">          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="one-third">
+                Roll number
+              </label>
+<input class="govuk-input govuk-!-width-one-third" id="one-third" name="one-third" type="text">            </div>
+
+
+<br>
+<br>
+
+  <button class="govuk-button" data-module="govuk-button">            Continue
+          </button>
+<br>
+<a href="dap-overseas-bank" class="govuk-link">Enter non-UK bank details</a>
+<br>
+<br>
+
+
+
+            </div>
+          </div>
+
+
+        </form>
+      </div>
+    </fieldset>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds"></div>
+</div>
+
+{% endblock %}
