@@ -110,7 +110,7 @@ GOV.UK Prototype Kit
       <a href="index-admin">Admin</a>
     </li>
     <li>
-      <a href="index-live-issues" class="active" aria-current="page">Live issues</a>
+      <a href="index-awaiting-dev" class="active" aria-current="page">Awaiting development</a>
     </li>
   </ul>
 </nav>
@@ -128,6 +128,7 @@ GOV.UK Prototype Kit
              Next of kin
             </span>
           </h2>
+          <p>Agents are able to see the details of the death arrears payee on the dead citizens record. </p>
         </div>
         <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content"
           aria-labelledby="accordion-with-summary-sections-heading-2">
@@ -136,6 +137,48 @@ GOV.UK Prototype Kit
 
           <div class="app-most-recent">
           <h2 class="govuk-heading-s">Record next of kin details</h2>
+
+          <strong class="govuk-tag govuk-tag--orange">
+          Not tested
+          </strong>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-third">
+              <dl>
+                <dt class="govuk-heading-s">Date of design</dt>
+                <dd class="govuk-body" style="margin-left:0%">April 2024</dd>
+              </dl>
+            </div>
+
+          </div>
+
+          <p class="govuk-body">
+            <a href="/death/next-of-kin/personal-dead" class="govuk-link govuk-link--no-visited-state">Link to prototype</a>
+          </p>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2"
+              style="font-size: 16pt;">
+             Widows conversions
+            </span>
+          </h2>
+          <p>Updated task journey for a widows conversion, calculation to be automated by the system</p>
+        </div>
+        <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content"
+          aria-labelledby="accordion-with-summary-sections-heading-2">
+
+
+
+          <div class="app-most-recent">
+          <h2 class="govuk-heading-s">Automated calculation</h2>
 
           <strong class="govuk-tag govuk-tag--orange">
           Not tested
@@ -162,6 +205,54 @@ GOV.UK Prototype Kit
       </div>
 
 
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2"
+              style="font-size: 16pt;">
+             Name of bank
+            </span>
+          </h2>
+          <p>Agents use this functionality to confirm they have entered the bank account detsails correctly,
+            for BV questions and to understand payment enquiries</p>
+        </div>
+        <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content"
+          aria-labelledby="accordion-with-summary-sections-heading-2">
+
+          <div class="app-most-recent">
+        {% include 'notes/change-payment.html' %}
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2"
+              style="font-size: 16pt;">
+          Timeline fraud entry
+            </span>
+          </h2>
+          <p>Admin functionality for a test and learn period
+
+          Allow a admin agent to record fraudulent activity in the timeline of a record
+
+          Admin can record date of contact, contact type and change attempted. None of these entries and mandatory.
+
+          Admin can delete these timeline entries, this action cannot be undone. </p>
+        </div>
+        <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content"
+          aria-labelledby="accordion-with-summary-sections-heading-2">
+
+          <div class="app-most-recent">
+
+          </div>
+
+        </div>
+      </div>
 
 
 </div>
