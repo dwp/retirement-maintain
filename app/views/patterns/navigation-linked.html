@@ -1,0 +1,37 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+{% include './_header.html' %}
+
+{% endblock %}
+
+{% block content %}
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+{% include './_key-details.html' %}
+
+{% include './_primary-navigation-personal.html' %}
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+{% include './_action-history-personal.html' %}
+
+    </div>
+
+
+
+  </div>
+
+{% endblock %}
