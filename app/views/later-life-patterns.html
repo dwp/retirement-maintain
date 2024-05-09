@@ -1,0 +1,139 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+<header data-module="govuk-header" class="dwp-header">
+<div class="dwp-header__content govuk-width-container">
+<div class="dwp-header__service-name">
+  <a href="#" class="dwp-header__link">Later life</a>
+</div>
+<nav class="dwp-header-navigation"
+  aria-label="Primary">
+  <button type="button" class="dwp-header-navigation__menu-button govuk-js-header-toggle" aria-controls="navigation" hidden>
+    Menu
+  </button>
+
+</nav>
+</div>
+</header>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">
+        Design patterns
+      </h1>
+
+      <ul class="govuk-task-list">
+        <li class="govuk-task-list__item govuk-task-list__item--with-link">
+          <div class="govuk-task-list__name-and-hint">
+            <a class="govuk-link govuk-task-list__link" href="/patterns/record-navigation" aria-describedby="company-details-1-status">
+              Record view example
+            </a>
+          </div>
+          <div class="govuk-task-list__status" id="company-details-2-status">
+            <strong class="govuk-tag govuk-tag--blue">
+              SP
+            </strong>
+          </div>
+        </li>
+        <li class="govuk-task-list__item govuk-task-list__item--with-link">
+          <div class="govuk-task-list__name-and-hint">
+            <a class="govuk-link govuk-task-list__link" href="patterns/name-bar" aria-describedby="company-details-2-status">
+              Name bar
+            </a>
+            <div id="company-details-3-hint" class="govuk-task-list__hint">
+            Summary
+            </div>
+          </div>
+          <div class="govuk-task-list__status" id="company-details-2-status">
+            <strong class="govuk-tag govuk-tag--blue">
+            SP
+            </strong>
+            <strong class="govuk-tag govuk-tag--orange">
+              WF
+            </strong>
+          </div>
+
+        </li>
+        <li class="govuk-task-list__item govuk-task-list__item--with-link">
+          <div class="govuk-task-list__name-and-hint">
+            <a class="govuk-link govuk-task-list__link" href="#" aria-describedby="company-details-3-hint company-details-3-status">
+              Find someone
+            </a>
+            <div id="company-details-3-hint" class="govuk-task-list__hint">
+            Summary
+            </div>
+          </div>
+          <div class="govuk-task-list__status" id="company-details-3-status">
+            <strong class="govuk-tag govuk-tag--blue">
+              SP
+            </strong>
+            <strong class="govuk-tag govuk-tag--purple">
+              PC
+            </strong>
+          </div>
+        </li>
+        <li class="govuk-task-list__item govuk-task-list__item--with-link">
+          <div class="govuk-task-list__name-and-hint">
+            <a class="govuk-link govuk-task-list__link" href="#" aria-describedby="company-details-4-status">
+              History
+            </a>
+          </div>
+          <div class="govuk-task-list__status" id="company-details-4-status">
+            <strong class="govuk-tag govuk-tag--blue">
+              SP
+            </strong>
+          </div>
+        </li>
+        <li class="govuk-task-list__item govuk-task-list__item--with-link">
+          <div class="govuk-task-list__name-and-hint">
+            <a class="govuk-link govuk-task-list__link" href="https://design-system.dwp.gov.uk/components/header-navigation" aria-describedby="company-details-5-status">
+              Global navigation
+            </a>
+          </div>
+          <div class="govuk-task-list__status" id="company-details-5-status">
+            <strong class="govuk-tag govuk-tag--blue">
+              SP
+            </strong>
+            <strong class="govuk-tag govuk-tag--orange">
+              WF
+            </strong>
+          </div>
+        </li>
+        <li class="govuk-task-list__item govuk-task-list__item--with-link">
+          <div class="govuk-task-list__name-and-hint">
+            <a class="govuk-link govuk-task-list__link" href="https://design-patterns.service.justice.gov.uk/components/sub-navigation/" aria-describedby="company-details-5-status">
+              Primary navigation (sub navigation)
+            </a>
+          </div>
+          <div class="govuk-task-list__status" id="company-details-5-status">
+            <strong class="govuk-tag govuk-tag--blue">
+              SP
+            </strong>
+            <strong class="govuk-tag govuk-tag--orange">
+              WF
+            </strong>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+
+
+
+
+  </div>
+
+{% endblock %}
