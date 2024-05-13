@@ -1,0 +1,157 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+<header data-module="govuk-header" class="dwp-header">
+<div class="dwp-header__content govuk-width-container">
+<div class="dwp-header__service-name">
+  <a href="/later-life-patterns" class="dwp-header__link">Later life</a>
+</div>
+<nav class="dwp-header-navigation"
+  aria-label="Primary">
+  <button type="button" class="dwp-header-navigation__menu-button govuk-js-header-toggle" aria-controls="navigation" hidden>
+    Menu
+  </button>
+  <ul id="navigation" class="dwp-header-navigation__list">
+    <li class="dwp-header-navigation__item">
+      <a
+        href="find-someone">
+        Find someone
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="tasks">
+        Tasks
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="telephone-claim">
+        Telephone claim
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="paper-claim">
+        Paper claim
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="admin">
+        Admin
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+</header>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">
+      Elmer Cummings<br>
+      <span class="govuk-caption-xl">XX 12 34 56</span>
+      <strong class="govuk-tag">
+        Receiving State Penison
+      </strong>
+      </h1>
+
+      <nav class="navigation-secondary">
+        <ul>
+
+          <li>
+              <a href="personal">Personal</a>
+            </li>
+          <li>
+            <a href="contact">Contact</a>
+          </li>
+
+          <li>
+            <a href="award">Award</a>
+          </li>
+            <li>
+              <a href="payment" class="" aria-current="page">Payment</a>
+            </li>
+            <li>
+              <a href="history" class="active" aria-current="page">Full history</a>
+            </li>
+        </ul>
+
+      </nav>
+
+<br><br>
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--l">Full history</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header app-custom-class">Date</th>
+            <th scope="col" class="govuk-table__header app-custom-class">Action</th>
+            <th scope="col" class="govuk-table__header app-custom-class">Correspondence</th>
+            <th scope="col" class="govuk-table__header app-custom-class">By</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">28 July 2022</td>
+            <td class="govuk-table__cell"><a href="prison-details" class="govuk-link govuk-link--no-visited-state">Prison dates updated</a></td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell">Agent</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">24 September 2022</td>
+            <td class="govuk-table__cell"><a href="prison-details" class="govuk-link govuk-link--no-visited-state">Prison dates added</a></td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell">Agent</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">28 July 2022</td>
+            <td class="govuk-table__cell">Banking details changed</td>
+            <td class="govuk-table__cell">Change letter</td>
+            <td class="govuk-table__cell">Online</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">9 July 2022</td>
+            <td class="govuk-table__cell">State Pension awarded</td>
+           <td class="govuk-table__cell">Award letter</td>
+            <td class="govuk-table__cell">Automated</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">11 January 2019</td>
+            <td class="govuk-table__cell">Additional security</td>
+            <td class="govuk-table__cell">SMS reminder</td>
+            <td class="govuk-table__cell">Task</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">9 January 2019</td>
+            <td class="govuk-table__cell">Claim received</td>
+            <td class="govuk-table__cell">Confirmation email</td>
+            <td class="govuk-table__cell">Online</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+
+
+
+
+  </div>
+
+{% endblock %}
