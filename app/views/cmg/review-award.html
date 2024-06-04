@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+              {% include './_bar.html' %}
+
+                      <form method="post">
+
+                        {{ govukBackLink({
+                    text: "Back",
+                    href: "javascript:history.go(-1)"
+                    }) }}
+
+<Br><br>
+
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+        What do you want to do...
+        </h1>
+      </legend>
+      <div class="govuk-radios" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+          <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+            Review an award
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland">
+          <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+            Apply a deduction
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> /debt-recovery-details <br>
+        <b>Error messages:<br><br>Start date</b>
+
+        <br>No start date: Enter a date for the start of debt recovery
+        <br>Invalid start date: Enter a real date, like 7 10 2022
+        <br>Start date too soon (new debt recoveries): Start date must be [DATE] or later
+        <br>Invalid start date: Start date cannot be for a payment that includes a current Pension Credit adjustment
+        <br>Invalid start date: Start date must be the first day of a State Pension payment period
+        <br>Invalid start date: Start date cannot be for a payment that has already been sent
+      <br><br><b>End date</b>  <br>No end date: Enter a date for the end of debt recovery
+        <br>Invalid end date: Enter a real date, like 7 10 2022
+        <br>End date in the past: Enter a date that is in the future
+        <br>End date before start date: Enter a date that is after the start date for debt recovery
+      <br><br><b>Weekly amount</b>   <br>No weekly amount: Enter a weekly amount to deduct
+        <br>Weekly amount too much: Weekly amount must be no more than [£AMOUNT] (where [£AMOUNT] = 30% of weekly State Pension)
+        <br>Invalid amount: Enter a real weekly amount to deduct, like 123.45
+        <br>Invalid balancing deduction: Enter a real balancing deduction, like 123.45
+<br><br><b>Balancing deduction</b>
+        <br>Balancing deduction too much: Balancing deduction must be no more than [£AMOUNT] (where [£AMOUNT] = 30% of weekly State Pension)
+        <br><br><b>Overpayment type</b>
+        <br>No deduction code: Enter a deduction code for the overpayment type
+        <br>Invalid deduction code: The deduction code does not exist - check it and try again
+        <br>Invalid deduction code: Deduction code must be 5 numbers
+
+
+
+      </div>
+    </details>
+
+  </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
