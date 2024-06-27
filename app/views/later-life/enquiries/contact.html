@@ -1,0 +1,221 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+<header data-module="govuk-header" class="dwp-header">
+<div class="dwp-header__content govuk-width-container">
+<div class="dwp-header__service-name">
+  <a href="/later-life-patterns" class="dwp-header__link">Later life</a>
+</div>
+<nav class="dwp-header-navigation"
+  aria-label="Primary">
+  <button type="button" class="dwp-header-navigation__menu-button govuk-js-header-toggle" aria-controls="navigation" hidden>
+    Menu
+  </button>
+  <ul id="navigation" class="dwp-header-navigation__list">
+    <li class="dwp-header-navigation__item">
+      <a
+        href="find-someone">
+        Find someone
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="tasks">
+        Tasks
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="telephone-claim">
+        Telephone claim
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="paper-claim">
+        Paper claim
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="admin">
+        Admin
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+</header>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+    Charlotte Mudd<br>
+      <span class="govuk-caption-xl">XX 12 34 56</span>
+      <strong class="govuk-tag">
+        Receiving State Penison and Pension Credit
+      </strong>
+      </h1>
+
+      <nav class="navigation-secondary">
+        <ul>
+
+          <li>
+              <a href="personal">Personal</a>
+            </li>
+          <li>
+            <a href="contact" class="active" aria-current="page">Contact</a>
+          </li>
+
+          <li>
+            <a href="award">Award</a>
+          </li>
+            <li>
+              <a href="payment">Payment</a>
+            </li>
+            <li>
+              <a href="history">Full history</a>
+            </li>
+        </ul>
+      </nav>
+
+
+<br><br>
+
+        <h2 class="govuk-heading-m">Contact details</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Address
+    </dt>
+    <dd class="govuk-summary-list__value">
+      12 Park Place<br>
+      Carron<br>
+      AB38 6HB
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">    <span class="govuk-visually-hidden"> name</span></a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Correspondence address
+    </dt>
+    <dd class="govuk-summary-list__value">
+
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#"><span class="govuk-visually-hidden"> customer reference</span></a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    Home phone number
+    </dt>
+    <dd class="govuk-summary-list__value">
+
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">    <span class="govuk-visually-hidden"> date of birth</span></a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    Work phone number
+    </dt>
+    <dd class="govuk-summary-list__value">
+
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">  <span class="govuk-visually-hidden"> address</span></a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    Mobile phone number
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">07064023020</p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">  <span class="govuk-visually-hidden"> contact details</span></a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+  Email address
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">mudd1958@hotmail.com</p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">  <span class="govuk-visually-hidden">No</span></a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Alternative format for letters
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body"></p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">  <span class="govuk-visually-hidden"></span></a>
+    </dd>
+  </div>
+</dl>
+
+
+
+
+
+
+    </div>
+
+
+        <div class="govuk-grid-column-one-third">
+
+          <div class="dwp-timeline">
+          <h1 class="govuk-heading-m">Action history</h1>
+          <ol class="dwp-timeline__events">
+          <li class="dwp-timeline__events--entry">
+            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Event</h2>
+            <p class="govuk-caption-m govuk-!-margin-bottom-1">Agent/System/Online</p>
+            <p class="govuk-caption-m govuk-!-margin-bottom-1">11 August 2023</p>
+            <p class="govuk-caption-m"><a href="#" class="govuk-link govuk-link--no-visited-state">Details</a></p>
+          </li>
+          <li class="dwp-timeline__events--entry">
+            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Event</h2>
+            <p class="govuk-caption-m govuk-!-margin-bottom-1">Agent/System/Online</p>
+            <p class="govuk-caption-m">10 August 2023</p>
+            <p class="govuk-caption-m"><a href="#" class="govuk-link govuk-link--no-visited-state">Details</a></p>
+          </li>
+          <li class="dwp-timeline__events--entry">
+          <p><a href="#" class="govuk-link govuk-link--no-visited-state">Full history</a></p>
+          </li>
+          </ol>
+          </div>
+
+        </div>
+
+
+  </div>
+
+{% endblock %}

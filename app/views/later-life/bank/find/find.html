@@ -1,0 +1,88 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+<header data-module="govuk-header" class="dwp-header">
+<div class="dwp-header__content govuk-width-container">
+<div class="dwp-header__service-name">
+  <a href="/later-life-patterns" class="dwp-header__link">Later life</a>
+</div>
+<nav class="dwp-header-navigation"
+  aria-label="Primary">
+  <button type="button" class="dwp-header-navigation__menu-button govuk-js-header-toggle" aria-controls="navigation" hidden>
+    Menu
+  </button>
+  <ul id="navigation" class="dwp-header-navigation__list">
+    <li class="dwp-header-navigation__item">
+      <a
+        href="find-someone">
+        Find someone
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="tasks">
+        Tasks
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="telephone-claim">
+        Telephone claim
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="paper-claim">
+        Paper claim
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="admin">
+        Admin
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+</header>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Find someone
+      </h1>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          National Insurance number
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-20" name="width20" type="text">
+      </div>
+
+      <a href="find-result" button type="submit" class="govuk-button">
+        Find
+    </a>
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+{% endblock %}
