@@ -117,7 +117,7 @@
     Correspondence address
     </dt>
     <dd class="govuk-summary-list__value">
-      {% if data['correspondence-remove'] === 'yes' %}
+      {% if data['correspondence-remove'] === 'yves' %}
       {% elseif data.correspondence %}
       {{data.correspondence}}
       {% else %}
@@ -238,6 +238,7 @@
     </dt>
     <dd class="govuk-summary-list__value">
       {% if data['alt-format-remove'] === 'Yes' %}
+      {% elseif data['altformat'] === 'none' %}
       {% elseif data.altformat %}
       {{data.altformat}}
       {% else %}
@@ -247,6 +248,8 @@
     <dd class="govuk-summary-list__actions">
       <a class="govuk-link" href="change-alt-format">
         {% if data['altformat-remove'] === 'yes' %}
+        Add
+        {% elseif data['altformat'] === 'none' %}
         Add
         {% elseif data.altformat %}
         Change
