@@ -11,44 +11,7 @@
 <div class="dwp-header__service-name">
   <a href="/later-life-patterns" class="dwp-header__link">Later life</a>
 </div>
-<nav class="dwp-header-navigation"
-  aria-label="Primary">
-  <button type="button" class="dwp-header-navigation__menu-button govuk-js-header-toggle" aria-controls="navigation" hidden>
-    Menu
-  </button>
-  <ul id="navigation" class="dwp-header-navigation__list">
-    <li class="dwp-header-navigation__item">
-      <a
-        href="find-someone">
-        Find someone
-      </a>
-    </li>
-    <li class="dwp-header-navigation__item">
-      <a
-        href="tasks">
-        Tasks
-      </a>
-    </li>
-    <li class="dwp-header-navigation__item">
-      <a
-        href="telephone-claim">
-        Telephone claim
-      </a>
-    </li>
-    <li class="dwp-header-navigation__item">
-      <a
-        href="paper-claim">
-        Paper claim
-      </a>
-    </li>
-    <li class="dwp-header-navigation__item">
-      <a
-        href="admin">
-        Admin
-      </a>
-    </li>
-  </ul>
-</nav>
+          {% include './_nav.html' %}
 </div>
 </header>
 
@@ -117,22 +80,9 @@
     Correspondence address
     </dt>
     <dd class="govuk-summary-list__value">
-      {% if data['correspondence-remove'] === 'yves' %}
-      {% elseif data.correspondence %}
-      {{data.correspondence}}
-      {% else %}
-
-      {% endif %}
     </dd>
     <dd class="govuk-summary-list__actions">
       <a class="govuk-link" href="change-correspondence">
-        {% if data['correspondence-remove'] === 'yes' %}
-        Add
-        {% elseif data.altformat %}
-        Change
-        {% else %}
-        Add
-        {% endif %}
         <span class="govuk-visually-hidden"> </span></a>
     </dd>
   </div>
