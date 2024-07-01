@@ -8,15 +8,15 @@ Charlotte Mudd<br>
 <strong class="govuk-tag govuk-tag--grey">
   Dead
 </strong>
-{% elseif ['suspension'] === 'both' %}
+{% elseif data['suspension'] === 'both' %}
 <strong class="govuk-tag govuk-tag--orange">
 State Penison and Pension Credit suspended
 </strong>
-{% elseif ['suspension'] === 'sp' %}
+{% elseif data['suspension'] === 'sp' %}
 <strong class="govuk-tag govuk-tag--orange">
 State Penison suspended
 </strong>
-{% elseif ['suspension'] === 'pc' %}
+{% elseif data['suspension'] === 'pc' %}
 <strong class="govuk-tag govuk-tag--orange">
 Pension Credit suspended
 </strong>
