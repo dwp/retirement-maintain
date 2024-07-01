@@ -75,6 +75,8 @@ const internationalanzac = require('./routes/internationalanzac')
 const internationaleea = require('./routes/internationaleea')
 const fraud = require('./routes/fraud')
 const citizen = require('./routes/citizen')
+const laterlife = require('./routes/laterlife')
+
 
 // copy the router use and update the sprint version
 router.use(newclaims)
@@ -140,5 +142,6 @@ router.use(widowsconversion)
 router.use(fraud)
 router.use(otherbenefits)
 router.use(citizen)
+router.use(laterlife)
 
 module.exports = router
