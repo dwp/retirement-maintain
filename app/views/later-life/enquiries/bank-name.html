@@ -33,23 +33,32 @@
 }}
 
 
-      <h2 class="govuk-heading-l">Select the location of the new account</h2>
+    <form method="post" action="payment">
 
-    <form method="post">
 
       <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset">
-          <div class="govuk-radios" data-module="govuk-radios">
+        <fieldset class="govuk-fieldset" aria-describedby="bank-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+          Confirm bank name
+            </h1>
+            <div class="govuk-inset-text">
+              Lloyds
+            </div>
+          </legend>
+
+
+          <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="bankukoverseas" name="bankukoverseas" type="radio" value="uk">
-              <label class="govuk-label govuk-radios__label" for="bankukoverseas">
-                UK bank or building society account
+              <input class="govuk-radios__input" id="bank-name" name="bank-name" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="bank-name">
+                Yes
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="bankukoverseas-2" name="bankukoverseas" type="radio" value="overseas">
-              <label class="govuk-label govuk-radios__label" for="bankukoverseas-2">
-                Overseas bank account
+              <input class="govuk-radios__input" id="bank-name-2" name="bank-name" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="bank-name-2">
+                No
               </label>
             </div>
           </div>
@@ -68,7 +77,7 @@
 
 
 
-›
+
 
   </div>
 
