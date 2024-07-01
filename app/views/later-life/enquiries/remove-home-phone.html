@@ -82,10 +82,10 @@
     <form method="post" action="contact">
 
       <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="removehomephone-hint">
+        <fieldset class="govuk-fieldset" aria-describedby="homephone-remove-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              Have you changed your name?
+            Do you want to remove this number?
             </h1>
             <div class="govuk-inset-text">
               {% if data.homephone %}
@@ -99,14 +99,14 @@
 
           <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="removehomephone" name="removehomephone" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="removehomephone">
+              <input class="govuk-radios__input" id="homephone-remove" name="homephone-remove" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="homephone-remove">
                 Yes
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="removehomephone-2" name="removehomephone" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="removehomephone-2">
+              <input class="govuk-radios__input" id="homephone-remove-2" name="homephone-remove" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="homephone-remove-2">
                 No
               </label>
             </div>

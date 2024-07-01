@@ -117,7 +117,7 @@
     Correspondence address
     </dt>
     <dd class="govuk-summary-list__value">
-      {% if data['correspondence-remove'] === 'Yes' %}
+      {% if data['correspondence-remove'] === 'yes' %}
       {% elseif data.correspondence %}
       {{data.correspondence}}
       {% else %}
@@ -126,7 +126,9 @@
     </dd>
     <dd class="govuk-summary-list__actions">
       <a class="govuk-link" href="change-correspondence">
-        {% if data.correspondence %}
+        {% if data['correspondence-remove'] === 'yes' %}
+        Add
+        {% elseif data.altformat %}
         Change
         {% else %}
         Add
@@ -140,7 +142,7 @@
     Home phone number
     </dt>
     <dd class="govuk-summary-list__value">
-      {% if data['homephone-remove'] === 'Yes' %}
+      {% if data['homephone-remove'] === 'yes' %}
       {% elseif data.homephone %}
       {{data.homephone}}
       {% else %}
@@ -149,10 +151,10 @@
     </dd>
     <dd class="govuk-summary-list__actions">
       <a class="govuk-link" href="change-home-phone">
-        {% if data.homephone %}
-        Change
-        {% else %}
+        {% if data['homephone-remove'] === 'yes' %}
         Add
+        {% else %}
+        Change
         {% endif %}
         <span class="govuk-visually-hidden"> </span></a>
     </dd>
@@ -163,16 +165,17 @@
     Work phone number
     </dt>
     <dd class="govuk-summary-list__value">
-      {% if data['workphone-remove'] === 'Yes' %}
+      {% if data['workphone-remove'] === 'yes' %}
       {% elseif data.workphone %}
       {{data.workphone}}
       {% else %}
-
       {% endif %}
     </dd>
     <dd class="govuk-summary-list__actions">
       <a class="govuk-link" href="change-work-phone">
-        {% if data.workphone %}
+        {% if data['workphone-remove'] === 'yes' %}
+        Add
+        {% elseif data.workphone %}
         Change
         {% else %}
         Add
@@ -186,7 +189,7 @@
     Mobile phone number
     </dt>
     <dd class="govuk-summary-list__value">
-      {% if data['mobilephone-remove'] === 'Yes' %}
+      {% if data['mobilephone-remove'] === 'yes' %}
       {% elseif data.mobilephone %}
       {{data.mobilephone}}
       {% else %}
@@ -195,7 +198,11 @@
     </dd>
     <dd class="govuk-summary-list__actions">
       <a class="govuk-link" href="change-mobile-phone">
+        {% if data['mobilephone-remove'] === 'yes' %}
+        Add
+        {% else %}
         Change
+        {% endif %}
         <span class="govuk-visually-hidden"> </span></a>
     </dd>
   </div>
@@ -206,7 +213,7 @@
   Email address
     </dt>
     <dd class="govuk-summary-list__value">
-      {% if data['email-remove'] === 'Yes' %}
+      {% if data['email-remove'] === 'yes' %}
       {% elseif data.email %}
       {{data.email}}
       {% else %}
@@ -215,7 +222,11 @@
     </dd>
     <dd class="govuk-summary-list__actions">
       <a class="govuk-link" href="change-email">
+        {% if data['email-remove'] === 'yes' %}
+        Add
+        {% else %}
         Change
+        {% endif %}
         <span class="govuk-visually-hidden"> </span></a>
     </dd>
   </div>
@@ -235,7 +246,9 @@
     </dd>
     <dd class="govuk-summary-list__actions">
       <a class="govuk-link" href="change-alt-format">
-        {% if data.altformat %}
+        {% if data['altformat-remove'] === 'yes' %}
+        Add
+        {% elseif data.altformat %}
         Change
         {% else %}
         Add

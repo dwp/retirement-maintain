@@ -82,16 +82,16 @@
     <form method="post" action="contact">
 
       <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="removeemail-hint">
+        <fieldset class="govuk-fieldset" aria-describedby="email-remove-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              Have you changed your name?
+            Do you want to remove this email address?
             </h1>
             <div class="govuk-inset-text">
               {% if data.email %}
               {{data.email}}
               {% else %}
-              01632 960005
+            mudd1958@hotmail.com
               {% endif %}
             </div>
           </legend>
@@ -99,14 +99,14 @@
 
           <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="removeemail" name="removeemail" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="removeemail">
+              <input class="govuk-radios__input" id="email-remove" name="email-remove" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="email-remove">
                 Yes
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="removeemail-2" name="removeemail" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="removeemail-2">
+              <input class="govuk-radios__input" id="email-remove-2" name="email-remove" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="email-remove-2">
                 No
               </label>
             </div>
