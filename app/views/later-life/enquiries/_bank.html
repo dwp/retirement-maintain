@@ -11,7 +11,11 @@
           Account holder
         </dt>
         <dd class="govuk-summary-list__value">
+          {% if data.pcaccountname %}
+          {{data.pcaccountname}}
+          {% else %}
           Miss C Mudd
+          {% endif %}
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
@@ -24,7 +28,11 @@
           Sort code
         </dt>
         <dd class="govuk-summary-list__value">
-            54 76 98
+          {% if data.pcsortcode %}
+          {{data.pcsortcode}}
+          {% else %}
+          54 76 98
+          {% endif %}
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
@@ -37,7 +45,11 @@
           Account number
         </dt>
         <dd class="govuk-summary-list__value">
-            98765409
+          {% if data.pcaccountnumber %}
+          {{data.pcaccountnumber}}
+          {% else %}
+        98765409
+          {% endif %}
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
@@ -45,6 +57,22 @@
           </a>
         </dd>
       </div>
+      {% if data.pcrollnumber %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+      Building society roll or reference number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{data.pcrollnumber}}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            <span class="govuk-visually-hidden"></span>
+          </a>
+        </dd>
+      </div>
+      {% else %}
+      {% endif %}
     </dl>
 
   </div>
@@ -63,7 +91,11 @@
           Account holder
         </dt>
         <dd class="govuk-summary-list__value">
-          Miss Mudd
+          {% if data.spaccountname %}
+          {{data.spaccountname}}
+          {% else %}
+        Miss Mudd
+          {% endif %}
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
@@ -76,7 +108,11 @@
           Sort code
         </dt>
         <dd class="govuk-summary-list__value">
-            14 90 92
+          {% if data.spsortcode %}
+          {{data.spsortcode}}
+          {% else %}
+        14 90 92
+          {% endif %}
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
@@ -89,7 +125,11 @@
           Account number
         </dt>
         <dd class="govuk-summary-list__value">
-            11291721
+          {% if data.spaccountnumber %}
+          {{data.spaccountnumber}}
+          {% else %}
+        11291721
+          {% endif %}
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
@@ -97,6 +137,22 @@
           </a>
         </dd>
       </div>
+      {% if data.sprollnumber %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+      Building society roll or reference number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{data.sprollnumber}}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            <span class="govuk-visually-hidden"></span>
+          </a>
+        </dd>
+      </div>
+      {% else %}
+      {% endif %}
     </dl>
 
   </div>
