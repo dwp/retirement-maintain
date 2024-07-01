@@ -1,7 +1,7 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+  Payment – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
@@ -73,7 +73,11 @@
                   Account holder
                 </dt>
                 <dd class="govuk-summary-list__value">
+                  {% if data.accountname %}
+                  {{data.accountname}}
+                  {% else %}
                   Miss C Mudd
+                  {% endif %}
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#">
@@ -86,7 +90,11 @@
                   Sort code
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    54 76 98
+                  {% if data.sortcode %}
+                  {{data.sortcode}}
+                  {% else %}
+                  54 76 98
+                  {% endif %}
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#">
@@ -99,7 +107,11 @@
                   Account number
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    98765409
+                  {% if data.accountnumber %}
+                  {{data.accountnumber}}
+                  {% else %}
+                  98765409
+                  {% endif %}
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#">
@@ -107,9 +119,28 @@
                   </a>
                 </dd>
               </div>
+              {% if data.rollnumber %}
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+              Building society roll or reference number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{data.rollnumber}}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    <span class="govuk-visually-hidden"></span>
+                  </a>
+                </dd>
+              </div>
+              {% else %}
+              {% endif %}
             </dl>
           </div>
         </div>
+
+
+
 
         {% endif %}
 

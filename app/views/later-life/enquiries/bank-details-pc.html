@@ -1,7 +1,7 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+  Bank details {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
@@ -38,31 +38,31 @@
       <h2 class="govuk-heading-l">Bank or building society account details</h2>
 
       <div class="govuk-form-group">
-        <label class="govuk-label" for="name-on-the-account">
+        <label class="govuk-label" for="pc-account-name">
           Account holder name
         </label>
-        <input class="govuk-input" id="name-on-the-account" name="name-on-the-account" type="text" spellcheck="false">
+        <input class="govuk-input" id="pc-account-name" name="pc-account-name" type="text" spellcheck="false">
       </div>
 
       <div class="govuk-form-group">
-        <label class="govuk-label" for="sort-code">
+        <label class="govuk-label" for="pc-sort-code">
           Sort code
         </label>
-        <input class="govuk-input govuk-input--width-5" id="sort-code" name="sort-code" type="text" aria-describedby="sort-code-hint" pattern="[0-9]*" inputmode="numeric" spellcheck="false">
+        <input class="govuk-input govuk-input--width-5" id="pc-sort-code" name="pc-sort-code" type="text" aria-describedby="pc-sort-code-hint" pattern="[0-9]*" inputmode="numeric" spellcheck="false">
       </div>
 
       <div class="govuk-form-group">
-        <label class="govuk-label" for="account-number">
+        <label class="govuk-label" for="pc-account-number">
           Account number
         </label>
-        <input class="govuk-input govuk-input--width-10" id="account-number" name="account-number" type="text" aria-describedby="account-number-hint" pattern="[0-9]*" inputmode="numeric" spellcheck="false">
+        <input class="govuk-input govuk-input--width-10" id="pc-account-number" name="pc-account-number" type="text" aria-describedby="pc-account-number-hint" pattern="[0-9]*" inputmode="numeric" spellcheck="false">
       </div>
 
       <div class="govuk-form-group">
-        <label class="govuk-label" for="roll-number">
+        <label class="govuk-label" for="pc-roll-number">
           Building society roll or reference number
         </label>
-        <input class="govuk-input govuk-input--width-10" id="roll-number" name="roll-number" type="text" aria-describedby="roll-number-hint" spellcheck="false">
+        <input class="govuk-input govuk-input--width-10" id="pc-roll-number" name="pc-roll-number" type="text" aria-describedby="pc-roll-number-hint" spellcheck="false">
       </div>
 
 
