@@ -111,15 +111,27 @@
     </dd>
   </div>
 
+
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
-      Correspondence address
+    Correspondence address
     </dt>
     <dd class="govuk-summary-list__value">
+      {% if data['correspondence-remove'] === 'Yes' %}
+      {% elseif data.correspondence %}
+      {{data.correspondence}}
+      {% else %}
 
+      {% endif %}
     </dd>
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="#"><span class="govuk-visually-hidden"> customer reference</span></a>
+      <a class="govuk-link" href="change-correspondence">
+        {% if data.correspondence %}
+        Change
+        {% else %}
+        Add
+        {% endif %}
+        <span class="govuk-visually-hidden"> </span></a>
     </dd>
   </div>
 
@@ -128,10 +140,21 @@
     Home phone number
     </dt>
     <dd class="govuk-summary-list__value">
-
+      {% if data['homephone-remove'] === 'Yes' %}
+      {% elseif data.homephone %}
+      {{data.homephone}}
+      {% else %}
+      01632 960005
+      {% endif %}
     </dd>
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="#">    <span class="govuk-visually-hidden"> date of birth</span></a>
+      <a class="govuk-link" href="change-home-phone">
+        {% if data.homephone %}
+        Change
+        {% else %}
+        Add
+        {% endif %}
+        <span class="govuk-visually-hidden"> </span></a>
     </dd>
   </div>
 
@@ -140,46 +163,87 @@
     Work phone number
     </dt>
     <dd class="govuk-summary-list__value">
+      {% if data['workphone-remove'] === 'Yes' %}
+      {% elseif data.workphone %}
+      {{data.workphone}}
+      {% else %}
 
+      {% endif %}
     </dd>
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="#">  <span class="govuk-visually-hidden"> address</span></a>
+      <a class="govuk-link" href="change-work-phone">
+        {% if data.workphone %}
+        Change
+        {% else %}
+        Add
+        {% endif %}
+        <span class="govuk-visually-hidden"> </span></a>
     </dd>
   </div>
+
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
     Mobile phone number
     </dt>
     <dd class="govuk-summary-list__value">
-      <p class="govuk-body">07064023020</p>
+      {% if data['mobilephone-remove'] === 'Yes' %}
+      {% elseif data.mobilephone %}
+      {{data.mobilephone}}
+      {% else %}
+      07064023020
+      {% endif %}
     </dd>
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="#">  <span class="govuk-visually-hidden"> contact details</span></a>
+      <a class="govuk-link" href="change-mobile-phone">
+        Change
+        <span class="govuk-visually-hidden"> </span></a>
     </dd>
   </div>
+
+
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
   Email address
     </dt>
     <dd class="govuk-summary-list__value">
-      <p class="govuk-body">mudd1958@hotmail.com</p>
+      {% if data['email-remove'] === 'Yes' %}
+      {% elseif data.email %}
+      {{data.email}}
+      {% else %}
+      mudd1958@hotmail.com
+      {% endif %}
     </dd>
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="#">  <span class="govuk-visually-hidden">No</span></a>
+      <a class="govuk-link" href="change-email">
+        Change
+        <span class="govuk-visually-hidden"> </span></a>
     </dd>
   </div>
 
+
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
-      Alternative format for letters
+  Alternative format for letters
     </dt>
     <dd class="govuk-summary-list__value">
-      <p class="govuk-body"></p>
+      {% if data['alt-format-remove'] === 'Yes' %}
+      {% elseif data.altformat %}
+      {{data.altformat}}
+      {% else %}
+
+      {% endif %}
     </dd>
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="#">  <span class="govuk-visually-hidden"></span></a>
+      <a class="govuk-link" href="change-alt-format">
+        {% if data.altformat %}
+        Change
+        {% else %}
+        Add
+        {% endif %}
+        <span class="govuk-visually-hidden"> </span></a>
     </dd>
   </div>
+
 </dl>
 
 

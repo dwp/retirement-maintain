@@ -1,0 +1,135 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+<header data-module="govuk-header" class="dwp-header">
+<div class="dwp-header__content govuk-width-container">
+<div class="dwp-header__service-name">
+  <a href="/later-life-patterns" class="dwp-header__link">Later life</a>
+</div>
+<nav class="dwp-header-navigation"
+  aria-label="Primary">
+  <button type="button" class="dwp-header-navigation__menu-button govuk-js-header-toggle" aria-controls="navigation" hidden>
+    Menu
+  </button>
+  <ul id="navigation" class="dwp-header-navigation__list">
+    <li class="dwp-header-navigation__item">
+      <a
+        href="find-someone">
+        Find someone
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="tasks">
+        Tasks
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="telephone-claim">
+        Telephone claim
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="paper-claim">
+        Paper claim
+      </a>
+    </li>
+    <li class="dwp-header-navigation__item">
+      <a
+        href="admin">
+        Admin
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+</header>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+    Charlotte Mudd<br>
+      <span class="govuk-caption-xl">XX 12 34 56</span>
+      <strong class="govuk-tag">
+        Receiving State Penison and Pension Credit
+      </strong>
+      </h1>
+
+
+      {{ govukBackLink({
+    "text": "Back",
+    "href": "javascript: window.history.go(-1)"
+  })
+}}
+
+
+
+
+    <form method="post" action="contact">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="removemobilephone-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Have you changed your name?
+            </h1>
+            <div class="govuk-inset-text">
+              {% if data.mobilephone %}
+              {{data.mobilephone}}
+              {% else %}
+              01632 960005
+              {% endif %}
+            </div>
+          </legend>
+
+
+          <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="removemobilephone" name="removemobilephone" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="removemobilephone">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="removemobilephone-2" name="removemobilephone" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="removemobilephone-2">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Save
+      </button>
+
+    </form>
+
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+{% endblock %}
