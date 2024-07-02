@@ -1,7 +1,7 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Email address – {{ serviceName }} – GOV.UK Prototype Kit
+  Suspend benefit – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
@@ -26,37 +26,36 @@
 
       {% include './_namebar.html' %}
 
-
       {{ govukBackLink({
     "text": "Back",
     "href": "javascript: window.history.go(-1)"
   })
 }}
 
-<span class="govuk-caption-l">Pension Credit</span>
-      <h2 class="govuk-heading-l">Payment frequency</h2>
 
-    <form method="post" action="payment">
+      <h2 class="govuk-heading-l">Which benefit do you want to suspend</h2>
+
+    <form method="post" action="personal-suspended">
 
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset">
           <div class="govuk-radios" data-module="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="spfrequency" name="spfrequency" type="radio" value="weekly">
-              <label class="govuk-label govuk-radios__label" for="spfrequency">
-                Every week
+              <input class="govuk-radios__input" id="suspension" name="suspension" type="radio" value="pc">
+              <label class="govuk-label govuk-radios__label" for="suspension">
+                Pension Credit
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="spfrequency-2" name="spfrequency" type="radio" value="2weeks">
-              <label class="govuk-label govuk-radios__label" for="spfrequency-2">
-                Every 2 weeks
+              <input class="govuk-radios__input" id="suspension-2" name="suspension" type="radio" value="sp">
+              <label class="govuk-label govuk-radios__label" for="suspension-2">
+                State Pension
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="spfrequency-2" name="spfrequency" type="radio" value="4weeks">
-              <label class="govuk-label govuk-radios__label" for="spfrequency-2">
-              Every 4 weeks
+              <input class="govuk-radios__input" id="suspension-2" name="suspension" type="radio" value="both">
+              <label class="govuk-label govuk-radios__label" for="suspension-2">
+                Pension Credit and State Pension
               </label>
             </div>
           </div>
@@ -64,10 +63,11 @@
       </div>
 
       <button type="submit" class="govuk-button" data-module="govuk-button">
-        Save
+        Continue
       </button>
 
     </form>
+
 
     </div>
 
