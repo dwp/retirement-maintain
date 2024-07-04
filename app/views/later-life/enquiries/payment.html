@@ -1,7 +1,7 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+  Payment – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
@@ -11,44 +11,7 @@
 <div class="dwp-header__service-name">
   <a href="/later-life-patterns" class="dwp-header__link">Later life</a>
 </div>
-<nav class="dwp-header-navigation"
-  aria-label="Primary">
-  <button type="button" class="dwp-header-navigation__menu-button govuk-js-header-toggle" aria-controls="navigation" hidden>
-    Menu
-  </button>
-  <ul id="navigation" class="dwp-header-navigation__list">
-    <li class="dwp-header-navigation__item">
-      <a
-        href="find-someone">
-        Find someone
-      </a>
-    </li>
-    <li class="dwp-header-navigation__item">
-      <a
-        href="tasks">
-        Tasks
-      </a>
-    </li>
-    <li class="dwp-header-navigation__item">
-      <a
-        href="telephone-claim">
-        Telephone claim
-      </a>
-    </li>
-    <li class="dwp-header-navigation__item">
-      <a
-        href="paper-claim">
-        Paper claim
-      </a>
-    </li>
-    <li class="dwp-header-navigation__item">
-      <a
-        href="admin">
-        Admin
-      </a>
-    </li>
-  </ul>
-</nav>
+          {% include './_nav.html' %}
 </div>
 </header>
 
@@ -61,13 +24,7 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">
-    Charlotte Mudd<br>
-      <span class="govuk-caption-xl">XX 12 34 56</span>
-      <strong class="govuk-tag">
-        Receiving State Penison and Pension Credit
-      </strong>
-      </h1>
+      {% include './_namebar.html' %}
 
       <nav class="navigation-secondary">
         <ul>
@@ -96,11 +53,15 @@
 
 
         <h2 class="govuk-heading-m">Bank or building society account details</h2>
-
+        {% if data['changebank'] === 'pc' %}
+        {% include './_bank.html' %}
+        {% elseif data['changebank'] === 'sp' %}
+        {% include './_bank.html' %}
+        {% else %}
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
             <h2 class="govuk-summary-card__title">Pension Credit and State Pension</h2>
-            <a href="" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 30%">Change</span>
+            <a href="change-bank" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 30%">Change</span>
             </a>
           </div>
           <div class="govuk-summary-card__content">
@@ -110,7 +71,11 @@
                   Account holder
                 </dt>
                 <dd class="govuk-summary-list__value">
+                  {% if data.accountname %}
+                  {{data.accountname}}
+                  {% else %}
                   Miss C Mudd
+                  {% endif %}
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#">
@@ -123,7 +88,11 @@
                   Sort code
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  	54 76 98
+                  {% if data.sortcode %}
+                  {{data.sortcode}}
+                  {% else %}
+                  54 76 98
+                  {% endif %}
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#">
@@ -136,7 +105,11 @@
                   Account number
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  	98765409
+                  {% if data.accountnumber %}
+                  {{data.accountnumber}}
+                  {% else %}
+                  98765409
+                  {% endif %}
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#">
@@ -144,10 +117,30 @@
                   </a>
                 </dd>
               </div>
+              {% if data.rollnumber %}
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+              Building society roll or reference number
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{data.rollnumber}}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    <span class="govuk-visually-hidden"></span>
+                  </a>
+                </dd>
+              </div>
+              {% else %}
+              {% endif %}
             </dl>
-
           </div>
         </div>
+
+
+
+
+        {% endif %}
 
         <h3 class="govuk-heading-m">Payment details</h3>
 
@@ -157,23 +150,23 @@
   </h2>
   <ul class="govuk-tabs__list">
     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-      <a class="govuk-tabs__tab" href="#past-day">
+      <a class="govuk-tabs__tab" href="#pension-credit-payment-details">
         Pension Credit
       </a>
     </li>
     <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#past-week">
+      <a class="govuk-tabs__tab" href="#state-pension-payment-details">
         State Pension
       </a>
     </li>
   </ul>
-  <div class="govuk-tabs__panel" id="past-day">
+  <div class="govuk-tabs__panel" id="pension-credit-payment-details">
     <table class="govuk-table">
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <td class="govuk-table__header">Payment frequency</td>
           <td class="govuk-table__cell">Every 4 weeks</td>
-          <td class="govuk-table__cell"><a href="" <span class="govuk-link govuk-!-font-size-19"">Change</span>
+          <td class="govuk-table__cell"><a href="change-pc-frequency" <span class="govuk-link govuk-!-font-size-19"">Change</span>
                       </a></td>
         </tr>
         <tr class="govuk-table__row">
@@ -189,30 +182,24 @@
       </tbody>
     </table>
   </div>
-  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="state-pension-payment-details">
     <table class="govuk-table">
-      <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-          <th scope="col" class="govuk-table__header">Case manager</th>
-          <th scope="col" class="govuk-table__header">Cases opened</th>
-          <th scope="col" class="govuk-table__header">Cases closed</th>
-        </tr>
-      </thead>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">David Francis</td>
-          <td class="govuk-table__cell">24</td>
-          <td class="govuk-table__cell">18</td>
+          <td class="govuk-table__header">Payment frequency</td>
+          <td class="govuk-table__cell">Every 4 weeks</td>
+          <td class="govuk-table__cell"><a href="change-sp-frequency" <span class="govuk-link govuk-!-font-size-19"">Change</span>
+                      </a></td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Paul Farmer</td>
-          <td class="govuk-table__cell">16</td>
-          <td class="govuk-table__cell">20</td>
+          <td class="govuk-table__header">Next payment date</td>
+          <td class="govuk-table__cell">Friday 15 July 2024</td>
+          <td class="govuk-table__cell"></td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Rita Patel</td>
-          <td class="govuk-table__cell">24</td>
-          <td class="govuk-table__cell">27</td>
+          <td class="govuk-table__header">Next payment amount</td>
+          <td class="govuk-table__cell">£498.72</td>
+          <td class="govuk-table__cell"></td>
         </tr>
       </tbody>
     </table>
@@ -224,7 +211,7 @@
     <div class="govuk-grid-column-one-third">
 
       <div class="dwp-timeline">
-      <h1 class="govuk-heading-m">Action history</h1>
+      <h1 class="govuk-heading-m">Payment changes</h1>
       <ol class="dwp-timeline__events">
       <li class="dwp-timeline__events--entry">
         <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Event</h2>
