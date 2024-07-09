@@ -12,6 +12,7 @@ router.post('*', function (req, res, next) {
 })
 
 // copy the const name and the file path to new version
+const recallreissue = require('./routes/recallreissue')
 const newclaims = require('./routes/newclaims')
 const bpviteration = require('./routes/bpviteration')
 const bpviteration2 = require('./routes/bpviteration2')
@@ -79,6 +80,7 @@ const laterlife = require('./routes/laterlife')
 
 
 // copy the router use and update the sprint version
+router.use(recallreissue)
 router.use(newclaims)
 router.use(bpviteration)
 router.use(bpviteration2)

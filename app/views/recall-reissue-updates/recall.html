@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/servicename-payments.html' %}
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+{% include './_find-someone.html' %}
+
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <main id="content" role="main">
+
+
+
+
+
+        {% if data['imprisoned-day'] or data['dead-day'] %}
+        {% set status = data['stopped-reason'] %}
+        {% else %}
+        {% set status = 'Payment returned'%}
+        {% endif %}
+
+        {% include './_bar.html' %}
+
+
+        <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+
+
+
+          
+          <h2 class="govuk-heading-l">Open CPS Local and attempt to recall this payment</h2>
+
+          <dl class="app-check-your-answers app-check-your-answers--short">
+
+
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                    <tr class="govuk-table__row"><tr class="govuk-table__row" style="width: 20%"></tr>
+                  <th class="govuk-table__header" scope="col" style="width: 43%">Total</th>
+                  <th class="govuk-table__header" scope="col">£162.68</th>
+                  <th class="govuk-table__header" scope="col"></th>
+      
+                </tr>
+      
+      
+              </thead>
+                <tbody class="govuk-table__body">
+      
+                  <tr class="govuk-table__row">
+                      <td class="govuk-table__cell" scope="row">Period</td>
+                      <td class="govuk-table__cell">16 November 2019 to <br>22 November 2019</td>
+                      <td class="govuk-table__cell">
+                      </td>
+                    </tr>
+                   
+                      </tr>
+                      <tr class="govuk-table__row">
+                          <td class="govuk-table__cell" scope="row">Status</td>
+                          <td class="govuk-table__cell" style="width: 36%">Sent</td>
+                          <td class="govuk-table__cell">
+                          </td>
+                        </tr>
+                       
+      
+                </tbody>
+              </table>
+      
+
+          <form method="post" class="form" action="/successfully-recalled">
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                  Was the payment successfully recalled?
+                </legend>
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="recall-1" name="recalled" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="recall">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="recall-2" name="recalled" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="recall-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <button class="govuk-button govuk-!-margin-top-5" data-module="govuk-button">
+                Confirm
+              </button>
+
+        </div>
+      </form>
+      </main>
+    </div>
+    </main>
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
