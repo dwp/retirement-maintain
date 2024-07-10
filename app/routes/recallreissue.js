@@ -21,9 +21,9 @@ router.post('/want-to-recall', function (req, res) {
 // Checking agent has successfully recalled the payment in CPS
 router.post('/successfully-recalled', function (req, res) {
   if (req.body['recalled'] === 'yes') {
-    res.redirect('recall-reissue-updates/payment-recalled')
+    res.redirect('recall-reissue-updates/payment-details1-recall-successful')
   } else {
-    res.redirect('recall-reissue-updates/payment-recall-unsuccessful')
+    res.redirect('recall-reissue-updates/payment-details1')
   }
 })
 
