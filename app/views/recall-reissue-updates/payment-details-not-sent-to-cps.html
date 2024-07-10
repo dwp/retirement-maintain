@@ -31,7 +31,7 @@ GOV.UK Prototype Kit
             </h2>
           </div>
           <div class="govuk-notification-banner__content">
-            <p class="govuk-notification-banner__heading">Reissued as faster payment</p>
+            <p class="govuk-notification-banner__heading">Recall successful / Payment will not be created in CPS Local</p>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ GOV.UK Prototype Kit
       </main>
 
   <div>
-      <a class="govuk-back-link" href="payment-faster-reissued">Back</a>
+      <a class="govuk-back-link" href="payment-not-sent-to-cps">Back</a>
     </div>
     <br>
   <h2 class="govuk-heading-m">Payment details</h2>
@@ -88,32 +88,31 @@ GOV.UK Prototype Kit
               <td class="govuk-table__cell" scope="row">Breakdown</td>
               <td class="govuk-table__cell">4 weeks at £162.68</td>
               <td class="govuk-table__cell">
-
+                
               </td>
             </tr>
             -->
 
             <tr class="govuk-table__row">
                 <td class="govuk-table__cell" scope="row">Period</td>
-                <td class="govuk-table__cell">6 July 2024 to 12 July 2024</td>
+                <td class="govuk-table__cell">13 Jul 2024 to 19 Jul 2024</td>
                 <th class="govuk-table__header" scope="col"></th>
               </tr>
-
+             
                 </tr>
                 <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">Status</td>
-                    <td class="govuk-table__cell" style="width: 36%">Reissued</td>
+                    <td class="govuk-table__cell" style="width: 36%">Recalled / Not created in CPS?</td>
                     <td class="govuk-table__cell">
-                     <a href="">Mark as returned</a>
                     </td>
                   </tr>
-
+                 
 
           </tbody>
         </table>
 
 
-        <h2 class="govuk-heading-m">Account the payment was sent to</h2>
+        <h2 class="govuk-heading-m">Account the payment will be sent to</h2>
         <dl class="app-check-your-answers app-check-your-answers--short">
             <table class="govuk-table">
             <tbody class="govuk-table__body">
@@ -131,10 +130,10 @@ GOV.UK Prototype Kit
                     </tr>
               </tbody>
 </table>
+        
 
 
-
-
+          
 </div>
 
 
@@ -143,42 +142,28 @@ GOV.UK Prototype Kit
   <h2 class="govuk-heading-m">
     Status changes
   </h2>
-  <ol class="app-timeline">
-    <li class="app-timeline__entry">
-      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-        Reissued as faster payment
-      </h3>
+  <ol class="app-timeline">  
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Recalled / Not created in CPS?
+        </h3>
 
-      <p class="app-timeline__info govuk-!-margin-bottom-0">
-        Agent
-        <span class="app-timeline__date">
-          10 July 2024
-        </span>
-      </p>
-    </li>
-
-    <li class="app-timeline__entry">
-      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-        Recalled
-      </h3>
-
-      <p class="app-timeline__info govuk-!-margin-bottom-0">
-        Agent
-        <span class="app-timeline__date">
-          10 July 2024
-        </span>
-      </p>
-    </li>
-
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          System
+          <span class="app-timeline__date">
+              15 July 2024
+          </span>
+        </p>
+      </li>
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-            Sent
+            Processing?
           </h3>
-
+  
           <p class="app-timeline__info govuk-!-margin-bottom-0">
             System
             <span class="app-timeline__date">
-              7 July 2024
+                15 July 2024
             </span>
           </p>
         </li>
@@ -190,7 +175,7 @@ GOV.UK Prototype Kit
   </div>
 
 
-</main>
+</main>        
 
 {% endblock %}
 
