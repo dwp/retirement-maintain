@@ -44,7 +44,7 @@ GOV.UK Prototype Kit
 
 
           
-          <h2 class="govuk-heading-l">Open CPS Local and recall this payment</h2>
+          <h2 class="govuk-heading-l">This payment has not been created in CPS Local yet</h2>
 
           <dl class="app-check-your-answers app-check-your-answers--short">
 
@@ -65,7 +65,7 @@ GOV.UK Prototype Kit
       
                   <tr class="govuk-table__row">
                       <td class="govuk-table__cell" scope="row">Period</td>
-                      <td class="govuk-table__cell">6 Jul 2024 to 12 Jul 2024</td>
+                      <td class="govuk-table__cell">13 Jul 2024 to 19 Jul 2024</td>
                       <td class="govuk-table__cell">
                       </td>
                     </tr>
@@ -83,22 +83,22 @@ GOV.UK Prototype Kit
               </table>
       
 
-          <form method="post" class="form" action="/successfully-recalled">
+          <form method="post" class="form" action="/not-in-cps-yet">
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                  Was the payment successfully recalled?
+                  Do you want to recall this payment / stop this payment being created in CPS Local?
                 </legend>
                 <div class="govuk-radios govuk-radios--inline">
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="recall-1" name="recalled" type="radio" value="yes">
-                    <label class="govuk-label govuk-radios__label" for="recall">
+                    <input class="govuk-radios__input" id="remove-cps1" name="remove-cps" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="remove-cps1">
                       Yes
                     </label>
                   </div>
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="recall-2" name="recalled" type="radio" value="no">
-                    <label class="govuk-label govuk-radios__label" for="recall-2">
+                    <input class="govuk-radios__input" id="remove-cps2" name="remove-cps" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="remove-cps2">
                       No
                     </label>
                   </div>

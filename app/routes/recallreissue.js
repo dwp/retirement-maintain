@@ -36,4 +36,13 @@ router.post('/reissue-as-faster', function (req, res) {
   }
 })
 
+// Recalling a payment that hasn't been sent to CPS yet
+router.post('/not-in-cps-yet', function (req, res) {
+  if (req.body['remove-cps'] === 'yes') {
+    res.redirect('recall-reissue-updates/payment-not-sent-to-cps')
+  } else {
+    res.redirect('recall-reissue-updates/payment-details-not-in-cps-yet')
+  }
+})
+
 module.exports = router
