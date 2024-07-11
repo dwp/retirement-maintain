@@ -43,9 +43,9 @@ GOV.UK Prototype Kit
 
 
 
-          
-          <h2 class="govuk-heading-l">This payment has not been created in CPS Local yet</h2>
 
+          <h2 class="govuk-heading-l">Stop payment</h2>
+<p>You can stop this payment before it is sent to CPS Local.</p>
           <dl class="app-check-your-answers app-check-your-answers--short">
 
 
@@ -56,38 +56,32 @@ GOV.UK Prototype Kit
                   <th class="govuk-table__header" scope="col" style="width: 43%">Total</th>
                   <th class="govuk-table__header" scope="col">£162.68</th>
                   <th class="govuk-table__header" scope="col"></th>
-      
-                </tr>
-      
-      
+
+
+
+
               </thead>
                 <tbody class="govuk-table__body">
-      
+
                   <tr class="govuk-table__row">
                       <td class="govuk-table__cell" scope="row">Period</td>
                       <td class="govuk-table__cell">13 Jul 2024 to 19 Jul 2024</td>
                       <td class="govuk-table__cell">
                       </td>
                     </tr>
-                   
-                      </tr>
-                      <tr class="govuk-table__row">
-                          <td class="govuk-table__cell" scope="row">Status</td>
-                          <td class="govuk-table__cell" style="width: 36%">Sent</td>
-                          <td class="govuk-table__cell">
-                          </td>
-                        </tr>
-                       
-      
+
+
+
+
                 </tbody>
               </table>
-      
 
-          <form method="post" class="form" action="/not-in-cps-yet">
+<br>
+       <form method="post" class="form" action="/not-in-cps-yet">
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                  Do you want to recall this payment / stop this payment being created in CPS Local?
+                  Do you want to stop this payment automatically?
                 </legend>
                 <div class="govuk-radios govuk-radios--inline">
                   <div class="govuk-radios__item">
@@ -104,7 +98,8 @@ GOV.UK Prototype Kit
                   </div>
                 </div>
               </fieldset>
-              <button class="govuk-button govuk-!-margin-top-5" data-module="govuk-button">
+              <br>
+              <button class="govuk-button" data-module="govuk-button">
                 Confirm
               </button>
 
