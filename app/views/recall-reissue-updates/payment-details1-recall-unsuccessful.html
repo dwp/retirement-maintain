@@ -8,19 +8,30 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include 'includes/servicename-payments.html' %}
+
 
 {% block headEnd %}
-{% include 'includes/remove-blue-bar.html' %}
 {% endblock %}
 
-{% include './_find-someone.html' %}
+{% include './_header-nav-unselected.html' %}
 
 
 
 <div class="govuk-width-container">
 
   <main class="govuk-main-wrapper">
+    <!-- <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Important
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <p class="govuk-notification-banner__heading">
+          Recall unsuccessful
+        </p>
+      </div>
+    </div> -->
 
     <div class="govuk-grid-column-two-thirds">
 
