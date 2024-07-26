@@ -42,9 +42,9 @@
             <li>
               <a href="payment" class="active" aria-current="page">Payment</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="history">Full history</a>
-            </li>
+            </li> -->
         </ul>
       </nav>
 
@@ -52,7 +52,7 @@
 <br><br>
 
 
-        <h2 class="govuk-heading-m">Bank or building society account details</h2>
+        <h2 class="govuk-heading-m">Bank or building society details</h2>
         {% if data['changebank'] === 'pc' %}
         {% include './_bank.html' %}
         {% elseif data['changebank'] === 'sp' %}
@@ -68,7 +68,7 @@
             <dl class="govuk-summary-list">
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Account holder
+                  Name on account
                 </dt>
                 <dd class="govuk-summary-list__value">
                   {% if data.accountname %}
@@ -133,6 +133,19 @@
               </div>
               {% else %}
               {% endif %}
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+              Bank
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  LLoyds
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    <span class="govuk-visually-hidden"></span>
+                  </a>
+                </dd>
+              </div>
             </dl>
           </div>
         </div>
@@ -142,7 +155,7 @@
 
         {% endif %}
 
-        <h3 class="govuk-heading-m">Payment details</h3>
+        <h3 class="govuk-heading-m">Payment schedule</h3>
 
         <div class="govuk-tabs" data-module="govuk-tabs">
   <h2 class="govuk-tabs__title">
@@ -254,7 +267,7 @@
             <td class="govuk-table__cell">Fri 17 Jun 2024</td>
             <td class="govuk-table__cell">19 May 2024 to 15 Jun 2024</td>
             <td class="govuk-table__cell">£498.72</td>
-            <td class="govuk-table__cell" class="govuk-orange">Paid
+            <td class="govuk-table__cell" class="govuk-orange">Returned
             </td>
             <td class="govuk-table__cell" style="text-align: right;"><a href="payment-details-1">Details</a></td>
           </tr>
