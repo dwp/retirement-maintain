@@ -97,11 +97,11 @@
     <dd class="govuk-summary-list__actions">
       <a class="govuk-link" href="change-home-phone">
         {% if data['homephone-remove'] === 'yes' %}
-        Add
+          <a class="govuk-link" href="change-home-phone">Add</a>
         {% else %}
-        Change
+      <a class="govuk-link" href="change-home-phone">Change</a> <a class="govuk-link" href="change-home-phone">Remove</a>  
         {% endif %}
-        <span class="govuk-visually-hidden"> </span></a>
+
     </dd>
   </div>
 
@@ -221,16 +221,9 @@
           <h1 class="govuk-heading-m">Contact changes</h1>
           <ol class="dwp-timeline__events">
           <li class="dwp-timeline__events--entry">
-            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Event</h2>
-            <p class="govuk-caption-m govuk-!-margin-bottom-1">Agent/System/Online</p>
-            <p class="govuk-caption-m govuk-!-margin-bottom-1">11 August 2023</p>
-            <p class="govuk-caption-m"><a href="#" class="govuk-link govuk-link--no-visited-state">Details</a></p>
-          </li>
-          <li class="dwp-timeline__events--entry">
-            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Event</h2>
-            <p class="govuk-caption-m govuk-!-margin-bottom-1">Agent/System/Online</p>
-            <p class="govuk-caption-m">10 August 2023</p>
-            <p class="govuk-caption-m"><a href="#" class="govuk-link govuk-link--no-visited-state">Details</a></p>
+            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Home phone number changed</h2>
+            <p class="govuk-caption-m govuk-!-margin-bottom-1">Agent</p>
+            <p class="govuk-caption-m govuk-!-margin-bottom-1">11 July 2024</p>
           </li>
           <li class="dwp-timeline__events--entry">
           <p><a href="#" class="govuk-link govuk-link--no-visited-state">Full history</a></p>
