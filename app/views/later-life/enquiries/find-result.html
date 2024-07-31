@@ -28,9 +28,23 @@
       Charlotte Mudd<br>
       <span class="govuk-caption-xl">XX 12 34 56</span>
 
+<br>
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Pension Credit</th>
+            <td class="govuk-table__cell">In payment</td>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">State Pension</th>
+            <td class="govuk-table__cell">In payment</td>
+          </tr>
+        </tbody>
+      </table>
 
-
-      {% if data['stopbenefit'] === 'death' %}
+      <!-- {% if data['stopbenefit'] === 'death' %}
       <strong class="govuk-tag govuk-tag--grey">
         Dead
       </strong>
@@ -54,7 +68,7 @@
       <strong class="govuk-tag">
         Receiving State Pension and Pension Credit
       </strong>
-      {% endif %}
+      {% endif %} -->
 
 
       </h1>

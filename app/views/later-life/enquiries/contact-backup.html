@@ -96,11 +96,10 @@
     </dd>
     <dd class="govuk-summary-list__actions">
       <a class="govuk-link" href="change-home-phone">
-        {% if data.homephone %}
-          <a class="govuk-link" href="change-home-phone">Change</a>
-          <a class="govuk-link" href="remove-home-phone">Remove</a>
+        {% if data['homephone-remove'] === 'yes' %}
+          <a class="govuk-link" href="change-home-phone">Add</a>
         {% else %}
-      <a class="govuk-link" href="change-home-phone">Add</a>
+      <a class="govuk-link" href="change-home-phone">Change</a> 
         {% endif %}
 
     </dd>
@@ -115,16 +114,15 @@
       {% elseif data.mobilephone %}
       {{data.mobilephone}}
       {% else %}
-
+      07064023020
       {% endif %}
     </dd>
     <dd class="govuk-summary-list__actions">
       <a class="govuk-link" href="change-mobile-phone">
-        {% if data.mobilephone %}
-          <a class="govuk-link" href="change-mobile-phone">Change</a>
-          <a class="govuk-link" href="change-mobile-phone">Remove</a>
+        {% if data['mobilephone-remove'] === 'yes' %}
+        Add
         {% else %}
-      <a class="govuk-link" href="remove-mobile-phone">Add</a>
+        Change
         {% endif %}
         <span class="govuk-visually-hidden"> </span></a>
     </dd>
@@ -139,16 +137,16 @@
       {% if data['email-remove'] === 'yes' %}
       {% elseif data.email %}
       {{data.email}}
-      {% else %} 
+      {% else %}
+      mudd1958@hotmail.com
       {% endif %}
     </dd>
     <dd class="govuk-summary-list__actions">
       <a class="govuk-link" href="change-email">
-        {% if data.email %}
-          <a class="govuk-link" href="change-email">Change</a>
-          <a class="govuk-link" href="change-email">Remove</a>
+        {% if data['email-remove'] === 'yes' %}
+        Add
         {% else %}
-      <a class="govuk-link" href="remove-email">Add</a>
+        Change
         {% endif %}
         <span class="govuk-visually-hidden"> </span></a>
     </dd>
