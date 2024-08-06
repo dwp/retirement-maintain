@@ -19,7 +19,7 @@ router.post('/later-life/enquiries/change-bank', function (req, res) {
   if (req.body['changebank'] === 'pc') {
     res.redirect('bank-details-pc')
   } else if (req.body['changebank'] === 'sp') {
-    res.redirect('bank-details-sp')
+    res.redirect('bank-details-sp-uk')
   } else if (req.body['changebank'] === 'both') {
     res.redirect('bank-details')
   } else {
