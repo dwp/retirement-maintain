@@ -9,7 +9,7 @@ router.post('/later-life/enquiries/stop-benefit', function (req, res) {
   } else if (req.body['stopbenefit'] === 'suspension') {
     res.redirect('suspend-benefit')
   } else {
-    res.redirect('stop-benefit')
+    res.redirect('move-to-legacy')
   }
 })
 
@@ -19,7 +19,7 @@ router.post('/later-life/enquiries/change-bank', function (req, res) {
   if (req.body['changebank'] === 'pc') {
     res.redirect('bank-details-pc')
   } else if (req.body['changebank'] === 'sp') {
-    res.redirect('bank-uk-overseas')
+    res.redirect('bank-details-sp')
   } else if (req.body['changebank'] === 'both') {
     res.redirect('bank-details')
   } else {
