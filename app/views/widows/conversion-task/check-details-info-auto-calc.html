@@ -29,7 +29,7 @@ GOV.UK Prototype Kit
 
     <br><br>
 
-    {% if data['dom'] === 'Verified' %}
+
 
       <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
       <div class="govuk-notification-banner__header">
@@ -39,16 +39,12 @@ GOV.UK Prototype Kit
       </div>
       <div class="govuk-notification-banner__content">
         <p class="govuk-notification-banner__heading">
-    All information completed and dates verified.
+    All information completed and dates verified. Any inherited amounts will be calculated automatically.
         </p>
       </div>
     </div>
-    <h1 class="govuk-heading-l">Check for inheritable amounts</h1>
+    <h1 class="govuk-heading-l">Check the information you entered</h1>
 
-    {% else %}
-    <h1 class="govuk-heading-l">Check the details and decide how to continue</h1>
-    <p>Complete the information and verify the dates, or choose another way to continue.</p>
-    {% endif %}
 
   <br><br>
 
@@ -196,21 +192,19 @@ GOV.UK Prototype Kit
                         {% if data.domd %}
                         {{data.domd}}/{{data.domm}}/{{data.domy}}
                         {% else %}
-
+12/03/1978
                         {% endif %}</td>
                       <td class="govuk-table__cell"><span class="verified-badge verified">
                         <b>{% if data.dom %}
                         {{data.dom}}
                         {% else %}
-
+Verified
                         {% endif %}</b>
                       </span> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
-                                              <a class="govuk-link" href="dom">{% if data.domd %}
+                                              <a class="govuk-link" href="dom">
                                               Change
-                                              {% else %}
-                                              Add
-                                              {% endif %}</a>
+                                          </a>
                       </td>
                     </tr>
 
@@ -223,37 +217,18 @@ GOV.UK Prototype Kit
 
   <br>  <br>
 
-  <form method="post">
-  <div class="govuk-form-group">
-    <fieldset class="govuk-fieldset">
-      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-        <h2 class="govuk-fieldset__heading">
-          How do you want to continue?
-        </h2>
-      </legend>
 
 
-
-
-    <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="nothing-to-inherit">
-      <label class="govuk-label govuk-radios__label" for="decision">
-  Calculate inheritable amounts</label>
-    </div>
-
-
-    <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="save">
-      <label class="govuk-label govuk-radios__label" for="inheritable-amounts-3">
-Save changes and return task to queue   </label>
-    </div>
 
 <br>
     <div class="govuk-button-group">
       <button class="govuk-button" data-module="govuk-button">
         Continue
       </button>
-    </div>
+
+
+      </div>
+      <p>  <a class="govuk-link" href="#">Save changes and return task to queue</a></p>
   </div>
 
 </div>
