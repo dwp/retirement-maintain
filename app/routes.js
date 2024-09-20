@@ -77,6 +77,7 @@ const internationaleea = require('./routes/internationaleea')
 const fraud = require('./routes/fraud')
 const citizen = require('./routes/citizen')
 const laterlife = require('./routes/laterlife')
+const patterns = require('./routes/patterns')
 
 
 // copy the router use and update the sprint version
@@ -145,5 +146,6 @@ router.use(fraud)
 router.use(otherbenefits)
 router.use(citizen)
 router.use(laterlife)
+router.use(patterns)
 
 module.exports = router
