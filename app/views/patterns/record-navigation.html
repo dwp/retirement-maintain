@@ -1,7 +1,7 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+  Record design example – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
@@ -73,20 +73,20 @@
         <ul>
 
           <li>
-              <a href="personal" class="active" aria-current="page">Personal</a>
+              <a href="record-navigation" class="active" aria-current="page">Personal</a>
             </li>
           <li>
-            <a href="contact">Contact</a>
+            <a href="">Contact</a>
           </li>
 
           <li>
-            <a href="award">Award</a>
+            <a href="">Award</a>
           </li>
             <li>
-              <a href="payment" class="" aria-current="page">Payment</a>
+              <a href="">Payment</a>
             </li>
             <li>
-              <a href="history">Full history</a>
+              <a href="full-history">Full history</a>
             </li>
         </ul>
 
@@ -98,26 +98,28 @@
 
     <div class="govuk-grid-column-one-third">
 
-    <div class="dwp-timeline">
-    <h1 class="govuk-heading-m">Action history</h1>
-    <ol class="dwp-timeline__events">
-    <li class="dwp-timeline__events--entry">
-      <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Event</h2>
-      <p class="govuk-caption-m govuk-!-margin-bottom-1">Agent/System/Online</p>
-      <p class="govuk-caption-m govuk-!-margin-bottom-1">11 August 2023</p>
-      <p class="govuk-caption-m"><a href="#" class="govuk-link govuk-link--no-visited-state">Details</a></p>
-    </li>
-    <li class="dwp-timeline__events--entry">
-      <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Event</h2>
-      <p class="govuk-caption-m govuk-!-margin-bottom-1">Agent/System/Online</p>
-      <p class="govuk-caption-m">10 August 2023</p>
-      <p class="govuk-caption-m"><a href="#" class="govuk-link govuk-link--no-visited-state">Details</a></p>
-    </li>
-    <li class="dwp-timeline__events--entry">
-    <p><a href="#" class="govuk-link govuk-link--no-visited-state">Full history</a></p>
-    </li>
-    </ol>
-    </div>
+      <h1 class="govuk-heading-l">Action history</h1>
+<div class="dwp-timeline">
+<ol class="dwp-timeline__items">
+<li class="dwp-timeline__item">
+  <h2 class="dwp-timeline__heading">Event</h2>
+  <p class="dwp-timeline__datetime">11 August 2024</p>
+  <p class="dwp-timeline__by-line">Agent/System/Online</p>
+  <p class="dwp-timeline__datetime"><a href="action-history-details" class="govuk-link govuk-link--no-visited-state">Details</a></p>
+</li>
+<li class="dwp-timeline__item">
+  <h2 class="dwp-timeline__heading">Event</h2>
+  <p class="dwp-timeline__datetime">11 August 2024</p>
+  <p class="dwp-timeline__by-line">Agent/System/Online</p>
+  <p class="dwp-timeline__datetime"><a href="action-history-details" class="govuk-link govuk-link--no-visited-state">Details</a></p>
+</li>
+<li class="dwp-timeline__item">
+  <h2 class="dwp-timeline__heading"><a href="full-history" class="govuk-link govuk-link--no-visited-state">Full history</a></h2>
+</li>
+</ol>
+</div>
+
+
 
     </div>
 
