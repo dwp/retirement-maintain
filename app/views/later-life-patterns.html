@@ -1,7 +1,7 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+  LL design patterns – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
@@ -204,17 +204,29 @@
                 </strong>
               </div>
             </li>
-          </ul>
-        </div>
-
-
-
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
-          <ul class="govuk-task-list">
             <li class="govuk-task-list__item govuk-task-list__item--with-link">
               <div class="govuk-task-list__name-and-hint">
-                <a class="govuk-link govuk-task-list__link" href="" aria-describedby="company-details-2-status">
+                <a class="govuk-link govuk-task-list__link" href="/patterns/agent-bank-account" aria-describedby="company-details-2-status">
                 Bank account details
+                </a>
+                <div id="company-details-3-hint" class="govuk-task-list__hint">
+                Used on a citizen record to change the UK bank account, building
+                society or overseas bank account the citizen is paid into
+                </div>
+              </div>
+              <div class="govuk-task-list__status" id="company-details-2-status">
+                <strong class="govuk-tag govuk-tag--blue">
+                SP
+                </strong>
+                <strong class="govuk-tag govuk-tag--orange">
+                  WF
+                </strong>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="patterns/agent-address-look-up" aria-describedby="company-details-2-status">
+                Address
                 </a>
                 <div id="company-details-3-hint" class="govuk-task-list__hint">
                 Description
@@ -232,9 +244,37 @@
                 </strong>
               </div>
             </li>
+          </ul>
+        </div>
+
+
+
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+          <ul class="govuk-task-list">
             <li class="govuk-task-list__item govuk-task-list__item--with-link">
               <div class="govuk-task-list__name-and-hint">
-                <a class="govuk-link govuk-task-list__link" href="" aria-describedby="company-details-2-status">
+                <a class="govuk-link govuk-task-list__link" href="patterns/citizen-bank-account" aria-describedby="company-details-2-status">
+                Bank account details
+                </a>
+                <div id="company-details-3-hint" class="govuk-task-list__hint">
+                Used to gather the bank or building society account details a citizen wants their money to be paid into
+                </div>
+              </div>
+              <div class="govuk-task-list__status" id="company-details-2-status">
+                <strong class="govuk-tag govuk-tag--blue">
+                SP
+                </strong>
+                <strong class="govuk-tag govuk-tag--purple">
+                  PC
+                </strong>
+                <strong class="govuk-tag govuk-tag--orange">
+                  WF
+                </strong>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="patterns/citizen-address-look-up" aria-describedby="company-details-2-status">
                 Address
                 </a>
                 <div id="company-details-3-hint" class="govuk-task-list__hint">
