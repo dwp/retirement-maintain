@@ -1,0 +1,74 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Action history pattern – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+<header data-module="govuk-header" class="dwp-header">
+<div class="dwp-header__content govuk-width-container">
+<div class="dwp-header__service-name">
+  <a href="/later-life-patterns" class="dwp-header__link">Later life</a>
+</div>
+</div>
+</header>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">Award</h1>
+
+      <h2 class="govuk-heading-m">Award history</h2>
+      <p><b>Current award:</b><br> An award is a benefit weekly entitlement amount, made up of several components. The current award is the award currently in payment. </p>
+      <p><b>Previous awards:</b><br> Awards can change based on circumstances, all previous awards are recorded in award history. </p>
+      <p><b>Award details:</b><br> Previous awards component breakdowns can be seen in award details. Award details also shows any adjustments or withheld amounts.</p>
+
+
+<h2 class="govuk-heading-m">Adjustments</h2>
+      <p><b>Current adjustment:</b><br> An adjustment is applied to a payment calculation of award entitlement.
+      The adjustment does not change the award entitlement amount however the citizen will receive a lower payment until the adjustment period has ended.<br>
+      For example, a debt adjustment would be applied to an award for a period of time until the debt has been recovered.<br>
+      Adjustments can be applied and viewed in the awards area of the service. Adjustments are also shown in payment details.
+</p>
+
+<p><b>Upcoming adjustment or update:</b><br>
+  An upcoming adjustment or update is when there is a planned adjustment or change of award that has been scheduled for a future date. <br>
+  For example, we can calculate uprating before it is applied to the award based on the current award.
+</p>
+
+<p><b>Previous adjustments:</b><br>
+How a previous adjustment shows depends on if the award it is applied to is in payment or if it is a previous award. Adjustments can span over multiple awards, so the
+same adjustment may be viewable from multiple award details. If the adjustment was applied to the current award it will show in previous adjustments reveal, if it was applied to
+a previous award, you will see "yes" in the adjustment colulm as well as seeing the adjustment details in the award details.
+</p>
+
+
+
+
+      <h3 class="govuk-heading-m">The design</h3>
+
+      <a href="award-tab" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+        </svg>
+      </a>
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+{% endblock %}
