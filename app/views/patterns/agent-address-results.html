@@ -47,21 +47,32 @@
         <p>1 address found for <b>15</b> and <b>NE3 1YL</b> &nbsp <a href="change-address1" style=" margin-left: 10;">Change</a></p>
 
 
-        <div class="govuk-radios govuk-radios--inline">
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-            <label class="govuk-label govuk-radios__label" for="changed-name">
-             15 Windsor Street, South Gosforth, Newcastle Upon Tyne, <br>NE3 1YL <a href></a>
-            </label>
-          </div>
-        </div>
+        <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="address" name="address" type="radio" value="windsor">
+        <label class="govuk-label govuk-radios__label" for="address">
+          15 Windsor Street, South Gosforth, Newcastle Upon Tyne, NE3 1YL
+        </label>
+      </div>
 
+      <div class="govuk-radios__divider">or</div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="address-6" name="address" type="radio" value="not-found">
+        <label class="govuk-label govuk-radios__label" for="address-6">
+          Address not found
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
         <br><br>
     <button type="submit" class="govuk-button">
     Save
     </button>
 
-    <p><a href="agent-manual-address" class="govuk-link govuk-link--no-visited-state">Enter address manually</a></p>
+</form>
 
       </div>
 
