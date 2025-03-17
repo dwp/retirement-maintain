@@ -135,17 +135,24 @@ router.post('/prison/iteration-3/date-entered-prison', (req, res) => {
 // Is the claimant still in prison?
 router.post('/prison/iteration-3/in-prison', function (req, res) {
   if (req.body['in-prison'] === 'yes') {
-    res.redirect('prison-overpayment')
+    res.redirect('personal-prison')
   } else {
     res.redirect('date-left-prison')
   }
 })
 
 router.post('/prison/iteration-3/date-left-prison', (req, res) => {
-  res.redirect('personal-prison')
+  res.redirect('personal-left-prison')
 })
 
 // Prison overpayment referral
+router.post('/prison/iteration-3/prison-overpayment', function (req, res) {
+  if (req.body['prison-overpayment'] === 'yes') {
+    res.redirect('prison-debt-referral')
+  } else {
+    res.redirect('personal-prison-overpayment')
+  }
+})
 router.post('/prison/iteration-3/prison-overpayment-1', function (req, res) {
   if (req.body['prison-overpayment'] === 'yes') {
     res.redirect('prison-debt-referral')
