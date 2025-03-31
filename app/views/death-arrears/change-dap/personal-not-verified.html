@@ -16,19 +16,7 @@ GOV.UK Prototype Kit
   <div class="govuk-width-container">
 
     <main class="govuk-main-wrapper">
-      <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-        <div class="govuk-notification-banner__header">
-          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-            Success
-          </h2>
-        </div>
-        <div class="govuk-notification-banner__content">
-          <h3 class="govuk-notification-banner__heading">
-            Arrears calculated - awaiting payee details
-          </h3>
 
-        </div>
-      </div>
       <div class="govuk-grid-column-two-thirds">
 
 
@@ -36,15 +24,14 @@ GOV.UK Prototype Kit
           <div class="grid-row">
             <div class="column-full">
 
-
               {% include 'includes/_bar-dead-rooney.html' %}
 
              <div class="govuk-warning-text">
                 <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
                 <strong class="govuk-warning-text__text">
                   <span class="govuk-warning-text__assistive"></span>
-                  £52.17 arrears payment due for the period 6 March 2025 to 7 March 2025<br> <a href="check-dap-details">
-                      Confirm payee details and send payment
+                  Date of death awaiting verification<br> <a href="dap-what-is-death-date">
+                      Verifiy date of death
                   </a>
                 </strong>
               </div>
@@ -55,8 +42,8 @@ GOV.UK Prototype Kit
           </div>
         </main>
 
-      <br>
-    <br>
+      </br>
+    </br>
 
 
 
@@ -99,8 +86,8 @@ GOV.UK Prototype Kit
                 </tr>
                 <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Death arrears payee</th>
-                    <td class="govuk-table__cell">Jane Rooney</td>
-              <td class="govuk-table__cell"><a class="govuk-link" href="dap-details-changed">Details</td>
+                    <td class="govuk-table__cell">JD Solicitors</td>
+              <td class="govuk-table__cell"><a class="govuk-link" href="dap-details">Details</td>
                   </tr>
 
 
@@ -122,16 +109,6 @@ GOV.UK Prototype Kit
 
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-          Arrears calculated - awaiting payee details
-        </h3>
-
-        <p class="app-timeline__info govuk-!-margin-bottom-0">
-          <span>Agent</span>
-          <span class="app-timeline__date">12 February 2025</span>
-        </p>
-      </li>
-      <li class="app-timeline__entry">
-        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
           Date of death - not verified
         </h3>
 
@@ -140,6 +117,7 @@ GOV.UK Prototype Kit
           <span class="app-timeline__date">12 February 2025</span>
         </p>
       </li>
+
     </ol>
 
   </div>

@@ -31,33 +31,49 @@ GOV.UK Prototype Kit
         </main>
 
 
-<a href="personal-br330" class="govuk-back-link">Back</a>
+        {{ govukBackLink({
+      "text": "Back",
+      "href": "javascript: window.history.go(-1)"
+    })
+  }}
 
     <div>
       <br>
-      <h2 class="govuk-heading-l">Death arrears payee (DAP) details</h2>
+      <h2 class="govuk-heading-l">Death arrears payee details</h2>
 
-      <table class="govuk-table">
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Full name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            JD Solicitors
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Phone number
+          </dt>
+          <dd class="govuk-summary-list__value">
 
-        <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">DAP name</th>
-            <td class="govuk-table__cell">JD Solicitors</td>
+          </dd>
 
-          </tr>
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Reference number</th>
-            <td class="govuk-table__cell">SB12345XY</td>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            72 Guild Street<br>London<br>SE23 6FH
+          </dd>
+          <dd class="govuk-summary-list__actions">
 
-          </tr>
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">DAP address</th>
-            <td class="govuk-table__cell">72 Guild Street<br>London<br>SE23 6FH</td>
+          </dd>
+        </div>
 
-          </tr>
+      </dl>
 
-        </tbody>
-      </table>
     </div>
   </div>
 
