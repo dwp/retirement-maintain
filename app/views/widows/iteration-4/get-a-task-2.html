@@ -38,7 +38,7 @@ GOV.UK Prototype Kit
             </h2>
           </div>
           <div class="govuk-notification-banner__content">
-              <p class="govuk-body"> Task complete and letter sent   </p>
+              <p class="govuk-notification-banner__heading"> Task complete and letter sent   </p>
           </div>
         </div>
         {% elseif data['decision'] === 'inheritable-amounts' %}
@@ -49,7 +49,7 @@ GOV.UK Prototype Kit
             </h2>
           </div>
           <div class="govuk-notification-banner__content">
-            <p class="govuk-body">Changes saved and task returned to queue</p>
+            <p class="govuk-notification-banner__heading">Changes saved and task returned to queue</p>
           </div>
         </div>
         {% elseif data['decision'] === 'save' %}
@@ -60,7 +60,7 @@ GOV.UK Prototype Kit
             </h2>
           </div>
           <div class="govuk-notification-banner__content">
-            <p class="govuk-body">Changes saved and task returned to queue</p>
+            <p class="govuk-notification-banner__heading">Changes saved and task returned to queue</p>
           </div>
         </div>
         {% elseif data['decision'] === 'more-info' %}
@@ -71,7 +71,7 @@ GOV.UK Prototype Kit
             </h2>
           </div>
           <div class="govuk-notification-banner__content">
-            <p class="govuk-body">Letter sent to claimant</p>
+            <p class="govuk-notification-banner__heading">Letter sent to claimant</p>
           </div>
         </div>
         {% elseif data['decision'] === 'nothing-to-inherit' %}
@@ -82,7 +82,7 @@ GOV.UK Prototype Kit
             </h2>
           </div>
           <div class="govuk-notification-banner__content">
-            <p class="govuk-body">Task complete and letter sent </p>
+            <p class="govuk-notification-banner__heading">Task complete and letter sent </p>
           </div>
         </div>
         {% else %}
@@ -93,7 +93,7 @@ GOV.UK Prototype Kit
             </h2>
           </div>
           <div class="govuk-notification-banner__content">
-            <p class="govuk-body">Claim sent to PSCS</p>
+            <p class="govuk-notification-banner__heading">Task complete and letter sent</p>
           </div>
         </div>
         {% endif %}
