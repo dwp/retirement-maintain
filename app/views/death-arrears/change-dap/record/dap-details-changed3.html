@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/header/_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-full">
+
+              {% include 'includes/_bar-dead-rooney.html' %}
+
+
+            </div>
+          </div>
+        </main>
+
+
+<a href="personal-br330-2" class="govuk-back-link">Back</a>
+
+    <div>
+      <br>
+      <h2 class="govuk-heading-l">Death arrears payee (DAP) details</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Full name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Jane Rooney
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="dap-name-change">Change</a>
+                  </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Phone number
+          </dt>
+          <dd class="govuk-summary-list__value">
+07895 123456
+          </dd>
+          <dd class="govuk-summary-list__actions">
+      <a href="dap-phone-change">Change</a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            45 West Street<br>London<br>SE15 6LD
+          </dd>
+          <dd class="govuk-summary-list__actions">
+      <a href="dap-address-change">Change</a>
+          </dd>
+        </div>
+
+      </dl>
+
+
+
+    </div>
+  </div>
+
+      <br>
+
+
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+
+    <h2 class="govuk-heading-m">
+      DAP details changes
+    </h2>
+    <ol class="app-timeline">
+
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+        Address changed
+        </h3>
+
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span>Agent</span>
+          <span class="app-timeline__date">12 February 2025</span>
+        </p>
+      </li>
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+        Phone number added
+        </h3>
+
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span>Agent</span>
+          <span class="app-timeline__date">12 February 2025</span>
+        </p>
+      </li>
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+        Full name changed
+        </h3>
+
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span>Agent</span>
+          <span class="app-timeline__date">12 February 2025</span>
+        </p>
+      </li>
+
+    </ol>
+
+  </div>
+</div>
+</main>
+</div>
+<!-- </div> -->
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds"></div>
+</div>
+
+{% endblock %}
