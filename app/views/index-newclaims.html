@@ -24,23 +24,14 @@ GOV.UK Prototype Kit
     </div>
     <div class="govuk-header__content">
       <a href="index" class="govuk-header__link govuk-header__service-name">
-        Retirement maintain
+        Get your State Pension
       </a>
       <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
       <nav>
         <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
           <li class="govuk-header__navigation-item govuk-header__navigation-item">
-            <a class="govuk-header__link" href="index-examples">
-            State Pension          </a>
-          </li>
-          <li class="govuk-header__navigation-item govuk-header__navigation-item">
-            <a class="govuk-header__link" href="index-pc">
-              Pension Credit
-            </a>
-          </li>
-          <li class="govuk-header__navigation-item govuk-header__navigation-item">
-            <a class="govuk-header__link" href="index-patterns">
-            Patterns
+            <a class="govuk-header__link" href="index">
+              Record view
             </a>
           </li>
           <li class="govuk-header__navigation-item govuk-header__navigation-item">
@@ -48,22 +39,22 @@ GOV.UK Prototype Kit
               Tasks
             </a>
           </li>
-          <li class="govuk-header__navigation-item govuk-header__navigation-item">
-            <a class="govuk-header__link" href="index-later-life">
-              Later life
-            </a>
-          </li>
           <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
             <a class="govuk-header__link" href="index-newclaims">
-              New claims
+              Phone and paper claims
             </a>
           </li>
+          <li class="govuk-header__navigation-item govuk-header__navigation-item">
+            <a class="govuk-header__link" href="index-gysp">
+              Online claims
+            </a>
+          </li>
+
           <li class="govuk-header__navigation-item">
             <a class="govuk-header__link" href="#">
 
             </a>
           </li>
-
         </ul>
       </nav>
     </div>
@@ -83,7 +74,7 @@ GOV.UK Prototype Kit
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
 <br>
-<h1 class="govuk-heading-xl" style="margin-bottom: 3%;">Agent prototype</h1>
+<h1 class="govuk-heading-xl" style="margin-bottom: 3%;">Agent new claims</h1>
 <br>
 <h2 class="govuk-heading-m">New claims</h2>
 <p>Journeys for taking a new claim over the telephone and from a paper claim form.</p>
@@ -110,7 +101,7 @@ GOV.UK Prototype Kit
             </div>
             <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
               aria-labelledby="accordion-with-summary-sections-heading-3">
-                {% include 'notes/newclaim.html' %}
+                {% include 'notes/newclaims.html' %}
             </div>
           </div>
 
