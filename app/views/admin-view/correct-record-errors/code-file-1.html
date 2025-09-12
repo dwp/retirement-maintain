@@ -1,0 +1,171 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include 'includes/servicename-tasks.html' %}
+
+
+{% block headEnd %}
+{% include 'includes/remove-blue-bar.html' %}
+{% endblock %}
+
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-column-full">
+
+      <main id="content" role="main">
+        <div class="grid-row">
+          <div class="column-full">
+<br>
+
+
+  <div class="govuk-form-group">
+    <strong class="govuk-tag govuk-tag--turquoise">Administrator - Sarah Jones</strong>
+      <br>
+      <br>
+</div>
+
+<div class="govuk-button-group">
+
+  <a href="admin4" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+  Summary
+  </a>
+
+  <a href="admin4-cases" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  All cases
+  </a>
+
+  <a href="admin4-death" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Change a verified date
+  </a>
+
+  <a href="admin4-remove" role="button" draggable="false" button class="govuk-button govuk-button--warning" data-module="govuk-button" >
+    Delete account
+  </a>
+
+
+</div>
+
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+            {% include './name-bar/_bar-jose.html' %}
+
+          </div>
+        </div>
+      </main>
+
+
+
+
+<form action="admin4-cases" method="post" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        All transactions for case 007
+      </h1>
+
+
+
+        <div class="govuk-form-group">
+
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="30" aria-describedby="more-detail-hint">
+            "inviteKey" : "VICT2O91PY",
+            Mr Jose Dominguez
+           "statePensionDate" 1 November 2020
+            "claimCreatedDate" 3 November 2020
+                "homeTelephoneNumber" 0191 234 5321
+                "email" : j.dominguez@gmail.com
+            "residentialAddress" 31 Whitby Avenue, Newcastle, N1 3BD
+
+                "accountHolder" : J DOMINGUEZ
+                "accountNumber" : 41282612
+                "sortCode" : 40 47 87
+            "awardStatus" : "ARCHIVED",
+            "awardStatusDate" 3 November 2020
+            "paymentDetails"
+                "paymentFrequency" : "4W",
+                "awards" : [
+                        "weeklyStatePensionAmount" : 168.6,
+                        "weeklyProtectedPaymentAmount" : 5.3,
+                        "weeklyExtraStatePensionAmount" : 0.0,
+                        "weeklyInheritedExtraStatePensionAmount" : 0.0,
+                        "totalAmount" : 173.9,
+                        "startDate" : 3 November 2020
+                        "endDate" : 3 November 2021
+                        "awardAmountReasonCode" : "FIRSTAWARD",
+                        "dateAdded" 3 November 2020
+                    },
+                    {
+                        "weeklyStatePensionAmount" : 172.83,
+                        "weeklyProtectedPaymentAmount" : 5.33,
+                        "weeklyExtraStatePensionAmount" : 0.0,
+                        "weeklyInheritedExtraStatePensionAmount" : 0.0,
+                        "totalAmount" : 178.16,
+                        "startDate" : 13 November 2020
+                        "awardAmountReasonCode" : "ANNUALUPRATING",
+                        "dateAdded" : 13 November 2020
+            "gender" : M
+
+            "versionNumber" : 0,
+            "maritalStatus" : "Single",
+            "maritalStatusVerified" : false,
+            "prioritisedClaimDate" : 3 November 2020
+
+
+
+        Schedules:
+
+            "processingStatus" : "COMPLETE",
+
+
+          </textarea>
+        </div>
+
+    </div>
+  </div>
+<br>
+  <button type="submit" class="govuk-button">
+    Continue
+  </button>
+
+
+
+</div>
+
+</div>
+
+
+
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
+
+{% endblock %}
