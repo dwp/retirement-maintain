@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: prototype.interface.retirement-maintain-prototype
-  title: retirement-maintain-prototype
+  title: Retirement-Maintain-Prototype
   description: |
     TODO: add description for retirement-maintain-prototype.
 
