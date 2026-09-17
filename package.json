@@ -10,8 +10,8 @@
     "@govuk-prototype-kit/common-templates": "1.1.1",
     "@govuk-prototype-kit/step-by-step": "2.1.0",
     "@govuk-prototype-kit/task-list": "1.0.0",
-    "govuk-frontend": "^5.3.1",
-    "hmrc-frontend": "^6.16.0",
+    "govuk-frontend": "5.14.0",
+    "hmrc-frontend": "6.117.0",
     "jquery": "3.7.0",
     "notifications-node-client": "7.0.0",
     "@dwp-govuk/govuk-prototype-kit": "latest"
