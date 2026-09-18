@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "govuk-prototype-kit dev",
     "serve": "govuk-prototype-kit serve",
@@ -7,16 +10,27 @@
   "name": "govuk-prototype-kit",
   "dependencies": {
     "@dwp/dwp-frontend": "4.1.0",
+    "@govuk-one-login/service-header": "^6.0.0",
     "@govuk-prototype-kit/common-templates": "3.0.0",
-    "@govuk-prototype-kit/step-by-step": "2.2.4",
     "@govuk-prototype-kit/task-list": "2.0.0",
+    "@ministryofjustice/frontend": "^9.0.0",
+    "@scottish-government/design-system": "4.1.1",
+    "@x-govuk/govuk-prototype-filters": "^2.1.0",
+    "express": "4.22.2",
     "govuk-frontend": "^6.2.0",
+    "govuk-prototype-kit": "13.20.2",
     "hmrc-frontend": "^7.19.0",
     "jquery": "4.0.0",
+    "nhsapp-frontend": "^5.0.3",
     "notifications-node-client": "8.4.0",
-    "@dwp-govuk/govuk-prototype-kit": "latest"
+    "path-to-regexp": "^8.4.2",
+    "qs": "^6.15.2"
+  },
+  "overrides": {
+    "marked": "4.3.0",
+    "form-data": "2.5.6",
+    "ws": "8.21.0",
+    "uuid": "11.1.1"
   }
-
-
-}
   
+}
