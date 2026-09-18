@@ -6,14 +6,17 @@
   },
   "name": "govuk-prototype-kit",
   "dependencies": {
-    "@dwp/dwp-frontend": "3.4.0",
-    "@govuk-prototype-kit/common-templates": "1.2.2",
+    "@dwp/dwp-frontend": "4.1.0",
+    "@govuk-prototype-kit/common-templates": "3.0.0",
     "@govuk-prototype-kit/step-by-step": "2.2.4",
-    "@govuk-prototype-kit/task-list": "1.1.2",
-    "govuk-frontend": "5.14.0",
-    "hmrc-frontend": "6.117.0",
-    "jquery": "3.7.0",
-    "notifications-node-client": "7.0.6",
+    "@govuk-prototype-kit/task-list": "2.0.0",
+    "govuk-frontend": "^6.2.0",
+    "hmrc-frontend": "^7.19.0",
+    "jquery": "4.0.0",
+    "notifications-node-client": "8.4.0",
     "@dwp-govuk/govuk-prototype-kit": "latest"
   }
+
+
 }
+  
